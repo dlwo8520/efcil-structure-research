@@ -23,3 +23,5 @@ The 57 existing test executions include three RP checks run once directly and on
 The original 854-row report was recomputed in memory from exported raw data with no changes to stored research conclusions. Four compressed tables needed for the check were locally restored; their original compressed form remains the published source. No figures or historical source reports were regenerated over original data during this check.
 
 Not verified: all other test suites/legacy launchers, all historical models/weights, nested vendor checkout restoration, diffusion/Qwen generation, every training/environment path, source digest parity after relocation, complete GPU runs, independent model seeds or scientific novelty. The original BOB GPU smoke failure remains an unresolved research-run state even though its current CPU contracts pass.
+
+Git object/ref validation completed with `git fsck --full --no-reflogs` after completing upstream shallow ancestry. The CDS baseline remains an ancestor of main; all three published history tags resolve to complete inspected histories. Original local diagnostic history remains local-only.
