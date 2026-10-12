@@ -1,0 +1,69 @@
+{
+  "audited_at": "2026-10-12T17:10:17.165799+09:00",
+  "before_manifest": {
+    "status": "interrupted_or_failed",
+    "updated_at": "2026-10-12T16:55:21.706338+09:00",
+    "experiment_hash": "ad31ebaa6ffee78ce499d0a3b3c1a563d3e03a3a815c156aa69a0f3657bb3080",
+    "physical_gpu": "5",
+    "branches": [
+      "S_full",
+      "BOB_full"
+    ],
+    "vanilla_retrained": false,
+    "full_cumulative": true,
+    "error": "CalledProcessError(1, ['${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/.bob_env/bin/python', '-m', 'fulltraj.bob_worker', 'feasibility'])"
+  },
+  "old_hash": "ad31ebaa6ffee78ce499d0a3b3c1a563d3e03a3a815c156aa69a0f3657bb3080",
+  "new_hash": "2c305b8a4eb2909b66a9c11bffd6954ad87263c0bad0b2063b538385219eb320",
+  "before_file_hashes": {
+    "assets/model_lock.json": "367cd01a4484afb728239c6adcac8480354e5b2bc50ae3e37776f9c7bfcc8f29",
+    "experiment_spec.json": "ecff791704a235b863583a94b5c0b6b6ec9e5b7fcf9b17a7eea8a11503be8e4b",
+    "fulltraj/__init__.py": "ee241c1f15b7add417f500626e4be35b403a16179fd46dcd32d0b6a6295359f0",
+    "fulltraj/bob_worker.py": "1b6862b1bc01e2a7e3436561f37a09b66247ff7707e01c7ac12b22ae25ed022a",
+    "fulltraj/common.py": "e13ce9209925590cfdadfe05647b4f4268c575a7ecba39649eafcbf47afd538d",
+    "fulltraj/inputs.py": "f5f2609aa2661fb2be449eaeee81a9d8eaf9855e37b3cdda9eadc707359a319f",
+    "fulltraj/learner.py": "e2e580616573d4caf34f94ada59fb51f447ae352018f0b917cf684e3532940d0",
+    "fulltraj/results.py": "96047efa9e889cdffd8e9777d5f3a0a2a91bb10fb75840f7d29ba53b05f99a40",
+    "fulltraj/training.py": "2b964fa7d5282509eeffaa98288b7024ce8912a517e668d9844d2db6ad57fc96",
+    "fulltraj/views.py": "11de01845ceb1f56223783ebda73a6c3bc16324ea524ce48a8ae72335c406aff",
+    "requirements-bob.txt": "99929b2e4ba478fc4b00f933cd75344f49d8158d6d117ac2223ed99133638749",
+    "run.py": "da2b05272887ac768be1e71af695b860a069fb37de166506bda4f12ec046f1e4",
+    "vendor/BeyondObjects/finetune/config.py": "e82f1633efac946dbaae4c65ac4061c9fef5cb421a2cd70dab29f46c7d4f01e3",
+    "vendor/BeyondObjects/finetune/finetune_t2i.py": "f57cb27e872867b911042e54faedd741d5ec89b51613c465453345a93523c426",
+    "vendor/BeyondObjects/generation/generate.py": "90960aa051ff9b7c9385234eb07fa250cf432553f92b0f6670bdfcd5a8684658"
+  },
+  "after_file_hashes": {
+    "assets/model_lock.json": "367cd01a4484afb728239c6adcac8480354e5b2bc50ae3e37776f9c7bfcc8f29",
+    "experiment_spec.json": "ecff791704a235b863583a94b5c0b6b6ec9e5b7fcf9b17a7eea8a11503be8e4b",
+    "fulltraj/__init__.py": "ee241c1f15b7add417f500626e4be35b403a16179fd46dcd32d0b6a6295359f0",
+    "fulltraj/bob_worker.py": "1873ce8805523652391d7fb0c60acea5aa56b83f6180b9ed3751d8438df2a6e9",
+    "fulltraj/common.py": "e13ce9209925590cfdadfe05647b4f4268c575a7ecba39649eafcbf47afd538d",
+    "fulltraj/inputs.py": "f5f2609aa2661fb2be449eaeee81a9d8eaf9855e37b3cdda9eadc707359a319f",
+    "fulltraj/learner.py": "e2e580616573d4caf34f94ada59fb51f447ae352018f0b917cf684e3532940d0",
+    "fulltraj/results.py": "96047efa9e889cdffd8e9777d5f3a0a2a91bb10fb75840f7d29ba53b05f99a40",
+    "fulltraj/training.py": "2b964fa7d5282509eeffaa98288b7024ce8912a517e668d9844d2db6ad57fc96",
+    "fulltraj/views.py": "11de01845ceb1f56223783ebda73a6c3bc16324ea524ce48a8ae72335c406aff",
+    "requirements-bob.txt": "99929b2e4ba478fc4b00f933cd75344f49d8158d6d117ac2223ed99133638749",
+    "run.py": "1e77be494d4e79c84dabd58adfdf6378fec88c786c846497f76fccb240ed69ef",
+    "vendor/BeyondObjects/finetune/config.py": "e82f1633efac946dbaae4c65ac4061c9fef5cb421a2cd70dab29f46c7d4f01e3",
+    "vendor/BeyondObjects/finetune/finetune_t2i.py": "f57cb27e872867b911042e54faedd741d5ec89b51613c465453345a93523c426",
+    "vendor/BeyondObjects/generation/generate.py": "90960aa051ff9b7c9385234eb07fa250cf432553f92b0f6670bdfcd5a8684658"
+  },
+  "new_files": {
+    "fulltraj/logging_compat.py": "733db9adf76a36ab09985224c15b59fa7b0745cedb43d304dd49966635a843b0"
+  },
+  "learned_artifacts": [],
+  "full_training_started": false,
+  "original_recipe_and_model_and_core_hash_verified": true,
+  "reason": "TensorBoard hparams rejected argparse None/list values before the first LoRA optimizer update. Convert logger metadata only, preserve training arguments and official code.",
+  "validation": {
+    "cpu_contract_tests_passed": 18,
+    "installed_accelerator_tensorboard_check": "PASS",
+    "original_error_reproduced": true,
+    "training_args_unchanged": true,
+    "CUDA_initialized": false,
+    "training_executed_by_fix": false
+  },
+  "preserved_artifacts": "Existing logs, process_attempts.json, two smoke captions and real metadata/symlinks remain untouched.",
+  "recovery": "One-time manifest code hash migration after failed-before-training audit. General recipe/code mismatch rejection remains enabled."
+}

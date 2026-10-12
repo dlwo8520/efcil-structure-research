@@ -1,0 +1,2 @@
+experiment_id,seed,task_id,eval_stage,seen_classes,num_correct,num_samples,accuracy,top5_num_correct,top5_accuracy,old_num_correct,old_num_samples,old_accuracy,new_num_correct,new_num_samples,new_accuracy,old_to_new_error_rate,new_to_old_error_rate,training_seconds,checkpoint_path,checkpoint_state_id
+B_P010_A100,1993,1,task_final,40,1491,1676,88.9618138424821,1654,98.68735083532219,,0,,1491,1676,88.9618138424821,,0.0,817.9968419600045,${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs/CAR5/B_P010_A100/seed_1993/checkpoint_latest.pt,task_end:task_1

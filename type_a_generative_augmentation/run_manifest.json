@@ -1,0 +1,20 @@
+{
+  "stages": {
+    "audit": {
+      "status": "complete",
+      "physical_gpu": 4
+    },
+    "generate": {
+      "status": "complete",
+      "physical_gpu": 4
+    },
+    "auto-sanity": {
+      "status": "complete",
+      "physical_gpu": 4
+    },
+    "train": {
+      "status": "complete",
+      "physical_gpu": 4
+    }
+  }
+}

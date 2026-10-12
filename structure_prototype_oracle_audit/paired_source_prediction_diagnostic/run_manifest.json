@@ -1,0 +1,115 @@
+{
+  "status": "complete",
+  "protocols": [
+    "IA10",
+    "CAR10"
+  ],
+  "seed": 1993,
+  "physical_gpu": "4",
+  "protocol_results": {
+    "IA10": {
+      "status": "complete",
+      "protocol": "IA10",
+      "seed": 1993,
+      "sample_count": 1519,
+      "accuracy_percent": {
+        "A": 64.77946017116524,
+        "B": 64.71362738643845,
+        "C": 64.38446346280448
+      },
+      "legacy_accuracy_percent": {
+        "G256_FIXED": 64.71362738643845,
+        "R256_FIXED": 64.77946017116524
+      },
+      "legacy_regression_passed": true,
+      "checkpoint_fingerprint_before": {
+        "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/task_10.pt",
+        "size": 1367010168,
+        "edge_sha256": "f12303d30fca90bb1cce99636a6e3451286c2dbf7098457c8caba8f3c3d3281a"
+      },
+      "checkpoint_fingerprint_after": {
+        "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/task_10.pt",
+        "size": 1367010168,
+        "edge_sha256": "f12303d30fca90bb1cce99636a6e3451286c2dbf7098457c8caba8f3c3d3281a"
+      },
+      "matched_head": {
+        "exposure_per_class": 256,
+        "epochs": 5,
+        "optimizer_steps": {
+          "A": 1000,
+          "B": 1000,
+          "C": 1000
+        },
+        "same_pre_ca_initialization": true,
+        "initialization_source": "exact_pre_ca_sidecar",
+        "same_new_bank": true,
+        "same_label_order_and_batch_boundaries": true,
+        "same_optimizer_lr_schedule": true,
+        "old_source_A": "actual feature with replacement (legacy R256)",
+        "old_source_B": "oracle Gaussian (legacy G256)",
+        "old_source_C": "stored/APR Gaussian, matched new head",
+        "old_gaussian_seed_B": 12094,
+        "old_gaussian_seed_C": 12097,
+        "new_bank_seed": 12095,
+        "actual_old_seed": 12096,
+        "permutation_seed": 12193,
+        "coverage_bank_note": "Coverage A/B/C uses matched unique class counts; head A/B/C uses matched 256/class exposure. Support is explanatory, not the training source itself."
+      },
+      "support_draw_policy": "B/C per-sample mean over three coverage draws",
+      "elapsed_seconds": 14.76973271369934
+    },
+    "CAR10": {
+      "status": "complete",
+      "protocol": "CAR10",
+      "seed": 1993,
+      "sample_count": 8041,
+      "accuracy_percent": {
+        "A": 80.62430046014177,
+        "B": 79.72888944161174,
+        "C": 78.5598806118642
+      },
+      "legacy_accuracy_percent": {
+        "G256_FIXED": 79.72888944161174,
+        "R256_FIXED": 80.62430046014177
+      },
+      "legacy_regression_passed": true,
+      "checkpoint_fingerprint_before": {
+        "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_10.pt",
+        "size": 1345643768,
+        "edge_sha256": "f9abc1713f56b205d9d6d08a714e904ffe02b77298b025848b25bf9f275d2bb3"
+      },
+      "checkpoint_fingerprint_after": {
+        "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_10.pt",
+        "size": 1345643768,
+        "edge_sha256": "f9abc1713f56b205d9d6d08a714e904ffe02b77298b025848b25bf9f275d2bb3"
+      },
+      "matched_head": {
+        "exposure_per_class": 256,
+        "epochs": 5,
+        "optimizer_steps": {
+          "A": 980,
+          "B": 980,
+          "C": 980
+        },
+        "same_pre_ca_initialization": true,
+        "initialization_source": "exact_pre_ca_sidecar",
+        "same_new_bank": true,
+        "same_label_order_and_batch_boundaries": true,
+        "same_optimizer_lr_schedule": true,
+        "old_source_A": "actual feature with replacement (legacy R256)",
+        "old_source_B": "oracle Gaussian (legacy G256)",
+        "old_source_C": "stored/APR Gaussian, matched new head",
+        "old_gaussian_seed_B": 12094,
+        "old_gaussian_seed_C": 12097,
+        "new_bank_seed": 12095,
+        "actual_old_seed": 12096,
+        "permutation_seed": 12193,
+        "coverage_bank_note": "Coverage A/B/C uses matched unique class counts; head A/B/C uses matched 256/class exposure. Support is explanatory, not the training source itself."
+      },
+      "support_draw_policy": "B/C per-sample mean over three coverage draws",
+      "elapsed_seconds": 14.189088821411133
+    }
+  },
+  "report": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/paired_source_prediction_diagnostic/paired_source_prediction_final_report.md",
+  "elapsed_seconds": 32.24502658843994
+}

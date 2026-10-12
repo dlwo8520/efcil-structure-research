@@ -1,0 +1,25 @@
+{
+  "entries": [
+    {
+      "bytes": 1255618029,
+      "created_at_utc": "2026-10-02T08:35:39.194831+00:00",
+      "network_flag_after_task": 9,
+      "path": "${RESEARCH_WORKSPACE}/variation_consistency_pilot/CAR10/control/seed_1993/task_checkpoints/task_09.pt",
+      "pre_ca_classifier_sidecar": "${RESEARCH_WORKSPACE}/variation_consistency_pilot/CAR10/control/seed_1993/pre_ca_classifier/task_09.pt",
+      "state_id": "task_end:task_9",
+      "task_id": 9
+    },
+    {
+      "bytes": 1345644536,
+      "created_at_utc": "2026-10-02T08:42:26.701283+00:00",
+      "network_flag_after_task": 10,
+      "path": "${RESEARCH_WORKSPACE}/variation_consistency_pilot/CAR10/control/seed_1993/task_checkpoints/task_10.pt",
+      "pre_ca_classifier_sidecar": "${RESEARCH_WORKSPACE}/variation_consistency_pilot/CAR10/control/seed_1993/pre_ca_classifier/task_10.pt",
+      "state_id": "task_end:task_10",
+      "task_id": 10
+    }
+  ],
+  "format_version": 1,
+  "purpose": "read-only post-hoc oracle audit",
+  "training_behavior_modified": false
+}

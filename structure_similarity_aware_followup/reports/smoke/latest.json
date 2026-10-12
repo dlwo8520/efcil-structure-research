@@ -1,0 +1,18 @@
+{
+  "b1_e3_parity": true,
+  "device": "cpu",
+  "evaluation_logging": true,
+  "learner_epoch_integration": true,
+  "losses": {
+    "B1": 0.8659870624542236,
+    "S1": 0.7993845343589783,
+    "S2": 0.3397255837917328,
+    "S3_SCC": 0.00020933982159476727,
+    "S4": 0.4508197605609894
+  },
+  "s1_alpha_zero_parity": true,
+  "s2_relative_active_ratio": 0.6666666865348816,
+  "s4_gate_mean": 0.5197455883026123,
+  "status": "PASS",
+  "torch": "2.4.1+cu121"
+}

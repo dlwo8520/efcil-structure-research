@@ -1,0 +1,84 @@
+nohup: ignoring input
+Reuse fixed automatic sanity: 1182 accepted; label fidelity NOT verified
+READY_EXPLORATORY (label fidelity NOT verified); common parent count: 1182
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+The number of training dataset: 705
+[IA10 R] T1 epoch 1/30 loss=3.7936
+[IA10 R] T1 epoch 2/30 loss=2.1435
+[IA10 R] T1 epoch 3/30 loss=1.8709
+[IA10 R] T1 epoch 4/30 loss=1.7311
+[IA10 R] T1 epoch 5/30 loss=1.6694
+[IA10 R] T1 epoch 6/30 loss=1.6516
+[IA10 R] T1 epoch 7/30 loss=1.5190
+[IA10 R] T1 epoch 8/30 loss=1.4817
+[IA10 R] T1 epoch 9/30 loss=1.4362
+[IA10 R] T1 epoch 10/30 loss=1.4475
+[IA10 R] T1 epoch 11/30 loss=1.4835
+[IA10 R] T1 epoch 12/30 loss=1.3233
+[IA10 R] T1 epoch 13/30 loss=1.3855
+[IA10 R] T1 epoch 14/30 loss=1.2976
+[IA10 R] T1 epoch 15/30 loss=1.3000
+[IA10 R] T1 epoch 16/30 loss=1.3057
+[IA10 R] T1 epoch 17/30 loss=1.2741
+[IA10 R] T1 epoch 18/30 loss=1.3674
+[IA10 R] T1 epoch 19/30 loss=1.3114
+[IA10 R] T1 epoch 20/30 loss=1.2512
+[IA10 R] T1 epoch 21/30 loss=1.2477
+[IA10 R] T1 epoch 22/30 loss=1.2177
+[IA10 R] T1 epoch 23/30 loss=1.2564
+[IA10 R] T1 epoch 24/30 loss=1.2307
+[IA10 R] T1 epoch 25/30 loss=1.2096
+[IA10 R] T1 epoch 26/30 loss=1.2162
+[IA10 R] T1 epoch 27/30 loss=1.2525
+[IA10 R] T1 epoch 28/30 loss=1.2396
+[IA10 R] T1 epoch 29/30 loss=1.1943
+[IA10 R] T1 epoch 30/30 loss=1.2117
+1.8247838458857288
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+The number of training dataset: 705
+Traceback (most recent call last):
+  File "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/run.py", line 122, in <module>
+    main()
+  File "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/run.py", line 110, in main
+    run_training(device)
+  File "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training.py", line 187, in run_training
+    train_one(protocol, location, branch, own, device)
+  File "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training.py", line 154, in train_one
+    learner.incremental_train(manager)
+  File "${RESEARCH_WORKSPACE}/structure_multicenter_separation/models/CDS_adapter.py", line 165, in incremental_train
+    self._train(self.train_loader, self.test_loader)
+  File "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/learner.py", line 77, in _train
+    return super()._train(loader, test_loader)
+  File "${RESEARCH_WORKSPACE}/structure_multicenter_separation/models/CDS_adapter.py", line 271, in _train
+    self._init_train(train_loader, test_loader, optimizer, scheduler, self._resume_next_epoch)
+  File "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/learner.py", line 89, in _init_train
+    for batch in train_loader:
+  File "${RESEARCH_WORKSPACE}/miniconda3/envs/cds/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "${RESEARCH_WORKSPACE}/miniconda3/envs/cds/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 673, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "${RESEARCH_WORKSPACE}/miniconda3/envs/cds/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "${RESEARCH_WORKSPACE}/miniconda3/envs/cds/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/matched_views.py", line 62, in __getitem__
+    aux = (self.strong if self.branch == "S" else self.ordinary)(image)
+  File "${RESEARCH_WORKSPACE}/miniconda3/envs/cds/lib/python3.9/site-packages/torchvision/transforms/transforms.py", line 95, in __call__
+    img = t(img)
+  File "${RESEARCH_WORKSPACE}/miniconda3/envs/cds/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "${RESEARCH_WORKSPACE}/miniconda3/envs/cds/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "${RESEARCH_WORKSPACE}/miniconda3/envs/cds/lib/python3.9/site-packages/torchvision/transforms/autoaugment.py", line 363, in forward
+    img = _apply_op(img, op_name, magnitude, interpolation=self.interpolation, fill=fill)
+  File "${RESEARCH_WORKSPACE}/miniconda3/envs/cds/lib/python3.9/site-packages/torchvision/transforms/autoaugment.py", line 79, in _apply_op
+    img = F.solarize(img, magnitude)
+  File "${RESEARCH_WORKSPACE}/miniconda3/envs/cds/lib/python3.9/site-packages/torchvision/transforms/functional.py", line 1448, in solarize
+    return F_t.solarize(img, threshold)
+  File "${RESEARCH_WORKSPACE}/miniconda3/envs/cds/lib/python3.9/site-packages/torchvision/transforms/_functional_tensor.py", line 801, in solarize
+    raise TypeError("Threshold should be less than bound of img.")
+TypeError: Threshold should be less than bound of img.

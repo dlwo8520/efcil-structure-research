@@ -1,0 +1,21 @@
+{
+  "CUDA_VISIBLE_DEVICES": "1",
+  "torch_cuda_device_count": 1,
+  "torch_cuda_current_device": 0,
+  "torch_cuda_device_name": "NVIDIA RTX A6000",
+  "torch_cuda_device_uuid": "afb08c1c-8a66-104a-01d1-046df70f0552",
+  "python_executable": "${RESEARCH_WORKSPACE}/miniconda3/envs/clip/bin/python",
+  "python_version": "3.10.20 (main, Mar 11 2026, 17:46:40) [GCC 14.3.0]",
+  "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35",
+  "torch": "2.11.0+cu126",
+  "torchvision": "0.26.0+cu126",
+  "timm": "1.0.26",
+  "numpy": "2.2.6",
+  "torch_cuda_runtime": "12.6",
+  "cudnn": 91002,
+  "hostname": "localhost",
+  "git_commit": "27de0eac5f1db4449fb5cf2be61c2ff3882daf44",
+  "git_status": "",
+  "nvidia_smi_gpu1": "1, NVIDIA RTX A6000, GPU-afb08c1c-8a66-104a-01d1-046df70f0552, 49140 MiB, 18 MiB, 48524 MiB, 0 %",
+  "nvidia_smi_gpu1_processes": ""
+}

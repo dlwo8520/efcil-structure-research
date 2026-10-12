@@ -1,0 +1,97 @@
+{
+  "entries": [
+    {
+      "bytes": 419373748,
+      "created_at_utc": "2026-09-23T10:30:10.700222+00:00",
+      "network_flag_after_task": 1,
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/task_01.pt",
+      "pre_ca_classifier_sidecar": null,
+      "state_id": "task_end:task_1",
+      "task_id": 1
+    },
+    {
+      "bytes": 608854624,
+      "created_at_utc": "2026-09-23T10:33:19.733254+00:00",
+      "network_flag_after_task": 2,
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/task_02.pt",
+      "pre_ca_classifier_sidecar": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/pre_ca_classifier/task_02.pt",
+      "state_id": "task_end:task_2",
+      "task_id": 2
+    },
+    {
+      "bytes": 703623339,
+      "created_at_utc": "2026-09-23T10:36:09.504862+00:00",
+      "network_flag_after_task": 3,
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/task_03.pt",
+      "pre_ca_classifier_sidecar": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/pre_ca_classifier/task_03.pt",
+      "state_id": "task_end:task_3",
+      "task_id": 3
+    },
+    {
+      "bytes": 798394038,
+      "created_at_utc": "2026-09-23T10:40:07.456043+00:00",
+      "network_flag_after_task": 4,
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/task_04.pt",
+      "pre_ca_classifier_sidecar": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/pre_ca_classifier/task_04.pt",
+      "state_id": "task_end:task_4",
+      "task_id": 4
+    },
+    {
+      "bytes": 893162049,
+      "created_at_utc": "2026-09-23T10:43:48.146870+00:00",
+      "network_flag_after_task": 5,
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/task_05.pt",
+      "pre_ca_classifier_sidecar": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/pre_ca_classifier/task_05.pt",
+      "state_id": "task_end:task_5",
+      "task_id": 5
+    },
+    {
+      "bytes": 987930252,
+      "created_at_utc": "2026-09-23T10:47:46.799984+00:00",
+      "network_flag_after_task": 6,
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/task_06.pt",
+      "pre_ca_classifier_sidecar": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/pre_ca_classifier/task_06.pt",
+      "state_id": "task_end:task_6",
+      "task_id": 6
+    },
+    {
+      "bytes": 1082701079,
+      "created_at_utc": "2026-09-23T10:52:08.067291+00:00",
+      "network_flag_after_task": 7,
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/task_07.pt",
+      "pre_ca_classifier_sidecar": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/pre_ca_classifier/task_07.pt",
+      "state_id": "task_end:task_7",
+      "task_id": 7
+    },
+    {
+      "bytes": 1177471842,
+      "created_at_utc": "2026-09-23T10:56:47.148285+00:00",
+      "network_flag_after_task": 8,
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/task_08.pt",
+      "pre_ca_classifier_sidecar": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/pre_ca_classifier/task_08.pt",
+      "state_id": "task_end:task_8",
+      "task_id": 8
+    },
+    {
+      "bytes": 1272241517,
+      "created_at_utc": "2026-09-23T11:01:54.302757+00:00",
+      "network_flag_after_task": 9,
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/task_09.pt",
+      "pre_ca_classifier_sidecar": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/pre_ca_classifier/task_09.pt",
+      "state_id": "task_end:task_9",
+      "task_id": 9
+    },
+    {
+      "bytes": 1367010168,
+      "created_at_utc": "2026-09-23T11:07:12.338462+00:00",
+      "network_flag_after_task": 10,
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/task_10.pt",
+      "pre_ca_classifier_sidecar": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/pre_ca_classifier/task_10.pt",
+      "state_id": "task_end:task_10",
+      "task_id": 10
+    }
+  ],
+  "format_version": 1,
+  "purpose": "read-only post-hoc oracle audit",
+  "training_behavior_modified": false
+}

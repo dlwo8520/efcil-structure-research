@@ -1,0 +1,11 @@
+nohup: ignoring input
+REDUCED QUEUE jobs=4 gpu=1 seed=1993 protocols=IA5,CAR5
+[1/4] RUN_NEW CAR5/Structure
+[1/4] FAIL exit=1; preserved and continuing: ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/logs/reduced_stage1/CAR5__Structure__seed_1993.log
+[2/4] RUN_NEW CAR5/B_P020_A100
+[2/4] DONE CAR5/B_P020_A100
+[3/4] RUN_NEW CAR5/C_P020_L030
+[3/4] DONE CAR5/C_P020_L030
+[4/4] RUN_NEW CAR5/C_P020_L100
+[4/4] DONE CAR5/C_P020_L100
+REDUCED QUEUE FINISHED failures=1

@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=3 main.py --config exps_jsons/cars196_pcds.json --config exps_jsons/cars196_pcds_structure_sgds.json

@@ -1,0 +1,41 @@
+{
+  "protocol": "IA5",
+  "transition": "T2",
+  "status": "PASS",
+  "checked_at_utc": "2026-09-23T08:31:15.015155+00:00",
+  "checks": [
+    {
+      "name": "pre_ca_checkpoint",
+      "pass": true
+    },
+    {
+      "name": "post_ca_checkpoint",
+      "pass": true
+    },
+    {
+      "name": "condition_A_reproduces_post_ca",
+      "pass": true
+    },
+    {
+      "name": "A_B_C_D_identical_pre_ca_initialization",
+      "pass": true
+    },
+    {
+      "name": "full_old_training_samples",
+      "pass": true
+    },
+    {
+      "name": "oracle_train_and_evaluation_test_are_separate",
+      "pass": true
+    },
+    {
+      "name": "old_samples_not_in_training_graph",
+      "pass": true
+    },
+    {
+      "name": "diagnostic_does_not_modify_main_checkpoint",
+      "pass": true
+    }
+  ],
+  "source": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/scientific_audit/_preflight/IA5/seed_1993"
+}

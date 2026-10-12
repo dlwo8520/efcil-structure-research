@@ -1,0 +1,2 @@
+protocol,previous_task,task,transition,sample_count,correct_to_wrong,wrong_to_correct,wrong_destination_change,eligible_newly_degraded_pair_count,positive_degradation_mass,improvement_mass,fixed_common_readout,source
+CAR5,4,5,T4->T5,8041,47,73,68,27,273,591,T5 Structure cosine head on T4/T5 features,${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/pair_boundary_risk_diagnostic/CAR5_T4_T5

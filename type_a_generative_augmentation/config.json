@@ -1,0 +1,66 @@
+{
+  "experiment": "Type A current generative augmentation",
+  "seed": 1993,
+  "protocols": [
+    "IA10",
+    "CAR10"
+  ],
+  "locations": [
+    "T1",
+    "T9_T10"
+  ],
+  "parent_max_per_class": 16,
+  "parent_seed": 20261008,
+  "support_seeds": [
+    1993,
+    1994,
+    1995
+  ],
+  "support_max_per_class": 64,
+  "support_max_k": 5,
+  "generator": {
+    "model_id": "runwayml/stable-diffusion-v1-5",
+    "local_path": "${RESEARCH_WORKSPACE}/.cache/huggingface/hub/models--runwayml--stable-diffusion-v1-5/snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+    "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+    "strength": 0.2,
+    "steps": 30,
+    "guidance": 7.5,
+    "precision": "float16",
+    "image_size": 512,
+    "scheduler": "checkpoint configuration"
+  },
+  "strong": {
+    "RandAugment_num_ops": 2,
+    "RandAugment_magnitude": 9,
+    "RandomErasing_p": 0.25
+  },
+  "quality": {
+    "max_sample_per_protocol": 100,
+    "max_bad_or_uncertain_fraction": 0.05,
+    "max_no_variation_fraction": 0.5,
+    "human_review_required": true
+  },
+  "conditions": [
+    "V",
+    "R",
+    "S",
+    "G",
+    "GM"
+  ],
+  "primary_comparison": "G-S",
+  "secondary_comparison": "G-R",
+  "statistics_comparison": "GM-G",
+  "statistics": "R/S/G real; GM current real+generated; APR displacement remains real",
+  "expansion_decision": {
+    "birth_mean_G_minus_S_min_pp": 1.0,
+    "each_birth_G_minus_S_min_pp": -0.5,
+    "T9_seen_G_minus_S_min_pp": -0.5,
+    "T9_cohort_after_T10_G_minus_S_min_pp": 0.5,
+    "T10_seen_G_minus_S_min_pp": 0.0,
+    "old_new_G_minus_S_min_pp": -1.0,
+    "G_minus_R_rule": "birth mean > 0 pp AND T10 seen > 0 pp",
+    "both_protocols_required": true
+  },
+  "test_used_for_source_or_recipe_selection": false,
+  "requested_branch_name": "exp/type-a-current-generative-augmentation"
+}

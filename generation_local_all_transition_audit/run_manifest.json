@@ -1,0 +1,182 @@
+{
+  "status": "complete",
+  "mode": "analysis_only_saved_predictions",
+  "physical_gpu": null,
+  "training_performed": false,
+  "generation_performed": false,
+  "inference_performed": false,
+  "model_seed": 1993,
+  "source_root": "${RESEARCH_WORKSPACE}/type_a_generative_augmentation",
+  "trajectory_root": "${RESEARCH_WORKSPACE}/error_trajectory_diagnostic",
+  "output_root": "${RESEARCH_WORKSPACE}/generation_local_all_transition_audit",
+  "started_at_kst": "2026-10-12T14:07:04.316183+09:00",
+  "code_sha256": "18ce7e9ab486d59e128468fb5dd08465612aa1376e03a3212ef18da033115b00",
+  "local_candidate_definition": "original birth task; G9 at both T9 and T10",
+  "primary_comparison": "G-S",
+  "optional_secondary": "G-R",
+  "finished_at_kst": "2026-10-12T14:07:08.790167+09:00",
+  "elapsed_seconds": 4.474109502974898,
+  "source_files": {
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/metrics.json": {
+      "sha256": "9d574a33d70e0fac5d5280e313c337549258cc92c9d972919fd19678f94034a7",
+      "bytes": 90694
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/IA10/T9_T10/S/resolved_config.json": {
+      "sha256": "fa52422a72d83d03e18cfef15a2e3d0c96f4aff6648631ad30e012605df0ffb9",
+      "bytes": 4611
+    },
+    "${RESEARCH_WORKSPACE}/error_trajectory_diagnostic/IA10/sample_trajectory.csv": {
+      "sha256": "5840aa869d70941b697eed4ac7bf869d056e7b02b8ee959e2d6b9d2df3ad144a",
+      "bytes": 221987
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/audit/IA10/birth_support_audit.csv": {
+      "sha256": "7029f1c6c97ebed8858b971efafe91925d6707c0a4009e2b6c3d7f83c336c3d3",
+      "bytes": 728800
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/IA10/T1/S/resolved_config.json": {
+      "sha256": "0153f3be72f324cc9884a552748a032f3163998f137f3157a7612028958eca23",
+      "bytes": 4607
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/IA10/T1/G/resolved_config.json": {
+      "sha256": "7dd4c03f5719590c2a388e7fee98bf865d108c5ae55be86c9f647bf62f8a480f",
+      "bytes": 4607
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/IA10/T1/R/resolved_config.json": {
+      "sha256": "85c8095c8fe79254bb29b6175db639284eb7f794778604a0ac1276963de34293",
+      "bytes": 4607
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/IA10/T1/S/predictions_T01.csv": {
+      "sha256": "5b2b26afd65bf49341bfdacbfdc47f1b5106b23da4f73134d35d4a4140b4f05f",
+      "bytes": 20156
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/IA10/T1/G/predictions_T01.csv": {
+      "sha256": "423c5950e537294a02aec472cba82b0ee813d6032b5c54c5635dcd515be7bec5",
+      "bytes": 20112
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/IA10/T1/R/predictions_T01.csv": {
+      "sha256": "ea99cf3bf712e1c681ef561060bb902d18ab9321782ccf1a10eb871c60357651",
+      "bytes": 20148
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/IA10/T9_T10/G/resolved_config.json": {
+      "sha256": "b5ef7a7dd77e36b6f57f53999a2fd2edd82905fb621ff6426cbdbe47363a0b78",
+      "bytes": 4611
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/IA10/T9_T10/R/resolved_config.json": {
+      "sha256": "88636c3b6184da33a16e1f92f2af0aa7bcfa806969e8a023fcff98fd6f283964",
+      "bytes": 4611
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/IA10/T9_T10/S/predictions_T09.csv": {
+      "sha256": "8e6d9b3198d5e5079cd9e981eec73fe3938e4ebcabe48546aa78bc0ad59dc4db",
+      "bytes": 162765
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/IA10/T9_T10/G/predictions_T09.csv": {
+      "sha256": "fc3da34ef7c03c54acaae91d7ca678fcc2ad9f1862aae7db2e04f78ed257c149",
+      "bytes": 162733
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/IA10/T9_T10/R/predictions_T09.csv": {
+      "sha256": "2f415274582179b455f075401a031bd231c6caf0e953287538bcb2c71e56ebe9",
+      "bytes": 162731
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/IA10/T9_T10/S/predictions_T10.csv": {
+      "sha256": "df6611f1738c248a0b6fd58bace5475cc46b67d9751fdcfd3797bf873656a758",
+      "bytes": 179108
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/IA10/T9_T10/G/predictions_T10.csv": {
+      "sha256": "be1c2271dafb91d2d63af9795cd4e3149731a025a0a5c2db01af68eb50613cfd",
+      "bytes": 179132
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/IA10/T9_T10/R/predictions_T10.csv": {
+      "sha256": "70187e5f562a8a8055461a87224dbc582f803696db82cece2b7166c866d7fcfa",
+      "bytes": 179083
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/CAR10/T9_T10/S/resolved_config.json": {
+      "sha256": "20a7907a8ab7c8c1b05f05b44f9958ec483a513cc1c96a9ad474ab96d786ef1b",
+      "bytes": 4603
+    },
+    "${RESEARCH_WORKSPACE}/error_trajectory_diagnostic/CAR10/sample_trajectory.csv": {
+      "sha256": "d25f1a558007ab07c7838fdef9b789b84983bffe77b18064c61703a2bd03a184",
+      "bytes": 1169315
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/audit/CAR10/birth_support_audit.csv": {
+      "sha256": "cadd11a7af4de023cd87b075e482e7d60659d641d1cb4c0068a74ae0f910c842",
+      "bytes": 3765167
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/CAR10/T1/S/resolved_config.json": {
+      "sha256": "fe6c6d340e7d7aa04b40e59db5c12c33be728bd3d6be3165450abeca7106ec83",
+      "bytes": 4599
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/CAR10/T1/G/resolved_config.json": {
+      "sha256": "3e6c4fef77b3919ac013b596f259096b8355128b514e9d0638267c6732d34d38",
+      "bytes": 4599
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/CAR10/T1/R/resolved_config.json": {
+      "sha256": "e01790da74f4eab20f141a983cc0a93db87964a64d5c300649b5284d88fa0fc3",
+      "bytes": 4599
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/CAR10/T1/S/predictions_T01.csv": {
+      "sha256": "c306f1ae83454b53f9a924e9b7e627ed91d21de9a4c3768cc55d45162c48f4f2",
+      "bytes": 96944
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/CAR10/T1/G/predictions_T01.csv": {
+      "sha256": "171a1ac18b830cec5a16989350499b79568096d38b4eb1066050fc6f0d6fc5aa",
+      "bytes": 96835
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/CAR10/T1/R/predictions_T01.csv": {
+      "sha256": "58896427cce6558955c5625e2eff13788335a73b0e18a54a0130f47c5abc823e",
+      "bytes": 96942
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/CAR10/T9_T10/G/resolved_config.json": {
+      "sha256": "d376d5136e9fa7e3a8553760c34525928d22a12caac71a7130c4d75906d22c84",
+      "bytes": 4603
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/CAR10/T9_T10/R/resolved_config.json": {
+      "sha256": "08b295d27b650ba26696c7306b752a4b85aef2b2d952e02a01fc5cc3e933c6ba",
+      "bytes": 4603
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/CAR10/T9_T10/S/predictions_T09.csv": {
+      "sha256": "8cb76e05a152a70f0231e833024ce788131cba4de40ed0535c013ef3ef1d0410",
+      "bytes": 858381
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/CAR10/T9_T10/G/predictions_T09.csv": {
+      "sha256": "bef1ca3b6c8849f797eb536ffe7f945106d4f64fda484c3091e9f46a93f94898",
+      "bytes": 858551
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/CAR10/T9_T10/R/predictions_T09.csv": {
+      "sha256": "edbeb3fce51d57ebce30a75afc547f7803a0b40d6226665e35d1c6400f9f63c0",
+      "bytes": 858560
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/CAR10/T9_T10/S/predictions_T10.csv": {
+      "sha256": "b9e40969f6efed9f5a549d31a018f02ee24ef64a0bd297176b589fcdbccef12a",
+      "bytes": 960827
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/CAR10/T9_T10/G/predictions_T10.csv": {
+      "sha256": "135e81bc9952368143cc783527d86f929f66f575379041ffd8c1e7aeadc29d7c",
+      "bytes": 960919
+    },
+    "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/CAR10/T9_T10/R/predictions_T10.csv": {
+      "sha256": "02d6d9d29ff950c6db7945917eaaf59d24c76183d4aaca3aeab842c3bfa3a6d4",
+      "bytes": 961028
+    }
+  },
+  "source_files_unchanged": true,
+  "validation": {
+    "A1_A5": "passed",
+    "fixed_vanilla_subtypes": "passed",
+    "G9_candidate_at_T10": "passed",
+    "previous_accuracy_and_paired_count_parity": "passed",
+    "scope_count_additivity": "passed"
+  },
+  "decision": {
+    "IA10_LOCAL_SIGNAL": "YES",
+    "CAR10_LOCAL_SIGNAL": "NO",
+    "LOCAL_SIGNAL_PERSISTS_TO_T10": "NO",
+    "DATASET_COMMON_EVIDENCE": "NO",
+    "ALL_SEEN_TRANSLATION": "NO",
+    "GENERATION_DIRECTION": "STOP",
+    "NEXT_METHOD": "REVIEW_REAL_ONLY_CE_SUPCON_MATCHED_PILOT",
+    "persistence_definition": "Both datasets: T9 local net > 0 AND T10 local net >= 0. IA10 zero at T10 satisfies only its nonnegative bound, not a strictly positive advantage.",
+    "positive_net_is_statistical_significance": false,
+    "new_method_authorized_or_run": false
+  },
+  "plots_count": 19
+}

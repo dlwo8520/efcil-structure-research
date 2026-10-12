@@ -1,0 +1,38 @@
+{
+  "status": "complete",
+  "protocol": "CAR5",
+  "task": 5,
+  "seed": 1993,
+  "checkpoint": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR5/Structure_AUDIT/seed_1993/task_checkpoints/task_05.pt",
+  "checkpoint_fingerprint_before": {
+    "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR5/Structure_AUDIT/seed_1993/task_checkpoints/task_05.pt",
+    "size": 1393004545,
+    "edge_sha256": "c0eaebc19b16b6d80f16b5d2fa23e5a4b5543cb6c79d279a43ca8ad0ed8fadfe"
+  },
+  "checkpoint_fingerprint_after": {
+    "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR5/Structure_AUDIT/seed_1993/task_checkpoints/task_05.pt",
+    "size": 1393004545,
+    "edge_sha256": "c0eaebc19b16b6d80f16b5d2fa23e5a4b5543cb6c79d279a43ca8ad0ed8fadfe"
+  },
+  "checkpoint_unchanged": true,
+  "training_reused": true,
+  "backbone_adapter_updated": false,
+  "diagnostic_only": true,
+  "train_samples": 8144,
+  "validation_samples": 1546,
+  "test_samples": 8041,
+  "validation_classes": 196,
+  "no_validation_classes": [],
+  "g256_r256_optimizer_steps": 980,
+  "paired_label_sequence_hash": "a8327a513ffb71364939725534248a3d18c623a30ee0c66908326338f6b8a34b",
+  "new_bank_identical": true,
+  "cosine_5ep_epochs": 5,
+  "cosine_converged_epochs_run": 100,
+  "cosine_converged_selected_epoch": 1,
+  "cosine_converged_stop_reason": "max_epoch",
+  "linear_no_bias_closures": 10,
+  "linear_with_bias_closures": 30,
+  "t2_t4_executed": false,
+  "ia10_car10_executed": false,
+  "elapsed_seconds": 150.89819383621216
+}

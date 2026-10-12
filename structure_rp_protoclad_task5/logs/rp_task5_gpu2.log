@@ -1,0 +1,17 @@
+nohup: ignoring input
+RP TASK5 QUEUE jobs=4 gpu=2 seed=1993
+[1/4] RUN_NEW IA5/RP_C_P020_L030
+${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_rp_protoclad_task5/run.py --config ${RESEARCH_WORKSPACE}/structure_rp_protoclad_task5/configs/RP_C_P020_L030_IA5.json --gpu 2 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_rp_protoclad_task5/outputs --seed 1993
+[1/4] DONE IA5/RP_C_P020_L030
+[2/4] RUN_NEW IA5/RP_C_P020_L100
+${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_rp_protoclad_task5/run.py --config ${RESEARCH_WORKSPACE}/structure_rp_protoclad_task5/configs/RP_C_P020_L100_IA5.json --gpu 2 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_rp_protoclad_task5/outputs --seed 1993
+[2/4] DONE IA5/RP_C_P020_L100
+[3/4] DEFER CAR5/RP_C_P020_L030: Structure=FAILED; C_P020_L030=PARTIAL
+[4/4] DEFER CAR5/RP_C_P020_L100: Structure=FAILED; C_P020_L100=NOT_STARTED
+wrote ${RESEARCH_WORKSPACE}/structure_rp_protoclad_task5/rp_experiment_plan.md
+KEEP_COMPLETE IA5/RP_C_P020_L030 parent=COMPLETE
+KEEP_COMPLETE IA5/RP_C_P020_L100 parent=COMPLETE
+WAIT_PARENT   CAR5/RP_C_P020_L030 parent=PARTIAL
+WAIT_PARENT   CAR5/RP_C_P020_L100 parent=NOT_STARTED
+wrote ${RESEARCH_WORKSPACE}/structure_rp_protoclad_task5/rp_protoclad_report.md
+RP TASK5 QUEUE FINISHED failures=0 deferred=2

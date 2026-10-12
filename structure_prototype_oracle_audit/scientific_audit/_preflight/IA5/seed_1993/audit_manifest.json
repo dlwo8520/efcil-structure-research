@@ -1,0 +1,63 @@
+{
+  "format_version": 2,
+  "status": "complete",
+  "protocol": "IA5",
+  "dataset": "imageneta",
+  "expected_tasks": 5,
+  "audited_tasks": [
+    2
+  ],
+  "complete_temporal_coverage": false,
+  "data_root": "${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a",
+  "oracle_splits": [
+    "train",
+    "test"
+  ],
+  "primary_oracle": "oracle_train_statistics",
+  "covariance_mode": "diagonal",
+  "oracle_head_eval_tasks": "all",
+  "oracle_head_epochs_override": null,
+  "oracle_head_samples_per_class_override": null,
+  "max_classes": null,
+  "max_samples_per_class": null,
+  "scientific_interpretation_allowed": false,
+  "ca_regression_status": "PASS",
+  "checkpoint_fingerprints_before_after_equal": true,
+  "leakage_guards": {
+    "model_eval": true,
+    "torch_no_grad": true,
+    "parameters_require_grad_false": true,
+    "optimizer_created_for_backbone_or_adapter": false,
+    "backward_called_on_backbone_or_adapter": false,
+    "diagnostic_optimizer_is_head_only": true,
+    "diagnostic_input_checksum_check": true,
+    "audit_values_returned_to_training": false,
+    "checkpoint_read_only_fingerprint_check": true
+  },
+  "checkpoint_fingerprints": [
+    {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA5/Structure_AUDIT/seed_1993/task_checkpoints/task_02.pt",
+      "size": 845749792,
+      "mtime_ns": 1790138765253326805,
+      "edge_sha256": "4651b9b1405dccd56bf4e178970fd0bb025433b0059babc8b7c066c91fac1252"
+    }
+  ],
+  "row_counts": {
+    "prototype_oracle_audit.csv": 160,
+    "apr_oracle_drift_audit.csv": 40,
+    "covariance_oracle_audit.csv": 160,
+    "mahalanobis_oracle_audit.csv": 160,
+    "prototype_classifier_audit.csv": 2,
+    "class_forgetting_correlation.csv": 36,
+    "class_accuracy_history.csv": 80,
+    "mahalanobis_nearest_old_ranking.csv": 1,
+    "apr_ablation_audit.csv": 40,
+    "oracle_classifier_replacement.csv": 5,
+    "new_class_competition_diagnostics.csv": 5,
+    "boundary_direction_error.csv": 40,
+    "margin_diagnostics.csv": 1690,
+    "gaussian_assumption_diagnostics.csv": 80,
+    "task_progression_summary.csv": 1
+  },
+  "elapsed_seconds": 35.37779664993286
+}

@@ -1,0 +1,47 @@
+{
+  "bank_mode": "original_all_class_Gaussian_per_epoch",
+  "rng_source": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/pre_ca_classifier/task_10.pt",
+  "note": "One bank was sampled per epoch and fed to both heads lockstep; bank hashes, not old feature exemplars, are persisted.",
+  "epochs": [
+    {
+      "epoch": 1,
+      "sample_n": 51200,
+      "features_sha256": "8130138cb89b7dcfe6d8fb6663cb0385d1f66e58a1eb41b8e4b3451e5de06d6e",
+      "labels_sha256": "7c5a52a19b162b8e9aad8e66f196ab31031864e2d8b950513bae818f1b13bd5d",
+      "shared_by_branches": true,
+      "original_eval_loader_base_seed_draw": 7621653698771998847
+    },
+    {
+      "epoch": 2,
+      "sample_n": 51200,
+      "features_sha256": "83bb4d63e48d3a174d117e8a3ddb58ba78c4097a5f5e4507cae89c48f899af0f",
+      "labels_sha256": "92b1d385e7ca88ef01f22194d56bdbcd91c5777df22988ee00fca090ee90bc27",
+      "shared_by_branches": true,
+      "original_eval_loader_base_seed_draw": 625414784132476662
+    },
+    {
+      "epoch": 3,
+      "sample_n": 51200,
+      "features_sha256": "e67ba3374a00eb8d2eaf7771ae5b2b67826870fa45495032edacf3fb10c72f7b",
+      "labels_sha256": "37a1bc4bdbffcc81338ea45f72372a235878d7578d091e0f57d35ea6b8ebb18c",
+      "shared_by_branches": true,
+      "original_eval_loader_base_seed_draw": 4032773414787794214
+    },
+    {
+      "epoch": 4,
+      "sample_n": 51200,
+      "features_sha256": "c44b41b3a2392c5bbf0e96f5db681fa6760f4d1d74cf6c5fc3ab1d1c20c253a2",
+      "labels_sha256": "53393cb038b8a0e3c6ff84001519610401eb8928b9511b602c77de06adeb68b9",
+      "shared_by_branches": true,
+      "original_eval_loader_base_seed_draw": 300047538239492677
+    },
+    {
+      "epoch": 5,
+      "sample_n": 51200,
+      "features_sha256": "e4f08408d2b9e09aec18999c502ace283be2652d1fe296e4714b140843c9cdf1",
+      "labels_sha256": "632d4e518cdb4919f759dc5da45ec8a99da9900ffc04da98301cccb869f810e8",
+      "shared_by_branches": true,
+      "original_eval_loader_base_seed_draw": 1729811072481224670
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "extends": "../common.json",
+  "protocol_id": "IA5",
+  "dataset": "IA5",
+  "source_dataset": "imageneta",
+  "expected_num_classes": 200,
+  "expected_tasks": 5,
+  "init_cls": 40,
+  "increment": 40,
+  "task_partition": [40, 40, 40, 40, 40]
+}

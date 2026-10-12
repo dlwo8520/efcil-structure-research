@@ -1,0 +1,19 @@
+nohup: ignoring input
+physical GPU=4 -> process-local cuda:0; protocol order=['IA5', 'CAR5']
+[start] IA5 T4→T5 pair-boundary diagnostic
+[IA5 +0.0s] loading fixed checkpoints and aligned T4/T5 feature caches
+[IA5 +0.4s] computing same-sample transitions and directional C/B/margin metrics
+[IA5 +29.1s] computing oracle/stored gamma in the current raw feature coordinate
+[IA5 +36.8s] evaluating random/prototype/oracle/stored rankings
+[IA5 +37.7s] running optional shared-covariance region explanation and plots
+[IA5 +40.6s] protocol complete
+[complete] IA5: elapsed=40.6s report=${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/pair_boundary_risk_diagnostic/IA5_T4_T5/IA5_pair_boundary_risk_report.md
+[start] CAR5 T4→T5 pair-boundary diagnostic
+[CAR5 +0.0s] loading fixed checkpoints and aligned T4/T5 feature caches
+[CAR5 +0.7s] computing same-sample transitions and directional C/B/margin metrics
+[CAR5 +27.2s] computing oracle/stored gamma in the current raw feature coordinate
+[CAR5 +36.2s] evaluating random/prototype/oracle/stored rankings
+[CAR5 +37.0s] running optional shared-covariance region explanation and plots
+[CAR5 +40.6s] protocol complete
+[complete] CAR5: elapsed=40.6s report=${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/pair_boundary_risk_diagnostic/CAR5_T4_T5/CAR5_pair_boundary_risk_report.md
+[complete] combined=${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/pair_boundary_risk_diagnostic/pair_boundary_risk_diagnostic_final_report.md

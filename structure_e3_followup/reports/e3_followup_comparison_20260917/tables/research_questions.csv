@@ -1,0 +1,7 @@
+﻿RQ,question,finding,uncertainty
+RQ1,"E3 제한은 아이디어 자체인가, loss 강도인가?",lambda 효과가 비단조적이며 L01만 Inc-Acc가 소폭 양수. 모든 lambda가 final new accuracy를 낮춤.,seed 1개; 강도와 raw feature norm 반응이 함께 바뀜.
+RQ2,PIC보다 covariance-aware E3가 유리한가?,이 seed에서는 L03가 PIC보다 Inc/Last/Forgetting이 모두 높음. PIC는 new를 높이고 old를 낮춤.,구현은 FCS 전체가 아닌 adapted PIC component.
+RQ3,E3가 feature norm을 키워 constraint를 회피하는가?,"lambda 증가와 함께 norm 증가, intrusion 감소가 선명하게 동반됨.",동반 관찰이며 인과 증명은 아님.
+RQ4,AHN이 geometry를 안정화하는가?,현재 AHN은 L03/B0보다 성능이 낮고 norm inflation도 유지되어 지지되지 않음.,lambda_ahn 및 margin sweep 없음.
+RQ5,CEOS가 plasticity를 더 잘 보존하는가?,new accuracy는 증가했으나 old/forgetting 손실이 더 커져 전체 성능은 저하.,Structure용 adapted CEOS이며 sample이 기록상 boundary에 가깝지 않음.
+RQ6,adaptive tau가 trade-off를 개선하는가?,AM-Drift만 Inc/Last/Forgetting을 동시에 관측 개선; variance는 forgetting 최저.,seed 1개이며 rule coefficient sweep 없음.

@@ -1,0 +1,12 @@
+{
+  "extends": "common.json",
+  "experiment_id": "S4",
+  "old_new_separation": true,
+  "sep_lambda": 0.3,
+  "adaptive_margin_mode": "drift",
+  "similarity_relation_mode": "soft_hybrid",
+  "relative_margin": 0.05,
+  "similarity_beta_source": "S0",
+  "soft_gate_temperature": 0.1
+}
+

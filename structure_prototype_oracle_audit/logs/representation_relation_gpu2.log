@@ -1,0 +1,29 @@
+nohup: ignoring input
+physical GPU=2 -> process-local cuda:0; protocol order=['IA5', 'CAR5']
+[start] IA5 T5 representation relation diagnostic
+[IA5 +0.0s] loading frozen T4/T5 metadata and cached T5 features
+[IA5 +1.2s] cosine→linear equivalence PASS; running three-setting linear sanity
+[IA5 +2.2s] linear/validation audit complete; computing directional pairs and margins
+[IA5 +2.3s] pair analysis complete; selecting k and running neighborhood diagnostics
+[IA5 +2.9s] k-NN diagnostic complete; extracting T4 features for the full T5 class set
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[IA5 +48.1s] T4 feature extraction/cache ready; fitting matched T4/T5 diagnostic probes
+[IA5 +54.9s] transition tables and plots complete; validating immutable checkpoints
+[IA5 +54.9s] protocol complete
+[complete] IA5: elapsed=54.9s report=${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/representation_relation_diagnostic/IA5_T5/IA5_representation_relation_report.md
+[start] CAR5 T5 representation relation diagnostic
+[CAR5 +0.0s] loading frozen T4/T5 metadata and cached T5 features
+[CAR5 +1.0s] cosine→linear equivalence PASS; running three-setting linear sanity
+[CAR5 +1.5s] linear/validation audit complete; computing directional pairs and margins
+[CAR5 +1.6s] pair analysis complete; selecting k and running neighborhood diagnostics
+[CAR5 +2.4s] k-NN diagnostic complete; extracting T4 features for the full T5 class set
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[CAR5 +91.6s] T4 feature extraction/cache ready; fitting matched T4/T5 diagnostic probes
+[CAR5 +97.4s] transition tables and plots complete; validating immutable checkpoints
+[CAR5 +97.4s] protocol complete
+[complete] CAR5: elapsed=97.4s report=${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/representation_relation_diagnostic/CAR5_T5/CAR5_representation_relation_report.md
+[complete] combined report=${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/representation_relation_diagnostic/representation_relation_diagnostic_final_report.md

@@ -1,0 +1,5 @@
+dataset,protocol,task,class_id,birth_task,class_age,is_old,num_test_samples,class_accuracy,best_previous_or_current_accuracy,forgetting,class_accuracy_drop,old_to_new_confusion
+imageneta,IA5,5,0,1,4,True,2,0.0,0.0,0.0,0.0,0.0
+imageneta,IA5,5,1,1,4,True,1,0.0,0.0,0.0,0.0,0.0
+imageneta,IA5,5,160,5,0,False,2,100.0,100.0,0.0,0.0,
+imageneta,IA5,5,161,5,0,False,1,0.0,0.0,0.0,0.0,

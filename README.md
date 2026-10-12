@@ -1,70 +1,91 @@
-# Exemplar-Free Class Incremental Learning via Preserving Class-Discriminative Structure
+# Structure-Based Exemplar-Free Class-Incremental Learning Research
 
-<div align="center">
+**Status: active exploratory research, as inspected on 2026-10-12 KST.** There is no confirmed common winning method or publication-ready claim. The latest prepared BOB-versus-strong-augmentation full-trajectory experiment has recorded GPU smoke failures and has not produced completed full comparison results. The report's proposed real-only SupCon pilot remains an idea; it was not implemented by this organization task.
 
-<div>
-    <a href='' target='_blank'>Xin Zhang</a><sup>1</sup>&emsp;
-    <a href='' target='_blank'>Liang Bai</a><sup>1,*</sup>&emsp;
-    <a href='' target='_blank'>Guanchao Wang</a><sup>1</sup>&emsp;
-    <a href='' target='_blank'>Xian Yang</a><sup>2</sup>
-</div>
-<div>
-<sup>1</sup>Institute of Intelligent Information Processing, Shanxi University, Taiyuan 030006, China&emsp;
-<sup>2</sup>Alliance Manchester Business School, The University of Manchester, Manchester M13 9PL, United Kingdom
-</div>
-<div>
-<sup>*</sup>Corresponding author
-</div>
-</div>
+## Project overview and research motivation
 
-The code repository for "Exemplar-Free Class Incremental Learning via Preserving Class-Discriminative Structure" in PyTorch. 
+Class-incremental learning adds classes over successive tasks and evaluates one classifier over all classes seen so far. Exemplar-free learning avoids retaining/replaying old raw images during ordinary incremental training. The challenge is to learn the new classes while preserving old decisions as representations and competitors change.
 
-## News
+This project started from the CDS/Structure implementation and examined whether local class geometry, old/new separation, prototype drift, or classifier adaptation explains errors and can be improved. It now also studies acquisition-time errors, local versus all-seen predictions, and matched conventional/generated augmentation. Diagnostic access to old data is clearly labelled and does not constitute exemplar-free method evidence.
 
-- [03/2026] The paper has been accepted by **CVPR 2026**.
+## Problem definition and research questions
 
-## Abstract
+- Do multi-center or Mahalanobis constraints improve learning without sacrificing new-class accuracy?
+- Does targeting similar old/new pairs resolve the stability/plasticity trade-off?
+- Is memory drift a performance bottleneck, or merely an observed phenomenon?
+- Do Gaussian feature sources and classifier procedures explain recoverable errors?
+- Where does a birth-time acquisition improvement fail to transfer to all-seen competition and later retention?
 
-Class-incremental learning (CIL) aims to enable models to continuously learn new classes while overcoming catastrophic forgetting. The emergence of large-scale pre-trained models, such as Vision Transformers (ViTs), has transformed the landscape of visual recognition. However, existing approaches overlook a crucial cause of catastrophic forgetting: the collapse of the class-discriminative structure, which comprises intra-class structure (characterizing the shape of individual classes) and inter-class structure (characterizing global geometric relationships among class prototypes).
+The source records show dataset-specific and negative results. Research hypotheses and verified observations are separated in [current status](docs/STATUS.md) and the preserved [evidence report](research_report_for_professor/EFCIL_research_report.md).
 
-To address these challenges, we propose a unified framework designed to maintain this structure through two complementary mechanisms:
-- **Adaptive Prototype Rectification (APR)**: Dynamically corrects old class prototypes by propagating displacement patterns from new prototypes to preserve the intra-class structure.
-- **Structural Consistency Constraint (SCC)**: A lightweight constraint that preserves inter-class structure by stabilizing the relationships between new task samples and old prototypes.
+## Methodology: inspected baseline and experimental changes
 
-Extensive experiments demonstrate that our framework outperforms existing leading methods on multiple EFCIL benchmarks, validating that preserving the class-discriminative structure is crucial for mitigating catastrophic forgetting.
+The local base derives from upstream CDS commit `a0db2168663982a4cad24981231721a3518ddf29`. Its actual implementation alternates teacher/student nonlinear ViT adapters; do not substitute the paper's LoRA description for the code. Stage 1 uses current-class classification and SCC. Current-class statistics are computed, APR rectifies old moments, and Gaussian feature classifier adaptation follows. No old raw-image replay is used in the ordinary baseline.
 
-## Pipeline
-
-<div align="center">
-<img src="results/overall_process.png" width="93%">
-</div>
-
-## Requirements
-
-### Dependencies
-
-Create the conda environment using the provided `cds.yaml`:
-
-```bash
-conda env create -f cds.yaml
-conda activate cds
+```mermaid
+flowchart TD
+  A[Current task images] --> B[Task-start statistics]
+  B --> C[Adapter learning: classification plus SCC]
+  D[Stored old class statistics] --> C
+  C --> E[Current class moments]
+  E --> F[APR rectification of old moments]
+  D --> F
+  F --> G[Gaussian feature classifier adaptation]
+  E --> G
+  G --> H[Single-head evaluation over seen classes]
 ```
 
-Or install the key dependencies manually:
-- Python 3.9.19
-- [PyTorch 2.4.1](https://pytorch.org/)
-- [torchvision 0.19.1](https://github.com/pytorch/vision)
-- [timm 0.6.12](https://github.com/huggingface/pytorch-image-models)
-- numpy, scipy, pillow, tqdm, pyyaml
+Verified changes include multi-center local statistics; diagonal/full Mahalanobis separation; adaptive margins; similarity controls; selective SCC/separation/Proto-CLAD; random-projection auxiliary geometry; stored birth projected prototypes; diagnostic oracle/source/probe procedures; cross-task reweighting; ranking-preserving corrections; and matched generation pilots. The [experiment catalogue](docs/EXPERIMENTS.md) identifies their baselines, source/config paths, result states and limitations. Adapted FCS/PIC, CEOS, SGDS, FeCAM and RP ideas are not full official reproductions unless explicitly supported by source provenance.
 
-## Training
+## Research and experiment workflow
 
-Run the main script:
+Early CIFAR diagnostics/PCDS/subspace studies → multi-center and old/new separation → adaptive and similarity controls → selective and RP experiments → memory/source/representation diagnostics → acquisition/error-trajectory analysis → conventional/generated-view comparison → local/all transition audit. The latest BOB full-trajectory preparation is a separate pending intervention. Exact documented dates and unresolved status conflicts appear in [history](docs/HISTORY.md); filesystem mtimes are only hints.
 
-```bash
-python main.py
+## Repository structure
+
+```text
+structure_multicenter_separation/        shared Structure implementation
+structure_e3_followup/                  adaptive/CEOS/PIC extensions
+structure_similarity_aware_followup/    similarity extension
+structure_selective_similarity_sweep/   protocol and selective methods
+structure_rp_protoclad_task5/           auxiliary RP geometry
+structure_stored_apr_rp/                stored birth projected moments
+structure_prototype_oracle_audit/       diagnostics and baseline metadata
+type_a_generative_augmentation/         completed matched pilot and raw evidence
+ia10_bob_vs_strong_full/                latest incomplete full-trajectory experiment
+<other original project directories>/  earlier methods, diagnostics and archives
+experiments/                            stable IDs, cards and config/run index
+research_log/                           evidenced dated entries and blank template
+docs/                                  methods, results, status and reproduction
+results/                               indexes; original raw results stay with experiments
+provenance/                            origin hashes, source snapshot objects and exclusions
+tools/                                 management and validation utilities
+environments/                          separate legacy/diagnostic/generator environments
+CHANGELOG.md                           evidence-based methodological changes
 ```
 
-## Citation
+Sibling paths and config inheritance are retained because later learners import earlier implementations. Baselines and proposals are labelled in the catalogue rather than forced into independent packages. Earlier handoff/bundle copies are preservation-only and are excluded from pooled comparisons.
 
+## Experimental setup
 
+The main IA5/IA10/CAR5/CAR10 studies use model seed 1993 and a ViT-B/16 adapter implementation. IA5 is 5×40 classes; IA10 is 10×20. Cars has 196 classes, so its tasks are not all equal. For the inspected ImageNet-A local split: 5,981 train / 1,519 test images, with content split hashes preserved in `protocol_manifest.json`. Its split provenance is not fully established; it is an internal controlled protocol rather than an exact official-paper reproduction.
+
+Representative main runs use 30 initial / 15 incremental epochs, SCC/APR and 256 Gaussian features per class for classifier adaptation. Exact settings vary across early and later studies; each `resolved_config.json` and task protocol takes precedence. [Environment and reproduction guide](docs/REPRODUCIBILITY.md) separates Python 3.9/timm .6.12 Structure from newer CIFAR diagnostics and generator environments.
+
+## Results
+
+The 5-task selective study has no method that improves average incremental accuracy on both datasets in the recorded single seed. StoredAPR RP reduces IA5 new-class accuracy by 1.845 pp relative to its Structure comparator. Oracle/source procedures are diagnostic and have dataset-specific gains; they are not deployment-ready EFCIL methods. The tested generic img2img recipe did not retain a common late/local/all-seen advantage over matched strong augmentation.
+
+[Results](docs/RESULTS.md) contains protocol-separated raw-source tables for incremental/final accuracy, forgetting and old/new accuracy, plus acquisition and repair/harm evidence. [Run index](results/cil_run_index.csv) records incomplete and smoke runs without treating them as completed results. The preserved [854-row numerical evidence table](research_report_for_professor/key_results.csv) includes metric units and source paths.
+
+## Limitations and future work
+
+Most headline comparisons use one model seed. Tiny improvements are descriptive, not significant. Oracle moments/real old banks, test-derived error subgroups and head probes are diagnostic-only. Initial source-exposure imbalance, inactive separation losses and cross-task CA parity failure remain documented. IA10 evaluation before and after `after_task` differs by one correct sample in saved records; matched controls are kept separate.
+
+The completed local/all audit maintains STOP for the tested generic generation recipe. A real-only current-task SupCon matched pilot is proposed in the latest synthesis, while the separate BOB-full comparison is implemented but interrupted at feasibility. Neither supplies successful-method evidence. Generator label fidelity remains unverified. [Status](docs/STATUS.md) records these distinct branches and open questions.
+
+## Continue the research
+
+Use [daily workflow](docs/WORKFLOW.md) and `python tools/new_experiment.py --help` to add a stable ID and linked code/config/result/analysis record. Write verified daily notes in `research_log/`, update `CHANGELOG.md` when the method changes, regenerate indexes, validate and make a normal Git commit. [한국어 안내](docs/GUIDE_KO.md) gives a short practical guide; [upload commands](docs/UPLOAD.md) publish privately after authentication.
+
+[Live experiment record index](docs/EXPERIMENT_INDEX.md) includes future registered experiments.

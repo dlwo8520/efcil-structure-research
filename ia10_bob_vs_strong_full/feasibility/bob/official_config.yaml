@@ -1,0 +1,13 @@
+{
+  "model": "${RESEARCH_WORKSPACE}/.cache/huggingface/hub/models--runwayml--stable-diffusion-v1-5/snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+  "data_path": "${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/feasibility/bob/real",
+  "caption_path": "${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/feasibility/bob/captions",
+  "lora_path": "${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/feasibility/bob/lora",
+  "synthetic_path": "${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/feasibility/bob/generated",
+  "template": "an object photo of a {} in the {} background with the {} pose",
+  "dataset": "imageneta_current_task",
+  "num_synth": 100,
+  "classnames": [
+    "box turtle"
+  ]
+}

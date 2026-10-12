@@ -1,0 +1,147 @@
+
+===== LAUNCH 2026-09-21T03:00:46.202473+00:00 =====
+PyTorch version: 2.4.1+cu121
+CUDA available: True
+Visible physical GPUs: ['1']
+--- Starting CAR5/B_P010_A100 ---
+2026-09-21 12:00:50,756 [trainer.py] => experiment_id: B_P010_A100
+2026-09-21 12:00:50,757 [trainer.py] => prefix: selective_similarity_sweep
+2026-09-21 12:00:50,757 [trainer.py] => dataset: CAR5
+2026-09-21 12:00:50,757 [trainer.py] => data_root: ${RESEARCH_WORKSPACE}/cds-main/data/cars196
+2026-09-21 12:00:50,757 [trainer.py] => output_root: ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs
+2026-09-21 12:00:50,757 [trainer.py] => expected_num_classes: 196
+2026-09-21 12:00:50,757 [trainer.py] => expected_tasks: 5
+2026-09-21 12:00:50,757 [trainer.py] => verify_split_content: False
+2026-09-21 12:00:50,757 [trainer.py] => shuffle: True
+2026-09-21 12:00:50,757 [trainer.py] => init_cls: 40
+2026-09-21 12:00:50,757 [trainer.py] => increment: 39
+2026-09-21 12:00:50,757 [trainer.py] => model_name: adapter
+2026-09-21 12:00:50,757 [trainer.py] => followup_extension: True
+2026-09-21 12:00:50,757 [trainer.py] => similarity_aware_extension: True
+2026-09-21 12:00:50,757 [trainer.py] => convnet_type: pretrained_vit_b16_224_in21k_adapter
+2026-09-21 12:00:50,757 [trainer.py] => seed: 1993
+2026-09-21 12:00:50,757 [trainer.py] => init_epochs: 30
+2026-09-21 12:00:50,757 [trainer.py] => inc_epochs: 15
+2026-09-21 12:00:50,757 [trainer.py] => ca: True
+2026-09-21 12:00:50,757 [trainer.py] => ca_epochs: 5
+2026-09-21 12:00:50,757 [trainer.py] => replay_samples_per_class: 256
+2026-09-21 12:00:50,757 [trainer.py] => init_lr: 0.01
+2026-09-21 12:00:50,757 [trainer.py] => batch_size: 48
+2026-09-21 12:00:50,757 [trainer.py] => stats_batch_size: 64
+2026-09-21 12:00:50,757 [trainer.py] => num_workers: 8
+2026-09-21 12:00:50,757 [trainer.py] => weight_decay: 0.0005
+2026-09-21 12:00:50,757 [trainer.py] => min_lr: 0.0
+2026-09-21 12:00:50,757 [trainer.py] => optimizer: sgd
+2026-09-21 12:00:50,757 [trainer.py] => ffn_num: 64
+2026-09-21 12:00:50,757 [trainer.py] => vpt_type: shallow
+2026-09-21 12:00:50,757 [trainer.py] => prompt_token_num: 5
+2026-09-21 12:00:50,757 [trainer.py] => adapter_placement: mlp
+2026-09-21 12:00:50,757 [trainer.py] => adapter_interval: 1
+2026-09-21 12:00:50,757 [trainer.py] => flag: 0
+2026-09-21 12:00:50,757 [trainer.py] => scale: 20.0
+2026-09-21 12:00:50,757 [trainer.py] => margin: 0.2
+2026-09-21 12:00:50,757 [trainer.py] => scc: True
+2026-09-21 12:00:50,757 [trainer.py] => scc_value: 5.0
+2026-09-21 12:00:50,757 [trainer.py] => feature: False
+2026-09-21 12:00:50,757 [trainer.py] => logit: False
+2026-09-21 12:00:50,757 [trainer.py] => apr: True
+2026-09-21 12:00:50,757 [trainer.py] => gamma_weight: 10.0
+2026-09-21 12:00:50,757 [trainer.py] => cov: 5.0
+2026-09-21 12:00:50,758 [trainer.py] => multi_center: False
+2026-09-21 12:00:50,758 [trainer.py] => num_prototypes: 1
+2026-09-21 12:00:50,758 [trainer.py] => kmeans_initialization: kmeans++
+2026-09-21 12:00:50,758 [trainer.py] => kmeans_n_init: 10
+2026-09-21 12:00:50,758 [trainer.py] => kmeans_max_iter: 100
+2026-09-21 12:00:50,758 [trainer.py] => cluster_min_samples: 2
+2026-09-21 12:00:50,758 [trainer.py] => stats_cov_jitter: 0.001
+2026-09-21 12:00:50,758 [trainer.py] => old_new_separation: True
+2026-09-21 12:00:50,758 [trainer.py] => separation_covariance: diagonal
+2026-09-21 12:00:50,758 [trainer.py] => sep_lambda: 0.3
+2026-09-21 12:00:50,758 [trainer.py] => sep_percentile: 95.0
+2026-09-21 12:00:50,758 [trainer.py] => sep_tau_floor: 1e-08
+2026-09-21 12:00:50,758 [trainer.py] => sep_reduction: max_relative_intrusion
+2026-09-21 12:00:50,758 [trainer.py] => sep_timing: epoch_apr_cache
+2026-09-21 12:00:50,758 [trainer.py] => sep_boundary_policy: birth_quantile_fixed
+2026-09-21 12:00:50,758 [trainer.py] => sep_refresh_epochs: 1
+2026-09-21 12:00:50,758 [trainer.py] => sep_cov_eigen_floor: 1e-06
+2026-09-21 12:00:50,758 [trainer.py] => sep_cholesky_initial_jitter: 1e-06
+2026-09-21 12:00:50,758 [trainer.py] => sep_cholesky_jitter_multiplier: 10.0
+2026-09-21 12:00:50,758 [trainer.py] => sep_cholesky_max_tries: 6
+2026-09-21 12:00:50,758 [trainer.py] => sep_region_chunk_size: 8
+2026-09-21 12:00:50,758 [trainer.py] => sep_factor_device: cpu
+2026-09-21 12:00:50,758 [trainer.py] => sep_grad_diagnostics: True
+2026-09-21 12:00:50,758 [trainer.py] => checkpoint_every_epoch: True
+2026-09-21 12:00:50,758 [trainer.py] => pic_enabled: False
+2026-09-21 12:00:50,758 [trainer.py] => pic_lambda: 1.0
+2026-09-21 12:00:50,758 [trainer.py] => pic_temperature: 0.07
+2026-09-21 12:00:50,758 [trainer.py] => ahn_enabled: False
+2026-09-21 12:00:50,758 [trainer.py] => ahn_lambda: 1.0
+2026-09-21 12:00:50,758 [trainer.py] => ahn_margin: 0.5
+2026-09-21 12:00:50,758 [trainer.py] => ahn_top_k: 2
+2026-09-21 12:00:50,758 [trainer.py] => normalized_diagonal: False
+2026-09-21 12:00:50,758 [trainer.py] => adaptive_margin_mode: drift
+2026-09-21 12:00:50,758 [trainer.py] => adaptive_margin_strength: 0.25
+2026-09-21 12:00:50,758 [trainer.py] => adaptive_margin_min_scale: 0.5
+2026-09-21 12:00:50,758 [trainer.py] => adaptive_margin_max_scale: 2.0
+2026-09-21 12:00:50,758 [trainer.py] => ceos_replay_fraction: 0.0
+2026-09-21 12:00:50,758 [trainer.py] => ceos_lambda_min: 0.7
+2026-09-21 12:00:50,758 [trainer.py] => ceos_enemy_top_k: 1
+2026-09-21 12:00:50,758 [trainer.py] => ceos_log_samples: False
+2026-09-21 12:00:50,758 [trainer.py] => prototype_refresh_epochs: 1
+2026-09-21 12:00:50,758 [trainer.py] => diagnostic_grad_interval: 20
+2026-09-21 12:00:50,758 [trainer.py] => top_k_similar_old: 5
+2026-09-21 12:00:50,759 [trainer.py] => similarity_relation_mode: enlarged_boundary
+2026-09-21 12:00:50,759 [trainer.py] => similarity_alpha: 0.5
+2026-09-21 12:00:50,759 [trainer.py] => relative_margin: 0.05
+2026-09-21 12:00:50,759 [trainer.py] => similarity_beta_source: task_quantile
+2026-09-21 12:00:50,759 [trainer.py] => similarity_beta_quantile: 0.75
+2026-09-21 12:00:50,759 [trainer.py] => similarity_beta_fixed: None
+2026-09-21 12:00:50,759 [trainer.py] => similarity_scc_enabled: False
+2026-09-21 12:00:50,759 [trainer.py] => similarity_scc_alpha: 0.5
+2026-09-21 12:00:50,759 [trainer.py] => similarity_scc_min_weight: 0.5
+2026-09-21 12:00:50,759 [trainer.py] => soft_gate_temperature: 0.1
+2026-09-21 12:00:50,759 [trainer.py] => diagnostic_sample_rows: True
+2026-09-21 12:00:50,759 [trainer.py] => class_order_seed: 1993
+2026-09-21 12:00:50,759 [trainer.py] => diagnostic_pair_interval: 20
+2026-09-21 12:00:50,759 [trainer.py] => diagnostic_pair_epochs: last
+2026-09-21 12:00:50,759 [trainer.py] => diagnostic_table_format: csv_fallback_without_pyarrow
+2026-09-21 12:00:50,759 [trainer.py] => selective_method: enlarged_boundary
+2026-09-21 12:00:50,759 [trainer.py] => top_p: 0.1
+2026-09-21 12:00:50,759 [trainer.py] => alpha: 1.0
+2026-09-21 12:00:50,759 [trainer.py] => lambda_clad: None
+2026-09-21 12:00:50,759 [trainer.py] => protocol_id: CAR5
+2026-09-21 12:00:50,759 [trainer.py] => source_dataset: car196
+2026-09-21 12:00:50,759 [trainer.py] => task_partition: [40, 39, 39, 39, 39]
+2026-09-21 12:00:50,759 [trainer.py] => method: B
+2026-09-21 12:00:50,759 [trainer.py] => method_name: Similarity-Enlarged Boundary
+2026-09-21 12:00:50,759 [trainer.py] => config: ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/configs/protocols/CAR5.json
+2026-09-21 12:00:50,759 [trainer.py] => base_root: ${RESEARCH_WORKSPACE}/structure_multicenter_separation
+2026-09-21 12:00:50,759 [trainer.py] => extension_root: ${RESEARCH_WORKSPACE}/structure_e3_followup
+2026-09-21 12:00:50,759 [trainer.py] => e3_root: ${RESEARCH_WORKSPACE}/structure_e3_followup
+2026-09-21 12:00:50,759 [trainer.py] => similarity_extension_root: ${RESEARCH_WORKSPACE}/structure_similarity_aware_followup
+2026-09-21 12:00:50,759 [trainer.py] => selective_sweep_root: ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep
+2026-09-21 12:00:50,759 [trainer.py] => selective_sweep_extension: True
+2026-09-21 12:00:50,759 [trainer.py] => device: [device(type='cuda', index=0)]
+2026-09-21 12:00:50,759 [trainer.py] => physical_gpus: ['1']
+2026-09-21 12:00:50,759 [trainer.py] => launch_command: ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol CAR5 --run-id B_P010_A100 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/cds-main/data/cars196 --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+2026-09-21 12:00:50,759 [trainer.py] => source_snapshot_hash: bd05fcbca5235be574757e29d4b632464a92cfdd24968afb5a94831fbb75e147
+2026-09-21 12:00:50,759 [trainer.py] => git_commit: None
+2026-09-21 12:00:50,759 [trainer.py] => git_diff_hash: None
+2026-09-21 12:00:50,759 [trainer.py] => run_dir: ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs/CAR5/B_P010_A100/seed_1993
+2026-09-21 12:00:50,759 [trainer.py] => recording_gaps: []
+This is for the BaseNet initialization.
+2026-09-21 12:01:19,385 [inc_net.py] => Adapter placement strategy: mlp
+2026-09-21 12:01:19,385 [inc_net.py] => Adapter interval: 1
+I'm using ViT with adapters.
+After BaseNet initialization.
+2026-09-21 12:01:28,092 [CDS_adapter.py] => Learning on 0-40
+The number of training dataset: 1692
+  0%|          | 0/30 [00:00<?, ?it/s]Task 0, Epoch 1/30 => Loss 6.699, Train_accy 32.09, Test_accy 57.64:   0%|          | 0/30 [00:24<?, ?it/s]Task 0, Epoch 1/30 => Loss 6.699, Train_accy 32.09, Test_accy 57.64:   3%|▎         | 1/30 [00:25<12:13, 25.29s/it]Task 0, Epoch 2/30 => Loss 4.518, Train_accy 63.48, Test_accy 67.42:   3%|▎         | 1/30 [00:49<12:13, 25.29s/it]Task 0, Epoch 2/30 => Loss 4.518, Train_accy 63.48, Test_accy 67.42:   7%|▋         | 2/30 [00:50<11:44, 25.15s/it]Task 0, Epoch 3/30 => Loss 3.870, Train_accy 72.10, Test_accy 73.27:   7%|▋         | 2/30 [01:15<11:44, 25.15s/it]Task 0, Epoch 3/30 => Loss 3.870, Train_accy 72.10, Test_accy 73.27:  10%|█         | 3/30 [01:15<11:22, 25.26s/it]Task 0, Epoch 4/30 => Loss 3.561, Train_accy 77.01, Test_accy 77.80:  10%|█         | 3/30 [01:40<11:22, 25.26s/it]Task 0, Epoch 4/30 => Loss 3.561, Train_accy 77.01, Test_accy 77.80:  13%|█▎        | 4/30 [01:41<10:58, 25.32s/it]Task 0, Epoch 5/30 => Loss 3.304, Train_accy 81.26, Test_accy 79.36:  13%|█▎        | 4/30 [02:05<10:58, 25.32s/it]Task 0, Epoch 5/30 => Loss 3.304, Train_accy 81.26, Test_accy 79.36:  17%|█▋        | 5/30 [02:06<10:33, 25.34s/it]Task 0, Epoch 6/30 => Loss 3.123, Train_accy 81.32, Test_accy 79.71:  17%|█▋        | 5/30 [02:31<10:33, 25.34s/it]Task 0, Epoch 6/30 => Loss 3.123, Train_accy 81.32, Test_accy 79.71:  20%|██        | 6/30 [02:31<10:08, 25.37s/it]Task 0, Epoch 7/30 => Loss 3.033, Train_accy 84.52, Test_accy 82.70:  20%|██        | 6/30 [02:56<10:08, 25.37s/it]Task 0, Epoch 7/30 => Loss 3.033, Train_accy 84.52, Test_accy 82.70:  23%|██▎       | 7/30 [02:57<09:44, 25.39s/it]Task 0, Epoch 8/30 => Loss 2.964, Train_accy 84.69, Test_accy 83.00:  23%|██▎       | 7/30 [03:22<09:44, 25.39s/it]Task 0, Epoch 8/30 => Loss 2.964, Train_accy 84.69, Test_accy 83.00:  27%|██▋       | 8/30 [03:23<09:20, 25.49s/it]Task 0, Epoch 9/30 => Loss 2.826, Train_accy 87.00, Test_accy 85.38:  27%|██▋       | 8/30 [03:48<09:20, 25.49s/it]Task 0, Epoch 9/30 => Loss 2.826, Train_accy 87.00, Test_accy 85.38:  30%|███       | 9/30 [03:48<08:55, 25.50s/it]Task 0, Epoch 10/30 => Loss 2.782, Train_accy 85.70, Test_accy 86.34:  30%|███       | 9/30 [04:13<08:55, 25.50s/it]Task 0, Epoch 10/30 => Loss 2.782, Train_accy 85.70, Test_accy 86.34:  33%|███▎      | 10/30 [04:14<08:30, 25.51s/it]Task 0, Epoch 11/30 => Loss 2.720, Train_accy 85.93, Test_accy 85.98:  33%|███▎      | 10/30 [04:39<08:30, 25.51s/it]Task 0, Epoch 11/30 => Loss 2.720, Train_accy 85.93, Test_accy 85.98:  37%|███▋      | 11/30 [04:39<08:05, 25.56s/it]Task 0, Epoch 12/30 => Loss 2.718, Train_accy 87.00, Test_accy 86.28:  37%|███▋      | 11/30 [05:04<08:05, 25.56s/it]Task 0, Epoch 12/30 => Loss 2.718, Train_accy 87.00, Test_accy 86.28:  40%|████      | 12/30 [05:05<07:39, 25.55s/it]Task 0, Epoch 13/30 => Loss 2.637, Train_accy 88.53, Test_accy 87.59:  40%|████      | 12/30 [05:30<07:39, 25.55s/it]Task 0, Epoch 13/30 => Loss 2.637, Train_accy 88.53, Test_accy 87.59:  43%|████▎     | 13/30 [05:31<07:15, 25.61s/it]Task 0, Epoch 14/30 => Loss 2.645, Train_accy 87.29, Test_accy 87.59:  43%|████▎     | 13/30 [05:56<07:15, 25.61s/it]Task 0, Epoch 14/30 => Loss 2.645, Train_accy 87.29, Test_accy 87.59:  47%|████▋     | 14/30 [05:56<06:49, 25.62s/it]Task 0, Epoch 15/30 => Loss 2.525, Train_accy 89.18, Test_accy 87.11:  47%|████▋     | 14/30 [06:21<06:49, 25.62s/it]Task 0, Epoch 15/30 => Loss 2.525, Train_accy 89.18, Test_accy 87.11:  50%|█████     | 15/30 [06:22<06:23, 25.59s/it]Task 0, Epoch 16/30 => Loss 2.516, Train_accy 89.13, Test_accy 87.71:  50%|█████     | 15/30 [06:47<06:23, 25.59s/it]Task 0, Epoch 16/30 => Loss 2.516, Train_accy 89.13, Test_accy 87.71:  53%|█████▎    | 16/30 [06:47<05:57, 25.57s/it]Task 0, Epoch 17/30 => Loss 2.532, Train_accy 88.89, Test_accy 88.19:  53%|█████▎    | 16/30 [07:12<05:57, 25.57s/it]Task 0, Epoch 17/30 => Loss 2.532, Train_accy 88.89, Test_accy 88.19:  57%|█████▋    | 17/30 [07:13<05:32, 25.55s/it]Task 0, Epoch 18/30 => Loss 2.508, Train_accy 87.29, Test_accy 88.19:  57%|█████▋    | 17/30 [07:38<05:32, 25.55s/it]Task 0, Epoch 18/30 => Loss 2.508, Train_accy 87.29, Test_accy 88.19:  60%|██████    | 18/30 [07:38<05:06, 25.52s/it]Task 0, Epoch 19/30 => Loss 2.410, Train_accy 89.36, Test_accy 88.72:  60%|██████    | 18/30 [08:03<05:06, 25.52s/it]Task 0, Epoch 19/30 => Loss 2.410, Train_accy 89.36, Test_accy 88.72:  63%|██████▎   | 19/30 [08:04<04:40, 25.52s/it]Task 0, Epoch 20/30 => Loss 2.421, Train_accy 89.72, Test_accy 88.42:  63%|██████▎   | 19/30 [08:29<04:40, 25.52s/it]Task 0, Epoch 20/30 => Loss 2.421, Train_accy 89.72, Test_accy 88.42:  67%|██████▋   | 20/30 [08:29<04:15, 25.58s/it]Task 0, Epoch 21/30 => Loss 2.439, Train_accy 88.36, Test_accy 88.78:  67%|██████▋   | 20/30 [08:54<04:15, 25.58s/it]Task 0, Epoch 21/30 => Loss 2.439, Train_accy 88.36, Test_accy 88.78:  70%|███████   | 21/30 [08:55<03:50, 25.62s/it]Task 0, Epoch 22/30 => Loss 2.467, Train_accy 89.42, Test_accy 89.38:  70%|███████   | 21/30 [09:20<03:50, 25.62s/it]Task 0, Epoch 22/30 => Loss 2.467, Train_accy 89.42, Test_accy 89.38:  73%|███████▎  | 22/30 [09:21<03:25, 25.68s/it]Task 0, Epoch 23/30 => Loss 2.396, Train_accy 90.31, Test_accy 89.14:  73%|███████▎  | 22/30 [09:46<03:25, 25.68s/it]Task 0, Epoch 23/30 => Loss 2.396, Train_accy 90.31, Test_accy 89.14:  77%|███████▋  | 23/30 [09:47<02:59, 25.68s/it]Task 0, Epoch 24/30 => Loss 2.393, Train_accy 90.07, Test_accy 89.32:  77%|███████▋  | 23/30 [10:12<02:59, 25.68s/it]Task 0, Epoch 24/30 => Loss 2.393, Train_accy 90.07, Test_accy 89.32:  80%|████████  | 24/30 [10:12<02:33, 25.66s/it]Task 0, Epoch 25/30 => Loss 2.386, Train_accy 89.24, Test_accy 89.44:  80%|████████  | 24/30 [10:37<02:33, 25.66s/it]Task 0, Epoch 25/30 => Loss 2.386, Train_accy 89.24, Test_accy 89.44:  83%|████████▎ | 25/30 [10:38<02:08, 25.62s/it]Task 0, Epoch 26/30 => Loss 2.388, Train_accy 89.78, Test_accy 88.96:  83%|████████▎ | 25/30 [11:03<02:08, 25.62s/it]Task 0, Epoch 26/30 => Loss 2.388, Train_accy 89.78, Test_accy 88.96:  87%|████████▋ | 26/30 [11:04<01:42, 25.65s/it]Task 0, Epoch 27/30 => Loss 2.432, Train_accy 89.36, Test_accy 89.14:  87%|████████▋ | 26/30 [11:28<01:42, 25.65s/it]Task 0, Epoch 27/30 => Loss 2.432, Train_accy 89.36, Test_accy 89.14:  90%|█████████ | 27/30 [11:29<01:16, 25.58s/it]Task 0, Epoch 28/30 => Loss 2.345, Train_accy 91.02, Test_accy 89.08:  90%|█████████ | 27/30 [11:54<01:16, 25.58s/it]Task 0, Epoch 28/30 => Loss 2.345, Train_accy 91.02, Test_accy 89.08:  93%|█████████▎| 28/30 [11:55<00:51, 25.61s/it]Task 0, Epoch 29/30 => Loss 2.331, Train_accy 91.43, Test_accy 89.02:  93%|█████████▎| 28/30 [12:19<00:51, 25.61s/it]Task 0, Epoch 29/30 => Loss 2.331, Train_accy 91.43, Test_accy 89.02:  97%|█████████▋| 29/30 [12:20<00:25, 25.56s/it]Task 0, Epoch 30/30 => Loss 2.364, Train_accy 89.89, Test_accy 88.96:  97%|█████████▋| 29/30 [12:45<00:25, 25.56s/it]Task 0, Epoch 30/30 => Loss 2.364, Train_accy 89.89, Test_accy 88.96: 100%|██████████| 30/30 [12:46<00:00, 25.53s/it]Task 0, Epoch 30/30 => Loss 2.364, Train_accy 89.89, Test_accy 88.96: 100%|██████████| 30/30 [12:46<00:00, 25.54s/it]
+2.0257135108981057
+2026-09-21 12:15:15,961 [trainer.py] => Task 0 metrics: {'task': 0, 'task_id': 1, 'eval_stage': 'task_final', 'seen_classes': 40, 'num_correct': 1491, 'num_samples': 1676, 'A_t': 88.9618138424821, 'top5_num_correct': 1654, 'top5': 98.68735083532219, 'old_num_correct': None, 'old_num_samples': 0, 'old_accuracy': None, 'new_num_correct': 1491, 'new_num_samples': 1676, 'new_accuracy': 88.9618138424821, 'old_to_new_error_rate': None, 'new_to_old_error_rate': 0.0, 'inc_accuracy_so_far': 88.9618138424821, 'forgetting_so_far': None, 'training_seconds': 817.9968419600045, 'peak_cuda_allocated_bytes': 6281271296, 'peak_cuda_reserved_bytes': 8944353280, 'peak_main_process_rss_bytes': 4402339840, 'class_statistics_bytes': 94617600, 'region_statistics_bytes': 94495680, 'separation_cache_bytes': 0, 'total_statistics_bytes': 189113280, 'statistics_and_cache_bytes': 189113280, 'status': 'complete'}
+2026-09-21 12:15:16,732 [CDS_adapter.py] => Learning on 40-79
+The number of training dataset: 1608
+  0%|          | 0/15 [00:00<?, ?it/s]2026-09-21 12:16:04,668 [learner.py] => Frozen old-model similarity task=2 shape=(39, 40) beta=0.275720 source=task_quantile
+2026-09-21 12:16:15,194 [learner.py] => Follow-up cache: {'task': 1, 'epoch': 0, 'feature_space': 'task_1:epoch_0_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 40, 'cache_storage_bytes': 246240, 'refresh_seconds': 10.51858045195695}
+Task 1, Epoch 1/15 => Loss 5.589, Train_accy 25.31, Test_accy 74.64:   0%|          | 0/15 [00:55<?, ?it/s]Task 1, Epoch 1/15 => Loss 5.589, Train_accy 25.31, Test_accy 74.64:   7%|▋         | 1/15 [00:56<13:13, 56.65s/it]2026-09-21 12:17:01,291 [learner.py] => Follow-up cache: {'task': 1, 'epoch': 1, 'feature_space': 'task_1:epoch_1_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 40, 'cache_storage_bytes': 246240, 'refresh_seconds': 10.739533923915587}
+Task 1, Epoch 2/15 => Loss 3.427, Train_accy 71.27, Test_accy 79.36:   7%|▋         | 1/15 [01:41<13:13, 56.65s/it]Task 1, Epoch 2/15 => Loss 3.427, Train_accy 71.27, Test_accy 79.36:  13%|█▎        | 2/15 [01:42<10:55, 50.39s/it]2026-09-21 12:17:47,047 [learner.py] => Follow-up cache: {'task': 1, 'epoch': 2, 'feature_space': 'task_1:epoch_2_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 40, 'cache_storage_bytes': 246240, 'refresh_seconds': 10.492587923072278}

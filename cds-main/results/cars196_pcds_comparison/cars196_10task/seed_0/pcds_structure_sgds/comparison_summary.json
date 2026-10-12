@@ -1,0 +1,43 @@
+{
+  "pcds": {
+    "method": "pcds_full",
+    "average_incremental_accuracy": 0.594486568919893,
+    "final_accuracy": 0.33739584628777514,
+    "final_old_accuracy": 0.2808562525403062,
+    "final_new_accuracy": 0.9696969696969697,
+    "average_forgetting": 0.6701837845885998,
+    "old_new_gap": -0.6888407171566635,
+    "peak_cuda_allocated_gb": 2.9753565788269043,
+    "optimizer_skipped_steps": 0,
+    "nonfinite_steps": 0
+  },
+  "pcds_structure_sgds": {
+    "method": "pcds_structure_sgds",
+    "average_incremental_accuracy": 0.5091401653930131,
+    "final_accuracy": 0.1548314886208183,
+    "final_old_accuracy": 0.08088334913968297,
+    "final_new_accuracy": 0.9818181818181818,
+    "average_forgetting": 0.8750247609770248,
+    "old_new_gap": -0.9009348326784988,
+    "peak_cuda_allocated_gb": 2.981907367706299,
+    "optimizer_skipped_steps": 0,
+    "nonfinite_steps": 0
+  },
+  "delta": {
+    "average_incremental_accuracy": -0.08534640352687994,
+    "final_accuracy": -0.18256435766695683,
+    "final_old_accuracy": -0.19997290340062324,
+    "final_new_accuracy": 0.012121212121212088,
+    "average_forgetting": 0.2048409763884249,
+    "old_new_gap": -0.21209411552183532
+  },
+  "semantic_diagnostics": {
+    "old_class_count_vs_mean_s_old_correlation": 0.8165034193489781,
+    "max_old_cosine_vs_reuse_correlation": 0.33559829070917147,
+    "max_old_cosine_vs_final_class_accuracy_correlation": 0.2558123195304142,
+    "cars_mixed_strategy_tasks": 1,
+    "cifar_mixed_strategy_tasks": 1
+  },
+  "effective_rank_mean_delta": -0.03500000000000014,
+  "cars_final_delta_exceeds_cifar": false
+}

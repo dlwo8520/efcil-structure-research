@@ -1,0 +1,520 @@
+2026-08-13 12:37:09 | INFO | method=pcds_structure_sgds flags={'apr': True, 'scc': True, 'ca': True} output=${RESEARCH_WORKSPACE}/cds-main/results/cars196_pcds_comparison/cars196_10task/seed_0/pcds_structure_sgds
+2026-08-13 12:37:09 | INFO | protocol={'dataset': 'Stanford Cars-196', 'tasks': 10, 'task_sizes': [20, 20, 20, 20, 20, 20, 20, 20, 20, 16], 'classes': 196, 'class_order': 'cds_cars196_seed1993', 'class_order_seed': 1993, 'data_protocol': 'official train/test ImageFolder split', 'class_order_matches_keep_lora': False, 'single_head_all_seen_classes': True, 'raw_replay': False, 'old_train_data_access': False, 'synthetic_features_train_classifier_only': True, 'sgds_activation_guidance': True, 'gpu': {'CUDA_VISIBLE_DEVICES': '3', 'torch_cuda_device_count': 1, 'torch_cuda_current_device': 0, 'torch_cuda_device_name': 'NVIDIA RTX A6000', 'torch_cuda_device_uuid': 'd213eba7-1551-206d-b6e9-bc708945a73a'}}
+2026-08-13 12:37:10 | INFO | metadata={'method': 'pcds_structure_sgds', 'adaptation_type': 'parallel attention K/V nonlinear bottleneck adapters', 'adapter_trainable_parameters': 2416128, 'task0_classifier_trainable_parameters': 15360, 'task0_total_trainable_parameters': 2431488, 'total_model_parameters': 88214784, 'classifier_scale': 20.0, 'source_paper': 'Exemplar-Free Class Incremental Learning via Preserving Class-Discriminative Structure', 'released_code_reference': '${RESEARCH_WORKSPACE}/cds-main', 'scc_teacher': 'transient frozen immediately-preceding backbone deepcopy', 'classifier_adaptation_sampling': 'direct Eq. (11) Gaussian; no age-dependent mean scaling', 'result_label': 'PCDS Stanford Cars-196 adaptation', 'task_sizes': [20, 20, 20, 20, 20, 20, 20, 20, 20, 16], 'training_seed': 0, 'class_order_seed': 1993, 'use_sgds': True, 'sgds_trainable_parameters': 0, 'combined_method': 'PCDS + SGDS activation-space guidance', 'sgds_target_layer': 11, 'sgds_paper_k': 0.6, 'sgds_k_interpretation': 'TopK floor(kN): 60% retain, 40% zero', 'sgds_training_only_mask': True, 'sgds_eq6_includes_self': True, 'sgds_excluded': ['task-specific adapter bank', 'inference retrieval/fusion/entropy selection', 'SGDS prototype classifier and MOS alignment']}
+2026-08-13 12:37:10 | INFO | starting task=0 classes=0..19 size=20 epochs=70
+2026-08-13 12:37:12 | INFO | SGDS strategy task=0 reuse=0 allocation=20 reuse_ratio=0.000 Eq6_self=true
+2026-08-13 12:37:14 | INFO | task=0 step=0 ce=6.7086 scc=-0.00000 total=6.7086 acc=0.812
+2026-08-13 12:37:15 | INFO | task=0 step=25 ce=5.0786 scc=-0.00000 total=5.0786 acc=0.938
+2026-08-13 12:37:17 | INFO | task=0 step=50 ce=5.5000 scc=-0.00000 total=5.5000 acc=0.688
+2026-08-13 12:37:19 | INFO | task=0 step=75 ce=4.4669 scc=-0.00000 total=4.4669 acc=0.812
+2026-08-13 12:37:21 | INFO | task=0 step=100 ce=3.9092 scc=-0.00000 total=3.9092 acc=0.938
+2026-08-13 12:37:23 | INFO | task=0 step=125 ce=4.6245 scc=-0.00000 total=4.6245 acc=0.688
+2026-08-13 12:37:25 | INFO | task=0 step=150 ce=3.6809 scc=-0.00000 total=3.6809 acc=0.750
+2026-08-13 12:37:27 | INFO | task=0 step=175 ce=3.5932 scc=-0.00000 total=3.5932 acc=0.844
+2026-08-13 12:37:29 | INFO | task=0 step=200 ce=3.5958 scc=-0.00000 total=3.5958 acc=0.750
+2026-08-13 12:37:31 | INFO | task=0 step=225 ce=3.8883 scc=-0.00000 total=3.8883 acc=0.750
+2026-08-13 12:37:33 | INFO | task=0 step=250 ce=2.8523 scc=-0.00000 total=2.8523 acc=0.875
+2026-08-13 12:37:35 | INFO | task=0 step=275 ce=3.0210 scc=-0.00000 total=3.0210 acc=0.844
+2026-08-13 12:37:37 | INFO | task=0 step=300 ce=2.7605 scc=-0.00000 total=2.7605 acc=0.844
+2026-08-13 12:37:39 | INFO | task=0 step=325 ce=2.7426 scc=-0.00000 total=2.7426 acc=0.906
+2026-08-13 12:37:41 | INFO | task=0 step=350 ce=2.7070 scc=-0.00000 total=2.7070 acc=0.906
+2026-08-13 12:37:43 | INFO | task=0 step=375 ce=2.0524 scc=-0.00000 total=2.0524 acc=0.906
+2026-08-13 12:37:45 | INFO | task=0 step=400 ce=2.4131 scc=-0.00000 total=2.4131 acc=0.812
+2026-08-13 12:37:47 | INFO | task=0 step=425 ce=2.9797 scc=-0.00000 total=2.9797 acc=0.875
+2026-08-13 12:37:49 | INFO | task=0 step=450 ce=1.8867 scc=-0.00000 total=1.8867 acc=0.938
+2026-08-13 12:37:51 | INFO | task=0 step=475 ce=2.7932 scc=-0.00000 total=2.7932 acc=0.875
+2026-08-13 12:37:53 | INFO | task=0 step=500 ce=2.0066 scc=-0.00000 total=2.0066 acc=0.906
+2026-08-13 12:37:55 | INFO | task=0 step=525 ce=2.3922 scc=-0.00000 total=2.3922 acc=0.844
+2026-08-13 12:37:57 | INFO | task=0 step=550 ce=2.1705 scc=-0.00000 total=2.1705 acc=0.875
+2026-08-13 12:37:59 | INFO | task=0 step=575 ce=2.7933 scc=-0.00000 total=2.7933 acc=0.812
+2026-08-13 12:38:01 | INFO | task=0 step=600 ce=1.8138 scc=-0.00000 total=1.8138 acc=0.906
+2026-08-13 12:38:03 | INFO | task=0 step=625 ce=1.8419 scc=-0.00000 total=1.8419 acc=0.938
+2026-08-13 12:38:05 | INFO | task=0 step=650 ce=1.7888 scc=-0.00000 total=1.7888 acc=0.938
+2026-08-13 12:38:06 | INFO | task=0 step=675 ce=1.6941 scc=-0.00000 total=1.6941 acc=0.906
+2026-08-13 12:38:08 | INFO | task=0 step=700 ce=1.7732 scc=-0.00000 total=1.7732 acc=0.938
+2026-08-13 12:38:10 | INFO | task=0 step=725 ce=1.6375 scc=-0.00000 total=1.6375 acc=0.938
+2026-08-13 12:38:12 | INFO | task=0 step=750 ce=1.7707 scc=-0.00000 total=1.7707 acc=0.938
+2026-08-13 12:38:14 | INFO | task=0 step=775 ce=1.8166 scc=-0.00000 total=1.8166 acc=0.906
+2026-08-13 12:38:16 | INFO | task=0 step=800 ce=1.3209 scc=-0.00000 total=1.3209 acc=0.906
+2026-08-13 12:38:18 | INFO | task=0 step=825 ce=1.5674 scc=-0.00000 total=1.5674 acc=0.906
+2026-08-13 12:38:20 | INFO | task=0 step=850 ce=1.3657 scc=-0.00000 total=1.3657 acc=0.969
+2026-08-13 12:38:22 | INFO | task=0 step=875 ce=1.0603 scc=-0.00000 total=1.0603 acc=0.938
+2026-08-13 12:38:24 | INFO | task=0 step=900 ce=1.9856 scc=-0.00000 total=1.9856 acc=0.875
+2026-08-13 12:38:26 | INFO | task=0 step=925 ce=1.5813 scc=-0.00000 total=1.5813 acc=0.906
+2026-08-13 12:38:28 | INFO | task=0 step=950 ce=1.3504 scc=-0.00000 total=1.3504 acc=0.938
+2026-08-13 12:38:30 | INFO | task=0 step=975 ce=0.6022 scc=-0.00000 total=0.6022 acc=1.000
+2026-08-13 12:38:32 | INFO | task=0 step=1000 ce=0.8673 scc=-0.00000 total=0.8673 acc=0.969
+2026-08-13 12:38:34 | INFO | task=0 step=1025 ce=1.9452 scc=-0.00000 total=1.9452 acc=0.844
+2026-08-13 12:38:36 | INFO | task=0 step=1050 ce=2.0940 scc=-0.00000 total=2.0940 acc=0.875
+2026-08-13 12:38:38 | INFO | task=0 step=1075 ce=0.7127 scc=-0.00000 total=0.7127 acc=1.000
+2026-08-13 12:38:40 | INFO | task=0 step=1100 ce=1.5649 scc=-0.00000 total=1.5649 acc=0.906
+2026-08-13 12:38:42 | INFO | task=0 step=1125 ce=0.6544 scc=-0.00000 total=0.6544 acc=1.000
+2026-08-13 12:38:44 | INFO | task=0 step=1150 ce=1.5688 scc=-0.00000 total=1.5688 acc=0.906
+2026-08-13 12:38:46 | INFO | task=0 step=1175 ce=1.5066 scc=-0.00000 total=1.5066 acc=0.969
+2026-08-13 12:38:48 | INFO | task=0 step=1200 ce=1.6404 scc=-0.00000 total=1.6404 acc=0.969
+2026-08-13 12:38:50 | INFO | task=0 step=1225 ce=0.7788 scc=-0.00000 total=0.7788 acc=0.969
+2026-08-13 12:38:52 | INFO | task=0 step=1250 ce=1.1074 scc=-0.00000 total=1.1074 acc=0.969
+2026-08-13 12:38:54 | INFO | task=0 step=1275 ce=1.5050 scc=-0.00000 total=1.5050 acc=0.938
+2026-08-13 12:38:56 | INFO | task=0 step=1300 ce=0.9470 scc=-0.00000 total=0.9470 acc=1.000
+2026-08-13 12:38:58 | INFO | task=0 step=1325 ce=0.9812 scc=-0.00000 total=0.9812 acc=0.969
+2026-08-13 12:38:59 | INFO | task=0 step=1350 ce=0.9767 scc=-0.00000 total=0.9767 acc=0.938
+2026-08-13 12:39:01 | INFO | task=0 step=1375 ce=0.4344 scc=-0.00000 total=0.4344 acc=1.000
+2026-08-13 12:39:04 | INFO | task=0 step=1400 ce=0.6748 scc=-0.00000 total=0.6748 acc=1.000
+2026-08-13 12:39:06 | INFO | task=0 step=1425 ce=1.1005 scc=-0.00000 total=1.1005 acc=1.000
+2026-08-13 12:39:08 | INFO | task=0 step=1450 ce=0.9201 scc=-0.00000 total=0.9201 acc=0.969
+2026-08-13 12:39:10 | INFO | task=0 step=1475 ce=0.9888 scc=-0.00000 total=0.9888 acc=0.938
+2026-08-13 12:39:12 | INFO | task=0 step=1500 ce=1.1010 scc=-0.00000 total=1.1010 acc=0.938
+2026-08-13 12:39:14 | INFO | task=0 step=1525 ce=0.4136 scc=-0.00000 total=0.4136 acc=1.000
+2026-08-13 12:39:16 | INFO | task=0 step=1550 ce=1.7927 scc=-0.00000 total=1.7927 acc=0.844
+2026-08-13 12:39:18 | INFO | task=0 step=1575 ce=0.8416 scc=-0.00000 total=0.8416 acc=1.000
+2026-08-13 12:39:19 | INFO | task=0 step=1600 ce=1.0706 scc=-0.00000 total=1.0706 acc=0.906
+2026-08-13 12:39:21 | INFO | task=0 step=1625 ce=0.7795 scc=-0.00000 total=0.7795 acc=0.969
+2026-08-13 12:39:23 | INFO | task=0 step=1650 ce=1.2149 scc=-0.00000 total=1.2149 acc=0.969
+2026-08-13 12:39:25 | INFO | task=0 step=1675 ce=1.4200 scc=-0.00000 total=1.4200 acc=0.938
+2026-08-13 12:39:27 | INFO | task=0 step=1700 ce=0.9538 scc=-0.00000 total=0.9538 acc=0.938
+2026-08-13 12:39:29 | INFO | task=0 step=1725 ce=0.8426 scc=-0.00000 total=0.8426 acc=0.969
+2026-08-13 12:39:31 | INFO | task=0 step=1750 ce=2.2276 scc=-0.00000 total=2.2276 acc=0.781
+2026-08-13 12:39:33 | INFO | task=0 step=1775 ce=0.7317 scc=-0.00000 total=0.7317 acc=0.938
+2026-08-13 12:39:35 | INFO | task=0 step=1800 ce=1.0381 scc=-0.00000 total=1.0381 acc=0.969
+2026-08-13 12:39:38 | INFO | SGDS activation task=0 target_layer=11 actual_nonzero=0.5946 actual_zero=0.4054 mean_active=456.7 r99_mean=39.0
+2026-08-13 12:39:42 | INFO | finished task=0 seen=0.9630 old=nan new=0.9630 forget=0.0000 CA_delta=+0.0000 peak=2.63GB
+2026-08-13 12:39:42 | INFO | starting task=1 classes=20..39 size=20 epochs=40
+2026-08-13 12:39:44 | INFO | SGDS strategy task=1 reuse=11 allocation=9 reuse_ratio=0.550 Eq6_self=true
+2026-08-13 12:39:46 | INFO | task=1 step=0 ce=5.1579 scc=0.01066 total=5.2112 acc=0.812
+2026-08-13 12:39:49 | INFO | task=1 step=25 ce=4.7947 scc=0.05348 total=5.0621 acc=0.812
+2026-08-13 12:39:51 | INFO | task=1 step=50 ce=4.4163 scc=0.06331 total=4.7328 acc=0.781
+2026-08-13 12:39:54 | INFO | task=1 step=75 ce=4.4858 scc=0.05249 total=4.7482 acc=0.781
+2026-08-13 12:39:57 | INFO | task=1 step=100 ce=3.2091 scc=0.06572 total=3.5377 acc=0.875
+2026-08-13 12:39:59 | INFO | task=1 step=125 ce=2.4602 scc=0.07663 total=2.8433 acc=0.875
+2026-08-13 12:40:02 | INFO | task=1 step=150 ce=2.0752 scc=0.06971 total=2.4237 acc=0.969
+2026-08-13 12:40:05 | INFO | task=1 step=175 ce=2.4332 scc=0.08175 total=2.8420 acc=0.906
+2026-08-13 12:40:07 | INFO | task=1 step=200 ce=1.2396 scc=0.09391 total=1.7092 acc=1.000
+2026-08-13 12:40:10 | INFO | task=1 step=225 ce=2.0062 scc=0.09430 total=2.4777 acc=0.906
+2026-08-13 12:40:12 | INFO | task=1 step=250 ce=2.2335 scc=0.12218 total=2.8444 acc=0.938
+2026-08-13 12:40:15 | INFO | task=1 step=275 ce=2.2978 scc=0.09698 total=2.7827 acc=0.875
+2026-08-13 12:40:18 | INFO | task=1 step=300 ce=1.5459 scc=0.10061 total=2.0490 acc=0.938
+2026-08-13 12:40:20 | INFO | task=1 step=325 ce=1.4612 scc=0.07714 total=1.8469 acc=0.906
+2026-08-13 12:40:23 | INFO | task=1 step=350 ce=1.7462 scc=0.09868 total=2.2396 acc=0.906
+2026-08-13 12:40:26 | INFO | task=1 step=375 ce=1.7781 scc=0.07140 total=2.1351 acc=0.906
+2026-08-13 12:40:28 | INFO | task=1 step=400 ce=1.1735 scc=0.10745 total=1.7108 acc=0.969
+2026-08-13 12:40:31 | INFO | task=1 step=425 ce=1.6388 scc=0.11121 total=2.1948 acc=1.000
+2026-08-13 12:40:34 | INFO | task=1 step=450 ce=0.8291 scc=0.10132 total=1.3357 acc=1.000
+2026-08-13 12:40:36 | INFO | task=1 step=475 ce=1.3771 scc=0.10082 total=1.8812 acc=0.938
+2026-08-13 12:40:39 | INFO | task=1 step=500 ce=1.3719 scc=0.08226 total=1.7831 acc=0.938
+2026-08-13 12:40:41 | INFO | task=1 step=525 ce=2.1005 scc=0.10143 total=2.6077 acc=0.938
+2026-08-13 12:40:44 | INFO | task=1 step=550 ce=1.9294 scc=0.08938 total=2.3763 acc=0.906
+2026-08-13 12:40:47 | INFO | task=1 step=575 ce=1.3587 scc=0.09578 total=1.8376 acc=0.906
+2026-08-13 12:40:49 | INFO | task=1 step=600 ce=2.0335 scc=0.08885 total=2.4778 acc=0.875
+2026-08-13 12:40:52 | INFO | task=1 step=625 ce=0.5958 scc=0.08172 total=1.0044 acc=1.000
+2026-08-13 12:40:55 | INFO | task=1 step=650 ce=1.1139 scc=0.09998 total=1.6138 acc=0.969
+2026-08-13 12:40:57 | INFO | task=1 step=675 ce=1.4527 scc=0.09403 total=1.9229 acc=1.000
+2026-08-13 12:41:00 | INFO | task=1 step=700 ce=1.8518 scc=0.10308 total=2.3672 acc=0.906
+2026-08-13 12:41:02 | INFO | task=1 step=725 ce=1.3555 scc=0.08998 total=1.8054 acc=0.906
+2026-08-13 12:41:05 | INFO | task=1 step=750 ce=1.3471 scc=0.09193 total=1.8068 acc=0.938
+2026-08-13 12:41:07 | INFO | task=1 step=775 ce=1.4274 scc=0.08853 total=1.8700 acc=0.906
+2026-08-13 12:41:10 | INFO | task=1 step=800 ce=1.0201 scc=0.08116 total=1.4258 acc=0.938
+2026-08-13 12:41:13 | INFO | task=1 step=825 ce=0.9455 scc=0.09594 total=1.4252 acc=1.000
+2026-08-13 12:41:15 | INFO | task=1 step=850 ce=1.2305 scc=0.07702 total=1.6156 acc=0.969
+2026-08-13 12:41:18 | INFO | task=1 step=875 ce=1.2062 scc=0.08005 total=1.6064 acc=0.969
+2026-08-13 12:41:21 | INFO | task=1 step=900 ce=1.7639 scc=0.08746 total=2.2012 acc=0.875
+2026-08-13 12:41:23 | INFO | task=1 step=925 ce=1.3139 scc=0.07296 total=1.6787 acc=0.969
+2026-08-13 12:41:26 | INFO | task=1 step=950 ce=1.4186 scc=0.09451 total=1.8911 acc=0.969
+2026-08-13 12:41:29 | INFO | task=1 step=975 ce=0.8995 scc=0.08047 total=1.3018 acc=1.000
+2026-08-13 12:41:31 | INFO | task=1 step=1000 ce=0.9064 scc=0.08467 total=1.3298 acc=0.938
+2026-08-13 12:41:34 | INFO | task=1 step=1025 ce=1.1239 scc=0.07085 total=1.4781 acc=0.938
+2026-08-13 12:41:37 | INFO | SGDS activation task=1 target_layer=11 actual_nonzero=0.5261 actual_zero=0.4739 mean_active=404.1 r99_mean=38.5
+2026-08-13 12:41:41 | INFO | CA task=1 epoch=1/5 loss=0.5108 synthetic_acc=0.879
+2026-08-13 12:41:41 | INFO | CA task=1 epoch=2/5 loss=0.1428 synthetic_acc=0.965
+2026-08-13 12:41:41 | INFO | CA task=1 epoch=3/5 loss=0.1210 synthetic_acc=0.975
+2026-08-13 12:41:41 | INFO | CA task=1 epoch=4/5 loss=0.1117 synthetic_acc=0.979
+2026-08-13 12:41:41 | INFO | CA task=1 epoch=5/5 loss=0.1075 synthetic_acc=0.980
+2026-08-13 12:41:46 | INFO | finished task=1 seen=0.8944 old=0.8258 new=0.9630 forget=0.1372 CA_delta=+0.1939 peak=2.98GB
+2026-08-13 12:41:46 | INFO | starting task=2 classes=40..59 size=20 epochs=40
+2026-08-13 12:41:47 | INFO | SGDS strategy task=2 reuse=20 allocation=0 reuse_ratio=1.000 Eq6_self=true
+2026-08-13 12:41:49 | INFO | task=2 step=0 ce=5.5616 scc=0.11378 total=6.1305 acc=0.781
+2026-08-13 12:41:52 | INFO | task=2 step=25 ce=4.8876 scc=0.03887 total=5.0820 acc=0.750
+2026-08-13 12:41:55 | INFO | task=2 step=50 ce=4.0592 scc=0.04733 total=4.2958 acc=0.844
+2026-08-13 12:41:57 | INFO | task=2 step=75 ce=3.8523 scc=0.05499 total=4.1273 acc=0.875
+2026-08-13 12:42:00 | INFO | task=2 step=100 ce=3.7173 scc=0.09314 total=4.1830 acc=0.875
+2026-08-13 12:42:03 | INFO | task=2 step=125 ce=2.9555 scc=0.06800 total=3.2955 acc=0.938
+2026-08-13 12:42:05 | INFO | task=2 step=150 ce=3.6415 scc=0.09023 total=4.0927 acc=0.875
+2026-08-13 12:42:08 | INFO | task=2 step=175 ce=2.9562 scc=0.09217 total=3.4170 acc=0.906
+2026-08-13 12:42:10 | INFO | task=2 step=200 ce=3.1585 scc=0.09058 total=3.6115 acc=0.875
+2026-08-13 12:42:13 | INFO | task=2 step=225 ce=2.8950 scc=0.07852 total=3.2877 acc=0.906
+2026-08-13 12:42:16 | INFO | task=2 step=250 ce=2.7728 scc=0.08392 total=3.1923 acc=0.875
+2026-08-13 12:42:18 | INFO | task=2 step=275 ce=3.3279 scc=0.07566 total=3.7062 acc=0.812
+2026-08-13 12:42:21 | INFO | task=2 step=300 ce=2.0068 scc=0.08273 total=2.4205 acc=0.938
+2026-08-13 12:42:23 | INFO | task=2 step=325 ce=3.0046 scc=0.11189 total=3.5641 acc=0.812
+2026-08-13 12:42:26 | INFO | task=2 step=350 ce=1.7458 scc=0.08905 total=2.1910 acc=0.969
+2026-08-13 12:42:29 | INFO | task=2 step=375 ce=2.8735 scc=0.09988 total=3.3729 acc=0.812
+2026-08-13 12:42:31 | INFO | task=2 step=400 ce=1.7813 scc=0.09092 total=2.2359 acc=0.906
+2026-08-13 12:42:34 | INFO | task=2 step=425 ce=2.8239 scc=0.12090 total=3.4284 acc=0.875
+2026-08-13 12:42:37 | INFO | task=2 step=450 ce=2.1645 scc=0.11176 total=2.7233 acc=0.906
+2026-08-13 12:42:39 | INFO | task=2 step=475 ce=2.2818 scc=0.11433 total=2.8534 acc=0.906
+2026-08-13 12:42:42 | INFO | task=2 step=500 ce=2.3822 scc=0.09120 total=2.8383 acc=0.906
+2026-08-13 12:42:44 | INFO | task=2 step=525 ce=1.8147 scc=0.08698 total=2.2495 acc=0.906
+2026-08-13 12:42:47 | INFO | task=2 step=550 ce=1.6457 scc=0.08994 total=2.0954 acc=0.906
+2026-08-13 12:42:50 | INFO | task=2 step=575 ce=2.0961 scc=0.11688 total=2.6805 acc=0.906
+2026-08-13 12:42:52 | INFO | task=2 step=600 ce=1.7567 scc=0.11001 total=2.3068 acc=0.938
+2026-08-13 12:42:55 | INFO | task=2 step=625 ce=1.2870 scc=0.10263 total=1.8001 acc=0.969
+2026-08-13 12:42:57 | INFO | task=2 step=650 ce=1.3266 scc=0.09261 total=1.7897 acc=0.969
+2026-08-13 12:43:00 | INFO | task=2 step=675 ce=1.2232 scc=0.11697 total=1.8081 acc=0.969
+2026-08-13 12:43:02 | INFO | task=2 step=700 ce=2.4042 scc=0.10753 total=2.9418 acc=0.812
+2026-08-13 12:43:05 | INFO | task=2 step=725 ce=1.9517 scc=0.11218 total=2.5126 acc=0.938
+2026-08-13 12:43:08 | INFO | task=2 step=750 ce=1.0161 scc=0.11977 total=1.6150 acc=1.000
+2026-08-13 12:43:10 | INFO | task=2 step=775 ce=1.9452 scc=0.08822 total=2.3863 acc=0.969
+2026-08-13 12:43:13 | INFO | task=2 step=800 ce=2.3481 scc=0.08968 total=2.7965 acc=0.906
+2026-08-13 12:43:15 | INFO | task=2 step=825 ce=2.3985 scc=0.11928 total=2.9949 acc=0.875
+2026-08-13 12:43:18 | INFO | task=2 step=850 ce=1.5077 scc=0.13432 total=2.1793 acc=1.000
+2026-08-13 12:43:21 | INFO | task=2 step=875 ce=1.8432 scc=0.11815 total=2.4339 acc=0.906
+2026-08-13 12:43:23 | INFO | task=2 step=900 ce=2.1564 scc=0.08644 total=2.5886 acc=0.938
+2026-08-13 12:43:26 | INFO | task=2 step=925 ce=0.9957 scc=0.12046 total=1.5980 acc=1.000
+2026-08-13 12:43:28 | INFO | task=2 step=950 ce=2.0346 scc=0.10154 total=2.5423 acc=0.875
+2026-08-13 12:43:31 | INFO | task=2 step=975 ce=1.2775 scc=0.10407 total=1.7979 acc=0.969
+2026-08-13 12:43:35 | INFO | SGDS activation task=2 target_layer=11 actual_nonzero=0.5175 actual_zero=0.4825 mean_active=397.5 r99_mean=37.2
+2026-08-13 12:43:40 | INFO | CA task=2 epoch=1/5 loss=0.4202 synthetic_acc=0.901
+2026-08-13 12:43:40 | INFO | CA task=2 epoch=2/5 loss=0.2112 synthetic_acc=0.975
+2026-08-13 12:43:40 | INFO | CA task=2 epoch=3/5 loss=0.1966 synthetic_acc=0.979
+2026-08-13 12:43:40 | INFO | CA task=2 epoch=4/5 loss=0.1899 synthetic_acc=0.980
+2026-08-13 12:43:40 | INFO | CA task=2 epoch=5/5 loss=0.1830 synthetic_acc=0.982
+2026-08-13 12:43:45 | INFO | finished task=2 seen=0.8026 old=0.7279 new=0.9568 forget=0.2351 CA_delta=+0.3160 peak=2.98GB
+2026-08-13 12:43:45 | INFO | starting task=3 classes=60..79 size=20 epochs=40
+2026-08-13 12:43:47 | INFO | SGDS strategy task=3 reuse=20 allocation=0 reuse_ratio=1.000 Eq6_self=true
+2026-08-13 12:43:50 | INFO | task=3 step=0 ce=6.2387 scc=0.36947 total=8.0861 acc=0.688
+2026-08-13 12:43:53 | INFO | task=3 step=25 ce=4.8419 scc=0.10481 total=5.3659 acc=0.750
+2026-08-13 12:43:55 | INFO | task=3 step=50 ce=3.7040 scc=0.06538 total=4.0309 acc=0.906
+2026-08-13 12:43:58 | INFO | task=3 step=75 ce=3.1150 scc=0.05687 total=3.3993 acc=0.938
+2026-08-13 12:44:01 | INFO | task=3 step=100 ce=3.5415 scc=0.09114 total=3.9971 acc=0.938
+2026-08-13 12:44:04 | INFO | task=3 step=125 ce=3.3960 scc=0.07029 total=3.7474 acc=0.812
+2026-08-13 12:44:06 | INFO | task=3 step=150 ce=3.0438 scc=0.09293 total=3.5084 acc=0.938
+2026-08-13 12:44:09 | INFO | task=3 step=175 ce=3.6225 scc=0.08761 total=4.0606 acc=0.812
+2026-08-13 12:44:12 | INFO | task=3 step=200 ce=2.8846 scc=0.08020 total=3.2856 acc=0.906
+2026-08-13 12:44:15 | INFO | task=3 step=225 ce=2.5610 scc=0.12375 total=3.1797 acc=0.875
+2026-08-13 12:44:17 | INFO | task=3 step=250 ce=2.1584 scc=0.10005 total=2.6586 acc=0.969
+2026-08-13 12:44:20 | INFO | task=3 step=275 ce=2.3355 scc=0.12548 total=2.9629 acc=0.938
+2026-08-13 12:44:23 | INFO | task=3 step=300 ce=2.4669 scc=0.11192 total=3.0265 acc=0.844
+2026-08-13 12:44:25 | INFO | task=3 step=325 ce=2.2781 scc=0.12506 total=2.9034 acc=0.938
+2026-08-13 12:44:28 | INFO | task=3 step=350 ce=1.6642 scc=0.10622 total=2.1953 acc=1.000
+2026-08-13 12:44:31 | INFO | task=3 step=375 ce=2.1185 scc=0.09637 total=2.6003 acc=0.938
+2026-08-13 12:44:33 | INFO | task=3 step=400 ce=2.3987 scc=0.10044 total=2.9009 acc=0.875
+2026-08-13 12:44:36 | INFO | task=3 step=425 ce=2.0205 scc=0.12233 total=2.6322 acc=0.938
+2026-08-13 12:44:39 | INFO | task=3 step=450 ce=1.4186 scc=0.12264 total=2.0318 acc=1.000
+2026-08-13 12:44:41 | INFO | task=3 step=475 ce=1.5235 scc=0.12131 total=2.1301 acc=0.969
+2026-08-13 12:44:44 | INFO | task=3 step=500 ce=2.5809 scc=0.11434 total=3.1526 acc=0.906
+2026-08-13 12:44:47 | INFO | task=3 step=525 ce=1.7106 scc=0.10840 total=2.2526 acc=0.938
+2026-08-13 12:44:49 | INFO | task=3 step=550 ce=1.6566 scc=0.12633 total=2.2882 acc=0.906
+2026-08-13 12:44:52 | INFO | task=3 step=575 ce=1.8482 scc=0.11791 total=2.4377 acc=0.969
+2026-08-13 12:44:55 | INFO | task=3 step=600 ce=2.4179 scc=0.13284 total=3.0821 acc=0.875
+2026-08-13 12:44:58 | INFO | task=3 step=625 ce=1.5271 scc=0.11509 total=2.1025 acc=0.969
+2026-08-13 12:45:00 | INFO | task=3 step=650 ce=2.4882 scc=0.11260 total=3.0512 acc=0.875
+2026-08-13 12:45:03 | INFO | task=3 step=675 ce=1.6712 scc=0.11804 total=2.2614 acc=0.969
+2026-08-13 12:45:06 | INFO | task=3 step=700 ce=1.4946 scc=0.10082 total=1.9987 acc=0.938
+2026-08-13 12:45:08 | INFO | task=3 step=725 ce=1.3734 scc=0.11106 total=1.9287 acc=0.969
+2026-08-13 12:45:11 | INFO | task=3 step=750 ce=1.7018 scc=0.10942 total=2.2489 acc=0.938
+2026-08-13 12:45:14 | INFO | task=3 step=775 ce=1.5835 scc=0.12400 total=2.2035 acc=0.969
+2026-08-13 12:45:16 | INFO | task=3 step=800 ce=1.6020 scc=0.10334 total=2.1187 acc=0.906
+2026-08-13 12:45:19 | INFO | task=3 step=825 ce=1.2348 scc=0.10566 total=1.7631 acc=0.969
+2026-08-13 12:45:22 | INFO | task=3 step=850 ce=1.0651 scc=0.10467 total=1.5884 acc=0.969
+2026-08-13 12:45:25 | INFO | task=3 step=875 ce=1.6674 scc=0.12843 total=2.3095 acc=0.906
+2026-08-13 12:45:27 | INFO | task=3 step=900 ce=1.1047 scc=0.09379 total=1.5737 acc=1.000
+2026-08-13 12:45:30 | INFO | task=3 step=925 ce=2.0840 scc=0.08964 total=2.5322 acc=0.906
+2026-08-13 12:45:33 | INFO | task=3 step=950 ce=0.9389 scc=0.10983 total=1.4881 acc=1.000
+2026-08-13 12:45:35 | INFO | task=3 step=975 ce=2.0627 scc=0.09899 total=2.5576 acc=0.906
+2026-08-13 12:45:40 | INFO | SGDS activation task=3 target_layer=11 actual_nonzero=0.5375 actual_zero=0.4625 mean_active=412.8 r99_mean=36.8
+2026-08-13 12:45:46 | INFO | CA task=3 epoch=1/5 loss=0.4975 synthetic_acc=0.907
+2026-08-13 12:45:46 | INFO | CA task=3 epoch=2/5 loss=0.2914 synthetic_acc=0.975
+2026-08-13 12:45:46 | INFO | CA task=3 epoch=3/5 loss=0.2711 synthetic_acc=0.979
+2026-08-13 12:45:46 | INFO | CA task=3 epoch=4/5 loss=0.2680 synthetic_acc=0.980
+2026-08-13 12:45:46 | INFO | CA task=3 epoch=5/5 loss=0.2596 synthetic_acc=0.981
+2026-08-13 12:45:52 | INFO | finished task=3 seen=0.6498 old=0.5448 new=0.9694 forget=0.4129 CA_delta=+0.3759 peak=2.98GB
+2026-08-13 12:45:52 | INFO | starting task=4 classes=80..99 size=20 epochs=40
+2026-08-13 12:45:54 | INFO | SGDS strategy task=4 reuse=20 allocation=0 reuse_ratio=1.000 Eq6_self=true
+2026-08-13 12:45:56 | INFO | task=4 step=0 ce=6.0448 scc=0.42709 total=8.1803 acc=0.844
+2026-08-13 12:45:59 | INFO | task=4 step=25 ce=5.3710 scc=0.07482 total=5.7451 acc=0.844
+2026-08-13 12:46:01 | INFO | task=4 step=50 ce=4.4720 scc=0.04914 total=4.7177 acc=0.938
+2026-08-13 12:46:04 | INFO | task=4 step=75 ce=4.1902 scc=0.04882 total=4.4343 acc=0.875
+2026-08-13 12:46:06 | INFO | task=4 step=100 ce=3.3227 scc=0.06858 total=3.6656 acc=0.969
+2026-08-13 12:46:09 | INFO | task=4 step=125 ce=4.6921 scc=0.07421 total=5.0632 acc=0.781
+2026-08-13 12:46:12 | INFO | task=4 step=150 ce=3.7783 scc=0.07842 total=4.1704 acc=0.875
+2026-08-13 12:46:14 | INFO | task=4 step=175 ce=2.7745 scc=0.11719 total=3.3604 acc=0.969
+2026-08-13 12:46:17 | INFO | task=4 step=200 ce=3.3962 scc=0.10120 total=3.9022 acc=0.938
+2026-08-13 12:46:20 | INFO | task=4 step=225 ce=3.2700 scc=0.10673 total=3.8037 acc=0.844
+2026-08-13 12:46:22 | INFO | task=4 step=250 ce=2.5955 scc=0.13220 total=3.2565 acc=0.938
+2026-08-13 12:46:25 | INFO | task=4 step=275 ce=3.0121 scc=0.12891 total=3.6567 acc=0.938
+2026-08-13 12:46:27 | INFO | task=4 step=300 ce=2.5505 scc=0.11384 total=3.1197 acc=0.875
+2026-08-13 12:46:30 | INFO | task=4 step=325 ce=2.9344 scc=0.11535 total=3.5111 acc=0.906
+2026-08-13 12:46:33 | INFO | task=4 step=350 ce=2.1004 scc=0.11278 total=2.6643 acc=0.938
+2026-08-13 12:46:35 | INFO | task=4 step=375 ce=2.1691 scc=0.12512 total=2.7947 acc=0.906
+2026-08-13 12:46:38 | INFO | task=4 step=400 ce=2.0588 scc=0.10491 total=2.5834 acc=0.938
+2026-08-13 12:46:40 | INFO | task=4 step=425 ce=2.5168 scc=0.15356 total=3.2846 acc=0.906
+2026-08-13 12:46:43 | INFO | task=4 step=450 ce=1.8022 scc=0.11670 total=2.3857 acc=0.938
+2026-08-13 12:46:46 | INFO | task=4 step=475 ce=2.3261 scc=0.16579 total=3.1551 acc=0.906
+2026-08-13 12:46:48 | INFO | task=4 step=500 ce=3.7386 scc=0.10728 total=4.2751 acc=0.781
+2026-08-13 12:46:51 | INFO | task=4 step=525 ce=2.1590 scc=0.10701 total=2.6941 acc=0.906
+2026-08-13 12:46:53 | INFO | task=4 step=550 ce=2.7502 scc=0.12871 total=3.3937 acc=0.938
+2026-08-13 12:46:56 | INFO | task=4 step=575 ce=2.4710 scc=0.12120 total=3.0770 acc=0.906
+2026-08-13 12:46:59 | INFO | task=4 step=600 ce=1.9648 scc=0.11534 total=2.5415 acc=0.938
+2026-08-13 12:47:01 | INFO | task=4 step=625 ce=1.7270 scc=0.12587 total=2.3564 acc=0.969
+2026-08-13 12:47:04 | INFO | task=4 step=650 ce=2.2630 scc=0.11820 total=2.8540 acc=0.906
+2026-08-13 12:47:06 | INFO | task=4 step=675 ce=1.6665 scc=0.15562 total=2.4445 acc=0.969
+2026-08-13 12:47:09 | INFO | task=4 step=700 ce=2.4114 scc=0.11903 total=3.0065 acc=0.906
+2026-08-13 12:47:12 | INFO | task=4 step=725 ce=1.8946 scc=0.12464 total=2.5178 acc=0.969
+2026-08-13 12:47:14 | INFO | task=4 step=750 ce=2.0053 scc=0.12780 total=2.6443 acc=0.938
+2026-08-13 12:47:17 | INFO | task=4 step=775 ce=1.9219 scc=0.11995 total=2.5217 acc=0.969
+2026-08-13 12:47:20 | INFO | task=4 step=800 ce=1.4657 scc=0.10823 total=2.0068 acc=0.969
+2026-08-13 12:47:22 | INFO | task=4 step=825 ce=2.1105 scc=0.12335 total=2.7272 acc=0.969
+2026-08-13 12:47:25 | INFO | task=4 step=850 ce=1.6732 scc=0.13300 total=2.3382 acc=0.906
+2026-08-13 12:47:27 | INFO | task=4 step=875 ce=1.9173 scc=0.13170 total=2.5758 acc=0.938
+2026-08-13 12:47:30 | INFO | task=4 step=900 ce=2.0177 scc=0.12071 total=2.6213 acc=0.906
+2026-08-13 12:47:33 | INFO | task=4 step=925 ce=2.3137 scc=0.13317 total=2.9795 acc=0.875
+2026-08-13 12:47:35 | INFO | task=4 step=950 ce=2.3384 scc=0.11382 total=2.9075 acc=0.844
+2026-08-13 12:47:38 | INFO | task=4 step=975 ce=2.2634 scc=0.11917 total=2.8593 acc=0.906
+2026-08-13 12:47:42 | INFO | SGDS activation task=4 target_layer=11 actual_nonzero=0.5481 actual_zero=0.4519 mean_active=420.9 r99_mean=36.2
+2026-08-13 12:47:49 | INFO | CA task=4 epoch=1/5 loss=0.5090 synthetic_acc=0.920
+2026-08-13 12:47:49 | INFO | CA task=4 epoch=2/5 loss=0.3575 synthetic_acc=0.975
+2026-08-13 12:47:49 | INFO | CA task=4 epoch=3/5 loss=0.3356 synthetic_acc=0.979
+2026-08-13 12:47:49 | INFO | CA task=4 epoch=4/5 loss=0.3282 synthetic_acc=0.980
+2026-08-13 12:47:49 | INFO | CA task=4 epoch=5/5 loss=0.3249 synthetic_acc=0.981
+2026-08-13 12:47:56 | INFO | finished task=4 seen=0.5282 old=0.4237 new=0.9532 forget=0.5358 CA_delta=+0.3151 peak=2.98GB
+2026-08-13 12:47:56 | INFO | starting task=5 classes=100..119 size=20 epochs=40
+2026-08-13 12:47:58 | INFO | SGDS strategy task=5 reuse=20 allocation=0 reuse_ratio=1.000 Eq6_self=true
+2026-08-13 12:48:00 | INFO | task=5 step=0 ce=6.2175 scc=0.37805 total=8.1078 acc=0.875
+2026-08-13 12:48:03 | INFO | task=5 step=25 ce=5.6395 scc=0.07209 total=5.9999 acc=0.844
+2026-08-13 12:48:06 | INFO | task=5 step=50 ce=5.0024 scc=0.06393 total=5.3221 acc=0.781
+2026-08-13 12:48:08 | INFO | task=5 step=75 ce=4.0909 scc=0.07505 total=4.4662 acc=0.875
+2026-08-13 12:48:11 | INFO | task=5 step=100 ce=3.9016 scc=0.11970 total=4.5001 acc=0.844
+2026-08-13 12:48:13 | INFO | task=5 step=125 ce=3.5882 scc=0.12174 total=4.1969 acc=0.875
+2026-08-13 12:48:16 | INFO | task=5 step=150 ce=3.0703 scc=0.10006 total=3.5706 acc=0.938
+2026-08-13 12:48:19 | INFO | task=5 step=175 ce=3.2196 scc=0.12236 total=3.8314 acc=0.812
+2026-08-13 12:48:21 | INFO | task=5 step=200 ce=2.9654 scc=0.12165 total=3.5737 acc=0.875
+2026-08-13 12:48:24 | INFO | task=5 step=225 ce=3.3314 scc=0.14144 total=4.0387 acc=0.875
+2026-08-13 12:48:27 | INFO | task=5 step=250 ce=2.8527 scc=0.15059 total=3.6057 acc=0.906
+2026-08-13 12:48:29 | INFO | task=5 step=275 ce=2.3631 scc=0.13163 total=3.0212 acc=0.938
+2026-08-13 12:48:32 | INFO | task=5 step=300 ce=2.4273 scc=0.12422 total=3.0484 acc=0.938
+2026-08-13 12:48:35 | INFO | task=5 step=325 ce=2.2978 scc=0.12211 total=2.9083 acc=0.938
+2026-08-13 12:48:37 | INFO | task=5 step=350 ce=2.2392 scc=0.13516 total=2.9150 acc=0.969
+2026-08-13 12:48:40 | INFO | task=5 step=375 ce=2.8383 scc=0.13505 total=3.5136 acc=0.875
+2026-08-13 12:48:43 | INFO | task=5 step=400 ce=2.2382 scc=0.12775 total=2.8770 acc=0.969
+2026-08-13 12:48:45 | INFO | task=5 step=425 ce=2.3378 scc=0.12524 total=2.9640 acc=0.906
+2026-08-13 12:48:48 | INFO | task=5 step=450 ce=1.7464 scc=0.11556 total=2.3242 acc=0.969
+2026-08-13 12:48:51 | INFO | task=5 step=475 ce=2.5310 scc=0.14768 total=3.2694 acc=0.875
+2026-08-13 12:48:53 | INFO | task=5 step=500 ce=2.4136 scc=0.12663 total=3.0468 acc=0.938
+2026-08-13 12:48:56 | INFO | task=5 step=525 ce=1.7616 scc=0.14046 total=2.4639 acc=0.969
+2026-08-13 12:48:58 | INFO | task=5 step=550 ce=2.8716 scc=0.12728 total=3.5080 acc=0.844
+2026-08-13 12:49:01 | INFO | task=5 step=575 ce=1.7592 scc=0.19358 total=2.7271 acc=0.969
+2026-08-13 12:49:04 | INFO | task=5 step=600 ce=1.4334 scc=0.14342 total=2.1505 acc=1.000
+2026-08-13 12:49:06 | INFO | task=5 step=625 ce=1.8934 scc=0.13206 total=2.5537 acc=0.938
+2026-08-13 12:49:09 | INFO | task=5 step=650 ce=1.6153 scc=0.11247 total=2.1776 acc=0.969
+2026-08-13 12:49:11 | INFO | task=5 step=675 ce=1.6397 scc=0.14438 total=2.3616 acc=0.969
+2026-08-13 12:49:14 | INFO | task=5 step=700 ce=1.8683 scc=0.11826 total=2.4595 acc=0.906
+2026-08-13 12:49:17 | INFO | task=5 step=725 ce=1.5898 scc=0.14361 total=2.3079 acc=0.938
+2026-08-13 12:49:19 | INFO | task=5 step=750 ce=1.5859 scc=0.11730 total=2.1724 acc=0.969
+2026-08-13 12:49:22 | INFO | task=5 step=775 ce=2.8457 scc=0.11830 total=3.4371 acc=0.812
+2026-08-13 12:49:24 | INFO | task=5 step=800 ce=1.8480 scc=0.12603 total=2.4782 acc=0.969
+2026-08-13 12:49:27 | INFO | task=5 step=825 ce=1.5642 scc=0.13310 total=2.2297 acc=1.000
+2026-08-13 12:49:30 | INFO | task=5 step=850 ce=1.5112 scc=0.14609 total=2.2417 acc=0.969
+2026-08-13 12:49:32 | INFO | task=5 step=875 ce=1.6114 scc=0.13750 total=2.2988 acc=0.969
+2026-08-13 12:49:35 | INFO | task=5 step=900 ce=2.1817 scc=0.12324 total=2.7979 acc=0.906
+2026-08-13 12:49:38 | INFO | task=5 step=925 ce=1.9127 scc=0.13680 total=2.5967 acc=0.938
+2026-08-13 12:49:40 | INFO | task=5 step=950 ce=1.5671 scc=0.14717 total=2.3029 acc=0.938
+2026-08-13 12:49:43 | INFO | task=5 step=975 ce=1.4506 scc=0.12104 total=2.0558 acc=0.969
+2026-08-13 12:49:45 | INFO | task=5 step=1000 ce=1.4101 scc=0.13653 total=2.0928 acc=1.000
+2026-08-13 12:49:48 | INFO | task=5 step=1025 ce=1.3891 scc=0.11478 total=1.9630 acc=0.969
+2026-08-13 12:49:51 | INFO | SGDS activation task=5 target_layer=11 actual_nonzero=0.5572 actual_zero=0.4428 mean_active=427.9 r99_mean=36.7
+2026-08-13 12:50:00 | INFO | CA task=5 epoch=1/5 loss=0.5872 synthetic_acc=0.918
+2026-08-13 12:50:00 | INFO | CA task=5 epoch=2/5 loss=0.4344 synthetic_acc=0.975
+2026-08-13 12:50:00 | INFO | CA task=5 epoch=3/5 loss=0.4148 synthetic_acc=0.977
+2026-08-13 12:50:00 | INFO | CA task=5 epoch=4/5 loss=0.4089 synthetic_acc=0.979
+2026-08-13 12:50:00 | INFO | CA task=5 epoch=5/5 loss=0.3970 synthetic_acc=0.980
+2026-08-13 12:50:08 | INFO | finished task=5 seen=0.3990 old=0.2869 new=0.9466 forget=0.6711 CA_delta=+0.2348 peak=2.98GB
+2026-08-13 12:50:08 | INFO | starting task=6 classes=120..139 size=20 epochs=40
+2026-08-13 12:50:10 | INFO | SGDS strategy task=6 reuse=20 allocation=0 reuse_ratio=1.000 Eq6_self=true
+2026-08-13 12:50:12 | INFO | task=6 step=0 ce=6.5016 scc=0.36211 total=8.3122 acc=0.688
+2026-08-13 12:50:15 | INFO | task=6 step=25 ce=5.9871 scc=0.06520 total=6.3130 acc=0.719
+2026-08-13 12:50:17 | INFO | task=6 step=50 ce=4.8492 scc=0.05539 total=5.1261 acc=0.781
+2026-08-13 12:50:20 | INFO | task=6 step=75 ce=4.8822 scc=0.08738 total=5.3191 acc=0.656
+2026-08-13 12:50:23 | INFO | task=6 step=100 ce=4.8010 scc=0.06021 total=5.1020 acc=0.750
+2026-08-13 12:50:25 | INFO | task=6 step=125 ce=3.8347 scc=0.07962 total=4.2328 acc=0.906
+2026-08-13 12:50:28 | INFO | task=6 step=150 ce=3.2202 scc=0.13049 total=3.8726 acc=0.875
+2026-08-13 12:50:30 | INFO | task=6 step=175 ce=3.8847 scc=0.10886 total=4.4290 acc=0.906
+2026-08-13 12:50:33 | INFO | task=6 step=200 ce=3.6012 scc=0.10322 total=4.1173 acc=0.781
+2026-08-13 12:50:36 | INFO | task=6 step=225 ce=3.6229 scc=0.10611 total=4.1535 acc=0.875
+2026-08-13 12:50:38 | INFO | task=6 step=250 ce=3.4648 scc=0.12094 total=4.0695 acc=0.781
+2026-08-13 12:50:41 | INFO | task=6 step=275 ce=2.9731 scc=0.10020 total=3.4740 acc=0.906
+2026-08-13 12:50:44 | INFO | task=6 step=300 ce=2.4620 scc=0.12174 total=3.0707 acc=0.969
+2026-08-13 12:50:46 | INFO | task=6 step=325 ce=2.8674 scc=0.13741 total=3.5544 acc=0.906
+2026-08-13 12:50:49 | INFO | task=6 step=350 ce=2.5452 scc=0.12237 total=3.1571 acc=0.938
+2026-08-13 12:50:51 | INFO | task=6 step=375 ce=3.0117 scc=0.18410 total=3.9322 acc=0.844
+2026-08-13 12:50:54 | INFO | task=6 step=400 ce=2.6711 scc=0.14671 total=3.4047 acc=0.906
+2026-08-13 12:50:57 | INFO | task=6 step=425 ce=2.5174 scc=0.11768 total=3.1058 acc=0.938
+2026-08-13 12:50:59 | INFO | task=6 step=450 ce=3.8504 scc=0.13485 total=4.5247 acc=0.750
+2026-08-13 12:51:02 | INFO | task=6 step=475 ce=2.5222 scc=0.18049 total=3.4246 acc=0.938
+2026-08-13 12:51:05 | INFO | task=6 step=500 ce=1.8835 scc=0.12531 total=2.5101 acc=1.000
+2026-08-13 12:51:07 | INFO | task=6 step=525 ce=2.7074 scc=0.11652 total=3.2899 acc=0.844
+2026-08-13 12:51:10 | INFO | task=6 step=550 ce=2.1421 scc=0.15508 total=2.9175 acc=0.938
+2026-08-13 12:51:12 | INFO | task=6 step=575 ce=3.5096 scc=0.12288 total=4.1240 acc=0.781
+2026-08-13 12:51:15 | INFO | task=6 step=600 ce=1.5498 scc=0.14023 total=2.2509 acc=0.969
+2026-08-13 12:51:18 | INFO | task=6 step=625 ce=1.6004 scc=0.15036 total=2.3522 acc=1.000
+2026-08-13 12:51:20 | INFO | task=6 step=650 ce=2.4232 scc=0.17187 total=3.2825 acc=0.906
+2026-08-13 12:51:23 | INFO | task=6 step=675 ce=1.6355 scc=0.12934 total=2.2822 acc=1.000
+2026-08-13 12:51:25 | INFO | task=6 step=700 ce=1.6927 scc=0.14333 total=2.4093 acc=1.000
+2026-08-13 12:51:28 | INFO | task=6 step=725 ce=1.8421 scc=0.13013 total=2.4928 acc=0.969
+2026-08-13 12:51:31 | INFO | task=6 step=750 ce=2.1330 scc=0.13134 total=2.7897 acc=0.906
+2026-08-13 12:51:33 | INFO | task=6 step=775 ce=1.5815 scc=0.14723 total=2.3176 acc=1.000
+2026-08-13 12:51:36 | INFO | task=6 step=800 ce=1.8989 scc=0.13582 total=2.5780 acc=0.969
+2026-08-13 12:51:38 | INFO | task=6 step=825 ce=2.2590 scc=0.14719 total=2.9949 acc=0.938
+2026-08-13 12:51:41 | INFO | task=6 step=850 ce=2.4743 scc=0.13503 total=3.1494 acc=0.938
+2026-08-13 12:51:44 | INFO | task=6 step=875 ce=2.2877 scc=0.15818 total=3.0786 acc=0.875
+2026-08-13 12:51:46 | INFO | task=6 step=900 ce=1.7487 scc=0.13395 total=2.4184 acc=0.969
+2026-08-13 12:51:49 | INFO | task=6 step=925 ce=1.8834 scc=0.12798 total=2.5233 acc=0.938
+2026-08-13 12:51:52 | INFO | task=6 step=950 ce=1.5497 scc=0.14436 total=2.2715 acc=0.969
+2026-08-13 12:51:54 | INFO | task=6 step=975 ce=2.0104 scc=0.11764 total=2.5986 acc=1.000
+2026-08-13 12:51:59 | INFO | SGDS activation task=6 target_layer=11 actual_nonzero=0.5620 actual_zero=0.4380 mean_active=431.6 r99_mean=34.5
+2026-08-13 12:52:08 | INFO | CA task=6 epoch=1/5 loss=0.6275 synthetic_acc=0.926
+2026-08-13 12:52:08 | INFO | CA task=6 epoch=2/5 loss=0.5033 synthetic_acc=0.973
+2026-08-13 12:52:08 | INFO | CA task=6 epoch=3/5 loss=0.4871 synthetic_acc=0.976
+2026-08-13 12:52:08 | INFO | CA task=6 epoch=4/5 loss=0.4824 synthetic_acc=0.977
+2026-08-13 12:52:08 | INFO | CA task=6 epoch=5/5 loss=0.4769 synthetic_acc=0.976
+2026-08-13 12:52:17 | INFO | finished task=6 seen=0.2803 old=0.1712 new=0.9493 forget=0.7880 CA_delta=+0.1446 peak=2.98GB
+2026-08-13 12:52:17 | INFO | starting task=7 classes=140..159 size=20 epochs=40
+2026-08-13 12:52:19 | INFO | SGDS strategy task=7 reuse=20 allocation=0 reuse_ratio=1.000 Eq6_self=true
+2026-08-13 12:52:21 | INFO | task=7 step=0 ce=6.4207 scc=0.34789 total=8.1601 acc=0.781
+2026-08-13 12:52:24 | INFO | task=7 step=25 ce=6.1496 scc=0.08181 total=6.5586 acc=0.719
+2026-08-13 12:52:26 | INFO | task=7 step=50 ce=4.4995 scc=0.07691 total=4.8841 acc=0.844
+2026-08-13 12:52:29 | INFO | task=7 step=75 ce=4.0870 scc=0.06762 total=4.4251 acc=0.938
+2026-08-13 12:52:31 | INFO | task=7 step=100 ce=3.6298 scc=0.08737 total=4.0666 acc=0.875
+2026-08-13 12:52:34 | INFO | task=7 step=125 ce=4.2284 scc=0.09096 total=4.6832 acc=0.844
+2026-08-13 12:52:37 | INFO | task=7 step=150 ce=3.6181 scc=0.13094 total=4.2728 acc=0.844
+2026-08-13 12:52:39 | INFO | task=7 step=175 ce=4.3995 scc=0.09500 total=4.8745 acc=0.781
+2026-08-13 12:52:42 | INFO | task=7 step=200 ce=4.1152 scc=0.08782 total=4.5543 acc=0.844
+2026-08-13 12:52:44 | INFO | task=7 step=225 ce=2.7000 scc=0.13216 total=3.3608 acc=1.000
+2026-08-13 12:52:47 | INFO | task=7 step=250 ce=2.9519 scc=0.10555 total=3.4797 acc=0.969
+2026-08-13 12:52:49 | INFO | task=7 step=275 ce=2.6062 scc=0.12458 total=3.2291 acc=0.938
+2026-08-13 12:52:52 | INFO | task=7 step=300 ce=3.2435 scc=0.10046 total=3.7459 acc=0.875
+2026-08-13 12:52:54 | INFO | task=7 step=325 ce=2.9417 scc=0.12045 total=3.5440 acc=0.906
+2026-08-13 12:52:57 | INFO | task=7 step=350 ce=3.0809 scc=0.12066 total=3.6842 acc=0.906
+2026-08-13 12:53:00 | INFO | task=7 step=375 ce=2.5420 scc=0.12302 total=3.1572 acc=0.938
+2026-08-13 12:53:02 | INFO | task=7 step=400 ce=2.8888 scc=0.12547 total=3.5162 acc=0.906
+2026-08-13 12:53:05 | INFO | task=7 step=425 ce=2.6189 scc=0.13047 total=3.2712 acc=0.938
+2026-08-13 12:53:07 | INFO | task=7 step=450 ce=2.5165 scc=0.13626 total=3.1978 acc=0.969
+2026-08-13 12:53:10 | INFO | task=7 step=475 ce=1.9267 scc=0.12287 total=2.5411 acc=1.000
+2026-08-13 12:53:13 | INFO | task=7 step=500 ce=1.7222 scc=0.12229 total=2.3337 acc=0.969
+2026-08-13 12:53:15 | INFO | task=7 step=525 ce=2.3296 scc=0.12799 total=2.9695 acc=0.938
+2026-08-13 12:53:18 | INFO | task=7 step=550 ce=2.7348 scc=0.13288 total=3.3992 acc=0.906
+2026-08-13 12:53:20 | INFO | task=7 step=575 ce=3.1537 scc=0.13540 total=3.8307 acc=0.938
+2026-08-13 12:53:23 | INFO | task=7 step=600 ce=1.9310 scc=0.13565 total=2.6093 acc=0.969
+2026-08-13 12:53:25 | INFO | task=7 step=625 ce=1.6966 scc=0.13451 total=2.3691 acc=0.969
+2026-08-13 12:53:28 | INFO | task=7 step=650 ce=2.4246 scc=0.15008 total=3.1749 acc=0.938
+2026-08-13 12:53:31 | INFO | task=7 step=675 ce=2.3804 scc=0.13117 total=3.0363 acc=0.938
+2026-08-13 12:53:33 | INFO | task=7 step=700 ce=1.6911 scc=0.13358 total=2.3590 acc=0.969
+2026-08-13 12:53:36 | INFO | task=7 step=725 ce=2.1996 scc=0.14164 total=2.9078 acc=0.906
+2026-08-13 12:53:38 | INFO | task=7 step=750 ce=1.8402 scc=0.13655 total=2.5230 acc=0.969
+2026-08-13 12:53:41 | INFO | task=7 step=775 ce=1.8285 scc=0.12187 total=2.4378 acc=0.938
+2026-08-13 12:53:43 | INFO | task=7 step=800 ce=2.3012 scc=0.14264 total=3.0144 acc=0.938
+2026-08-13 12:53:46 | INFO | task=7 step=825 ce=2.0726 scc=0.11948 total=2.6700 acc=0.969
+2026-08-13 12:53:49 | INFO | task=7 step=850 ce=1.9062 scc=0.10893 total=2.4508 acc=0.969
+2026-08-13 12:53:51 | INFO | task=7 step=875 ce=1.6754 scc=0.12691 total=2.3100 acc=1.000
+2026-08-13 12:53:54 | INFO | task=7 step=900 ce=2.1078 scc=0.14804 total=2.8480 acc=0.906
+2026-08-13 12:53:57 | INFO | task=7 step=925 ce=2.3708 scc=0.15332 total=3.1374 acc=0.938
+2026-08-13 12:53:59 | INFO | task=7 step=950 ce=2.0050 scc=0.15129 total=2.7614 acc=1.000
+2026-08-13 12:54:02 | INFO | task=7 step=975 ce=1.6439 scc=0.13384 total=2.3132 acc=0.969
+2026-08-13 12:54:06 | INFO | SGDS activation task=7 target_layer=11 actual_nonzero=0.5662 actual_zero=0.4338 mean_active=434.9 r99_mean=34.4
+2026-08-13 12:54:16 | INFO | CA task=7 epoch=1/5 loss=0.6920 synthetic_acc=0.926
+2026-08-13 12:54:16 | INFO | CA task=7 epoch=2/5 loss=0.5783 synthetic_acc=0.969
+2026-08-13 12:54:16 | INFO | CA task=7 epoch=3/5 loss=0.5571 synthetic_acc=0.972
+2026-08-13 12:54:16 | INFO | CA task=7 epoch=4/5 loss=0.5520 synthetic_acc=0.974
+2026-08-13 12:54:17 | INFO | CA task=7 epoch=5/5 loss=0.5534 synthetic_acc=0.975
+2026-08-13 12:54:26 | INFO | finished task=7 seen=0.2227 old=0.1190 new=0.9535 forget=0.8375 CA_delta=+0.1024 peak=2.98GB
+2026-08-13 12:54:26 | INFO | starting task=8 classes=160..179 size=20 epochs=40
+2026-08-13 12:54:28 | INFO | SGDS strategy task=8 reuse=20 allocation=0 reuse_ratio=1.000 Eq6_self=true
+2026-08-13 12:54:31 | INFO | task=8 step=0 ce=7.0111 scc=0.29422 total=8.4822 acc=0.688
+2026-08-13 12:54:34 | INFO | task=8 step=25 ce=6.7570 scc=0.04835 total=6.9987 acc=0.688
+2026-08-13 12:54:36 | INFO | task=8 step=50 ce=5.4631 scc=0.06535 total=5.7899 acc=0.781
+2026-08-13 12:54:39 | INFO | task=8 step=75 ce=4.5741 scc=0.06995 total=4.9238 acc=0.844
+2026-08-13 12:54:41 | INFO | task=8 step=100 ce=4.5386 scc=0.10265 total=5.0519 acc=0.812
+2026-08-13 12:54:44 | INFO | task=8 step=125 ce=4.4382 scc=0.09179 total=4.8972 acc=0.844
+2026-08-13 12:54:47 | INFO | task=8 step=150 ce=4.7930 scc=0.10224 total=5.3042 acc=0.719
+2026-08-13 12:54:49 | INFO | task=8 step=175 ce=4.3931 scc=0.13240 total=5.0551 acc=0.812
+2026-08-13 12:54:52 | INFO | task=8 step=200 ce=3.7448 scc=0.15814 total=4.5355 acc=0.875
+2026-08-13 12:54:55 | INFO | task=8 step=225 ce=3.4140 scc=0.15129 total=4.1705 acc=0.875
+2026-08-13 12:54:57 | INFO | task=8 step=250 ce=3.6205 scc=0.12344 total=4.2377 acc=0.844
+2026-08-13 12:55:00 | INFO | task=8 step=275 ce=3.2870 scc=0.12835 total=3.9288 acc=0.875
+2026-08-13 12:55:02 | INFO | task=8 step=300 ce=2.6047 scc=0.13456 total=3.2775 acc=0.906
+2026-08-13 12:55:05 | INFO | task=8 step=325 ce=3.6202 scc=0.12143 total=4.2273 acc=0.875
+2026-08-13 12:55:08 | INFO | task=8 step=350 ce=2.9243 scc=0.14051 total=3.6269 acc=0.906
+2026-08-13 12:55:10 | INFO | task=8 step=375 ce=2.6751 scc=0.16718 total=3.5110 acc=0.906
+2026-08-13 12:55:13 | INFO | task=8 step=400 ce=3.6332 scc=0.13466 total=4.3065 acc=0.844
+2026-08-13 12:55:15 | INFO | task=8 step=425 ce=3.7093 scc=0.14464 total=4.4325 acc=0.812
+2026-08-13 12:55:18 | INFO | task=8 step=450 ce=2.9211 scc=0.15892 total=3.7157 acc=0.906
+2026-08-13 12:55:21 | INFO | task=8 step=475 ce=2.2253 scc=0.13725 total=2.9116 acc=0.969
+2026-08-13 12:55:23 | INFO | task=8 step=500 ce=2.8354 scc=0.17621 total=3.7164 acc=0.844
+2026-08-13 12:55:26 | INFO | task=8 step=525 ce=2.3661 scc=0.15405 total=3.1364 acc=0.938
+2026-08-13 12:55:28 | INFO | task=8 step=550 ce=2.6027 scc=0.15157 total=3.3605 acc=0.906
+2026-08-13 12:55:31 | INFO | task=8 step=575 ce=2.3056 scc=0.16572 total=3.1342 acc=0.906
+2026-08-13 12:55:34 | INFO | task=8 step=600 ce=2.2367 scc=0.15771 total=3.0252 acc=0.938
+2026-08-13 12:55:36 | INFO | task=8 step=625 ce=1.6964 scc=0.16715 total=2.5322 acc=1.000
+2026-08-13 12:55:39 | INFO | task=8 step=650 ce=2.5082 scc=0.13598 total=3.1881 acc=0.906
+2026-08-13 12:55:42 | INFO | task=8 step=675 ce=1.8674 scc=0.17746 total=2.7547 acc=0.969
+2026-08-13 12:55:44 | INFO | task=8 step=700 ce=2.4666 scc=0.14278 total=3.1805 acc=0.938
+2026-08-13 12:55:47 | INFO | task=8 step=725 ce=2.3258 scc=0.14760 total=3.0638 acc=0.969
+2026-08-13 12:55:49 | INFO | task=8 step=750 ce=2.7036 scc=0.14924 total=3.4498 acc=0.844
+2026-08-13 12:55:52 | INFO | task=8 step=775 ce=2.4133 scc=0.15347 total=3.1807 acc=0.875
+2026-08-13 12:55:55 | INFO | task=8 step=800 ce=1.8713 scc=0.15143 total=2.6285 acc=0.938
+2026-08-13 12:55:57 | INFO | task=8 step=825 ce=1.8149 scc=0.16918 total=2.6608 acc=0.969
+2026-08-13 12:56:00 | INFO | task=8 step=850 ce=2.6554 scc=0.13615 total=3.3362 acc=0.938
+2026-08-13 12:56:03 | INFO | task=8 step=875 ce=1.9854 scc=0.14818 total=2.7263 acc=0.969
+2026-08-13 12:56:05 | INFO | task=8 step=900 ce=2.2782 scc=0.15541 total=3.0552 acc=0.875
+2026-08-13 12:56:08 | INFO | task=8 step=925 ce=1.6749 scc=0.16461 total=2.4980 acc=0.969
+2026-08-13 12:56:10 | INFO | task=8 step=950 ce=1.9460 scc=0.12845 total=2.5882 acc=0.969
+2026-08-13 12:56:13 | INFO | task=8 step=975 ce=1.8044 scc=0.13861 total=2.4974 acc=0.969
+2026-08-13 12:56:17 | INFO | SGDS activation task=8 target_layer=11 actual_nonzero=0.5698 actual_zero=0.4302 mean_active=437.6 r99_mean=33.2
+2026-08-13 12:56:28 | INFO | CA task=8 epoch=1/5 loss=0.7538 synthetic_acc=0.931
+2026-08-13 12:56:28 | INFO | CA task=8 epoch=2/5 loss=0.6489 synthetic_acc=0.970
+2026-08-13 12:56:28 | INFO | CA task=8 epoch=3/5 loss=0.6360 synthetic_acc=0.972
+2026-08-13 12:56:28 | INFO | CA task=8 epoch=4/5 loss=0.6250 synthetic_acc=0.972
+2026-08-13 12:56:29 | INFO | CA task=8 epoch=5/5 loss=0.6184 synthetic_acc=0.975
+2026-08-13 12:56:40 | INFO | finished task=8 seen=0.1967 old=0.1040 new=0.9624 forget=0.8521 CA_delta=+0.0910 peak=2.98GB
+2026-08-13 12:56:40 | INFO | starting task=9 classes=180..195 size=16 epochs=40
+2026-08-13 12:56:42 | INFO | SGDS strategy task=9 reuse=16 allocation=0 reuse_ratio=1.000 Eq6_self=true
+2026-08-13 12:56:43 | INFO | task=9 step=0 ce=6.6408 scc=0.22987 total=7.7902 acc=0.656
+2026-08-13 12:56:46 | INFO | task=9 step=25 ce=5.5790 scc=0.11439 total=6.1509 acc=0.781
+2026-08-13 12:56:49 | INFO | task=9 step=50 ce=5.4099 scc=0.08564 total=5.8381 acc=0.719
+2026-08-13 12:56:51 | INFO | task=9 step=75 ce=3.6852 scc=0.09269 total=4.1487 acc=0.875
+2026-08-13 12:56:54 | INFO | task=9 step=100 ce=3.8678 scc=0.09958 total=4.3657 acc=0.844
+2026-08-13 12:56:56 | INFO | task=9 step=125 ce=2.9384 scc=0.13656 total=3.6212 acc=0.906
+2026-08-13 12:56:59 | INFO | task=9 step=150 ce=3.3563 scc=0.16864 total=4.1995 acc=0.906
+2026-08-13 12:57:02 | INFO | task=9 step=175 ce=3.3047 scc=0.10941 total=3.8517 acc=0.812
+2026-08-13 12:57:05 | INFO | task=9 step=200 ce=3.4086 scc=0.13803 total=4.0987 acc=0.844
+2026-08-13 12:57:07 | INFO | task=9 step=225 ce=2.5283 scc=0.12559 total=3.1562 acc=0.938
+2026-08-13 12:57:10 | INFO | task=9 step=250 ce=2.4928 scc=0.18181 total=3.4018 acc=0.906
+2026-08-13 12:57:12 | INFO | task=9 step=275 ce=3.2162 scc=0.20106 total=4.2216 acc=0.875
+2026-08-13 12:57:15 | INFO | task=9 step=300 ce=2.2401 scc=0.18234 total=3.1518 acc=0.938
+2026-08-13 12:57:18 | INFO | task=9 step=325 ce=1.9025 scc=0.18248 total=2.8150 acc=0.969
+2026-08-13 12:57:20 | INFO | task=9 step=350 ce=1.9467 scc=0.12999 total=2.5967 acc=0.969
+2026-08-13 12:57:23 | INFO | task=9 step=375 ce=2.4845 scc=0.13182 total=3.1436 acc=0.906
+2026-08-13 12:57:26 | INFO | task=9 step=400 ce=2.2481 scc=0.15279 total=3.0121 acc=0.875
+2026-08-13 12:57:28 | INFO | task=9 step=425 ce=2.5804 scc=0.17242 total=3.4425 acc=0.875
+2026-08-13 12:57:31 | INFO | task=9 step=450 ce=1.6196 scc=0.15832 total=2.4112 acc=1.000
+2026-08-13 12:57:33 | INFO | task=9 step=475 ce=1.8009 scc=0.16890 total=2.6454 acc=0.938
+2026-08-13 12:57:36 | INFO | task=9 step=500 ce=1.6691 scc=0.17008 total=2.5195 acc=0.969
+2026-08-13 12:57:39 | INFO | task=9 step=525 ce=1.3572 scc=0.14626 total=2.0886 acc=1.000
+2026-08-13 12:57:41 | INFO | task=9 step=550 ce=1.7070 scc=0.16825 total=2.5482 acc=0.969
+2026-08-13 12:57:44 | INFO | task=9 step=575 ce=1.5098 scc=0.15445 total=2.2821 acc=0.969
+2026-08-13 12:57:47 | INFO | task=9 step=600 ce=2.0331 scc=0.15243 total=2.7952 acc=0.969
+2026-08-13 12:57:49 | INFO | task=9 step=625 ce=2.2733 scc=0.13834 total=2.9650 acc=0.875
+2026-08-13 12:57:52 | INFO | task=9 step=650 ce=2.0940 scc=0.15068 total=2.8474 acc=0.906
+2026-08-13 12:57:54 | INFO | task=9 step=675 ce=1.6290 scc=0.13795 total=2.3187 acc=0.969
+2026-08-13 12:57:57 | INFO | task=9 step=700 ce=1.6974 scc=0.14368 total=2.4158 acc=0.969
+2026-08-13 12:58:00 | INFO | task=9 step=725 ce=1.8955 scc=0.11619 total=2.4765 acc=0.906
+2026-08-13 12:58:02 | INFO | task=9 step=750 ce=1.9667 scc=0.14275 total=2.6805 acc=0.969
+2026-08-13 12:58:05 | INFO | task=9 step=775 ce=2.0644 scc=0.16206 total=2.8747 acc=0.938
+2026-08-13 12:58:07 | INFO | task=9 step=800 ce=1.6647 scc=0.13170 total=2.3233 acc=0.938
+2026-08-13 12:58:10 | INFO | task=9 step=825 ce=1.3828 scc=0.14332 total=2.0993 acc=0.969
+2026-08-13 12:58:13 | INFO | SGDS activation task=9 target_layer=11 actual_nonzero=0.5758 actual_zero=0.4242 mean_active=442.2 r99_mean=33.4
+2026-08-13 12:58:25 | INFO | CA task=9 epoch=1/5 loss=0.7875 synthetic_acc=0.932
+2026-08-13 12:58:25 | INFO | CA task=9 epoch=2/5 loss=0.7006 synthetic_acc=0.968
+2026-08-13 12:58:25 | INFO | CA task=9 epoch=3/5 loss=0.6919 synthetic_acc=0.970
+2026-08-13 12:58:25 | INFO | CA task=9 epoch=4/5 loss=0.6855 synthetic_acc=0.971
+2026-08-13 12:58:26 | INFO | CA task=9 epoch=5/5 loss=0.6804 synthetic_acc=0.972
+2026-08-13 12:58:37 | INFO | finished task=9 seen=0.1548 old=0.0809 new=0.9818 forget=0.8750 CA_delta=+0.0732 peak=2.98GB
+2026-08-13 12:58:37 | INFO | run complete final_accuracy=0.1548

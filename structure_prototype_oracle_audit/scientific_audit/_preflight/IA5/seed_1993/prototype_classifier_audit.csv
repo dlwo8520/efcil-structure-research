@@ -1,0 +1,3 @@
+dataset,protocol,task,oracle_split,metric,num_samples,structure_prototype_accuracy,oracle_prototype_accuracy,oracle_minus_structure_gap
+imageneta,IA5,2,train,cosine_nearest_mean,2766,85.82791033984093,85.71945046999276,-0.10845986984816136
+imageneta,IA5,2,test,cosine_nearest_mean,698,75.21489971346705,95.12893982808023,19.914040114613186

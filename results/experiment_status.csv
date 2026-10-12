@@ -1,0 +1,22 @@
+id,name,parent,status,code,result_path,analysis_document
+EFCIL-001,Early CIFAR diagnostics / KeepLoRA-style / PCDS,,implemented; baseline-specific outputs,projects/efcil_direction_diagnostic,projects/efcil_direction_diagnostic,projects/efcil_direction_diagnostic/README.md
+EFCIL-002,CDSP and PCDS+SGDS exploration,,completed and variant-specific records,cds-main,cds-main,cds-main/RESULTS_CDSP.md
+EFCIL-003,Structure+SGDS local adaptation,,recorded local results,pcds_structure_sgds_official,pcds_structure_sgds_official,pcds_structure_sgds_official/RESULTS_STRUCTURE_SGDS.md
+EFCIL-004,PTM-guided geometry,,recorded results; paper numbers separated,cdsp_handoff_20260813,cdsp_handoff_20260813,cdsp_handoff_20260813/RESULTS_PTM_GUIDED_VS_STRUCTURE.md
+EFCIL-005,RevisitingCIL inspection baseline,,reference source; logs are not new proposal evidence,revisitingcil-inspect.uZlsNf,revisitingcil-inspect.uZlsNf,revisitingcil-inspect.uZlsNf/README.md
+EFCIL-006,E0–E7 multi-center/Mahalanobis,,completed records and inactive-loss limitations,structure_multicenter_separation,structure_multicenter_separation,structure_multicenter_separation/PROJECT_ANALYSIS_KO.md
+EFCIL-007,E3/PIC/CEOS/adaptive margins,,13 IA5 pilot variants complete,structure_e3_followup,structure_e3_followup,structure_e3_followup/reports/e3_followup_comparison_20260917/report.md
+EFCIL-008,Similarity-aware S0–S4,,completed IA5 single-seed pilot,structure_similarity_aware_followup,structure_similarity_aware_followup,structure_similarity_aware_followup/reports/similarity_aware_followup/report.md
+EFCIL-009,High/low/random-off controls,,completed IA5 single-seed pilot,structure_similarity_control_experiments,structure_similarity_control_experiments,structure_similarity_control_experiments/reports/additional_control/report.md
+EFCIL-010,Selective SCC / separation / Proto-CLAD,,reduced IA5/CAR5 complete; old full sweep held/partial,structure_selective_similarity_sweep,structure_selective_similarity_sweep,structure_selective_similarity_sweep/reports/reduced_stage1_final_20260923/report.md
+EFCIL-011,Auxiliary random-projection Proto-CLAD,,IA5 two completed; CAR5 old RP not started,structure_rp_protoclad_task5,structure_rp_protoclad_task5,structure_rp_protoclad_task5/rp_protoclad_report.md
+EFCIL-012,Stored birth RP mean plus APR shift,,IA5/CAR5 complete; no common benefit,structure_stored_apr_rp,structure_stored_apr_rp,structure_stored_apr_rp/reports/stored_apr_rp_final_20260923/report.md
+EFCIL-013,Moment/source/head/representation diagnostics,,multiple completed diagnostics; protocol-specific,structure_prototype_oracle_audit,structure_prototype_oracle_audit,structure_prototype_oracle_audit/scientific_audit/structure_oracle_scientific_final_report_20260928.md
+EFCIL-014,FeCAM boundary follow-up,,completed recorded follow-up; dataset-specific,fecam_boundary_followup,fecam_boundary_followup,fecam_boundary_followup/final_report.md
+EFCIL-015,JS variation consistency,,completed pilot; null/negative scope,variation_consistency_pilot,variation_consistency_pilot,variation_consistency_pilot/final_report.md
+EFCIL-016,Persistent error cohorts,,completed analysis-only,error_trajectory_diagnostic,error_trajectory_diagnostic,error_trajectory_diagnostic/final_report.md
+EFCIL-017,Cross-task Gaussian CA reweighting,,completed matched pilot; CA parity failure,cross_task_ca_reweighting,cross_task_ca_reweighting,cross_task_ca_reweighting/final_report.md
+EFCIL-018,Conditional task score shift,,completed matched pilot; negative real-test deltas,b1_ranking_preserving_correction,b1_ranking_preserving_correction,b1_ranking_preserving_correction/final_report.md
+EFCIL-019,Matched generic img2img / strong views / moments,,completed pilot; STOP current recipe,type_a_generative_augmentation,type_a_generative_augmentation,type_a_generative_augmentation/final_report.md
+EFCIL-020,W/C/K paired local/all audit,,completed analysis; no shared persistent improvement,generation_local_all_transition_audit,generation_local_all_transition_audit,generation_local_all_transition_audit/final_report.md
+EFCIL-021,BOB-full versus S-full IA10,,interrupted_or_failed at BOB GPU smoke; no full result,ia10_bob_vs_strong_full,ia10_bob_vs_strong_full,ia10_bob_vs_strong_full/run_manifest.json

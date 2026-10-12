@@ -1,0 +1,126 @@
+{
+  "vanilla_lora": {
+    "method": "vanilla_lora",
+    "future_cells_are_empty": true,
+    "equal_test_samples_per_task": true,
+    "maximum_accuracy_consistency_error": 1.1102230246251565e-16,
+    "seen_classifier_class_counts": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100
+    ],
+    "expected_seen_classifier_class_counts": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100
+    ],
+    "passed": true
+  },
+  "keep_lora_wp_only": {
+    "method": "keep_lora_wp_only",
+    "future_cells_are_empty": true,
+    "equal_test_samples_per_task": true,
+    "maximum_accuracy_consistency_error": 1.1102230246251565e-16,
+    "seen_classifier_class_counts": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100
+    ],
+    "expected_seen_classifier_class_counts": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100
+    ],
+    "passed": true
+  },
+  "keep_lora_m_only": {
+    "method": "keep_lora_m_only",
+    "future_cells_are_empty": true,
+    "equal_test_samples_per_task": true,
+    "maximum_accuracy_consistency_error": 2.220446049250313e-16,
+    "seen_classifier_class_counts": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100
+    ],
+    "expected_seen_classifier_class_counts": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100
+    ],
+    "passed": true
+  },
+  "keep_lora_full": {
+    "method": "keep_lora_full",
+    "future_cells_are_empty": true,
+    "equal_test_samples_per_task": true,
+    "maximum_accuracy_consistency_error": 1.1102230246251565e-16,
+    "seen_classifier_class_counts": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100
+    ],
+    "expected_seen_classifier_class_counts": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100
+    ],
+    "passed": true
+  }
+}

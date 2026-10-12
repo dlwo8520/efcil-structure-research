@@ -1,0 +1,106 @@
+{
+  "baseline": {
+    "method": "pcds_structure",
+    "tasks_completed": 10,
+    "average_incremental_accuracy": 84.8584752364042,
+    "final_accuracy": 79.61696306429549,
+    "final_old_accuracy": 79.12207018019238,
+    "final_new_accuracy": 85.15151515151516,
+    "average_forgetting": 8.786882664994897,
+    "old_new_gap": -6.029444971322775,
+    "peak_cuda_allocated_gb": 6.288203239440918,
+    "peak_cuda_reserved_gb": 14.380859375,
+    "elapsed_seconds": 12218.829589605331,
+    "initial_trainable_parameters_before_classifier": 4758528,
+    "final_trainable_parameters": 4909056,
+    "final_total_parameters": 90707712,
+    "optimizer_skipped_steps": 0,
+    "nonfinite_steps": 0
+  },
+  "pcds_structure_sgds": {
+    "method": "pcds_structure_sgds",
+    "tasks_completed": 10,
+    "average_incremental_accuracy": 67.83229884285606,
+    "final_accuracy": 26.887203084193505,
+    "final_old_accuracy": 21.189540712640564,
+    "final_new_accuracy": 90.6060606060606,
+    "average_forgetting": 69.0691985855301,
+    "old_new_gap": -69.41651989342003,
+    "peak_cuda_allocated_gb": 6.289292812347412,
+    "peak_cuda_reserved_gb": 13.189453125,
+    "elapsed_seconds": 12287.001936674118,
+    "initial_trainable_parameters_before_classifier": 4758528,
+    "final_trainable_parameters": 4909056,
+    "final_total_parameters": 90707712,
+    "optimizer_skipped_steps": 0,
+    "nonfinite_steps": 0
+  },
+  "delta_sgds_minus_baseline": {
+    "average_incremental_accuracy": -17.02617639354814,
+    "final_accuracy": -52.72975998010199,
+    "final_old_accuracy": -57.93252946755182,
+    "final_new_accuracy": 5.454545454545439,
+    "average_forgetting": 60.282315920535204,
+    "old_new_gap": -63.387074922097256,
+    "peak_cuda_allocated_gb": 0.0010895729064941406,
+    "peak_cuda_reserved_gb": -1.19140625
+  },
+  "effective_rank": {
+    "baseline": {
+      "0": 453.0,
+      "1": 435.0,
+      "2": 440.0,
+      "3": 438.0,
+      "4": 424.0,
+      "5": 421.0,
+      "6": 411.0,
+      "7": 410.0,
+      "8": 395.0,
+      "9": 366.0
+    },
+    "sgds": {
+      "0": 454.0,
+      "1": 433.0,
+      "2": 434.0,
+      "3": 426.0,
+      "4": 397.0,
+      "5": 373.0,
+      "6": 337.0,
+      "7": 294.0,
+      "8": 252.0,
+      "9": 220.0
+    },
+    "delta": {
+      "0": 1.0,
+      "1": -2.0,
+      "2": -6.0,
+      "3": -12.0,
+      "4": -27.0,
+      "5": -48.0,
+      "6": -74.0,
+      "7": -116.0,
+      "8": -143.0,
+      "9": -146.0
+    },
+    "mean_delta": -57.3
+  },
+  "semantic_diagnostics": {
+    "corr_old_class_count_vs_mean_s_old": 0.8165025753540205,
+    "tasks_with_class_dependent_strategy_variation": 1,
+    "fully_reuse_saturated_tasks": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "corr_max_old_cosine_vs_reuse": 0.33568629657910537,
+    "corr_max_old_cosine_vs_final_class_accuracy": 0.3029678270479679,
+    "mean_max_old_cosine_reuse": 0.9430873886553827,
+    "mean_max_old_cosine_allocation": 0.8942614860004849
+  },
+  "scope_note": "Single seed; not a statistical reproduction of the paper mean."
+}

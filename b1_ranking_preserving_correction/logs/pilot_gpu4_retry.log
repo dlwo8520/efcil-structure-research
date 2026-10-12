@@ -1,0 +1,30 @@
+nohup: ignoring input
+[IA10] C0 parity exact; N=1519, B1=126
+  Gaussian logit bank: 20/200 classes
+  Gaussian logit bank: 40/200 classes
+  Gaussian logit bank: 60/200 classes
+  Gaussian logit bank: 80/200 classes
+  Gaussian logit bank: 100/200 classes
+  Gaussian logit bank: 120/200 classes
+  Gaussian logit bank: 140/200 classes
+  Gaussian logit bank: 160/200 classes
+  Gaussian logit bank: 180/200 classes
+  Gaussian logit bank: 200/200 classes
+[IA10] C1: objective 0.431528 -> 0.431363, closures 4, converged=True
+[IA10] C2: objective 0.431528 -> 0.364391, closures 50, converged=True
+[IA10] complete: C0=64.7136%, C1=64.7795%, C2=64.1870%
+[CAR10] C0 parity exact; N=8041, B1=473
+  Gaussian logit bank: 20/196 classes
+  Gaussian logit bank: 40/196 classes
+  Gaussian logit bank: 60/196 classes
+  Gaussian logit bank: 80/196 classes
+  Gaussian logit bank: 100/196 classes
+  Gaussian logit bank: 120/196 classes
+  Gaussian logit bank: 140/196 classes
+  Gaussian logit bank: 160/196 classes
+  Gaussian logit bank: 180/196 classes
+  Gaussian logit bank: 196/196 classes
+[CAR10] C1: objective 0.626646 -> 0.626525, closures 3, converged=True
+[CAR10] C2: objective 0.626646 -> 0.512872, closures 63, converged=True
+[CAR10] complete: C0=78.9578%, C1=78.8708%, C2=78.4977%
+Final report: ${RESEARCH_WORKSPACE}/b1_ranking_preserving_correction/final_report.md

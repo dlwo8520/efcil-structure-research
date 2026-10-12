@@ -1,0 +1,96 @@
+{
+  "records": {
+    "IA10": {
+      "task": 10,
+      "partition": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      "class_count": 200,
+      "old_class_count": 180,
+      "new_class_count": 20,
+      "checkpoint": {
+        "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/task_10.pt",
+        "size": 1367010168,
+        "edge_sha256": "f12303d30fca90bb1cce99636a6e3451286c2dbf7098457c8caba8f3c3d3281a"
+      },
+      "stage": "task_end",
+      "classifier_rows": 200,
+      "stored_mean_count": 200,
+      "stored_covariance_count": 200,
+      "final_feature_cache": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/ten_task_hypothesis_revalidation/IA10/.cache/model_10_on_task_10.npz",
+      "final_feature_cache_identity_valid": true,
+      "train_samples": 5981,
+      "test_samples": 1519,
+      "train_count_min": 2,
+      "train_count_median": 21.0,
+      "train_count_max": 86,
+      "test_count_min": 1,
+      "test_count_median": 5.0,
+      "test_count_max": 26,
+      "canonical_sample_ids": true,
+      "feature_dimension": 768
+    },
+    "CAR10": {
+      "task": 10,
+      "partition": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        19,
+        19,
+        19,
+        19
+      ],
+      "class_count": 196,
+      "old_class_count": 177,
+      "new_class_count": 19,
+      "checkpoint": {
+        "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_10.pt",
+        "size": 1345643768,
+        "edge_sha256": "f9abc1713f56b205d9d6d08a714e904ffe02b77298b025848b25bf9f275d2bb3"
+      },
+      "stage": "task_end",
+      "classifier_rows": 196,
+      "stored_mean_count": 196,
+      "stored_covariance_count": 196,
+      "final_feature_cache": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/ten_task_hypothesis_revalidation/CAR10/.cache/model_10_on_task_10.npz",
+      "final_feature_cache_identity_valid": true,
+      "train_samples": 8144,
+      "test_samples": 8041,
+      "train_count_min": 24,
+      "train_count_median": 42.0,
+      "train_count_max": 68,
+      "test_count_min": 24,
+      "test_count_median": 42.0,
+      "test_count_max": 68,
+      "canonical_sample_ids": true,
+      "feature_dimension": 768
+    }
+  },
+  "pretrained_sources": [
+    {
+      "path": "${RESEARCH_WORKSPACE}/.cache/torch/hub/checkpoints/B_16-i21k-300ep-lr_0.001-aug_medium1-wd_0.1-do_0.0-sd_0.0.npz",
+      "size": 410448610,
+      "sha256": "a157033e309d33e79cbff2408dd77b4458014fcedc46f0ad853e2d08ecb493f6"
+    },
+    {
+      "path": "${RESEARCH_WORKSPACE}/.cache/huggingface/hub/models--timm--vit_base_patch16_224.augreg_in21k/blobs/2d31bb5597c720912f8ea5e4f1de73909a6911798d78ae5d1b9d63a955fed049",
+      "size": 410397786,
+      "sha256": "2d31bb5597c720912f8ea5e4f1de73909a6911798d78ae5d1b9d63a955fed049"
+    }
+  ],
+  "missing": [],
+  "audit": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/coverage_generalization_diagnostic/coverage_generalization_audit.md"
+}

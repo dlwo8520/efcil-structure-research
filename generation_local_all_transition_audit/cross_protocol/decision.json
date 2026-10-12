@@ -1,0 +1,12 @@
+{
+  "IA10_LOCAL_SIGNAL": "YES",
+  "CAR10_LOCAL_SIGNAL": "NO",
+  "LOCAL_SIGNAL_PERSISTS_TO_T10": "NO",
+  "DATASET_COMMON_EVIDENCE": "NO",
+  "ALL_SEEN_TRANSLATION": "NO",
+  "GENERATION_DIRECTION": "STOP",
+  "NEXT_METHOD": "REVIEW_REAL_ONLY_CE_SUPCON_MATCHED_PILOT",
+  "persistence_definition": "Both datasets: T9 local net > 0 AND T10 local net >= 0. IA10 zero at T10 satisfies only its nonnegative bound, not a strictly positive advantage.",
+  "positive_net_is_statistical_significance": false,
+  "new_method_authorized_or_run": false
+}

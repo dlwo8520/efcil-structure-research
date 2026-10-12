@@ -1,0 +1,10 @@
+{
+  "extends": "common.json",
+  "experiment_id": "S1",
+  "old_new_separation": true,
+  "sep_lambda": 0.3,
+  "adaptive_margin_mode": "drift",
+  "similarity_relation_mode": "similarity_tau",
+  "similarity_alpha": 0.5
+}
+

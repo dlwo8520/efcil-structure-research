@@ -1,0 +1,16 @@
+{
+  "original_numeric_rows": 854,
+  "reaggregated_numeric_rows": 854,
+  "differences": [],
+  "source_files": 91,
+  "generation_conditions_reaggregated": 30,
+  "WCK_sample_cohorts_reaggregated": 4,
+  "restored_evidence": [
+    "structure_prototype_oracle_audit/coverage_generalization_diagnostic/CAR10/paired_support_delta.csv",
+    "error_trajectory_diagnostic/CAR10/sample_trajectory.csv",
+    "type_a_generative_augmentation/birth_support_audit.csv",
+    "type_a_generative_augmentation/per_sample_predictions.csv"
+  ],
+  "model_training_executed": false,
+  "model_inference_executed": false
+}

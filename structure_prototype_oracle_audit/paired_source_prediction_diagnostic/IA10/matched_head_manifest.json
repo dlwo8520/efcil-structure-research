@@ -1,0 +1,23 @@
+{
+  "exposure_per_class": 256,
+  "epochs": 5,
+  "optimizer_steps": {
+    "A": 1000,
+    "B": 1000,
+    "C": 1000
+  },
+  "same_pre_ca_initialization": true,
+  "initialization_source": "exact_pre_ca_sidecar",
+  "same_new_bank": true,
+  "same_label_order_and_batch_boundaries": true,
+  "same_optimizer_lr_schedule": true,
+  "old_source_A": "actual feature with replacement (legacy R256)",
+  "old_source_B": "oracle Gaussian (legacy G256)",
+  "old_source_C": "stored/APR Gaussian, matched new head",
+  "old_gaussian_seed_B": 12094,
+  "old_gaussian_seed_C": 12097,
+  "new_bank_seed": 12095,
+  "actual_old_seed": 12096,
+  "permutation_seed": 12193,
+  "coverage_bank_note": "Coverage A/B/C uses matched unique class counts; head A/B/C uses matched 256/class exposure. Support is explanatory, not the training source itself."
+}

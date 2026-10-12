@@ -1,0 +1,29 @@
+{
+  "protocol": "CAR10",
+  "branch": "js",
+  "seed": 1993,
+  "start_task": 8,
+  "trained_tasks": [
+    9,
+    10
+  ],
+  "source_checkpoint": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_08.pt",
+  "source_checkpoint_sha256": "fe146360af4b8c7fc4dc14cd58b3a0f32f8d0398db0053ace1033746531cfcd9",
+  "resume_checkpoint": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_08.pt",
+  "source_git_commit": null,
+  "base_git_commit": "a0db2168663982a4cad24981231721a3518ddf29",
+  "lambda_js": 0.1,
+  "temperature": 1.0,
+  "consistency_candidate_set": "current-only",
+  "augmentation": "original Structure train transform applied independently twice",
+  "optimizer": "sgd",
+  "init_lr": 0.01,
+  "inc_epochs": 15,
+  "batch_size": 48,
+  "ca_epochs": 5,
+  "ca_exposure_per_class": 256,
+  "scc": true,
+  "apr": true,
+  "ca": true,
+  "physical_gpu": "4"
+}

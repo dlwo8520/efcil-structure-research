@@ -1,0 +1,7 @@
+{
+  "diagnostic_only": true,
+  "used_for_selection": false,
+  "feature_source": "vanilla birth post-CA current actual train",
+  "clustering": "spherical kmeans K<=4, 15 fixed iterations",
+  "interpretation": "descriptive coverage/overrepresentation, not a reason to replace parents or tune recipe"
+}

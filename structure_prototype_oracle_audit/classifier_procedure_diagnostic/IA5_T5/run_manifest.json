@@ -1,0 +1,47 @@
+{
+  "status": "complete",
+  "protocol": "IA5",
+  "task": 5,
+  "seed": 1993,
+  "checkpoint": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA5/Structure_AUDIT/seed_1993/task_checkpoints/task_05.pt",
+  "checkpoint_fingerprint_before": {
+    "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA5/Structure_AUDIT/seed_1993/task_checkpoints/task_05.pt",
+    "size": 1414369793,
+    "edge_sha256": "b30bfb61f594bf6b16b4f33edf3ef686b98728c0f4402f34c978684b224f1771"
+  },
+  "checkpoint_fingerprint_after": {
+    "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA5/Structure_AUDIT/seed_1993/task_checkpoints/task_05.pt",
+    "size": 1414369793,
+    "edge_sha256": "b30bfb61f594bf6b16b4f33edf3ef686b98728c0f4402f34c978684b224f1771"
+  },
+  "checkpoint_unchanged": true,
+  "training_reused": true,
+  "backbone_adapter_updated": false,
+  "diagnostic_only": true,
+  "train_samples": 5981,
+  "validation_samples": 1116,
+  "test_samples": 1519,
+  "validation_classes": 192,
+  "no_validation_classes": [
+    48,
+    88,
+    91,
+    94,
+    115,
+    117,
+    159,
+    173
+  ],
+  "g256_r256_optimizer_steps": 1000,
+  "paired_label_sequence_hash": "c32679d7939394f152b0bfd2fd454893ba66c2d501fced292456dd4c1ee7d2ad",
+  "new_bank_identical": true,
+  "cosine_5ep_epochs": 5,
+  "cosine_converged_epochs_run": 100,
+  "cosine_converged_selected_epoch": 1,
+  "cosine_converged_stop_reason": "max_epoch",
+  "linear_no_bias_closures": 11,
+  "linear_with_bias_closures": 18,
+  "t2_t4_executed": false,
+  "ia10_car10_executed": false,
+  "elapsed_seconds": 146.67765283584595
+}

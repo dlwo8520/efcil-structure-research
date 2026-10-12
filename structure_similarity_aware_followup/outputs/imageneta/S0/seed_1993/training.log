@@ -1,0 +1,146 @@
+2026-09-17 15:32:23,646 [trainer.py] => experiment_id: S0
+2026-09-17 15:32:23,647 [trainer.py] => prefix: imageneta_5task_similarity_aware
+2026-09-17 15:32:23,647 [trainer.py] => dataset: imageneta
+2026-09-17 15:32:23,647 [trainer.py] => data_root: ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a
+2026-09-17 15:32:23,647 [trainer.py] => output_root: ${RESEARCH_WORKSPACE}/structure_similarity_aware_followup/outputs
+2026-09-17 15:32:23,647 [trainer.py] => expected_num_classes: 200
+2026-09-17 15:32:23,647 [trainer.py] => expected_tasks: 5
+2026-09-17 15:32:23,647 [trainer.py] => verify_split_content: True
+2026-09-17 15:32:23,647 [trainer.py] => shuffle: True
+2026-09-17 15:32:23,647 [trainer.py] => init_cls: 40
+2026-09-17 15:32:23,647 [trainer.py] => increment: 40
+2026-09-17 15:32:23,647 [trainer.py] => model_name: adapter
+2026-09-17 15:32:23,647 [trainer.py] => followup_extension: True
+2026-09-17 15:32:23,647 [trainer.py] => similarity_aware_extension: True
+2026-09-17 15:32:23,647 [trainer.py] => convnet_type: pretrained_vit_b16_224_in21k_adapter
+2026-09-17 15:32:23,647 [trainer.py] => seed: 1993
+2026-09-17 15:32:23,647 [trainer.py] => init_epochs: 30
+2026-09-17 15:32:23,647 [trainer.py] => inc_epochs: 15
+2026-09-17 15:32:23,647 [trainer.py] => ca: True
+2026-09-17 15:32:23,647 [trainer.py] => ca_epochs: 5
+2026-09-17 15:32:23,647 [trainer.py] => replay_samples_per_class: 256
+2026-09-17 15:32:23,647 [trainer.py] => init_lr: 0.01
+2026-09-17 15:32:23,647 [trainer.py] => batch_size: 48
+2026-09-17 15:32:23,647 [trainer.py] => stats_batch_size: 64
+2026-09-17 15:32:23,647 [trainer.py] => num_workers: 8
+2026-09-17 15:32:23,647 [trainer.py] => weight_decay: 0.0005
+2026-09-17 15:32:23,647 [trainer.py] => min_lr: 0.0
+2026-09-17 15:32:23,647 [trainer.py] => optimizer: sgd
+2026-09-17 15:32:23,647 [trainer.py] => ffn_num: 64
+2026-09-17 15:32:23,647 [trainer.py] => vpt_type: shallow
+2026-09-17 15:32:23,648 [trainer.py] => prompt_token_num: 5
+2026-09-17 15:32:23,648 [trainer.py] => adapter_placement: mlp
+2026-09-17 15:32:23,648 [trainer.py] => adapter_interval: 1
+2026-09-17 15:32:23,648 [trainer.py] => flag: 0
+2026-09-17 15:32:23,648 [trainer.py] => scale: 20.0
+2026-09-17 15:32:23,648 [trainer.py] => margin: 0.2
+2026-09-17 15:32:23,648 [trainer.py] => scc: True
+2026-09-17 15:32:23,648 [trainer.py] => scc_value: 5.0
+2026-09-17 15:32:23,648 [trainer.py] => feature: False
+2026-09-17 15:32:23,648 [trainer.py] => logit: False
+2026-09-17 15:32:23,648 [trainer.py] => apr: True
+2026-09-17 15:32:23,648 [trainer.py] => gamma_weight: 10.0
+2026-09-17 15:32:23,648 [trainer.py] => cov: 5.0
+2026-09-17 15:32:23,648 [trainer.py] => multi_center: False
+2026-09-17 15:32:23,648 [trainer.py] => num_prototypes: 1
+2026-09-17 15:32:23,648 [trainer.py] => kmeans_initialization: kmeans++
+2026-09-17 15:32:23,648 [trainer.py] => kmeans_n_init: 10
+2026-09-17 15:32:23,648 [trainer.py] => kmeans_max_iter: 100
+2026-09-17 15:32:23,648 [trainer.py] => cluster_min_samples: 2
+2026-09-17 15:32:23,648 [trainer.py] => stats_cov_jitter: 0.001
+2026-09-17 15:32:23,648 [trainer.py] => old_new_separation: False
+2026-09-17 15:32:23,648 [trainer.py] => separation_covariance: diagonal
+2026-09-17 15:32:23,648 [trainer.py] => sep_lambda: 0.0
+2026-09-17 15:32:23,648 [trainer.py] => sep_percentile: 95.0
+2026-09-17 15:32:23,648 [trainer.py] => sep_tau_floor: 1e-08
+2026-09-17 15:32:23,648 [trainer.py] => sep_reduction: max_relative_intrusion
+2026-09-17 15:32:23,648 [trainer.py] => sep_timing: epoch_apr_cache
+2026-09-17 15:32:23,648 [trainer.py] => sep_boundary_policy: birth_quantile_fixed
+2026-09-17 15:32:23,648 [trainer.py] => sep_refresh_epochs: 1
+2026-09-17 15:32:23,648 [trainer.py] => sep_cov_eigen_floor: 1e-06
+2026-09-17 15:32:23,648 [trainer.py] => sep_cholesky_initial_jitter: 1e-06
+2026-09-17 15:32:23,648 [trainer.py] => sep_cholesky_jitter_multiplier: 10.0
+2026-09-17 15:32:23,648 [trainer.py] => sep_cholesky_max_tries: 6
+2026-09-17 15:32:23,648 [trainer.py] => sep_region_chunk_size: 8
+2026-09-17 15:32:23,648 [trainer.py] => sep_factor_device: cpu
+2026-09-17 15:32:23,648 [trainer.py] => sep_grad_diagnostics: True
+2026-09-17 15:32:23,648 [trainer.py] => checkpoint_every_epoch: True
+2026-09-17 15:32:23,648 [trainer.py] => pic_enabled: False
+2026-09-17 15:32:23,648 [trainer.py] => pic_lambda: 1.0
+2026-09-17 15:32:23,648 [trainer.py] => pic_temperature: 0.07
+2026-09-17 15:32:23,649 [trainer.py] => ahn_enabled: False
+2026-09-17 15:32:23,649 [trainer.py] => ahn_lambda: 1.0
+2026-09-17 15:32:23,649 [trainer.py] => ahn_margin: 0.5
+2026-09-17 15:32:23,649 [trainer.py] => ahn_top_k: 2
+2026-09-17 15:32:23,649 [trainer.py] => normalized_diagonal: False
+2026-09-17 15:32:23,649 [trainer.py] => adaptive_margin_mode: none
+2026-09-17 15:32:23,649 [trainer.py] => adaptive_margin_strength: 0.25
+2026-09-17 15:32:23,649 [trainer.py] => adaptive_margin_min_scale: 0.5
+2026-09-17 15:32:23,649 [trainer.py] => adaptive_margin_max_scale: 2.0
+2026-09-17 15:32:23,649 [trainer.py] => ceos_replay_fraction: 0.0
+2026-09-17 15:32:23,649 [trainer.py] => ceos_lambda_min: 0.7
+2026-09-17 15:32:23,649 [trainer.py] => ceos_enemy_top_k: 1
+2026-09-17 15:32:23,649 [trainer.py] => ceos_log_samples: False
+2026-09-17 15:32:23,649 [trainer.py] => prototype_refresh_epochs: 1
+2026-09-17 15:32:23,649 [trainer.py] => diagnostic_grad_interval: 20
+2026-09-17 15:32:23,649 [trainer.py] => top_k_similar_old: 5
+2026-09-17 15:32:23,649 [trainer.py] => similarity_relation_mode: none
+2026-09-17 15:32:23,649 [trainer.py] => similarity_alpha: 0.5
+2026-09-17 15:32:23,649 [trainer.py] => relative_margin: 0.05
+2026-09-17 15:32:23,649 [trainer.py] => similarity_beta_source: S0
+2026-09-17 15:32:23,649 [trainer.py] => similarity_beta_quantile: 0.75
+2026-09-17 15:32:23,649 [trainer.py] => similarity_beta_fixed: None
+2026-09-17 15:32:23,649 [trainer.py] => similarity_scc_enabled: False
+2026-09-17 15:32:23,649 [trainer.py] => similarity_scc_alpha: 0.5
+2026-09-17 15:32:23,649 [trainer.py] => similarity_scc_min_weight: 0.5
+2026-09-17 15:32:23,649 [trainer.py] => soft_gate_temperature: 0.1
+2026-09-17 15:32:23,649 [trainer.py] => diagnostic_sample_rows: True
+2026-09-17 15:32:23,649 [trainer.py] => config: ${RESEARCH_WORKSPACE}/structure_similarity_aware_followup/configs/S0.json
+2026-09-17 15:32:23,649 [trainer.py] => base_root: ${RESEARCH_WORKSPACE}/structure_multicenter_separation
+2026-09-17 15:32:23,649 [trainer.py] => extension_root: ${RESEARCH_WORKSPACE}/structure_e3_followup
+2026-09-17 15:32:23,649 [trainer.py] => e3_root: ${RESEARCH_WORKSPACE}/structure_e3_followup
+2026-09-17 15:32:23,649 [trainer.py] => similarity_extension_root: ${RESEARCH_WORKSPACE}/structure_similarity_aware_followup
+2026-09-17 15:32:23,649 [trainer.py] => device: [device(type='cuda', index=0)]
+2026-09-17 15:32:23,649 [trainer.py] => physical_gpus: ['1']
+2026-09-17 15:32:23,649 [trainer.py] => launch_command: ${RESEARCH_WORKSPACE}/structure_similarity_aware_followup/run.py --config ${RESEARCH_WORKSPACE}/structure_similarity_aware_followup/configs/S0.json --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_similarity_aware_followup/outputs --seed 1993
+2026-09-17 15:32:23,649 [trainer.py] => run_dir: ${RESEARCH_WORKSPACE}/structure_similarity_aware_followup/outputs/imageneta/S0/seed_1993
+2026-09-17 15:32:23,649 [trainer.py] => recording_gaps: []
+2026-09-17 15:32:51,246 [data.py] => Loaded ImageNet-A from ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a: classes=200 train=5981 test=1519
+2026-09-17 15:32:51,247 [data_manager.py] => [168, 136, 51, 9, 183, 101, 171, 99, 42, 159, 191, 70, 16, 188, 27, 10, 175, 26, 68, 187, 98, 6, 85, 35, 112, 43, 100, 0, 103, 181, 88, 59, 4, 2, 116, 174, 94, 80, 106, 1, 147, 17, 141, 131, 72, 23, 173, 54, 197, 118, 87, 32, 79, 104, 91, 19, 135, 107, 178, 36, 11, 199, 142, 8, 122, 3, 28, 57, 153, 172, 190, 56, 49, 44, 97, 62, 151, 169, 194, 55, 192, 12, 189, 78, 66, 180, 15, 137, 109, 134, 92, 119, 126, 52, 170, 40, 148, 65, 144, 64, 138, 45, 77, 89, 154, 90, 71, 193, 74, 30, 113, 143, 96, 84, 67, 50, 186, 156, 69, 21, 18, 111, 108, 58, 125, 157, 150, 110, 182, 129, 166, 83, 81, 60, 13, 165, 14, 176, 63, 117, 5, 22, 145, 121, 38, 41, 82, 127, 114, 20, 31, 53, 37, 163, 196, 130, 152, 162, 86, 76, 24, 34, 184, 149, 33, 128, 198, 155, 146, 167, 139, 120, 140, 102, 47, 25, 158, 123, 46, 164, 61, 7, 115, 75, 133, 160, 105, 132, 179, 124, 48, 73, 93, 39, 95, 195, 29, 177, 185, 161]
+2026-09-17 15:32:52,077 [inc_net.py] => Adapter placement strategy: mlp
+2026-09-17 15:32:52,077 [inc_net.py] => Adapter interval: 1
+2026-09-17 15:32:59,717 [CDS_adapter.py] => Learning on 0-40
+2026-09-17 15:41:43,917 [trainer.py] => Task 0 metrics: {'task': 0, 'task_id': 1, 'eval_stage': 'task_final', 'seen_classes': 40, 'num_correct': 302, 'num_samples': 360, 'A_t': 83.88888888888889, 'top5_num_correct': 347, 'top5': 96.38888888888889, 'old_num_correct': None, 'old_num_samples': 0, 'old_accuracy': None, 'new_num_correct': 302, 'new_num_samples': 360, 'new_accuracy': 83.88888888888889, 'old_to_new_error_rate': None, 'new_to_old_error_rate': 0.0, 'inc_accuracy_so_far': 83.88888888888889, 'forgetting_so_far': None, 'training_seconds': 521.6097375599784, 'peak_cuda_allocated_bytes': 6281587712, 'peak_cuda_reserved_bytes': 8940158976, 'peak_main_process_rss_bytes': 4402642944, 'class_statistics_bytes': 94617600, 'region_statistics_bytes': 0, 'separation_cache_bytes': 0, 'total_statistics_bytes': 94617600, 'statistics_and_cache_bytes': 94617600, 'status': 'complete'}
+2026-09-17 15:41:44,547 [CDS_adapter.py] => Learning on 40-80
+2026-09-17 15:42:21,868 [learner.py] => Frozen old-model similarity task=2 shape=(40, 40) beta=0.257925 source=S0
+2026-09-17 15:50:10,847 [base.py] => CA Task 1 => Loss 0.286, Test_accy 78.800
+2026-09-17 15:50:15,824 [base.py] => CA Task 1 => Loss 0.242, Test_accy 79.370
+2026-09-17 15:50:20,827 [base.py] => CA Task 1 => Loss 0.227, Test_accy 79.370
+2026-09-17 15:50:26,132 [base.py] => CA Task 1 => Loss 0.225, Test_accy 79.370
+2026-09-17 15:50:31,295 [base.py] => CA Task 1 => Loss 0.219, Test_accy 79.370
+2026-09-17 15:50:36,231 [trainer.py] => Task 1 metrics: {'task': 1, 'task_id': 2, 'eval_stage': 'task_final', 'seen_classes': 80, 'num_correct': 554, 'num_samples': 698, 'A_t': 79.36962750716333, 'top5_num_correct': 657, 'top5': 94.12607449856733, 'old_num_correct': 285, 'old_num_samples': 360, 'old_accuracy': 79.16666666666667, 'new_num_correct': 269, 'new_num_samples': 338, 'new_accuracy': 79.58579881656804, 'old_to_new_error_rate': 0.09722222222222222, 'new_to_old_error_rate': 0.12721893491124261, 'inc_accuracy_so_far': 81.62925819802611, 'forgetting_so_far': 4.722222222222214, 'training_seconds': 526.785501907987, 'peak_cuda_allocated_bytes': 6281956352, 'peak_cuda_reserved_bytes': 9007267840, 'peak_main_process_rss_bytes': 4402642944, 'class_statistics_bytes': 189235200, 'region_statistics_bytes': 0, 'separation_cache_bytes': 0, 'total_statistics_bytes': 189235200, 'statistics_and_cache_bytes': 189235200, 'status': 'complete'}
+2026-09-17 15:50:37,464 [CDS_adapter.py] => Learning on 80-120
+2026-09-17 15:51:19,537 [learner.py] => Frozen old-model similarity task=3 shape=(40, 80) beta=0.272141 source=S0
+2026-09-17 15:59:23,702 [base.py] => CA Task 2 => Loss 0.314, Test_accy 73.850
+2026-09-17 15:59:30,370 [base.py] => CA Task 2 => Loss 0.282, Test_accy 73.950
+2026-09-17 15:59:37,497 [base.py] => CA Task 2 => Loss 0.270, Test_accy 74.150
+2026-09-17 15:59:44,579 [base.py] => CA Task 2 => Loss 0.258, Test_accy 74.260
+2026-09-17 15:59:51,348 [base.py] => CA Task 2 => Loss 0.257, Test_accy 74.150
+2026-09-17 15:59:58,037 [trainer.py] => Task 2 metrics: {'task': 2, 'task_id': 3, 'eval_stage': 'task_final', 'seen_classes': 120, 'num_correct': 723, 'num_samples': 975, 'A_t': 74.15384615384616, 'top5_num_correct': 899, 'top5': 92.2051282051282, 'old_num_correct': 527, 'old_num_samples': 698, 'old_accuracy': 75.50143266475645, 'new_num_correct': 196, 'new_num_samples': 277, 'new_accuracy': 70.7581227436823, 'old_to_new_error_rate': 0.08166189111747851, 'new_to_old_error_rate': 0.21660649819494585, 'inc_accuracy_so_far': 79.13745418329945, 'forgetting_so_far': 6.228632478632477, 'training_seconds': 553.927296873997, 'peak_cuda_allocated_bytes': 6282324992, 'peak_cuda_reserved_bytes': 9426698240, 'peak_main_process_rss_bytes': 4402642944, 'class_statistics_bytes': 283852800, 'region_statistics_bytes': 0, 'separation_cache_bytes': 0, 'total_statistics_bytes': 283852800, 'statistics_and_cache_bytes': 283852800, 'status': 'complete'}
+2026-09-17 15:59:59,404 [CDS_adapter.py] => Learning on 120-160
+2026-09-17 16:00:40,915 [learner.py] => Frozen old-model similarity task=4 shape=(40, 120) beta=0.330014 source=S0
+2026-09-17 16:09:16,784 [base.py] => CA Task 3 => Loss 0.369, Test_accy 69.150
+2026-09-17 16:09:25,244 [base.py] => CA Task 3 => Loss 0.344, Test_accy 68.990
+2026-09-17 16:09:33,744 [base.py] => CA Task 3 => Loss 0.324, Test_accy 68.910
+2026-09-17 16:09:42,302 [base.py] => CA Task 3 => Loss 0.323, Test_accy 69.070
+2026-09-17 16:09:50,777 [base.py] => CA Task 3 => Loss 0.318, Test_accy 69.150
+2026-09-17 16:09:58,885 [trainer.py] => Task 3 metrics: {'task': 3, 'task_id': 4, 'eval_stage': 'task_final', 'seen_classes': 160, 'num_correct': 863, 'num_samples': 1248, 'A_t': 69.15064102564102, 'top5_num_correct': 1107, 'top5': 88.70192307692308, 'old_num_correct': 688, 'old_num_samples': 975, 'old_accuracy': 70.56410256410257, 'new_num_correct': 175, 'new_num_samples': 273, 'new_accuracy': 64.1025641025641, 'old_to_new_error_rate': 0.08, 'new_to_old_error_rate': 0.25274725274725274, 'inc_accuracy_so_far': 76.64075089388484, 'forgetting_so_far': 7.560769760853073, 'training_seconds': 591.4285496879602, 'peak_cuda_allocated_bytes': 6282693632, 'peak_cuda_reserved_bytes': 10034872320, 'peak_main_process_rss_bytes': 4402642944, 'class_statistics_bytes': 378470400, 'region_statistics_bytes': 0, 'separation_cache_bytes': 0, 'total_statistics_bytes': 378470400, 'statistics_and_cache_bytes': 378470400, 'status': 'complete'}
+2026-09-17 16:10:00,674 [CDS_adapter.py] => Learning on 160-200
+2026-09-17 16:10:44,050 [learner.py] => Frozen old-model similarity task=5 shape=(40, 160) beta=0.343594 source=S0
+2026-09-17 16:20:12,700 [base.py] => CA Task 4 => Loss 0.433, Test_accy 65.900
+2026-09-17 16:20:23,147 [base.py] => CA Task 4 => Loss 0.405, Test_accy 66.160
+2026-09-17 16:20:33,445 [base.py] => CA Task 4 => Loss 0.394, Test_accy 66.100
+2026-09-17 16:20:43,777 [base.py] => CA Task 4 => Loss 0.384, Test_accy 66.490
+2026-09-17 16:20:54,167 [base.py] => CA Task 4 => Loss 0.386, Test_accy 66.430
+2026-09-17 16:21:03,633 [trainer.py] => Task 4 metrics: {'task': 4, 'task_id': 5, 'eval_stage': 'task_final', 'seen_classes': 200, 'num_correct': 1009, 'num_samples': 1519, 'A_t': 66.4252797893351, 'top5_num_correct': 1313, 'top5': 86.43844634628044, 'old_num_correct': 836, 'old_num_samples': 1248, 'old_accuracy': 66.98717948717949, 'new_num_correct': 173, 'new_num_samples': 271, 'new_accuracy': 63.837638376383765, 'old_to_new_error_rate': 0.08573717948717949, 'new_to_old_error_rate': 0.31365313653136534, 'inc_accuracy_so_far': 74.59765667297489, 'forgetting_so_far': 7.844444156232544, 'training_seconds': 653.5740345370141, 'peak_cuda_allocated_bytes': 6283062272, 'peak_cuda_reserved_bytes': 10835984384, 'peak_main_process_rss_bytes': 4402642944, 'class_statistics_bytes': 473088000, 'region_statistics_bytes': 0, 'separation_cache_bytes': 0, 'total_statistics_bytes': 473088000, 'statistics_and_cache_bytes': 473088000, 'status': 'complete'}
+2026-09-17 16:21:05,510 [trainer.py] => Summary: {'recording_schema_version': 2, 'experiment_id': 'S0', 'seed': 1993, 'multi_center': False, 'separation_covariance': 'none', 'completed_tasks': 5, 'expected_tasks': 5, 'A_by_task': [83.88888888888889, 79.36962750716333, 74.15384615384616, 69.15064102564102, 66.4252797893351], 'Inc-Acc': 74.59765667297489, 'Last-Acc': 66.4252797893351, 'Forgetting': 7.844444156232544, 'forgetting_definition': 'mean_i(max_{l=i..T-1} a[l,i] - a[T,i]) over tasks i before final task; a[l,i] uses the single head over all classes seen at stage l', 'accuracy_unit': 'percent_0_to_100_unrounded', 'recording_status': 'complete', 'recording_gaps': [], 'total_training_seconds': 2847.3251205669367, 'max_peak_cuda_allocated_bytes': 6283062272, 'max_peak_cuda_reserved_bytes': 10835984384, 'max_peak_main_process_rss_bytes': 4402642944, 'final_total_statistics_bytes': 473088000, 'max_separation_cache_bytes': 0, 'status': 'complete'}

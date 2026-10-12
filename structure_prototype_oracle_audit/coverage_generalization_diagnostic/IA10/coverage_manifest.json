@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "matched_bank_size_per_class": true,
+  "actual_replacement_sampling": false,
+  "gaussian_draws": 3,
+  "oracle_seed_base": 102094,
+  "stored_seed_base": 102195,
+  "old_new_reported_separately": true,
+  "query_count": 1519,
+  "support_k": 5,
+  "normalization": "raw Gaussian sampling followed by feature-wise L2 normalization",
+  "test_used_for_selection": false
+}

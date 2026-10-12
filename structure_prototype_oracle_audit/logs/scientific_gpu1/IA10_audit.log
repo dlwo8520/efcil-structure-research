@@ -1,0 +1,105 @@
+
+[2026-09-23T11:07:25.006057+00:00] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/run_audit.py --protocol IA10 --gpu 1 --output-root ${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/scientific_audit --covariance-mode both --oracle-head-eval-tasks all --require-ca-regression-pass
+audit protocol=IA10 physical_gpu=['1'] run_dir=${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993
+[audit] loading ${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/task_01.pt
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[audit] IA10 T1 oracle_train_statistics
+[audit] IA10 T1 oracle_test_statistics
+[audit] loading ${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/task_02.pt
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[audit] IA10 T2 oracle_train_statistics
+[audit] IA10 T2 oracle_test_statistics
+[audit] loading ${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/task_03.pt
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[audit] IA10 T3 oracle_train_statistics
+[audit] IA10 T3 oracle_test_statistics
+[audit] loading ${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/task_04.pt
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[audit] IA10 T4 oracle_train_statistics
+[audit] IA10 T4 oracle_test_statistics
+[audit] loading ${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/task_05.pt
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[audit] IA10 T5 oracle_train_statistics
+[audit] IA10 T5 oracle_test_statistics
+[audit] loading ${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/task_06.pt
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[audit] IA10 T6 oracle_train_statistics
+[audit] IA10 T6 oracle_test_statistics
+[audit] loading ${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/task_07.pt
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[audit] IA10 T7 oracle_train_statistics
+[audit] IA10 T7 oracle_test_statistics
+[audit] loading ${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/task_08.pt
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[audit] IA10 T8 oracle_train_statistics
+[audit] IA10 T8 oracle_test_statistics
+[audit] loading ${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/task_09.pt
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[audit] IA10 T9 oracle_train_statistics
+[audit] IA10 T9 oracle_test_statistics
+[audit] loading ${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/task_10.pt
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[audit] IA10 T10 oracle_train_statistics
+[audit] IA10 T10 oracle_test_statistics
+[visualize] exact t-SNE points=593 device=cuda:0 iterations=750
+[visualize] t-SNE iteration 250/750
+[visualize] t-SNE iteration 500/750
+[visualize] t-SNE iteration 750/750
+[visualize] exact t-SNE points=1300 device=cuda:0 iterations=750
+[visualize] t-SNE iteration 250/750
+[visualize] t-SNE iteration 500/750
+[visualize] t-SNE iteration 750/750
+[visualize] exact t-SNE points=1360 device=cuda:0 iterations=750
+[visualize] t-SNE iteration 250/750
+[visualize] t-SNE iteration 500/750
+[visualize] t-SNE iteration 750/750
+[visualize] exact t-SNE points=1420 device=cuda:0 iterations=750
+[visualize] t-SNE iteration 250/750
+[visualize] t-SNE iteration 500/750
+[visualize] t-SNE iteration 750/750
+[visualize] exact t-SNE points=1480 device=cuda:0 iterations=750
+[visualize] t-SNE iteration 250/750
+[visualize] t-SNE iteration 500/750
+[visualize] t-SNE iteration 750/750
+[visualize] exact t-SNE points=1540 device=cuda:0 iterations=750
+[visualize] t-SNE iteration 250/750
+[visualize] t-SNE iteration 500/750
+[visualize] t-SNE iteration 750/750
+[visualize] exact t-SNE points=1600 device=cuda:0 iterations=750
+[visualize] t-SNE iteration 250/750
+[visualize] t-SNE iteration 500/750
+[visualize] t-SNE iteration 750/750
+[visualize] exact t-SNE points=1660 device=cuda:0 iterations=750
+[visualize] t-SNE iteration 250/750
+[visualize] t-SNE iteration 500/750
+[visualize] t-SNE iteration 750/750
+[visualize] exact t-SNE points=1720 device=cuda:0 iterations=750
+[visualize] t-SNE iteration 250/750
+[visualize] t-SNE iteration 500/750
+[visualize] t-SNE iteration 750/750
+[visualize] exact t-SNE points=1780 device=cuda:0 iterations=750
+[visualize] t-SNE iteration 250/750
+[visualize] t-SNE iteration 500/750
+[visualize] t-SNE iteration 750/750
+audit complete tasks=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10] CA_regression=PASS report=${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/scientific_audit/IA10/seed_1993/IA10_structure_oracle_report.md combined=${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/scientific_audit/structure_oracle_cross_protocol_report.md
+[2026-09-23T12:50:31.437945+00:00] EXIT 0

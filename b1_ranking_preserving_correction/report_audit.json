@@ -1,0 +1,52 @@
+{
+  "IA10": {
+    "sample_rows": 1519,
+    "fixed_B1_n": 126,
+    "sample_vs_metrics_and_transition_tables": "PASS",
+    "branches": {
+      "C0": {
+        "repair": 0,
+        "harm": 0,
+        "correct_to_same_task_wrong": 0,
+        "transition_sum": 1519
+      },
+      "C1": {
+        "repair": 2,
+        "harm": 1,
+        "correct_to_same_task_wrong": 0,
+        "transition_sum": 1519
+      },
+      "C2": {
+        "repair": 7,
+        "harm": 15,
+        "correct_to_same_task_wrong": 0,
+        "transition_sum": 1519
+      }
+    }
+  },
+  "CAR10": {
+    "sample_rows": 8041,
+    "fixed_B1_n": 473,
+    "sample_vs_metrics_and_transition_tables": "PASS",
+    "branches": {
+      "C0": {
+        "repair": 0,
+        "harm": 0,
+        "correct_to_same_task_wrong": 0,
+        "transition_sum": 8041
+      },
+      "C1": {
+        "repair": 5,
+        "harm": 12,
+        "correct_to_same_task_wrong": 0,
+        "transition_sum": 8041
+      },
+      "C2": {
+        "repair": 66,
+        "harm": 103,
+        "correct_to_same_task_wrong": 0,
+        "transition_sum": 8041
+      }
+    }
+  }
+}

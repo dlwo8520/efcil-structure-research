@@ -1,0 +1,91 @@
+{
+  "format_version": 2,
+  "status": "complete",
+  "protocol": "IA5",
+  "dataset": "imageneta",
+  "expected_tasks": 5,
+  "audited_tasks": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "complete_temporal_coverage": true,
+  "data_root": "${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a",
+  "oracle_splits": [
+    "train",
+    "test"
+  ],
+  "primary_oracle": "oracle_train_statistics",
+  "covariance_mode": "both",
+  "oracle_head_eval_tasks": "all",
+  "oracle_head_epochs_override": null,
+  "oracle_head_samples_per_class_override": null,
+  "max_classes": null,
+  "max_samples_per_class": null,
+  "scientific_interpretation_allowed": true,
+  "ca_regression_status": "PASS",
+  "checkpoint_fingerprints_before_after_equal": true,
+  "leakage_guards": {
+    "model_eval": true,
+    "torch_no_grad": true,
+    "parameters_require_grad_false": true,
+    "optimizer_created_for_backbone_or_adapter": false,
+    "backward_called_on_backbone_or_adapter": false,
+    "diagnostic_optimizer_is_head_only": true,
+    "diagnostic_input_checksum_check": true,
+    "audit_values_returned_to_training": false,
+    "checkpoint_read_only_fingerprint_check": true
+  },
+  "checkpoint_fingerprints": [
+    {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA5/Structure_AUDIT/seed_1993/task_checkpoints/task_01.pt",
+      "size": 466790132,
+      "mtime_ns": 1790138450686488434,
+      "edge_sha256": "6707c929a6663cd0cc3ee2a4776286b6410f2fcc6feb5e204600d0adb8636d0d"
+    },
+    {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA5/Structure_AUDIT/seed_1993/task_checkpoints/task_02.pt",
+      "size": 845749792,
+      "mtime_ns": 1790138765253326805,
+      "edge_sha256": "4651b9b1405dccd56bf4e178970fd0bb025433b0059babc8b7c066c91fac1252"
+    },
+    {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA5/Structure_AUDIT/seed_1993/task_checkpoints/task_03.pt",
+      "size": 1035286571,
+      "mtime_ns": 1790139086216664735,
+      "edge_sha256": "5b1cc555c7b38afa05eae6937d2a89246e615447a8e5a66b93101471f796a0a8"
+    },
+    {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA5/Structure_AUDIT/seed_1993/task_checkpoints/task_04.pt",
+      "size": 1224829238,
+      "mtime_ns": 1790139449392160681,
+      "edge_sha256": "a60f483e2d84cf6ef21aa4b3eab7e1943817a872d8314b29769e9bf02e92083b"
+    },
+    {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA5/Structure_AUDIT/seed_1993/task_checkpoints/task_05.pt",
+      "size": 1414369793,
+      "mtime_ns": 1790139856126961905,
+      "edge_sha256": "b30bfb61f594bf6b16b4f33edf3ef686b98728c0f4402f34c978684b224f1771"
+    }
+  ],
+  "row_counts": {
+    "prototype_oracle_audit.csv": 1200,
+    "apr_oracle_drift_audit.csv": 400,
+    "covariance_oracle_audit.csv": 1200,
+    "mahalanobis_oracle_audit.csv": 2400,
+    "prototype_classifier_audit.csv": 10,
+    "class_forgetting_correlation.csv": 108,
+    "class_accuracy_history.csv": 600,
+    "mahalanobis_nearest_old_ranking.csv": 4,
+    "apr_ablation_audit.csv": 400,
+    "oracle_classifier_replacement.csv": 21,
+    "new_class_competition_diagnostics.csv": 21,
+    "boundary_direction_error.csv": 400,
+    "margin_diagnostics.csv": 5795,
+    "gaussian_assumption_diagnostics.csv": 600,
+    "task_progression_summary.csv": 4
+  },
+  "elapsed_seconds": 3587.5243129730225
+}

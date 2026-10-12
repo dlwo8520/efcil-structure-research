@@ -1,0 +1,15 @@
+{
+  "extends": "C3.json",
+  "experiment_id": "SMOKE_C3",
+  "prefix": "imageneta_similarity_control_smoke_only",
+  "seed": [1993],
+  "init_epochs": 1,
+  "inc_epochs": 1,
+  "ca_epochs": 1,
+  "batch_size": 64,
+  "num_workers": 4,
+  "checkpoint_every_epoch": false,
+  "diagnostic_grad_interval": 0,
+  "diagnostic_sample_rows": false
+}
+

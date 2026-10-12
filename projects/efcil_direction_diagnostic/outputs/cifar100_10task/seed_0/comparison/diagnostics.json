@@ -1,0 +1,26 @@
+{
+  "interference_forgetting": {
+    "pearson_r": 0.7434277999963339,
+    "pearson_p": 0.02168533035733977,
+    "spearman_r": 0.6666666666666667,
+    "spearman_p": 0.04986723056888511
+  },
+  "interference_drift": {
+    "pearson_r": 0.9683903235625078,
+    "pearson_p": 1.7926045287122665e-05,
+    "spearman_r": 0.9333333333333332,
+    "spearman_p": 0.00023589981215941676
+  },
+  "orthogonal_rank_plasticity": {
+    "pearson_r": -0.4165113148435165,
+    "pearson_p": 0.26478256036974723,
+    "spearman_r": -0.31666666666666665,
+    "spearman_p": 0.4063970144863861
+  },
+  "matched_orthogonal_rank_plasticity": {
+    "pearson_r": -0.46924591801719184,
+    "pearson_p": 0.20255381968682212,
+    "spearman_r": -0.5499999999999999,
+    "spearman_p": 0.12497678418833198
+  }
+}

@@ -1,0 +1,223 @@
+2026-09-19 05:45:56,148 [trainer.py] => experiment_id: C_P005_L100
+2026-09-19 05:45:56,148 [trainer.py] => prefix: selective_similarity_sweep
+2026-09-19 05:45:56,148 [trainer.py] => dataset: IA5
+2026-09-19 05:45:56,148 [trainer.py] => data_root: ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a
+2026-09-19 05:45:56,148 [trainer.py] => output_root: ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs
+2026-09-19 05:45:56,148 [trainer.py] => expected_num_classes: 200
+2026-09-19 05:45:56,148 [trainer.py] => expected_tasks: 5
+2026-09-19 05:45:56,148 [trainer.py] => verify_split_content: False
+2026-09-19 05:45:56,148 [trainer.py] => shuffle: True
+2026-09-19 05:45:56,148 [trainer.py] => init_cls: 40
+2026-09-19 05:45:56,148 [trainer.py] => increment: 40
+2026-09-19 05:45:56,148 [trainer.py] => model_name: adapter
+2026-09-19 05:45:56,148 [trainer.py] => followup_extension: True
+2026-09-19 05:45:56,148 [trainer.py] => similarity_aware_extension: True
+2026-09-19 05:45:56,148 [trainer.py] => convnet_type: pretrained_vit_b16_224_in21k_adapter
+2026-09-19 05:45:56,148 [trainer.py] => seed: 1993
+2026-09-19 05:45:56,148 [trainer.py] => init_epochs: 30
+2026-09-19 05:45:56,148 [trainer.py] => inc_epochs: 15
+2026-09-19 05:45:56,148 [trainer.py] => ca: True
+2026-09-19 05:45:56,148 [trainer.py] => ca_epochs: 5
+2026-09-19 05:45:56,148 [trainer.py] => replay_samples_per_class: 256
+2026-09-19 05:45:56,148 [trainer.py] => init_lr: 0.01
+2026-09-19 05:45:56,148 [trainer.py] => batch_size: 48
+2026-09-19 05:45:56,148 [trainer.py] => stats_batch_size: 64
+2026-09-19 05:45:56,148 [trainer.py] => num_workers: 8
+2026-09-19 05:45:56,148 [trainer.py] => weight_decay: 0.0005
+2026-09-19 05:45:56,148 [trainer.py] => min_lr: 0.0
+2026-09-19 05:45:56,148 [trainer.py] => optimizer: sgd
+2026-09-19 05:45:56,148 [trainer.py] => ffn_num: 64
+2026-09-19 05:45:56,149 [trainer.py] => vpt_type: shallow
+2026-09-19 05:45:56,149 [trainer.py] => prompt_token_num: 5
+2026-09-19 05:45:56,149 [trainer.py] => adapter_placement: mlp
+2026-09-19 05:45:56,149 [trainer.py] => adapter_interval: 1
+2026-09-19 05:45:56,149 [trainer.py] => flag: 0
+2026-09-19 05:45:56,149 [trainer.py] => scale: 20.0
+2026-09-19 05:45:56,149 [trainer.py] => margin: 0.2
+2026-09-19 05:45:56,149 [trainer.py] => scc: True
+2026-09-19 05:45:56,149 [trainer.py] => scc_value: 5.0
+2026-09-19 05:45:56,149 [trainer.py] => feature: False
+2026-09-19 05:45:56,149 [trainer.py] => logit: False
+2026-09-19 05:45:56,149 [trainer.py] => apr: True
+2026-09-19 05:45:56,149 [trainer.py] => gamma_weight: 10.0
+2026-09-19 05:45:56,149 [trainer.py] => cov: 5.0
+2026-09-19 05:45:56,149 [trainer.py] => multi_center: False
+2026-09-19 05:45:56,149 [trainer.py] => num_prototypes: 1
+2026-09-19 05:45:56,149 [trainer.py] => kmeans_initialization: kmeans++
+2026-09-19 05:45:56,149 [trainer.py] => kmeans_n_init: 10
+2026-09-19 05:45:56,149 [trainer.py] => kmeans_max_iter: 100
+2026-09-19 05:45:56,149 [trainer.py] => cluster_min_samples: 2
+2026-09-19 05:45:56,149 [trainer.py] => stats_cov_jitter: 0.001
+2026-09-19 05:45:56,149 [trainer.py] => old_new_separation: True
+2026-09-19 05:45:56,149 [trainer.py] => separation_covariance: diagonal
+2026-09-19 05:45:56,149 [trainer.py] => sep_lambda: 1.0
+2026-09-19 05:45:56,149 [trainer.py] => sep_percentile: 95.0
+2026-09-19 05:45:56,149 [trainer.py] => sep_tau_floor: 1e-08
+2026-09-19 05:45:56,149 [trainer.py] => sep_reduction: max_relative_intrusion
+2026-09-19 05:45:56,149 [trainer.py] => sep_timing: epoch_apr_cache
+2026-09-19 05:45:56,149 [trainer.py] => sep_boundary_policy: birth_quantile_fixed
+2026-09-19 05:45:56,149 [trainer.py] => sep_refresh_epochs: 1
+2026-09-19 05:45:56,149 [trainer.py] => sep_cov_eigen_floor: 1e-06
+2026-09-19 05:45:56,149 [trainer.py] => sep_cholesky_initial_jitter: 1e-06
+2026-09-19 05:45:56,149 [trainer.py] => sep_cholesky_jitter_multiplier: 10.0
+2026-09-19 05:45:56,149 [trainer.py] => sep_cholesky_max_tries: 6
+2026-09-19 05:45:56,149 [trainer.py] => sep_region_chunk_size: 8
+2026-09-19 05:45:56,149 [trainer.py] => sep_factor_device: cpu
+2026-09-19 05:45:56,149 [trainer.py] => sep_grad_diagnostics: True
+2026-09-19 05:45:56,149 [trainer.py] => checkpoint_every_epoch: True
+2026-09-19 05:45:56,149 [trainer.py] => pic_enabled: False
+2026-09-19 05:45:56,149 [trainer.py] => pic_lambda: 1.0
+2026-09-19 05:45:56,149 [trainer.py] => pic_temperature: 0.07
+2026-09-19 05:45:56,149 [trainer.py] => ahn_enabled: False
+2026-09-19 05:45:56,149 [trainer.py] => ahn_lambda: 1.0
+2026-09-19 05:45:56,149 [trainer.py] => ahn_margin: 0.5
+2026-09-19 05:45:56,149 [trainer.py] => ahn_top_k: 2
+2026-09-19 05:45:56,149 [trainer.py] => normalized_diagonal: False
+2026-09-19 05:45:56,149 [trainer.py] => adaptive_margin_mode: drift
+2026-09-19 05:45:56,149 [trainer.py] => adaptive_margin_strength: 0.25
+2026-09-19 05:45:56,149 [trainer.py] => adaptive_margin_min_scale: 0.5
+2026-09-19 05:45:56,149 [trainer.py] => adaptive_margin_max_scale: 2.0
+2026-09-19 05:45:56,149 [trainer.py] => ceos_replay_fraction: 0.0
+2026-09-19 05:45:56,150 [trainer.py] => ceos_lambda_min: 0.7
+2026-09-19 05:45:56,150 [trainer.py] => ceos_enemy_top_k: 1
+2026-09-19 05:45:56,150 [trainer.py] => ceos_log_samples: False
+2026-09-19 05:45:56,150 [trainer.py] => prototype_refresh_epochs: 1
+2026-09-19 05:45:56,150 [trainer.py] => diagnostic_grad_interval: 20
+2026-09-19 05:45:56,150 [trainer.py] => top_k_similar_old: 5
+2026-09-19 05:45:56,150 [trainer.py] => similarity_relation_mode: proto_clad
+2026-09-19 05:45:56,150 [trainer.py] => similarity_alpha: 0.5
+2026-09-19 05:45:56,150 [trainer.py] => relative_margin: 0.05
+2026-09-19 05:45:56,150 [trainer.py] => similarity_beta_source: task_quantile
+2026-09-19 05:45:56,150 [trainer.py] => similarity_beta_quantile: 0.75
+2026-09-19 05:45:56,150 [trainer.py] => similarity_beta_fixed: None
+2026-09-19 05:45:56,150 [trainer.py] => similarity_scc_enabled: False
+2026-09-19 05:45:56,150 [trainer.py] => similarity_scc_alpha: 0.5
+2026-09-19 05:45:56,150 [trainer.py] => similarity_scc_min_weight: 0.5
+2026-09-19 05:45:56,150 [trainer.py] => soft_gate_temperature: 0.1
+2026-09-19 05:45:56,150 [trainer.py] => diagnostic_sample_rows: True
+2026-09-19 05:45:56,150 [trainer.py] => class_order_seed: None
+2026-09-19 05:45:56,150 [trainer.py] => diagnostic_pair_interval: 20
+2026-09-19 05:45:56,150 [trainer.py] => diagnostic_pair_epochs: last
+2026-09-19 05:45:56,150 [trainer.py] => diagnostic_table_format: csv_fallback_without_pyarrow
+2026-09-19 05:45:56,150 [trainer.py] => selective_method: proto_clad
+2026-09-19 05:45:56,150 [trainer.py] => top_p: 0.05
+2026-09-19 05:45:56,150 [trainer.py] => alpha: None
+2026-09-19 05:45:56,150 [trainer.py] => lambda_clad: 1.0
+2026-09-19 05:45:56,150 [trainer.py] => protocol_id: IA5
+2026-09-19 05:45:56,150 [trainer.py] => source_dataset: imageneta
+2026-09-19 05:45:56,150 [trainer.py] => task_partition: [40, 40, 40, 40, 40]
+2026-09-19 05:45:56,150 [trainer.py] => method: C
+2026-09-19 05:45:56,150 [trainer.py] => method_name: Proto-CLAD
+2026-09-19 05:45:56,150 [trainer.py] => config: ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/configs/protocols/IA5.json
+2026-09-19 05:45:56,150 [trainer.py] => base_root: ${RESEARCH_WORKSPACE}/structure_multicenter_separation
+2026-09-19 05:45:56,150 [trainer.py] => extension_root: ${RESEARCH_WORKSPACE}/structure_e3_followup
+2026-09-19 05:45:56,150 [trainer.py] => e3_root: ${RESEARCH_WORKSPACE}/structure_e3_followup
+2026-09-19 05:45:56,150 [trainer.py] => similarity_extension_root: ${RESEARCH_WORKSPACE}/structure_similarity_aware_followup
+2026-09-19 05:45:56,150 [trainer.py] => selective_sweep_root: ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep
+2026-09-19 05:45:56,150 [trainer.py] => selective_sweep_extension: True
+2026-09-19 05:45:56,150 [trainer.py] => device: [device(type='cuda', index=0)]
+2026-09-19 05:45:56,150 [trainer.py] => physical_gpus: ['1']
+2026-09-19 05:45:56,150 [trainer.py] => launch_command: ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id C_P005_L100 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+2026-09-19 05:45:56,150 [trainer.py] => source_snapshot_hash: e2e00ad90561e2d7f030b3cf6b297afa12d4659a09503385a2ba391043beb743
+2026-09-19 05:45:56,150 [trainer.py] => git_commit: None
+2026-09-19 05:45:56,150 [trainer.py] => git_diff_hash: None
+2026-09-19 05:45:56,150 [trainer.py] => run_dir: ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs/IA5/C_P005_L100/seed_1993
+2026-09-19 05:45:56,150 [trainer.py] => recording_gaps: []
+2026-09-19 05:46:23,567 [data.py] => Loaded ImageNet-A from ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a: classes=200 train=5981 test=1519
+2026-09-19 05:46:23,800 [inc_net.py] => Adapter placement strategy: mlp
+2026-09-19 05:46:23,800 [inc_net.py] => Adapter interval: 1
+2026-09-19 05:46:31,667 [CDS_adapter.py] => Learning on 0-40
+2026-09-19 05:56:11,430 [trainer.py] => Task 0 metrics: {'task': 0, 'task_id': 1, 'eval_stage': 'task_final', 'seen_classes': 40, 'num_correct': 302, 'num_samples': 360, 'A_t': 83.88888888888889, 'top5_num_correct': 347, 'top5': 96.38888888888889, 'old_num_correct': None, 'old_num_samples': 0, 'old_accuracy': None, 'new_num_correct': 302, 'new_num_samples': 360, 'new_accuracy': 83.88888888888889, 'old_to_new_error_rate': None, 'new_to_old_error_rate': 0.0, 'inc_accuracy_so_far': 83.88888888888889, 'forgetting_so_far': None, 'training_seconds': 577.0469732779893, 'peak_cuda_allocated_bytes': 6281587712, 'peak_cuda_reserved_bytes': 8940158976, 'peak_main_process_rss_bytes': 4402286592, 'class_statistics_bytes': 94617600, 'region_statistics_bytes': 94495680, 'separation_cache_bytes': 0, 'total_statistics_bytes': 189113280, 'statistics_and_cache_bytes': 189113280, 'status': 'complete'}
+2026-09-19 05:56:12,307 [CDS_adapter.py] => Learning on 40-80
+2026-09-19 05:56:51,103 [learner.py] => Frozen old-model similarity task=2 shape=(40, 40) beta=0.257925 source=task_quantile
+2026-09-19 05:57:01,887 [learner.py] => Follow-up cache: {'task': 1, 'epoch': 0, 'feature_space': 'task_1:epoch_0_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 40, 'cache_storage_bytes': 246240, 'refresh_seconds': 10.77370261400938}
+2026-09-19 05:57:31,057 [learner.py] => Follow-up cache: {'task': 1, 'epoch': 1, 'feature_space': 'task_1:epoch_1_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 40, 'cache_storage_bytes': 246240, 'refresh_seconds': 10.801799092034344}
+2026-09-19 05:58:00,309 [learner.py] => Follow-up cache: {'task': 1, 'epoch': 2, 'feature_space': 'task_1:epoch_2_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 40, 'cache_storage_bytes': 246240, 'refresh_seconds': 10.942510686989408}
+2026-09-19 05:58:29,716 [learner.py] => Follow-up cache: {'task': 1, 'epoch': 3, 'feature_space': 'task_1:epoch_3_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 40, 'cache_storage_bytes': 246240, 'refresh_seconds': 10.960993311018683}
+2026-09-19 05:58:59,046 [learner.py] => Follow-up cache: {'task': 1, 'epoch': 4, 'feature_space': 'task_1:epoch_4_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 40, 'cache_storage_bytes': 246240, 'refresh_seconds': 10.895832194015384}
+2026-09-19 05:59:28,326 [learner.py] => Follow-up cache: {'task': 1, 'epoch': 5, 'feature_space': 'task_1:epoch_5_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 40, 'cache_storage_bytes': 246240, 'refresh_seconds': 10.984404354996514}
+2026-09-19 05:59:57,806 [learner.py] => Follow-up cache: {'task': 1, 'epoch': 6, 'feature_space': 'task_1:epoch_6_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 40, 'cache_storage_bytes': 246240, 'refresh_seconds': 11.07766262802761}
+2026-09-19 06:00:27,502 [learner.py] => Follow-up cache: {'task': 1, 'epoch': 7, 'feature_space': 'task_1:epoch_7_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 40, 'cache_storage_bytes': 246240, 'refresh_seconds': 11.102481900947168}
+2026-09-19 06:00:57,342 [learner.py] => Follow-up cache: {'task': 1, 'epoch': 8, 'feature_space': 'task_1:epoch_8_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 40, 'cache_storage_bytes': 246240, 'refresh_seconds': 11.37451955198776}
+2026-09-19 06:01:26,793 [learner.py] => Follow-up cache: {'task': 1, 'epoch': 9, 'feature_space': 'task_1:epoch_9_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 40, 'cache_storage_bytes': 246240, 'refresh_seconds': 11.101102103013545}
+2026-09-19 06:01:55,911 [learner.py] => Follow-up cache: {'task': 1, 'epoch': 10, 'feature_space': 'task_1:epoch_10_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 40, 'cache_storage_bytes': 246240, 'refresh_seconds': 10.715653601044323}
+2026-09-19 06:02:25,602 [learner.py] => Follow-up cache: {'task': 1, 'epoch': 11, 'feature_space': 'task_1:epoch_11_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 40, 'cache_storage_bytes': 246240, 'refresh_seconds': 11.385694004013203}
+2026-09-19 06:02:54,877 [learner.py] => Follow-up cache: {'task': 1, 'epoch': 12, 'feature_space': 'task_1:epoch_12_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 40, 'cache_storage_bytes': 246240, 'refresh_seconds': 10.88647550798487}
+2026-09-19 06:03:24,643 [learner.py] => Follow-up cache: {'task': 1, 'epoch': 13, 'feature_space': 'task_1:epoch_13_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 40, 'cache_storage_bytes': 246240, 'refresh_seconds': 11.235598289000336}
+2026-09-19 06:03:54,081 [learner.py] => Follow-up cache: {'task': 1, 'epoch': 14, 'feature_space': 'task_1:epoch_14_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 40, 'cache_storage_bytes': 246240, 'refresh_seconds': 10.94614655902842}
+2026-09-19 06:05:35,679 [base.py] => CA Task 1 => Loss 0.284, Test_accy 79.660
+2026-09-19 06:05:40,712 [base.py] => CA Task 1 => Loss 0.240, Test_accy 79.230
+2026-09-19 06:05:45,661 [base.py] => CA Task 1 => Loss 0.225, Test_accy 79.370
+2026-09-19 06:05:50,644 [base.py] => CA Task 1 => Loss 0.223, Test_accy 79.230
+2026-09-19 06:05:55,625 [base.py] => CA Task 1 => Loss 0.218, Test_accy 79.080
+2026-09-19 06:06:00,470 [trainer.py] => Task 1 metrics: {'task': 1, 'task_id': 2, 'eval_stage': 'task_final', 'seen_classes': 80, 'num_correct': 552, 'num_samples': 698, 'A_t': 79.08309455587393, 'top5_num_correct': 656, 'top5': 93.98280802292264, 'old_num_correct': 284, 'old_num_samples': 360, 'old_accuracy': 78.88888888888889, 'new_num_correct': 268, 'new_num_samples': 338, 'new_accuracy': 79.28994082840237, 'old_to_new_error_rate': 0.09722222222222222, 'new_to_old_error_rate': 0.1390532544378698, 'inc_accuracy_so_far': 81.48599172238141, 'forgetting_so_far': 5.0, 'training_seconds': 583.3692935419967, 'peak_cuda_allocated_bytes': 6281956352, 'peak_cuda_reserved_bytes': 9009364992, 'peak_main_process_rss_bytes': 4402286592, 'class_statistics_bytes': 189235200, 'region_statistics_bytes': 188991360, 'separation_cache_bytes': 246240, 'total_statistics_bytes': 378226560, 'statistics_and_cache_bytes': 378472800, 'status': 'complete'}
+2026-09-19 06:06:01,762 [CDS_adapter.py] => Learning on 80-120
+2026-09-19 06:06:39,636 [learner.py] => Frozen old-model similarity task=3 shape=(40, 80) beta=0.245033 source=task_quantile
+2026-09-19 06:06:49,535 [learner.py] => Follow-up cache: {'task': 2, 'epoch': 0, 'feature_space': 'task_2:epoch_0_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 80, 'cache_storage_bytes': 492480, 'refresh_seconds': 9.885555174958427}
+2026-09-19 06:07:18,346 [learner.py] => Follow-up cache: {'task': 2, 'epoch': 1, 'feature_space': 'task_2:epoch_1_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 80, 'cache_storage_bytes': 492480, 'refresh_seconds': 9.89579922700068}
+2026-09-19 06:07:46,605 [learner.py] => Follow-up cache: {'task': 2, 'epoch': 2, 'feature_space': 'task_2:epoch_2_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 80, 'cache_storage_bytes': 492480, 'refresh_seconds': 9.820230690995231}
+2026-09-19 06:08:15,313 [learner.py] => Follow-up cache: {'task': 2, 'epoch': 3, 'feature_space': 'task_2:epoch_3_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 80, 'cache_storage_bytes': 492480, 'refresh_seconds': 10.067621348018292}
+2026-09-19 06:08:43,850 [learner.py] => Follow-up cache: {'task': 2, 'epoch': 4, 'feature_space': 'task_2:epoch_4_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 80, 'cache_storage_bytes': 492480, 'refresh_seconds': 9.87831072602421}
+2026-09-19 06:09:11,547 [learner.py] => Follow-up cache: {'task': 2, 'epoch': 5, 'feature_space': 'task_2:epoch_5_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 80, 'cache_storage_bytes': 492480, 'refresh_seconds': 8.984266533982009}
+2026-09-19 06:09:39,906 [learner.py] => Follow-up cache: {'task': 2, 'epoch': 6, 'feature_space': 'task_2:epoch_6_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 80, 'cache_storage_bytes': 492480, 'refresh_seconds': 9.956638953997754}
+2026-09-19 06:10:08,430 [learner.py] => Follow-up cache: {'task': 2, 'epoch': 7, 'feature_space': 'task_2:epoch_7_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 80, 'cache_storage_bytes': 492480, 'refresh_seconds': 9.92759231600212}
+2026-09-19 06:10:36,691 [learner.py] => Follow-up cache: {'task': 2, 'epoch': 8, 'feature_space': 'task_2:epoch_8_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 80, 'cache_storage_bytes': 492480, 'refresh_seconds': 9.730618581990711}
+2026-09-19 06:11:04,811 [learner.py] => Follow-up cache: {'task': 2, 'epoch': 9, 'feature_space': 'task_2:epoch_9_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 80, 'cache_storage_bytes': 492480, 'refresh_seconds': 9.637354982027318}
+2026-09-19 06:11:32,883 [learner.py] => Follow-up cache: {'task': 2, 'epoch': 10, 'feature_space': 'task_2:epoch_10_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 80, 'cache_storage_bytes': 492480, 'refresh_seconds': 9.714523799018934}
+2026-09-19 06:12:00,751 [learner.py] => Follow-up cache: {'task': 2, 'epoch': 11, 'feature_space': 'task_2:epoch_11_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 80, 'cache_storage_bytes': 492480, 'refresh_seconds': 9.263446461991407}
+2026-09-19 06:12:27,922 [learner.py] => Follow-up cache: {'task': 2, 'epoch': 12, 'feature_space': 'task_2:epoch_12_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 80, 'cache_storage_bytes': 492480, 'refresh_seconds': 8.79149143799441}
+2026-09-19 06:12:54,591 [learner.py] => Follow-up cache: {'task': 2, 'epoch': 13, 'feature_space': 'task_2:epoch_13_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 80, 'cache_storage_bytes': 492480, 'refresh_seconds': 8.15344757802086}
+2026-09-19 06:13:20,749 [learner.py] => Follow-up cache: {'task': 2, 'epoch': 14, 'feature_space': 'task_2:epoch_14_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 80, 'cache_storage_bytes': 492480, 'refresh_seconds': 7.767233885999303}
+2026-09-19 06:14:59,357 [base.py] => CA Task 2 => Loss 0.310, Test_accy 73.850
+2026-09-19 06:15:06,114 [base.py] => CA Task 2 => Loss 0.278, Test_accy 73.950
+2026-09-19 06:15:13,039 [base.py] => CA Task 2 => Loss 0.267, Test_accy 74.150
+2026-09-19 06:15:19,863 [base.py] => CA Task 2 => Loss 0.254, Test_accy 74.150
+2026-09-19 06:15:26,647 [base.py] => CA Task 2 => Loss 0.254, Test_accy 74.050
+2026-09-19 06:15:33,276 [trainer.py] => Task 2 metrics: {'task': 2, 'task_id': 3, 'eval_stage': 'task_final', 'seen_classes': 120, 'num_correct': 722, 'num_samples': 975, 'A_t': 74.05128205128206, 'top5_num_correct': 896, 'top5': 91.8974358974359, 'old_num_correct': 526, 'old_num_samples': 698, 'old_accuracy': 75.35816618911174, 'new_num_correct': 196, 'new_num_samples': 277, 'new_accuracy': 70.7581227436823, 'old_to_new_error_rate': 0.07879656160458452, 'new_to_old_error_rate': 0.21660649819494585, 'inc_accuracy_so_far': 79.00775516534829, 'forgetting_so_far': 6.2376725838264235, 'training_seconds': 564.9419580659596, 'peak_cuda_allocated_bytes': 6282324992, 'peak_cuda_reserved_bytes': 9428795392, 'peak_main_process_rss_bytes': 4402286592, 'class_statistics_bytes': 283852800, 'region_statistics_bytes': 283487040, 'separation_cache_bytes': 492480, 'total_statistics_bytes': 567339840, 'statistics_and_cache_bytes': 567832320, 'status': 'complete'}
+2026-09-19 06:15:34,911 [CDS_adapter.py] => Learning on 120-160
+2026-09-19 06:16:14,287 [learner.py] => Frozen old-model similarity task=4 shape=(40, 120) beta=0.282132 source=task_quantile
+2026-09-19 06:16:24,548 [learner.py] => Follow-up cache: {'task': 3, 'epoch': 0, 'feature_space': 'task_3:epoch_0_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 120, 'cache_storage_bytes': 738720, 'refresh_seconds': 10.249432465992868}
+2026-09-19 06:16:55,547 [learner.py] => Follow-up cache: {'task': 3, 'epoch': 1, 'feature_space': 'task_3:epoch_1_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 120, 'cache_storage_bytes': 738720, 'refresh_seconds': 9.521373166993726}
+2026-09-19 06:17:26,790 [learner.py] => Follow-up cache: {'task': 3, 'epoch': 2, 'feature_space': 'task_3:epoch_2_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 120, 'cache_storage_bytes': 738720, 'refresh_seconds': 10.408101757988334}
+2026-09-19 06:17:57,160 [learner.py] => Follow-up cache: {'task': 3, 'epoch': 3, 'feature_space': 'task_3:epoch_3_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 120, 'cache_storage_bytes': 738720, 'refresh_seconds': 9.620275837020017}
+2026-09-19 06:18:28,195 [learner.py] => Follow-up cache: {'task': 3, 'epoch': 4, 'feature_space': 'task_3:epoch_4_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 120, 'cache_storage_bytes': 738720, 'refresh_seconds': 10.064557628007606}
+2026-09-19 06:18:58,323 [learner.py] => Follow-up cache: {'task': 3, 'epoch': 5, 'feature_space': 'task_3:epoch_5_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 120, 'cache_storage_bytes': 738720, 'refresh_seconds': 8.690700842009392}
+2026-09-19 06:19:30,167 [learner.py] => Follow-up cache: {'task': 3, 'epoch': 6, 'feature_space': 'task_3:epoch_6_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 120, 'cache_storage_bytes': 738720, 'refresh_seconds': 9.910906551987864}
+2026-09-19 06:20:01,970 [learner.py] => Follow-up cache: {'task': 3, 'epoch': 7, 'feature_space': 'task_3:epoch_7_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 120, 'cache_storage_bytes': 738720, 'refresh_seconds': 10.33402271498926}
+2026-09-19 06:20:32,887 [learner.py] => Follow-up cache: {'task': 3, 'epoch': 8, 'feature_space': 'task_3:epoch_8_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 120, 'cache_storage_bytes': 738720, 'refresh_seconds': 9.834082770044915}
+2026-09-19 06:21:05,057 [learner.py] => Follow-up cache: {'task': 3, 'epoch': 9, 'feature_space': 'task_3:epoch_9_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 120, 'cache_storage_bytes': 738720, 'refresh_seconds': 10.831710778002162}
+2026-09-19 06:21:36,549 [learner.py] => Follow-up cache: {'task': 3, 'epoch': 10, 'feature_space': 'task_3:epoch_10_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 120, 'cache_storage_bytes': 738720, 'refresh_seconds': 10.12876554398099}
+2026-09-19 06:22:07,962 [learner.py] => Follow-up cache: {'task': 3, 'epoch': 11, 'feature_space': 'task_3:epoch_11_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 120, 'cache_storage_bytes': 738720, 'refresh_seconds': 10.024174035002943}
+2026-09-19 06:22:39,732 [learner.py] => Follow-up cache: {'task': 3, 'epoch': 12, 'feature_space': 'task_3:epoch_12_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 120, 'cache_storage_bytes': 738720, 'refresh_seconds': 10.57374240498757}
+2026-09-19 06:23:11,667 [learner.py] => Follow-up cache: {'task': 3, 'epoch': 13, 'feature_space': 'task_3:epoch_13_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 120, 'cache_storage_bytes': 738720, 'refresh_seconds': 10.601249029976316}
+2026-09-19 06:23:43,600 [learner.py] => Follow-up cache: {'task': 3, 'epoch': 14, 'feature_space': 'task_3:epoch_14_followup_cache:student_adapter_2:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 120, 'cache_storage_bytes': 738720, 'refresh_seconds': 10.733359491976444}
+2026-09-19 06:25:26,875 [base.py] => CA Task 3 => Loss 0.362, Test_accy 68.910
+2026-09-19 06:25:35,733 [base.py] => CA Task 3 => Loss 0.338, Test_accy 68.910
+2026-09-19 06:25:44,546 [base.py] => CA Task 3 => Loss 0.318, Test_accy 69.070
+2026-09-19 06:25:53,392 [base.py] => CA Task 3 => Loss 0.316, Test_accy 69.310
+2026-09-19 06:26:02,127 [base.py] => CA Task 3 => Loss 0.311, Test_accy 69.310
+2026-09-19 06:26:10,628 [trainer.py] => Task 3 metrics: {'task': 3, 'task_id': 4, 'eval_stage': 'task_final', 'seen_classes': 160, 'num_correct': 865, 'num_samples': 1248, 'A_t': 69.31089743589743, 'top5_num_correct': 1106, 'top5': 88.62179487179488, 'old_num_correct': 691, 'old_num_samples': 975, 'old_accuracy': 70.87179487179488, 'new_num_correct': 174, 'new_num_samples': 273, 'new_accuracy': 63.73626373626374, 'old_to_new_error_rate': 0.0841025641025641, 'new_to_old_error_rate': 0.2564102564102564, 'inc_accuracy_so_far': 76.58354073298557, 'forgetting_so_far': 7.13491068878461, 'training_seconds': 627.2875913559692, 'peak_cuda_allocated_bytes': 6282693632, 'peak_cuda_reserved_bytes': 10039066624, 'peak_main_process_rss_bytes': 4402286592, 'class_statistics_bytes': 378470400, 'region_statistics_bytes': 377982720, 'separation_cache_bytes': 738720, 'total_statistics_bytes': 756453120, 'statistics_and_cache_bytes': 757191840, 'status': 'complete'}
+2026-09-19 06:26:12,772 [CDS_adapter.py] => Learning on 160-200
+2026-09-19 06:26:56,348 [learner.py] => Frozen old-model similarity task=5 shape=(40, 160) beta=0.285836 source=task_quantile
+2026-09-19 06:27:07,764 [learner.py] => Follow-up cache: {'task': 4, 'epoch': 0, 'feature_space': 'task_4:epoch_0_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 160, 'cache_storage_bytes': 984960, 'refresh_seconds': 11.4060550199938}
+2026-09-19 06:27:43,660 [learner.py] => Follow-up cache: {'task': 4, 'epoch': 1, 'feature_space': 'task_4:epoch_1_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 160, 'cache_storage_bytes': 984960, 'refresh_seconds': 10.925178806995973}
+2026-09-19 06:28:18,203 [learner.py] => Follow-up cache: {'task': 4, 'epoch': 2, 'feature_space': 'task_4:epoch_2_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 160, 'cache_storage_bytes': 984960, 'refresh_seconds': 11.222645030997228}
+2026-09-19 06:28:53,645 [learner.py] => Follow-up cache: {'task': 4, 'epoch': 3, 'feature_space': 'task_4:epoch_3_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 160, 'cache_storage_bytes': 984960, 'refresh_seconds': 11.49149052501889}
+2026-09-19 06:29:28,591 [learner.py] => Follow-up cache: {'task': 4, 'epoch': 4, 'feature_space': 'task_4:epoch_4_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 160, 'cache_storage_bytes': 984960, 'refresh_seconds': 10.987120591977146}
+2026-09-19 06:30:03,187 [learner.py] => Follow-up cache: {'task': 4, 'epoch': 5, 'feature_space': 'task_4:epoch_5_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 160, 'cache_storage_bytes': 984960, 'refresh_seconds': 11.129335961013567}
+2026-09-19 06:30:38,089 [learner.py] => Follow-up cache: {'task': 4, 'epoch': 6, 'feature_space': 'task_4:epoch_6_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 160, 'cache_storage_bytes': 984960, 'refresh_seconds': 11.41259328398155}
+2026-09-19 06:31:13,008 [learner.py] => Follow-up cache: {'task': 4, 'epoch': 7, 'feature_space': 'task_4:epoch_7_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 160, 'cache_storage_bytes': 984960, 'refresh_seconds': 11.052183608000632}
+2026-09-19 06:31:47,697 [learner.py] => Follow-up cache: {'task': 4, 'epoch': 8, 'feature_space': 'task_4:epoch_8_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 160, 'cache_storage_bytes': 984960, 'refresh_seconds': 11.17304761899868}
+2026-09-19 06:32:22,296 [learner.py] => Follow-up cache: {'task': 4, 'epoch': 9, 'feature_space': 'task_4:epoch_9_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 160, 'cache_storage_bytes': 984960, 'refresh_seconds': 11.199713364010677}
+2026-09-19 06:32:57,362 [learner.py] => Follow-up cache: {'task': 4, 'epoch': 10, 'feature_space': 'task_4:epoch_10_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 160, 'cache_storage_bytes': 984960, 'refresh_seconds': 11.183819601021241}
+2026-09-19 06:33:32,362 [learner.py] => Follow-up cache: {'task': 4, 'epoch': 11, 'feature_space': 'task_4:epoch_11_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 160, 'cache_storage_bytes': 984960, 'refresh_seconds': 10.961124759051017}
+2026-09-19 06:34:07,508 [learner.py] => Follow-up cache: {'task': 4, 'epoch': 12, 'feature_space': 'task_4:epoch_12_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 160, 'cache_storage_bytes': 984960, 'refresh_seconds': 11.326781988027506}
+2026-09-19 06:34:42,829 [learner.py] => Follow-up cache: {'task': 4, 'epoch': 13, 'feature_space': 'task_4:epoch_13_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 160, 'cache_storage_bytes': 984960, 'refresh_seconds': 11.51039547601249}
+2026-09-19 06:35:18,200 [learner.py] => Follow-up cache: {'task': 4, 'epoch': 14, 'feature_space': 'task_4:epoch_14_followup_cache:student_adapter_1:raw_768d', 'covariance_view': 'diagonal', 'normalized_diagonal': False, 'adaptive_margin_mode': 'drift', 'region_count': 160, 'cache_storage_bytes': 984960, 'refresh_seconds': 11.2739080680185}
+2026-09-19 06:37:17,933 [base.py] => CA Task 4 => Loss 0.422, Test_accy 66.100
+2026-09-19 06:37:28,638 [base.py] => CA Task 4 => Loss 0.394, Test_accy 66.490
+2026-09-19 06:37:39,489 [base.py] => CA Task 4 => Loss 0.384, Test_accy 66.230
+2026-09-19 06:37:49,938 [base.py] => CA Task 4 => Loss 0.375, Test_accy 66.430
+2026-09-19 06:38:00,462 [base.py] => CA Task 4 => Loss 0.375, Test_accy 66.490
+2026-09-19 06:38:10,706 [trainer.py] => Task 4 metrics: {'task': 4, 'task_id': 5, 'eval_stage': 'task_final', 'seen_classes': 200, 'num_correct': 1010, 'num_samples': 1519, 'A_t': 66.49111257406189, 'top5_num_correct': 1312, 'top5': 86.37261356155365, 'old_num_correct': 840, 'old_num_samples': 1248, 'old_accuracy': 67.3076923076923, 'new_num_correct': 170, 'new_num_samples': 271, 'new_accuracy': 62.730627306273064, 'old_to_new_error_rate': 0.08173076923076923, 'new_to_old_error_rate': 0.3210332103321033, 'inc_accuracy_so_far': 74.56505510120084, 'forgetting_so_far': 7.416092616384201, 'training_seconds': 707.7824668899993, 'peak_cuda_allocated_bytes': 6283062272, 'peak_cuda_reserved_bytes': 10835984384, 'peak_main_process_rss_bytes': 4402286592, 'class_statistics_bytes': 473088000, 'region_statistics_bytes': 472478400, 'separation_cache_bytes': 984960, 'total_statistics_bytes': 945566400, 'statistics_and_cache_bytes': 946551360, 'status': 'complete'}
+2026-09-19 06:38:13,831 [trainer.py] => Summary: {'recording_schema_version': 2, 'experiment_id': 'C_P005_L100', 'seed': 1993, 'multi_center': False, 'separation_covariance': 'diagonal', 'completed_tasks': 5, 'expected_tasks': 5, 'A_by_task': [83.88888888888889, 79.08309455587393, 74.05128205128206, 69.31089743589743, 66.49111257406189], 'Inc-Acc': 74.56505510120084, 'Last-Acc': 66.49111257406189, 'Forgetting': 7.416092616384201, 'forgetting_definition': 'mean_i(max_{l=i..T-1} a[l,i] - a[T,i]) over tasks i before final task; a[l,i] uses the single head over all classes seen at stage l', 'accuracy_unit': 'percent_0_to_100_unrounded', 'recording_status': 'complete', 'recording_gaps': [], 'total_training_seconds': 3060.428283131914, 'max_peak_cuda_allocated_bytes': 6283062272, 'max_peak_cuda_reserved_bytes': 10835984384, 'max_peak_main_process_rss_bytes': 4402286592, 'final_total_statistics_bytes': 945566400, 'max_separation_cache_bytes': 984960, 'status': 'complete'}

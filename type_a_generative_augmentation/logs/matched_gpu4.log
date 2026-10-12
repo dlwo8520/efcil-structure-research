@@ -1,0 +1,9 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/run.py", line 109, in <module>
+    main()
+  File "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/run.py", line 68, in main
+    accepted = quality_gate()
+  File "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/generation.py", line 214, in quality_gate
+    raise RuntimeError("generation quality HOLD; complete human review or stop this recipe")
+RuntimeError: generation quality HOLD; complete human review or stop this recipe

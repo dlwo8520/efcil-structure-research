@@ -1,0 +1,11 @@
+# The existing `clip` conda environment already provides these packages.
+torch==2.11.0
+torchvision==0.26.0
+timm==1.0.26
+numpy==2.2.6
+scipy==1.15.3
+pandas==2.3.3
+scikit-learn==1.7.2
+matplotlib==3.10.9
+PyYAML
+tqdm

@@ -1,0 +1,11 @@
+hypothesis,five_task_evidence,ten_task_evidence,final_status,interpretation
+Prototype tracking error accumulates with class age,Age 1-4 error increases,"Age 1-9 increase; Spearman rho IA=0.803 CAR=0.845",SUPPORTED,Age accumulation exists but matched-age 10-task error is not worse
+Prototype mean tracking error is the main bottleneck,High tracking cosine and small Oracle effect,"B-A IA=-0.066pp CAR=+0.535pp",NOT SUPPORTED,Estimation remains accurate enough that replacement has little common benefit
+Covariance mismatch accumulates with class age,Age-dependent mismatch,"Final mismatch IA=0.353 CAR=0.403; rho=0.761/0.845",SUPPORTED,Mismatch is real and grows with age
+Covariance mismatch is the main bottleneck,Small or inconsistent C/D effect,"C-A IA=+0.132pp CAR=+0.075pp; D helps only CAR",PARTIALLY SUPPORTED,Accumulation does not translate into a common accuracy bottleneck
+Gaussian approximation is the main bottleneck,Matched source gap small,"R256-G256 IA=+0.066pp CAR=+0.895pp",NOT SUPPORTED,Effect is small and dataset-dependent
+Old/New single-head competition increases,Gap grows with task,"Gap-task rho=0.800/0.883; New-to-Old rho=0.883/0.883",PARTIALLY SUPPORTED,Candidate-count and easier new-only evaluation remain confounds
+A few risky directional pairs dominate error,Low final Top-20 share,"T10 Top-20 share IA=0.084 CAR=0.133 and decreases with task",NOT SUPPORTED,Errors become broader as class count grows
+Incremental pair degradation dominates recovery,T4-to-T5 recovery was larger,"All 18 transitions have improvement mass above degradation mass",NOT SUPPORTED,Absolute degradation grows with evaluated sample/pair count
+Stored gamma predicts future degradation,Stored approximates Oracle but ranking weak,"Positive-delta captured mass IA=0.007 CAR=0.039-0.044",WEAKENED,Risk definition rather than stored-moment fidelity is limiting
+Broad generalization and coverage is the stronger explanation,Large train-test gap and low wrong purity,"Same pattern repeats; 10-task gap only slightly larger",SUPPORTED,Strongest persistent explanation but not uniquely revived at 10-task

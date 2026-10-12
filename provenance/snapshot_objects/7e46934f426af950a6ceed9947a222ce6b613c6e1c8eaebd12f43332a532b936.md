@@ -1,0 +1,51 @@
+# 구현 전/후 코드 감사
+
+기준일: 2026-09-17. 이 문서는 설계 문서의 Section 13에서 요구한 위치와 기록 항목을 실제 코드 기준으로 정리한다.
+
+## 기존 Structure/E3 위치
+
+| 항목 | 확인 위치 | 사용 방식 |
+|---|---|---|
+| APR shift 계산 | `structure_multicenter_separation/models/CDS_adapter.py:185-224`, `utils/adjust_distribution.py:20` | 기존 구현 직접 상속. epoch cache의 corrected mean과 source mean 차이로 drift를 재계산한다. |
+| old prototype 저장 | `models/CDS_adapter.py:156-163`, checkpoint의 `class_means`, `single_regions` | `_task_source_means`를 pre-training old prototype으로 사용한다. old raw exemplar는 저장하지 않는다. |
+| current new pre-training prototype | 기존에는 명시적 frozen-old-model pair similarity가 없음 | `similarity/learner.py::_ensure_similarity_state`에서 학습 전 `tfeatures`만 사용해 `q_n^old`를 한 번 고정한다. |
+| SCC | `utils/distill_loss.py:35`, `models/CDS_adapter.py:403` | 원 구현은 batch mean만 반환. S3에서는 같은 per-sample relation error를 계산한 뒤 similarity weight를 적용한다. |
+| CosFace/classifier feature | `models/CDS_adapter.py:396-409`, `utils/loss.py::AngularPenaltySMLoss` | classification loss와 feature/logit 생성 경로는 변경하지 않는다. |
+| 평가 및 class accuracy | `trainer.py:198-390`, `models/base.py:287` | single-head prediction을 그대로 사용한다. subclass `_eval_cnn`에서 confusion과 class forgetting만 추가 기록한다. |
+
+## 기존에 이미 있던 로그
+
+- `apr_diagnostics.csv`: task-final APR mean shift/covariance 변화.
+- `adaptive_margin.csv`: class별 birth tau, APR drift, adaptive scale/tau.
+- `adaptive_class_diagnostics.csv`: class별 intrusion/D2.
+- `epoch_metrics.csv`: weighted component loss, feature norm, intrusion, 학습량.
+- `gradient_metrics.csv`: 설정 interval의 component gradient.
+- `class_accuracy.csv`, `task_accuracy.csv`, `task_summary.csv`: single-head 평가 correct/total.
+- `resolved_config.json`, `protocol_manifest.json`, checkpoint/source snapshot.
+
+## 이번에 추가한 로그
+
+| 파일 | 새로 기록하는 내용 |
+|---|---|
+| `pair_similarity.csv` | 학습 전 old-model 공간의 모든 new-old pair similarity, rank/top-k, age, APR drift/tau |
+| `class_forgetting.csv` | 직전 task 대비 old class accuracy 변화와 부호를 자르지 않은 forgetting increment |
+| `cross_task_confusion.csv` | non-zero single-head confusion cell과 true-class 정규화 비율; 없는 cell은 정확히 0 |
+| `similarity_tau_diagnostics.csv` | S1 pair별 drift scale, similarity scale, 최종 tau |
+| `relative_margin_diagnostics.csv` | S2/S3/S4 sample별 hard old, cosine gap, violation, absolute/relative route |
+| `scc_similarity_diagnostics.csv` | S3 sample별 max similarity, SCC weight, raw/weighted SCC |
+| `soft_gate_diagnostics.csv` | S4 sample별 gate 및 absolute/relative contribution |
+| `feature_norm.csv` | task/epoch별 norm mean/std/quantile/max |
+| `geometry_diagnostics.csv` | cosine, D2, tau, rho, intrusion epoch summary |
+| `gradient_diagnostics.csv` | cls/SCC/absolute/relative gradient norm 및 cosine |
+| `exports/` | 분석용 long-format task/class accuracy와 seed metric |
+
+## 누출 및 통제 점검
+
+- Similarity는 incremental task의 첫 optimizer step 전에 frozen teacher `tfeatures`로 계산한다.
+- beta의 기본값은 같은 seed의 S0 train/prototype similarity 75th percentile이다. test 결과는 사용하지 않는다.
+- raw old image/exemplar를 읽거나 저장하지 않는다.
+- S1-S4 모두 AM-Drift의 replay 수, epoch, optimizer, classifier retraining을 유지한다.
+- S0가 없으면 S2-S4는 조용히 다른 threshold를 쓰지 않고 명시적으로 중단한다.
+- loss 및 로그의 NaN/Inf는 학습 중 즉시 검사한다.
+- `k*` 선택 similarity는 frozen previous-task space에서 계산한다. 실제 relative cosine은 현재 student feature와 feature-space가 맞는 epoch current prototype 및 APR-corrected old prototype으로 계산한다.
+- S4의 gate는 문서의 pair notation 중 S2가 실제 사용하는 hard pair `(n,k*)`에 적용한다. 모든 old pair에 별도 relative loss를 중복 적용하지 않는다.

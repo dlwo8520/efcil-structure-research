@@ -1,0 +1,18 @@
+{
+  "base_config": "ptm_guided_base.json",
+  "prefix": "ptm_guided_imageneta_5task_ptm_place_move",
+  "dataset": "imageneta",
+  "expected_num_classes": 200,
+  "task_count": 5,
+  "init_cls": 40,
+  "increment": 40,
+  "method": "ptm_place_move",
+  "ptm_place_enabled": true,
+  "old_move_enabled": true,
+  "init_epochs": 30,
+  "inc_epochs": 15,
+  "init_lr": 0.01,
+  "batch_size": 48,
+  "margin": 0.2,
+  "adapter_placement": "mlp"
+}

@@ -1,0 +1,14 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/scripts/run_reduced_experiments.py", line 62, in main
+    fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/scripts/run_reduced_experiments.py", line 163, in <module>
+    main()
+  File "${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/scripts/run_reduced_experiments.py", line 64, in main
+    raise RuntimeError(f"another reduced queue holds {lock_path}") from error
+RuntimeError: another reduced queue holds ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/logs/reduced_stage1/queue.lock

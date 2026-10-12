@@ -1,0 +1,16 @@
+{
+  "status": "interrupted_or_failed",
+  "updated_at": "2026-10-12T16:55:21.706338+09:00",
+  "experiment_hash": "2c305b8a4eb2909b66a9c11bffd6954ad87263c0bad0b2063b538385219eb320",
+  "physical_gpu": "5",
+  "branches": [
+    "S_full",
+    "BOB_full"
+  ],
+  "vanilla_retrained": false,
+  "full_cumulative": true,
+  "previous_experiment_hash": "ad31ebaa6ffee78ce499d0a3b3c1a563d3e03a3a815c156aa69a0f3657bb3080",
+  "compatibility_repair": "repairs/tensorboard_config_20261012/repair_record.json",
+  "compatibility_repair_at": "2026-10-12T17:10:17.165799+09:00",
+  "error": "CalledProcessError(1, ['${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/.bob_env/bin/python', '-m', 'fulltraj.bob_worker', 'feasibility'])"
+}
