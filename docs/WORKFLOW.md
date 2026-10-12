@@ -25,3 +25,12 @@
    ```
 
 Initial private publishing/authentication is in [UPLOAD.md](UPLOAD.md). The normal workflow never uses force push. Checkpoint/dataset/cache files stay local. If changed source belongs to a preserved sibling project, stage that explicit directory too and update its metadata. Frozen historical tables remain unchanged; new evidence gets a new ID.
+
+If you intentionally modify an already preserved source/config file, its historical export hash will no longer match. After reviewing the change, record its lineage explicitly:
+
+```bash
+python tools/record_source_update.py --path structure_e3_followup/followup/losses.py \
+  --experiment EFCIL-YYYYMMDD-001 --reason "Describe the actual method change"
+```
+
+Use your registered ID. The tool retains the original hash, appends a dated source-update record, and updates only the reviewed source/config hash. It refuses frozen result metadata. Run method-specific tests and stage `provenance/file_manifest.csv` and `provenance/code_updates.jsonl` with the code and CHANGELOG. Historical packaging validation is a dated record; new scientific results require new evidence.
