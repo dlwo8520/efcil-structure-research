@@ -1,0 +1,41 @@
+{
+  "method": "pcds_structure_sgds",
+  "adaptation_type": "parallel attention K/V nonlinear bottleneck adapters",
+  "adapter_trainable_parameters": 2416128,
+  "task0_classifier_trainable_parameters": 15360,
+  "task0_total_trainable_parameters": 2431488,
+  "total_model_parameters": 88214784,
+  "classifier_scale": 20.0,
+  "source_paper": "Exemplar-Free Class Incremental Learning via Preserving Class-Discriminative Structure",
+  "released_code_reference": "${RESEARCH_WORKSPACE}/cds-main",
+  "scc_teacher": "transient frozen immediately-preceding backbone deepcopy",
+  "classifier_adaptation_sampling": "direct Eq. (11) Gaussian; no age-dependent mean scaling",
+  "result_label": "PCDS Stanford Cars-196 adaptation",
+  "task_sizes": [
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    16
+  ],
+  "training_seed": 0,
+  "class_order_seed": 1993,
+  "use_sgds": true,
+  "sgds_trainable_parameters": 0,
+  "combined_method": "PCDS + SGDS activation-space guidance",
+  "sgds_target_layer": 11,
+  "sgds_paper_k": 0.6,
+  "sgds_k_interpretation": "TopK floor(kN): 60% retain, 40% zero",
+  "sgds_training_only_mask": true,
+  "sgds_eq6_includes_self": true,
+  "sgds_excluded": [
+    "task-specific adapter bank",
+    "inference retrieval/fusion/entropy selection",
+    "SGDS prototype classifier and MOS alignment"
+  ]
+}
