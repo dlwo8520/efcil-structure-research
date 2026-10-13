@@ -1,0 +1,74 @@
+RUN ${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/.bob_env/bin/python -m fulltraj.bob_worker doctor
+{'generator_environment': {'torch': '2.6.0', 'diffusers': '0.32.0', 'transformers': '4.51.3', 'accelerate': '1.2.1', 'peft': '0.10.0'}, 'CUDA': True}
+RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/run.py --stage smoke
+test_anchor_views_and_global_rng_equal (test_fulltraj.FullTrajectoryTests) ... ok
+test_context_pairing_and_target_independence (test_fulltraj.FullTrajectoryTests) ... ok
+test_epoch_restart_equals_uninterrupted (test_fulltraj.FullTrajectoryTests) ... ok
+test_full_fixture_analysis_creates_five_plots (test_fulltraj.FullTrajectoryTests) ... ok
+test_gpu_smoke_orchestration_with_cpu_toy_substitute (test_fulltraj.FullTrajectoryTests) ... ok
+test_official_adapter_export_accepts_isolated_smoke_folder (test_fulltraj.FullTrajectoryTests) ... ok
+test_official_arg_attribute_compatibility (test_fulltraj.FullTrajectoryTests) ... ok
+test_old_future_and_rejected_banks_fail (test_fulltraj.FullTrajectoryTests) ... ok
+test_paired_counts_macro_and_denominators (test_fulltraj.FullTrajectoryTests) ... ok
+test_real_statistics_guard (test_fulltraj.FullTrajectoryTests) ... ok
+test_release_drops_bank_access (test_fulltraj.FullTrajectoryTests) ... ok
+test_scc_only_real_anchor (test_fulltraj.FullTrajectoryTests) ... ok
+test_solarize_gets_PIL_not_float_tensor (test_fulltraj.FullTrajectoryTests) ... ok
+test_technical_qc_and_duplicates (test_fulltraj.FullTrajectoryTests) ... ok
+test_two_steps_and_original_checkpoint_save_load (test_fulltraj.FullTrajectoryTests) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 2.302s
+
+OK
+RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/run.py --stage prepare --task 1
+RUN ${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/.bob_env/bin/python -m fulltraj.bob_worker feasibility
+T1: preserve completed context captions
+{"updated_at": "2026-10-12T16:55:16.442127+09:00", "stage": "official_lora_smoke", "task": 1, "epochs": 1}
+10/12/2026 16:55:16 - INFO - official_bob_finetune - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+
+Mixed precision type: no
+
+{'rescale_betas_zero_snr', 'prediction_type', 'clip_sample_range', 'sample_max_value', 'thresholding', 'dynamic_thresholding_ratio', 'variance_type', 'timestep_spacing'} was not found in config. Values will be initialized to default values.
+{'use_post_quant_conv', 'use_quant_conv', 'force_upcast', 'shift_factor', 'mid_block_add_attention', 'scaling_factor', 'latents_mean', 'latents_std'} was not found in config. Values will be initialized to default values.
+{'projection_class_embeddings_input_dim', 'upcast_attention', 'resnet_skip_time_act', 'cross_attention_norm', 'mid_block_only_cross_attention', 'class_embed_type', 'encoder_hid_dim_type', 'mid_block_type', 'time_embedding_dim', 'num_attention_heads', 'timestep_post_act', 'conv_out_kernel', 'time_cond_proj_dim', 'addition_time_embed_dim', 'use_linear_projection', 'num_class_embeds', 'dropout', 'time_embedding_type', 'transformer_layers_per_block', 'only_cross_attention', 'resnet_out_scale_factor', 'resnet_time_scale_shift', 'class_embeddings_concat', 'reverse_transformer_layers_per_block', 'addition_embed_type', 'addition_embed_type_num_heads', 'dual_cross_attention', 'time_embedding_act_fn', 'conv_in_kernel', 'attention_type', 'encoder_hid_dim'} was not found in config. Values will be initialized to default values.
+Traceback (most recent call last):
+  File "${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/.bob_env/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/.bob_env/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/fulltraj/bob_worker.py", line 364, in <module>
+    main()
+  File "${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/fulltraj/bob_worker.py", line 342, in main
+    feasibility()
+  File "${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/fulltraj/bob_worker.py", line 310, in feasibility
+    lora(1, target, smoke=True)
+  File "${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/fulltraj/bob_worker.py", line 154, in lora
+    official.main(args)
+  File "${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/vendor/BeyondObjects/finetune/finetune_t2i.py", line 591, in main
+    accelerator.init_trackers("dreambooth-lora", config=tracker_config)
+  File "${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/.bob_env/lib/python3.10/site-packages/accelerate/accelerator.py", line 723, in _inner
+    return PartialState().on_main_process(function)(*args, **kwargs)
+  File "${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/.bob_env/lib/python3.10/site-packages/accelerate/accelerator.py", line 2706, in init_trackers
+    tracker.store_init_configuration(config)
+  File "${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/.bob_env/lib/python3.10/site-packages/accelerate/tracking.py", line 79, in execute_on_main_process
+    return PartialState().on_main_process(function)(self, *args, **kwargs)
+  File "${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/.bob_env/lib/python3.10/site-packages/accelerate/tracking.py", line 211, in store_init_configuration
+    self.writer.add_hparams(values, metric_dict={})
+  File "${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/.bob_env/lib/python3.10/site-packages/torch/utils/tensorboard/writer.py", line 330, in add_hparams
+    exp, ssi, sei = hparams(hparam_dict, metric_dict, hparam_domain_discrete)
+  File "${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/.bob_env/lib/python3.10/site-packages/torch/utils/tensorboard/summary.py", line 318, in hparams
+    raise ValueError(
+ValueError: value should be one of int, float, str, bool, or torch.Tensor
+Traceback (most recent call last):
+  File "${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/run.py", line 182, in <module>
+    main()
+  File "${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/run.py", line 161, in main
+    child([args.generator_python, "-m", "fulltraj.bob_worker", "feasibility"], "BOB_GPU_smoke", 1)
+  File "${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/run.py", line 27, in child
+    raise subprocess.CalledProcessError(result.returncode, command)
+subprocess.CalledProcessError: Command '['${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/.bob_env/bin/python', '-m', 'fulltraj.bob_worker', 'feasibility']' returned non-zero exit status 1.
