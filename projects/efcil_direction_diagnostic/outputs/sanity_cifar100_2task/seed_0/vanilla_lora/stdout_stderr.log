@@ -1,0 +1,18 @@
+2026-08-11 17:24:51 | INFO | method=vanilla_lora output=${RESEARCH_WORKSPACE}/projects/efcil_direction_diagnostic/outputs/sanity_cifar100_2task/seed_0/vanilla_lora
+2026-08-11 17:24:51 | INFO | GPU: {'CUDA_VISIBLE_DEVICES': '1', 'torch_cuda_device_count': 1, 'torch_cuda_current_device': 0, 'torch_cuda_device_name': 'NVIDIA RTX A6000', 'torch_cuda_device_uuid': 'afb08c1c-8a66-104a-01d1-046df70f0552'}
+2026-08-11 17:25:51 | INFO | method=vanilla_lora output=${RESEARCH_WORKSPACE}/projects/efcil_direction_diagnostic/outputs/sanity_cifar100_2task/seed_0/vanilla_lora
+2026-08-11 17:25:51 | INFO | GPU: {'CUDA_VISIBLE_DEVICES': '1', 'torch_cuda_device_count': 1, 'torch_cuda_current_device': 0, 'torch_cuda_device_name': 'NVIDIA RTX A6000', 'torch_cuda_device_uuid': 'afb08c1c-8a66-104a-01d1-046df70f0552'}
+2026-08-11 17:25:56 | INFO | parameters total=86093568 initially_trainable=0 feature_dim=768
+2026-08-11 17:25:56 | INFO | starting task=0 classes=0..9
+2026-08-11 17:26:04 | INFO | task=0 step=1/4 loss=0.1179 acc=0.938 update=5.430e-01 scale=1.000
+2026-08-11 17:26:04 | INFO | task=0 step=2/4 loss=0.1575 acc=0.938 update=3.299e-01 scale=1.000
+2026-08-11 17:26:04 | INFO | task=0 step=3/4 loss=0.0589 acc=1.000 update=1.544e-01 scale=1.000
+2026-08-11 17:26:04 | INFO | task=0 step=4/4 loss=0.1228 acc=0.969 update=3.915e-02 scale=1.000
+2026-08-11 17:26:06 | INFO | finished task=0 seen_acc=0.9620 old_acc=nan new_acc=0.9620 forgetting=0.0000 peak=3.51GB
+2026-08-11 17:26:06 | INFO | starting task=1 classes=10..19
+2026-08-11 17:26:11 | INFO | task=1 step=1/4 loss=0.2487 acc=0.906 update=5.430e-01 scale=1.000
+2026-08-11 17:26:12 | INFO | task=1 step=2/4 loss=0.1923 acc=0.938 update=3.227e-01 scale=1.000
+2026-08-11 17:26:12 | INFO | task=1 step=3/4 loss=0.0763 acc=0.969 update=0.000e+00 scale=1.000
+2026-08-11 17:26:12 | INFO | task=1 step=4/4 loss=0.0699 acc=0.969 update=4.379e-02 scale=1.000
+2026-08-11 17:26:15 | INFO | finished task=1 seen_acc=0.7500 old_acc=0.5300 new_acc=0.9700 forgetting=0.4320 peak=3.56GB
+2026-08-11 17:26:15 | INFO | run complete final_accuracy=0.7500

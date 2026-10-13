@@ -1,0 +1,135 @@
+2026-08-11 17:43:46 | INFO | method=small_update_lora output=${RESEARCH_WORKSPACE}/projects/efcil_direction_diagnostic/outputs/cifar100_10task/seed_0/small_update_lora
+2026-08-11 17:43:46 | INFO | GPU: {'CUDA_VISIBLE_DEVICES': '1', 'torch_cuda_device_count': 1, 'torch_cuda_current_device': 0, 'torch_cuda_device_name': 'NVIDIA RTX A6000', 'torch_cuda_device_uuid': 'afb08c1c-8a66-104a-01d1-046df70f0552'}
+2026-08-11 17:43:50 | INFO | parameters total=86093568 initially_trainable=0 feature_dim=768
+2026-08-11 17:43:50 | INFO | loaded 1040 norm targets from ${RESEARCH_WORKSPACE}/projects/efcil_direction_diagnostic/outputs/cifar100_10task/seed_0/vanilla_lora/step_updates.csv
+2026-08-11 17:43:50 | INFO | starting task=0 classes=0..9
+2026-08-11 17:43:58 | INFO | task=0 step=1/104 loss=0.1650 acc=0.917 update=1.358e-01 scale=0.250
+2026-08-11 17:44:00 | INFO | task=0 step=11/104 loss=0.1083 acc=0.969 update=3.919e-02 scale=0.256
+2026-08-11 17:44:01 | INFO | task=0 step=21/104 loss=0.0194 acc=0.990 update=2.688e-02 scale=0.254
+2026-08-11 17:44:03 | INFO | task=0 step=31/104 loss=0.0456 acc=0.979 update=2.191e-02 scale=0.186
+2026-08-11 17:44:05 | INFO | task=0 step=41/104 loss=0.0102 acc=1.000 update=2.090e-02 scale=0.230
+2026-08-11 17:44:06 | INFO | task=0 step=51/104 loss=0.0089 acc=1.000 update=1.171e-02 scale=0.286
+2026-08-11 17:44:08 | INFO | task=0 step=61/104 loss=0.0233 acc=0.990 update=5.989e-03 scale=0.224
+2026-08-11 17:44:10 | INFO | task=0 step=71/104 loss=0.0106 acc=1.000 update=3.481e-03 scale=0.259
+2026-08-11 17:44:12 | INFO | task=0 step=81/104 loss=0.0053 acc=1.000 update=1.159e-03 scale=0.172
+2026-08-11 17:44:13 | INFO | task=0 step=91/104 loss=0.0602 acc=0.969 update=8.032e-04 scale=0.238
+2026-08-11 17:44:15 | INFO | task=0 step=101/104 loss=0.0119 acc=1.000 update=3.426e-05 scale=0.194
+2026-08-11 17:44:19 | INFO | finished task=0 seen_acc=0.9950 old_acc=nan new_acc=0.9950 forgetting=0.0000 peak=5.09GB
+2026-08-11 17:44:19 | INFO | starting task=1 classes=10..19
+2026-08-11 17:44:26 | INFO | task=1 step=1/104 loss=0.1653 acc=0.927 update=1.358e-01 scale=0.250
+2026-08-11 17:44:27 | INFO | task=1 step=11/104 loss=0.0235 acc=1.000 update=4.115e-02 scale=0.303
+2026-08-11 17:44:29 | INFO | task=1 step=21/104 loss=0.0230 acc=0.990 update=2.557e-02 scale=0.246
+2026-08-11 17:44:31 | INFO | task=1 step=31/104 loss=0.0330 acc=0.979 update=2.454e-02 scale=0.185
+2026-08-11 17:44:33 | INFO | task=1 step=41/104 loss=0.0400 acc=0.990 update=1.784e-02 scale=0.230
+2026-08-11 17:44:34 | INFO | task=1 step=51/104 loss=0.0222 acc=0.990 update=1.425e-02 scale=0.247
+2026-08-11 17:44:36 | INFO | task=1 step=61/104 loss=0.0525 acc=0.969 update=9.038e-03 scale=0.325
+2026-08-11 17:44:38 | INFO | task=1 step=71/104 loss=0.0144 acc=1.000 update=5.226e-03 scale=0.267
+2026-08-11 17:44:40 | INFO | task=1 step=81/104 loss=0.0196 acc=0.990 update=1.918e-03 scale=0.219
+2026-08-11 17:44:42 | INFO | task=1 step=91/104 loss=0.0580 acc=0.979 update=7.683e-04 scale=0.193
+2026-08-11 17:44:43 | INFO | task=1 step=101/104 loss=0.0090 acc=1.000 update=7.363e-05 scale=0.258
+2026-08-11 17:44:48 | INFO | finished task=1 seen_acc=0.7235 old_acc=0.4660 new_acc=0.9810 forgetting=0.5290 peak=5.15GB
+2026-08-11 17:44:48 | INFO | starting task=2 classes=20..29
+2026-08-11 17:44:55 | INFO | task=2 step=1/104 loss=0.0164 acc=1.000 update=1.357e-01 scale=0.250
+2026-08-11 17:44:57 | INFO | task=2 step=11/104 loss=0.0046 acc=1.000 update=4.201e-02 scale=0.276
+2026-08-11 17:44:58 | INFO | task=2 step=21/104 loss=0.0006 acc=1.000 update=3.448e-02 scale=0.285
+2026-08-11 17:45:00 | INFO | task=2 step=31/104 loss=0.0012 acc=1.000 update=2.534e-02 scale=0.343
+2026-08-11 17:45:02 | INFO | task=2 step=41/104 loss=0.0069 acc=1.000 update=2.200e-02 scale=0.221
+2026-08-11 17:45:03 | INFO | task=2 step=51/104 loss=0.0051 acc=1.000 update=1.621e-02 scale=0.262
+2026-08-11 17:45:05 | INFO | task=2 step=61/104 loss=0.0230 acc=0.990 update=5.953e-03 scale=0.143
+2026-08-11 17:45:07 | INFO | task=2 step=71/104 loss=0.0020 acc=1.000 update=5.425e-03 scale=0.277
+2026-08-11 17:45:09 | INFO | task=2 step=81/104 loss=0.0054 acc=1.000 update=1.817e-03 scale=0.208
+2026-08-11 17:45:11 | INFO | task=2 step=91/104 loss=0.0077 acc=1.000 update=9.365e-04 scale=0.210
+2026-08-11 17:45:12 | INFO | task=2 step=101/104 loss=0.0030 acc=1.000 update=3.629e-05 scale=0.194
+2026-08-11 17:45:19 | INFO | finished task=2 seen_acc=0.5557 old_acc=0.3355 new_acc=0.9960 forgetting=0.6525 peak=5.14GB
+2026-08-11 17:45:19 | INFO | starting task=3 classes=30..39
+2026-08-11 17:45:27 | INFO | task=3 step=1/104 loss=0.1282 acc=0.979 update=1.358e-01 scale=0.250
+2026-08-11 17:45:29 | INFO | task=3 step=11/104 loss=0.0470 acc=1.000 update=3.755e-02 scale=0.233
+2026-08-11 17:45:31 | INFO | task=3 step=21/104 loss=0.0591 acc=0.958 update=2.810e-02 scale=0.229
+2026-08-11 17:45:32 | INFO | task=3 step=31/104 loss=0.0171 acc=1.000 update=2.455e-02 scale=0.237
+2026-08-11 17:45:34 | INFO | task=3 step=41/104 loss=0.1332 acc=0.948 update=1.846e-02 scale=0.213
+2026-08-11 17:45:36 | INFO | task=3 step=51/104 loss=0.0505 acc=0.979 update=1.452e-02 scale=0.206
+2026-08-11 17:45:38 | INFO | task=3 step=61/104 loss=0.0081 acc=1.000 update=6.736e-03 scale=0.239
+2026-08-11 17:45:40 | INFO | task=3 step=71/104 loss=0.0136 acc=1.000 update=4.964e-03 scale=0.244
+2026-08-11 17:45:41 | INFO | task=3 step=81/104 loss=0.0220 acc=1.000 update=2.935e-03 scale=0.207
+2026-08-11 17:45:43 | INFO | task=3 step=91/104 loss=0.0261 acc=0.990 update=7.928e-04 scale=0.215
+2026-08-11 17:45:45 | INFO | task=3 step=101/104 loss=0.0378 acc=0.990 update=7.023e-05 scale=0.199
+2026-08-11 17:45:51 | INFO | finished task=3 seen_acc=0.5250 old_acc=0.3710 new_acc=0.9870 forgetting=0.6197 peak=5.14GB
+2026-08-11 17:45:51 | INFO | starting task=4 classes=40..49
+2026-08-11 17:45:58 | INFO | task=4 step=1/104 loss=0.0831 acc=0.958 update=1.358e-01 scale=0.250
+2026-08-11 17:45:59 | INFO | task=4 step=11/104 loss=0.0586 acc=0.979 update=4.250e-02 scale=0.223
+2026-08-11 17:46:01 | INFO | task=4 step=21/104 loss=0.0133 acc=1.000 update=2.547e-02 scale=0.221
+2026-08-11 17:46:03 | INFO | task=4 step=31/104 loss=0.0104 acc=1.000 update=2.087e-02 scale=0.304
+2026-08-11 17:46:05 | INFO | task=4 step=41/104 loss=0.0739 acc=0.969 update=2.179e-02 scale=0.193
+2026-08-11 17:46:06 | INFO | task=4 step=51/104 loss=0.0461 acc=0.990 update=1.609e-02 scale=0.210
+2026-08-11 17:46:08 | INFO | task=4 step=61/104 loss=0.0081 acc=1.000 update=1.090e-02 scale=0.275
+2026-08-11 17:46:10 | INFO | task=4 step=71/104 loss=0.0035 acc=1.000 update=5.205e-03 scale=0.431
+2026-08-11 17:46:12 | INFO | task=4 step=81/104 loss=0.0157 acc=0.990 update=1.908e-03 scale=0.140
+2026-08-11 17:46:14 | INFO | task=4 step=91/104 loss=0.0094 acc=1.000 update=7.651e-04 scale=0.210
+2026-08-11 17:46:15 | INFO | task=4 step=101/104 loss=0.0059 acc=1.000 update=3.300e-05 scale=0.183
+2026-08-11 17:46:22 | INFO | finished task=4 seen_acc=0.4822 old_acc=0.3545 new_acc=0.9930 forgetting=0.6352 peak=5.14GB
+2026-08-11 17:46:22 | INFO | starting task=5 classes=50..59
+2026-08-11 17:46:29 | INFO | task=5 step=1/104 loss=0.0339 acc=1.000 update=1.357e-01 scale=0.250
+2026-08-11 17:46:30 | INFO | task=5 step=11/104 loss=0.0954 acc=0.979 update=4.180e-02 scale=0.234
+2026-08-11 17:46:32 | INFO | task=5 step=21/104 loss=0.0510 acc=0.990 update=3.334e-02 scale=0.290
+2026-08-11 17:46:34 | INFO | task=5 step=31/104 loss=0.0269 acc=0.990 update=2.290e-02 scale=0.263
+2026-08-11 17:46:36 | INFO | task=5 step=41/104 loss=0.0064 acc=1.000 update=2.048e-02 scale=0.261
+2026-08-11 17:46:37 | INFO | task=5 step=51/104 loss=0.0111 acc=1.000 update=1.217e-02 scale=0.204
+2026-08-11 17:46:39 | INFO | task=5 step=61/104 loss=0.0056 acc=1.000 update=6.441e-03 scale=0.221
+2026-08-11 17:46:41 | INFO | task=5 step=71/104 loss=0.0119 acc=1.000 update=3.583e-03 scale=0.169
+2026-08-11 17:46:43 | INFO | task=5 step=81/104 loss=0.0526 acc=0.979 update=2.377e-03 scale=0.218
+2026-08-11 17:46:45 | INFO | task=5 step=91/104 loss=0.0056 acc=1.000 update=9.832e-04 scale=0.284
+2026-08-11 17:46:46 | INFO | task=5 step=101/104 loss=0.0150 acc=1.000 update=8.727e-05 scale=0.330
+2026-08-11 17:46:54 | INFO | finished task=5 seen_acc=0.4970 old_acc=0.3982 new_acc=0.9910 forgetting=0.5922 peak=5.15GB
+2026-08-11 17:46:54 | INFO | starting task=6 classes=60..69
+2026-08-11 17:47:01 | INFO | task=6 step=1/104 loss=0.0538 acc=0.979 update=1.357e-01 scale=0.250
+2026-08-11 17:47:03 | INFO | task=6 step=11/104 loss=0.0098 acc=1.000 update=4.292e-02 scale=0.288
+2026-08-11 17:47:04 | INFO | task=6 step=21/104 loss=0.0091 acc=1.000 update=3.059e-02 scale=0.277
+2026-08-11 17:47:06 | INFO | task=6 step=31/104 loss=0.0710 acc=0.979 update=2.450e-02 scale=0.242
+2026-08-11 17:47:08 | INFO | task=6 step=41/104 loss=0.0507 acc=0.990 update=1.865e-02 scale=0.277
+2026-08-11 17:47:10 | INFO | task=6 step=51/104 loss=0.0253 acc=0.990 update=1.372e-02 scale=0.229
+2026-08-11 17:47:12 | INFO | task=6 step=61/104 loss=0.0088 acc=1.000 update=7.134e-03 scale=0.244
+2026-08-11 17:47:13 | INFO | task=6 step=71/104 loss=0.0133 acc=1.000 update=4.475e-03 scale=0.326
+2026-08-11 17:47:15 | INFO | task=6 step=81/104 loss=0.0054 acc=1.000 update=1.811e-03 scale=0.166
+2026-08-11 17:47:17 | INFO | task=6 step=91/104 loss=0.0046 acc=1.000 update=6.330e-04 scale=0.243
+2026-08-11 17:47:18 | INFO | task=6 step=101/104 loss=0.0107 acc=1.000 update=6.292e-05 scale=0.184
+2026-08-11 17:47:27 | INFO | finished task=6 seen_acc=0.4393 old_acc=0.3473 new_acc=0.9910 forgetting=0.6432 peak=5.15GB
+2026-08-11 17:47:27 | INFO | starting task=7 classes=70..79
+2026-08-11 17:47:33 | INFO | task=7 step=1/104 loss=0.0889 acc=0.958 update=1.358e-01 scale=0.250
+2026-08-11 17:47:35 | INFO | task=7 step=11/104 loss=0.1441 acc=0.948 update=4.460e-02 scale=0.248
+2026-08-11 17:47:37 | INFO | task=7 step=21/104 loss=0.0773 acc=0.979 update=2.775e-02 scale=0.250
+2026-08-11 17:47:39 | INFO | task=7 step=31/104 loss=0.0624 acc=0.979 update=2.569e-02 scale=0.267
+2026-08-11 17:47:40 | INFO | task=7 step=41/104 loss=0.0189 acc=1.000 update=1.856e-02 scale=0.279
+2026-08-11 17:47:42 | INFO | task=7 step=51/104 loss=0.0885 acc=0.969 update=1.464e-02 scale=0.204
+2026-08-11 17:47:44 | INFO | task=7 step=61/104 loss=0.0216 acc=1.000 update=1.022e-02 scale=0.270
+2026-08-11 17:47:46 | INFO | task=7 step=71/104 loss=0.0103 acc=1.000 update=5.516e-03 scale=0.311
+2026-08-11 17:47:48 | INFO | task=7 step=81/104 loss=0.0497 acc=0.990 update=2.016e-03 scale=0.207
+2026-08-11 17:47:49 | INFO | task=7 step=91/104 loss=0.0289 acc=0.990 update=7.101e-04 scale=0.196
+2026-08-11 17:47:51 | INFO | task=7 step=101/104 loss=0.0612 acc=0.969 update=6.557e-05 scale=0.130
+2026-08-11 17:48:00 | INFO | finished task=7 seen_acc=0.2776 old_acc=0.1770 new_acc=0.9820 forgetting=0.8136 peak=5.15GB
+2026-08-11 17:48:00 | INFO | starting task=8 classes=80..89
+2026-08-11 17:48:07 | INFO | task=8 step=1/104 loss=0.1429 acc=0.938 update=1.358e-01 scale=0.250
+2026-08-11 17:48:09 | INFO | task=8 step=11/104 loss=0.1089 acc=0.958 update=3.696e-02 scale=0.219
+2026-08-11 17:48:11 | INFO | task=8 step=21/104 loss=0.0184 acc=1.000 update=2.914e-02 scale=0.250
+2026-08-11 17:48:12 | INFO | task=8 step=31/104 loss=0.0069 acc=1.000 update=2.143e-02 scale=0.231
+2026-08-11 17:48:14 | INFO | task=8 step=41/104 loss=0.0068 acc=1.000 update=1.931e-02 scale=0.281
+2026-08-11 17:48:16 | INFO | task=8 step=51/104 loss=0.0111 acc=1.000 update=1.455e-02 scale=0.198
+2026-08-11 17:48:18 | INFO | task=8 step=61/104 loss=0.0030 acc=1.000 update=6.356e-03 scale=0.157
+2026-08-11 17:48:20 | INFO | task=8 step=71/104 loss=0.0089 acc=1.000 update=4.807e-03 scale=0.258
+2026-08-11 17:48:21 | INFO | task=8 step=81/104 loss=0.0055 acc=1.000 update=1.715e-03 scale=0.207
+2026-08-11 17:48:23 | INFO | task=8 step=91/104 loss=0.0077 acc=1.000 update=8.341e-04 scale=0.175
+2026-08-11 17:48:25 | INFO | task=8 step=101/104 loss=0.0066 acc=1.000 update=9.028e-05 scale=0.308
+2026-08-11 17:48:34 | INFO | finished task=8 seen_acc=0.2920 old_acc=0.2054 new_acc=0.9850 forgetting=0.7841 peak=5.15GB
+2026-08-11 17:48:34 | INFO | starting task=9 classes=90..99
+2026-08-11 17:48:41 | INFO | task=9 step=1/104 loss=0.2404 acc=0.927 update=1.358e-01 scale=0.250
+2026-08-11 17:48:43 | INFO | task=9 step=11/104 loss=0.1049 acc=0.958 update=4.376e-02 scale=0.265
+2026-08-11 17:48:44 | INFO | task=9 step=21/104 loss=0.1152 acc=0.969 update=2.757e-02 scale=0.264
+2026-08-11 17:48:46 | INFO | task=9 step=31/104 loss=0.0840 acc=0.990 update=2.627e-02 scale=0.289
+2026-08-11 17:48:48 | INFO | task=9 step=41/104 loss=0.0634 acc=0.979 update=1.842e-02 scale=0.240
+2026-08-11 17:48:50 | INFO | task=9 step=51/104 loss=0.0656 acc=0.990 update=1.231e-02 scale=0.302
+2026-08-11 17:48:51 | INFO | task=9 step=61/104 loss=0.0366 acc=0.990 update=6.693e-03 scale=0.205
+2026-08-11 17:48:53 | INFO | task=9 step=71/104 loss=0.0285 acc=0.990 update=4.433e-03 scale=0.247
+2026-08-11 17:48:55 | INFO | task=9 step=81/104 loss=0.0270 acc=0.979 update=2.099e-03 scale=0.183
+2026-08-11 17:48:57 | INFO | task=9 step=91/104 loss=0.0491 acc=0.990 update=5.987e-04 scale=0.190
+2026-08-11 17:48:58 | INFO | task=9 step=101/104 loss=0.0139 acc=1.000 update=7.257e-05 scale=0.264
+2026-08-11 17:49:09 | INFO | finished task=9 seen_acc=0.2497 old_acc=0.1679 new_acc=0.9860 forgetting=0.8211 peak=5.15GB
+2026-08-11 17:49:09 | INFO | run complete final_accuracy=0.2497

@@ -1,0 +1,234 @@
+2026-08-12 14:52:07 | INFO | method=keep_lora_full Wp=True M=True output=${RESEARCH_WORKSPACE}/projects/efcil_direction_diagnostic/outputs/keeplora_efcil/cifar100_10task/seed_0/keep_lora_full
+2026-08-12 14:52:07 | INFO | GPU: {'CUDA_VISIBLE_DEVICES': '1', 'torch_cuda_device_count': 1, 'torch_cuda_current_device': 0, 'torch_cuda_device_name': 'NVIDIA RTX A6000', 'torch_cuda_device_uuid': 'afb08c1c-8a66-104a-01d1-046df70f0552'}
+2026-08-12 14:52:11 | INFO | parameters total=86388480 initially_trainable=0 sites=48 Wp_rank_mean=248.9
+2026-08-12 14:52:11 | INFO | starting task=0 classes=0..9
+2026-08-12 14:52:22 | INFO | task=0 step=1/520 loss=0.1652 acc=0.917 update=4.797e-02 overlap=1.575e-07
+2026-08-12 14:52:27 | INFO | task=0 step=26/520 loss=0.1510 acc=0.958 update=1.124e-02 overlap=1.583e-07
+2026-08-12 14:52:32 | INFO | task=0 step=51/520 loss=0.0325 acc=0.990 update=6.857e-03 overlap=1.593e-07
+2026-08-12 14:52:38 | INFO | task=0 step=76/520 loss=0.0040 acc=1.000 update=6.268e-03 overlap=1.619e-07
+2026-08-12 14:52:43 | INFO | task=0 step=101/520 loss=0.0335 acc=0.990 update=6.880e-03 overlap=1.584e-07
+2026-08-12 14:52:48 | INFO | task=0 step=126/520 loss=0.0347 acc=0.979 update=5.708e-03 overlap=1.621e-07
+2026-08-12 14:52:53 | INFO | task=0 step=151/520 loss=0.0044 acc=1.000 update=4.288e-03 overlap=1.605e-07
+2026-08-12 14:52:58 | INFO | task=0 step=176/520 loss=0.0028 acc=1.000 update=2.168e-03 overlap=1.622e-07
+2026-08-12 14:53:03 | INFO | task=0 step=201/520 loss=0.0069 acc=1.000 update=3.023e-03 overlap=1.637e-07
+2026-08-12 14:53:08 | INFO | task=0 step=226/520 loss=0.0027 acc=1.000 update=1.237e-03 overlap=1.663e-07
+2026-08-12 14:53:14 | INFO | task=0 step=251/520 loss=0.0021 acc=1.000 update=1.026e-03 overlap=1.654e-07
+2026-08-12 14:53:19 | INFO | task=0 step=276/520 loss=0.0042 acc=1.000 update=1.404e-03 overlap=1.651e-07
+2026-08-12 14:53:24 | INFO | task=0 step=301/520 loss=0.0022 acc=1.000 update=1.145e-03 overlap=1.534e-07
+2026-08-12 14:53:29 | INFO | task=0 step=326/520 loss=0.0034 acc=1.000 update=8.387e-04 overlap=1.660e-07
+2026-08-12 14:53:34 | INFO | task=0 step=351/520 loss=0.0026 acc=1.000 update=7.011e-04 overlap=1.638e-07
+2026-08-12 14:53:39 | INFO | task=0 step=376/520 loss=0.0024 acc=1.000 update=4.843e-04 overlap=1.561e-07
+2026-08-12 14:53:44 | INFO | task=0 step=401/520 loss=0.0023 acc=1.000 update=6.167e-04 overlap=1.593e-07
+2026-08-12 14:53:50 | INFO | task=0 step=426/520 loss=0.0010 acc=1.000 update=4.010e-04 overlap=1.685e-07
+2026-08-12 14:53:55 | INFO | task=0 step=451/520 loss=0.0033 acc=1.000 update=8.510e-05 overlap=1.680e-07
+2026-08-12 14:54:00 | INFO | task=0 step=476/520 loss=0.0037 acc=1.000 update=4.309e-05 overlap=1.622e-07
+2026-08-12 14:54:05 | INFO | task=0 step=501/520 loss=0.0072 acc=1.000 update=1.029e-05 overlap=1.661e-07
+2026-08-12 14:54:20 | INFO | finished task=0 seen=0.9940 old=nan new=0.9940 forget=0.0000 protected=264.8/768 residual_min=398 peak=8.01GB
+2026-08-12 14:54:20 | INFO | starting task=1 classes=10..19
+2026-08-12 14:54:30 | INFO | task=1 step=1/520 loss=0.2232 acc=0.938 update=4.795e-02 overlap=1.712e-07
+2026-08-12 14:54:36 | INFO | task=1 step=26/520 loss=0.1153 acc=0.969 update=1.009e-02 overlap=1.766e-07
+2026-08-12 14:54:41 | INFO | task=1 step=51/520 loss=0.0172 acc=1.000 update=8.317e-03 overlap=1.721e-07
+2026-08-12 14:54:46 | INFO | task=1 step=76/520 loss=0.0157 acc=1.000 update=6.574e-03 overlap=1.757e-07
+2026-08-12 14:54:51 | INFO | task=1 step=101/520 loss=0.0316 acc=0.990 update=7.504e-03 overlap=1.731e-07
+2026-08-12 14:54:56 | INFO | task=1 step=126/520 loss=0.0187 acc=1.000 update=4.344e-03 overlap=1.747e-07
+2026-08-12 14:55:01 | INFO | task=1 step=151/520 loss=0.0166 acc=1.000 update=4.276e-03 overlap=1.738e-07
+2026-08-12 14:55:07 | INFO | task=1 step=176/520 loss=0.0111 acc=1.000 update=4.464e-03 overlap=1.740e-07
+2026-08-12 14:55:12 | INFO | task=1 step=201/520 loss=0.0065 acc=1.000 update=4.503e-03 overlap=1.750e-07
+2026-08-12 14:55:17 | INFO | task=1 step=226/520 loss=0.0043 acc=1.000 update=3.642e-03 overlap=1.750e-07
+2026-08-12 14:55:22 | INFO | task=1 step=251/520 loss=0.0164 acc=1.000 update=3.286e-03 overlap=1.748e-07
+2026-08-12 14:55:27 | INFO | task=1 step=276/520 loss=0.0042 acc=1.000 update=2.106e-03 overlap=1.736e-07
+2026-08-12 14:55:32 | INFO | task=1 step=301/520 loss=0.0008 acc=1.000 update=1.890e-03 overlap=1.793e-07
+2026-08-12 14:55:38 | INFO | task=1 step=326/520 loss=0.0051 acc=1.000 update=1.996e-03 overlap=1.620e-07
+2026-08-12 14:55:43 | INFO | task=1 step=351/520 loss=0.0044 acc=1.000 update=9.266e-04 overlap=1.690e-07
+2026-08-12 14:55:48 | INFO | task=1 step=376/520 loss=0.0023 acc=1.000 update=7.158e-04 overlap=1.737e-07
+2026-08-12 14:55:53 | INFO | task=1 step=401/520 loss=0.0046 acc=1.000 update=7.705e-04 overlap=1.748e-07
+2026-08-12 14:55:58 | INFO | task=1 step=426/520 loss=0.0093 acc=1.000 update=3.560e-04 overlap=1.766e-07
+2026-08-12 14:56:03 | INFO | task=1 step=451/520 loss=0.0026 acc=1.000 update=1.956e-04 overlap=1.731e-07
+2026-08-12 14:56:08 | INFO | task=1 step=476/520 loss=0.0066 acc=1.000 update=1.041e-04 overlap=1.764e-07
+2026-08-12 14:56:13 | INFO | task=1 step=501/520 loss=0.0123 acc=0.990 update=2.741e-05 overlap=1.712e-07
+2026-08-12 14:56:30 | INFO | finished task=1 seen=0.9000 old=0.8220 new=0.9780 forget=0.1720 protected=270.0/768 residual_min=397 peak=8.12GB
+2026-08-12 14:56:30 | INFO | starting task=2 classes=20..29
+2026-08-12 14:56:40 | INFO | task=2 step=1/520 loss=0.0259 acc=0.990 update=4.783e-02 overlap=1.774e-07
+2026-08-12 14:56:45 | INFO | task=2 step=26/520 loss=0.0196 acc=0.990 update=1.114e-02 overlap=1.790e-07
+2026-08-12 14:56:50 | INFO | task=2 step=51/520 loss=0.0116 acc=1.000 update=7.656e-03 overlap=1.805e-07
+2026-08-12 14:56:55 | INFO | task=2 step=76/520 loss=0.0023 acc=1.000 update=3.113e-03 overlap=1.876e-07
+2026-08-12 14:57:01 | INFO | task=2 step=101/520 loss=0.0006 acc=1.000 update=7.640e-03 overlap=1.741e-07
+2026-08-12 14:57:06 | INFO | task=2 step=126/520 loss=0.0013 acc=1.000 update=2.988e-03 overlap=1.781e-07
+2026-08-12 14:57:11 | INFO | task=2 step=151/520 loss=0.0101 acc=1.000 update=5.601e-03 overlap=1.809e-07
+2026-08-12 14:57:16 | INFO | task=2 step=176/520 loss=0.0004 acc=1.000 update=1.214e-03 overlap=1.868e-07
+2026-08-12 14:57:21 | INFO | task=2 step=201/520 loss=0.0019 acc=1.000 update=1.660e-03 overlap=1.903e-07
+2026-08-12 14:57:26 | INFO | task=2 step=226/520 loss=0.0050 acc=1.000 update=4.679e-03 overlap=1.798e-07
+2026-08-12 14:57:31 | INFO | task=2 step=251/520 loss=0.0026 acc=1.000 update=1.176e-03 overlap=1.861e-07
+2026-08-12 14:57:36 | INFO | task=2 step=276/520 loss=0.0013 acc=1.000 update=2.516e-03 overlap=1.804e-07
+2026-08-12 14:57:41 | INFO | task=2 step=301/520 loss=0.0005 acc=1.000 update=9.700e-04 overlap=1.769e-07
+2026-08-12 14:57:46 | INFO | task=2 step=326/520 loss=0.0008 acc=1.000 update=5.379e-04 overlap=1.813e-07
+2026-08-12 14:57:51 | INFO | task=2 step=351/520 loss=0.0025 acc=1.000 update=5.638e-04 overlap=1.777e-07
+2026-08-12 14:57:57 | INFO | task=2 step=376/520 loss=0.0017 acc=1.000 update=5.646e-04 overlap=1.826e-07
+2026-08-12 14:58:02 | INFO | task=2 step=401/520 loss=0.0005 acc=1.000 update=8.921e-04 overlap=1.851e-07
+2026-08-12 14:58:07 | INFO | task=2 step=426/520 loss=0.0005 acc=1.000 update=2.009e-04 overlap=1.771e-07
+2026-08-12 14:58:12 | INFO | task=2 step=451/520 loss=0.0005 acc=1.000 update=2.041e-04 overlap=1.803e-07
+2026-08-12 14:58:17 | INFO | task=2 step=476/520 loss=0.0002 acc=1.000 update=2.657e-04 overlap=1.742e-07
+2026-08-12 14:58:22 | INFO | task=2 step=501/520 loss=0.0004 acc=1.000 update=8.382e-06 overlap=1.808e-07
+2026-08-12 14:58:39 | INFO | finished task=2 seen=0.6310 old=0.4485 new=0.9960 forget=0.5375 protected=273.4/768 residual_min=396 peak=8.12GB
+2026-08-12 14:58:39 | INFO | starting task=3 classes=30..39
+2026-08-12 14:58:50 | INFO | task=3 step=1/520 loss=0.1205 acc=0.979 update=4.792e-02 overlap=1.784e-07
+2026-08-12 14:58:55 | INFO | task=3 step=26/520 loss=0.0684 acc=0.979 update=1.062e-02 overlap=1.844e-07
+2026-08-12 14:59:00 | INFO | task=3 step=51/520 loss=0.0547 acc=0.969 update=1.125e-02 overlap=1.808e-07
+2026-08-12 14:59:05 | INFO | task=3 step=76/520 loss=0.0665 acc=0.979 update=1.059e-02 overlap=1.738e-07
+2026-08-12 14:59:10 | INFO | task=3 step=101/520 loss=0.0500 acc=0.990 update=9.565e-03 overlap=1.783e-07
+2026-08-12 14:59:16 | INFO | task=3 step=126/520 loss=0.0430 acc=0.979 update=7.074e-03 overlap=1.870e-07
+2026-08-12 14:59:21 | INFO | task=3 step=151/520 loss=0.0130 acc=1.000 update=5.800e-03 overlap=1.805e-07
+2026-08-12 14:59:26 | INFO | task=3 step=176/520 loss=0.0243 acc=0.990 update=5.983e-03 overlap=1.801e-07
+2026-08-12 14:59:31 | INFO | task=3 step=201/520 loss=0.0248 acc=1.000 update=5.459e-03 overlap=1.775e-07
+2026-08-12 14:59:36 | INFO | task=3 step=226/520 loss=0.0089 acc=1.000 update=4.415e-03 overlap=1.774e-07
+2026-08-12 14:59:41 | INFO | task=3 step=251/520 loss=0.0069 acc=1.000 update=3.063e-03 overlap=1.838e-07
+2026-08-12 14:59:47 | INFO | task=3 step=276/520 loss=0.0405 acc=0.979 update=3.888e-03 overlap=1.771e-07
+2026-08-12 14:59:52 | INFO | task=3 step=301/520 loss=0.0203 acc=1.000 update=3.047e-03 overlap=1.854e-07
+2026-08-12 14:59:57 | INFO | task=3 step=326/520 loss=0.0110 acc=1.000 update=3.696e-03 overlap=1.627e-07
+2026-08-12 15:00:02 | INFO | task=3 step=351/520 loss=0.0220 acc=0.990 update=2.950e-03 overlap=1.639e-07
+2026-08-12 15:00:07 | INFO | task=3 step=376/520 loss=0.0127 acc=1.000 update=1.319e-03 overlap=1.771e-07
+2026-08-12 15:00:12 | INFO | task=3 step=401/520 loss=0.0121 acc=1.000 update=8.825e-04 overlap=1.984e-07
+2026-08-12 15:00:18 | INFO | task=3 step=426/520 loss=0.0055 acc=1.000 update=9.276e-04 overlap=1.772e-07
+2026-08-12 15:00:23 | INFO | task=3 step=451/520 loss=0.0167 acc=1.000 update=2.939e-04 overlap=1.945e-07
+2026-08-12 15:00:28 | INFO | task=3 step=476/520 loss=0.0119 acc=1.000 update=1.169e-04 overlap=1.844e-07
+2026-08-12 15:00:33 | INFO | task=3 step=501/520 loss=0.0206 acc=1.000 update=4.854e-05 overlap=1.617e-07
+2026-08-12 15:00:50 | INFO | finished task=3 seen=0.5735 old=0.4347 new=0.9900 forget=0.5547 protected=276.8/768 residual_min=393 peak=8.12GB
+2026-08-12 15:00:50 | INFO | starting task=4 classes=40..49
+2026-08-12 15:01:01 | INFO | task=4 step=1/520 loss=0.0923 acc=0.969 update=4.788e-02 overlap=1.811e-07
+2026-08-12 15:01:06 | INFO | task=4 step=26/520 loss=0.0302 acc=0.990 update=1.000e-02 overlap=1.878e-07
+2026-08-12 15:01:11 | INFO | task=4 step=51/520 loss=0.0835 acc=0.979 update=1.301e-02 overlap=1.841e-07
+2026-08-12 15:01:16 | INFO | task=4 step=76/520 loss=0.0132 acc=1.000 update=8.625e-03 overlap=1.865e-07
+2026-08-12 15:01:21 | INFO | task=4 step=101/520 loss=0.0128 acc=1.000 update=5.767e-03 overlap=1.883e-07
+2026-08-12 15:01:27 | INFO | task=4 step=126/520 loss=0.0097 acc=1.000 update=5.746e-03 overlap=1.848e-07
+2026-08-12 15:01:32 | INFO | task=4 step=151/520 loss=0.0090 acc=1.000 update=4.512e-03 overlap=1.922e-07
+2026-08-12 15:01:37 | INFO | task=4 step=176/520 loss=0.0041 acc=1.000 update=3.043e-03 overlap=1.902e-07
+2026-08-12 15:01:42 | INFO | task=4 step=201/520 loss=0.0059 acc=1.000 update=2.779e-03 overlap=1.873e-07
+2026-08-12 15:01:47 | INFO | task=4 step=226/520 loss=0.0049 acc=1.000 update=2.445e-03 overlap=1.806e-07
+2026-08-12 15:01:52 | INFO | task=4 step=251/520 loss=0.0046 acc=1.000 update=2.129e-03 overlap=1.932e-07
+2026-08-12 15:01:57 | INFO | task=4 step=276/520 loss=0.0019 acc=1.000 update=1.822e-03 overlap=1.879e-07
+2026-08-12 15:02:02 | INFO | task=4 step=301/520 loss=0.0026 acc=1.000 update=6.308e-03 overlap=1.747e-07
+2026-08-12 15:02:07 | INFO | task=4 step=326/520 loss=0.0038 acc=1.000 update=1.130e-03 overlap=1.874e-07
+2026-08-12 15:02:12 | INFO | task=4 step=351/520 loss=0.0034 acc=1.000 update=1.523e-03 overlap=1.853e-07
+2026-08-12 15:02:17 | INFO | task=4 step=376/520 loss=0.0026 acc=1.000 update=7.810e-04 overlap=1.830e-07
+2026-08-12 15:02:23 | INFO | task=4 step=401/520 loss=0.0019 acc=1.000 update=3.501e-04 overlap=1.919e-07
+2026-08-12 15:02:28 | INFO | task=4 step=426/520 loss=0.0037 acc=1.000 update=2.186e-04 overlap=1.965e-07
+2026-08-12 15:02:33 | INFO | task=4 step=451/520 loss=0.0028 acc=1.000 update=1.885e-04 overlap=1.866e-07
+2026-08-12 15:02:38 | INFO | task=4 step=476/520 loss=0.0023 acc=1.000 update=8.085e-05 overlap=1.793e-07
+2026-08-12 15:02:43 | INFO | task=4 step=501/520 loss=0.0037 acc=1.000 update=1.897e-05 overlap=1.899e-07
+2026-08-12 15:03:01 | INFO | finished task=4 seen=0.5714 old=0.4657 new=0.9940 forget=0.5238 protected=279.9/768 residual_min=387 peak=8.12GB
+2026-08-12 15:03:01 | INFO | starting task=5 classes=50..59
+2026-08-12 15:03:12 | INFO | task=5 step=1/520 loss=0.0462 acc=0.990 update=4.777e-02 overlap=1.814e-07
+2026-08-12 15:03:17 | INFO | task=5 step=26/520 loss=0.0907 acc=0.958 update=1.189e-02 overlap=1.905e-07
+2026-08-12 15:03:22 | INFO | task=5 step=51/520 loss=0.0334 acc=0.990 update=9.823e-03 overlap=1.899e-07
+2026-08-12 15:03:28 | INFO | task=5 step=76/520 loss=0.0437 acc=0.990 update=8.598e-03 overlap=1.863e-07
+2026-08-12 15:03:33 | INFO | task=5 step=101/520 loss=0.0415 acc=0.990 update=7.908e-03 overlap=1.873e-07
+2026-08-12 15:03:38 | INFO | task=5 step=126/520 loss=0.0219 acc=0.990 update=5.406e-03 overlap=1.893e-07
+2026-08-12 15:03:43 | INFO | task=5 step=151/520 loss=0.0087 acc=1.000 update=5.087e-03 overlap=1.881e-07
+2026-08-12 15:03:48 | INFO | task=5 step=176/520 loss=0.0193 acc=1.000 update=4.926e-03 overlap=1.884e-07
+2026-08-12 15:03:53 | INFO | task=5 step=201/520 loss=0.0201 acc=1.000 update=4.888e-03 overlap=1.828e-07
+2026-08-12 15:03:58 | INFO | task=5 step=226/520 loss=0.0189 acc=1.000 update=3.557e-03 overlap=1.883e-07
+2026-08-12 15:04:03 | INFO | task=5 step=251/520 loss=0.0099 acc=1.000 update=2.533e-03 overlap=1.883e-07
+2026-08-12 15:04:09 | INFO | task=5 step=276/520 loss=0.0084 acc=1.000 update=1.467e-03 overlap=1.932e-07
+2026-08-12 15:04:14 | INFO | task=5 step=301/520 loss=0.0107 acc=1.000 update=2.136e-03 overlap=1.926e-07
+2026-08-12 15:04:19 | INFO | task=5 step=326/520 loss=0.0051 acc=1.000 update=1.740e-03 overlap=1.857e-07
+2026-08-12 15:04:24 | INFO | task=5 step=351/520 loss=0.0052 acc=1.000 update=9.273e-04 overlap=1.876e-07
+2026-08-12 15:04:29 | INFO | task=5 step=376/520 loss=0.0091 acc=1.000 update=1.201e-03 overlap=1.844e-07
+2026-08-12 15:04:34 | INFO | task=5 step=401/520 loss=0.0141 acc=1.000 update=5.770e-04 overlap=1.846e-07
+2026-08-12 15:04:39 | INFO | task=5 step=426/520 loss=0.0047 acc=1.000 update=4.400e-04 overlap=1.865e-07
+2026-08-12 15:04:44 | INFO | task=5 step=451/520 loss=0.0082 acc=1.000 update=1.919e-04 overlap=1.880e-07
+2026-08-12 15:04:49 | INFO | task=5 step=476/520 loss=0.0115 acc=1.000 update=8.342e-05 overlap=1.856e-07
+2026-08-12 15:04:54 | INFO | task=5 step=501/520 loss=0.0089 acc=1.000 update=1.860e-05 overlap=1.851e-07
+2026-08-12 15:05:13 | INFO | finished task=5 seen=0.5940 old=0.5140 new=0.9940 forget=0.4764 protected=281.9/768 residual_min=384 peak=8.12GB
+2026-08-12 15:05:13 | INFO | starting task=6 classes=60..69
+2026-08-12 15:05:24 | INFO | task=6 step=1/520 loss=0.0395 acc=1.000 update=4.783e-02 overlap=1.826e-07
+2026-08-12 15:05:29 | INFO | task=6 step=26/520 loss=0.0233 acc=0.990 update=1.147e-02 overlap=1.912e-07
+2026-08-12 15:05:34 | INFO | task=6 step=51/520 loss=0.0298 acc=0.990 update=1.033e-02 overlap=1.850e-07
+2026-08-12 15:05:39 | INFO | task=6 step=76/520 loss=0.0109 acc=1.000 update=6.760e-03 overlap=1.746e-07
+2026-08-12 15:05:44 | INFO | task=6 step=101/520 loss=0.0122 acc=1.000 update=5.246e-03 overlap=1.897e-07
+2026-08-12 15:05:49 | INFO | task=6 step=126/520 loss=0.0076 acc=1.000 update=3.167e-03 overlap=1.926e-07
+2026-08-12 15:05:54 | INFO | task=6 step=151/520 loss=0.0052 acc=1.000 update=4.647e-03 overlap=1.850e-07
+2026-08-12 15:05:59 | INFO | task=6 step=176/520 loss=0.0020 acc=1.000 update=2.768e-03 overlap=1.920e-07
+2026-08-12 15:06:04 | INFO | task=6 step=201/520 loss=0.0039 acc=1.000 update=2.672e-03 overlap=1.893e-07
+2026-08-12 15:06:10 | INFO | task=6 step=226/520 loss=0.0034 acc=1.000 update=2.047e-03 overlap=1.958e-07
+2026-08-12 15:06:14 | INFO | task=6 step=251/520 loss=0.0055 acc=1.000 update=4.111e-03 overlap=1.848e-07
+2026-08-12 15:06:20 | INFO | task=6 step=276/520 loss=0.0259 acc=0.990 update=4.617e-03 overlap=1.859e-07
+2026-08-12 15:06:25 | INFO | task=6 step=301/520 loss=0.0091 acc=1.000 update=2.531e-03 overlap=1.822e-07
+2026-08-12 15:06:30 | INFO | task=6 step=326/520 loss=0.0010 acc=1.000 update=8.392e-04 overlap=1.938e-07
+2026-08-12 15:06:35 | INFO | task=6 step=351/520 loss=0.0019 acc=1.000 update=7.881e-04 overlap=1.818e-07
+2026-08-12 15:06:40 | INFO | task=6 step=376/520 loss=0.0048 acc=1.000 update=6.719e-04 overlap=1.870e-07
+2026-08-12 15:06:45 | INFO | task=6 step=401/520 loss=0.0017 acc=1.000 update=9.246e-04 overlap=1.754e-07
+2026-08-12 15:06:50 | INFO | task=6 step=426/520 loss=0.0010 acc=1.000 update=2.091e-04 overlap=1.893e-07
+2026-08-12 15:06:55 | INFO | task=6 step=451/520 loss=0.0015 acc=1.000 update=1.935e-04 overlap=1.890e-07
+2026-08-12 15:07:01 | INFO | task=6 step=476/520 loss=0.0025 acc=1.000 update=5.993e-05 overlap=1.884e-07
+2026-08-12 15:07:06 | INFO | task=6 step=501/520 loss=0.0016 acc=1.000 update=1.412e-05 overlap=1.777e-07
+2026-08-12 15:07:25 | INFO | finished task=6 seen=0.6110 old=0.5475 new=0.9920 forget=0.4435 protected=285.9/768 residual_min=379 peak=8.12GB
+2026-08-12 15:07:25 | INFO | starting task=7 classes=70..79
+2026-08-12 15:07:36 | INFO | task=7 step=1/520 loss=0.0721 acc=0.969 update=4.785e-02 overlap=1.856e-07
+2026-08-12 15:07:41 | INFO | task=7 step=26/520 loss=0.0400 acc=1.000 update=1.094e-02 overlap=1.906e-07
+2026-08-12 15:07:46 | INFO | task=7 step=51/520 loss=0.0506 acc=0.979 update=9.678e-03 overlap=1.881e-07
+2026-08-12 15:07:51 | INFO | task=7 step=76/520 loss=0.0172 acc=1.000 update=6.641e-03 overlap=1.872e-07
+2026-08-12 15:07:56 | INFO | task=7 step=101/520 loss=0.0358 acc=0.990 update=8.854e-03 overlap=1.808e-07
+2026-08-12 15:08:01 | INFO | task=7 step=126/520 loss=0.0315 acc=0.990 update=6.546e-03 overlap=1.836e-07
+2026-08-12 15:08:06 | INFO | task=7 step=151/520 loss=0.0239 acc=1.000 update=6.292e-03 overlap=1.885e-07
+2026-08-12 15:08:12 | INFO | task=7 step=176/520 loss=0.0084 acc=1.000 update=4.245e-03 overlap=1.875e-07
+2026-08-12 15:08:17 | INFO | task=7 step=201/520 loss=0.0382 acc=0.979 update=5.453e-03 overlap=1.915e-07
+2026-08-12 15:08:22 | INFO | task=7 step=226/520 loss=0.0233 acc=1.000 update=5.228e-03 overlap=1.806e-07
+2026-08-12 15:08:27 | INFO | task=7 step=251/520 loss=0.0077 acc=1.000 update=6.352e-03 overlap=1.685e-07
+2026-08-12 15:08:32 | INFO | task=7 step=276/520 loss=0.0229 acc=0.990 update=4.216e-03 overlap=1.878e-07
+2026-08-12 15:08:37 | INFO | task=7 step=301/520 loss=0.0122 acc=1.000 update=1.979e-03 overlap=1.873e-07
+2026-08-12 15:08:42 | INFO | task=7 step=326/520 loss=0.0144 acc=1.000 update=2.035e-03 overlap=1.886e-07
+2026-08-12 15:08:47 | INFO | task=7 step=351/520 loss=0.0090 acc=1.000 update=1.743e-03 overlap=1.904e-07
+2026-08-12 15:08:53 | INFO | task=7 step=376/520 loss=0.0221 acc=0.990 update=1.191e-03 overlap=1.947e-07
+2026-08-12 15:08:58 | INFO | task=7 step=401/520 loss=0.0211 acc=1.000 update=9.058e-04 overlap=1.962e-07
+2026-08-12 15:09:03 | INFO | task=7 step=426/520 loss=0.0138 acc=1.000 update=5.149e-04 overlap=1.879e-07
+2026-08-12 15:09:08 | INFO | task=7 step=451/520 loss=0.0184 acc=1.000 update=3.055e-04 overlap=1.941e-07
+2026-08-12 15:09:13 | INFO | task=7 step=476/520 loss=0.0236 acc=0.990 update=1.158e-04 overlap=1.906e-07
+2026-08-12 15:09:18 | INFO | task=7 step=501/520 loss=0.0273 acc=0.990 update=3.163e-05 overlap=1.895e-07
+2026-08-12 15:09:38 | INFO | finished task=7 seen=0.4864 old=0.4153 new=0.9840 forget=0.5759 protected=288.0/768 residual_min=374 peak=8.12GB
+2026-08-12 15:09:38 | INFO | starting task=8 classes=80..89
+2026-08-12 15:09:49 | INFO | task=8 step=1/520 loss=0.1057 acc=0.969 update=4.788e-02 overlap=1.870e-07
+2026-08-12 15:09:54 | INFO | task=8 step=26/520 loss=0.0211 acc=1.000 update=1.086e-02 overlap=1.905e-07
+2026-08-12 15:09:59 | INFO | task=8 step=51/520 loss=0.0233 acc=0.990 update=1.065e-02 overlap=1.868e-07
+2026-08-12 15:10:04 | INFO | task=8 step=76/520 loss=0.0108 acc=1.000 update=8.513e-03 overlap=1.918e-07
+2026-08-12 15:10:09 | INFO | task=8 step=101/520 loss=0.0090 acc=1.000 update=8.480e-03 overlap=1.890e-07
+2026-08-12 15:10:14 | INFO | task=8 step=126/520 loss=0.0140 acc=1.000 update=4.793e-03 overlap=1.920e-07
+2026-08-12 15:10:19 | INFO | task=8 step=151/520 loss=0.0078 acc=1.000 update=9.811e-03 overlap=1.872e-07
+2026-08-12 15:10:24 | INFO | task=8 step=176/520 loss=0.0022 acc=1.000 update=4.169e-03 overlap=1.860e-07
+2026-08-12 15:10:29 | INFO | task=8 step=201/520 loss=0.0062 acc=1.000 update=4.035e-03 overlap=1.850e-07
+2026-08-12 15:10:35 | INFO | task=8 step=226/520 loss=0.0042 acc=1.000 update=3.727e-03 overlap=1.801e-07
+2026-08-12 15:10:40 | INFO | task=8 step=251/520 loss=0.0036 acc=1.000 update=2.650e-03 overlap=1.901e-07
+2026-08-12 15:10:45 | INFO | task=8 step=276/520 loss=0.0037 acc=1.000 update=1.661e-03 overlap=2.012e-07
+2026-08-12 15:10:50 | INFO | task=8 step=301/520 loss=0.0025 acc=1.000 update=2.469e-03 overlap=1.748e-07
+2026-08-12 15:10:55 | INFO | task=8 step=326/520 loss=0.0035 acc=1.000 update=1.894e-03 overlap=1.838e-07
+2026-08-12 15:11:00 | INFO | task=8 step=351/520 loss=0.0052 acc=1.000 update=1.297e-03 overlap=1.818e-07
+2026-08-12 15:11:06 | INFO | task=8 step=376/520 loss=0.0015 acc=1.000 update=6.539e-04 overlap=1.962e-07
+2026-08-12 15:11:11 | INFO | task=8 step=401/520 loss=0.0018 acc=1.000 update=7.186e-04 overlap=1.837e-07
+2026-08-12 15:11:16 | INFO | task=8 step=426/520 loss=0.0011 acc=1.000 update=4.589e-04 overlap=1.895e-07
+2026-08-12 15:11:21 | INFO | task=8 step=451/520 loss=0.0043 acc=1.000 update=1.917e-04 overlap=1.700e-07
+2026-08-12 15:11:26 | INFO | task=8 step=476/520 loss=0.0011 acc=1.000 update=6.685e-05 overlap=1.899e-07
+2026-08-12 15:11:31 | INFO | task=8 step=501/520 loss=0.0036 acc=1.000 update=3.306e-05 overlap=1.916e-07
+2026-08-12 15:11:51 | INFO | finished task=8 seen=0.3914 old=0.3172 new=0.9850 forget=0.6730 protected=289.9/768 residual_min=371 peak=8.12GB
+2026-08-12 15:11:51 | INFO | starting task=9 classes=90..99
+2026-08-12 15:12:02 | INFO | task=9 step=1/520 loss=0.1647 acc=0.948 update=4.791e-02 overlap=1.874e-07
+2026-08-12 15:12:07 | INFO | task=9 step=26/520 loss=0.1646 acc=0.958 update=1.173e-02 overlap=1.950e-07
+2026-08-12 15:12:12 | INFO | task=9 step=51/520 loss=0.0467 acc=0.990 update=8.317e-03 overlap=1.921e-07
+2026-08-12 15:12:17 | INFO | task=9 step=76/520 loss=0.1391 acc=0.979 update=9.069e-03 overlap=1.854e-07
+2026-08-12 15:12:22 | INFO | task=9 step=101/520 loss=0.0321 acc=0.990 update=7.920e-03 overlap=1.783e-07
+2026-08-12 15:12:28 | INFO | task=9 step=126/520 loss=0.0247 acc=1.000 update=7.227e-03 overlap=1.851e-07
+2026-08-12 15:12:33 | INFO | task=9 step=151/520 loss=0.0214 acc=1.000 update=6.030e-03 overlap=1.891e-07
+2026-08-12 15:12:38 | INFO | task=9 step=176/520 loss=0.0194 acc=1.000 update=6.510e-03 overlap=1.822e-07
+2026-08-12 15:12:43 | INFO | task=9 step=201/520 loss=0.0844 acc=0.990 update=4.812e-03 overlap=1.880e-07
+2026-08-12 15:12:48 | INFO | task=9 step=226/520 loss=0.0202 acc=0.990 update=4.845e-03 overlap=1.848e-07
+2026-08-12 15:12:53 | INFO | task=9 step=251/520 loss=0.0143 acc=1.000 update=3.356e-03 overlap=1.873e-07
+2026-08-12 15:12:58 | INFO | task=9 step=276/520 loss=0.0181 acc=1.000 update=2.573e-03 overlap=1.961e-07
+2026-08-12 15:13:03 | INFO | task=9 step=301/520 loss=0.0164 acc=1.000 update=2.615e-03 overlap=1.926e-07
+2026-08-12 15:13:09 | INFO | task=9 step=326/520 loss=0.0066 acc=1.000 update=1.643e-03 overlap=1.977e-07
+2026-08-12 15:13:14 | INFO | task=9 step=351/520 loss=0.0074 acc=1.000 update=1.353e-03 overlap=1.944e-07
+2026-08-12 15:13:19 | INFO | task=9 step=376/520 loss=0.0040 acc=1.000 update=9.896e-04 overlap=1.945e-07
+2026-08-12 15:13:24 | INFO | task=9 step=401/520 loss=0.0103 acc=1.000 update=7.911e-04 overlap=1.934e-07
+2026-08-12 15:13:30 | INFO | task=9 step=426/520 loss=0.0078 acc=1.000 update=6.541e-04 overlap=1.947e-07
+2026-08-12 15:13:35 | INFO | task=9 step=451/520 loss=0.0227 acc=0.990 update=6.805e-04 overlap=1.626e-07
+2026-08-12 15:13:40 | INFO | task=9 step=476/520 loss=0.0172 acc=1.000 update=1.527e-04 overlap=1.964e-07
+2026-08-12 15:13:45 | INFO | task=9 step=501/520 loss=0.0064 acc=1.000 update=2.099e-05 overlap=2.010e-07
+2026-08-12 15:14:06 | INFO | finished task=9 seen=0.3950 old=0.3293 new=0.9860 forget=0.6603 protected=291.7/768 residual_min=368 peak=8.12GB
+2026-08-12 15:14:06 | INFO | run complete final_accuracy=0.3950
