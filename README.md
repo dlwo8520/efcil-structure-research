@@ -89,3 +89,7 @@ The completed local/all audit maintains STOP for the tested generic generation r
 Use [daily workflow](docs/WORKFLOW.md) and `python tools/new_experiment.py --help` to add a stable ID and linked code/config/result/analysis record. Write verified daily notes in `research_log/`, update `CHANGELOG.md` when the method changes, regenerate indexes, validate and make a normal Git commit. [한국어 안내](docs/GUIDE_KO.md) gives a short practical guide; [upload commands](docs/UPLOAD.md) publish privately after authentication.
 
 [Live experiment record index](docs/EXPERIMENT_INDEX.md) includes future registered experiments.
+
+## Browse by category
+
+[Categorized directory and file map](docs/CATEGORIES.md) describes every top-level item. Each folder guide links its purpose, evidence state and original sources.
