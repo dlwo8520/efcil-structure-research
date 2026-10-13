@@ -1,0 +1,6 @@
+{
+  "actual_format": "csv",
+  "note": "CSV files have the same base names and documented schemas; no fake .parquet files are created.",
+  "reason": "no parquet engine is required by or installed in the pinned cds environment",
+  "requested_preference": "parquet_for_large_tables"
+}
