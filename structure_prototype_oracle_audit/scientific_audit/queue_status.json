@@ -1,0 +1,224 @@
+{
+  "format_version": 1,
+  "queue": "Structure Prototype Oracle scientific audit",
+  "gpu": "1",
+  "protocol_order": [
+    "IA5",
+    "CAR5",
+    "IA10",
+    "CAR10"
+  ],
+  "status": "COMPLETE",
+  "current_protocol": null,
+  "current_stage": "finished",
+  "current_task": null,
+  "started_at_utc": "2026-09-23T08:30:14.862656+00:00",
+  "updated_at_utc": "2026-09-23T20:44:04.741201+00:00",
+  "elapsed_seconds": 44029.87855029106,
+  "protocols": {
+    "IA5": {
+      "structure": "COMPLETE (reused)",
+      "audit": "COMPLETE",
+      "a_d": "PASS",
+      "visualization": "COMPLETE",
+      "report": "COMPLETE",
+      "status": "COMPLETE"
+    },
+    "CAR5": {
+      "structure": "COMPLETE (reused)",
+      "audit": "COMPLETE",
+      "a_d": "PASS",
+      "visualization": "COMPLETE",
+      "report": "COMPLETE",
+      "status": "COMPLETE"
+    },
+    "IA10": {
+      "structure": "COMPLETE",
+      "audit": "COMPLETE",
+      "a_d": "PASS",
+      "visualization": "COMPLETE",
+      "report": "COMPLETE",
+      "status": "COMPLETE"
+    },
+    "CAR10": {
+      "structure": "COMPLETE",
+      "audit": "COMPLETE",
+      "a_d": "PASS",
+      "visualization": "COMPLETE",
+      "report": "COMPLETE",
+      "status": "COMPLETE"
+    }
+  },
+  "failures": [],
+  "resumed_runs": [],
+  "skipped_complete_runs": [
+    "IA5:training",
+    "IA5:training",
+    "CAR5:training"
+  ],
+  "preserved_partial_runs": [
+    "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/scientific_audit/_preflight/_preserved_partial/IA5/seed_1993_20260923_173014"
+  ],
+  "gpu_work_history": [
+    {
+      "protocol": "IA5",
+      "stage": "preflight",
+      "status": "COMPLETE",
+      "started_at_utc": "2026-09-23T08:30:14.950734+00:00",
+      "command": [
+        "${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python",
+        "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/run_audit.py",
+        "--protocol",
+        "IA5",
+        "--gpu",
+        "1",
+        "--task",
+        "2",
+        "--output-root",
+        "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/scientific_audit/_preflight",
+        "--covariance-mode",
+        "diagonal",
+        "--oracle-head-eval-tasks",
+        "all",
+        "--skip-visualizations",
+        "--require-ca-regression-pass"
+      ],
+      "log": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/logs/scientific_gpu1/IA5_preflight.log",
+      "ended_at_utc": "2026-09-23T08:31:15.013923+00:00",
+      "return_code": 0
+    },
+    {
+      "protocol": "IA5",
+      "stage": "scientific_audit",
+      "status": "COMPLETE",
+      "started_at_utc": "2026-09-23T08:31:15.117368+00:00",
+      "command": [
+        "${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python",
+        "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/run_audit.py",
+        "--protocol",
+        "IA5",
+        "--gpu",
+        "1",
+        "--output-root",
+        "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/scientific_audit",
+        "--covariance-mode",
+        "both",
+        "--oracle-head-eval-tasks",
+        "all",
+        "--require-ca-regression-pass"
+      ],
+      "log": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/logs/scientific_gpu1/IA5_audit.log",
+      "ended_at_utc": "2026-09-23T09:31:18.959065+00:00",
+      "return_code": 0
+    },
+    {
+      "protocol": "CAR5",
+      "stage": "scientific_audit",
+      "status": "COMPLETE",
+      "started_at_utc": "2026-09-23T09:31:19.044710+00:00",
+      "command": [
+        "${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python",
+        "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/run_audit.py",
+        "--protocol",
+        "CAR5",
+        "--gpu",
+        "1",
+        "--output-root",
+        "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/scientific_audit",
+        "--covariance-mode",
+        "both",
+        "--oracle-head-eval-tasks",
+        "all",
+        "--require-ca-regression-pass"
+      ],
+      "log": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/logs/scientific_gpu1/CAR5_audit.log",
+      "ended_at_utc": "2026-09-23T10:25:22.483127+00:00",
+      "return_code": 0
+    },
+    {
+      "protocol": "IA10",
+      "stage": "training",
+      "status": "COMPLETE",
+      "started_at_utc": "2026-09-23T10:25:22.563170+00:00",
+      "command": [
+        "${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python",
+        "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/run_structure.py",
+        "--protocol",
+        "IA10",
+        "--gpu",
+        "1"
+      ],
+      "log": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/logs/scientific_gpu1/IA10_training.log",
+      "ended_at_utc": "2026-09-23T11:07:24.898956+00:00",
+      "return_code": 0
+    },
+    {
+      "protocol": "IA10",
+      "stage": "scientific_audit",
+      "status": "COMPLETE",
+      "started_at_utc": "2026-09-23T11:07:25.005410+00:00",
+      "command": [
+        "${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python",
+        "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/run_audit.py",
+        "--protocol",
+        "IA10",
+        "--gpu",
+        "1",
+        "--output-root",
+        "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/scientific_audit",
+        "--covariance-mode",
+        "both",
+        "--oracle-head-eval-tasks",
+        "all",
+        "--require-ca-regression-pass"
+      ],
+      "log": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/logs/scientific_gpu1/IA10_audit.log",
+      "ended_at_utc": "2026-09-23T12:50:31.438072+00:00",
+      "return_code": 0
+    },
+    {
+      "protocol": "CAR10",
+      "stage": "training",
+      "status": "COMPLETE",
+      "started_at_utc": "2026-09-23T12:50:31.520623+00:00",
+      "command": [
+        "${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python",
+        "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/run_structure.py",
+        "--protocol",
+        "CAR10",
+        "--gpu",
+        "1"
+      ],
+      "log": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/logs/scientific_gpu1/CAR10_training.log",
+      "ended_at_utc": "2026-09-23T14:53:09.026256+00:00",
+      "return_code": 0
+    },
+    {
+      "protocol": "CAR10",
+      "stage": "scientific_audit",
+      "status": "COMPLETE",
+      "started_at_utc": "2026-09-23T14:53:09.117979+00:00",
+      "command": [
+        "${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python",
+        "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/run_audit.py",
+        "--protocol",
+        "CAR10",
+        "--gpu",
+        "1",
+        "--output-root",
+        "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/scientific_audit",
+        "--covariance-mode",
+        "both",
+        "--oracle-head-eval-tasks",
+        "all",
+        "--require-ca-regression-pass"
+      ],
+      "log": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/logs/scientific_gpu1/CAR10_audit.log",
+      "ended_at_utc": "2026-09-23T20:44:04.737964+00:00",
+      "return_code": 0
+    }
+  ],
+  "previous_queue_status": "RUNNING",
+  "gpu_busy_pids": [],
+  "ended_at_utc": "2026-09-23T20:44:04.741179+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "status": "complete",
+  "representations": [
+    "PRETRAINED",
+    "STRUCTURE_FINAL"
+  ],
+  "same_samples": true,
+  "same_train_validation_split": true,
+  "same_probe_type": true,
+  "same_lr_grid": [
+    0.01,
+    0.03,
+    0.1
+  ],
+  "same_training_budget": 30,
+  "same_epoch_permutations": true,
+  "validation_classes_without_holdout": [],
+  "test_used_for_selection": false,
+  "pretrained_initialization": "ViT-B/16 ImageNet-21K with zero-output fresh adapters"
+}

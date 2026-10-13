@@ -1,0 +1,94 @@
+{
+  "status": "complete",
+  "protocol": "IA5",
+  "task": 5,
+  "seed": 1993,
+  "t4_checkpoint": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA5/Structure_AUDIT/seed_1993/task_checkpoints/task_04.pt",
+  "t5_checkpoint": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA5/Structure_AUDIT/seed_1993/task_checkpoints/task_05.pt",
+  "checkpoint_fingerprints_before": {
+    "t4": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA5/Structure_AUDIT/seed_1993/task_checkpoints/task_04.pt",
+      "size": 1224829238,
+      "edge_sha256": "a60f483e2d84cf6ef21aa4b3eab7e1943817a872d8314b29769e9bf02e92083b"
+    },
+    "t5": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA5/Structure_AUDIT/seed_1993/task_checkpoints/task_05.pt",
+      "size": 1414369793,
+      "edge_sha256": "b30bfb61f594bf6b16b4f33edf3ef686b98728c0f4402f34c978684b224f1771"
+    }
+  },
+  "checkpoint_fingerprints_after": {
+    "t4": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA5/Structure_AUDIT/seed_1993/task_checkpoints/task_04.pt",
+      "size": 1224829238,
+      "edge_sha256": "a60f483e2d84cf6ef21aa4b3eab7e1943817a872d8314b29769e9bf02e92083b"
+    },
+    "t5": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA5/Structure_AUDIT/seed_1993/task_checkpoints/task_05.pt",
+      "size": 1414369793,
+      "edge_sha256": "b30bfb61f594bf6b16b4f33edf3ef686b98728c0f4402f34c978684b224f1771"
+    }
+  },
+  "checkpoints_unchanged": true,
+  "diagnostic_only": true,
+  "backbone_adapter_updated": false,
+  "train_samples": 5981,
+  "diagnostic_train_samples": 4865,
+  "validation_samples": 1116,
+  "test_samples": 1519,
+  "classes_without_validation": [
+    48,
+    88,
+    91,
+    94,
+    115,
+    117,
+    159,
+    173
+  ],
+  "cosine_linear_equivalence": {
+    "status": "PASS",
+    "scale": 20.0,
+    "max_absolute_logit_difference": 3.814697265625e-06,
+    "mean_absolute_logit_difference": 2.259949667404726e-07,
+    "prediction_mismatch_count": 0,
+    "num_samples": 1519,
+    "num_classes": 200,
+    "tolerance": 1e-05,
+    "conversion": "v_k = scale * w_k / ||w_k||",
+    "historical_structure_seen_accuracy": 66.4252797893351,
+    "reconstructed_structure_seen_accuracy": 66.4252797893351,
+    "historical_accuracy_absolute_difference": 0.0,
+    "historical_prediction_path_regression": "PASS"
+  },
+  "selected_linear_l2": 5e-05,
+  "selected_linear_converged": false,
+  "selected_linear_gradient_norm": 5.1415131565590855e-06,
+  "focused_pair_count": 40,
+  "top_global_pairs": 20,
+  "top_conditional_pairs": 20,
+  "knn_candidates": [
+    1,
+    3,
+    5,
+    9
+  ],
+  "selected_k": 5,
+  "sample_count_quantiles": {
+    "q25": 10.0,
+    "q50": 17.0,
+    "q75": 39.0
+  },
+  "t4_t5_sample_ids_identical": true,
+  "t4_t5_common_class_set": 200,
+  "t4_diagnostic_probe_steps": 1000,
+  "t5_diagnostic_probe_steps": 1000,
+  "t4_diagnostic_probe_test_micro_accuracy": 64.91112574061883,
+  "t4_diagnostic_probe_test_macro_accuracy": 53.689706947398925,
+  "t5_diagnostic_probe_test_micro_accuracy": 65.70111915734036,
+  "t5_diagnostic_probe_test_macro_accuracy": 54.546015682093895,
+  "variant_pair_analysis": "skipped_no_verified_sample_aligned_existing_logits",
+  "t2_t3_executed": false,
+  "ia10_car10_executed": false,
+  "elapsed_seconds": 54.877610206604004
+}
