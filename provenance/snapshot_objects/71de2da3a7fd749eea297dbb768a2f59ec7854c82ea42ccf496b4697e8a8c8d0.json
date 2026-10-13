@@ -1,0 +1,13 @@
+{
+  "extends": "../../structure_similarity_aware_followup/configs/common.json",
+  "experiment_id": "C0",
+  "prefix": "imageneta_similarity_control",
+  "old_new_separation": true,
+  "sep_lambda": 0.3,
+  "adaptive_margin_mode": "drift",
+  "similarity_relation_mode": "legacy_absolute",
+  "control_selection_mode": "none",
+  "control_fraction": 0.25,
+  "control_weak_weight": 0.3
+}
+

@@ -1,0 +1,8 @@
+{
+  "extends": "../../structure_rp_protoclad_task5/configs/RP_C_P020_L030_IA5.json",
+  "prefix": "stored_apr_rp_task5",
+  "experiment_id": "StoredAPR_RP_C_P020_L030",
+  "method_name": "StoredAPR RP-ProtoCLAD",
+  "stored_apr_rp_enabled": true,
+  "stored_apr_rp_definition": "mean(ReLU(z_birth R)) + ReLU(mu_APR R) - ReLU(mu_birth R)"
+}

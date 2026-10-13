@@ -1,0 +1,22 @@
+{
+  "extends": "common.json",
+  "experiment_id": "SMOKE_S4",
+  "prefix": "imageneta_similarity_smoke_only",
+  "seed": [1993],
+  "init_epochs": 1,
+  "inc_epochs": 1,
+  "ca_epochs": 1,
+  "batch_size": 64,
+  "num_workers": 4,
+  "checkpoint_every_epoch": false,
+  "diagnostic_grad_interval": 0,
+  "diagnostic_sample_rows": false,
+  "old_new_separation": true,
+  "sep_lambda": 0.3,
+  "adaptive_margin_mode": "drift",
+  "similarity_relation_mode": "soft_hybrid",
+  "relative_margin": 0.05,
+  "similarity_beta_source": "fixed",
+  "similarity_beta_fixed": 0.5,
+  "soft_gate_temperature": 0.1
+}
