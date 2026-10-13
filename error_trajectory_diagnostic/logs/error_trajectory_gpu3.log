@@ -1,0 +1,91 @@
+nohup: ignoring input
+[IA10] T1/10: frozen inference, 175 samples, 20 candidates
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[IA10] T2/10: frozen inference, 360 samples, 40 candidates
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[IA10] T3/10: frozen inference, 476 samples, 60 candidates
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[IA10] T4/10: frozen inference, 698 samples, 80 candidates
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[IA10] T5/10: frozen inference, 841 samples, 100 candidates
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[IA10] T6/10: frozen inference, 975 samples, 120 candidates
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[IA10] T7/10: frozen inference, 1121 samples, 140 candidates
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[IA10] T8/10: frozen inference, 1248 samples, 160 candidates
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[IA10] T9/10: frozen inference, 1395 samples, 180 candidates
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[IA10] T9: historical pre-after_task correct-count delta +2; recorded in audit
+[IA10] T10/10: frozen inference, 1519 samples, 200 candidates
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[IA10] T10: historical pre-after_task correct-count delta +1; recorded in audit
+[IA10] complete; results in ${RESEARCH_WORKSPACE}/error_trajectory_diagnostic/IA10
+[CAR10] T1/10: frozen inference, 838 samples, 20 candidates
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[CAR10] T1: historical pre-after_task correct-count delta +1; recorded in audit
+[CAR10] T2/10: frozen inference, 1676 samples, 40 candidates
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[CAR10] T2: historical pre-after_task correct-count delta +1; recorded in audit
+[CAR10] T3/10: frozen inference, 2487 samples, 60 candidates
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[CAR10] T4/10: frozen inference, 3304 samples, 80 candidates
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[CAR10] T4: historical pre-after_task correct-count delta +1; recorded in audit
+[CAR10] T5/10: frozen inference, 4116 samples, 100 candidates
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[CAR10] T6/10: frozen inference, 4958 samples, 120 candidates
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[CAR10] T7/10: frozen inference, 5727 samples, 139 candidates
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[CAR10] T7: historical pre-after_task correct-count delta +1; recorded in audit
+[CAR10] T8/10: frozen inference, 6504 samples, 158 candidates
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[CAR10] T9/10: frozen inference, 7262 samples, 177 candidates
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[CAR10] T9: historical pre-after_task correct-count delta +1; recorded in audit
+[CAR10] T10/10: frozen inference, 8041 samples, 196 candidates
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[CAR10] complete; results in ${RESEARCH_WORKSPACE}/error_trajectory_diagnostic/CAR10
+Final report: ${RESEARCH_WORKSPACE}/error_trajectory_diagnostic/final_report.md
