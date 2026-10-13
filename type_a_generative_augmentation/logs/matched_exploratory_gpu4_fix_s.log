@@ -1,0 +1,443 @@
+nohup: ignoring input
+Reuse fixed automatic sanity: 1182 accepted; label fidelity NOT verified
+READY_EXPLORATORY (label fidelity NOT verified); common parent count: 1182
+Preserve completed IA10 T1 R
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+The number of training dataset: 705
+[IA10 S] T1 epoch 1/30 loss=3.9160
+[IA10 S] T1 epoch 2/30 loss=2.4092
+[IA10 S] T1 epoch 3/30 loss=2.1110
+[IA10 S] T1 epoch 4/30 loss=1.9868
+[IA10 S] T1 epoch 5/30 loss=1.8869
+[IA10 S] T1 epoch 6/30 loss=1.8475
+[IA10 S] T1 epoch 7/30 loss=1.7159
+[IA10 S] T1 epoch 8/30 loss=1.7044
+[IA10 S] T1 epoch 9/30 loss=1.6363
+[IA10 S] T1 epoch 10/30 loss=1.6398
+[IA10 S] T1 epoch 11/30 loss=1.6835
+[IA10 S] T1 epoch 12/30 loss=1.5157
+[IA10 S] T1 epoch 13/30 loss=1.5539
+[IA10 S] T1 epoch 14/30 loss=1.4802
+[IA10 S] T1 epoch 15/30 loss=1.4897
+[IA10 S] T1 epoch 16/30 loss=1.4776
+[IA10 S] T1 epoch 17/30 loss=1.4451
+[IA10 S] T1 epoch 18/30 loss=1.5335
+[IA10 S] T1 epoch 19/30 loss=1.4717
+[IA10 S] T1 epoch 20/30 loss=1.4104
+[IA10 S] T1 epoch 21/30 loss=1.4279
+[IA10 S] T1 epoch 22/30 loss=1.3930
+[IA10 S] T1 epoch 23/30 loss=1.4216
+[IA10 S] T1 epoch 24/30 loss=1.3997
+[IA10 S] T1 epoch 25/30 loss=1.4124
+[IA10 S] T1 epoch 26/30 loss=1.3712
+[IA10 S] T1 epoch 27/30 loss=1.4249
+[IA10 S] T1 epoch 28/30 loss=1.4189
+[IA10 S] T1 epoch 29/30 loss=1.3745
+[IA10 S] T1 epoch 30/30 loss=1.3623
+1.7791899181168047
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+The number of training dataset: 705
+[IA10 G] T1 epoch 1/30 loss=4.3310
+[IA10 G] T1 epoch 2/30 loss=2.7442
+[IA10 G] T1 epoch 3/30 loss=2.3669
+[IA10 G] T1 epoch 4/30 loss=2.2863
+[IA10 G] T1 epoch 5/30 loss=2.1213
+[IA10 G] T1 epoch 6/30 loss=2.0797
+[IA10 G] T1 epoch 7/30 loss=1.9604
+[IA10 G] T1 epoch 8/30 loss=1.9393
+[IA10 G] T1 epoch 9/30 loss=1.8464
+[IA10 G] T1 epoch 10/30 loss=1.8447
+[IA10 G] T1 epoch 11/30 loss=1.8643
+[IA10 G] T1 epoch 12/30 loss=1.7239
+[IA10 G] T1 epoch 13/30 loss=1.7378
+[IA10 G] T1 epoch 14/30 loss=1.7355
+[IA10 G] T1 epoch 15/30 loss=1.6838
+[IA10 G] T1 epoch 16/30 loss=1.6781
+[IA10 G] T1 epoch 17/30 loss=1.6476
+[IA10 G] T1 epoch 18/30 loss=1.7899
+[IA10 G] T1 epoch 19/30 loss=1.6452
+[IA10 G] T1 epoch 20/30 loss=1.6378
+[IA10 G] T1 epoch 21/30 loss=1.6135
+[IA10 G] T1 epoch 22/30 loss=1.5556
+[IA10 G] T1 epoch 23/30 loss=1.6386
+[IA10 G] T1 epoch 24/30 loss=1.5778
+[IA10 G] T1 epoch 25/30 loss=1.6129
+[IA10 G] T1 epoch 26/30 loss=1.6062
+[IA10 G] T1 epoch 27/30 loss=1.6209
+[IA10 G] T1 epoch 28/30 loss=1.6509
+[IA10 G] T1 epoch 29/30 loss=1.6104
+[IA10 G] T1 epoch 30/30 loss=1.5962
+1.8553204441745088
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+The number of training dataset: 571
+[IA10 R] T9 epoch 1/15 loss=5.4395
+[IA10 R] T9 epoch 2/15 loss=3.0036
+[IA10 R] T9 epoch 3/15 loss=2.4208
+[IA10 R] T9 epoch 4/15 loss=2.1593
+[IA10 R] T9 epoch 5/15 loss=1.9732
+[IA10 R] T9 epoch 6/15 loss=1.9111
+[IA10 R] T9 epoch 7/15 loss=1.8805
+[IA10 R] T9 epoch 8/15 loss=1.7971
+[IA10 R] T9 epoch 9/15 loss=1.7495
+[IA10 R] T9 epoch 10/15 loss=1.7407
+[IA10 R] T9 epoch 11/15 loss=1.7290
+[IA10 R] T9 epoch 12/15 loss=1.7863
+[IA10 R] T9 epoch 13/15 loss=1.7287
+[IA10 R] T9 epoch 14/15 loss=1.6914
+[IA10 R] T9 epoch 15/15 loss=1.6739
+mean_and_cov_update
+The number of training dataset: 527
+[IA10 R] T10 epoch 1/15 loss=5.1091
+[IA10 R] T10 epoch 2/15 loss=2.4454
+[IA10 R] T10 epoch 3/15 loss=1.8712
+[IA10 R] T10 epoch 4/15 loss=1.7029
+[IA10 R] T10 epoch 5/15 loss=1.6257
+[IA10 R] T10 epoch 6/15 loss=1.5214
+[IA10 R] T10 epoch 7/15 loss=1.4311
+[IA10 R] T10 epoch 8/15 loss=1.4521
+[IA10 R] T10 epoch 9/15 loss=1.4805
+[IA10 R] T10 epoch 10/15 loss=1.2504
+[IA10 R] T10 epoch 11/15 loss=1.3819
+[IA10 R] T10 epoch 12/15 loss=1.4109
+[IA10 R] T10 epoch 13/15 loss=1.3424
+[IA10 R] T10 epoch 14/15 loss=1.3631
+[IA10 R] T10 epoch 15/15 loss=1.3642
+mean_and_cov_update
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+The number of training dataset: 571
+[IA10 S] T9 epoch 1/15 loss=5.5581
+[IA10 S] T9 epoch 2/15 loss=3.1969
+[IA10 S] T9 epoch 3/15 loss=2.6280
+[IA10 S] T9 epoch 4/15 loss=2.4148
+[IA10 S] T9 epoch 5/15 loss=2.2298
+[IA10 S] T9 epoch 6/15 loss=2.1474
+[IA10 S] T9 epoch 7/15 loss=2.0702
+[IA10 S] T9 epoch 8/15 loss=2.0234
+[IA10 S] T9 epoch 9/15 loss=1.9595
+[IA10 S] T9 epoch 10/15 loss=1.9474
+[IA10 S] T9 epoch 11/15 loss=1.9283
+[IA10 S] T9 epoch 12/15 loss=2.0103
+[IA10 S] T9 epoch 13/15 loss=1.9434
+[IA10 S] T9 epoch 14/15 loss=1.9010
+[IA10 S] T9 epoch 15/15 loss=1.9093
+mean_and_cov_update
+The number of training dataset: 527
+[IA10 S] T10 epoch 1/15 loss=5.1062
+[IA10 S] T10 epoch 2/15 loss=2.4379
+[IA10 S] T10 epoch 3/15 loss=1.8691
+[IA10 S] T10 epoch 4/15 loss=1.6970
+[IA10 S] T10 epoch 5/15 loss=1.6244
+[IA10 S] T10 epoch 6/15 loss=1.5210
+[IA10 S] T10 epoch 7/15 loss=1.4302
+[IA10 S] T10 epoch 8/15 loss=1.4460
+[IA10 S] T10 epoch 9/15 loss=1.4806
+[IA10 S] T10 epoch 10/15 loss=1.2508
+[IA10 S] T10 epoch 11/15 loss=1.3808
+[IA10 S] T10 epoch 12/15 loss=1.4065
+[IA10 S] T10 epoch 13/15 loss=1.3390
+[IA10 S] T10 epoch 14/15 loss=1.3631
+[IA10 S] T10 epoch 15/15 loss=1.3643
+mean_and_cov_update
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+The number of training dataset: 571
+[IA10 G] T9 epoch 1/15 loss=5.7664
+[IA10 G] T9 epoch 2/15 loss=3.5618
+[IA10 G] T9 epoch 3/15 loss=2.9943
+[IA10 G] T9 epoch 4/15 loss=2.6815
+[IA10 G] T9 epoch 5/15 loss=2.4896
+[IA10 G] T9 epoch 6/15 loss=2.4250
+[IA10 G] T9 epoch 7/15 loss=2.3708
+[IA10 G] T9 epoch 8/15 loss=2.3914
+[IA10 G] T9 epoch 9/15 loss=2.2616
+[IA10 G] T9 epoch 10/15 loss=2.2652
+[IA10 G] T9 epoch 11/15 loss=2.1837
+[IA10 G] T9 epoch 12/15 loss=2.2808
+[IA10 G] T9 epoch 13/15 loss=2.2226
+[IA10 G] T9 epoch 14/15 loss=2.1864
+[IA10 G] T9 epoch 15/15 loss=2.2171
+mean_and_cov_update
+The number of training dataset: 527
+[IA10 G] T10 epoch 1/15 loss=5.1187
+[IA10 G] T10 epoch 2/15 loss=2.4484
+[IA10 G] T10 epoch 3/15 loss=1.8764
+[IA10 G] T10 epoch 4/15 loss=1.7062
+[IA10 G] T10 epoch 5/15 loss=1.6249
+[IA10 G] T10 epoch 6/15 loss=1.5247
+[IA10 G] T10 epoch 7/15 loss=1.4329
+[IA10 G] T10 epoch 8/15 loss=1.4585
+[IA10 G] T10 epoch 9/15 loss=1.4892
+[IA10 G] T10 epoch 10/15 loss=1.2591
+[IA10 G] T10 epoch 11/15 loss=1.3866
+[IA10 G] T10 epoch 12/15 loss=1.4115
+[IA10 G] T10 epoch 13/15 loss=1.3485
+[IA10 G] T10 epoch 14/15 loss=1.3712
+[IA10 G] T10 epoch 15/15 loss=1.3654
+mean_and_cov_update
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+The number of training dataset: 527
+[IA10 GM] T10 epoch 1/15 loss=5.1185
+[IA10 GM] T10 epoch 2/15 loss=2.4482
+[IA10 GM] T10 epoch 3/15 loss=1.8762
+[IA10 GM] T10 epoch 4/15 loss=1.7057
+[IA10 GM] T10 epoch 5/15 loss=1.6254
+[IA10 GM] T10 epoch 6/15 loss=1.5247
+[IA10 GM] T10 epoch 7/15 loss=1.4323
+[IA10 GM] T10 epoch 8/15 loss=1.4592
+[IA10 GM] T10 epoch 9/15 loss=1.4899
+[IA10 GM] T10 epoch 10/15 loss=1.2598
+[IA10 GM] T10 epoch 11/15 loss=1.3859
+[IA10 GM] T10 epoch 12/15 loss=1.4105
+[IA10 GM] T10 epoch 13/15 loss=1.3469
+[IA10 GM] T10 epoch 14/15 loss=1.3716
+[IA10 GM] T10 epoch 15/15 loss=1.3653
+mean_and_cov_update
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+The number of training dataset: 847
+[CAR10 R] T1 epoch 1/30 loss=6.6038
+[CAR10 R] T1 epoch 2/30 loss=3.9345
+[CAR10 R] T1 epoch 3/30 loss=3.2377
+[CAR10 R] T1 epoch 4/30 loss=2.9163
+[CAR10 R] T1 epoch 5/30 loss=2.7159
+[CAR10 R] T1 epoch 6/30 loss=2.4891
+[CAR10 R] T1 epoch 7/30 loss=2.3743
+[CAR10 R] T1 epoch 8/30 loss=2.3298
+[CAR10 R] T1 epoch 9/30 loss=2.1909
+[CAR10 R] T1 epoch 10/30 loss=2.1590
+[CAR10 R] T1 epoch 11/30 loss=2.1530
+[CAR10 R] T1 epoch 12/30 loss=2.0522
+[CAR10 R] T1 epoch 13/30 loss=2.0452
+[CAR10 R] T1 epoch 14/30 loss=2.0041
+[CAR10 R] T1 epoch 15/30 loss=1.9964
+[CAR10 R] T1 epoch 16/30 loss=1.9691
+[CAR10 R] T1 epoch 17/30 loss=1.9452
+[CAR10 R] T1 epoch 18/30 loss=1.9476
+[CAR10 R] T1 epoch 19/30 loss=1.9086
+[CAR10 R] T1 epoch 20/30 loss=1.8559
+[CAR10 R] T1 epoch 21/30 loss=1.9372
+[CAR10 R] T1 epoch 22/30 loss=1.8557
+[CAR10 R] T1 epoch 23/30 loss=1.9094
+[CAR10 R] T1 epoch 24/30 loss=1.7934
+[CAR10 R] T1 epoch 25/30 loss=1.8260
+[CAR10 R] T1 epoch 26/30 loss=1.8872
+[CAR10 R] T1 epoch 27/30 loss=1.8277
+[CAR10 R] T1 epoch 28/30 loss=1.8707
+[CAR10 R] T1 epoch 29/30 loss=1.8165
+[CAR10 R] T1 epoch 30/30 loss=1.8772
+1.9994769326830477
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+The number of training dataset: 847
+[CAR10 S] T1 epoch 1/30 loss=6.7422
+[CAR10 S] T1 epoch 2/30 loss=4.3950
+[CAR10 S] T1 epoch 3/30 loss=3.6785
+[CAR10 S] T1 epoch 4/30 loss=3.3677
+[CAR10 S] T1 epoch 5/30 loss=3.0284
+[CAR10 S] T1 epoch 6/30 loss=2.7770
+[CAR10 S] T1 epoch 7/30 loss=2.6494
+[CAR10 S] T1 epoch 8/30 loss=2.6023
+[CAR10 S] T1 epoch 9/30 loss=2.4442
+[CAR10 S] T1 epoch 10/30 loss=2.4271
+[CAR10 S] T1 epoch 11/30 loss=2.3996
+[CAR10 S] T1 epoch 12/30 loss=2.2922
+[CAR10 S] T1 epoch 13/30 loss=2.2703
+[CAR10 S] T1 epoch 14/30 loss=2.2291
+[CAR10 S] T1 epoch 15/30 loss=2.2248
+[CAR10 S] T1 epoch 16/30 loss=2.2065
+[CAR10 S] T1 epoch 17/30 loss=2.1969
+[CAR10 S] T1 epoch 18/30 loss=2.1629
+[CAR10 S] T1 epoch 19/30 loss=2.1346
+[CAR10 S] T1 epoch 20/30 loss=2.0708
+[CAR10 S] T1 epoch 21/30 loss=2.1575
+[CAR10 S] T1 epoch 22/30 loss=2.0636
+[CAR10 S] T1 epoch 23/30 loss=2.1383
+[CAR10 S] T1 epoch 24/30 loss=2.0026
+[CAR10 S] T1 epoch 25/30 loss=2.0445
+[CAR10 S] T1 epoch 26/30 loss=2.0906
+[CAR10 S] T1 epoch 27/30 loss=2.0208
+[CAR10 S] T1 epoch 28/30 loss=2.0810
+[CAR10 S] T1 epoch 29/30 loss=2.0443
+[CAR10 S] T1 epoch 30/30 loss=2.0997
+2.027237165375007
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+The number of training dataset: 847
+[CAR10 G] T1 epoch 1/30 loss=6.5654
+[CAR10 G] T1 epoch 2/30 loss=4.3196
+[CAR10 G] T1 epoch 3/30 loss=3.5680
+[CAR10 G] T1 epoch 4/30 loss=3.1891
+[CAR10 G] T1 epoch 5/30 loss=2.8961
+[CAR10 G] T1 epoch 6/30 loss=2.7315
+[CAR10 G] T1 epoch 7/30 loss=2.5395
+[CAR10 G] T1 epoch 8/30 loss=2.5054
+[CAR10 G] T1 epoch 9/30 loss=2.3194
+[CAR10 G] T1 epoch 10/30 loss=2.2911
+[CAR10 G] T1 epoch 11/30 loss=2.3316
+[CAR10 G] T1 epoch 12/30 loss=2.1985
+[CAR10 G] T1 epoch 13/30 loss=2.1816
+[CAR10 G] T1 epoch 14/30 loss=2.1270
+[CAR10 G] T1 epoch 15/30 loss=2.1433
+[CAR10 G] T1 epoch 16/30 loss=2.1076
+[CAR10 G] T1 epoch 17/30 loss=2.0474
+[CAR10 G] T1 epoch 18/30 loss=2.0262
+[CAR10 G] T1 epoch 19/30 loss=2.0100
+[CAR10 G] T1 epoch 20/30 loss=1.9976
+[CAR10 G] T1 epoch 21/30 loss=2.0601
+[CAR10 G] T1 epoch 22/30 loss=1.9453
+[CAR10 G] T1 epoch 23/30 loss=2.0472
+[CAR10 G] T1 epoch 24/30 loss=1.9019
+[CAR10 G] T1 epoch 25/30 loss=1.9402
+[CAR10 G] T1 epoch 26/30 loss=2.0298
+[CAR10 G] T1 epoch 27/30 loss=1.9740
+[CAR10 G] T1 epoch 28/30 loss=1.9982
+[CAR10 G] T1 epoch 29/30 loss=1.9671
+[CAR10 G] T1 epoch 30/30 loss=1.9761
+2.015127728755451
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+The number of training dataset: 766
+[CAR10 R] T9 epoch 1/15 loss=5.1284
+[CAR10 R] T9 epoch 2/15 loss=2.7410
+[CAR10 R] T9 epoch 3/15 loss=2.3729
+[CAR10 R] T9 epoch 4/15 loss=2.1786
+[CAR10 R] T9 epoch 5/15 loss=2.0189
+[CAR10 R] T9 epoch 6/15 loss=1.9927
+[CAR10 R] T9 epoch 7/15 loss=2.0357
+[CAR10 R] T9 epoch 8/15 loss=2.0009
+[CAR10 R] T9 epoch 9/15 loss=1.9095
+[CAR10 R] T9 epoch 10/15 loss=1.9184
+[CAR10 R] T9 epoch 11/15 loss=1.8983
+[CAR10 R] T9 epoch 12/15 loss=1.8668
+[CAR10 R] T9 epoch 13/15 loss=1.9031
+[CAR10 R] T9 epoch 14/15 loss=1.8795
+[CAR10 R] T9 epoch 15/15 loss=1.8538
+mean_and_cov_update
+The number of training dataset: 792
+[CAR10 R] T10 epoch 1/15 loss=5.0108
+[CAR10 R] T10 epoch 2/15 loss=2.5472
+[CAR10 R] T10 epoch 3/15 loss=2.0764
+[CAR10 R] T10 epoch 4/15 loss=1.9903
+[CAR10 R] T10 epoch 5/15 loss=1.8386
+[CAR10 R] T10 epoch 6/15 loss=1.7537
+[CAR10 R] T10 epoch 7/15 loss=1.7733
+[CAR10 R] T10 epoch 8/15 loss=1.7179
+[CAR10 R] T10 epoch 9/15 loss=1.7388
+[CAR10 R] T10 epoch 10/15 loss=1.6261
+[CAR10 R] T10 epoch 11/15 loss=1.6842
+[CAR10 R] T10 epoch 12/15 loss=1.6536
+[CAR10 R] T10 epoch 13/15 loss=1.6238
+[CAR10 R] T10 epoch 14/15 loss=1.7687
+[CAR10 R] T10 epoch 15/15 loss=1.7190
+mean_and_cov_update
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+The number of training dataset: 766
+[CAR10 S] T9 epoch 1/15 loss=5.2733
+[CAR10 S] T9 epoch 2/15 loss=2.9763
+[CAR10 S] T9 epoch 3/15 loss=2.5794
+[CAR10 S] T9 epoch 4/15 loss=2.3769
+[CAR10 S] T9 epoch 5/15 loss=2.2324
+[CAR10 S] T9 epoch 6/15 loss=2.1707
+[CAR10 S] T9 epoch 7/15 loss=2.2081
+[CAR10 S] T9 epoch 8/15 loss=2.1983
+[CAR10 S] T9 epoch 9/15 loss=2.1007
+[CAR10 S] T9 epoch 10/15 loss=2.1357
+[CAR10 S] T9 epoch 11/15 loss=2.1139
+[CAR10 S] T9 epoch 12/15 loss=2.0377
+[CAR10 S] T9 epoch 13/15 loss=2.1336
+[CAR10 S] T9 epoch 14/15 loss=2.0877
+[CAR10 S] T9 epoch 15/15 loss=2.0587
+mean_and_cov_update
+The number of training dataset: 792
+[CAR10 S] T10 epoch 1/15 loss=5.0116
+[CAR10 S] T10 epoch 2/15 loss=2.5484
+[CAR10 S] T10 epoch 3/15 loss=2.0754
+[CAR10 S] T10 epoch 4/15 loss=1.9930
+[CAR10 S] T10 epoch 5/15 loss=1.8398
+[CAR10 S] T10 epoch 6/15 loss=1.7557
+[CAR10 S] T10 epoch 7/15 loss=1.7733
+[CAR10 S] T10 epoch 8/15 loss=1.7208
+[CAR10 S] T10 epoch 9/15 loss=1.7413
+[CAR10 S] T10 epoch 10/15 loss=1.6265
+[CAR10 S] T10 epoch 11/15 loss=1.6856
+[CAR10 S] T10 epoch 12/15 loss=1.6551
+[CAR10 S] T10 epoch 13/15 loss=1.6261
+[CAR10 S] T10 epoch 14/15 loss=1.7718
+[CAR10 S] T10 epoch 15/15 loss=1.7189
+mean_and_cov_update
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+The number of training dataset: 766
+[CAR10 G] T9 epoch 1/15 loss=5.2119
+[CAR10 G] T9 epoch 2/15 loss=2.9683
+[CAR10 G] T9 epoch 3/15 loss=2.5177
+[CAR10 G] T9 epoch 4/15 loss=2.3195
+[CAR10 G] T9 epoch 5/15 loss=2.1216
+[CAR10 G] T9 epoch 6/15 loss=2.1524
+[CAR10 G] T9 epoch 7/15 loss=2.1743
+[CAR10 G] T9 epoch 8/15 loss=2.1220
+[CAR10 G] T9 epoch 9/15 loss=2.1298
+[CAR10 G] T9 epoch 10/15 loss=2.0481
+[CAR10 G] T9 epoch 11/15 loss=2.0372
+[CAR10 G] T9 epoch 12/15 loss=2.0372
+[CAR10 G] T9 epoch 13/15 loss=2.0745
+[CAR10 G] T9 epoch 14/15 loss=2.0256
+[CAR10 G] T9 epoch 15/15 loss=2.0273
+mean_and_cov_update
+The number of training dataset: 792
+[CAR10 G] T10 epoch 1/15 loss=5.0144
+[CAR10 G] T10 epoch 2/15 loss=2.5561
+[CAR10 G] T10 epoch 3/15 loss=2.0804
+[CAR10 G] T10 epoch 4/15 loss=1.9947
+[CAR10 G] T10 epoch 5/15 loss=1.8397
+[CAR10 G] T10 epoch 6/15 loss=1.7549
+[CAR10 G] T10 epoch 7/15 loss=1.7759
+[CAR10 G] T10 epoch 8/15 loss=1.7228
+[CAR10 G] T10 epoch 9/15 loss=1.7432
+[CAR10 G] T10 epoch 10/15 loss=1.6300
+[CAR10 G] T10 epoch 11/15 loss=1.6894
+[CAR10 G] T10 epoch 12/15 loss=1.6579
+[CAR10 G] T10 epoch 13/15 loss=1.6271
+[CAR10 G] T10 epoch 14/15 loss=1.7727
+[CAR10 G] T10 epoch 15/15 loss=1.7228
+mean_and_cov_update
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+The number of training dataset: 792
+[CAR10 GM] T10 epoch 1/15 loss=5.0144
+[CAR10 GM] T10 epoch 2/15 loss=2.5562
+[CAR10 GM] T10 epoch 3/15 loss=2.0802
+[CAR10 GM] T10 epoch 4/15 loss=1.9946
+[CAR10 GM] T10 epoch 5/15 loss=1.8402
+[CAR10 GM] T10 epoch 6/15 loss=1.7571
+[CAR10 GM] T10 epoch 7/15 loss=1.7758
+[CAR10 GM] T10 epoch 8/15 loss=1.7233
+[CAR10 GM] T10 epoch 9/15 loss=1.7431
+[CAR10 GM] T10 epoch 10/15 loss=1.6301
+[CAR10 GM] T10 epoch 11/15 loss=1.6899
+[CAR10 GM] T10 epoch 12/15 loss=1.6579
+[CAR10 GM] T10 epoch 13/15 loss=1.6270
+[CAR10 GM] T10 epoch 14/15 loss=1.7732
+[CAR10 GM] T10 epoch 15/15 loss=1.7225
+mean_and_cov_update
+Report: ${RESEARCH_WORKSPACE}/type_a_generative_augmentation/final_report.md
+Matched pilot and report complete: final_report.md
