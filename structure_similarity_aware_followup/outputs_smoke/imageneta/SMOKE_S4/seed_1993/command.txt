@@ -1,0 +1,1 @@
+run.py --config configs/smoke_S4.json --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_similarity_aware_followup/outputs_smoke
