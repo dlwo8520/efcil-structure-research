@@ -1,0 +1,34 @@
+{
+  "experiment": "B1 ranking-preserving task correction",
+  "seed": 1993,
+  "physical_gpu": 4,
+  "protocols": [
+    "IA10",
+    "CAR10"
+  ],
+  "fit_bank_seed_base": 20261008,
+  "samples_per_class_per_bank": 256,
+  "branches": {
+    "C0": "identity",
+    "C1": "centered task bias b",
+    "C2": "centered linear task correction A phi + b"
+  },
+  "descriptor": "per-task [max, top1-top2 gap, logsumexp]; fit-bank z-score; clip [-5,5]",
+  "regularization": {
+    "lambda": 1.0,
+    "eta": 0.001
+  },
+  "optimizer": {
+    "name": "full-batch LBFGS",
+    "lr": 1,
+    "max_iter": 100,
+    "max_eval": 150,
+    "history_size": 20,
+    "line_search_fn": "strong_wolfe"
+  },
+  "fit_dtype": "float64",
+  "inference": "global argmax over all classes",
+  "new_classes": "Gaussian",
+  "test_used_for_selection": false,
+  "CA_rerun": false
+}
