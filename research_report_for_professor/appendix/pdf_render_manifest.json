@@ -1,0 +1,709 @@
+{
+  "renderer": "WeasyPrint 66.0; Python-Markdown 3.9; matplotlib mathtext",
+  "source_sha256": "9c4d320155049b1d832b5b1af1bfffaf7131927c84e2d86685920287011d0d71",
+  "pdf_bytes": 1826138,
+  "formulas_rendered": 100,
+  "font": "Noto Sans CJK KR",
+  "formulas": [
+    {
+      "tex": "z=f_{\\theta_t}(x),\\qquad a_c(x)=\\frac{w_c^\\top z}{\\Vert w_c\\Vert_2\\Vert z\\Vert_2},\\qquad s_c(x)=20a_c(x).",
+      "display": true,
+      "source": "figures/math/769ff08303458b0a.svg",
+      "width_pt": 287.0,
+      "height_pt": 22.0
+    },
+    {
+      "tex": "\\ell_{\\mathrm{CF}}(x,y)=-\\log\\frac{\\exp(20(a_y-0.2))}{\\exp(20(a_y-0.2))+\\sum_{c\\in G_t,\\ c\\ne y}\\exp(20a_c)}.",
+      "display": true,
+      "source": "figures/math/07fcddb8dcdd664a.svg",
+      "width_pt": 262.0,
+      "height_pt": 32.0
+    },
+    {
+      "tex": "r_{ik}^{\\mathrm{old}}=\\hat f_{\\theta_{t-1}}(x_i)^\\top\\hat\\mu_k^{t-1},\\qquad r_{ik}^{\\mathrm{new}}=\\hat f_{\\theta_t}(x_i)^\\top\\hat\\mu_k^{t-1}.",
+      "display": true,
+      "source": "figures/math/ce43280ca6a35ef8.svg",
+      "width_pt": 259.0,
+      "height_pt": 18.0
+    },
+    {
+      "tex": "L_{\\mathrm{SCC}}=\\frac{1}{B}\\sum_i\\sum_{k\\in C_{\\leq t-1}}(r_{ik}^{\\mathrm{new}}-r_{ik}^{\\mathrm{old}})^2,\\qquad L_{\\mathrm{Structure}}=\\overline{\\ell}_{\\mathrm{CF}}+5L_{\\mathrm{SCC}}.",
+      "display": true,
+      "source": "figures/math/16c02d5b624dadca.svg",
+      "width_pt": 330.0,
+      "height_pt": 27.0
+    },
+    {
+      "tex": "\\alpha_{kj}=\\frac{\\exp(10\\cos(\\mu_k^{t-1},\\mu_{j,\\mathrm{before}}))}{\\sum_{h\\in G_t}\\exp(10\\cos(\\mu_k^{t-1},\\mu_{h,\\mathrm{before}}))},\\quad \\Delta_k=\\sum_{j\\in G_t}\\alpha_{kj}d_j,\\quad \\mu_k^t=\\mu_k^{t-1}+\\Delta_k.",
+      "display": true,
+      "source": "figures/math/29c980766b4f88b0.svg",
+      "width_pt": 359.0,
+      "height_pt": 33.0
+    },
+    {
+      "tex": "\\Sigma_k^t=\\Sigma_k^{t-1}+\\rho\\Delta_k\\Delta_k^\\top+\\epsilon I.",
+      "display": true,
+      "source": "figures/math/3dad838777087ad7.svg",
+      "width_pt": 141.0,
+      "height_pt": 15.0
+    },
+    {
+      "tex": "\\Sigma_k^t=\\Sigma_k^{t-1}+5\\sum_{j\\in G_t}\\mathbf{1}[\\Vert d_j\\Vert_2^2>10^{-9}](\\alpha_{kj}d_j)(\\alpha_{kj}d_j)^\\top+10^{-6}I.",
+      "display": true,
+      "source": "figures/math/9803fae004d1c17d.svg",
+      "width_pt": 322.0,
+      "height_pt": 27.0
+    },
+    {
+      "tex": "\\tilde z_c\\sim\\mathcal{N}(\\beta_{c,t}\\mu_c^t,\\Sigma_c^t),\\qquad L_{\\mathrm{CA}}=\\frac{1}{N_{\\mathrm{syn}}}\\sum_i\\left[-s_{y_i}(\\tilde z_i)+\\log\\sum_{c\\in C_{\\leq t}}\\exp s_c(\\tilde z_i)\\right].",
+      "display": true,
+      "source": "figures/math/d6da3cda28486164.svg",
+      "width_pt": 370.0,
+      "height_pt": 27.0
+    },
+    {
+      "tex": "\\beta_{c,t}=0.9+0.1\\frac{\\lfloor c/b_t\\rfloor+1}{t}.",
+      "display": true,
+      "source": "figures/math/6d431502d77b914b.svg",
+      "width_pt": 134.0,
+      "height_pt": 19.0
+    },
+    {
+      "tex": "D_{ik}^2=\\sum_d\\frac{(z_{id}-\\mu_{kd}^{\\mathrm{APR}})^2}{\\sigma_{kd}^2},\\qquad L_{\\mathrm{E3}}=\\frac{1}{B}\\sum_i\\left[1-\\min_k\\frac{D_{ik}^2}{\\tau_k}\\right]_+.",
+      "display": true,
+      "source": "figures/math/69c06c06a532998f.svg",
+      "width_pt": 259.0,
+      "height_pt": 29.0
+    },
+    {
+      "tex": "\\tau_k^{\\mathrm{drift}}=\\tau_k^{\\mathrm{birth}}\\operatorname{clip}\\left(\\frac{1}{1+\\kappa\\Vert\\Delta_k\\Vert_2/r},\\ell,u\\right).",
+      "display": true,
+      "source": "figures/math/fc5fa074490581f0.svg",
+      "width_pt": 184.0,
+      "height_pt": 19.0
+    },
+    {
+      "tex": "L_A=\\frac{1}{B}\\sum_i\\frac{1}{|H_{y_i}|}\\sum_{k\\in H_{y_i}}\\left[1-\\frac{D_{ik}^2}{\\tau_k^{\\mathrm{drift}}}\\right]_+.",
+      "display": true,
+      "source": "figures/math/ba43498415cacf44.svg",
+      "width_pt": 160.0,
+      "height_pt": 32.0
+    },
+    {
+      "tex": "e_{yk}=\\operatorname{clip}\\left(\\frac{S_{yk}-b_y}{1-b_y+\\epsilon},0,1\\right),\\qquad \\tau_{yk}^{B}=\\tau_k^{\\mathrm{drift}}(1+\\alpha e_{yk}).",
+      "display": true,
+      "source": "figures/math/1d572843743f80d2.svg",
+      "width_pt": 289.0,
+      "height_pt": 23.0
+    },
+    {
+      "tex": "L_C=\\frac{1}{B}\\sum_i\\frac{1}{|H_{y_i}|}\\sum_{k\\in H_{y_i}}(1+\\hat z_i^\\top\\hat\\mu_k^{\\mathrm{APR}}).",
+      "display": true,
+      "source": "figures/math/fbc5633f2f004614.svg",
+      "width_pt": 172.0,
+      "height_pt": 28.0
+    },
+    {
+      "tex": "q_k^{\\mathrm{oldRP}}=\\psi_R(\\mu_k^{\\mathrm{APR}}),\\qquad q_k^{\\mathrm{birth}}=\\frac{1}{N_k}\\sum_i\\psi_R(z_i),\\qquad q_k^{\\mathrm{StoredAPR}}=q_k^{\\mathrm{birth}}+\\psi_R(\\mu_k^{\\mathrm{APR}})-\\psi_R(\\mu_k^{\\mathrm{birth}}).",
+      "display": true,
+      "source": "figures/math/a1c68cf2f8562d62.svg",
+      "width_pt": 485.0,
+      "height_pt": 25.0
+    },
+    {
+      "tex": "q_k^{\\mathrm{oldRP}}=\\psi_R(\\mu_k^{\\mathrm{APR}})",
+      "display": true,
+      "source": "figures/math/e34ed5707fd84132.svg",
+      "width_pt": 96.0,
+      "height_pt": 16.0
+    },
+    {
+      "tex": "q_k^{\\mathrm{birth}}=\\frac{1}{N_k}\\sum_i\\psi_R(z_i)",
+      "display": true,
+      "source": "figures/math/ce8ec33fe974620f.svg",
+      "width_pt": 98.0,
+      "height_pt": 25.0
+    },
+    {
+      "tex": "q_k^{\\mathrm{StoredAPR}}=q_k^{\\mathrm{birth}}+\\psi_R(\\mu_k^{\\mathrm{APR}})-\\psi_R(\\mu_k^{\\mathrm{birth}}).",
+      "display": true,
+      "source": "figures/math/616d1a8d11548fb6.svg",
+      "width_pt": 232.0,
+      "height_pt": 16.0
+    },
+    {
+      "tex": "\\mu_c^{O,t}=\\frac{1}{N_c}\\sum_{i:y_i=c}f_{\\theta_t}(x_i),\\qquad \\Sigma_c^{O,t}=\\frac{1}{N_c-1}\\sum_i(z_i-\\mu_c^{O,t})(z_i-\\mu_c^{O,t})^\\top.",
+      "display": true,
+      "source": "figures/math/86a699399cebd029.svg",
+      "width_pt": 344.0,
+      "height_pt": 27.0
+    },
+    {
+      "tex": "T_c=\\frac{(\\mu_c^S)^\\top\\mu_c^O}{\\Vert\\mu_c^S\\Vert_2\\Vert\\mu_c^O\\Vert_2},\\quad E_c^\\mu=\\frac{\\Vert\\mu_c^S-\\mu_c^O\\Vert_2}{\\Vert\\mu_c^O\\Vert_2},\\quad E_c^\\Sigma=\\frac{\\Vert\\Sigma_c^S-\\Sigma_c^O\\Vert_F}{\\Vert\\Sigma_c^O\\Vert_F}.",
+      "display": true,
+      "source": "figures/math/249e1cfa280fefc2.svg",
+      "width_pt": 262.0,
+      "height_pt": 25.0
+    },
+    {
+      "tex": "(\\mu_{\\mathrm{old}}^S,\\Sigma_{\\mathrm{old}}^S)\\longrightarrow(\\mu_{\\mathrm{old}}^O,\\Sigma_{\\mathrm{old}}^S)\\ \\mathrm{or}\\ (\\mu_{\\mathrm{old}}^S,\\Sigma_{\\mathrm{old}}^O)\\ \\mathrm{or}\\ (\\mu_{\\mathrm{old}}^O,\\Sigma_{\\mathrm{old}}^O).",
+      "display": true,
+      "source": "figures/math/58ba9500d51fb1c2.svg",
+      "width_pt": 297.0,
+      "height_pt": 15.0
+    },
+    {
+      "tex": "\\mathrm{old\\ bank}:\\quad z\\sim\\mathcal{N}(\\beta\\mu^O,\\Sigma^O)\\longrightarrow z\\sim\\operatorname{Empirical}(\\mathrm{old\\ actual\\ features});\\qquad L_{\\mathrm{CA}}\\ \\mathrm{unchanged}.",
+      "display": true,
+      "source": "figures/math/367a2135a84811cf.svg",
+      "width_pt": 504.0,
+      "height_pt": 14.0
+    },
+    {
+      "tex": "\\mathrm{old\\ bank}:\\quad z\\sim\\mathcal{N}(\\beta\\mu^O,\\Sigma^O)\\longrightarrow z\\sim\\operatorname{Empirical}(\\mathrm{old\\ actual\\ features})",
+      "display": true,
+      "source": "figures/math/a3d88aa9e25ab4cf.svg",
+      "width_pt": 379.0,
+      "height_pt": 14.0
+    },
+    {
+      "tex": "L_{\\mathrm{CA}}\\ \\mathrm{unchanged}.",
+      "display": true,
+      "source": "figures/math/17c82c6dbcd9d1d4.svg",
+      "width_pt": 96.0,
+      "height_pt": 13.0
+    },
+    {
+      "tex": "a_{ij}=\\hat w_i-\\hat w_j,\\quad m_{ij}=a_{ij}^\\top\\mu_i,\\quad v_{ij}=a_{ij}^\\top\\Sigma_i a_{ij},\\quad \\gamma_{ij}=\\frac{m_{ij}}{\\sqrt{v_{ij}+\\epsilon}},\\quad q_{ij}=\\Phi(-\\gamma_{ij}).",
+      "display": true,
+      "source": "figures/math/c92830cadb712910.svg",
+      "width_pt": 402.0,
+      "height_pt": 23.0
+    },
+    {
+      "tex": "z_{\\mathrm{CEOS}}=\\frac{\\lambda z+(1-\\lambda)e}{\\Vert\\lambda z+(1-\\lambda)e\\Vert_2},\\qquad \\lambda\\sim U(0.7,1).",
+      "display": true,
+      "source": "figures/math/dfe789ab6b29c612.svg",
+      "width_pt": 219.0,
+      "height_pt": 20.0
+    },
+    {
+      "tex": "p_v=\\operatorname{softmax}(a^{(v)}_{G_t}),\\quad \\bar p=(p_1+p_2)/2,\\quad L_J=L_{2v}+0.1\\left[\\frac{1}{2}\\operatorname{KL}(p_1\\Vert\\bar p)+\\frac{1}{2}\\operatorname{KL}(p_2\\Vert\\bar p)\\right].",
+      "display": true,
+      "source": "figures/math/1a582b441dde3f43.svg",
+      "width_pt": 446.0,
+      "height_pt": 17.0
+    },
+    {
+      "tex": "A:\\ c_t=0\\ \\mathrm{for\\ all}\\ t=b,\\ldots,T;\\qquad B:\\ c_b=1,\\ c_T=0;\\qquad C:\\ c_b=0,\\ c_T=0,\\ \\mathrm{and}\\ \\exists t\\in(b,T):c_t=1.",
+      "display": true,
+      "source": "figures/math/d6b15602496cb9d2.svg",
+      "width_pt": 556.0,
+      "height_pt": 13.0
+    },
+    {
+      "tex": "A:\\ c_t=0\\ \\mathrm{for\\ all}\\ t=b,\\ldots,T",
+      "display": true,
+      "source": "figures/math/d6f03541fdfcdc68.svg",
+      "width_pt": 155.0,
+      "height_pt": 12.0
+    },
+    {
+      "tex": "B:\\ c_b=1,\\ c_T=0",
+      "display": true,
+      "source": "figures/math/a07143f8e34f3227.svg",
+      "width_pt": 100.0,
+      "height_pt": 12.0
+    },
+    {
+      "tex": "C:\\ c_b=0,\\ c_T=0,\\ \\mathrm{and}\\ \\exists t\\in(b,T):c_t=1.",
+      "display": true,
+      "source": "figures/math/8d83e18a3d35b81b.svg",
+      "width_pt": 242.0,
+      "height_pt": 13.0
+    },
+    {
+      "tex": "\\max_{k\\in C_{\\leq T}\\setminus C_{\\leq b}}s_k^T(x)>s_y^T(x)>\\max_{j\\in C_{\\leq b},\\ j\\ne y}s_j^T(x).",
+      "display": true,
+      "source": "figures/math/8ca79b288efcd7cd.svg",
+      "width_pt": 227.0,
+      "height_pt": 22.0
+    },
+    {
+      "tex": "\\ell_{\\mathrm{within}}=\\log\\sum_{c\\in G(y)}e^{s_c}-s_y,\\qquad \\ell_{\\mathrm{cross}}=\\log\\sum_{c\\in C_{\\leq T}}e^{s_c}-\\log\\sum_{c\\in G(y)}e^{s_c}.",
+      "display": true,
+      "source": "figures/math/ceeb1492d4020d39.svg",
+      "width_pt": 372.0,
+      "height_pt": 27.0
+    },
+    {
+      "tex": "\\ell_{\\mathrm{CE}}=\\ell_{\\mathrm{within}}+\\ell_{\\mathrm{cross}},\\qquad L_{2\\times}=\\overline{\\ell}_{\\mathrm{within}}+2\\overline{\\ell}_{\\mathrm{cross}}.",
+      "display": true,
+      "source": "figures/math/203eb7b5a66711a1.svg",
+      "width_pt": 258.0,
+      "height_pt": 15.0
+    },
+    {
+      "tex": "\\tilde s_c(x)=s_c^0(x)+\\delta_{g(c)}(x),\\qquad g(i)=g(j)\\ \\Longrightarrow\\ \\tilde s_i-\\tilde s_j=s_i^0-s_j^0.",
+      "display": true,
+      "source": "figures/math/5bfbdfb39c3e4bb6.svg",
+      "width_pt": 335.0,
+      "height_pt": 17.0
+    },
+    {
+      "tex": "\\phi(x)=\\operatorname{clip}\\left(\\frac{d(x)-\\bar d_{\\mathrm{fit}}}{\\max(\\sigma_{\\mathrm{fit}},10^{-3})},-5,5\\right),\\quad r=A\\phi+b,\\quad \\delta_g=r_g-\\frac{1}{10}\\sum_h r_h.",
+      "display": true,
+      "source": "figures/math/f93f9af4feaf518d.svg",
+      "width_pt": 368.0,
+      "height_pt": 27.0
+    },
+    {
+      "tex": "L_{\\mathrm{corr}}=\\operatorname{CE}(\\tilde s,y)+\\frac{1}{2}\\operatorname{mean}(\\delta^2)+\\frac{10^{-3}}{2}\\sum_{\\vartheta\\in\\{A,b\\}}\\Vert\\vartheta\\Vert_2^2.",
+      "display": true,
+      "source": "figures/math/e48bbff8473e45c2.svg",
+      "width_pt": 272.0,
+      "height_pt": 27.0
+    },
+    {
+      "tex": "A\\mathrm{-within}:\\quad \\operatorname{argmax}_{c\\in G_b}s_c^b(x)\\ne y.",
+      "display": true,
+      "source": "figures/math/6ce34b833c59ab7b.svg",
+      "width_pt": 203.0,
+      "height_pt": 15.0
+    },
+    {
+      "tex": "A\\mathrm{-cross}:\\quad \\operatorname{argmax}_{c\\in G_b}s_c^b(x)=y,\\qquad \\operatorname{argmax}_{c\\in C_{\\leq b}}s_c^b(x)\\ne y.",
+      "display": true,
+      "source": "figures/math/eba1b09edf90c354.svg",
+      "width_pt": 353.0,
+      "height_pt": 15.0
+    },
+    {
+      "tex": "S_c(x)=\\frac{1}{k}\\sum_{r\\in\\operatorname{TopK}(B_c^b;x)}\\hat f_b(x)^\\top\\hat f_b(r),\\qquad M_{\\mathrm{within}}(x)=S_y(x)-\\max_{c\\in G_b,\\ c\\ne y}S_c(x).",
+      "display": true,
+      "source": "figures/math/187b07abdb1bd293.svg",
+      "width_pt": 403.0,
+      "height_pt": 30.0
+    },
+    {
+      "tex": "L_{R/S/G}=\\frac{1}{2}\\overline{\\ell}_{\\mathrm{CF}}(x_{\\mathrm{anchor}})+\\frac{1}{2}\\overline{\\ell}_{\\mathrm{CF}}(x_{\\mathrm{aux}})+5L_{\\mathrm{SCC}}(x_{\\mathrm{anchor}}).",
+      "display": true,
+      "source": "figures/math/8f3c86180a847584.svg",
+      "width_pt": 283.0,
+      "height_pt": 17.0
+    },
+    {
+      "tex": "\\mu_{\\mathrm{mix}}=\\frac{n\\mu_r+m\\mu_g}{n+m}.",
+      "display": true,
+      "source": "figures/math/ef8818f3492e1429.svg",
+      "width_pt": 87.0,
+      "height_pt": 18.0
+    },
+    {
+      "tex": "\\Sigma_{\\mathrm{mix}}=\\frac{(n-1)\\Sigma_r+(m-1)\\Sigma_g+\\frac{nm}{n+m}(\\mu_r-\\mu_g)(\\mu_r-\\mu_g)^\\top}{n+m-1}.",
+      "display": true,
+      "source": "figures/math/1328903fe0c7a62b.svg",
+      "width_pt": 236.0,
+      "height_pt": 21.0
+    },
+    {
+      "tex": "W:\\ \\operatorname{argmax}_{c\\in G_9}s_c\\ne y;\\qquad C:\\ \\operatorname{argmax}_{c\\in G_9}s_c=y,\\ \\operatorname{argmax}_{c\\in C_{\\leq t}}s_c\\ne y;\\qquad K:\\ \\operatorname{argmax}_{c\\in C_{\\leq t}}s_c=y.",
+      "display": true,
+      "source": "figures/math/44306a44c4deb763.svg",
+      "width_pt": 561.0,
+      "height_pt": 13.0
+    },
+    {
+      "tex": "W:\\ \\operatorname{argmax}_{c\\in G_9}s_c\\ne y",
+      "display": true,
+      "source": "figures/math/1d3ee78872969eb6.svg",
+      "width_pt": 128.0,
+      "height_pt": 13.0
+    },
+    {
+      "tex": "C:\\ \\operatorname{argmax}_{c\\in G_9}s_c=y,\\ \\operatorname{argmax}_{c\\in C_{\\leq t}}s_c\\ne y",
+      "display": true,
+      "source": "figures/math/b002e7af4ee8aad1.svg",
+      "width_pt": 241.0,
+      "height_pt": 13.0
+    },
+    {
+      "tex": "K:\\ \\operatorname{argmax}_{c\\in C_{\\leq t}}s_c=y.",
+      "display": true,
+      "source": "figures/math/2d42f91287cdc77e.svg",
+      "width_pt": 133.0,
+      "height_pt": 13.0
+    },
+    {
+      "tex": "\\mathrm{Net}_{\\mathrm{local}}=(N_{W\\to C}+N_{W\\to K})-(N_{C\\to W}+N_{K\\to W}).",
+      "display": true,
+      "source": "figures/math/77e480d5b0b28f57.svg",
+      "width_pt": 260.0,
+      "height_pt": 13.0
+    },
+    {
+      "tex": "\\mathrm{Net}_{\\mathrm{all}}=(N_{W\\to K}+N_{C\\to K})-(N_{K\\to W}+N_{K\\to C}).",
+      "display": true,
+      "source": "figures/math/5e020f6137994032.svg",
+      "width_pt": 244.0,
+      "height_pt": 13.0
+    },
+    {
+      "tex": "G_t",
+      "display": false,
+      "source": "figures/math/2badde6de3bc971c.svg",
+      "width_pt": 11.0,
+      "height_pt": 10.0
+    },
+    {
+      "tex": "C_{\\leq t}",
+      "display": false,
+      "source": "figures/math/e552228a65a5530a.svg",
+      "width_pt": 19.0,
+      "height_pt": 10.0
+    },
+    {
+      "tex": "a_c",
+      "display": false,
+      "source": "figures/math/24b40d81d113d881.svg",
+      "width_pt": 11.0,
+      "height_pt": 8.0
+    },
+    {
+      "tex": "s_c=20a_c",
+      "display": false,
+      "source": "figures/math/4f98521c45f7df08.svg",
+      "width_pt": 45.0,
+      "height_pt": 10.0
+    },
+    {
+      "tex": "j",
+      "display": false,
+      "source": "figures/math/ff7d38bf642a3ef5.svg",
+      "width_pt": 3.0,
+      "height_pt": 11.0
+    },
+    {
+      "tex": "d_j=\\mu_{j,\\mathrm{after}}-\\mu_{j,\\mathrm{before}}",
+      "display": false,
+      "source": "figures/math/83034a9124019304.svg",
+      "width_pt": 97.0,
+      "height_pt": 12.0
+    },
+    {
+      "tex": "k",
+      "display": false,
+      "source": "figures/math/f65ccaf461905ada.svg",
+      "width_pt": 6.0,
+      "height_pt": 8.0
+    },
+    {
+      "tex": "10^{-3}I",
+      "display": false,
+      "source": "figures/math/c1fd9e347895c507.svg",
+      "width_pt": 27.0,
+      "height_pt": 11.0
+    },
+    {
+      "tex": "c",
+      "display": false,
+      "source": "figures/math/5a36794de4c28a29.svg",
+      "width_pt": 6.0,
+      "height_pt": 7.0
+    },
+    {
+      "tex": "t",
+      "display": false,
+      "source": "figures/math/68131b026071c83c.svg",
+      "width_pt": 4.0,
+      "height_pt": 8.0
+    },
+    {
+      "tex": "b_t",
+      "display": false,
+      "source": "figures/math/378147ad95674f29.svg",
+      "width_pt": 10.0,
+      "height_pt": 10.0
+    },
+    {
+      "tex": "L=L_{\\mathrm{Structure}}+\\lambda L_{\\mathrm{sep}}",
+      "display": false,
+      "source": "figures/math/6b64dc53ccd4b3c0.svg",
+      "width_pt": 93.0,
+      "height_pt": 12.0
+    },
+    {
+      "tex": "r",
+      "display": false,
+      "source": "figures/math/d841443ff6413555.svg",
+      "width_pt": 5.0,
+      "height_pt": 6.0
+    },
+    {
+      "tex": "H_y",
+      "display": false,
+      "source": "figures/math/e87620d77de7aa17.svg",
+      "width_pt": 12.0,
+      "height_pt": 12.0
+    },
+    {
+      "tex": "b_y",
+      "display": false,
+      "source": "figures/math/d7b4ff062545d485.svg",
+      "width_pt": 11.0,
+      "height_pt": 12.0
+    },
+    {
+      "tex": "L_B",
+      "display": false,
+      "source": "figures/math/fb32c1be61a661e6.svg",
+      "width_pt": 11.0,
+      "height_pt": 10.0
+    },
+    {
+      "tex": "L_A",
+      "display": false,
+      "source": "figures/math/99a0abdeac96ce35.svg",
+      "width_pt": 11.0,
+      "height_pt": 10.0
+    },
+    {
+      "tex": "\\tau_{yk}^{B}",
+      "display": false,
+      "source": "figures/math/19ea40a3eefa26fe.svg",
+      "width_pt": 15.0,
+      "height_pt": 14.0
+    },
+    {
+      "tex": "[\\tau-D^2]_+",
+      "display": false,
+      "source": "figures/math/c2b6bf09234615c9.svg",
+      "width_pt": 49.0,
+      "height_pt": 12.0
+    },
+    {
+      "tex": "[1-D^2/\\tau]_+",
+      "display": false,
+      "source": "figures/math/ac052abf668e646e.svg",
+      "width_pt": 58.0,
+      "height_pt": 12.0
+    },
+    {
+      "tex": "\\psi_R(z)=\\operatorname{ReLU}(zR)",
+      "display": false,
+      "source": "figures/math/cd657a7d356dcdda.svg",
+      "width_pt": 84.0,
+      "height_pt": 11.0
+    },
+    {
+      "tex": "R_{uv}\\sim\\mathcal{N}(0,1/768)",
+      "display": false,
+      "source": "figures/math/22f8d088f93cc7f6.svg",
+      "width_pt": 85.0,
+      "height_pt": 10.0
+    },
+    {
+      "tex": "|\\Delta\\mathrm{Inc}|<0.08",
+      "display": false,
+      "source": "figures/math/114cbdacb0822f56.svg",
+      "width_pt": 63.0,
+      "height_pt": 11.0
+    },
+    {
+      "tex": "s_c=w_c^\\top\\hat z+b_c",
+      "display": false,
+      "source": "figures/math/04336f7298ad0ce5.svg",
+      "width_pt": 68.0,
+      "height_pt": 13.0
+    },
+    {
+      "tex": "s_c=20\\hat w_c^\\top\\hat z",
+      "display": false,
+      "source": "figures/math/33d79e3e0c669909.svg",
+      "width_pt": 58.0,
+      "height_pt": 13.0
+    },
+    {
+      "tex": "\\bar q_c",
+      "display": false,
+      "source": "figures/math/b8e10a7a79a62de2.svg",
+      "width_pt": 11.0,
+      "height_pt": 11.0
+    },
+    {
+      "tex": "s_c=-\\Vert\\hat z-\\bar q_c\\Vert_2^2",
+      "display": false,
+      "source": "figures/math/c0880caff2173d6e.svg",
+      "width_pt": 77.0,
+      "height_pt": 13.0
+    },
+    {
+      "tex": "C_c",
+      "display": false,
+      "source": "figures/math/bb540ac95be95c21.svg",
+      "width_pt": 12.0,
+      "height_pt": 10.0
+    },
+    {
+      "tex": "s_c=-(\\hat z-\\hat\\mu_c)^\\top C_c^\\dagger(\\hat z-\\hat\\mu_c)",
+      "display": false,
+      "source": "figures/math/1b70d469b90ce908.svg",
+      "width_pt": 130.0,
+      "height_pt": 13.0
+    },
+    {
+      "tex": "q",
+      "display": false,
+      "source": "figures/math/fbd2a86f7948bddf.svg",
+      "width_pt": 7.0,
+      "height_pt": 9.0
+    },
+    {
+      "tex": "z",
+      "display": false,
+      "source": "figures/math/e355d89688b9a4f8.svg",
+      "width_pt": 6.0,
+      "height_pt": 6.0
+    },
+    {
+      "tex": "e",
+      "display": false,
+      "source": "figures/math/4e163a16e4895dac.svg",
+      "width_pt": 7.0,
+      "height_pt": 7.0
+    },
+    {
+      "tex": "10^{-4}",
+      "display": false,
+      "source": "figures/math/0dc187d42f527967.svg",
+      "width_pt": 24.0,
+      "height_pt": 10.0
+    },
+    {
+      "tex": "10^{-3}",
+      "display": false,
+      "source": "figures/math/8bc853fc49257893.svg",
+      "width_pt": 24.0,
+      "height_pt": 11.0
+    },
+    {
+      "tex": "c_t(x)=\\mathbf{1}[\\operatorname{argmax}_{k\\in C_{\\leq t}}s_k^t(x)=y]",
+      "display": false,
+      "source": "figures/math/e8813a0ba214e05e.svg",
+      "width_pt": 152.0,
+      "height_pt": 12.0
+    },
+    {
+      "tex": "C_{\\leq b}",
+      "display": false,
+      "source": "figures/math/648c42cc2ae823ef.svg",
+      "width_pt": 21.0,
+      "height_pt": 10.0
+    },
+    {
+      "tex": "G_b",
+      "display": false,
+      "source": "figures/math/c2d9335100bdaaf0.svg",
+      "width_pt": 13.0,
+      "height_pt": 10.0
+    },
+    {
+      "tex": "G(y)",
+      "display": false,
+      "source": "figures/math/f5fb03b49398a712.svg",
+      "width_pt": 22.0,
+      "height_pt": 11.0
+    },
+    {
+      "tex": "s",
+      "display": false,
+      "source": "figures/math/9516e43133b7aa67.svg",
+      "width_pt": 6.0,
+      "height_pt": 7.0
+    },
+    {
+      "tex": "s^0",
+      "display": false,
+      "source": "figures/math/68d121d938b8d4ad.svg",
+      "width_pt": 11.0,
+      "height_pt": 11.0
+    },
+    {
+      "tex": "d(x)",
+      "display": false,
+      "source": "figures/math/3f044095ac072c55.svg",
+      "width_pt": 21.0,
+      "height_pt": 10.0
+    },
+    {
+      "tex": "r=b",
+      "display": false,
+      "source": "figures/math/e33aaf525a8b6618.svg",
+      "width_pt": 23.0,
+      "height_pt": 9.0
+    },
+    {
+      "tex": "G_b",
+      "display": false,
+      "source": "figures/math/c2d9335100bdaaf0.svg",
+      "width_pt": 13.0,
+      "height_pt": 10.0
+    },
+    {
+      "tex": "B_c^b",
+      "display": false,
+      "source": "figures/math/6b2d4b2c11975589.svg",
+      "width_pt": 13.0,
+      "height_pt": 13.0
+    },
+    {
+      "tex": "n=\\min(64,\\mathrm{minimum\\ class\\ train\\ count})",
+      "display": false,
+      "source": "figures/math/3dff50027104f698.svg",
+      "width_pt": 197.0,
+      "height_pt": 10.0
+    },
+    {
+      "tex": "k=\\min(5,n-1)",
+      "display": false,
+      "source": "figures/math/d2aabc53cf4e37e4.svg",
+      "width_pt": 82.0,
+      "height_pt": 10.0
+    },
+    {
+      "tex": "\\mu_r/\\mu_g",
+      "display": false,
+      "source": "figures/math/45dde36aa8f24f4b.svg",
+      "width_pt": 24.0,
+      "height_pt": 12.0
+    },
+    {
+      "tex": "\\Sigma_r/\\Sigma_g",
+      "display": false,
+      "source": "figures/math/ea75146b40f3e56a.svg",
+      "width_pt": 25.0,
+      "height_pt": 12.0
+    },
+    {
+      "tex": "G_9",
+      "display": false,
+      "source": "figures/math/1f49ea4012b6d066.svg",
+      "width_pt": 13.0,
+      "height_pt": 10.0
+    },
+    {
+      "tex": "C_{\\leq t}",
+      "display": false,
+      "source": "figures/math/e552228a65a5530a.svg",
+      "width_pt": 19.0,
+      "height_pt": 10.0
+    },
+    {
+      "tex": "N_{U\\to V}",
+      "display": false,
+      "source": "figures/math/602bbb93c51f6033.svg",
+      "width_pt": 27.0,
+      "height_pt": 10.0
+    }
+  ]
+}
