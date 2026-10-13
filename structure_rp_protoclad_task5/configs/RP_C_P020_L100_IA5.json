@@ -1,0 +1,22 @@
+{
+  "extends": "../../structure_selective_similarity_sweep/configs/protocols/IA5.json",
+  "prefix": "rp_protoclad_task5",
+  "experiment_id": "RP_C_P020_L100",
+  "method": "C",
+  "method_name": "RP-ProtoCLAD",
+  "parent_run_id": "C_P020_L100",
+  "selective_method": "rp_proto_clad",
+  "similarity_relation_mode": "rp_proto_clad",
+  "top_p": 0.2,
+  "alpha": null,
+  "lambda_clad": 1.0,
+  "sep_lambda": 1.0,
+  "rp_enabled": true,
+  "rp_dim": 2048,
+  "rp_seed": 1993,
+  "rp_input_dim": 768,
+  "rp_activation": "relu",
+  "rp_bias": false,
+  "rp_trainable": false
+}
+
