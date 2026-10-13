@@ -1,0 +1,95 @@
+{
+  "protocol": "CAR10",
+  "N_new_test": 779,
+  "gaussian_correct_ceos_wrong_count": 45,
+  "gaussian_correct_ceos_wrong_rate": 0.057766367137355584,
+  "gaussian_wrong_ceos_correct_count": 0,
+  "gaussian_wrong_ceos_correct_rate": 0.0,
+  "type_counts": {
+    "loss": {
+      "type1_old_competition": 45,
+      "type2_new_internal": 0,
+      "type3_both": 0,
+      "tie_or_ambiguous": 0
+    },
+    "recovery": {
+      "type1_old_competition": 0,
+      "type2_new_internal": 0,
+      "type3_both": 0,
+      "tie_or_ambiguous": 0
+    }
+  },
+  "type_rates_within_transition": {
+    "loss": {
+      "type1_old_competition": 1.0,
+      "type2_new_internal": 0.0,
+      "type3_both": 0.0,
+      "tie_or_ambiguous": 0.0
+    },
+    "recovery": {
+      "type1_old_competition": 0.0,
+      "type2_new_internal": 0.0,
+      "type3_both": 0.0,
+      "tie_or_ambiguous": 0.0
+    }
+  },
+  "delta_g": {
+    "all_new": {
+      "mean": -0.294914573431015,
+      "median": -0.2795250415802002,
+      "q10": -0.4869973182678223,
+      "q25": -0.3860647678375244,
+      "q75": -0.19624590873718262,
+      "q90": -0.12119007110595702
+    },
+    "loss": {
+      "mean": -0.3536466062068939,
+      "median": -0.3486948013305664,
+      "q10": -0.538901424407959,
+      "q25": -0.4669342041015625,
+      "q75": -0.25639867782592773,
+      "q90": -0.20410079956054686
+    },
+    "recovery": {
+      "mean": null,
+      "median": null,
+      "q10": null,
+      "q25": null,
+      "q75": null,
+      "q90": null
+    }
+  },
+  "delta_w": {
+    "all_new": {
+      "mean": -0.06485196202993393,
+      "median": -0.05633687973022461,
+      "q10": -0.27763957977294923,
+      "q25": -0.17211699485778809,
+      "q75": 0.0527576208114624,
+      "q90": 0.1341031551361084
+    },
+    "loss": {
+      "mean": -0.08053352683782578,
+      "median": -0.06984210014343262,
+      "q10": -0.29378223419189453,
+      "q25": -0.1831378936767578,
+      "q75": 0.027028560638427734,
+      "q90": 0.14498348236083988
+    },
+    "recovery": {
+      "mean": null,
+      "median": null,
+      "q10": null,
+      "q25": null,
+      "q75": null,
+      "q90": null
+    }
+  },
+  "c1_recovery": {
+    "optimizer_steps": 980,
+    "train_loss": 0.6595419049263,
+    "exposure_per_class": 256,
+    "epochs": 5
+  },
+  "max_prior_metric_difference": 0.0
+}
