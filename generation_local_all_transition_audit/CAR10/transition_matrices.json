@@ -1,0 +1,466 @@
+[
+  {
+    "protocol": "CAR10",
+    "time": "T9",
+    "cohort": "T9_all",
+    "comparison": "G-S",
+    "state_order": [
+      "W",
+      "C",
+      "K"
+    ],
+    "rows_reference_columns_G": [
+      [
+        43,
+        2,
+        0
+      ],
+      [
+        4,
+        80,
+        8
+      ],
+      [
+        3,
+        9,
+        609
+      ]
+    ],
+    "N": 758
+  },
+  {
+    "protocol": "CAR10",
+    "time": "T9",
+    "cohort": "T9_A_within",
+    "comparison": "G-S",
+    "state_order": [
+      "W",
+      "C",
+      "K"
+    ],
+    "rows_reference_columns_G": [
+      [
+        38,
+        1,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "N": 42
+  },
+  {
+    "protocol": "CAR10",
+    "time": "T9",
+    "cohort": "T9_A_cross",
+    "comparison": "G-S",
+    "state_order": [
+      "W",
+      "C",
+      "K"
+    ],
+    "rows_reference_columns_G": [
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        2,
+        70,
+        0
+      ],
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    "N": 77
+  },
+  {
+    "protocol": "CAR10",
+    "time": "T9",
+    "cohort": "T9_non_A",
+    "comparison": "G-S",
+    "state_order": [
+      "W",
+      "C",
+      "K"
+    ],
+    "rows_reference_columns_G": [
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        9,
+        8
+      ],
+      [
+        3,
+        8,
+        607
+      ]
+    ],
+    "N": 639
+  },
+  {
+    "protocol": "CAR10",
+    "time": "T10",
+    "cohort": "T9_all",
+    "comparison": "G-S",
+    "state_order": [
+      "W",
+      "C",
+      "K"
+    ],
+    "rows_reference_columns_G": [
+      [
+        42,
+        1,
+        0
+      ],
+      [
+        4,
+        89,
+        8
+      ],
+      [
+        5,
+        9,
+        600
+      ]
+    ],
+    "N": 758
+  },
+  {
+    "protocol": "CAR10",
+    "time": "T10",
+    "cohort": "T9_A_within",
+    "comparison": "G-S",
+    "state_order": [
+      "W",
+      "C",
+      "K"
+    ],
+    "rows_reference_columns_G": [
+      [
+        38,
+        1,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "N": 42
+  },
+  {
+    "protocol": "CAR10",
+    "time": "T10",
+    "cohort": "T9_A_cross",
+    "comparison": "G-S",
+    "state_order": [
+      "W",
+      "C",
+      "K"
+    ],
+    "rows_reference_columns_G": [
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        1,
+        66,
+        1
+      ],
+      [
+        0,
+        2,
+        4
+      ]
+    ],
+    "N": 77
+  },
+  {
+    "protocol": "CAR10",
+    "time": "T10",
+    "cohort": "T9_non_A",
+    "comparison": "G-S",
+    "state_order": [
+      "W",
+      "C",
+      "K"
+    ],
+    "rows_reference_columns_G": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        22,
+        7
+      ],
+      [
+        5,
+        7,
+        596
+      ]
+    ],
+    "N": 639
+  },
+  {
+    "protocol": "CAR10",
+    "time": "T9",
+    "cohort": "T9_all",
+    "comparison": "G-R",
+    "state_order": [
+      "W",
+      "C",
+      "K"
+    ],
+    "rows_reference_columns_G": [
+      [
+        41,
+        2,
+        0
+      ],
+      [
+        4,
+        81,
+        11
+      ],
+      [
+        5,
+        8,
+        606
+      ]
+    ],
+    "N": 758
+  },
+  {
+    "protocol": "CAR10",
+    "time": "T9",
+    "cohort": "T9_A_within",
+    "comparison": "G-R",
+    "state_order": [
+      "W",
+      "C",
+      "K"
+    ],
+    "rows_reference_columns_G": [
+      [
+        38,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "N": 42
+  },
+  {
+    "protocol": "CAR10",
+    "time": "T9",
+    "cohort": "T9_A_cross",
+    "comparison": "G-R",
+    "state_order": [
+      "W",
+      "C",
+      "K"
+    ],
+    "rows_reference_columns_G": [
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        2,
+        68,
+        0
+      ],
+      [
+        0,
+        3,
+        2
+      ]
+    ],
+    "N": 77
+  },
+  {
+    "protocol": "CAR10",
+    "time": "T9",
+    "cohort": "T9_non_A",
+    "comparison": "G-R",
+    "state_order": [
+      "W",
+      "C",
+      "K"
+    ],
+    "rows_reference_columns_G": [
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        1,
+        12,
+        11
+      ],
+      [
+        4,
+        5,
+        604
+      ]
+    ],
+    "N": 639
+  },
+  {
+    "protocol": "CAR10",
+    "time": "T10",
+    "cohort": "T9_all",
+    "comparison": "G-R",
+    "state_order": [
+      "W",
+      "C",
+      "K"
+    ],
+    "rows_reference_columns_G": [
+      [
+        41,
+        0,
+        0
+      ],
+      [
+        3,
+        92,
+        8
+      ],
+      [
+        7,
+        7,
+        600
+      ]
+    ],
+    "N": 758
+  },
+  {
+    "protocol": "CAR10",
+    "time": "T10",
+    "cohort": "T9_A_within",
+    "comparison": "G-R",
+    "state_order": [
+      "W",
+      "C",
+      "K"
+    ],
+    "rows_reference_columns_G": [
+      [
+        37,
+        0,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "N": 42
+  },
+  {
+    "protocol": "CAR10",
+    "time": "T10",
+    "cohort": "T9_A_cross",
+    "comparison": "G-R",
+    "state_order": [
+      "W",
+      "C",
+      "K"
+    ],
+    "rows_reference_columns_G": [
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        1,
+        68,
+        1
+      ],
+      [
+        0,
+        0,
+        4
+      ]
+    ],
+    "N": 77
+  },
+  {
+    "protocol": "CAR10",
+    "time": "T10",
+    "cohort": "T9_non_A",
+    "comparison": "G-R",
+    "state_order": [
+      "W",
+      "C",
+      "K"
+    ],
+    "rows_reference_columns_G": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        22,
+        7
+      ],
+      [
+        6,
+        7,
+        596
+      ]
+    ],
+    "N": 639
+  }
+]
