@@ -1,0 +1,10 @@
+__pycache__/
+.pytest_cache/
+outputs/
+logs/*.log
+logs/*.pid
+logs/stage1/
+logs/stage2/
+reports/
+stage2_selection.json
+stage2_selection.md
