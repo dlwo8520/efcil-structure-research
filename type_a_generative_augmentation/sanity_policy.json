@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "fixed_before_downstream_training": true,
+  "feature_model": "frozen CLIP vision/projection from the pinned SD1.5 safety_checker (not its classification decisions)",
+  "feature_model_precision": "float32",
+  "expected_generated_size": [512, 512],
+  "parent_alignment": "same ImageOps.pad to 512x512 used in generation",
+  "center_crop_fraction": 0.7,
+  "near_duplicate": {"block_ssim_min": 0.995, "mean_absolute_error_max": 0.01, "dhash_distance_max": 2},
+  "collapsed_image": {"channel_std_max": 0.005, "edge_energy_max": 0.002},
+  "gross_semantic_deviation": {"global_cosine_below": 0.25, "center_cosine_below": 0.25},
+  "extreme_structure_loss": {"center_cosine_below": 0.35, "center_edge_ratio_below": 0.1, "center_block_ssim_below": 0.2, "parent_center_edge_min": 0.02},
+  "combinations": "AND within each rule; OR between exclusion rules; fixed absolute cutoffs, no quantile-based selection",
+  "additional_exclusions": ["generation_failed_or_safety_blocked", "missing_or_undecodable_image", "unexpected_generated_dimensions", "generated_artifact_hash_mismatch"],
+  "no_classifier_confidence_filter": true,
+  "no_test_data_or_class_label_in_similarity": true,
+  "no_manual_per_image_exclusions": true,
+  "all_remaining_images_used": true,
+  "empty_current_class": "HOLD, never silently drop class or impute generated images",
+  "limitation": "Gross deviation/structure-loss are conservative proxies; missed object deletion/distortion and fine-grained identity changes remain possible"
+}

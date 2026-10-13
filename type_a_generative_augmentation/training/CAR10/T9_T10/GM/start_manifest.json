@@ -1,0 +1,10 @@
+{
+  "source": "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/training/CAR10/T9_T10/GM/task_checkpoints/task_09.pt",
+  "source_sha256": "2c36311105bb55fcf2e78ca33a15d737fbc08a6f8d29e305b7d2fea6e0f05ce1",
+  "initial_network_sha256": "19e226c4e5cd61f2e4d9e6c7a49f974e13a82c16bbaeed7de9afecfd9af92fad",
+  "accepted_parent_manifest_sha256": "4e370b087f5ad8128501d472cdb45c1c64c2d661382841e45e0ddafc1f6229fc",
+  "protocol": "CAR10",
+  "location": "T9_T10",
+  "branch": "GM",
+  "original_optimizer_state_at_task_boundary": "task_end has no optimizer; original recipe creates new task optimizer"
+}

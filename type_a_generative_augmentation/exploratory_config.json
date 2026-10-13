@@ -1,0 +1,10 @@
+{
+  "mode": "exploratory_automatic_sanity",
+  "human_review_required": false,
+  "label_fidelity_verified": false,
+  "policy_version": 1,
+  "selection": "All generated images passing fixed automatic rules; ignore all individual human review choices",
+  "contact_sheets": "artifact_only",
+  "future_formal_experiment": "Human QC or stricter label-preservation validation required if downstream results are promising",
+  "fine_grained_limitation": "Automatic checks do not guarantee CAR model/year identity, and cannot establish complete object retention"
+}

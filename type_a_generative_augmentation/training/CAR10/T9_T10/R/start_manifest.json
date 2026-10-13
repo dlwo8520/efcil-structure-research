@@ -1,0 +1,10 @@
+{
+  "source": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_08.pt",
+  "source_sha256": "fe146360af4b8c7fc4dc14cd58b3a0f32f8d0398db0053ace1033746531cfcd9",
+  "initial_network_sha256": "4802424d8d3be9f7a6d5919b1f155a853beb9cb4b167a71b35d18e9dabb01d44",
+  "accepted_parent_manifest_sha256": "4e370b087f5ad8128501d472cdb45c1c64c2d661382841e45e0ddafc1f6229fc",
+  "protocol": "CAR10",
+  "location": "T9_T10",
+  "branch": "R",
+  "original_optimizer_state_at_task_boundary": "task_end has no optimizer; original recipe creates new task optimizer"
+}
