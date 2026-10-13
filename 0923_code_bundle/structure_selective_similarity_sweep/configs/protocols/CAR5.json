@@ -1,0 +1,12 @@
+{
+  "extends": "../common.json",
+  "protocol_id": "CAR5",
+  "dataset": "CAR5",
+  "source_dataset": "car196",
+  "class_order_seed": 1993,
+  "expected_num_classes": 196,
+  "expected_tasks": 5,
+  "init_cls": 40,
+  "increment": 39,
+  "task_partition": [40, 39, 39, 39, 39]
+}
