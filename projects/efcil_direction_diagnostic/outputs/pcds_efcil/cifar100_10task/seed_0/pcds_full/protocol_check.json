@@ -1,0 +1,17 @@
+{
+  "dataset": "CIFAR-100",
+  "tasks": 10,
+  "classes_per_task": 10,
+  "class_order_matches_keep_lora": true,
+  "single_head_all_seen_classes": true,
+  "raw_replay": false,
+  "old_train_data_access": false,
+  "synthetic_features_train_classifier_only": true,
+  "gpu": {
+    "CUDA_VISIBLE_DEVICES": "1",
+    "torch_cuda_device_count": 1,
+    "torch_cuda_current_device": 0,
+    "torch_cuda_device_name": "NVIDIA RTX A6000",
+    "torch_cuda_device_uuid": "afb08c1c-8a66-104a-01d1-046df70f0552"
+  }
+}
