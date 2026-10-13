@@ -1,0 +1,73 @@
+{
+  "status": "complete",
+  "protocol": "CAR5",
+  "seed": 1993,
+  "transition": "T4_to_T5",
+  "fixed_readout": "T5 Structure cosine head on both T4/T5 frozen features",
+  "t4_checkpoint": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR5/Structure_AUDIT/seed_1993/task_checkpoints/task_04.pt",
+  "t5_checkpoint": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR5/Structure_AUDIT/seed_1993/task_checkpoints/task_05.pt",
+  "t4_feature_cache": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/representation_relation_diagnostic/CAR5_T5/.cache/t4_full_t5_class_features.npz",
+  "t5_feature_cache": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/classifier_bottleneck_diagnostic/CAR5/seed_1993/.cache/task_05_features.npz",
+  "checkpoint_fingerprints_before": {
+    "t4": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR5/Structure_AUDIT/seed_1993/task_checkpoints/task_04.pt",
+      "size": 1208211062,
+      "edge_sha256": "a5b6bf87e1486244cee0595fc5bccb7f7a7f2b0ee34bf003f3fd7306cb474d40"
+    },
+    "t5": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR5/Structure_AUDIT/seed_1993/task_checkpoints/task_05.pt",
+      "size": 1393004545,
+      "edge_sha256": "c0eaebc19b16b6d80f16b5d2fa23e5a4b5543cb6c79d279a43ca8ad0ed8fadfe"
+    }
+  },
+  "checkpoint_fingerprints_after": {
+    "t4": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR5/Structure_AUDIT/seed_1993/task_checkpoints/task_04.pt",
+      "size": 1208211062,
+      "edge_sha256": "a5b6bf87e1486244cee0595fc5bccb7f7a7f2b0ee34bf003f3fd7306cb474d40"
+    },
+    "t5": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR5/Structure_AUDIT/seed_1993/task_checkpoints/task_05.pt",
+      "size": 1393004545,
+      "edge_sha256": "c0eaebc19b16b6d80f16b5d2fa23e5a4b5543cb6c79d279a43ca8ad0ed8fadfe"
+    }
+  },
+  "checkpoints_unchanged": true,
+  "sample_ids_unique": true,
+  "t4_t5_label_mapping_identical": true,
+  "common_class_count": 196,
+  "train_sample_count": 8144,
+  "test_sample_count": 8041,
+  "pair_count": 38220,
+  "newly_degraded_pair_count": 27,
+  "prediction_transition_counts": {
+    "correct_to_correct": 6456,
+    "wrong_B_to_wrong_B": 1397,
+    "correct_to_wrong_B": 47,
+    "wrong_B_to_correct": 73,
+    "wrong_C_to_wrong_B": 68
+  },
+  "ranking_ks": [
+    10,
+    20,
+    50,
+    100
+  ],
+  "random_trials": 1000,
+  "boundary_equivalence": {
+    "status": "PASS",
+    "definition": "a_ij = normalize(w_i) - normalize(w_j)",
+    "checked_sample_pair_count": 1567995,
+    "away_from_zero_count": 1567995,
+    "pairwise_sign_mismatch_count": 0,
+    "zero_tolerance": 1e-06,
+    "max_scaled_margin_identity_difference": 0.0,
+    "protocol": "CAR5",
+    "feature_space": "raw T5 Structure sfeatures with positive norm normalization",
+    "classifier": "frozen T5 Structure cosine head"
+  },
+  "diagnostic_only": true,
+  "model_parameters_updated": false,
+  "test_used_for_method_training": false,
+  "elapsed_seconds": 40.56736660003662
+}

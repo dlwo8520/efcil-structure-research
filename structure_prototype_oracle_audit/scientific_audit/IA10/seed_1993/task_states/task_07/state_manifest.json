@@ -1,0 +1,17 @@
+{
+  "protocol": "IA10",
+  "task": 7,
+  "storage": "read-only symlinks; no checkpoint duplication",
+  "pre_ca_representation": "pre-CA = post_ca_base_checkpoint with network fc replaced by classifier_and_rng_delta.classifier_state_dict; the delta also stores RNG and exact CA config",
+  "post_ca_checkpoint": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/task_07.pt",
+  "pre_ca_classifier_delta": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/pre_ca_classifier/task_07.pt",
+  "statistics_in_base_checkpoint": [
+    "class_means",
+    "class_covs",
+    "task_source_means",
+    "task_source_covs",
+    "now_task_mean",
+    "now_task_covs",
+    "config"
+  ]
+}

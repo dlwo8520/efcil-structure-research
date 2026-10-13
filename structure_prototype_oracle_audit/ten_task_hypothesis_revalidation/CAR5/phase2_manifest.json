@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "protocol": "CAR5",
+  "gamma_transition_tasks": [],
+  "gamma_policy": "final plus phase-1 transition with largest positive degradation mass",
+  "generalization_task": 5,
+  "knn_k": 5,
+  "validation_selection": "deterministic class-stratified training-only split",
+  "test_used_for_selection": false,
+  "checkpoint_unchanged": true,
+  "elapsed_seconds": 3.746851921081543
+}

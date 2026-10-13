@@ -1,0 +1,47 @@
+{
+  "format_version": 1,
+  "status": "complete",
+  "protocol": "CAR5",
+  "dataset": "car196",
+  "expected_tasks": 5,
+  "audited_tasks": [
+    5
+  ],
+  "complete_temporal_coverage": false,
+  "data_root": "${RESEARCH_WORKSPACE}/cds-main/data/cars196",
+  "oracle_splits": [
+    "train",
+    "test"
+  ],
+  "primary_oracle": "oracle_train_statistics",
+  "covariance_mode": "diagonal",
+  "checkpoint_fingerprints_before_after_equal": true,
+  "leakage_guards": {
+    "model_eval": true,
+    "torch_no_grad": true,
+    "parameters_require_grad_false": true,
+    "optimizer_created": false,
+    "backward_called": false,
+    "audit_values_returned_to_training": false,
+    "checkpoint_read_only_fingerprint_check": true
+  },
+  "checkpoint_fingerprints": [
+    {
+      "path": "${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs/CAR5/Structure/seed_1993/checkpoint_latest.pt",
+      "size": 1393005249,
+      "mtime_ns": 1789979636215630978,
+      "edge_sha256": "cda421219224b63c6806dc20c75490087c15b1650ac4b8849d7225bc0e2663b7"
+    }
+  ],
+  "row_counts": {
+    "prototype_oracle_audit.csv": 4,
+    "apr_oracle_drift_audit.csv": 2,
+    "covariance_oracle_audit.csv": 4,
+    "mahalanobis_oracle_audit.csv": 4,
+    "prototype_classifier_audit.csv": 2,
+    "class_forgetting_correlation.csv": 30,
+    "class_accuracy_history.csv": 2,
+    "mahalanobis_nearest_old_ranking.csv": 0
+  },
+  "elapsed_seconds": 6.161790609359741
+}

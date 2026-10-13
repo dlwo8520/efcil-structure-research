@@ -1,0 +1,17 @@
+{
+  "protocol": "CAR5",
+  "task": 1,
+  "storage": "read-only symlinks; no checkpoint duplication",
+  "pre_ca_representation": "task has no CA; pre-CA and post-CA classifier are identical",
+  "post_ca_checkpoint": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR5/Structure_AUDIT/seed_1993/task_checkpoints/task_01.pt",
+  "pre_ca_classifier_delta": null,
+  "statistics_in_base_checkpoint": [
+    "class_means",
+    "class_covs",
+    "task_source_means",
+    "task_source_covs",
+    "now_task_mean",
+    "now_task_covs",
+    "config"
+  ]
+}

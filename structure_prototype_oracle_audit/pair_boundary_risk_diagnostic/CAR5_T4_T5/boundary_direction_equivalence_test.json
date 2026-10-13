@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "definition": "a_ij = normalize(w_i) - normalize(w_j)",
+  "checked_sample_pair_count": 1567995,
+  "away_from_zero_count": 1567995,
+  "pairwise_sign_mismatch_count": 0,
+  "zero_tolerance": 1e-06,
+  "max_scaled_margin_identity_difference": 0.0,
+  "protocol": "CAR5",
+  "feature_space": "raw T5 Structure sfeatures with positive norm normalization",
+  "classifier": "frozen T5 Structure cosine head"
+}

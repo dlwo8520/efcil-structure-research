@@ -1,0 +1,149 @@
+{
+  "status": "complete",
+  "seed": 1993,
+  "physical_gpu": "4",
+  "process_device": "cuda:0",
+  "protocols": [
+    "IA10",
+    "CAR10"
+  ],
+  "gaussian_draws": 3,
+  "support_k": 5,
+  "bank_cap": null,
+  "probe_lrs": [
+    0.01,
+    0.03,
+    0.1
+  ],
+  "probe_epochs": 30,
+  "started_unix": 1790835418.5988593,
+  "completed_protocols": [
+    "IA10",
+    "CAR10"
+  ],
+  "protocol_results": {
+    "IA10": {
+      "status": "complete",
+      "protocol": "IA10",
+      "task": 10,
+      "checkpoint_fingerprint_before": {
+        "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/task_10.pt",
+        "size": 1367010168,
+        "edge_sha256": "f12303d30fca90bb1cce99636a6e3451286c2dbf7098457c8caba8f3c3d3281a"
+      },
+      "checkpoint_fingerprint_after": {
+        "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/task_10.pt",
+        "size": 1367010168,
+        "edge_sha256": "f12303d30fca90bb1cce99636a6e3451286c2dbf7098457c8caba8f3c3d3281a"
+      },
+      "checkpoint_unchanged": true,
+      "final_feature_cache": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/ten_task_hypothesis_revalidation/IA10/.cache/model_10_on_task_10.npz",
+      "pretrained_feature_cache": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/coverage_generalization_diagnostic/IA10/.cache/pretrained_features.npz",
+      "coverage": {
+        "status": "complete",
+        "matched_bank_size_per_class": true,
+        "actual_replacement_sampling": false,
+        "gaussian_draws": 3,
+        "oracle_seed_base": 102094,
+        "stored_seed_base": 102195,
+        "old_new_reported_separately": true,
+        "query_count": 1519,
+        "support_k": 5,
+        "normalization": "raw Gaussian sampling followed by feature-wise L2 normalization",
+        "test_used_for_selection": false
+      },
+      "representation": {
+        "status": "complete",
+        "representations": [
+          "PRETRAINED",
+          "STRUCTURE_FINAL"
+        ],
+        "same_samples": true,
+        "same_train_validation_split": true,
+        "same_probe_type": true,
+        "same_lr_grid": [
+          0.01,
+          0.03,
+          0.1
+        ],
+        "same_training_budget": 30,
+        "same_epoch_permutations": true,
+        "validation_classes_without_holdout": [
+          48,
+          88,
+          91,
+          94,
+          115,
+          117,
+          159,
+          173
+        ],
+        "test_used_for_selection": false,
+        "pretrained_initialization": "ViT-B/16 ImageNet-21K with zero-output fresh adapters"
+      },
+      "elapsed_seconds": 35.493727684020996
+    },
+    "CAR10": {
+      "status": "complete",
+      "protocol": "CAR10",
+      "task": 10,
+      "checkpoint_fingerprint_before": {
+        "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_10.pt",
+        "size": 1345643768,
+        "edge_sha256": "f9abc1713f56b205d9d6d08a714e904ffe02b77298b025848b25bf9f275d2bb3"
+      },
+      "checkpoint_fingerprint_after": {
+        "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_10.pt",
+        "size": 1345643768,
+        "edge_sha256": "f9abc1713f56b205d9d6d08a714e904ffe02b77298b025848b25bf9f275d2bb3"
+      },
+      "checkpoint_unchanged": true,
+      "final_feature_cache": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/ten_task_hypothesis_revalidation/CAR10/.cache/model_10_on_task_10.npz",
+      "pretrained_feature_cache": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/coverage_generalization_diagnostic/CAR10/.cache/pretrained_features.npz",
+      "coverage": {
+        "status": "complete",
+        "matched_bank_size_per_class": true,
+        "actual_replacement_sampling": false,
+        "gaussian_draws": 3,
+        "oracle_seed_base": 102094,
+        "stored_seed_base": 102195,
+        "old_new_reported_separately": true,
+        "query_count": 8041,
+        "support_k": 5,
+        "normalization": "raw Gaussian sampling followed by feature-wise L2 normalization",
+        "test_used_for_selection": false
+      },
+      "representation": {
+        "status": "complete",
+        "representations": [
+          "PRETRAINED",
+          "STRUCTURE_FINAL"
+        ],
+        "same_samples": true,
+        "same_train_validation_split": true,
+        "same_probe_type": true,
+        "same_lr_grid": [
+          0.01,
+          0.03,
+          0.1
+        ],
+        "same_training_budget": 30,
+        "same_epoch_permutations": true,
+        "validation_classes_without_holdout": [],
+        "test_used_for_selection": false,
+        "pretrained_initialization": "ViT-B/16 ImageNet-21K with zero-output fresh adapters"
+      },
+      "elapsed_seconds": 77.37198090553284
+    }
+  },
+  "reports": {
+    "final": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/coverage_generalization_diagnostic/coverage_generalization_final_report.md",
+    "summary": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/coverage_generalization_diagnostic/cross_protocol/summary_table.csv",
+    "decisions": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/coverage_generalization_diagnostic/cross_protocol/decision_table.csv"
+  },
+  "candidate_count_stress_test": "not run (nice-to-have; must-have diagnostics prioritized)",
+  "new_method_implemented": false,
+  "structure_training_rerun": false,
+  "test_used_for_hyperparameter_selection": false,
+  "elapsed_seconds": 122.76858949661255
+}

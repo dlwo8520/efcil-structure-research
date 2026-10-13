@@ -1,0 +1,115 @@
+{
+  "status": "complete",
+  "protocol": "CAR10",
+  "tasks": 10,
+  "transitions": 9,
+  "class_order_recorded": true,
+  "same_sample_linkage": "canonical original sample IDs",
+  "fixed_common_readout": true,
+  "checkpoint_fingerprints_before": {
+    "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_01.pt": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_01.pt",
+      "size": 419372340,
+      "edge_sha256": "b42884abc0959a9d2e8a1a292d7581d2a0da0b1a7508e86b45318e7e002bf8e4"
+    },
+    "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_02.pt": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_02.pt",
+      "size": 608845216,
+      "edge_sha256": "883facbeab9ab6c9c1400e76f20e0ec577a9359388f509645a01b46f29599248"
+    },
+    "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_03.pt": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_03.pt",
+      "size": 703609451,
+      "edge_sha256": "9b12203e870d2df2ebbbbd1c4bbe9e62784ef11c471a2b1969f22800c3e83427"
+    },
+    "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_04.pt": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_04.pt",
+      "size": 798376054,
+      "edge_sha256": "551ff64650b28b919a1881680e0d7f1438bc5b894856f6da5de6f810438ec018"
+    },
+    "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_05.pt": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_05.pt",
+      "size": 893141121,
+      "edge_sha256": "48e8ec50be85f62f06be5b3556a5db603c19500ec2376cabeeafb94c4b4b4d48"
+    },
+    "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_06.pt": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_06.pt",
+      "size": 987906572,
+      "edge_sha256": "897c8f7cffbb1d70be0ffbd5160c479ba855825964fa1d49a90fe3cd41c9927a"
+    },
+    "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_07.pt": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_07.pt",
+      "size": 1075566679,
+      "edge_sha256": "7aa1b182c61f044100ed8b2cbaa58670a6d7ff84cc787d76ec02b40cf3ba8766"
+    },
+    "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_08.pt": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_08.pt",
+      "size": 1165592674,
+      "edge_sha256": "ff0a735762e07e6c5ed4bb10719901c4aeb2e4857b6ed36ad46b2f19357b36bd"
+    },
+    "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_09.pt": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_09.pt",
+      "size": 1255617901,
+      "edge_sha256": "129ea46eadee896c8458c91e539e9a96ddecfbfc527579f81b5b45c81a10c817"
+    },
+    "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_10.pt": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_10.pt",
+      "size": 1345643768,
+      "edge_sha256": "f9abc1713f56b205d9d6d08a714e904ffe02b77298b025848b25bf9f275d2bb3"
+    }
+  },
+  "checkpoint_fingerprints_after": {
+    "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_01.pt": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_01.pt",
+      "size": 419372340,
+      "edge_sha256": "b42884abc0959a9d2e8a1a292d7581d2a0da0b1a7508e86b45318e7e002bf8e4"
+    },
+    "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_02.pt": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_02.pt",
+      "size": 608845216,
+      "edge_sha256": "883facbeab9ab6c9c1400e76f20e0ec577a9359388f509645a01b46f29599248"
+    },
+    "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_03.pt": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_03.pt",
+      "size": 703609451,
+      "edge_sha256": "9b12203e870d2df2ebbbbd1c4bbe9e62784ef11c471a2b1969f22800c3e83427"
+    },
+    "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_04.pt": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_04.pt",
+      "size": 798376054,
+      "edge_sha256": "551ff64650b28b919a1881680e0d7f1438bc5b894856f6da5de6f810438ec018"
+    },
+    "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_05.pt": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_05.pt",
+      "size": 893141121,
+      "edge_sha256": "48e8ec50be85f62f06be5b3556a5db603c19500ec2376cabeeafb94c4b4b4d48"
+    },
+    "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_06.pt": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_06.pt",
+      "size": 987906572,
+      "edge_sha256": "897c8f7cffbb1d70be0ffbd5160c479ba855825964fa1d49a90fe3cd41c9927a"
+    },
+    "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_07.pt": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_07.pt",
+      "size": 1075566679,
+      "edge_sha256": "7aa1b182c61f044100ed8b2cbaa58670a6d7ff84cc787d76ec02b40cf3ba8766"
+    },
+    "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_08.pt": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_08.pt",
+      "size": 1165592674,
+      "edge_sha256": "ff0a735762e07e6c5ed4bb10719901c4aeb2e4857b6ed36ad46b2f19357b36bd"
+    },
+    "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_09.pt": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_09.pt",
+      "size": 1255617901,
+      "edge_sha256": "129ea46eadee896c8458c91e539e9a96ddecfbfc527579f81b5b45c81a10c817"
+    },
+    "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_10.pt": {
+      "path": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_10.pt",
+      "size": 1345643768,
+      "edge_sha256": "f9abc1713f56b205d9d6d08a714e904ffe02b77298b025848b25bf9f275d2bb3"
+    }
+  },
+  "checkpoints_unchanged": true,
+  "elapsed_seconds": 620.8279440402985
+}
