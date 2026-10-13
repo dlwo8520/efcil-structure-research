@@ -1,0 +1,7 @@
+protocol,task,split,sample_group,purity_count,purity_mean,purity_median,purity_q10,purity_q25,purity_q75,purity_q90
+IA5,5,validation,all,1116,0.49749103942652334,0.4,0.0,0.0,0.8,1.0
+IA5,5,validation,correct,1010,0.5388118811881188,0.6,0.0,0.2,1.0,1.0
+IA5,5,validation,wrong,106,0.10377358490566038,0.0,0.0,0.0,0.2,0.4
+IA5,5,test,all,1519,0.4671494404213298,0.4,0.0,0.0,0.8,1.0
+IA5,5,test,correct,1009,0.6400396432111001,0.8,0.2,0.4,1.0,1.0
+IA5,5,test,wrong,510,0.1250980392156863,0.0,0.0,0.0,0.2,0.4

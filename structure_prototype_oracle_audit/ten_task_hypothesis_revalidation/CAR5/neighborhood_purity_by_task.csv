@@ -1,0 +1,7 @@
+protocol,task,split,sample_group,purity_count,purity_mean,purity_median,purity_q10,purity_q25,purity_q75,purity_q90
+CAR5,5,validation,all,1546,0.4959896507115136,0.4,0.0,0.2,0.8,1.0
+CAR5,5,validation,correct,1483,0.5131490222521915,0.6,0.0,0.2,0.8,1.0
+CAR5,5,validation,wrong,63,0.09206349206349208,0.0,0.0,0.0,0.2,0.3600000000000009
+CAR5,5,test,all,8041,0.49177962939932846,0.4,0.0,0.2,0.8,1.0
+CAR5,5,test,correct,6529,0.5666105069689079,0.6,0.2,0.4,0.8,1.0
+CAR5,5,test,wrong,1512,0.16865079365079366,0.2,0.0,0.0,0.2,0.4

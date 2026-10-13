@@ -1,0 +1,10 @@
+protocol,previous_task,task,transition,sample_count,correct_to_wrong,wrong_to_correct,wrong_destination_change,eligible_newly_degraded_pair_count,positive_degradation_mass,improvement_mass,net_boundary_violation_change,fixed_common_readout
+CAR10,1,2,T1->T2,1676,16,37,15,5,43,106,-63,T2 Structure cosine head on T1/T2 features
+CAR10,2,3,T2->T3,2487,24,35,26,14,66,125,-59,T3 Structure cosine head on T2/T3 features
+CAR10,3,4,T3->T4,3304,24,51,35,17,96,185,-89,T4 Structure cosine head on T3/T4 features
+CAR10,4,5,T4->T5,4116,26,55,33,13,142,238,-96,T5 Structure cosine head on T4/T5 features
+CAR10,5,6,T5->T6,4958,30,44,38,23,171,223,-52,T6 Structure cosine head on T5/T6 features
+CAR10,6,7,T6->T7,5727,24,57,47,19,146,284,-138,T7 Structure cosine head on T6/T7 features
+CAR10,7,8,T7->T8,6504,31,62,66,21,238,368,-130,T8 Structure cosine head on T7/T8 features
+CAR10,8,9,T8->T9,7262,62,53,60,36,299,354,-55,T9 Structure cosine head on T8/T9 features
+CAR10,9,10,T9->T10,8041,48,82,67,31,292,514,-222,T10 Structure cosine head on T9/T10 features

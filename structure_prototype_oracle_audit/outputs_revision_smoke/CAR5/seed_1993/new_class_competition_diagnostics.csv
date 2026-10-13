@@ -1,0 +1,6 @@
+dataset,protocol,task,known_before,total_seen_classes,audited_class_count,evaluation_split,condition,single_head_new_acc,new_only_acc,new_only_minus_single_head,old_single_head_acc,old_only_acc,old_only_minus_single_head,new_to_old_count,new_to_wrong_new_count,new_to_correct_new_count,new_to_old_rate,new_to_wrong_new_rate,old_to_new_count,old_to_wrong_old_count,old_to_correct_old_count,old_to_new_rate,old_to_wrong_old_rate
+car196,CAR5,5,157,196,4,test,CHECKPOINT_MAIN,100.0,100.0,0.0,100.0,100.0,0.0,0,0,4,0.0,0.0,0,0,4,0.0,0.0
+car196,CAR5,5,157,196,4,test,A_STRUCTURE,100.0,100.0,0.0,100.0,100.0,0.0,0,0,4,0.0,0.0,0,0,4,0.0,0.0
+car196,CAR5,5,157,196,4,test,B_ORACLE_MEAN,100.0,100.0,0.0,100.0,100.0,0.0,0,0,4,0.0,0.0,0,0,4,0.0,0.0
+car196,CAR5,5,157,196,4,test,C_ORACLE_COVARIANCE,100.0,100.0,0.0,100.0,100.0,0.0,0,0,4,0.0,0.0,0,0,4,0.0,0.0
+car196,CAR5,5,157,196,4,test,D_FULL_ORACLE,100.0,100.0,0.0,100.0,100.0,0.0,0,0,4,0.0,0.0,0,0,4,0.0,0.0

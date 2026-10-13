@@ -1,0 +1,7 @@
+candidate_explanation,evidence,counter_evidence,status
+Actual training coverage limitation,IA10: correct/wrong A=0.0761/-0.0758; CAR10: correct/wrong A=0.0548/-0.0474,Low actual-bank support does not identify whether the representation or finite samples caused it.,SUPPORTED
+Representation generalization degradation,IA10: train/test/support delta=+1.09pp/+11.39pp/+0.0342; CAR10: train/test/support delta=+7.21pp/+24.23pp/+0.0430,Single seed; pretrained and final features may improve different aspects of geometry.,NOT SUPPORTED
+Gaussianization information loss,IA10: B-A micro/macro=-0.0070/-0.0020; CAR10: B-A micro/macro=-0.0104/-0.0104,A geometry effect alone is not downstream error recovery.,NOT SUPPORTED
+Stored moment approximation loss,IA10: C-B micro/macro=-0.0047/-0.0037; CAR10: C-B micro/macro=-0.0120/-0.0118,Must be reconciled with the small/inconsistent Oracle classifier-adaptation gains.,NOT SUPPORTED
+Single-head competition,A/B/C support and representation-specific cosine probes expose geometry/decision disagreement.,This diagnostic does not isolate calibration or candidate-count causally.,INCONCLUSIVE
+Local cosine metric limitation,Support-margin and probe-accuracy directions do not show a material sign conflict.,Agreement in direction still does not make support a sufficient quality metric.,INCONCLUSIVE
