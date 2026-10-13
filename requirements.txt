@@ -1,0 +1,4 @@
+# CIL research: Structure and early CIFAR diagnostics use separate environments.
+# See environments/requirements-structure.txt, requirements-cifar-diagnostic.txt
+# and docs/REPRODUCIBILITY.md before choosing the experiment environment.
+-r environments/requirements-structure.txt
