@@ -1,0 +1,55 @@
+
+[2026-09-23T09:31:19.046382+00:00] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/run_audit.py --protocol CAR5 --gpu 1 --output-root ${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/scientific_audit --covariance-mode both --oracle-head-eval-tasks all --require-ca-regression-pass
+audit protocol=CAR5 physical_gpu=['1'] run_dir=${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR5/Structure_AUDIT/seed_1993
+[audit] loading ${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR5/Structure_AUDIT/seed_1993/task_checkpoints/task_01.pt
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[audit] CAR5 T1 oracle_train_statistics
+[audit] CAR5 T1 oracle_test_statistics
+[audit] loading ${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR5/Structure_AUDIT/seed_1993/task_checkpoints/task_02.pt
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[audit] CAR5 T2 oracle_train_statistics
+[audit] CAR5 T2 oracle_test_statistics
+[audit] loading ${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR5/Structure_AUDIT/seed_1993/task_checkpoints/task_03.pt
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[audit] CAR5 T3 oracle_train_statistics
+[audit] CAR5 T3 oracle_test_statistics
+[audit] loading ${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR5/Structure_AUDIT/seed_1993/task_checkpoints/task_04.pt
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[audit] CAR5 T4 oracle_train_statistics
+[audit] CAR5 T4 oracle_test_statistics
+[audit] loading ${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR5/Structure_AUDIT/seed_1993/task_checkpoints/task_05.pt
+This is for the BaseNet initialization.
+I'm using ViT with adapters.
+After BaseNet initialization.
+[audit] CAR5 T5 oracle_train_statistics
+[audit] CAR5 T5 oracle_test_statistics
+[visualize] exact t-SNE points=1280 device=cuda:0 iterations=750
+[visualize] t-SNE iteration 250/750
+[visualize] t-SNE iteration 500/750
+[visualize] t-SNE iteration 750/750
+[visualize] exact t-SNE points=1398 device=cuda:0 iterations=750
+[visualize] t-SNE iteration 250/750
+[visualize] t-SNE iteration 500/750
+[visualize] t-SNE iteration 750/750
+[visualize] exact t-SNE points=1515 device=cuda:0 iterations=750
+[visualize] t-SNE iteration 250/750
+[visualize] t-SNE iteration 500/750
+[visualize] t-SNE iteration 750/750
+[visualize] exact t-SNE points=1632 device=cuda:0 iterations=750
+[visualize] t-SNE iteration 250/750
+[visualize] t-SNE iteration 500/750
+[visualize] t-SNE iteration 750/750
+[visualize] exact t-SNE points=1749 device=cuda:0 iterations=750
+[visualize] t-SNE iteration 250/750
+[visualize] t-SNE iteration 500/750
+[visualize] t-SNE iteration 750/750
+audit complete tasks=[1, 2, 3, 4, 5] CA_regression=PASS report=${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/scientific_audit/CAR5/seed_1993/CAR5_structure_oracle_report.md combined=${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/scientific_audit/structure_oracle_cross_protocol_report.md
+[2026-09-23T10:25:22.483041+00:00] EXIT 0
