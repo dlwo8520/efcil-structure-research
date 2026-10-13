@@ -1,0 +1,16 @@
+nohup: ignoring input
+[IA10] fixed B1 IDs: 126; real test N=1519
+CA epoch 1/5: Control 0.46315, Intervention 0.85221
+CA epoch 2/5: Control 0.44478, Intervention 0.81147
+CA epoch 3/5: Control 0.43857, Intervention 0.79716
+CA epoch 4/5: Control 0.43470, Intervention 0.78869
+CA epoch 5/5: Control 0.43371, Intervention 0.78536
+[IA10] complete: Control 64.5820%, Intervention 64.3845%
+[CAR10] fixed B1 IDs: 473; real test N=8041
+CA epoch 1/5: Control 0.66621, Intervention 1.22503
+CA epoch 2/5: Control 0.64575, Intervention 1.17754
+CA epoch 3/5: Control 0.63658, Intervention 1.15684
+CA epoch 4/5: Control 0.63060, Intervention 1.14501
+CA epoch 5/5: Control 0.62809, Intervention 1.13848
+[CAR10] complete: Control 78.7589%, Intervention 78.8335%
+Final report: ${RESEARCH_WORKSPACE}/cross_task_ca_reweighting/final_report.md
