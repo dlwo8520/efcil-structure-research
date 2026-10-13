@@ -1,0 +1,1 @@
+${RESEARCH_WORKSPACE}/projects/efcil_direction_diagnostic/train.py --config ${RESEARCH_WORKSPACE}/projects/efcil_direction_diagnostic/configs/cifar100_10task.yaml --method small_update_lora --resume

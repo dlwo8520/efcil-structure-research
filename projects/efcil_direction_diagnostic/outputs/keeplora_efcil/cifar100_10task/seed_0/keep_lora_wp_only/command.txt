@@ -1,0 +1,1 @@
+train_keeplora.py --config configs/keeplora_efcil_cifar100_10task.yaml --method keep_lora_wp_only
