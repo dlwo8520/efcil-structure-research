@@ -1,0 +1,372 @@
+2026-08-13 18:31:37,060 [trainer.py] => config: exps_jsons/cars196_structure_pcds_sgds_seed0.json
+2026-08-13 18:31:37,061 [trainer.py] => prefix: cars196_structure_pcds_sgds_seed0
+2026-08-13 18:31:37,061 [trainer.py] => experiment_name: cars196_10task_official_structure
+2026-08-13 18:31:37,061 [trainer.py] => method_label: pcds_structure_sgds
+2026-08-13 18:31:37,061 [trainer.py] => dataset: car196
+2026-08-13 18:31:37,061 [trainer.py] => data_root: ${RESEARCH_WORKSPACE}/cds-main/data/cars196
+2026-08-13 18:31:37,061 [trainer.py] => num_classes: 196
+2026-08-13 18:31:37,061 [trainer.py] => shuffle: True
+2026-08-13 18:31:37,061 [trainer.py] => class_order_seed: 1993
+2026-08-13 18:31:37,061 [trainer.py] => ssca: True
+2026-08-13 18:31:37,061 [trainer.py] => ca: True
+2026-08-13 18:31:37,061 [trainer.py] => init_cls: 20
+2026-08-13 18:31:37,061 [trainer.py] => increment: 20
+2026-08-13 18:31:37,061 [trainer.py] => model_name: adapter
+2026-08-13 18:31:37,061 [trainer.py] => convnet_type: pretrained_vit_b16_224_in21k_adapter
+2026-08-13 18:31:37,061 [trainer.py] => device: [device(type='cuda', index=0)]
+2026-08-13 18:31:37,061 [trainer.py] => seed: 0
+2026-08-13 18:31:37,061 [trainer.py] => init_epochs: 70
+2026-08-13 18:31:37,061 [trainer.py] => inc_epochs: 40
+2026-08-13 18:31:37,061 [trainer.py] => ca_epochs: 5
+2026-08-13 18:31:37,061 [trainer.py] => init_lr: 0.005
+2026-08-13 18:31:37,061 [trainer.py] => batch_size: 32
+2026-08-13 18:31:37,061 [trainer.py] => statistics_batch_size: 64
+2026-08-13 18:31:37,061 [trainer.py] => num_workers: 8
+2026-08-13 18:31:37,061 [trainer.py] => weight_decay: 0.0005
+2026-08-13 18:31:37,061 [trainer.py] => min_lr: 0
+2026-08-13 18:31:37,061 [trainer.py] => ffn_num: 64
+2026-08-13 18:31:37,061 [trainer.py] => optimizer: sgd
+2026-08-13 18:31:37,061 [trainer.py] => vpt_type: shallow
+2026-08-13 18:31:37,061 [trainer.py] => prompt_token_num: 5
+2026-08-13 18:31:37,061 [trainer.py] => scale: 20.0
+2026-08-13 18:31:37,061 [trainer.py] => margin: 0.3
+2026-08-13 18:31:37,061 [trainer.py] => gamma_weight: 10.0
+2026-08-13 18:31:37,061 [trainer.py] => scc: True
+2026-08-13 18:31:37,061 [trainer.py] => scc_value: 5.0
+2026-08-13 18:31:37,061 [trainer.py] => feature: False
+2026-08-13 18:31:37,061 [trainer.py] => logit: False
+2026-08-13 18:31:37,061 [trainer.py] => apr: True
+2026-08-13 18:31:37,061 [trainer.py] => adapter_placement: attention
+2026-08-13 18:31:37,061 [trainer.py] => adapter_interval: 1
+2026-08-13 18:31:37,061 [trainer.py] => flag: 0
+2026-08-13 18:31:37,061 [trainer.py] => cov: 10.0
+2026-08-13 18:31:37,061 [trainer.py] => use_sgds: True
+2026-08-13 18:31:37,061 [trainer.py] => sgds_target_layer: 11
+2026-08-13 18:31:37,061 [trainer.py] => sgds_k: 0.6
+2026-08-13 18:31:37,061 [trainer.py] => sgds_k_interpretation: 60 percent retain, approximately 40 percent zero after Bernoulli and Top-K
+2026-08-13 18:31:37,061 [trainer.py] => sgds_beta: 0.5
+2026-08-13 18:31:37,061 [trainer.py] => sgds_gamma: 1.0
+2026-08-13 18:31:37,061 [trainer.py] => sgds_exploration_ratio: 0.5
+2026-08-13 18:31:37,061 [trainer.py] => sgds_mask_seed: 100003
+2026-08-13 18:31:37,061 [trainer.py] => sgds_rng_isolated_from_training: True
+2026-08-13 18:31:37,061 [trainer.py] => sgds_scope: Eq. (4)-(10) activation guidance only; no SGDS adapter bank/retrieval/fusion/classifier
+2026-08-13 18:31:37,061 [trainer.py] => record_results: True
+2026-08-13 18:31:37,061 [trainer.py] => output_root: ${RESEARCH_WORKSPACE}/pcds_structure_sgds_official/outputs
+2026-08-13 18:31:37,062 [trainer.py] => Failed to reset peak memory stats on cuda:0 (Invalid device argument )
+2026-08-13 18:31:37,090 [data_manager.py] => [59, 134, 162, 9, 42, 72, 118, 99, 109, 79, 43, 100, 16, 144, 27, 10, 172, 26, 191, 80, 189, 6, 87, 153, 97, 70, 107, 0, 88, 178, 35, 4, 2, 170, 171, 141, 51, 166, 145, 188, 17, 167, 101, 116, 23, 157, 180, 129, 68, 85, 32, 54, 103, 104, 19, 113, 106, 175, 36, 11, 159, 169, 8, 98, 3, 28, 57, 147, 138, 187, 56, 49, 44, 125, 62, 151, 165, 94, 55, 92, 12, 122, 78, 66, 193, 15, 135, 168, 184, 91, 137, 186, 52, 126, 40, 112, 65, 142, 64, 136, 45, 77, 89, 154, 90, 71, 190, 74, 30, 119, 96, 84, 67, 50, 183, 150, 69, 21, 18, 111, 108, 58, 174, 131, 148, 110, 194, 1, 173, 83, 81, 60, 13, 163, 14, 156, 63, 117, 5, 22, 143, 121, 38, 41, 82, 127, 114, 20, 31, 53, 37, 195, 192, 130, 152, 176, 86, 76, 24, 34, 181, 149, 33, 128, 182, 155, 146, 139, 120, 140, 102, 47, 25, 158, 123, 46, 164, 61, 7, 115, 75, 133, 160, 105, 132, 179, 124, 48, 73, 93, 39, 95, 29, 177, 185, 161]
+2026-08-13 18:31:37,467 [inc_net.py] => Adapter placement strategy: attention
+2026-08-13 18:31:37,467 [inc_net.py] => Adapter interval: 1
+2026-08-13 18:31:39,331 [CDS_adapter.py] => Official Structure learner: APR=True SCC=True CA=True SGDS=True
+2026-08-13 18:31:39,332 [CDS_adapter.py] => Learning on 0-20
+2026-08-13 18:31:42,253 [CDS_adapter.py] => SGDS semantic task summary: {'task_id': 0, 'old_classes': 0, 'new_classes': 20, 'knowledge_reuse_classes': 0, 'new_subspace_allocation_classes': 20, 'knowledge_reuse_ratio': 0.0, 'mean_s_old': 0.0, 'mean_s_new': 1.0, 'eq6_includes_self': 1, 'task_epochs': 70, 'exploration_epochs': 35}
+2026-08-13 18:31:42,253 [CDS_adapter.py] => SGDS class=0 S_old=0.000000 S_new=1.000000 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=nan
+2026-08-13 18:31:42,253 [CDS_adapter.py] => SGDS class=1 S_old=0.000000 S_new=1.000000 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=nan
+2026-08-13 18:31:42,253 [CDS_adapter.py] => SGDS class=2 S_old=0.000000 S_new=1.000000 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=nan
+2026-08-13 18:31:42,253 [CDS_adapter.py] => SGDS class=3 S_old=0.000000 S_new=1.000000 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=nan
+2026-08-13 18:31:42,253 [CDS_adapter.py] => SGDS class=4 S_old=0.000000 S_new=1.000000 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=nan
+2026-08-13 18:31:42,253 [CDS_adapter.py] => SGDS class=5 S_old=0.000000 S_new=1.000000 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=nan
+2026-08-13 18:31:42,253 [CDS_adapter.py] => SGDS class=6 S_old=0.000000 S_new=1.000000 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=nan
+2026-08-13 18:31:42,253 [CDS_adapter.py] => SGDS class=7 S_old=0.000000 S_new=1.000000 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=nan
+2026-08-13 18:31:42,253 [CDS_adapter.py] => SGDS class=8 S_old=0.000000 S_new=1.000000 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=nan
+2026-08-13 18:31:42,253 [CDS_adapter.py] => SGDS class=9 S_old=0.000000 S_new=1.000000 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=nan
+2026-08-13 18:31:42,253 [CDS_adapter.py] => SGDS class=10 S_old=0.000000 S_new=1.000000 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=nan
+2026-08-13 18:31:42,253 [CDS_adapter.py] => SGDS class=11 S_old=0.000000 S_new=1.000000 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=nan
+2026-08-13 18:31:42,253 [CDS_adapter.py] => SGDS class=12 S_old=0.000000 S_new=1.000000 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=nan
+2026-08-13 18:31:42,253 [CDS_adapter.py] => SGDS class=13 S_old=0.000000 S_new=1.000000 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=nan
+2026-08-13 18:31:42,253 [CDS_adapter.py] => SGDS class=14 S_old=0.000000 S_new=1.000000 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=nan
+2026-08-13 18:31:42,253 [CDS_adapter.py] => SGDS class=15 S_old=0.000000 S_new=1.000000 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=nan
+2026-08-13 18:31:42,253 [CDS_adapter.py] => SGDS class=16 S_old=0.000000 S_new=1.000000 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=nan
+2026-08-13 18:31:42,253 [CDS_adapter.py] => SGDS class=17 S_old=0.000000 S_new=1.000000 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=nan
+2026-08-13 18:31:42,253 [CDS_adapter.py] => SGDS class=18 S_old=0.000000 S_new=1.000000 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=nan
+2026-08-13 18:31:42,253 [CDS_adapter.py] => SGDS class=19 S_old=0.000000 S_new=1.000000 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=nan
+2026-08-13 18:43:12,825 [CDS_adapter.py] => SGDS activation task summary: {'task_id': 0, 'target_layer': 11, 'paper_k': 0.6, 'k_interpretation': 'TopK retain ratio', 'requested_retain_ratio': 0.5989583333333334, 'requested_zero_ratio': 0.40104166666666663, 'actual_nonzero_ratio': 0.594872198621184, 'actual_zero_ratio': 0.405127801378816, 'mean_active_dimensions': 456.8618485410693, 'mean_activation_probability': 0.6105422834337492, 'global_counter_max': 36637.0, 'global_counter_mean': 35269.97265625, 'class_counter_max': 3050.0, 'class_counter_mean': 1763.4986328124999, 'training_only_mask': 1, 'token_reduction': 'mean absolute magnitude'}
+2026-08-13 18:43:20,556 [trainer.py] => CNN: {'total': 93.32, '00-09': 91.04, '10-19': 95.65, 'old': 0, 'new': 93.32}
+2026-08-13 18:43:20,556 [trainer.py] => CNN top1 curve: [93.32]
+2026-08-13 18:43:20,556 [trainer.py] => CNN top5 curve: [99.52]
+2026-08-13 18:43:20,556 [trainer.py] => Average Accuracy (CNN): 93.32
+2026-08-13 18:43:20,559 [CDS_adapter.py] => Learning on 20-40
+2026-08-13 18:43:22,836 [CDS_adapter.py] => SGDS semantic task summary: {'task_id': 1, 'old_classes': 20, 'new_classes': 20, 'knowledge_reuse_classes': 11, 'new_subspace_allocation_classes': 9, 'knowledge_reuse_ratio': 0.55, 'mean_s_old': 0.5018879771232605, 'mean_s_new': 0.4981120228767395, 'eq6_includes_self': 1, 'task_epochs': 40, 'exploration_epochs': 20}
+2026-08-13 18:43:22,837 [CDS_adapter.py] => SGDS class=20 S_old=0.507961 S_new=0.492039 strategy=KNOWLEDGE_REUSE max_old_cos=0.9300164580345154
+2026-08-13 18:43:22,837 [CDS_adapter.py] => SGDS class=21 S_old=0.513220 S_new=0.486780 strategy=KNOWLEDGE_REUSE max_old_cos=0.9420791268348694
+2026-08-13 18:43:22,837 [CDS_adapter.py] => SGDS class=22 S_old=0.485421 S_new=0.514579 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=0.8119470477104187
+2026-08-13 18:43:22,837 [CDS_adapter.py] => SGDS class=23 S_old=0.492103 S_new=0.507897 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=0.9177157282829285
+2026-08-13 18:43:22,837 [CDS_adapter.py] => SGDS class=24 S_old=0.512847 S_new=0.487153 strategy=KNOWLEDGE_REUSE max_old_cos=0.9115324020385742
+2026-08-13 18:43:22,837 [CDS_adapter.py] => SGDS class=25 S_old=0.482293 S_new=0.517707 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=0.9787999987602234
+2026-08-13 18:43:22,837 [CDS_adapter.py] => SGDS class=26 S_old=0.488629 S_new=0.511371 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=0.8463299870491028
+2026-08-13 18:43:22,837 [CDS_adapter.py] => SGDS class=27 S_old=0.485498 S_new=0.514502 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=0.7692821025848389
+2026-08-13 18:43:22,837 [CDS_adapter.py] => SGDS class=28 S_old=0.493778 S_new=0.506223 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=0.9305805563926697
+2026-08-13 18:43:22,837 [CDS_adapter.py] => SGDS class=29 S_old=0.521211 S_new=0.478789 strategy=KNOWLEDGE_REUSE max_old_cos=0.8834664821624756
+2026-08-13 18:43:22,837 [CDS_adapter.py] => SGDS class=30 S_old=0.523838 S_new=0.476162 strategy=KNOWLEDGE_REUSE max_old_cos=0.9627240896224976
+2026-08-13 18:43:22,837 [CDS_adapter.py] => SGDS class=31 S_old=0.511315 S_new=0.488685 strategy=KNOWLEDGE_REUSE max_old_cos=0.9344243407249451
+2026-08-13 18:43:22,837 [CDS_adapter.py] => SGDS class=32 S_old=0.511434 S_new=0.488566 strategy=KNOWLEDGE_REUSE max_old_cos=0.945330798625946
+2026-08-13 18:43:22,837 [CDS_adapter.py] => SGDS class=33 S_old=0.512579 S_new=0.487421 strategy=KNOWLEDGE_REUSE max_old_cos=0.9296369552612305
+2026-08-13 18:43:22,837 [CDS_adapter.py] => SGDS class=34 S_old=0.506048 S_new=0.493952 strategy=KNOWLEDGE_REUSE max_old_cos=0.902673602104187
+2026-08-13 18:43:22,837 [CDS_adapter.py] => SGDS class=35 S_old=0.499664 S_new=0.500336 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=0.9283478856086731
+2026-08-13 18:43:22,837 [CDS_adapter.py] => SGDS class=36 S_old=0.500489 S_new=0.499511 strategy=KNOWLEDGE_REUSE max_old_cos=0.958980917930603
+2026-08-13 18:43:22,837 [CDS_adapter.py] => SGDS class=37 S_old=0.511358 S_new=0.488642 strategy=KNOWLEDGE_REUSE max_old_cos=0.9394273161888123
+2026-08-13 18:43:22,837 [CDS_adapter.py] => SGDS class=38 S_old=0.487692 S_new=0.512308 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=0.919386088848114
+2026-08-13 18:43:22,837 [CDS_adapter.py] => SGDS class=39 S_old=0.490381 S_new=0.509619 strategy=NEW_SUBSPACE_ALLOCATION max_old_cos=0.945963978767395
+2026-08-13 18:52:49,129 [base.py] => CA Task 1 => Loss 0.282, Test_accy 87.410
+2026-08-13 18:52:56,556 [base.py] => CA Task 1 => Loss 0.220, Test_accy 87.950
+2026-08-13 18:53:04,006 [base.py] => CA Task 1 => Loss 0.211, Test_accy 88.130
+2026-08-13 18:53:11,463 [base.py] => CA Task 1 => Loss 0.197, Test_accy 88.190
+2026-08-13 18:53:19,012 [base.py] => CA Task 1 => Loss 0.195, Test_accy 88.190
+2026-08-13 18:53:26,383 [CDS_adapter.py] => SGDS activation task summary: {'task_id': 1, 'target_layer': 11, 'paper_k': 0.6, 'k_interpretation': 'TopK retain ratio', 'requested_retain_ratio': 0.5989583333333334, 'requested_zero_ratio': 0.40104166666666663, 'actual_nonzero_ratio': 0.527422298754931, 'actual_zero_ratio': 0.47257770124506904, 'mean_active_dimensions': 405.06032544378695, 'mean_activation_probability': 0.5330923326104821, 'global_counter_max': 54895.0, 'global_counter_mean': 53096.846354166664, 'class_counter_max': 1205.0, 'class_counter_mean': 891.3436848958333, 'training_only_mask': 1, 'token_reduction': 'mean absolute magnitude'}
+2026-08-13 18:53:41,143 [trainer.py] => CNN: {'total': 88.19, '00-09': 84.67, '10-19': 91.3, '20-29': 87.17, '30-39': 89.69, 'old': 87.95, 'new': 88.42}
+2026-08-13 18:53:41,143 [trainer.py] => CNN top1 curve: [93.32, 88.19]
+2026-08-13 18:53:41,143 [trainer.py] => CNN top5 curve: [99.52, 99.22]
+2026-08-13 18:53:41,143 [trainer.py] => Average Accuracy (CNN): 90.755
+2026-08-13 18:53:41,148 [CDS_adapter.py] => Learning on 40-60
+2026-08-13 18:53:43,413 [CDS_adapter.py] => SGDS semantic task summary: {'task_id': 2, 'old_classes': 40, 'new_classes': 20, 'knowledge_reuse_classes': 20, 'new_subspace_allocation_classes': 0, 'knowledge_reuse_ratio': 1.0, 'mean_s_old': 0.6645221710205078, 'mean_s_new': 0.3354778289794922, 'eq6_includes_self': 1, 'task_epochs': 40, 'exploration_epochs': 20}
+2026-08-13 18:53:43,413 [CDS_adapter.py] => SGDS class=40 S_old=0.669560 S_new=0.330439 strategy=KNOWLEDGE_REUSE max_old_cos=0.950388491153717
+2026-08-13 18:53:43,413 [CDS_adapter.py] => SGDS class=41 S_old=0.665497 S_new=0.334503 strategy=KNOWLEDGE_REUSE max_old_cos=0.9072845578193665
+2026-08-13 18:53:43,413 [CDS_adapter.py] => SGDS class=42 S_old=0.658290 S_new=0.341710 strategy=KNOWLEDGE_REUSE max_old_cos=0.9018977284431458
+2026-08-13 18:53:43,413 [CDS_adapter.py] => SGDS class=43 S_old=0.667577 S_new=0.332423 strategy=KNOWLEDGE_REUSE max_old_cos=0.9427341222763062
+2026-08-13 18:53:43,413 [CDS_adapter.py] => SGDS class=44 S_old=0.665685 S_new=0.334315 strategy=KNOWLEDGE_REUSE max_old_cos=0.9576050043106079
+2026-08-13 18:53:43,413 [CDS_adapter.py] => SGDS class=45 S_old=0.664736 S_new=0.335264 strategy=KNOWLEDGE_REUSE max_old_cos=0.8734917640686035
+2026-08-13 18:53:43,413 [CDS_adapter.py] => SGDS class=46 S_old=0.667479 S_new=0.332521 strategy=KNOWLEDGE_REUSE max_old_cos=0.9175904393196106
+2026-08-13 18:53:43,413 [CDS_adapter.py] => SGDS class=47 S_old=0.663865 S_new=0.336135 strategy=KNOWLEDGE_REUSE max_old_cos=0.9255733489990234
+2026-08-13 18:53:43,413 [CDS_adapter.py] => SGDS class=48 S_old=0.663489 S_new=0.336511 strategy=KNOWLEDGE_REUSE max_old_cos=0.8321321606636047
+2026-08-13 18:53:43,413 [CDS_adapter.py] => SGDS class=49 S_old=0.665742 S_new=0.334258 strategy=KNOWLEDGE_REUSE max_old_cos=0.8760299682617188
+2026-08-13 18:53:43,413 [CDS_adapter.py] => SGDS class=50 S_old=0.666434 S_new=0.333566 strategy=KNOWLEDGE_REUSE max_old_cos=0.9293498992919922
+2026-08-13 18:53:43,413 [CDS_adapter.py] => SGDS class=51 S_old=0.657829 S_new=0.342171 strategy=KNOWLEDGE_REUSE max_old_cos=0.902784526348114
+2026-08-13 18:53:43,413 [CDS_adapter.py] => SGDS class=52 S_old=0.660188 S_new=0.339812 strategy=KNOWLEDGE_REUSE max_old_cos=0.91262286901474
+2026-08-13 18:53:43,413 [CDS_adapter.py] => SGDS class=53 S_old=0.663258 S_new=0.336742 strategy=KNOWLEDGE_REUSE max_old_cos=0.9601667523384094
+2026-08-13 18:53:43,413 [CDS_adapter.py] => SGDS class=54 S_old=0.665404 S_new=0.334596 strategy=KNOWLEDGE_REUSE max_old_cos=0.9421573281288147
+2026-08-13 18:53:43,413 [CDS_adapter.py] => SGDS class=55 S_old=0.667396 S_new=0.332604 strategy=KNOWLEDGE_REUSE max_old_cos=0.8714280128479004
+2026-08-13 18:53:43,413 [CDS_adapter.py] => SGDS class=56 S_old=0.662644 S_new=0.337356 strategy=KNOWLEDGE_REUSE max_old_cos=0.9435631036758423
+2026-08-13 18:53:43,413 [CDS_adapter.py] => SGDS class=57 S_old=0.664723 S_new=0.335277 strategy=KNOWLEDGE_REUSE max_old_cos=0.9264243245124817
+2026-08-13 18:53:43,413 [CDS_adapter.py] => SGDS class=58 S_old=0.668596 S_new=0.331404 strategy=KNOWLEDGE_REUSE max_old_cos=0.943783700466156
+2026-08-13 18:53:43,413 [CDS_adapter.py] => SGDS class=59 S_old=0.662051 S_new=0.337949 strategy=KNOWLEDGE_REUSE max_old_cos=0.9520691633224487
+2026-08-13 19:05:24,575 [base.py] => CA Task 2 => Loss 0.323, Test_accy 85.690
+2026-08-13 19:05:35,466 [base.py] => CA Task 2 => Loss 0.287, Test_accy 86.530
+2026-08-13 19:05:46,391 [base.py] => CA Task 2 => Loss 0.279, Test_accy 87.090
+2026-08-13 19:05:57,402 [base.py] => CA Task 2 => Loss 0.270, Test_accy 87.410
+2026-08-13 19:06:08,394 [base.py] => CA Task 2 => Loss 0.264, Test_accy 87.410
+2026-08-13 19:06:19,208 [CDS_adapter.py] => SGDS activation task summary: {'task_id': 2, 'target_layer': 11, 'paper_k': 0.6, 'k_interpretation': 'TopK retain ratio', 'requested_retain_ratio': 0.5989583333333334, 'requested_zero_ratio': 0.40104166666666663, 'actual_nonzero_ratio': 0.5175158755836379, 'actual_zero_ratio': 0.4824841244163621, 'mean_active_dimensions': 397.45219244823386, 'mean_activation_probability': 0.518938530106105, 'global_counter_max': 72451.0, 'global_counter_mean': 70092.06770833333, 'class_counter_max': 1061.0, 'class_counter_mean': 849.7610677083334, 'training_only_mask': 1, 'token_reduction': 'mean absolute magnitude'}
+2026-08-13 19:06:40,849 [trainer.py] => CNN: {'total': 87.41, '00-09': 81.6, '10-19': 85.99, '20-29': 87.41, '30-39': 89.69, '40-49': 89.7, '50-59': 90.31, 'old': 86.16, 'new': 90.01}
+2026-08-13 19:06:40,849 [trainer.py] => CNN top1 curve: [93.32, 88.19, 87.41]
+2026-08-13 19:06:40,849 [trainer.py] => CNN top5 curve: [99.52, 99.22, 98.67]
+2026-08-13 19:06:40,849 [trainer.py] => Average Accuracy (CNN): 89.63999999999999
+2026-08-13 19:06:40,853 [CDS_adapter.py] => Learning on 60-80
+2026-08-13 19:06:43,590 [CDS_adapter.py] => SGDS semantic task summary: {'task_id': 3, 'old_classes': 60, 'new_classes': 20, 'knowledge_reuse_classes': 20, 'new_subspace_allocation_classes': 0, 'knowledge_reuse_ratio': 1.0, 'mean_s_old': 0.7465233206748962, 'mean_s_new': 0.25347670912742615, 'eq6_includes_self': 1, 'task_epochs': 40, 'exploration_epochs': 20}
+2026-08-13 19:06:43,590 [CDS_adapter.py] => SGDS class=60 S_old=0.743499 S_new=0.256501 strategy=KNOWLEDGE_REUSE max_old_cos=0.9386340379714966
+2026-08-13 19:06:43,590 [CDS_adapter.py] => SGDS class=61 S_old=0.745493 S_new=0.254507 strategy=KNOWLEDGE_REUSE max_old_cos=0.9207526445388794
+2026-08-13 19:06:43,590 [CDS_adapter.py] => SGDS class=62 S_old=0.747407 S_new=0.252593 strategy=KNOWLEDGE_REUSE max_old_cos=0.9629335999488831
+2026-08-13 19:06:43,590 [CDS_adapter.py] => SGDS class=63 S_old=0.743220 S_new=0.256780 strategy=KNOWLEDGE_REUSE max_old_cos=0.8787612318992615
+2026-08-13 19:06:43,590 [CDS_adapter.py] => SGDS class=64 S_old=0.748102 S_new=0.251898 strategy=KNOWLEDGE_REUSE max_old_cos=0.9609245657920837
+2026-08-13 19:06:43,590 [CDS_adapter.py] => SGDS class=65 S_old=0.748787 S_new=0.251213 strategy=KNOWLEDGE_REUSE max_old_cos=0.9623603224754333
+2026-08-13 19:06:43,590 [CDS_adapter.py] => SGDS class=66 S_old=0.747961 S_new=0.252039 strategy=KNOWLEDGE_REUSE max_old_cos=0.9568702578544617
+2026-08-13 19:06:43,590 [CDS_adapter.py] => SGDS class=67 S_old=0.751426 S_new=0.248574 strategy=KNOWLEDGE_REUSE max_old_cos=0.951884925365448
+2026-08-13 19:06:43,590 [CDS_adapter.py] => SGDS class=68 S_old=0.747734 S_new=0.252266 strategy=KNOWLEDGE_REUSE max_old_cos=0.952906608581543
+2026-08-13 19:06:43,590 [CDS_adapter.py] => SGDS class=69 S_old=0.748526 S_new=0.251474 strategy=KNOWLEDGE_REUSE max_old_cos=0.964733362197876
+2026-08-13 19:06:43,590 [CDS_adapter.py] => SGDS class=70 S_old=0.744034 S_new=0.255966 strategy=KNOWLEDGE_REUSE max_old_cos=0.887618899345398
+2026-08-13 19:06:43,590 [CDS_adapter.py] => SGDS class=71 S_old=0.747560 S_new=0.252440 strategy=KNOWLEDGE_REUSE max_old_cos=0.9363337159156799
+2026-08-13 19:06:43,590 [CDS_adapter.py] => SGDS class=72 S_old=0.745360 S_new=0.254640 strategy=KNOWLEDGE_REUSE max_old_cos=0.9099072217941284
+2026-08-13 19:06:43,590 [CDS_adapter.py] => SGDS class=73 S_old=0.746398 S_new=0.253602 strategy=KNOWLEDGE_REUSE max_old_cos=0.9163171052932739
+2026-08-13 19:06:43,590 [CDS_adapter.py] => SGDS class=74 S_old=0.746084 S_new=0.253916 strategy=KNOWLEDGE_REUSE max_old_cos=0.9519156217575073
+2026-08-13 19:06:43,590 [CDS_adapter.py] => SGDS class=75 S_old=0.742097 S_new=0.257903 strategy=KNOWLEDGE_REUSE max_old_cos=0.8343797922134399
+2026-08-13 19:06:43,590 [CDS_adapter.py] => SGDS class=76 S_old=0.747005 S_new=0.252995 strategy=KNOWLEDGE_REUSE max_old_cos=0.9469760060310364
+2026-08-13 19:06:43,590 [CDS_adapter.py] => SGDS class=77 S_old=0.750715 S_new=0.249285 strategy=KNOWLEDGE_REUSE max_old_cos=0.9491062164306641
+2026-08-13 19:06:43,590 [CDS_adapter.py] => SGDS class=78 S_old=0.744993 S_new=0.255007 strategy=KNOWLEDGE_REUSE max_old_cos=0.9260477423667908
+2026-08-13 19:06:43,591 [CDS_adapter.py] => SGDS class=79 S_old=0.744067 S_new=0.255933 strategy=KNOWLEDGE_REUSE max_old_cos=0.871630847454071
+2026-08-13 19:20:58,559 [base.py] => CA Task 3 => Loss 0.403, Test_accy 84.560
+2026-08-13 19:21:12,977 [base.py] => CA Task 3 => Loss 0.369, Test_accy 85.020
+2026-08-13 19:21:27,400 [base.py] => CA Task 3 => Loss 0.358, Test_accy 85.440
+2026-08-13 19:21:41,841 [base.py] => CA Task 3 => Loss 0.349, Test_accy 85.620
+2026-08-13 19:21:56,344 [base.py] => CA Task 3 => Loss 0.350, Test_accy 85.680
+2026-08-13 19:22:10,620 [CDS_adapter.py] => SGDS activation task summary: {'task_id': 3, 'target_layer': 11, 'paper_k': 0.6, 'k_interpretation': 'TopK retain ratio', 'requested_retain_ratio': 0.5989583333333334, 'requested_zero_ratio': 0.40104166666666663, 'actual_nonzero_ratio': 0.5372798596398305, 'actual_zero_ratio': 0.4627201403601695, 'mean_active_dimensions': 412.6309322033898, 'mean_activation_probability': 0.5389663579292697, 'global_counter_max': 90677.0, 'global_counter_mean': 87843.79427083333, 'class_counter_max': 1127.0, 'class_counter_mean': 887.586328125, 'training_only_mask': 1, 'token_reduction': 'mean absolute magnitude'}
+2026-08-13 19:22:39,286 [trainer.py] => CNN: {'total': 85.68, '00-09': 79.25, '10-19': 79.95, '20-29': 82.66, '30-39': 86.33, '40-49': 89.7, '50-59': 89.1, '60-69': 89.13, '70-79': 89.83, 'old': 84.44, 'new': 89.47}
+2026-08-13 19:22:39,287 [trainer.py] => CNN top1 curve: [93.32, 88.19, 87.41, 85.68]
+2026-08-13 19:22:39,287 [trainer.py] => CNN top5 curve: [99.52, 99.22, 98.67, 98.31]
+2026-08-13 19:22:39,287 [trainer.py] => Average Accuracy (CNN): 88.64999999999999
+2026-08-13 19:22:39,288 [CDS_adapter.py] => Learning on 80-100
+2026-08-13 19:22:41,523 [CDS_adapter.py] => SGDS semantic task summary: {'task_id': 4, 'old_classes': 80, 'new_classes': 20, 'knowledge_reuse_classes': 20, 'new_subspace_allocation_classes': 0, 'knowledge_reuse_ratio': 1.0, 'mean_s_old': 0.7939937114715576, 'mean_s_new': 0.2060062736272812, 'eq6_includes_self': 1, 'task_epochs': 40, 'exploration_epochs': 20}
+2026-08-13 19:22:41,523 [CDS_adapter.py] => SGDS class=80 S_old=0.798511 S_new=0.201489 strategy=KNOWLEDGE_REUSE max_old_cos=0.9492853283882141
+2026-08-13 19:22:41,523 [CDS_adapter.py] => SGDS class=81 S_old=0.798789 S_new=0.201211 strategy=KNOWLEDGE_REUSE max_old_cos=0.8587357401847839
+2026-08-13 19:22:41,523 [CDS_adapter.py] => SGDS class=82 S_old=0.794822 S_new=0.205178 strategy=KNOWLEDGE_REUSE max_old_cos=0.9553309679031372
+2026-08-13 19:22:41,523 [CDS_adapter.py] => SGDS class=83 S_old=0.792956 S_new=0.207044 strategy=KNOWLEDGE_REUSE max_old_cos=0.9682374596595764
+2026-08-13 19:22:41,523 [CDS_adapter.py] => SGDS class=84 S_old=0.791838 S_new=0.208163 strategy=KNOWLEDGE_REUSE max_old_cos=0.9139208197593689
+2026-08-13 19:22:41,523 [CDS_adapter.py] => SGDS class=85 S_old=0.792070 S_new=0.207930 strategy=KNOWLEDGE_REUSE max_old_cos=0.9610178470611572
+2026-08-13 19:22:41,523 [CDS_adapter.py] => SGDS class=86 S_old=0.798058 S_new=0.201942 strategy=KNOWLEDGE_REUSE max_old_cos=0.9338839054107666
+2026-08-13 19:22:41,523 [CDS_adapter.py] => SGDS class=87 S_old=0.791859 S_new=0.208141 strategy=KNOWLEDGE_REUSE max_old_cos=0.9247034192085266
+2026-08-13 19:22:41,523 [CDS_adapter.py] => SGDS class=88 S_old=0.801465 S_new=0.198535 strategy=KNOWLEDGE_REUSE max_old_cos=0.9439325332641602
+2026-08-13 19:22:41,523 [CDS_adapter.py] => SGDS class=89 S_old=0.791624 S_new=0.208376 strategy=KNOWLEDGE_REUSE max_old_cos=0.9214858412742615
+2026-08-13 19:22:41,523 [CDS_adapter.py] => SGDS class=90 S_old=0.795724 S_new=0.204276 strategy=KNOWLEDGE_REUSE max_old_cos=0.9549087882041931
+2026-08-13 19:22:41,523 [CDS_adapter.py] => SGDS class=91 S_old=0.794855 S_new=0.205145 strategy=KNOWLEDGE_REUSE max_old_cos=0.9649366140365601
+2026-08-13 19:22:41,523 [CDS_adapter.py] => SGDS class=92 S_old=0.789144 S_new=0.210856 strategy=KNOWLEDGE_REUSE max_old_cos=0.9609333872795105
+2026-08-13 19:22:41,523 [CDS_adapter.py] => SGDS class=93 S_old=0.790858 S_new=0.209142 strategy=KNOWLEDGE_REUSE max_old_cos=0.9498815536499023
+2026-08-13 19:22:41,523 [CDS_adapter.py] => SGDS class=94 S_old=0.797562 S_new=0.202438 strategy=KNOWLEDGE_REUSE max_old_cos=0.9482842683792114
+2026-08-13 19:22:41,523 [CDS_adapter.py] => SGDS class=95 S_old=0.788601 S_new=0.211399 strategy=KNOWLEDGE_REUSE max_old_cos=0.971954882144928
+2026-08-13 19:22:41,523 [CDS_adapter.py] => SGDS class=96 S_old=0.798796 S_new=0.201204 strategy=KNOWLEDGE_REUSE max_old_cos=0.9298431277275085
+2026-08-13 19:22:41,523 [CDS_adapter.py] => SGDS class=97 S_old=0.788926 S_new=0.211074 strategy=KNOWLEDGE_REUSE max_old_cos=0.9555514454841614
+2026-08-13 19:22:41,523 [CDS_adapter.py] => SGDS class=98 S_old=0.788702 S_new=0.211298 strategy=KNOWLEDGE_REUSE max_old_cos=0.9458572268486023
+2026-08-13 19:22:41,523 [CDS_adapter.py] => SGDS class=99 S_old=0.794713 S_new=0.205287 strategy=KNOWLEDGE_REUSE max_old_cos=0.9586029648780823
+2026-08-13 19:39:12,975 [base.py] => CA Task 4 => Loss 0.545, Test_accy 80.860
+2026-08-13 19:39:30,891 [base.py] => CA Task 4 => Loss 0.487, Test_accy 81.850
+2026-08-13 19:39:48,830 [base.py] => CA Task 4 => Loss 0.471, Test_accy 82.140
+2026-08-13 19:40:06,804 [base.py] => CA Task 4 => Loss 0.457, Test_accy 82.390
+2026-08-13 19:40:24,809 [base.py] => CA Task 4 => Loss 0.459, Test_accy 82.390
+2026-08-13 19:40:42,418 [CDS_adapter.py] => SGDS activation task summary: {'task_id': 4, 'target_layer': 11, 'paper_k': 0.6, 'k_interpretation': 'TopK retain ratio', 'requested_retain_ratio': 0.5989583333333334, 'requested_zero_ratio': 0.40104166666666663, 'actual_nonzero_ratio': 0.5482663059927361, 'actual_zero_ratio': 0.45173369400726393, 'mean_active_dimensions': 421.06852300242133, 'mean_activation_probability': 0.550383085353996, 'global_counter_max': 109368.0, 'global_counter_mean': 105958.51302083333, 'class_counter_max': 1171.0, 'class_counter_mean': 905.7359375, 'training_only_mask': 1, 'token_reduction': 'mean absolute magnitude'}
+2026-08-13 19:41:17,800 [trainer.py] => CNN: {'total': 82.39, '00-09': 71.93, '10-19': 66.67, '20-29': 79.57, '30-39': 81.77, '40-49': 82.41, '50-59': 82.81, '60-69': 86.71, '70-79': 89.58, '80-89': 92.48, '90-99': 90.8, 'old': 80.12, 'new': 91.63}
+2026-08-13 19:41:17,801 [trainer.py] => CNN top1 curve: [93.32, 88.19, 87.41, 85.68, 82.39]
+2026-08-13 19:41:17,801 [trainer.py] => CNN top5 curve: [99.52, 99.22, 98.67, 98.31, 97.69]
+2026-08-13 19:41:17,801 [trainer.py] => Average Accuracy (CNN): 87.398
+2026-08-13 19:41:17,802 [CDS_adapter.py] => Learning on 100-120
+2026-08-13 19:41:20,395 [CDS_adapter.py] => SGDS semantic task summary: {'task_id': 5, 'old_classes': 100, 'new_classes': 20, 'knowledge_reuse_classes': 20, 'new_subspace_allocation_classes': 0, 'knowledge_reuse_ratio': 1.0, 'mean_s_old': 0.8319491744041443, 'mean_s_new': 0.1680508404970169, 'eq6_includes_self': 1, 'task_epochs': 40, 'exploration_epochs': 20}
+2026-08-13 19:41:20,396 [CDS_adapter.py] => SGDS class=100 S_old=0.837343 S_new=0.162657 strategy=KNOWLEDGE_REUSE max_old_cos=0.9397042393684387
+2026-08-13 19:41:20,396 [CDS_adapter.py] => SGDS class=101 S_old=0.831326 S_new=0.168674 strategy=KNOWLEDGE_REUSE max_old_cos=0.9459069967269897
+2026-08-13 19:41:20,396 [CDS_adapter.py] => SGDS class=102 S_old=0.823556 S_new=0.176444 strategy=KNOWLEDGE_REUSE max_old_cos=0.9539079070091248
+2026-08-13 19:41:20,396 [CDS_adapter.py] => SGDS class=103 S_old=0.829771 S_new=0.170229 strategy=KNOWLEDGE_REUSE max_old_cos=0.9559507369995117
+2026-08-13 19:41:20,396 [CDS_adapter.py] => SGDS class=104 S_old=0.822481 S_new=0.177519 strategy=KNOWLEDGE_REUSE max_old_cos=0.9686773419380188
+2026-08-13 19:41:20,396 [CDS_adapter.py] => SGDS class=105 S_old=0.835637 S_new=0.164363 strategy=KNOWLEDGE_REUSE max_old_cos=0.9542421102523804
+2026-08-13 19:41:20,396 [CDS_adapter.py] => SGDS class=106 S_old=0.835599 S_new=0.164401 strategy=KNOWLEDGE_REUSE max_old_cos=0.9205399751663208
+2026-08-13 19:41:20,396 [CDS_adapter.py] => SGDS class=107 S_old=0.821209 S_new=0.178791 strategy=KNOWLEDGE_REUSE max_old_cos=0.9628071188926697
+2026-08-13 19:41:20,396 [CDS_adapter.py] => SGDS class=108 S_old=0.836880 S_new=0.163120 strategy=KNOWLEDGE_REUSE max_old_cos=0.9581311345100403
+2026-08-13 19:41:20,396 [CDS_adapter.py] => SGDS class=109 S_old=0.826526 S_new=0.173474 strategy=KNOWLEDGE_REUSE max_old_cos=0.962632417678833
+2026-08-13 19:41:20,396 [CDS_adapter.py] => SGDS class=110 S_old=0.836331 S_new=0.163669 strategy=KNOWLEDGE_REUSE max_old_cos=0.9448497295379639
+2026-08-13 19:41:20,396 [CDS_adapter.py] => SGDS class=111 S_old=0.832058 S_new=0.167941 strategy=KNOWLEDGE_REUSE max_old_cos=0.9504711627960205
+2026-08-13 19:41:20,396 [CDS_adapter.py] => SGDS class=112 S_old=0.827233 S_new=0.172767 strategy=KNOWLEDGE_REUSE max_old_cos=0.9527052044868469
+2026-08-13 19:41:20,396 [CDS_adapter.py] => SGDS class=113 S_old=0.836527 S_new=0.163473 strategy=KNOWLEDGE_REUSE max_old_cos=0.9614518880844116
+2026-08-13 19:41:20,396 [CDS_adapter.py] => SGDS class=114 S_old=0.837641 S_new=0.162359 strategy=KNOWLEDGE_REUSE max_old_cos=0.9526464939117432
+2026-08-13 19:41:20,396 [CDS_adapter.py] => SGDS class=115 S_old=0.836945 S_new=0.163055 strategy=KNOWLEDGE_REUSE max_old_cos=0.9510155320167542
+2026-08-13 19:41:20,396 [CDS_adapter.py] => SGDS class=116 S_old=0.821141 S_new=0.178859 strategy=KNOWLEDGE_REUSE max_old_cos=0.9695128798484802
+2026-08-13 19:41:20,396 [CDS_adapter.py] => SGDS class=117 S_old=0.837532 S_new=0.162468 strategy=KNOWLEDGE_REUSE max_old_cos=0.9612352252006531
+2026-08-13 19:41:20,396 [CDS_adapter.py] => SGDS class=118 S_old=0.837838 S_new=0.162162 strategy=KNOWLEDGE_REUSE max_old_cos=0.9584736227989197
+2026-08-13 19:41:20,396 [CDS_adapter.py] => SGDS class=119 S_old=0.835409 S_new=0.164591 strategy=KNOWLEDGE_REUSE max_old_cos=0.9259392619132996
+2026-08-13 20:00:30,352 [base.py] => CA Task 5 => Loss 0.640, Test_accy 74.870
+2026-08-13 20:00:51,939 [base.py] => CA Task 5 => Loss 0.599, Test_accy 75.190
+2026-08-13 20:01:13,583 [base.py] => CA Task 5 => Loss 0.588, Test_accy 75.590
+2026-08-13 20:01:35,215 [base.py] => CA Task 5 => Loss 0.574, Test_accy 75.840
+2026-08-13 20:01:56,847 [base.py] => CA Task 5 => Loss 0.567, Test_accy 75.940
+2026-08-13 20:02:18,060 [CDS_adapter.py] => SGDS activation task summary: {'task_id': 5, 'target_layer': 11, 'paper_k': 0.6, 'k_interpretation': 'TopK retain ratio', 'requested_retain_ratio': 0.5989583333333334, 'requested_zero_ratio': 0.40104166666666663, 'actual_nonzero_ratio': 0.5574216844140321, 'actual_zero_ratio': 0.44257831558596794, 'mean_active_dimensions': 428.0998536299766, 'mean_activation_probability': 0.5601031441878379, 'global_counter_max': 128794.0, 'global_counter_mean': 125000.03776041666, 'class_counter_max': 1128.0, 'class_counter_mean': 952.0762369791667, 'training_only_mask': 1, 'token_reduction': 'mean absolute magnitude'}
+2026-08-13 20:03:00,364 [trainer.py] => CNN: {'total': 75.94, '00-09': 63.21, '10-19': 50.72, '20-29': 69.12, '30-39': 74.82, '40-49': 67.09, '50-59': 70.94, '60-69': 79.71, '70-79': 81.14, '80-89': 86.97, '90-99': 88.38, '100-109': 89.81, '110-119': 89.52, 'old': 73.13, 'new': 89.67}
+2026-08-13 20:03:00,364 [trainer.py] => CNN top1 curve: [93.32, 88.19, 87.41, 85.68, 82.39, 75.94]
+2026-08-13 20:03:00,364 [trainer.py] => CNN top5 curve: [99.52, 99.22, 98.67, 98.31, 97.69, 96.41]
+2026-08-13 20:03:00,364 [trainer.py] => Average Accuracy (CNN): 85.48833333333333
+2026-08-13 20:03:00,365 [CDS_adapter.py] => Learning on 120-140
+2026-08-13 20:03:03,169 [CDS_adapter.py] => SGDS semantic task summary: {'task_id': 6, 'old_classes': 120, 'new_classes': 20, 'knowledge_reuse_classes': 20, 'new_subspace_allocation_classes': 0, 'knowledge_reuse_ratio': 1.0, 'mean_s_old': 0.8560712933540344, 'mean_s_new': 0.14392875134944916, 'eq6_includes_self': 1, 'task_epochs': 40, 'exploration_epochs': 20}
+2026-08-13 20:03:03,169 [CDS_adapter.py] => SGDS class=120 S_old=0.852684 S_new=0.147316 strategy=KNOWLEDGE_REUSE max_old_cos=0.9702134728431702
+2026-08-13 20:03:03,170 [CDS_adapter.py] => SGDS class=121 S_old=0.858131 S_new=0.141869 strategy=KNOWLEDGE_REUSE max_old_cos=0.9562925696372986
+2026-08-13 20:03:03,170 [CDS_adapter.py] => SGDS class=122 S_old=0.857519 S_new=0.142481 strategy=KNOWLEDGE_REUSE max_old_cos=0.9188805222511292
+2026-08-13 20:03:03,170 [CDS_adapter.py] => SGDS class=123 S_old=0.856663 S_new=0.143337 strategy=KNOWLEDGE_REUSE max_old_cos=0.9438304305076599
+2026-08-13 20:03:03,170 [CDS_adapter.py] => SGDS class=124 S_old=0.853889 S_new=0.146112 strategy=KNOWLEDGE_REUSE max_old_cos=0.9661394953727722
+2026-08-13 20:03:03,170 [CDS_adapter.py] => SGDS class=125 S_old=0.853078 S_new=0.146922 strategy=KNOWLEDGE_REUSE max_old_cos=0.9749851822853088
+2026-08-13 20:03:03,170 [CDS_adapter.py] => SGDS class=126 S_old=0.853500 S_new=0.146500 strategy=KNOWLEDGE_REUSE max_old_cos=0.9520508050918579
+2026-08-13 20:03:03,170 [CDS_adapter.py] => SGDS class=127 S_old=0.857317 S_new=0.142683 strategy=KNOWLEDGE_REUSE max_old_cos=0.9510221481323242
+2026-08-13 20:03:03,170 [CDS_adapter.py] => SGDS class=128 S_old=0.853867 S_new=0.146133 strategy=KNOWLEDGE_REUSE max_old_cos=0.9215229749679565
+2026-08-13 20:03:03,170 [CDS_adapter.py] => SGDS class=129 S_old=0.856184 S_new=0.143816 strategy=KNOWLEDGE_REUSE max_old_cos=0.9189781546592712
+2026-08-13 20:03:03,170 [CDS_adapter.py] => SGDS class=130 S_old=0.856109 S_new=0.143890 strategy=KNOWLEDGE_REUSE max_old_cos=0.9334125518798828
+2026-08-13 20:03:03,170 [CDS_adapter.py] => SGDS class=131 S_old=0.856710 S_new=0.143290 strategy=KNOWLEDGE_REUSE max_old_cos=0.9765072464942932
+2026-08-13 20:03:03,170 [CDS_adapter.py] => SGDS class=132 S_old=0.858124 S_new=0.141876 strategy=KNOWLEDGE_REUSE max_old_cos=0.9676344394683838
+2026-08-13 20:03:03,170 [CDS_adapter.py] => SGDS class=133 S_old=0.857437 S_new=0.142563 strategy=KNOWLEDGE_REUSE max_old_cos=0.9397716522216797
+2026-08-13 20:03:03,170 [CDS_adapter.py] => SGDS class=134 S_old=0.859075 S_new=0.140925 strategy=KNOWLEDGE_REUSE max_old_cos=0.9563999176025391
+2026-08-13 20:03:03,170 [CDS_adapter.py] => SGDS class=135 S_old=0.857551 S_new=0.142449 strategy=KNOWLEDGE_REUSE max_old_cos=0.9237505197525024
+2026-08-13 20:03:03,170 [CDS_adapter.py] => SGDS class=136 S_old=0.853303 S_new=0.146697 strategy=KNOWLEDGE_REUSE max_old_cos=0.9694615006446838
+2026-08-13 20:03:03,170 [CDS_adapter.py] => SGDS class=137 S_old=0.853268 S_new=0.146732 strategy=KNOWLEDGE_REUSE max_old_cos=0.9687873721122742
+2026-08-13 20:03:03,170 [CDS_adapter.py] => SGDS class=138 S_old=0.859638 S_new=0.140362 strategy=KNOWLEDGE_REUSE max_old_cos=0.9072840213775635
+2026-08-13 20:03:03,170 [CDS_adapter.py] => SGDS class=139 S_old=0.857377 S_new=0.142623 strategy=KNOWLEDGE_REUSE max_old_cos=0.972357451915741
+2026-08-13 20:24:29,911 [base.py] => CA Task 6 => Loss 0.779, Test_accy 62.300
+2026-08-13 20:24:55,030 [base.py] => CA Task 6 => Loss 0.751, Test_accy 62.590
+2026-08-13 20:25:20,041 [base.py] => CA Task 6 => Loss 0.730, Test_accy 62.190
+2026-08-13 20:25:45,093 [base.py] => CA Task 6 => Loss 0.724, Test_accy 62.090
+2026-08-13 20:26:10,261 [base.py] => CA Task 6 => Loss 0.716, Test_accy 62.170
+2026-08-13 20:26:34,884 [CDS_adapter.py] => SGDS activation task summary: {'task_id': 6, 'target_layer': 11, 'paper_k': 0.6, 'k_interpretation': 'TopK retain ratio', 'requested_retain_ratio': 0.5989583333333334, 'requested_zero_ratio': 0.40104166666666663, 'actual_nonzero_ratio': 0.5622989313389227, 'actual_zero_ratio': 0.4377010686610773, 'mean_active_dimensions': 431.8455792682927, 'mean_activation_probability': 0.5646770635077624, 'global_counter_max': 147706.0, 'global_counter_mean': 143443.4427083333, 'class_counter_max': 1129.0, 'class_counter_mean': 922.1702473958334, 'training_only_mask': 1, 'token_reduction': 'mean absolute magnitude'}
+2026-08-13 20:27:24,063 [trainer.py] => CNN: {'total': 62.17, '00-09': 33.49, '10-19': 35.51, '20-29': 46.08, '30-39': 49.64, '40-49': 39.95, '50-59': 48.43, '60-69': 56.04, '70-79': 66.5, '80-89': 73.93, '90-99': 77.48, '100-109': 82.46, '110-119': 77.62, '120-129': 93.55, '130-139': 91.36, 'old': 57.24, 'new': 92.45}
+2026-08-13 20:27:24,063 [trainer.py] => CNN top1 curve: [93.32, 88.19, 87.41, 85.68, 82.39, 75.94, 62.17]
+2026-08-13 20:27:24,063 [trainer.py] => CNN top5 curve: [99.52, 99.22, 98.67, 98.31, 97.69, 96.41, 94.07]
+2026-08-13 20:27:24,063 [trainer.py] => Average Accuracy (CNN): 82.15714285714284
+2026-08-13 20:27:24,064 [CDS_adapter.py] => Learning on 140-160
+2026-08-13 20:27:26,385 [CDS_adapter.py] => SGDS semantic task summary: {'task_id': 7, 'old_classes': 140, 'new_classes': 20, 'knowledge_reuse_classes': 20, 'new_subspace_allocation_classes': 0, 'knowledge_reuse_ratio': 1.0, 'mean_s_old': 0.8738678097724915, 'mean_s_new': 0.12613216042518616, 'eq6_includes_self': 1, 'task_epochs': 40, 'exploration_epochs': 20}
+2026-08-13 20:27:26,385 [CDS_adapter.py] => SGDS class=140 S_old=0.871519 S_new=0.128481 strategy=KNOWLEDGE_REUSE max_old_cos=0.9425886869430542
+2026-08-13 20:27:26,385 [CDS_adapter.py] => SGDS class=141 S_old=0.875694 S_new=0.124306 strategy=KNOWLEDGE_REUSE max_old_cos=0.9764372110366821
+2026-08-13 20:27:26,385 [CDS_adapter.py] => SGDS class=142 S_old=0.870794 S_new=0.129206 strategy=KNOWLEDGE_REUSE max_old_cos=0.948477029800415
+2026-08-13 20:27:26,385 [CDS_adapter.py] => SGDS class=143 S_old=0.872234 S_new=0.127766 strategy=KNOWLEDGE_REUSE max_old_cos=0.9522354006767273
+2026-08-13 20:27:26,385 [CDS_adapter.py] => SGDS class=144 S_old=0.876309 S_new=0.123691 strategy=KNOWLEDGE_REUSE max_old_cos=0.9474271535873413
+2026-08-13 20:27:26,385 [CDS_adapter.py] => SGDS class=145 S_old=0.874131 S_new=0.125869 strategy=KNOWLEDGE_REUSE max_old_cos=0.9529855251312256
+2026-08-13 20:27:26,385 [CDS_adapter.py] => SGDS class=146 S_old=0.877139 S_new=0.122860 strategy=KNOWLEDGE_REUSE max_old_cos=0.9705115556716919
+2026-08-13 20:27:26,385 [CDS_adapter.py] => SGDS class=147 S_old=0.870640 S_new=0.129360 strategy=KNOWLEDGE_REUSE max_old_cos=0.9616925120353699
+2026-08-13 20:27:26,385 [CDS_adapter.py] => SGDS class=148 S_old=0.876055 S_new=0.123945 strategy=KNOWLEDGE_REUSE max_old_cos=0.9536855220794678
+2026-08-13 20:27:26,385 [CDS_adapter.py] => SGDS class=149 S_old=0.875873 S_new=0.124127 strategy=KNOWLEDGE_REUSE max_old_cos=0.977774977684021
+2026-08-13 20:27:26,385 [CDS_adapter.py] => SGDS class=150 S_old=0.870453 S_new=0.129547 strategy=KNOWLEDGE_REUSE max_old_cos=0.9573910236358643
+2026-08-13 20:27:26,385 [CDS_adapter.py] => SGDS class=151 S_old=0.871887 S_new=0.128113 strategy=KNOWLEDGE_REUSE max_old_cos=0.8912254571914673
+2026-08-13 20:27:26,385 [CDS_adapter.py] => SGDS class=152 S_old=0.874743 S_new=0.125257 strategy=KNOWLEDGE_REUSE max_old_cos=0.9365700483322144
+2026-08-13 20:27:26,385 [CDS_adapter.py] => SGDS class=153 S_old=0.876518 S_new=0.123482 strategy=KNOWLEDGE_REUSE max_old_cos=0.9416686296463013
+2026-08-13 20:27:26,385 [CDS_adapter.py] => SGDS class=154 S_old=0.872148 S_new=0.127852 strategy=KNOWLEDGE_REUSE max_old_cos=0.9137270450592041
+2026-08-13 20:27:26,385 [CDS_adapter.py] => SGDS class=155 S_old=0.875069 S_new=0.124931 strategy=KNOWLEDGE_REUSE max_old_cos=0.9471378326416016
+2026-08-13 20:27:26,385 [CDS_adapter.py] => SGDS class=156 S_old=0.875758 S_new=0.124242 strategy=KNOWLEDGE_REUSE max_old_cos=0.9745405316352844
+2026-08-13 20:27:26,385 [CDS_adapter.py] => SGDS class=157 S_old=0.874129 S_new=0.125870 strategy=KNOWLEDGE_REUSE max_old_cos=0.9486603736877441
+2026-08-13 20:27:26,385 [CDS_adapter.py] => SGDS class=158 S_old=0.871908 S_new=0.128092 strategy=KNOWLEDGE_REUSE max_old_cos=0.9551505446434021
+2026-08-13 20:27:26,385 [CDS_adapter.py] => SGDS class=159 S_old=0.874356 S_new=0.125644 strategy=KNOWLEDGE_REUSE max_old_cos=0.9560224413871765
+2026-08-13 20:51:16,786 [base.py] => CA Task 7 => Loss 0.970, Test_accy 45.370
+2026-08-13 20:51:45,556 [base.py] => CA Task 7 => Loss 0.946, Test_accy 44.590
+2026-08-13 20:52:14,479 [base.py] => CA Task 7 => Loss 0.924, Test_accy 43.560
+2026-08-13 20:52:43,289 [base.py] => CA Task 7 => Loss 0.912, Test_accy 43.470
+2026-08-13 20:53:11,983 [base.py] => CA Task 7 => Loss 0.914, Test_accy 43.580
+2026-08-13 20:53:40,047 [CDS_adapter.py] => SGDS activation task summary: {'task_id': 7, 'target_layer': 11, 'paper_k': 0.6, 'k_interpretation': 'TopK retain ratio', 'requested_retain_ratio': 0.5989583333333334, 'requested_zero_ratio': 0.40104166666666663, 'actual_nonzero_ratio': 0.5665385812952899, 'actual_zero_ratio': 0.4334614187047101, 'mean_active_dimensions': 435.10163043478263, 'mean_activation_probability': 0.5689895113501188, 'global_counter_max': 166967.0, 'global_counter_mean': 162207.2005208333, 'class_counter_max': 1172.0, 'class_counter_mean': 938.187890625, 'training_only_mask': 1, 'token_reduction': 'mean absolute magnitude'}
+2026-08-13 20:54:36,143 [trainer.py] => CNN: {'total': 43.58, '00-09': 9.2, '10-19': 7.25, '20-29': 16.86, '30-39': 21.1, '40-49': 15.33, '50-59': 15.74, '60-69': 15.94, '70-79': 29.53, '80-89': 45.61, '90-99': 58.11, '100-109': 65.17, '110-119': 59.29, '120-129': 78.91, '130-139': 79.01, '140-149': 91.81, '150-159': 90.6, 'old': 36.82, 'new': 91.2}
+2026-08-13 20:54:36,143 [trainer.py] => CNN top1 curve: [93.32, 88.19, 87.41, 85.68, 82.39, 75.94, 62.17, 43.58]
+2026-08-13 20:54:36,143 [trainer.py] => CNN top5 curve: [99.52, 99.22, 98.67, 98.31, 97.69, 96.41, 94.07, 82.7]
+2026-08-13 20:54:36,143 [trainer.py] => Average Accuracy (CNN): 77.335
+2026-08-13 20:54:36,144 [CDS_adapter.py] => Learning on 160-180
+2026-08-13 20:54:38,545 [CDS_adapter.py] => SGDS semantic task summary: {'task_id': 8, 'old_classes': 160, 'new_classes': 20, 'knowledge_reuse_classes': 20, 'new_subspace_allocation_classes': 0, 'knowledge_reuse_ratio': 1.0, 'mean_s_old': 0.8880931735038757, 'mean_s_new': 0.11190678924322128, 'eq6_includes_self': 1, 'task_epochs': 40, 'exploration_epochs': 20}
+2026-08-13 20:54:38,545 [CDS_adapter.py] => SGDS class=160 S_old=0.888888 S_new=0.111112 strategy=KNOWLEDGE_REUSE max_old_cos=0.9676481485366821
+2026-08-13 20:54:38,545 [CDS_adapter.py] => SGDS class=161 S_old=0.889742 S_new=0.110258 strategy=KNOWLEDGE_REUSE max_old_cos=0.9220831394195557
+2026-08-13 20:54:38,545 [CDS_adapter.py] => SGDS class=162 S_old=0.888780 S_new=0.111220 strategy=KNOWLEDGE_REUSE max_old_cos=0.9570358395576477
+2026-08-13 20:54:38,545 [CDS_adapter.py] => SGDS class=163 S_old=0.889087 S_new=0.110913 strategy=KNOWLEDGE_REUSE max_old_cos=0.9723325967788696
+2026-08-13 20:54:38,545 [CDS_adapter.py] => SGDS class=164 S_old=0.888400 S_new=0.111600 strategy=KNOWLEDGE_REUSE max_old_cos=0.9436353445053101
+2026-08-13 20:54:38,545 [CDS_adapter.py] => SGDS class=165 S_old=0.889060 S_new=0.110940 strategy=KNOWLEDGE_REUSE max_old_cos=0.8923490643501282
+2026-08-13 20:54:38,545 [CDS_adapter.py] => SGDS class=166 S_old=0.886060 S_new=0.113940 strategy=KNOWLEDGE_REUSE max_old_cos=0.9778174161911011
+2026-08-13 20:54:38,545 [CDS_adapter.py] => SGDS class=167 S_old=0.887944 S_new=0.112056 strategy=KNOWLEDGE_REUSE max_old_cos=0.953087568283081
+2026-08-13 20:54:38,545 [CDS_adapter.py] => SGDS class=168 S_old=0.887572 S_new=0.112428 strategy=KNOWLEDGE_REUSE max_old_cos=0.9500078558921814
+2026-08-13 20:54:38,545 [CDS_adapter.py] => SGDS class=169 S_old=0.888514 S_new=0.111486 strategy=KNOWLEDGE_REUSE max_old_cos=0.9581261873245239
+2026-08-13 20:54:38,545 [CDS_adapter.py] => SGDS class=170 S_old=0.890652 S_new=0.109348 strategy=KNOWLEDGE_REUSE max_old_cos=0.9735118746757507
+2026-08-13 20:54:38,545 [CDS_adapter.py] => SGDS class=171 S_old=0.887861 S_new=0.112139 strategy=KNOWLEDGE_REUSE max_old_cos=0.9622721076011658
+2026-08-13 20:54:38,545 [CDS_adapter.py] => SGDS class=172 S_old=0.887626 S_new=0.112374 strategy=KNOWLEDGE_REUSE max_old_cos=0.948804497718811
+2026-08-13 20:54:38,545 [CDS_adapter.py] => SGDS class=173 S_old=0.886524 S_new=0.113476 strategy=KNOWLEDGE_REUSE max_old_cos=0.9550533890724182
+2026-08-13 20:54:38,545 [CDS_adapter.py] => SGDS class=174 S_old=0.885842 S_new=0.114158 strategy=KNOWLEDGE_REUSE max_old_cos=0.9391840100288391
+2026-08-13 20:54:38,545 [CDS_adapter.py] => SGDS class=175 S_old=0.887741 S_new=0.112259 strategy=KNOWLEDGE_REUSE max_old_cos=0.9560148119926453
+2026-08-13 20:54:38,545 [CDS_adapter.py] => SGDS class=176 S_old=0.888390 S_new=0.111610 strategy=KNOWLEDGE_REUSE max_old_cos=0.9588174223899841
+2026-08-13 20:54:38,545 [CDS_adapter.py] => SGDS class=177 S_old=0.885337 S_new=0.114663 strategy=KNOWLEDGE_REUSE max_old_cos=0.9606072306632996
+2026-08-13 20:54:38,545 [CDS_adapter.py] => SGDS class=178 S_old=0.890733 S_new=0.109266 strategy=KNOWLEDGE_REUSE max_old_cos=0.9631515741348267
+2026-08-13 20:54:38,545 [CDS_adapter.py] => SGDS class=179 S_old=0.887112 S_new=0.112888 strategy=KNOWLEDGE_REUSE max_old_cos=0.9400641918182373
+2026-08-13 21:20:56,005 [base.py] => CA Task 8 => Loss 1.193, Test_accy 33.300
+2026-08-13 21:21:28,364 [base.py] => CA Task 8 => Loss 1.164, Test_accy 32.960
+2026-08-13 21:22:00,787 [base.py] => CA Task 8 => Loss 1.149, Test_accy 32.600
+2026-08-13 21:22:33,305 [base.py] => CA Task 8 => Loss 1.139, Test_accy 32.750
+2026-08-13 21:23:05,883 [base.py] => CA Task 8 => Loss 1.133, Test_accy 32.760
+2026-08-13 21:23:37,680 [CDS_adapter.py] => SGDS activation task summary: {'task_id': 8, 'target_layer': 11, 'paper_k': 0.6, 'k_interpretation': 'TopK retain ratio', 'requested_retain_ratio': 0.5989583333333334, 'requested_zero_ratio': 0.40104166666666663, 'actual_nonzero_ratio': 0.5694124045678054, 'actual_zero_ratio': 0.4305875954321946, 'mean_active_dimensions': 437.3087267080746, 'mean_activation_probability': 0.5719572785478201, 'global_counter_max': 185608.0, 'global_counter_mean': 180542.27994791666, 'class_counter_max': 1149.0, 'class_counter_mean': 916.7539713541667, 'training_only_mask': 1, 'token_reduction': 'mean absolute magnitude'}
+2026-08-13 21:24:41,097 [trainer.py] => CNN: {'total': 32.76, '00-09': 1.65, '10-19': 1.21, '20-29': 0.71, '30-39': 4.56, '40-49': 4.77, '50-59': 8.47, '60-69': 1.21, '70-79': 8.44, '80-89': 22.06, '90-99': 22.76, '100-109': 39.34, '110-119': 27.86, '120-129': 59.55, '130-139': 60.0, '140-149': 78.16, '150-159': 77.35, '160-169': 87.53, '170-179': 89.95, 'old': 25.99, 'new': 88.71}
+2026-08-13 21:24:41,097 [trainer.py] => CNN top1 curve: [93.32, 88.19, 87.41, 85.68, 82.39, 75.94, 62.17, 43.58, 32.76]
+2026-08-13 21:24:41,097 [trainer.py] => CNN top5 curve: [99.52, 99.22, 98.67, 98.31, 97.69, 96.41, 94.07, 82.7, 65.0]
+2026-08-13 21:24:41,097 [trainer.py] => Average Accuracy (CNN): 72.38222222222221
+2026-08-13 21:24:41,098 [CDS_adapter.py] => Learning on 180-196
+2026-08-13 21:24:43,093 [CDS_adapter.py] => SGDS semantic task summary: {'task_id': 9, 'old_classes': 180, 'new_classes': 16, 'knowledge_reuse_classes': 16, 'new_subspace_allocation_classes': 0, 'knowledge_reuse_ratio': 1.0, 'mean_s_old': 0.9168858528137207, 'mean_s_new': 0.08311410248279572, 'eq6_includes_self': 1, 'task_epochs': 40, 'exploration_epochs': 20}
+2026-08-13 21:24:43,093 [CDS_adapter.py] => SGDS class=180 S_old=0.914511 S_new=0.085489 strategy=KNOWLEDGE_REUSE max_old_cos=0.9728146195411682
+2026-08-13 21:24:43,093 [CDS_adapter.py] => SGDS class=181 S_old=0.919291 S_new=0.080709 strategy=KNOWLEDGE_REUSE max_old_cos=0.9670093059539795
+2026-08-13 21:24:43,094 [CDS_adapter.py] => SGDS class=182 S_old=0.919947 S_new=0.080053 strategy=KNOWLEDGE_REUSE max_old_cos=0.9404193162918091
+2026-08-13 21:24:43,094 [CDS_adapter.py] => SGDS class=183 S_old=0.912890 S_new=0.087110 strategy=KNOWLEDGE_REUSE max_old_cos=0.9635297060012817
+2026-08-13 21:24:43,094 [CDS_adapter.py] => SGDS class=184 S_old=0.916335 S_new=0.083665 strategy=KNOWLEDGE_REUSE max_old_cos=0.9653446078300476
+2026-08-13 21:24:43,094 [CDS_adapter.py] => SGDS class=185 S_old=0.920990 S_new=0.079010 strategy=KNOWLEDGE_REUSE max_old_cos=0.9469013810157776
+2026-08-13 21:24:43,094 [CDS_adapter.py] => SGDS class=186 S_old=0.913880 S_new=0.086120 strategy=KNOWLEDGE_REUSE max_old_cos=0.9645997285842896
+2026-08-13 21:24:43,094 [CDS_adapter.py] => SGDS class=187 S_old=0.918681 S_new=0.081319 strategy=KNOWLEDGE_REUSE max_old_cos=0.9637006521224976
+2026-08-13 21:24:43,094 [CDS_adapter.py] => SGDS class=188 S_old=0.913013 S_new=0.086987 strategy=KNOWLEDGE_REUSE max_old_cos=0.9788862466812134
+2026-08-13 21:24:43,094 [CDS_adapter.py] => SGDS class=189 S_old=0.915383 S_new=0.084617 strategy=KNOWLEDGE_REUSE max_old_cos=0.9670365452766418
+2026-08-13 21:24:43,094 [CDS_adapter.py] => SGDS class=190 S_old=0.918013 S_new=0.081987 strategy=KNOWLEDGE_REUSE max_old_cos=0.9304762482643127
+2026-08-13 21:24:43,094 [CDS_adapter.py] => SGDS class=191 S_old=0.919378 S_new=0.080622 strategy=KNOWLEDGE_REUSE max_old_cos=0.9635521769523621
+2026-08-13 21:24:43,094 [CDS_adapter.py] => SGDS class=192 S_old=0.917797 S_new=0.082203 strategy=KNOWLEDGE_REUSE max_old_cos=0.9386550188064575
+2026-08-13 21:24:43,094 [CDS_adapter.py] => SGDS class=193 S_old=0.918017 S_new=0.081982 strategy=KNOWLEDGE_REUSE max_old_cos=0.9510207176208496
+2026-08-13 21:24:43,094 [CDS_adapter.py] => SGDS class=194 S_old=0.914020 S_new=0.085980 strategy=KNOWLEDGE_REUSE max_old_cos=0.9681515693664551
+2026-08-13 21:24:43,094 [CDS_adapter.py] => SGDS class=195 S_old=0.918028 S_new=0.081972 strategy=KNOWLEDGE_REUSE max_old_cos=0.9542462825775146
+2026-08-13 21:52:21,843 [base.py] => CA Task 9 => Loss 1.357, Test_accy 26.580
+2026-08-13 21:52:57,063 [base.py] => CA Task 9 => Loss 1.340, Test_accy 27.090
+2026-08-13 21:53:32,409 [base.py] => CA Task 9 => Loss 1.327, Test_accy 27.560
+2026-08-13 21:54:07,716 [base.py] => CA Task 9 => Loss 1.311, Test_accy 27.100
+2026-08-13 21:54:43,038 [base.py] => CA Task 9 => Loss 1.303, Test_accy 26.890
+2026-08-13 21:55:17,428 [CDS_adapter.py] => SGDS activation task summary: {'task_id': 9, 'target_layer': 11, 'paper_k': 0.6, 'k_interpretation': 'TopK retain ratio', 'requested_retain_ratio': 0.5989583333333334, 'requested_zero_ratio': 0.40104166666666663, 'actual_nonzero_ratio': 0.5761499798487103, 'actual_zero_ratio': 0.4238500201512897, 'mean_active_dimensions': 442.48318452380954, 'mean_activation_probability': 0.5790519985414687, 'global_counter_max': 201316.0, 'global_counter_mean': 196029.19140625, 'class_counter_max': 1213.0, 'class_counter_mean': 967.9319661458333, 'training_only_mask': 1, 'token_reduction': 'mean absolute magnitude'}
+2026-08-13 21:56:26,330 [trainer.py] => CNN: {'total': 26.89, '00-09': 0.24, '10-19': 0.0, '20-29': 0.0, '30-39': 0.48, '40-49': 0.5, '50-59': 4.6, '60-69': 0.24, '70-79': 0.0, '80-89': 3.01, '90-99': 5.57, '100-109': 11.37, '110-119': 9.29, '120-129': 32.75, '130-139': 35.56, '140-149': 62.78, '150-159': 63.13, '160-169': 78.73, '170-179': 78.35, '180-189': 94.46, '190-199': 84.08, 'old': 21.19, 'new': 90.61}
+2026-08-13 21:56:26,330 [trainer.py] => CNN top1 curve: [93.32, 88.19, 87.41, 85.68, 82.39, 75.94, 62.17, 43.58, 32.76, 26.89]
+2026-08-13 21:56:26,330 [trainer.py] => CNN top5 curve: [99.52, 99.22, 98.67, 98.31, 97.69, 96.41, 94.07, 82.7, 65.0, 53.05]
+2026-08-13 21:56:26,330 [trainer.py] => Average Accuracy (CNN): 67.833
+2026-08-13 21:56:26,332 [CDS_adapter.py] => Completed result summary: {'method': 'pcds_structure_sgds', 'tasks_completed': 10, 'average_incremental_accuracy': 67.83229884285606, 'final_accuracy': 26.887203084193505, 'final_old_accuracy': 21.189540712640564, 'final_new_accuracy': 90.6060606060606, 'average_forgetting': 69.0691985855301, 'old_new_gap': -69.41651989342003, 'peak_cuda_allocated_gb': 6.289292812347412, 'peak_cuda_reserved_gb': 13.189453125, 'elapsed_seconds': 12287.001936674118, 'initial_trainable_parameters_before_classifier': 4758528, 'final_trainable_parameters': 4909056, 'final_total_parameters': 90707712, 'optimizer_skipped_steps': 0, 'nonfinite_steps': 0}
+2026-08-13 21:56:26,332 [trainer.py] => Peak GPU memory on cuda:0: allocated=6.29 GiB, reserved=13.19 GiB

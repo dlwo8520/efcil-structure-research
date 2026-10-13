@@ -1,0 +1,198 @@
+2026-08-13 15:03:17,059 [trainer.py] => config: exps_jsons/cars196_structure_pcds_seed0.json
+2026-08-13 15:03:17,059 [trainer.py] => prefix: cars196_structure_pcds_seed0
+2026-08-13 15:03:17,059 [trainer.py] => experiment_name: cars196_10task_official_structure
+2026-08-13 15:03:17,059 [trainer.py] => method_label: pcds_structure
+2026-08-13 15:03:17,059 [trainer.py] => dataset: car196
+2026-08-13 15:03:17,059 [trainer.py] => data_root: ${RESEARCH_WORKSPACE}/cds-main/data/cars196
+2026-08-13 15:03:17,059 [trainer.py] => num_classes: 196
+2026-08-13 15:03:17,059 [trainer.py] => shuffle: True
+2026-08-13 15:03:17,059 [trainer.py] => class_order_seed: 1993
+2026-08-13 15:03:17,059 [trainer.py] => ssca: True
+2026-08-13 15:03:17,059 [trainer.py] => ca: True
+2026-08-13 15:03:17,059 [trainer.py] => init_cls: 20
+2026-08-13 15:03:17,059 [trainer.py] => increment: 20
+2026-08-13 15:03:17,059 [trainer.py] => model_name: adapter
+2026-08-13 15:03:17,059 [trainer.py] => convnet_type: pretrained_vit_b16_224_in21k_adapter
+2026-08-13 15:03:17,059 [trainer.py] => device: [device(type='cuda', index=0)]
+2026-08-13 15:03:17,059 [trainer.py] => seed: 0
+2026-08-13 15:03:17,059 [trainer.py] => init_epochs: 70
+2026-08-13 15:03:17,059 [trainer.py] => inc_epochs: 40
+2026-08-13 15:03:17,059 [trainer.py] => ca_epochs: 5
+2026-08-13 15:03:17,059 [trainer.py] => init_lr: 0.005
+2026-08-13 15:03:17,059 [trainer.py] => batch_size: 32
+2026-08-13 15:03:17,059 [trainer.py] => statistics_batch_size: 64
+2026-08-13 15:03:17,059 [trainer.py] => num_workers: 8
+2026-08-13 15:03:17,059 [trainer.py] => weight_decay: 0.0005
+2026-08-13 15:03:17,059 [trainer.py] => min_lr: 0
+2026-08-13 15:03:17,060 [trainer.py] => ffn_num: 64
+2026-08-13 15:03:17,060 [trainer.py] => optimizer: sgd
+2026-08-13 15:03:17,060 [trainer.py] => vpt_type: shallow
+2026-08-13 15:03:17,060 [trainer.py] => prompt_token_num: 5
+2026-08-13 15:03:17,060 [trainer.py] => scale: 20.0
+2026-08-13 15:03:17,060 [trainer.py] => margin: 0.3
+2026-08-13 15:03:17,060 [trainer.py] => gamma_weight: 10.0
+2026-08-13 15:03:17,060 [trainer.py] => scc: True
+2026-08-13 15:03:17,060 [trainer.py] => scc_value: 5.0
+2026-08-13 15:03:17,060 [trainer.py] => feature: False
+2026-08-13 15:03:17,060 [trainer.py] => logit: False
+2026-08-13 15:03:17,060 [trainer.py] => apr: True
+2026-08-13 15:03:17,060 [trainer.py] => adapter_placement: attention
+2026-08-13 15:03:17,060 [trainer.py] => adapter_interval: 1
+2026-08-13 15:03:17,060 [trainer.py] => flag: 0
+2026-08-13 15:03:17,060 [trainer.py] => cov: 10.0
+2026-08-13 15:03:17,060 [trainer.py] => use_sgds: False
+2026-08-13 15:03:17,060 [trainer.py] => record_results: True
+2026-08-13 15:03:17,060 [trainer.py] => output_root: ${RESEARCH_WORKSPACE}/pcds_structure_sgds_official/outputs
+2026-08-13 15:03:17,060 [trainer.py] => Failed to reset peak memory stats on cuda:0 (Invalid device argument )
+2026-08-13 15:03:17,088 [data_manager.py] => [59, 134, 162, 9, 42, 72, 118, 99, 109, 79, 43, 100, 16, 144, 27, 10, 172, 26, 191, 80, 189, 6, 87, 153, 97, 70, 107, 0, 88, 178, 35, 4, 2, 170, 171, 141, 51, 166, 145, 188, 17, 167, 101, 116, 23, 157, 180, 129, 68, 85, 32, 54, 103, 104, 19, 113, 106, 175, 36, 11, 159, 169, 8, 98, 3, 28, 57, 147, 138, 187, 56, 49, 44, 125, 62, 151, 165, 94, 55, 92, 12, 122, 78, 66, 193, 15, 135, 168, 184, 91, 137, 186, 52, 126, 40, 112, 65, 142, 64, 136, 45, 77, 89, 154, 90, 71, 190, 74, 30, 119, 96, 84, 67, 50, 183, 150, 69, 21, 18, 111, 108, 58, 174, 131, 148, 110, 194, 1, 173, 83, 81, 60, 13, 163, 14, 156, 63, 117, 5, 22, 143, 121, 38, 41, 82, 127, 114, 20, 31, 53, 37, 195, 192, 130, 152, 176, 86, 76, 24, 34, 181, 149, 33, 128, 182, 155, 146, 139, 120, 140, 102, 47, 25, 158, 123, 46, 164, 61, 7, 115, 75, 133, 160, 105, 132, 179, 124, 48, 73, 93, 39, 95, 29, 177, 185, 161]
+2026-08-13 15:03:17,449 [inc_net.py] => Adapter placement strategy: attention
+2026-08-13 15:03:17,449 [inc_net.py] => Adapter interval: 1
+2026-08-13 15:03:19,171 [CDS_adapter.py] => Official Structure learner: APR=True SCC=True CA=True SGDS=False
+2026-08-13 15:03:19,172 [CDS_adapter.py] => Learning on 0-20
+2026-08-13 15:07:53,138 [trainer.py] => config: exps_jsons/cars196_structure_pcds_seed0.json
+2026-08-13 15:07:53,138 [trainer.py] => prefix: cars196_structure_pcds_seed0
+2026-08-13 15:07:53,139 [trainer.py] => experiment_name: cars196_10task_official_structure
+2026-08-13 15:07:53,139 [trainer.py] => method_label: pcds_structure
+2026-08-13 15:07:53,139 [trainer.py] => dataset: car196
+2026-08-13 15:07:53,139 [trainer.py] => data_root: ${RESEARCH_WORKSPACE}/cds-main/data/cars196
+2026-08-13 15:07:53,139 [trainer.py] => num_classes: 196
+2026-08-13 15:07:53,139 [trainer.py] => shuffle: True
+2026-08-13 15:07:53,139 [trainer.py] => class_order_seed: 1993
+2026-08-13 15:07:53,139 [trainer.py] => ssca: True
+2026-08-13 15:07:53,139 [trainer.py] => ca: True
+2026-08-13 15:07:53,139 [trainer.py] => init_cls: 20
+2026-08-13 15:07:53,139 [trainer.py] => increment: 20
+2026-08-13 15:07:53,139 [trainer.py] => model_name: adapter
+2026-08-13 15:07:53,139 [trainer.py] => convnet_type: pretrained_vit_b16_224_in21k_adapter
+2026-08-13 15:07:53,139 [trainer.py] => device: [device(type='cuda', index=0)]
+2026-08-13 15:07:53,139 [trainer.py] => seed: 0
+2026-08-13 15:07:53,139 [trainer.py] => init_epochs: 70
+2026-08-13 15:07:53,139 [trainer.py] => inc_epochs: 40
+2026-08-13 15:07:53,139 [trainer.py] => ca_epochs: 5
+2026-08-13 15:07:53,139 [trainer.py] => init_lr: 0.005
+2026-08-13 15:07:53,139 [trainer.py] => batch_size: 32
+2026-08-13 15:07:53,139 [trainer.py] => statistics_batch_size: 64
+2026-08-13 15:07:53,139 [trainer.py] => num_workers: 8
+2026-08-13 15:07:53,139 [trainer.py] => weight_decay: 0.0005
+2026-08-13 15:07:53,139 [trainer.py] => min_lr: 0
+2026-08-13 15:07:53,139 [trainer.py] => ffn_num: 64
+2026-08-13 15:07:53,139 [trainer.py] => optimizer: sgd
+2026-08-13 15:07:53,139 [trainer.py] => vpt_type: shallow
+2026-08-13 15:07:53,139 [trainer.py] => prompt_token_num: 5
+2026-08-13 15:07:53,139 [trainer.py] => scale: 20.0
+2026-08-13 15:07:53,139 [trainer.py] => margin: 0.3
+2026-08-13 15:07:53,139 [trainer.py] => gamma_weight: 10.0
+2026-08-13 15:07:53,139 [trainer.py] => scc: True
+2026-08-13 15:07:53,139 [trainer.py] => scc_value: 5.0
+2026-08-13 15:07:53,139 [trainer.py] => feature: False
+2026-08-13 15:07:53,139 [trainer.py] => logit: False
+2026-08-13 15:07:53,139 [trainer.py] => apr: True
+2026-08-13 15:07:53,139 [trainer.py] => adapter_placement: attention
+2026-08-13 15:07:53,139 [trainer.py] => adapter_interval: 1
+2026-08-13 15:07:53,139 [trainer.py] => flag: 0
+2026-08-13 15:07:53,139 [trainer.py] => cov: 10.0
+2026-08-13 15:07:53,139 [trainer.py] => use_sgds: False
+2026-08-13 15:07:53,139 [trainer.py] => record_results: True
+2026-08-13 15:07:53,139 [trainer.py] => output_root: ${RESEARCH_WORKSPACE}/pcds_structure_sgds_official/outputs
+2026-08-13 15:07:53,140 [trainer.py] => Failed to reset peak memory stats on cuda:0 (Invalid device argument )
+2026-08-13 15:07:53,176 [data_manager.py] => [59, 134, 162, 9, 42, 72, 118, 99, 109, 79, 43, 100, 16, 144, 27, 10, 172, 26, 191, 80, 189, 6, 87, 153, 97, 70, 107, 0, 88, 178, 35, 4, 2, 170, 171, 141, 51, 166, 145, 188, 17, 167, 101, 116, 23, 157, 180, 129, 68, 85, 32, 54, 103, 104, 19, 113, 106, 175, 36, 11, 159, 169, 8, 98, 3, 28, 57, 147, 138, 187, 56, 49, 44, 125, 62, 151, 165, 94, 55, 92, 12, 122, 78, 66, 193, 15, 135, 168, 184, 91, 137, 186, 52, 126, 40, 112, 65, 142, 64, 136, 45, 77, 89, 154, 90, 71, 190, 74, 30, 119, 96, 84, 67, 50, 183, 150, 69, 21, 18, 111, 108, 58, 174, 131, 148, 110, 194, 1, 173, 83, 81, 60, 13, 163, 14, 156, 63, 117, 5, 22, 143, 121, 38, 41, 82, 127, 114, 20, 31, 53, 37, 195, 192, 130, 152, 176, 86, 76, 24, 34, 181, 149, 33, 128, 182, 155, 146, 139, 120, 140, 102, 47, 25, 158, 123, 46, 164, 61, 7, 115, 75, 133, 160, 105, 132, 179, 124, 48, 73, 93, 39, 95, 29, 177, 185, 161]
+2026-08-13 15:07:53,667 [inc_net.py] => Adapter placement strategy: attention
+2026-08-13 15:07:53,667 [inc_net.py] => Adapter interval: 1
+2026-08-13 15:07:55,353 [CDS_adapter.py] => Official Structure learner: APR=True SCC=True CA=True SGDS=False
+2026-08-13 15:07:55,354 [CDS_adapter.py] => Learning on 0-20
+2026-08-13 15:19:23,311 [trainer.py] => CNN: {'total': 93.08, '00-09': 91.27, '10-19': 94.93, 'old': 0, 'new': 93.08}
+2026-08-13 15:19:23,311 [trainer.py] => CNN top1 curve: [93.08]
+2026-08-13 15:19:23,311 [trainer.py] => CNN top5 curve: [99.52]
+2026-08-13 15:19:23,311 [trainer.py] => Average Accuracy (CNN): 93.08
+2026-08-13 15:19:23,312 [CDS_adapter.py] => Learning on 20-40
+2026-08-13 15:28:47,982 [base.py] => CA Task 1 => Loss 0.282, Test_accy 87.770
+2026-08-13 15:28:55,443 [base.py] => CA Task 1 => Loss 0.219, Test_accy 88.070
+2026-08-13 15:29:02,845 [base.py] => CA Task 1 => Loss 0.206, Test_accy 88.370
+2026-08-13 15:29:10,290 [base.py] => CA Task 1 => Loss 0.195, Test_accy 88.420
+2026-08-13 15:29:17,721 [base.py] => CA Task 1 => Loss 0.194, Test_accy 88.420
+2026-08-13 15:29:39,854 [trainer.py] => CNN: {'total': 88.42, '00-09': 84.43, '10-19': 91.06, '20-29': 87.41, '30-39': 90.89, 'old': 87.71, 'new': 89.14}
+2026-08-13 15:29:39,854 [trainer.py] => CNN top1 curve: [93.08, 88.42]
+2026-08-13 15:29:39,854 [trainer.py] => CNN top5 curve: [99.52, 99.16]
+2026-08-13 15:29:39,854 [trainer.py] => Average Accuracy (CNN): 90.75
+2026-08-13 15:29:39,855 [CDS_adapter.py] => Learning on 40-60
+2026-08-13 15:41:20,115 [base.py] => CA Task 2 => Loss 0.304, Test_accy 86.450
+2026-08-13 15:41:31,037 [base.py] => CA Task 2 => Loss 0.269, Test_accy 87.090
+2026-08-13 15:41:42,133 [base.py] => CA Task 2 => Loss 0.258, Test_accy 87.580
+2026-08-13 15:41:53,036 [base.py] => CA Task 2 => Loss 0.251, Test_accy 87.490
+2026-08-13 15:42:03,999 [base.py] => CA Task 2 => Loss 0.245, Test_accy 87.580
+2026-08-13 15:42:36,374 [trainer.py] => CNN: {'total': 87.58, '00-09': 80.9, '10-19': 85.75, '20-29': 88.36, '30-39': 90.89, '40-49': 90.2, '50-59': 89.59, 'old': 86.46, 'new': 89.89}
+2026-08-13 15:42:36,374 [trainer.py] => CNN top1 curve: [93.08, 88.42, 87.58]
+2026-08-13 15:42:36,374 [trainer.py] => CNN top5 curve: [99.52, 99.16, 98.87]
+2026-08-13 15:42:36,374 [trainer.py] => Average Accuracy (CNN): 89.69333333333333
+2026-08-13 15:42:36,381 [CDS_adapter.py] => Learning on 60-80
+2026-08-13 15:56:49,998 [base.py] => CA Task 3 => Loss 0.358, Test_accy 85.530
+2026-08-13 15:57:04,454 [base.py] => CA Task 3 => Loss 0.322, Test_accy 86.110
+2026-08-13 15:57:19,003 [base.py] => CA Task 3 => Loss 0.308, Test_accy 86.440
+2026-08-13 15:57:33,523 [base.py] => CA Task 3 => Loss 0.297, Test_accy 86.650
+2026-08-13 15:57:48,053 [base.py] => CA Task 3 => Loss 0.303, Test_accy 86.650
+2026-08-13 15:58:30,853 [trainer.py] => CNN: {'total': 86.65, '00-09': 80.66, '10-19': 83.82, '20-29': 85.99, '30-39': 88.49, '40-49': 89.45, '50-59': 89.83, '60-69': 85.99, '70-79': 89.33, 'old': 86.33, 'new': 87.64}
+2026-08-13 15:58:30,853 [trainer.py] => CNN top1 curve: [93.08, 88.42, 87.58, 86.65]
+2026-08-13 15:58:30,853 [trainer.py] => CNN top5 curve: [99.52, 99.16, 98.87, 98.46]
+2026-08-13 15:58:30,853 [trainer.py] => Average Accuracy (CNN): 88.9325
+2026-08-13 15:58:30,857 [CDS_adapter.py] => Learning on 80-100
+2026-08-13 16:15:01,560 [base.py] => CA Task 4 => Loss 0.413, Test_accy 84.310
+2026-08-13 16:15:19,531 [base.py] => CA Task 4 => Loss 0.372, Test_accy 85.230
+2026-08-13 16:15:37,502 [base.py] => CA Task 4 => Loss 0.352, Test_accy 85.350
+2026-08-13 16:15:55,522 [base.py] => CA Task 4 => Loss 0.343, Test_accy 85.500
+2026-08-13 16:16:13,653 [base.py] => CA Task 4 => Loss 0.346, Test_accy 85.570
+2026-08-13 16:17:06,670 [trainer.py] => CNN: {'total': 85.57, '00-09': 79.48, '10-19': 77.05, '20-29': 85.04, '30-39': 88.25, '40-49': 87.44, '50-59': 87.89, '60-69': 84.78, '70-79': 88.59, '80-89': 88.72, '90-99': 88.86, 'old': 84.78, 'new': 88.79}
+2026-08-13 16:17:06,670 [trainer.py] => CNN top1 curve: [93.08, 88.42, 87.58, 86.65, 85.57]
+2026-08-13 16:17:06,670 [trainer.py] => CNN top5 curve: [99.52, 99.16, 98.87, 98.46, 98.13]
+2026-08-13 16:17:06,670 [trainer.py] => Average Accuracy (CNN): 88.26
+2026-08-13 16:17:06,671 [CDS_adapter.py] => Learning on 100-120
+2026-08-13 16:36:15,387 [base.py] => CA Task 5 => Loss 0.453, Test_accy 82.430
+2026-08-13 16:36:36,982 [base.py] => CA Task 5 => Loss 0.407, Test_accy 83.360
+2026-08-13 16:36:58,588 [base.py] => CA Task 5 => Loss 0.394, Test_accy 83.380
+2026-08-13 16:37:20,211 [base.py] => CA Task 5 => Loss 0.385, Test_accy 83.700
+2026-08-13 16:37:41,844 [base.py] => CA Task 5 => Loss 0.381, Test_accy 83.760
+2026-08-13 16:38:45,468 [trainer.py] => CNN: {'total': 83.76, '00-09': 77.36, '10-19': 70.29, '20-29': 81.47, '30-39': 86.09, '40-49': 83.17, '50-59': 86.92, '60-69': 85.75, '70-79': 88.59, '80-89': 87.22, '90-99': 88.86, '100-109': 83.65, '110-119': 86.19, 'old': 83.53, 'new': 84.92}
+2026-08-13 16:38:45,468 [trainer.py] => CNN top1 curve: [93.08, 88.42, 87.58, 86.65, 85.57, 83.76]
+2026-08-13 16:38:45,468 [trainer.py] => CNN top5 curve: [99.52, 99.16, 98.87, 98.46, 98.13, 97.54]
+2026-08-13 16:38:45,468 [trainer.py] => Average Accuracy (CNN): 87.51
+2026-08-13 16:38:45,469 [CDS_adapter.py] => Learning on 120-140
+2026-08-13 17:00:08,530 [base.py] => CA Task 6 => Loss 0.469, Test_accy 81.630
+2026-08-13 17:00:33,578 [base.py] => CA Task 6 => Loss 0.434, Test_accy 82.290
+2026-08-13 17:00:58,692 [base.py] => CA Task 6 => Loss 0.422, Test_accy 82.340
+2026-08-13 17:01:23,917 [base.py] => CA Task 6 => Loss 0.414, Test_accy 82.520
+2026-08-13 17:01:49,148 [base.py] => CA Task 6 => Loss 0.413, Test_accy 82.590
+2026-08-13 17:03:03,170 [trainer.py] => CNN: {'total': 82.59, '00-09': 70.52, '10-19': 68.6, '20-29': 74.82, '30-39': 83.93, '40-49': 80.9, '50-59': 85.71, '60-69': 85.27, '70-79': 89.08, '80-89': 87.47, '90-99': 89.59, '100-109': 84.36, '110-119': 83.57, '120-129': 89.58, '130-139': 83.7, 'old': 81.93, 'new': 86.63}
+2026-08-13 17:03:03,170 [trainer.py] => CNN top1 curve: [93.08, 88.42, 87.58, 86.65, 85.57, 83.76, 82.59]
+2026-08-13 17:03:03,170 [trainer.py] => CNN top5 curve: [99.52, 99.16, 98.87, 98.46, 98.13, 97.54, 97.36]
+2026-08-13 17:03:03,170 [trainer.py] => Average Accuracy (CNN): 86.80714285714286
+2026-08-13 17:03:03,171 [CDS_adapter.py] => Learning on 140-160
+2026-08-13 17:26:53,176 [base.py] => CA Task 7 => Loss 0.494, Test_accy 80.320
+2026-08-13 17:27:21,973 [base.py] => CA Task 7 => Loss 0.472, Test_accy 80.710
+2026-08-13 17:27:50,796 [base.py] => CA Task 7 => Loss 0.457, Test_accy 81.040
+2026-08-13 17:28:19,737 [base.py] => CA Task 7 => Loss 0.444, Test_accy 81.090
+2026-08-13 17:28:48,580 [base.py] => CA Task 7 => Loss 0.444, Test_accy 81.150
+2026-08-13 17:30:13,234 [trainer.py] => CNN: {'total': 81.15, '00-09': 66.51, '10-19': 64.98, '20-29': 73.4, '30-39': 82.97, '40-49': 77.89, '50-59': 83.78, '60-69': 82.85, '70-79': 86.85, '80-89': 87.22, '90-99': 88.38, '100-109': 85.07, '110-119': 82.62, '120-129': 88.34, '130-139': 82.47, '140-149': 81.14, '150-159': 84.82, 'old': 80.89, 'new': 83.01}
+2026-08-13 17:30:13,234 [trainer.py] => CNN top1 curve: [93.08, 88.42, 87.58, 86.65, 85.57, 83.76, 82.59, 81.15]
+2026-08-13 17:30:13,234 [trainer.py] => CNN top5 curve: [99.52, 99.16, 98.87, 98.46, 98.13, 97.54, 97.36, 96.98]
+2026-08-13 17:30:13,234 [trainer.py] => Average Accuracy (CNN): 86.10000000000001
+2026-08-13 17:30:13,235 [CDS_adapter.py] => Learning on 160-180
+2026-08-13 17:56:22,474 [base.py] => CA Task 8 => Loss 0.521, Test_accy 79.560
+2026-08-13 17:56:54,607 [base.py] => CA Task 8 => Loss 0.494, Test_accy 80.100
+2026-08-13 17:57:26,902 [base.py] => CA Task 8 => Loss 0.481, Test_accy 80.070
+2026-08-13 17:57:59,257 [base.py] => CA Task 8 => Loss 0.473, Test_accy 80.150
+2026-08-13 17:58:31,621 [base.py] => CA Task 8 => Loss 0.469, Test_accy 80.170
+2026-08-13 18:00:06,352 [trainer.py] => CNN: {'total': 80.17, '00-09': 62.5, '10-19': 63.04, '20-29': 70.78, '30-39': 81.06, '40-49': 74.87, '50-59': 77.97, '60-69': 81.16, '70-79': 86.35, '80-89': 86.72, '90-99': 84.02, '100-109': 85.07, '110-119': 80.71, '120-129': 88.59, '130-139': 81.73, '140-149': 81.89, '150-159': 82.65, '160-169': 87.29, '170-179': 88.14, 'old': 79.25, 'new': 87.7}
+2026-08-13 18:00:06,352 [trainer.py] => CNN top1 curve: [93.08, 88.42, 87.58, 86.65, 85.57, 83.76, 82.59, 81.15, 80.17]
+2026-08-13 18:00:06,352 [trainer.py] => CNN top5 curve: [99.52, 99.16, 98.87, 98.46, 98.13, 97.54, 97.36, 96.98, 96.72]
+2026-08-13 18:00:06,352 [trainer.py] => Average Accuracy (CNN): 85.44111111111111
+2026-08-13 18:00:06,357 [CDS_adapter.py] => Learning on 180-196
+2026-08-13 18:27:31,570 [base.py] => CA Task 9 => Loss 0.538, Test_accy 79.260
+2026-08-13 18:28:06,551 [base.py] => CA Task 9 => Loss 0.504, Test_accy 79.380
+2026-08-13 18:28:41,534 [base.py] => CA Task 9 => Loss 0.495, Test_accy 79.540
+2026-08-13 18:29:16,614 [base.py] => CA Task 9 => Loss 0.484, Test_accy 79.600
+2026-08-13 18:29:51,571 [base.py] => CA Task 9 => Loss 0.481, Test_accy 79.620
+2026-08-13 18:31:34,179 [trainer.py] => CNN: {'total': 79.62, '00-09': 63.21, '10-19': 63.53, '20-29': 61.28, '30-39': 79.86, '40-49': 72.61, '50-59': 76.27, '60-69': 79.23, '70-79': 84.62, '80-89': 86.97, '90-99': 83.54, '100-109': 81.99, '110-119': 81.19, '120-129': 88.09, '130-139': 83.21, '140-149': 80.65, '150-159': 82.89, '160-169': 88.51, '170-179': 88.4, '180-189': 86.02, '190-199': 83.67, 'old': 79.12, 'new': 85.15}
+2026-08-13 18:31:34,179 [trainer.py] => CNN top1 curve: [93.08, 88.42, 87.58, 86.65, 85.57, 83.76, 82.59, 81.15, 80.17, 79.62]
+2026-08-13 18:31:34,179 [trainer.py] => CNN top5 curve: [99.52, 99.16, 98.87, 98.46, 98.13, 97.54, 97.36, 96.98, 96.72, 96.7]
+2026-08-13 18:31:34,179 [trainer.py] => Average Accuracy (CNN): 84.85900000000001
+2026-08-13 18:31:34,181 [CDS_adapter.py] => Completed result summary: {'method': 'pcds_structure', 'tasks_completed': 10, 'average_incremental_accuracy': 84.8584752364042, 'final_accuracy': 79.61696306429549, 'final_old_accuracy': 79.12207018019238, 'final_new_accuracy': 85.15151515151516, 'average_forgetting': 8.786882664994897, 'old_new_gap': -6.029444971322775, 'peak_cuda_allocated_gb': 6.288203239440918, 'peak_cuda_reserved_gb': 14.380859375, 'elapsed_seconds': 12218.829589605331, 'initial_trainable_parameters_before_classifier': 4758528, 'final_trainable_parameters': 4909056, 'final_total_parameters': 90707712, 'optimizer_skipped_steps': 0, 'nonfinite_steps': 0}
+2026-08-13 18:31:34,182 [trainer.py] => Peak GPU memory on cuda:0: allocated=6.29 GiB, reserved=14.38 GiB

@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "new_repository": "${RESEARCH_WORKSPACE}/pcds_structure_sgds_official",
+  "official_structure_learner": "models/CDS_adapter.py",
+  "dataset_root": "${RESEARCH_WORKSPACE}/cds-main/data/cars196",
+  "official_split_images": {
+    "train": 8144,
+    "test": 8041
+  },
+  "task_sizes": [
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    16
+  ],
+  "classes": 196,
+  "training_seed": 0,
+  "shared_class_order_seed": 1993,
+  "baseline_and_sgds_configs_match_except_guidance": true,
+  "sgds_target": "final ViT block attention-adapter input only",
+  "sgds_scope": "Eq. (4)-(10) only",
+  "raw_replay": false,
+  "single_expanding_head": true
+}
