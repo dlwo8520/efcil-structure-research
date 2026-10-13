@@ -1,0 +1,30 @@
+{
+  "A_by_task": [
+    88.9618138424821,
+    86.6156202143951,
+    85.18366509337164,
+    82.68873762376238,
+    81.1963686108693
+  ],
+  "Forgetting": 4.431442909464234,
+  "Inc-Acc": 84.9292410769761,
+  "Last-Acc": 81.1963686108693,
+  "accuracy_unit": "percent_0_to_100_unrounded",
+  "completed_tasks": 5,
+  "expected_tasks": 5,
+  "experiment_id": "Structure",
+  "final_total_statistics_bytes": 463626240,
+  "forgetting_definition": "mean_i(max_{l=i..T-1} a[l,i] - a[T,i]) over tasks i before final task; a[l,i] uses the single head over all classes seen at stage l",
+  "max_peak_cuda_allocated_bytes": 6281271296,
+  "max_peak_cuda_reserved_bytes": 13094617088,
+  "max_peak_main_process_rss_bytes": 4402315264,
+  "max_separation_cache_bytes": 0,
+  "multi_center": false,
+  "recording_gaps": [],
+  "recording_schema_version": 2,
+  "recording_status": "complete",
+  "seed": 1993,
+  "separation_covariance": "none",
+  "status": "complete",
+  "total_training_seconds": 5489.940461637219
+}

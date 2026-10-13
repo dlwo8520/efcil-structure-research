@@ -1,0 +1,30 @@
+{
+  "A_by_task": [
+    88.9618138424821,
+    86.79938744257274,
+    85.24522881182024,
+    82.64232673267327,
+    81.1963686108693
+  ],
+  "Forgetting": 4.1397899539041205,
+  "Inc-Acc": 84.96902508808353,
+  "Last-Acc": 81.1963686108693,
+  "accuracy_unit": "percent_0_to_100_unrounded",
+  "completed_tasks": 5,
+  "expected_tasks": 5,
+  "experiment_id": "A_P020",
+  "final_total_statistics_bytes": 926655072,
+  "forgetting_definition": "mean_i(max_{l=i..T-1} a[l,i] - a[T,i]) over tasks i before final task; a[l,i] uses the single head over all classes seen at stage l",
+  "max_peak_cuda_allocated_bytes": 6281271296,
+  "max_peak_cuda_reserved_bytes": 10806624256,
+  "max_peak_main_process_rss_bytes": 4402868224,
+  "max_separation_cache_bytes": 966492,
+  "multi_center": false,
+  "recording_gaps": [],
+  "recording_schema_version": 2,
+  "recording_status": "complete",
+  "seed": 1993,
+  "separation_covariance": "diagonal",
+  "status": "complete",
+  "total_training_seconds": 5657.567869430175
+}
