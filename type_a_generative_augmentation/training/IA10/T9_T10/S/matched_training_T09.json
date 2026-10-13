@@ -1,0 +1,180 @@
+{
+  "task": 9,
+  "branch": "S",
+  "anchor_sha256": "35cac6e964bae68fe59c376c7733d2cf1b1ddce6465a6f193d4457f73df9de78",
+  "parent_schedule_sha256": "e134a67a15aa178ef764865b46cdd8f7aed15044e313843cb5c62feb35c5dfa6",
+  "epochs": [
+    {
+      "epoch": 1,
+      "anchor_samples": 571,
+      "forward_backward_images": 1142,
+      "optimizer_steps": 12,
+      "loss": 5.558127635205898,
+      "learning_rates_after_step": [
+        0.009890738003669028,
+        0.009890738003669028
+      ]
+    },
+    {
+      "epoch": 2,
+      "anchor_samples": 571,
+      "forward_backward_images": 1142,
+      "optimizer_steps": 12,
+      "loss": 3.1969082514166622,
+      "learning_rates_after_step": [
+        0.009567727288213004,
+        0.009567727288213004
+      ]
+    },
+    {
+      "epoch": 3,
+      "anchor_samples": 571,
+      "forward_backward_images": 1142,
+      "optimizer_steps": 12,
+      "loss": 2.628039590322825,
+      "learning_rates_after_step": [
+        0.009045084971874737,
+        0.009045084971874737
+      ]
+    },
+    {
+      "epoch": 4,
+      "anchor_samples": 571,
+      "forward_backward_images": 1142,
+      "optimizer_steps": 12,
+      "loss": 2.4147855907730795,
+      "learning_rates_after_step": [
+        0.008345653031794291,
+        0.008345653031794291
+      ]
+    },
+    {
+      "epoch": 5,
+      "anchor_samples": 571,
+      "forward_backward_images": 1142,
+      "optimizer_steps": 12,
+      "loss": 2.229803272596383,
+      "learning_rates_after_step": [
+        0.0075,
+        0.0075
+      ]
+    },
+    {
+      "epoch": 6,
+      "anchor_samples": 571,
+      "forward_backward_images": 1142,
+      "optimizer_steps": 12,
+      "loss": 2.1473612679909073,
+      "learning_rates_after_step": [
+        0.006545084971874737,
+        0.006545084971874737
+      ]
+    },
+    {
+      "epoch": 7,
+      "anchor_samples": 571,
+      "forward_backward_images": 1142,
+      "optimizer_steps": 12,
+      "loss": 2.0701811194628634,
+      "learning_rates_after_step": [
+        0.005522642316338268,
+        0.005522642316338268
+      ]
+    },
+    {
+      "epoch": 8,
+      "anchor_samples": 571,
+      "forward_backward_images": 1142,
+      "optimizer_steps": 12,
+      "loss": 2.023427779014808,
+      "learning_rates_after_step": [
+        0.004477357683661734,
+        0.004477357683661734
+      ]
+    },
+    {
+      "epoch": 9,
+      "anchor_samples": 571,
+      "forward_backward_images": 1142,
+      "optimizer_steps": 12,
+      "loss": 1.9594556553560047,
+      "learning_rates_after_step": [
+        0.003454915028125264,
+        0.003454915028125264
+      ]
+    },
+    {
+      "epoch": 10,
+      "anchor_samples": 571,
+      "forward_backward_images": 1142,
+      "optimizer_steps": 12,
+      "loss": 1.9473812759653282,
+      "learning_rates_after_step": [
+        0.0025000000000000014,
+        0.0025000000000000014
+      ]
+    },
+    {
+      "epoch": 11,
+      "anchor_samples": 571,
+      "forward_backward_images": 1142,
+      "optimizer_steps": 12,
+      "loss": 1.9282927190568526,
+      "learning_rates_after_step": [
+        0.0016543469682057106,
+        0.0016543469682057106
+      ]
+    },
+    {
+      "epoch": 12,
+      "anchor_samples": 571,
+      "forward_backward_images": 1142,
+      "optimizer_steps": 12,
+      "loss": 2.01029136970039,
+      "learning_rates_after_step": [
+        0.0009549150281252633,
+        0.0009549150281252633
+      ]
+    },
+    {
+      "epoch": 13,
+      "anchor_samples": 571,
+      "forward_backward_images": 1142,
+      "optimizer_steps": 12,
+      "loss": 1.9433960205828038,
+      "learning_rates_after_step": [
+        0.0004322727117869951,
+        0.0004322727117869951
+      ]
+    },
+    {
+      "epoch": 14,
+      "anchor_samples": 571,
+      "forward_backward_images": 1142,
+      "optimizer_steps": 12,
+      "loss": 1.9010468582555835,
+      "learning_rates_after_step": [
+        0.00010926199633097157,
+        0.00010926199633097157
+      ]
+    },
+    {
+      "epoch": 15,
+      "anchor_samples": 571,
+      "forward_backward_images": 1142,
+      "optimizer_steps": 12,
+      "loss": 1.9093358848641926,
+      "learning_rates_after_step": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "optimizer": "sgd",
+  "batch_size_anchor": 48,
+  "effective_forward_batch": 96,
+  "auxiliary_transform": "Compose(\n    RandomResizedCrop(size=(224, 224), scale=(0.05, 1.0), ratio=(0.75, 1.3333), interpolation=bilinear, antialias=True)\n    RandomHorizontalFlip(p=0.5)\n    RandAugment(num_ops=2, magnitude=9, num_magnitude_bins=31, interpolation=InterpolationMode.NEAREST, fill=None)\n    ToTensor()\n    RandomErasing(p=0.25, scale=(0.02, 0.33), ratio=(0.3, 3.3), value=0, inplace=False)\n)",
+  "sequential_backward_accumulation": true,
+  "SCC_source": "real anchor only",
+  "runtime_train_epochs_completed": 15
+}
