@@ -1,0 +1,18 @@
+{
+  "base_config": "ptm_guided_base.json",
+  "prefix": "ptm_guided_imageneta_10task_adapter_baseline",
+  "dataset": "imageneta",
+  "expected_num_classes": 200,
+  "task_count": 10,
+  "init_cls": 20,
+  "increment": 20,
+  "method": "adapter_baseline",
+  "ptm_place_enabled": false,
+  "old_move_enabled": false,
+  "init_epochs": 30,
+  "inc_epochs": 15,
+  "init_lr": 0.01,
+  "batch_size": 48,
+  "margin": 0.2,
+  "adapter_placement": "mlp"
+}

@@ -1,0 +1,18 @@
+{
+  "base_config": "ptm_guided_base.json",
+  "prefix": "ptm_guided_imagenetr_10task_ptm_place_move",
+  "dataset": "imagenetr",
+  "expected_num_classes": 200,
+  "task_count": 10,
+  "init_cls": 20,
+  "increment": 20,
+  "method": "ptm_place_move",
+  "ptm_place_enabled": true,
+  "old_move_enabled": true,
+  "init_epochs": 20,
+  "inc_epochs": 10,
+  "init_lr": 0.005,
+  "batch_size": 48,
+  "margin": 0.3,
+  "adapter_placement": "mlp"
+}
