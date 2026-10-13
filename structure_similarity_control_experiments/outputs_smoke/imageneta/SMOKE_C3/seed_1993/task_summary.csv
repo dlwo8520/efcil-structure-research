@@ -1,0 +1,2 @@
+experiment_id,seed,task_id,eval_stage,seen_classes,num_correct,num_samples,accuracy,top5_num_correct,top5_accuracy,old_num_correct,old_num_samples,old_accuracy,new_num_correct,new_num_samples,new_accuracy,old_to_new_error_rate,new_to_old_error_rate,training_seconds,checkpoint_path,checkpoint_state_id
+SMOKE_C3,1993,1,task_final,40,251,360,69.72222222222223,322,89.44444444444444,,0,,251,360,69.72222222222223,,0.0,112.72978954698192,${RESEARCH_WORKSPACE}/structure_similarity_control_experiments/outputs_smoke/imageneta/SMOKE_C3/seed_1993/checkpoint_latest.pt,task_end:task_1
