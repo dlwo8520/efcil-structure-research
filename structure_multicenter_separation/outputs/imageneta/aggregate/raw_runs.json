@@ -1,0 +1,29 @@
+{
+  "common_comparable_seeds": [],
+  "excluded": [
+    {
+      "experiment": "E0",
+      "seed": 1993,
+      "run_dir": "${RESEARCH_WORKSPACE}/structure_multicenter_separation/outputs/imageneta/E0/seed_1993",
+      "reason": "missing summary.json",
+      "failure_type": null,
+      "failure_reason": null
+    }
+  ],
+  "runs": {
+    "E0": {
+      "1993": {
+        "complete": false,
+        "run_dir": "${RESEARCH_WORKSPACE}/structure_multicenter_separation/outputs/imageneta/E0/seed_1993",
+        "protocol_signature": "a5a4075f2f0b75629af4da7a13ff32b00cc9492c5dda739a260464a65ed62f09"
+      }
+    },
+    "E1": {},
+    "E2": {},
+    "E3": {},
+    "E4": {},
+    "E5": {},
+    "E6": {},
+    "E7": {}
+  }
+}

@@ -1,0 +1,6171 @@
+{
+  "kmeans": [
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 18462.302734375,
+          "initialization": 0,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 16876.79296875,
+          "initialization": 1,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 16849.1484375,
+          "initialization": 2,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 16849.1484375,
+          "initialization": 3,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 16842.779296875,
+          "initialization": 4,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 18243.50390625,
+          "initialization": 5,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 16340.6015625,
+          "initialization": 6,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 16481.728515625,
+          "initialization": 7,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 16410.08203125,
+          "initialization": 8,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 16947.9609375,
+          "initialization": 9,
+          "k": 3,
+          "valid": false
+        }
+      ],
+      "class_id": 0,
+      "counts": [
+        3,
+        3,
+        5
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 2,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 11
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 20514.02734375,
+          "initialization": 0,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 19833.5859375,
+          "initialization": 1,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 20153.931640625,
+          "initialization": 2,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 20022.474609375,
+          "initialization": 3,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 19861.8828125,
+          "initialization": 4,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 19828.92578125,
+          "initialization": 5,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 19832.85546875,
+          "initialization": 6,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 20205.302734375,
+          "initialization": 7,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 19481.689453125,
+          "initialization": 8,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 19984.724609375,
+          "initialization": 9,
+          "k": 3,
+          "valid": false
+        }
+      ],
+      "class_id": 1,
+      "counts": [
+        2,
+        2,
+        8
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 2,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 12
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 126925.8671875,
+          "initialization": 0,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 128420.734375,
+          "initialization": 1,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 132797.203125,
+          "initialization": 2,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 126108.3984375,
+          "initialization": 3,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 127077.09375,
+          "initialization": 4,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 125791.0,
+          "initialization": 5,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 128942.765625,
+          "initialization": 6,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 128913.0703125,
+          "initialization": 7,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 128809.34375,
+          "initialization": 8,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 125423.6640625,
+          "initialization": 9,
+          "k": 3,
+          "valid": true
+        }
+      ],
+      "class_id": 2,
+      "counts": [
+        27,
+        28,
+        28
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 13,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 83
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 79212.7109375,
+          "initialization": 0,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 73146.625,
+          "initialization": 1,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 76784.546875,
+          "initialization": 2,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 76171.703125,
+          "initialization": 3,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 73108.734375,
+          "initialization": 4,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 72839.0625,
+          "initialization": 5,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 73275.609375,
+          "initialization": 6,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 73152.5390625,
+          "initialization": 7,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 75544.3359375,
+          "initialization": 8,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 74279.25,
+          "initialization": 9,
+          "k": 3,
+          "valid": false
+        }
+      ],
+      "class_id": 3,
+      "counts": [
+        30,
+        12,
+        12
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 10,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 54
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 14394.681640625,
+          "initialization": 0,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 15384.5263671875,
+          "initialization": 1,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 15292.1123046875,
+          "initialization": 2,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 13882.2421875,
+          "initialization": 3,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 14430.037109375,
+          "initialization": 4,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 14897.8759765625,
+          "initialization": 5,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 15213.9833984375,
+          "initialization": 6,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 14846.9921875,
+          "initialization": 7,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 13882.2421875,
+          "initialization": 8,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 14537.943359375,
+          "initialization": 9,
+          "k": 3,
+          "valid": true
+        }
+      ],
+      "class_id": 4,
+      "counts": [
+        3,
+        3,
+        4
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 2,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 10
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 29708.650390625,
+          "initialization": 0,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 30039.58203125,
+          "initialization": 1,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 31077.20703125,
+          "initialization": 2,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 30941.494140625,
+          "initialization": 3,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 31040.59375,
+          "initialization": 4,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 30782.431640625,
+          "initialization": 5,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 30112.9296875,
+          "initialization": 6,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 31822.935546875,
+          "initialization": 7,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 29443.103515625,
+          "initialization": 8,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 29957.64453125,
+          "initialization": 9,
+          "k": 3,
+          "valid": false
+        }
+      ],
+      "class_id": 5,
+      "counts": [
+        3,
+        4,
+        9
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 2,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 16
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 48849.16015625,
+          "initialization": 0,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 48402.58203125,
+          "initialization": 1,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 49891.125,
+          "initialization": 2,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 48741.36328125,
+          "initialization": 3,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 49098.84375,
+          "initialization": 4,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 47790.69921875,
+          "initialization": 5,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 48849.16015625,
+          "initialization": 6,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 47592.4765625,
+          "initialization": 7,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 49496.60546875,
+          "initialization": 8,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 49025.05078125,
+          "initialization": 9,
+          "k": 3,
+          "valid": false
+        }
+      ],
+      "class_id": 6,
+      "counts": [
+        16,
+        5,
+        3
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 2,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 24
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 12671.5,
+          "initialization": 0,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 12770.2177734375,
+          "initialization": 1,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 12609.638671875,
+          "initialization": 2,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 13066.0703125,
+          "initialization": 3,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 12585.74609375,
+          "initialization": 4,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 12946.6240234375,
+          "initialization": 5,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 12500.677734375,
+          "initialization": 6,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 12567.68359375,
+          "initialization": 7,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 12795.15625,
+          "initialization": 8,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 12894.0771484375,
+          "initialization": 9,
+          "k": 3,
+          "valid": false
+        }
+      ],
+      "class_id": 7,
+      "counts": [
+        2,
+        6,
+        2
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 2,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 10
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 76404.703125,
+          "initialization": 0,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 76870.1796875,
+          "initialization": 1,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 76716.40625,
+          "initialization": 2,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 76387.3515625,
+          "initialization": 3,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 76704.7734375,
+          "initialization": 4,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 77856.9609375,
+          "initialization": 5,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 76764.390625,
+          "initialization": 6,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 75621.984375,
+          "initialization": 7,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 77636.734375,
+          "initialization": 8,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 74395.3046875,
+          "initialization": 9,
+          "k": 3,
+          "valid": true
+        }
+      ],
+      "class_id": 8,
+      "counts": [
+        2,
+        16,
+        34
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 6,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 52
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 36991.4375,
+          "initialization": 0,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 37708.40625,
+          "initialization": 1,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 36991.23046875,
+          "initialization": 2,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 36532.94140625,
+          "initialization": 3,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 35687.96484375,
+          "initialization": 4,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 36585.34765625,
+          "initialization": 5,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 36731.5859375,
+          "initialization": 6,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 36562.14453125,
+          "initialization": 7,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 37738.2109375,
+          "initialization": 8,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 36286.8828125,
+          "initialization": 9,
+          "k": 3,
+          "valid": false
+        }
+      ],
+      "class_id": 9,
+      "counts": [
+        4,
+        15,
+        10
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 3,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 29
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 16148.611328125,
+          "initialization": 0,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 15478.37890625,
+          "initialization": 1,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 15100.416015625,
+          "initialization": 2,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 15451.314453125,
+          "initialization": 3,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 16114.64453125,
+          "initialization": 4,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 15889.2275390625,
+          "initialization": 5,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 15622.443359375,
+          "initialization": 6,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 15293.181640625,
+          "initialization": 7,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 15285.1533203125,
+          "initialization": 8,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 15285.1533203125,
+          "initialization": 9,
+          "k": 3,
+          "valid": true
+        }
+      ],
+      "class_id": 10,
+      "counts": [
+        4,
+        3,
+        3
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 2,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 10
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 21753.6015625,
+          "initialization": 0,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 21927.11328125,
+          "initialization": 1,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 21748.271484375,
+          "initialization": 2,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 21048.2734375,
+          "initialization": 3,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 21777.556640625,
+          "initialization": 4,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 20773.025390625,
+          "initialization": 5,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 21211.541015625,
+          "initialization": 6,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 21166.404296875,
+          "initialization": 7,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 21353.892578125,
+          "initialization": 8,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 21472.60546875,
+          "initialization": 9,
+          "k": 3,
+          "valid": false
+        }
+      ],
+      "class_id": 11,
+      "counts": [
+        3,
+        10,
+        3
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 2,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 16
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 103198.8984375,
+          "initialization": 0,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 97082.390625,
+          "initialization": 1,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 98960.265625,
+          "initialization": 2,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 103013.96875,
+          "initialization": 3,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 104605.9609375,
+          "initialization": 4,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 98267.1328125,
+          "initialization": 5,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 98452.2890625,
+          "initialization": 6,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 104893.953125,
+          "initialization": 7,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 99576.453125,
+          "initialization": 8,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 99182.9140625,
+          "initialization": 9,
+          "k": 3,
+          "valid": true
+        }
+      ],
+      "class_id": 12,
+      "counts": [
+        16,
+        49,
+        11
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 5,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 76
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 35380.13671875,
+          "initialization": 0,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 36550.609375,
+          "initialization": 1,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 34877.03515625,
+          "initialization": 2,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 35314.0703125,
+          "initialization": 3,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 35376.5625,
+          "initialization": 4,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 36752.4296875,
+          "initialization": 5,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 36208.04296875,
+          "initialization": 6,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 36361.59375,
+          "initialization": 7,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 35430.19140625,
+          "initialization": 8,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 36081.64453125,
+          "initialization": 9,
+          "k": 3,
+          "valid": false
+        }
+      ],
+      "class_id": 13,
+      "counts": [
+        2,
+        11,
+        5
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 2,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 18
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 98053.328125,
+          "initialization": 0,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 98398.8515625,
+          "initialization": 1,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 97879.828125,
+          "initialization": 2,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 97085.859375,
+          "initialization": 3,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 99959.328125,
+          "initialization": 4,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 101115.7734375,
+          "initialization": 5,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 98244.7578125,
+          "initialization": 6,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 101171.7421875,
+          "initialization": 7,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 97919.9296875,
+          "initialization": 8,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 99205.890625,
+          "initialization": 9,
+          "k": 3,
+          "valid": true
+        }
+      ],
+      "class_id": 14,
+      "counts": [
+        11,
+        37,
+        32
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 14,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 80
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 106810.28125,
+          "initialization": 0,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 107229.1171875,
+          "initialization": 1,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 107145.0625,
+          "initialization": 2,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 106530.484375,
+          "initialization": 3,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 107374.25,
+          "initialization": 4,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 109475.8515625,
+          "initialization": 5,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 105474.234375,
+          "initialization": 6,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 107824.59375,
+          "initialization": 7,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 105881.5625,
+          "initialization": 8,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 111489.75,
+          "initialization": 9,
+          "k": 3,
+          "valid": false
+        }
+      ],
+      "class_id": 15,
+      "counts": [
+        28,
+        31,
+        24
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 6,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 83
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 23037.326171875,
+          "initialization": 0,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 21633.142578125,
+          "initialization": 1,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 22253.22265625,
+          "initialization": 2,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 21491.2890625,
+          "initialization": 3,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 21517.5859375,
+          "initialization": 4,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 21819.38671875,
+          "initialization": 5,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 22736.1015625,
+          "initialization": 6,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 22387.5703125,
+          "initialization": 7,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 22409.287109375,
+          "initialization": 8,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 21208.54296875,
+          "initialization": 9,
+          "k": 3,
+          "valid": true
+        }
+      ],
+      "class_id": 16,
+      "counts": [
+        2,
+        5,
+        6
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 2,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 13
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 109889.828125,
+          "initialization": 0,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 110354.734375,
+          "initialization": 1,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 110870.921875,
+          "initialization": 2,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 109535.015625,
+          "initialization": 3,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 112661.8515625,
+          "initialization": 4,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 111532.2421875,
+          "initialization": 5,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 109200.2734375,
+          "initialization": 6,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 109284.703125,
+          "initialization": 7,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 111357.5390625,
+          "initialization": 8,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 108480.34375,
+          "initialization": 9,
+          "k": 3,
+          "valid": true
+        }
+      ],
+      "class_id": 17,
+      "counts": [
+        26,
+        5,
+        43
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 4,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 74
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 18369.962890625,
+          "initialization": 0,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 18136.857421875,
+          "initialization": 1,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 17510.5546875,
+          "initialization": 2,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 17432.515625,
+          "initialization": 3,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 17323.9453125,
+          "initialization": 4,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 18058.236328125,
+          "initialization": 5,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 16783.513671875,
+          "initialization": 6,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 17302.177734375,
+          "initialization": 7,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 17631.451171875,
+          "initialization": 8,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 17925.603515625,
+          "initialization": 9,
+          "k": 3,
+          "valid": false
+        }
+      ],
+      "class_id": 18,
+      "counts": [
+        3,
+        10,
+        3
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 2,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 16
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 30121.30078125,
+          "initialization": 0,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 30897.48046875,
+          "initialization": 1,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 30804.73828125,
+          "initialization": 2,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 30757.2109375,
+          "initialization": 3,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 30832.138671875,
+          "initialization": 4,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 30365.203125,
+          "initialization": 5,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 31354.140625,
+          "initialization": 6,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 32327.869140625,
+          "initialization": 7,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 31978.21484375,
+          "initialization": 8,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 31036.66796875,
+          "initialization": 9,
+          "k": 3,
+          "valid": true
+        }
+      ],
+      "class_id": 19,
+      "counts": [
+        2,
+        14,
+        2
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 2,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 18
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 101947.53125,
+          "initialization": 0,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 102383.3515625,
+          "initialization": 1,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 103536.234375,
+          "initialization": 2,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 102407.65625,
+          "initialization": 3,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 102132.140625,
+          "initialization": 4,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 102397.375,
+          "initialization": 5,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 103142.6796875,
+          "initialization": 6,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 101426.71875,
+          "initialization": 7,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 101707.125,
+          "initialization": 8,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 101754.03125,
+          "initialization": 9,
+          "k": 3,
+          "valid": true
+        }
+      ],
+      "class_id": 20,
+      "counts": [
+        12,
+        4,
+        34
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 2,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 50
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 73936.28125,
+          "initialization": 0,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 75131.5703125,
+          "initialization": 1,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 73423.2734375,
+          "initialization": 2,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 73058.296875,
+          "initialization": 3,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 77280.71875,
+          "initialization": 4,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 73894.9765625,
+          "initialization": 5,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 78662.78125,
+          "initialization": 6,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 74198.4453125,
+          "initialization": 7,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 74566.25,
+          "initialization": 8,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 75314.796875,
+          "initialization": 9,
+          "k": 3,
+          "valid": true
+        }
+      ],
+      "class_id": 21,
+      "counts": [
+        37,
+        3,
+        16
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 6,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 56
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 68578.453125,
+          "initialization": 0,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 65933.3828125,
+          "initialization": 1,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 70083.328125,
+          "initialization": 2,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 68632.6171875,
+          "initialization": 3,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 69042.71875,
+          "initialization": 4,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 67894.1171875,
+          "initialization": 5,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 67940.125,
+          "initialization": 6,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 66700.4375,
+          "initialization": 7,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 66234.6328125,
+          "initialization": 8,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 64985.984375,
+          "initialization": 9,
+          "k": 3,
+          "valid": true
+        }
+      ],
+      "class_id": 22,
+      "counts": [
+        16,
+        5,
+        15
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 6,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 36
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 62751.1875,
+          "initialization": 0,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 64260.05859375,
+          "initialization": 1,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 65675.8203125,
+          "initialization": 2,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 62913.75,
+          "initialization": 3,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 65366.46484375,
+          "initialization": 4,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 64642.2734375,
+          "initialization": 5,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 63146.14453125,
+          "initialization": 6,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 63414.078125,
+          "initialization": 7,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 64059.734375,
+          "initialization": 8,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 65843.4609375,
+          "initialization": 9,
+          "k": 3,
+          "valid": true
+        }
+      ],
+      "class_id": 23,
+      "counts": [
+        8,
+        26,
+        9
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 3,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 43
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 25384.998046875,
+          "initialization": 0,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 25381.14453125,
+          "initialization": 1,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 27002.63671875,
+          "initialization": 2,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 26902.72265625,
+          "initialization": 3,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 25158.021484375,
+          "initialization": 4,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 26085.52734375,
+          "initialization": 5,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 25454.97265625,
+          "initialization": 6,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 27105.38671875,
+          "initialization": 7,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 25550.21875,
+          "initialization": 8,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 25448.212890625,
+          "initialization": 9,
+          "k": 3,
+          "valid": true
+        }
+      ],
+      "class_id": 24,
+      "counts": [
+        5,
+        3,
+        8
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 2,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 16
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 108215.578125,
+          "initialization": 0,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 104269.5,
+          "initialization": 1,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 106131.9453125,
+          "initialization": 2,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 106812.8359375,
+          "initialization": 3,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 105179.0,
+          "initialization": 4,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 105354.0546875,
+          "initialization": 5,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 105832.15625,
+          "initialization": 6,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 106519.234375,
+          "initialization": 7,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 103937.484375,
+          "initialization": 8,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 106482.5,
+          "initialization": 9,
+          "k": 3,
+          "valid": false
+        }
+      ],
+      "class_id": 25,
+      "counts": [
+        51,
+        4,
+        2
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 2,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 56
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 39597.7265625,
+          "initialization": 0,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 39000.2421875,
+          "initialization": 1,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 40595.75,
+          "initialization": 2,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 39298.828125,
+          "initialization": 3,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 39580.328125,
+          "initialization": 4,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 40015.015625,
+          "initialization": 5,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 39958.34375,
+          "initialization": 6,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 39597.7265625,
+          "initialization": 7,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 40314.359375,
+          "initialization": 8,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 40051.8515625,
+          "initialization": 9,
+          "k": 3,
+          "valid": true
+        }
+      ],
+      "class_id": 26,
+      "counts": [
+        7,
+        9,
+        5
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 2,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 21
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 84063.703125,
+          "initialization": 0,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 84813.7578125,
+          "initialization": 1,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 88073.6953125,
+          "initialization": 2,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 86510.234375,
+          "initialization": 3,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 85684.2265625,
+          "initialization": 4,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 85670.65625,
+          "initialization": 5,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 88553.2890625,
+          "initialization": 6,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 85779.015625,
+          "initialization": 7,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 84673.46875,
+          "initialization": 8,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 86842.2578125,
+          "initialization": 9,
+          "k": 3,
+          "valid": false
+        }
+      ],
+      "class_id": 27,
+      "counts": [
+        16,
+        38,
+        7
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 5,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 61
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 16061.86328125,
+          "initialization": 0,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 15970.6689453125,
+          "initialization": 1,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 16361.560546875,
+          "initialization": 2,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 16659.181640625,
+          "initialization": 3,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 15589.513671875,
+          "initialization": 4,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 15589.513671875,
+          "initialization": 5,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 16120.2255859375,
+          "initialization": 6,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 16663.4921875,
+          "initialization": 7,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 16250.66796875,
+          "initialization": 8,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 15589.513671875,
+          "initialization": 9,
+          "k": 3,
+          "valid": false
+        }
+      ],
+      "class_id": 28,
+      "counts": [
+        4,
+        5,
+        2
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 2,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 11
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 19016.123046875,
+          "initialization": 0,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 19305.2734375,
+          "initialization": 1,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 19267.416015625,
+          "initialization": 2,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 18930.267578125,
+          "initialization": 3,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 19559.46875,
+          "initialization": 4,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 18334.576171875,
+          "initialization": 5,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 19027.8046875,
+          "initialization": 6,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 18287.546875,
+          "initialization": 7,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 19674.6171875,
+          "initialization": 8,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 19373.986328125,
+          "initialization": 9,
+          "k": 3,
+          "valid": true
+        }
+      ],
+      "class_id": 29,
+      "counts": [
+        5,
+        2,
+        5
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 2,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 12
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 5309.06640625,
+          "initialization": 0,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 5193.8525390625,
+          "initialization": 1,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 5749.294921875,
+          "initialization": 2,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 5865.07080078125,
+          "initialization": 3,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 5193.8525390625,
+          "initialization": 4,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 5268.626953125,
+          "initialization": 5,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 5309.06640625,
+          "initialization": 6,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 5193.8525390625,
+          "initialization": 7,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 5193.8525390625,
+          "initialization": 8,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 5977.32080078125,
+          "initialization": 9,
+          "k": 3,
+          "valid": false
+        }
+      ],
+      "class_id": 30,
+      "counts": [
+        2,
+        2,
+        2
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 2,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 6
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 93597.7890625,
+          "initialization": 0,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 89948.8515625,
+          "initialization": 1,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 90892.65625,
+          "initialization": 2,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 93086.9453125,
+          "initialization": 3,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 89540.640625,
+          "initialization": 4,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 89122.515625,
+          "initialization": 5,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 88822.328125,
+          "initialization": 6,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 92915.4765625,
+          "initialization": 7,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 92638.1875,
+          "initialization": 8,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 88502.6796875,
+          "initialization": 9,
+          "k": 3,
+          "valid": true
+        }
+      ],
+      "class_id": 31,
+      "counts": [
+        2,
+        47,
+        13
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 2,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 62
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 64039.58203125,
+          "initialization": 0,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 64060.328125,
+          "initialization": 1,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 62810.3515625,
+          "initialization": 2,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 65660.4921875,
+          "initialization": 3,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 64845.98828125,
+          "initialization": 4,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 65358.97265625,
+          "initialization": 5,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 63466.8359375,
+          "initialization": 6,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 62440.16796875,
+          "initialization": 7,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 64516.8359375,
+          "initialization": 8,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 63146.64453125,
+          "initialization": 9,
+          "k": 3,
+          "valid": false
+        }
+      ],
+      "class_id": 32,
+      "counts": [
+        10,
+        34,
+        6
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 6,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 50
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 130351.234375,
+          "initialization": 0,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 129578.0703125,
+          "initialization": 1,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 130351.671875,
+          "initialization": 2,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 131357.40625,
+          "initialization": 3,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 131290.9375,
+          "initialization": 4,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 131218.90625,
+          "initialization": 5,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 127722.40625,
+          "initialization": 6,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 130887.828125,
+          "initialization": 7,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 128168.9375,
+          "initialization": 8,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 130048.2265625,
+          "initialization": 9,
+          "k": 3,
+          "valid": true
+        }
+      ],
+      "class_id": 33,
+      "counts": [
+        7,
+        29,
+        50
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 12,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 86
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 20982.927734375,
+          "initialization": 0,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 20907.947265625,
+          "initialization": 1,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 21072.7578125,
+          "initialization": 2,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 21317.728515625,
+          "initialization": 3,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 21292.8828125,
+          "initialization": 4,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 21054.9765625,
+          "initialization": 5,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 19990.984375,
+          "initialization": 6,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 19681.712890625,
+          "initialization": 7,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 20629.1484375,
+          "initialization": 8,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 19909.509765625,
+          "initialization": 9,
+          "k": 3,
+          "valid": true
+        }
+      ],
+      "class_id": 34,
+      "counts": [
+        6,
+        4,
+        5
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 2,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 15
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 43167.53125,
+          "initialization": 0,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 43664.6796875,
+          "initialization": 1,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 44309.23828125,
+          "initialization": 2,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 44160.73046875,
+          "initialization": 3,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 42651.87109375,
+          "initialization": 4,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 43168.921875,
+          "initialization": 5,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 43328.02734375,
+          "initialization": 6,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 43059.8515625,
+          "initialization": 7,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 42473.49609375,
+          "initialization": 8,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 42889.91015625,
+          "initialization": 9,
+          "k": 3,
+          "valid": false
+        }
+      ],
+      "class_id": 35,
+      "counts": [
+        8,
+        7,
+        11
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 2,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 26
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 86840.3125,
+          "initialization": 0,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 89658.890625,
+          "initialization": 1,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 86838.9375,
+          "initialization": 2,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 88175.7890625,
+          "initialization": 3,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 86065.8828125,
+          "initialization": 4,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 87504.53125,
+          "initialization": 5,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 87531.1015625,
+          "initialization": 6,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 89496.265625,
+          "initialization": 7,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 87510.625,
+          "initialization": 8,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 87132.078125,
+          "initialization": 9,
+          "k": 3,
+          "valid": true
+        }
+      ],
+      "class_id": 36,
+      "counts": [
+        13,
+        6,
+        28
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 3,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 47
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 35754.10546875,
+          "initialization": 0,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 36419.73046875,
+          "initialization": 1,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 36142.57421875,
+          "initialization": 2,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 35937.71875,
+          "initialization": 3,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 36036.51171875,
+          "initialization": 4,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 35858.53125,
+          "initialization": 5,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 36528.27734375,
+          "initialization": 6,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 35338.078125,
+          "initialization": 7,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 37083.23046875,
+          "initialization": 8,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 36136.6328125,
+          "initialization": 9,
+          "k": 3,
+          "valid": false
+        }
+      ],
+      "class_id": 37,
+      "counts": [
+        4,
+        6,
+        7
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 2,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 17
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 22251.12890625,
+          "initialization": 0,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 23093.72265625,
+          "initialization": 1,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 24583.841796875,
+          "initialization": 2,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 24250.734375,
+          "initialization": 3,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 23792.5,
+          "initialization": 4,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 25496.68359375,
+          "initialization": 5,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 22091.16015625,
+          "initialization": 6,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 24453.1875,
+          "initialization": 7,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 24118.44140625,
+          "initialization": 8,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 24830.833984375,
+          "initialization": 9,
+          "k": 3,
+          "valid": false
+        }
+      ],
+      "class_id": 38,
+      "counts": [
+        3,
+        2,
+        8
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 2,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 13
+    },
+    {
+      "actual_k": 3,
+      "attempts": [
+        {
+          "inertia": 95493.59375,
+          "initialization": 0,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 96183.40625,
+          "initialization": 1,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 94080.2578125,
+          "initialization": 2,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 95637.609375,
+          "initialization": 3,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 96018.859375,
+          "initialization": 4,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 99557.671875,
+          "initialization": 5,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 96273.0546875,
+          "initialization": 6,
+          "k": 3,
+          "valid": true
+        },
+        {
+          "inertia": 98484.9921875,
+          "initialization": 7,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 96311.65625,
+          "initialization": 8,
+          "k": 3,
+          "valid": false
+        },
+        {
+          "inertia": 100258.9375,
+          "initialization": 9,
+          "k": 3,
+          "valid": true
+        }
+      ],
+      "class_id": 39,
+      "counts": [
+        24,
+        41,
+        16
+      ],
+      "fallback_applied": false,
+      "fallback_reasons": [],
+      "initialization": "kmeans++",
+      "iterations": 3,
+      "max_iter": 100,
+      "min_cluster_size": 2,
+      "n_init": 10,
+      "reduced_k": false,
+      "requested_k": 3,
+      "small_cluster_policy": "reduce_k_and_rerun_without_merging_or_dropping_samples",
+      "unique_count": 81
+    }
+  ],
+  "mixture_vs_class_moments": [
+    {
+      "class_id": 0,
+      "covariance_frobenius_difference": 182.7177276611328,
+      "covariance_relative_frobenius_difference": 0.24577422440052032,
+      "mean_l2_difference": 7.066297985147685e-05
+    },
+    {
+      "class_id": 1,
+      "covariance_frobenius_difference": 232.15338134765625,
+      "covariance_relative_frobenius_difference": 0.32024797797203064,
+      "mean_l2_difference": 7.780386658851057e-05
+    },
+    {
+      "class_id": 2,
+      "covariance_frobenius_difference": 5.522974491119385,
+      "covariance_relative_frobenius_difference": 0.020119445398449898,
+      "mean_l2_difference": 1.0971113624691498e-05
+    },
+    {
+      "class_id": 3,
+      "covariance_frobenius_difference": 13.595171928405762,
+      "covariance_relative_frobenius_difference": 0.04601116105914116,
+      "mean_l2_difference": 2.361914812354371e-05
+    },
+    {
+      "class_id": 4,
+      "covariance_frobenius_difference": 180.72023010253906,
+      "covariance_relative_frobenius_difference": 0.21819637715816498,
+      "mean_l2_difference": 0.00018939844449050725
+    },
+    {
+      "class_id": 5,
+      "covariance_frobenius_difference": 122.2970962524414,
+      "covariance_relative_frobenius_difference": 0.17797017097473145,
+      "mean_l2_difference": 8.849463483784348e-05
+    },
+    {
+      "class_id": 6,
+      "covariance_frobenius_difference": 76.73878479003906,
+      "covariance_relative_frobenius_difference": 0.13957926630973816,
+      "mean_l2_difference": 6.105584907345474e-05
+    },
+    {
+      "class_id": 7,
+      "covariance_frobenius_difference": 242.7073211669922,
+      "covariance_relative_frobenius_difference": 0.34049445390701294,
+      "mean_l2_difference": 0.00019749984494410455
+    },
+    {
+      "class_id": 8,
+      "covariance_frobenius_difference": 21.998165130615234,
+      "covariance_relative_frobenius_difference": 0.07101208716630936,
+      "mean_l2_difference": 2.1254867533571087e-05
+    },
+    {
+      "class_id": 9,
+      "covariance_frobenius_difference": 25.353824615478516,
+      "covariance_relative_frobenius_difference": 0.0641586035490036,
+      "mean_l2_difference": 3.4139280614908785e-05
+    },
+    {
+      "class_id": 10,
+      "covariance_frobenius_difference": 200.6722869873047,
+      "covariance_relative_frobenius_difference": 0.23474685847759247,
+      "mean_l2_difference": 6.131270492915064e-05
+    },
+    {
+      "class_id": 11,
+      "covariance_frobenius_difference": 113.60842895507812,
+      "covariance_relative_frobenius_difference": 0.2170538306236267,
+      "mean_l2_difference": 7.889960397733375e-05
+    },
+    {
+      "class_id": 12,
+      "covariance_frobenius_difference": 9.948294639587402,
+      "covariance_relative_frobenius_difference": 0.03978599235415459,
+      "mean_l2_difference": 1.2400693776726257e-05
+    },
+    {
+      "class_id": 13,
+      "covariance_frobenius_difference": 123.99085998535156,
+      "covariance_relative_frobenius_difference": 0.19116196036338806,
+      "mean_l2_difference": 4.1896419133991e-05
+    },
+    {
+      "class_id": 14,
+      "covariance_frobenius_difference": 6.548628807067871,
+      "covariance_relative_frobenius_difference": 0.027135131880640984,
+      "mean_l2_difference": 3.4820372093236074e-05
+    },
+    {
+      "class_id": 15,
+      "covariance_frobenius_difference": 5.211840629577637,
+      "covariance_relative_frobenius_difference": 0.020893430337309837,
+      "mean_l2_difference": 2.5181410819641314e-05
+    },
+    {
+      "class_id": 16,
+      "covariance_frobenius_difference": 205.51148986816406,
+      "covariance_relative_frobenius_difference": 0.2741960287094116,
+      "mean_l2_difference": 0.0001088521457859315
+    },
+    {
+      "class_id": 17,
+      "covariance_frobenius_difference": 16.34978675842285,
+      "covariance_relative_frobenius_difference": 0.05855630710721016,
+      "mean_l2_difference": 9.595025403541513e-06
+    },
+    {
+      "class_id": 18,
+      "covariance_frobenius_difference": 96.77445220947266,
+      "covariance_relative_frobenius_difference": 0.2213486284017563,
+      "mean_l2_difference": 7.290003122761846e-05
+    },
+    {
+      "class_id": 19,
+      "covariance_frobenius_difference": 179.30303955078125,
+      "covariance_relative_frobenius_difference": 0.3017686903476715,
+      "mean_l2_difference": 2.647358996910043e-05
+    },
+    {
+      "class_id": 20,
+      "covariance_frobenius_difference": 27.16619300842285,
+      "covariance_relative_frobenius_difference": 0.07176846265792847,
+      "mean_l2_difference": 3.2201311114476994e-05
+    },
+    {
+      "class_id": 21,
+      "covariance_frobenius_difference": 19.945398330688477,
+      "covariance_relative_frobenius_difference": 0.06763500720262527,
+      "mean_l2_difference": 3.539596582413651e-05
+    },
+    {
+      "class_id": 22,
+      "covariance_frobenius_difference": 18.881162643432617,
+      "covariance_relative_frobenius_difference": 0.04362264648079872,
+      "mean_l2_difference": 1.769964183040429e-05
+    },
+    {
+      "class_id": 23,
+      "covariance_frobenius_difference": 19.00770378112793,
+      "covariance_relative_frobenius_difference": 0.05531658977270126,
+      "mean_l2_difference": 1.7423302779207006e-05
+    },
+    {
+      "class_id": 24,
+      "covariance_frobenius_difference": 114.61438751220703,
+      "covariance_relative_frobenius_difference": 0.18492630124092102,
+      "mean_l2_difference": 8.405911648878828e-05
+    },
+    {
+      "class_id": 25,
+      "covariance_frobenius_difference": 43.84074401855469,
+      "covariance_relative_frobenius_difference": 0.12708957493305206,
+      "mean_l2_difference": 5.4206971981329843e-05
+    },
+    {
+      "class_id": 26,
+      "covariance_frobenius_difference": 62.55253219604492,
+      "covariance_relative_frobenius_difference": 0.10926373302936554,
+      "mean_l2_difference": 0.00013977254275232553
+    },
+    {
+      "class_id": 27,
+      "covariance_frobenius_difference": 18.454030990600586,
+      "covariance_relative_frobenius_difference": 0.05772401764988899,
+      "mean_l2_difference": 2.183965261792764e-05
+    },
+    {
+      "class_id": 28,
+      "covariance_frobenius_difference": 248.71604919433594,
+      "covariance_relative_frobenius_difference": 0.32349836826324463,
+      "mean_l2_difference": 7.883989746915177e-05
+    },
+    {
+      "class_id": 29,
+      "covariance_frobenius_difference": 168.6045379638672,
+      "covariance_relative_frobenius_difference": 0.2248128354549408,
+      "mean_l2_difference": 7.33568231225945e-05
+    },
+    {
+      "class_id": 30,
+      "covariance_frobenius_difference": 458.5954284667969,
+      "covariance_relative_frobenius_difference": 0.49926838278770447,
+      "mean_l2_difference": 0.00012318494555074722
+    },
+    {
+      "class_id": 31,
+      "covariance_frobenius_difference": 26.18720245361328,
+      "covariance_relative_frobenius_difference": 0.09062086790800095,
+      "mean_l2_difference": 2.0112094716751017e-05
+    },
+    {
+      "class_id": 32,
+      "covariance_frobenius_difference": 17.15464973449707,
+      "covariance_relative_frobenius_difference": 0.06299848109483719,
+      "mean_l2_difference": 1.9990951841464266e-05
+    },
+    {
+      "class_id": 33,
+      "covariance_frobenius_difference": 10.07351016998291,
+      "covariance_relative_frobenius_difference": 0.04021058231592178,
+      "mean_l2_difference": 1.8270962755195796e-05
+    },
+    {
+      "class_id": 34,
+      "covariance_frobenius_difference": 84.2013168334961,
+      "covariance_relative_frobenius_difference": 0.1529705971479416,
+      "mean_l2_difference": 9.924176265485585e-05
+    },
+    {
+      "class_id": 35,
+      "covariance_frobenius_difference": 38.619956970214844,
+      "covariance_relative_frobenius_difference": 0.08306656032800674,
+      "mean_l2_difference": 7.617577648488805e-05
+    },
+    {
+      "class_id": 36,
+      "covariance_frobenius_difference": 20.106178283691406,
+      "covariance_relative_frobenius_difference": 0.05364175885915756,
+      "mean_l2_difference": 4.100929800188169e-05
+    },
+    {
+      "class_id": 37,
+      "covariance_frobenius_difference": 100.51911926269531,
+      "covariance_relative_frobenius_difference": 0.13549759984016418,
+      "mean_l2_difference": 2.9608814656967297e-05
+    },
+    {
+      "class_id": 38,
+      "covariance_frobenius_difference": 157.36419677734375,
+      "covariance_relative_frobenius_difference": 0.19028128683567047,
+      "mean_l2_difference": 7.288966298801824e-05
+    },
+    {
+      "class_id": 39,
+      "covariance_frobenius_difference": 5.644049644470215,
+      "covariance_relative_frobenius_difference": 0.02483261749148369,
+      "mean_l2_difference": 1.5534918929915875e-05
+    }
+  ],
+  "multi_center": true,
+  "regions": [
+    {
+      "birth_task": 0,
+      "class_id": 0,
+      "component_id": 0,
+      "count": 3,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 2,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 541.7418212890625,
+        "full": 1.3333367109298706,
+        "isotropic": 569.1206665039062
+      },
+      "weight": 0.2727272727272727
+    },
+    {
+      "birth_task": 0,
+      "class_id": 0,
+      "component_id": 1,
+      "count": 3,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 2,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 531.9015502929688,
+        "full": 1.3333351612091064,
+        "isotropic": 559.265869140625
+      },
+      "weight": 0.2727272727272727
+    },
+    {
+      "birth_task": 0,
+      "class_id": 0,
+      "component_id": 2,
+      "count": 5,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 4,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 700.5164184570312,
+        "full": 3.1999998092651367,
+        "isotropic": 826.002685546875
+      },
+      "weight": 0.45454545454545453
+    },
+    {
+      "birth_task": 0,
+      "class_id": 1,
+      "component_id": 0,
+      "count": 2,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 1,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 373.7381896972656,
+        "full": 0.5000016093254089,
+        "isotropic": 383.8521423339844
+      },
+      "weight": 0.16666666666666666
+    },
+    {
+      "birth_task": 0,
+      "class_id": 1,
+      "component_id": 1,
+      "count": 2,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 1,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 377.118896484375,
+        "full": 0.5000016689300537,
+        "isotropic": 383.8700866699219
+      },
+      "weight": 0.16666666666666666
+    },
+    {
+      "birth_task": 0,
+      "class_id": 1,
+      "component_id": 2,
+      "count": 8,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 7,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 781.0706176757812,
+        "full": 6.124985694885254,
+        "isotropic": 790.1239013671875
+      },
+      "weight": 0.6666666666666666
+    },
+    {
+      "birth_task": 0,
+      "class_id": 2,
+      "component_id": 0,
+      "count": 27,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 26,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1117.2742919921875,
+        "full": 25.03667449951172,
+        "isotropic": 1182.8934326171875
+      },
+      "weight": 0.3253012048192771
+    },
+    {
+      "birth_task": 0,
+      "class_id": 2,
+      "component_id": 1,
+      "count": 28,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 27,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1021.939453125,
+        "full": 26.03542137145996,
+        "isotropic": 1117.935302734375
+      },
+      "weight": 0.3373493975903614
+    },
+    {
+      "birth_task": 0,
+      "class_id": 2,
+      "component_id": 2,
+      "count": 28,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 27,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1106.4735107421875,
+        "full": 26.03539276123047,
+        "isotropic": 1147.6572265625
+      },
+      "weight": 0.3373493975903614
+    },
+    {
+      "birth_task": 0,
+      "class_id": 3,
+      "component_id": 0,
+      "count": 30,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 29,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1173.6204833984375,
+        "full": 28.03280258178711,
+        "isotropic": 1219.1060791015625
+      },
+      "weight": 0.5555555555555556
+    },
+    {
+      "birth_task": 0,
+      "class_id": 3,
+      "component_id": 1,
+      "count": 12,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 11,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 900.3449096679688,
+        "full": 10.083291053771973,
+        "isotropic": 947.94921875
+      },
+      "weight": 0.2222222222222222
+    },
+    {
+      "birth_task": 0,
+      "class_id": 3,
+      "component_id": 2,
+      "count": 12,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 11,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 973.0823974609375,
+        "full": 10.08327865600586,
+        "isotropic": 1013.5354614257812
+      },
+      "weight": 0.2222222222222222
+    },
+    {
+      "birth_task": 0,
+      "class_id": 4,
+      "component_id": 0,
+      "count": 3,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 2,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 551.3563842773438,
+        "full": 1.3333362340927124,
+        "isotropic": 604.3408203125
+      },
+      "weight": 0.3
+    },
+    {
+      "birth_task": 0,
+      "class_id": 4,
+      "component_id": 1,
+      "count": 3,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 2,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 587.5958251953125,
+        "full": 1.333335518836975,
+        "isotropic": 652.6514282226562
+      },
+      "weight": 0.3
+    },
+    {
+      "birth_task": 0,
+      "class_id": 4,
+      "component_id": 2,
+      "count": 4,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 3,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 650.038818359375,
+        "full": 2.2500016689300537,
+        "isotropic": 683.0551147460938
+      },
+      "weight": 0.4
+    },
+    {
+      "birth_task": 0,
+      "class_id": 5,
+      "component_id": 0,
+      "count": 3,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 2,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 540.2907104492188,
+        "full": 1.3333367109298706,
+        "isotropic": 554.7455444335938
+      },
+      "weight": 0.1875
+    },
+    {
+      "birth_task": 0,
+      "class_id": 5,
+      "component_id": 1,
+      "count": 4,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 3,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 601.547607421875,
+        "full": 2.2500014305114746,
+        "isotropic": 618.831787109375
+      },
+      "weight": 0.25
+    },
+    {
+      "birth_task": 0,
+      "class_id": 5,
+      "component_id": 2,
+      "count": 9,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 8,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 784.5811767578125,
+        "full": 7.1110944747924805,
+        "isotropic": 869.92578125
+      },
+      "weight": 0.5625
+    },
+    {
+      "birth_task": 0,
+      "class_id": 6,
+      "component_id": 0,
+      "count": 16,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 15,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 863.0269775390625,
+        "full": 14.062422752380371,
+        "isotropic": 902.3529052734375
+      },
+      "weight": 0.6666666666666666
+    },
+    {
+      "birth_task": 0,
+      "class_id": 6,
+      "component_id": 1,
+      "count": 5,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 4,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 692.2605590820312,
+        "full": 3.2000014781951904,
+        "isotropic": 756.12646484375
+      },
+      "weight": 0.20833333333333334
+    },
+    {
+      "birth_task": 0,
+      "class_id": 6,
+      "component_id": 2,
+      "count": 3,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 2,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 524.831298828125,
+        "full": 1.3333359956741333,
+        "isotropic": 539.144287109375
+      },
+      "weight": 0.125
+    },
+    {
+      "birth_task": 0,
+      "class_id": 7,
+      "component_id": 0,
+      "count": 2,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 1,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 372.89251708984375,
+        "full": 0.5000016689300537,
+        "isotropic": 383.8130187988281
+      },
+      "weight": 0.2
+    },
+    {
+      "birth_task": 0,
+      "class_id": 7,
+      "component_id": 1,
+      "count": 6,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 5,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 816.9655151367188,
+        "full": 4.166661262512207,
+        "isotropic": 845.2626342773438
+      },
+      "weight": 0.6
+    },
+    {
+      "birth_task": 0,
+      "class_id": 7,
+      "component_id": 2,
+      "count": 2,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 1,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 371.2106628417969,
+        "full": 0.5000020265579224,
+        "isotropic": 383.86273193359375
+      },
+      "weight": 0.2
+    },
+    {
+      "birth_task": 0,
+      "class_id": 8,
+      "component_id": 0,
+      "count": 2,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 1,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 371.21063232421875,
+        "full": 0.5000009536743164,
+        "isotropic": 383.7282409667969
+      },
+      "weight": 0.038461538461538464
+    },
+    {
+      "birth_task": 0,
+      "class_id": 8,
+      "component_id": 1,
+      "count": 16,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 15,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 992.1885986328125,
+        "full": 14.062410354614258,
+        "isotropic": 1055.50439453125
+      },
+      "weight": 0.3076923076923077
+    },
+    {
+      "birth_task": 0,
+      "class_id": 8,
+      "component_id": 2,
+      "count": 34,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 33,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1196.5704345703125,
+        "full": 32.02886962890625,
+        "isotropic": 1191.0985107421875
+      },
+      "weight": 0.6538461538461539
+    },
+    {
+      "birth_task": 0,
+      "class_id": 9,
+      "component_id": 0,
+      "count": 4,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 3,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 714.7604370117188,
+        "full": 2.249997615814209,
+        "isotropic": 774.606201171875
+      },
+      "weight": 0.13793103448275862
+    },
+    {
+      "birth_task": 0,
+      "class_id": 9,
+      "component_id": 1,
+      "count": 15,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 14,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1122.519287109375,
+        "full": 13.066575050354004,
+        "isotropic": 1181.64306640625
+      },
+      "weight": 0.5172413793103449
+    },
+    {
+      "birth_task": 0,
+      "class_id": 9,
+      "component_id": 2,
+      "count": 10,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 9,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1030.6009521484375,
+        "full": 8.099968910217285,
+        "isotropic": 1085.8433837890625
+      },
+      "weight": 0.3448275862068966
+    },
+    {
+      "birth_task": 0,
+      "class_id": 10,
+      "component_id": 0,
+      "count": 4,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 3,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 642.7516479492188,
+        "full": 2.2500011920928955,
+        "isotropic": 666.0541381835938
+      },
+      "weight": 0.4
+    },
+    {
+      "birth_task": 0,
+      "class_id": 10,
+      "component_id": 1,
+      "count": 3,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 2,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 552.22705078125,
+        "full": 1.333336591720581,
+        "isotropic": 592.6544799804688
+      },
+      "weight": 0.3
+    },
+    {
+      "birth_task": 0,
+      "class_id": 10,
+      "component_id": 2,
+      "count": 3,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 2,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 557.8544921875,
+        "full": 1.3333362340927124,
+        "isotropic": 604.0733642578125
+      },
+      "weight": 0.3
+    },
+    {
+      "birth_task": 0,
+      "class_id": 11,
+      "component_id": 0,
+      "count": 3,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 2,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 556.0715942382812,
+        "full": 1.3333358764648438,
+        "isotropic": 593.0441284179688
+      },
+      "weight": 0.1875
+    },
+    {
+      "birth_task": 0,
+      "class_id": 11,
+      "component_id": 1,
+      "count": 10,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 9,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 889.965087890625,
+        "full": 8.099963188171387,
+        "isotropic": 959.0913696289062
+      },
+      "weight": 0.625
+    },
+    {
+      "birth_task": 0,
+      "class_id": 11,
+      "component_id": 2,
+      "count": 3,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 2,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 541.732421875,
+        "full": 1.33333420753479,
+        "isotropic": 567.7122802734375
+      },
+      "weight": 0.1875
+    },
+    {
+      "birth_task": 0,
+      "class_id": 12,
+      "component_id": 0,
+      "count": 16,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 15,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1041.6187744140625,
+        "full": 14.062413215637207,
+        "isotropic": 1054.551025390625
+      },
+      "weight": 0.21052631578947367
+    },
+    {
+      "birth_task": 0,
+      "class_id": 12,
+      "component_id": 1,
+      "count": 49,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 48,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1293.1219482421875,
+        "full": 47.018829345703125,
+        "isotropic": 1335.5789794921875
+      },
+      "weight": 0.6447368421052632
+    },
+    {
+      "birth_task": 0,
+      "class_id": 12,
+      "component_id": 2,
+      "count": 11,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 10,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 915.2474975585938,
+        "full": 9.090869903564453,
+        "isotropic": 941.9097290039062
+      },
+      "weight": 0.14473684210526316
+    },
+    {
+      "birth_task": 0,
+      "class_id": 13,
+      "component_id": 0,
+      "count": 2,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 1,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 376.28680419921875,
+        "full": 0.5000013113021851,
+        "isotropic": 383.8585205078125
+      },
+      "weight": 0.1111111111111111
+    },
+    {
+      "birth_task": 0,
+      "class_id": 13,
+      "component_id": 1,
+      "count": 11,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 10,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 818.08984375,
+        "full": 9.090879440307617,
+        "isotropic": 929.793701171875
+      },
+      "weight": 0.6111111111111112
+    },
+    {
+      "birth_task": 0,
+      "class_id": 13,
+      "component_id": 2,
+      "count": 5,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 4,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 714.2430419921875,
+        "full": 3.200000762939453,
+        "isotropic": 783.1243896484375
+      },
+      "weight": 0.2777777777777778
+    },
+    {
+      "birth_task": 0,
+      "class_id": 14,
+      "component_id": 0,
+      "count": 11,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 10,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 916.015869140625,
+        "full": 9.090862274169922,
+        "isotropic": 979.0919799804688
+      },
+      "weight": 0.1375
+    },
+    {
+      "birth_task": 0,
+      "class_id": 14,
+      "component_id": 1,
+      "count": 37,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 36,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1337.374267578125,
+        "full": 35.02631759643555,
+        "isotropic": 1346.8116455078125
+      },
+      "weight": 0.4625
+    },
+    {
+      "birth_task": 0,
+      "class_id": 14,
+      "component_id": 2,
+      "count": 32,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 31,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1071.4581298828125,
+        "full": 30.030637741088867,
+        "isotropic": 1184.52392578125
+      },
+      "weight": 0.4
+    },
+    {
+      "birth_task": 0,
+      "class_id": 15,
+      "component_id": 0,
+      "count": 28,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 27,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1210.1807861328125,
+        "full": 26.035316467285156,
+        "isotropic": 1310.874267578125
+      },
+      "weight": 0.3373493975903614
+    },
+    {
+      "birth_task": 0,
+      "class_id": 15,
+      "component_id": 1,
+      "count": 31,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 30,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1279.142578125,
+        "full": 29.031635284423828,
+        "isotropic": 1379.50244140625
+      },
+      "weight": 0.37349397590361444
+    },
+    {
+      "birth_task": 0,
+      "class_id": 15,
+      "component_id": 2,
+      "count": 24,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 23,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1047.125732421875,
+        "full": 22.041419982910156,
+        "isotropic": 1102.775390625
+      },
+      "weight": 0.2891566265060241
+    },
+    {
+      "birth_task": 0,
+      "class_id": 16,
+      "component_id": 0,
+      "count": 2,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 1,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 376.0502014160156,
+        "full": 0.5000025033950806,
+        "isotropic": 383.8888244628906
+      },
+      "weight": 0.15384615384615385
+    },
+    {
+      "birth_task": 0,
+      "class_id": 16,
+      "component_id": 1,
+      "count": 5,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 4,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 661.898681640625,
+        "full": 3.200000524520874,
+        "isotropic": 676.8880615234375
+      },
+      "weight": 0.38461538461538464
+    },
+    {
+      "birth_task": 0,
+      "class_id": 16,
+      "component_id": 2,
+      "count": 6,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 5,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 820.5567016601562,
+        "full": 4.166661262512207,
+        "isotropic": 942.2567138671875
+      },
+      "weight": 0.46153846153846156
+    },
+    {
+      "birth_task": 0,
+      "class_id": 17,
+      "component_id": 0,
+      "count": 26,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 25,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1110.907470703125,
+        "full": 24.03812026977539,
+        "isotropic": 1182.217529296875
+      },
+      "weight": 0.35135135135135137
+    },
+    {
+      "birth_task": 0,
+      "class_id": 17,
+      "component_id": 1,
+      "count": 5,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 4,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 723.8607788085938,
+        "full": 3.200000047683716,
+        "isotropic": 742.5087890625
+      },
+      "weight": 0.06756756756756757
+    },
+    {
+      "birth_task": 0,
+      "class_id": 17,
+      "component_id": 2,
+      "count": 43,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 42,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1231.90380859375,
+        "full": 41.022457122802734,
+        "isotropic": 1293.2017822265625
+      },
+      "weight": 0.581081081081081
+    },
+    {
+      "birth_task": 0,
+      "class_id": 18,
+      "component_id": 0,
+      "count": 3,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 2,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 562.4514770507812,
+        "full": 1.3333351612091064,
+        "isotropic": 626.2487182617188
+      },
+      "weight": 0.1875
+    },
+    {
+      "birth_task": 0,
+      "class_id": 18,
+      "component_id": 1,
+      "count": 10,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 9,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 939.0823974609375,
+        "full": 8.099947929382324,
+        "isotropic": 980.8789672851562
+      },
+      "weight": 0.625
+    },
+    {
+      "birth_task": 0,
+      "class_id": 18,
+      "component_id": 2,
+      "count": 3,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 2,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 561.223876953125,
+        "full": 1.3333357572555542,
+        "isotropic": 620.5332641601562
+      },
+      "weight": 0.1875
+    },
+    {
+      "birth_task": 0,
+      "class_id": 19,
+      "component_id": 0,
+      "count": 2,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 1,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 374.3766784667969,
+        "full": 0.5000015497207642,
+        "isotropic": 383.89141845703125
+      },
+      "weight": 0.1111111111111111
+    },
+    {
+      "birth_task": 0,
+      "class_id": 19,
+      "component_id": 1,
+      "count": 14,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 13,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 968.7921752929688,
+        "full": 12.071374893188477,
+        "isotropic": 1066.84228515625
+      },
+      "weight": 0.7777777777777778
+    },
+    {
+      "birth_task": 0,
+      "class_id": 19,
+      "component_id": 2,
+      "count": 2,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 1,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 375.92230224609375,
+        "full": 0.500001847743988,
+        "isotropic": 383.8525085449219
+      },
+      "weight": 0.1111111111111111
+    },
+    {
+      "birth_task": 0,
+      "class_id": 20,
+      "component_id": 0,
+      "count": 12,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 11,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 900.961181640625,
+        "full": 10.083290100097656,
+        "isotropic": 929.15283203125
+      },
+      "weight": 0.24
+    },
+    {
+      "birth_task": 0,
+      "class_id": 20,
+      "component_id": 1,
+      "count": 4,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 3,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 639.876708984375,
+        "full": 2.25000262260437,
+        "isotropic": 664.5732421875
+      },
+      "weight": 0.08
+    },
+    {
+      "birth_task": 0,
+      "class_id": 20,
+      "component_id": 2,
+      "count": 34,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 33,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1054.516845703125,
+        "full": 32.029029846191406,
+        "isotropic": 1110.760986328125
+      },
+      "weight": 0.68
+    },
+    {
+      "birth_task": 0,
+      "class_id": 21,
+      "component_id": 0,
+      "count": 37,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 36,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1215.117431640625,
+        "full": 35.02628707885742,
+        "isotropic": 1341.1614990234375
+      },
+      "weight": 0.6607142857142857
+    },
+    {
+      "birth_task": 0,
+      "class_id": 21,
+      "component_id": 1,
+      "count": 3,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 2,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 520.9440307617188,
+        "full": 1.3333349227905273,
+        "isotropic": 516.614013671875
+      },
+      "weight": 0.05357142857142857
+    },
+    {
+      "birth_task": 0,
+      "class_id": 21,
+      "component_id": 2,
+      "count": 16,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 15,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1209.9888916015625,
+        "full": 14.062408447265625,
+        "isotropic": 1328.5205078125
+      },
+      "weight": 0.2857142857142857
+    },
+    {
+      "birth_task": 0,
+      "class_id": 22,
+      "component_id": 0,
+      "count": 16,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 15,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 947.5165405273438,
+        "full": 14.062424659729004,
+        "isotropic": 990.0533447265625
+      },
+      "weight": 0.4444444444444444
+    },
+    {
+      "birth_task": 0,
+      "class_id": 22,
+      "component_id": 1,
+      "count": 5,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 4,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 821.9302978515625,
+        "full": 3.1999919414520264,
+        "isotropic": 939.201904296875
+      },
+      "weight": 0.1388888888888889
+    },
+    {
+      "birth_task": 0,
+      "class_id": 22,
+      "component_id": 2,
+      "count": 15,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 14,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 934.9423828125,
+        "full": 13.066600799560547,
+        "isotropic": 1017.3445434570312
+      },
+      "weight": 0.4166666666666667
+    },
+    {
+      "birth_task": 0,
+      "class_id": 23,
+      "component_id": 0,
+      "count": 8,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 7,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 816.4309692382812,
+        "full": 6.124979019165039,
+        "isotropic": 832.7249145507812
+      },
+      "weight": 0.18604651162790697
+    },
+    {
+      "birth_task": 0,
+      "class_id": 23,
+      "component_id": 1,
+      "count": 26,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 25,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1250.4287109375,
+        "full": 24.038211822509766,
+        "isotropic": 1365.530029296875
+      },
+      "weight": 0.6046511627906976
+    },
+    {
+      "birth_task": 0,
+      "class_id": 23,
+      "component_id": 2,
+      "count": 9,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 8,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 798.1812133789062,
+        "full": 7.111086845397949,
+        "isotropic": 819.1817626953125
+      },
+      "weight": 0.20930232558139536
+    },
+    {
+      "birth_task": 0,
+      "class_id": 24,
+      "component_id": 0,
+      "count": 5,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 4,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 687.40478515625,
+        "full": 3.1999964714050293,
+        "isotropic": 744.8442993164062
+      },
+      "weight": 0.3125
+    },
+    {
+      "birth_task": 0,
+      "class_id": 24,
+      "component_id": 1,
+      "count": 3,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 2,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 524.4823608398438,
+        "full": 1.3333369493484497,
+        "isotropic": 532.2435913085938
+      },
+      "weight": 0.1875
+    },
+    {
+      "birth_task": 0,
+      "class_id": 24,
+      "component_id": 2,
+      "count": 8,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 7,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 904.7644653320312,
+        "full": 6.124988079071045,
+        "isotropic": 1006.8798828125
+      },
+      "weight": 0.5
+    },
+    {
+      "birth_task": 0,
+      "class_id": 25,
+      "component_id": 0,
+      "count": 51,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 49,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1216.95166015625,
+        "full": 49.0186767578125,
+        "isotropic": 1295.712890625
+      },
+      "weight": 0.8947368421052632
+    },
+    {
+      "birth_task": 0,
+      "class_id": 25,
+      "component_id": 1,
+      "count": 4,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 3,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 745.6527709960938,
+        "full": 2.25000262260437,
+        "isotropic": 880.448974609375
+      },
+      "weight": 0.07017543859649122
+    },
+    {
+      "birth_task": 0,
+      "class_id": 25,
+      "component_id": 2,
+      "count": 2,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 1,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 375.19036865234375,
+        "full": 0.5000016093254089,
+        "isotropic": 383.8636169433594
+      },
+      "weight": 0.03508771929824561
+    },
+    {
+      "birth_task": 0,
+      "class_id": 26,
+      "component_id": 0,
+      "count": 7,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 6,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 828.0970458984375,
+        "full": 5.142851829528809,
+        "isotropic": 876.2800903320312
+      },
+      "weight": 0.3333333333333333
+    },
+    {
+      "birth_task": 0,
+      "class_id": 26,
+      "component_id": 1,
+      "count": 9,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 8,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 843.7713623046875,
+        "full": 7.111089706420898,
+        "isotropic": 900.7216186523438
+      },
+      "weight": 0.42857142857142855
+    },
+    {
+      "birth_task": 0,
+      "class_id": 26,
+      "component_id": 2,
+      "count": 5,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 4,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 663.9613037109375,
+        "full": 3.1999995708465576,
+        "isotropic": 684.9982299804688
+      },
+      "weight": 0.23809523809523808
+    },
+    {
+      "birth_task": 0,
+      "class_id": 27,
+      "component_id": 0,
+      "count": 16,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 15,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 934.8035278320312,
+        "full": 14.062374114990234,
+        "isotropic": 967.58642578125
+      },
+      "weight": 0.26229508196721313
+    },
+    {
+      "birth_task": 0,
+      "class_id": 27,
+      "component_id": 1,
+      "count": 38,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 37,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1218.38818359375,
+        "full": 36.025596618652344,
+        "isotropic": 1312.720703125
+      },
+      "weight": 0.6229508196721312
+    },
+    {
+      "birth_task": 0,
+      "class_id": 27,
+      "component_id": 2,
+      "count": 7,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 6,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 941.9654541015625,
+        "full": 5.142852783203125,
+        "isotropic": 1088.13134765625
+      },
+      "weight": 0.11475409836065574
+    },
+    {
+      "birth_task": 0,
+      "class_id": 28,
+      "component_id": 0,
+      "count": 4,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 3,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 607.5020751953125,
+        "full": 2.250000238418579,
+        "isotropic": 616.4418334960938
+      },
+      "weight": 0.36363636363636365
+    },
+    {
+      "birth_task": 0,
+      "class_id": 28,
+      "component_id": 1,
+      "count": 5,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 4,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 740.5027465820312,
+        "full": 3.1999990940093994,
+        "isotropic": 805.918212890625
+      },
+      "weight": 0.45454545454545453
+    },
+    {
+      "birth_task": 0,
+      "class_id": 28,
+      "component_id": 2,
+      "count": 2,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 1,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 376.9573059082031,
+        "full": 0.5000019073486328,
+        "isotropic": 383.8938293457031
+      },
+      "weight": 0.18181818181818182
+    },
+    {
+      "birth_task": 0,
+      "class_id": 29,
+      "component_id": 0,
+      "count": 5,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 4,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 703.6402587890625,
+        "full": 3.200000286102295,
+        "isotropic": 755.1087646484375
+      },
+      "weight": 0.4166666666666667
+    },
+    {
+      "birth_task": 0,
+      "class_id": 29,
+      "component_id": 1,
+      "count": 2,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 1,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 374.4717102050781,
+        "full": 0.5000012516975403,
+        "isotropic": 383.84344482421875
+      },
+      "weight": 0.16666666666666666
+    },
+    {
+      "birth_task": 0,
+      "class_id": 29,
+      "component_id": 2,
+      "count": 5,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 4,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 721.9200439453125,
+        "full": 3.199998378753662,
+        "isotropic": 795.0772705078125
+      },
+      "weight": 0.4166666666666667
+    },
+    {
+      "birth_task": 0,
+      "class_id": 30,
+      "component_id": 0,
+      "count": 2,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 1,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 376.2050476074219,
+        "full": 0.5000013709068298,
+        "isotropic": 383.8458251953125
+      },
+      "weight": 0.3333333333333333
+    },
+    {
+      "birth_task": 0,
+      "class_id": 30,
+      "component_id": 1,
+      "count": 2,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 1,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 371.9013671875,
+        "full": 0.5000017881393433,
+        "isotropic": 383.84112548828125
+      },
+      "weight": 0.3333333333333333
+    },
+    {
+      "birth_task": 0,
+      "class_id": 30,
+      "component_id": 2,
+      "count": 2,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 1,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 371.7191467285156,
+        "full": 0.500001847743988,
+        "isotropic": 383.8512268066406
+      },
+      "weight": 0.3333333333333333
+    },
+    {
+      "birth_task": 0,
+      "class_id": 31,
+      "component_id": 0,
+      "count": 2,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 1,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 374.05877685546875,
+        "full": 0.5000014305114746,
+        "isotropic": 383.81097412109375
+      },
+      "weight": 0.03225806451612903
+    },
+    {
+      "birth_task": 0,
+      "class_id": 31,
+      "component_id": 1,
+      "count": 47,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 46,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1260.8154296875,
+        "full": 45.02013397216797,
+        "isotropic": 1374.1802978515625
+      },
+      "weight": 0.7580645161290323
+    },
+    {
+      "birth_task": 0,
+      "class_id": 31,
+      "component_id": 2,
+      "count": 13,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 12,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 984.4365844726562,
+        "full": 11.076875686645508,
+        "isotropic": 1033.83154296875
+      },
+      "weight": 0.20967741935483872
+    },
+    {
+      "birth_task": 0,
+      "class_id": 32,
+      "component_id": 0,
+      "count": 10,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 9,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 937.7338256835938,
+        "full": 8.0999755859375,
+        "isotropic": 1042.4866943359375
+      },
+      "weight": 0.2
+    },
+    {
+      "birth_task": 0,
+      "class_id": 32,
+      "component_id": 1,
+      "count": 34,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 33,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1141.2322998046875,
+        "full": 32.02870559692383,
+        "isotropic": 1210.6556396484375
+      },
+      "weight": 0.68
+    },
+    {
+      "birth_task": 0,
+      "class_id": 32,
+      "component_id": 2,
+      "count": 6,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 5,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 780.61083984375,
+        "full": 4.166658401489258,
+        "isotropic": 841.7954711914062
+      },
+      "weight": 0.12
+    },
+    {
+      "birth_task": 0,
+      "class_id": 33,
+      "component_id": 0,
+      "count": 7,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 6,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 854.9203491210938,
+        "full": 5.142848491668701,
+        "isotropic": 879.327880859375
+      },
+      "weight": 0.08139534883720931
+    },
+    {
+      "birth_task": 0,
+      "class_id": 33,
+      "component_id": 1,
+      "count": 29,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 28,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1179.5447998046875,
+        "full": 27.03401756286621,
+        "isotropic": 1189.607421875
+      },
+      "weight": 0.3372093023255814
+    },
+    {
+      "birth_task": 0,
+      "class_id": 33,
+      "component_id": 2,
+      "count": 50,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 49,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1143.1971435546875,
+        "full": 48.01886749267578,
+        "isotropic": 1261.23095703125
+      },
+      "weight": 0.5813953488372093
+    },
+    {
+      "birth_task": 0,
+      "class_id": 34,
+      "component_id": 0,
+      "count": 6,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 5,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 727.7879028320312,
+        "full": 4.166660308837891,
+        "isotropic": 784.4000244140625
+      },
+      "weight": 0.4
+    },
+    {
+      "birth_task": 0,
+      "class_id": 34,
+      "component_id": 1,
+      "count": 4,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 3,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 636.9663696289062,
+        "full": 2.250002145767212,
+        "isotropic": 666.3489990234375
+      },
+      "weight": 0.26666666666666666
+    },
+    {
+      "birth_task": 0,
+      "class_id": 34,
+      "component_id": 2,
+      "count": 5,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 4,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 754.13232421875,
+        "full": 3.199995756149292,
+        "isotropic": 842.0501708984375
+      },
+      "weight": 0.3333333333333333
+    },
+    {
+      "birth_task": 0,
+      "class_id": 35,
+      "component_id": 0,
+      "count": 8,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 7,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 905.4138793945312,
+        "full": 6.124988555908203,
+        "isotropic": 1006.4334106445312
+      },
+      "weight": 0.3076923076923077
+    },
+    {
+      "birth_task": 0,
+      "class_id": 35,
+      "component_id": 1,
+      "count": 7,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 6,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 892.0272827148438,
+        "full": 5.142850875854492,
+        "isotropic": 967.56005859375
+      },
+      "weight": 0.2692307692307692
+    },
+    {
+      "birth_task": 0,
+      "class_id": 35,
+      "component_id": 2,
+      "count": 11,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 10,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 862.5674438476562,
+        "full": 9.090867042541504,
+        "isotropic": 872.4749755859375
+      },
+      "weight": 0.4230769230769231
+    },
+    {
+      "birth_task": 0,
+      "class_id": 36,
+      "component_id": 0,
+      "count": 13,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 12,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1078.6337890625,
+        "full": 11.076872825622559,
+        "isotropic": 1131.875
+      },
+      "weight": 0.2765957446808511
+    },
+    {
+      "birth_task": 0,
+      "class_id": 36,
+      "component_id": 1,
+      "count": 6,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 5,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 775.00537109375,
+        "full": 4.166662693023682,
+        "isotropic": 879.7904052734375
+      },
+      "weight": 0.1276595744680851
+    },
+    {
+      "birth_task": 0,
+      "class_id": 36,
+      "component_id": 2,
+      "count": 28,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 27,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1049.4876708984375,
+        "full": 26.035459518432617,
+        "isotropic": 1083.1484375
+      },
+      "weight": 0.5957446808510638
+    },
+    {
+      "birth_task": 0,
+      "class_id": 37,
+      "component_id": 0,
+      "count": 4,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 3,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 610.0714111328125,
+        "full": 2.2500038146972656,
+        "isotropic": 707.7495727539062
+      },
+      "weight": 0.23529411764705882
+    },
+    {
+      "birth_task": 0,
+      "class_id": 37,
+      "component_id": 1,
+      "count": 6,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 5,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 717.4525146484375,
+        "full": 4.1666669845581055,
+        "isotropic": 810.3687744140625
+      },
+      "weight": 0.35294117647058826
+    },
+    {
+      "birth_task": 0,
+      "class_id": 37,
+      "component_id": 2,
+      "count": 7,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 6,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 756.1754760742188,
+        "full": 5.142848968505859,
+        "isotropic": 799.0484619140625
+      },
+      "weight": 0.4117647058823529
+    },
+    {
+      "birth_task": 0,
+      "class_id": 38,
+      "component_id": 0,
+      "count": 3,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 2,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 534.080078125,
+        "full": 1.333335518836975,
+        "isotropic": 602.9369506835938
+      },
+      "weight": 0.23076923076923078
+    },
+    {
+      "birth_task": 0,
+      "class_id": 38,
+      "component_id": 1,
+      "count": 2,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 1,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 376.31085205078125,
+        "full": 0.5000016093254089,
+        "isotropic": 383.8051452636719
+      },
+      "weight": 0.15384615384615385
+    },
+    {
+      "birth_task": 0,
+      "class_id": 38,
+      "component_id": 2,
+      "count": 8,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 7,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 956.0733642578125,
+        "full": 6.124993324279785,
+        "isotropic": 1092.74267578125
+      },
+      "weight": 0.6153846153846154
+    },
+    {
+      "birth_task": 0,
+      "class_id": 39,
+      "component_id": 0,
+      "count": 24,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 23,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1126.1732177734375,
+        "full": 22.041414260864258,
+        "isotropic": 1128.2265625
+      },
+      "weight": 0.2962962962962963
+    },
+    {
+      "birth_task": 0,
+      "class_id": 39,
+      "component_id": 1,
+      "count": 41,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 40,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1478.620361328125,
+        "full": 39.02324295043945,
+        "isotropic": 1604.30712890625
+      },
+      "weight": 0.5061728395061729
+    },
+    {
+      "birth_task": 0,
+      "class_id": 39,
+      "component_id": 2,
+      "count": 16,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_0:task_final:student_adapter_1:raw_768d",
+      "rank": 15,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1022.25634765625,
+        "full": 14.062381744384766,
+        "isotropic": 1088.4461669921875
+      },
+      "weight": 0.19753086419753085
+    }
+  ],
+  "storage_bytes": 283487040,
+  "task": 0
+}
