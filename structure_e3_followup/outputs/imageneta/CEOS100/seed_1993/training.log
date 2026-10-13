@@ -1,0 +1,127 @@
+2026-09-16 21:13:30,247 [trainer.py] => experiment_id: CEOS100
+2026-09-16 21:13:30,247 [trainer.py] => prefix: imageneta_5task_followup
+2026-09-16 21:13:30,247 [trainer.py] => dataset: imageneta
+2026-09-16 21:13:30,247 [trainer.py] => data_root: ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a
+2026-09-16 21:13:30,248 [trainer.py] => output_root: ${RESEARCH_WORKSPACE}/structure_e3_followup/outputs
+2026-09-16 21:13:30,248 [trainer.py] => expected_num_classes: 200
+2026-09-16 21:13:30,248 [trainer.py] => expected_tasks: 5
+2026-09-16 21:13:30,248 [trainer.py] => verify_split_content: True
+2026-09-16 21:13:30,248 [trainer.py] => shuffle: True
+2026-09-16 21:13:30,248 [trainer.py] => init_cls: 40
+2026-09-16 21:13:30,248 [trainer.py] => increment: 40
+2026-09-16 21:13:30,248 [trainer.py] => model_name: adapter
+2026-09-16 21:13:30,248 [trainer.py] => followup_extension: True
+2026-09-16 21:13:30,248 [trainer.py] => convnet_type: pretrained_vit_b16_224_in21k_adapter
+2026-09-16 21:13:30,248 [trainer.py] => seed: 1993
+2026-09-16 21:13:30,248 [trainer.py] => init_epochs: 30
+2026-09-16 21:13:30,248 [trainer.py] => inc_epochs: 15
+2026-09-16 21:13:30,248 [trainer.py] => ca: True
+2026-09-16 21:13:30,248 [trainer.py] => ca_epochs: 5
+2026-09-16 21:13:30,248 [trainer.py] => replay_samples_per_class: 256
+2026-09-16 21:13:30,248 [trainer.py] => init_lr: 0.01
+2026-09-16 21:13:30,248 [trainer.py] => batch_size: 48
+2026-09-16 21:13:30,248 [trainer.py] => stats_batch_size: 64
+2026-09-16 21:13:30,248 [trainer.py] => num_workers: 8
+2026-09-16 21:13:30,248 [trainer.py] => weight_decay: 0.0005
+2026-09-16 21:13:30,248 [trainer.py] => min_lr: 0.0
+2026-09-16 21:13:30,248 [trainer.py] => optimizer: sgd
+2026-09-16 21:13:30,248 [trainer.py] => ffn_num: 64
+2026-09-16 21:13:30,248 [trainer.py] => vpt_type: shallow
+2026-09-16 21:13:30,248 [trainer.py] => prompt_token_num: 5
+2026-09-16 21:13:30,248 [trainer.py] => adapter_placement: mlp
+2026-09-16 21:13:30,248 [trainer.py] => adapter_interval: 1
+2026-09-16 21:13:30,248 [trainer.py] => flag: 0
+2026-09-16 21:13:30,248 [trainer.py] => scale: 20.0
+2026-09-16 21:13:30,248 [trainer.py] => margin: 0.2
+2026-09-16 21:13:30,248 [trainer.py] => scc: True
+2026-09-16 21:13:30,248 [trainer.py] => scc_value: 5.0
+2026-09-16 21:13:30,248 [trainer.py] => feature: False
+2026-09-16 21:13:30,248 [trainer.py] => logit: False
+2026-09-16 21:13:30,248 [trainer.py] => apr: True
+2026-09-16 21:13:30,248 [trainer.py] => gamma_weight: 10.0
+2026-09-16 21:13:30,248 [trainer.py] => cov: 5.0
+2026-09-16 21:13:30,248 [trainer.py] => multi_center: False
+2026-09-16 21:13:30,248 [trainer.py] => num_prototypes: 1
+2026-09-16 21:13:30,248 [trainer.py] => kmeans_initialization: kmeans++
+2026-09-16 21:13:30,248 [trainer.py] => kmeans_n_init: 10
+2026-09-16 21:13:30,248 [trainer.py] => kmeans_max_iter: 100
+2026-09-16 21:13:30,248 [trainer.py] => cluster_min_samples: 2
+2026-09-16 21:13:30,248 [trainer.py] => stats_cov_jitter: 0.001
+2026-09-16 21:13:30,248 [trainer.py] => old_new_separation: False
+2026-09-16 21:13:30,248 [trainer.py] => separation_covariance: diagonal
+2026-09-16 21:13:30,248 [trainer.py] => sep_lambda: 0.0
+2026-09-16 21:13:30,248 [trainer.py] => sep_percentile: 95.0
+2026-09-16 21:13:30,249 [trainer.py] => sep_tau_floor: 1e-08
+2026-09-16 21:13:30,249 [trainer.py] => sep_reduction: max_relative_intrusion
+2026-09-16 21:13:30,249 [trainer.py] => sep_timing: epoch_apr_cache
+2026-09-16 21:13:30,249 [trainer.py] => sep_boundary_policy: birth_quantile_fixed
+2026-09-16 21:13:30,249 [trainer.py] => sep_refresh_epochs: 1
+2026-09-16 21:13:30,249 [trainer.py] => sep_cov_eigen_floor: 1e-06
+2026-09-16 21:13:30,249 [trainer.py] => sep_cholesky_initial_jitter: 1e-06
+2026-09-16 21:13:30,249 [trainer.py] => sep_cholesky_jitter_multiplier: 10.0
+2026-09-16 21:13:30,249 [trainer.py] => sep_cholesky_max_tries: 6
+2026-09-16 21:13:30,249 [trainer.py] => sep_region_chunk_size: 8
+2026-09-16 21:13:30,249 [trainer.py] => sep_factor_device: cpu
+2026-09-16 21:13:30,249 [trainer.py] => sep_grad_diagnostics: True
+2026-09-16 21:13:30,249 [trainer.py] => checkpoint_every_epoch: True
+2026-09-16 21:13:30,249 [trainer.py] => pic_enabled: False
+2026-09-16 21:13:30,249 [trainer.py] => pic_lambda: 1.0
+2026-09-16 21:13:30,249 [trainer.py] => pic_temperature: 0.07
+2026-09-16 21:13:30,249 [trainer.py] => ahn_enabled: False
+2026-09-16 21:13:30,249 [trainer.py] => ahn_lambda: 1.0
+2026-09-16 21:13:30,249 [trainer.py] => ahn_margin: 0.5
+2026-09-16 21:13:30,249 [trainer.py] => ahn_top_k: 2
+2026-09-16 21:13:30,249 [trainer.py] => normalized_diagonal: False
+2026-09-16 21:13:30,249 [trainer.py] => adaptive_margin_mode: none
+2026-09-16 21:13:30,249 [trainer.py] => adaptive_margin_strength: 0.25
+2026-09-16 21:13:30,249 [trainer.py] => adaptive_margin_min_scale: 0.5
+2026-09-16 21:13:30,249 [trainer.py] => adaptive_margin_max_scale: 2.0
+2026-09-16 21:13:30,249 [trainer.py] => ceos_replay_fraction: 1.0
+2026-09-16 21:13:30,249 [trainer.py] => ceos_lambda_min: 0.7
+2026-09-16 21:13:30,249 [trainer.py] => ceos_enemy_top_k: 1
+2026-09-16 21:13:30,249 [trainer.py] => ceos_log_samples: True
+2026-09-16 21:13:30,249 [trainer.py] => prototype_refresh_epochs: 1
+2026-09-16 21:13:30,249 [trainer.py] => diagnostic_grad_interval: 20
+2026-09-16 21:13:30,249 [trainer.py] => config: ${RESEARCH_WORKSPACE}/structure_e3_followup/configs/CEOS100.json
+2026-09-16 21:13:30,249 [trainer.py] => base_root: ${RESEARCH_WORKSPACE}/structure_multicenter_separation
+2026-09-16 21:13:30,249 [trainer.py] => extension_root: ${RESEARCH_WORKSPACE}/structure_e3_followup
+2026-09-16 21:13:30,249 [trainer.py] => device: [device(type='cuda', index=0)]
+2026-09-16 21:13:30,249 [trainer.py] => physical_gpus: ['2']
+2026-09-16 21:13:30,249 [trainer.py] => launch_command: run.py --config configs/B0_structure.json configs/L01.json configs/L03.json configs/L05.json configs/L10.json configs/FCS_pic.json configs/E3_ahn.json configs/E3_norm.json configs/CEOS50.json configs/CEOS100.json configs/AM_variance.json configs/AM_age.json configs/AM_drift.json --gpu 2 --seed 1993 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a
+2026-09-16 21:13:30,249 [trainer.py] => run_dir: ${RESEARCH_WORKSPACE}/structure_e3_followup/outputs/imageneta/CEOS100/seed_1993
+2026-09-16 21:13:30,249 [trainer.py] => recording_gaps: []
+2026-09-16 21:13:58,415 [data.py] => Loaded ImageNet-A from ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a: classes=200 train=5981 test=1519
+2026-09-16 21:13:58,417 [data_manager.py] => [168, 136, 51, 9, 183, 101, 171, 99, 42, 159, 191, 70, 16, 188, 27, 10, 175, 26, 68, 187, 98, 6, 85, 35, 112, 43, 100, 0, 103, 181, 88, 59, 4, 2, 116, 174, 94, 80, 106, 1, 147, 17, 141, 131, 72, 23, 173, 54, 197, 118, 87, 32, 79, 104, 91, 19, 135, 107, 178, 36, 11, 199, 142, 8, 122, 3, 28, 57, 153, 172, 190, 56, 49, 44, 97, 62, 151, 169, 194, 55, 192, 12, 189, 78, 66, 180, 15, 137, 109, 134, 92, 119, 126, 52, 170, 40, 148, 65, 144, 64, 138, 45, 77, 89, 154, 90, 71, 193, 74, 30, 113, 143, 96, 84, 67, 50, 186, 156, 69, 21, 18, 111, 108, 58, 125, 157, 150, 110, 182, 129, 166, 83, 81, 60, 13, 165, 14, 176, 63, 117, 5, 22, 145, 121, 38, 41, 82, 127, 114, 20, 31, 53, 37, 163, 196, 130, 152, 162, 86, 76, 24, 34, 184, 149, 33, 128, 198, 155, 146, 167, 139, 120, 140, 102, 47, 25, 158, 123, 46, 164, 61, 7, 115, 75, 133, 160, 105, 132, 179, 124, 48, 73, 93, 39, 95, 195, 29, 177, 185, 161]
+2026-09-16 21:13:59,220 [inc_net.py] => Adapter placement strategy: mlp
+2026-09-16 21:13:59,220 [inc_net.py] => Adapter interval: 1
+2026-09-16 21:14:06,049 [CDS_adapter.py] => Learning on 0-40
+2026-09-16 21:23:08,149 [trainer.py] => Task 0 metrics: {'task': 0, 'task_id': 1, 'eval_stage': 'task_final', 'seen_classes': 40, 'num_correct': 302, 'num_samples': 360, 'A_t': 83.88888888888889, 'top5_num_correct': 347, 'top5': 96.38888888888889, 'old_num_correct': None, 'old_num_samples': 0, 'old_accuracy': None, 'new_num_correct': 302, 'new_num_samples': 360, 'new_accuracy': 83.88888888888889, 'old_to_new_error_rate': None, 'new_to_old_error_rate': 0.0, 'inc_accuracy_so_far': 83.88888888888889, 'forgetting_so_far': None, 'training_seconds': 539.2121443290089, 'peak_cuda_allocated_bytes': 6282217984, 'peak_cuda_reserved_bytes': 8961130496, 'peak_main_process_rss_bytes': 6307651584, 'class_statistics_bytes': 94617600, 'region_statistics_bytes': 0, 'separation_cache_bytes': 0, 'total_statistics_bytes': 94617600, 'statistics_and_cache_bytes': 94617600, 'status': 'complete'}
+2026-09-16 21:23:08,903 [CDS_adapter.py] => Learning on 40-80
+2026-09-16 21:31:31,006 [stage2.py] => CEOS CA Task 1 Epoch 1 => Loss 0.113, Test_accy 77.360
+2026-09-16 21:31:37,537 [stage2.py] => CEOS CA Task 1 Epoch 2 => Loss 0.081, Test_accy 76.500
+2026-09-16 21:31:44,084 [stage2.py] => CEOS CA Task 1 Epoch 3 => Loss 0.073, Test_accy 75.930
+2026-09-16 21:31:50,706 [stage2.py] => CEOS CA Task 1 Epoch 4 => Loss 0.067, Test_accy 75.640
+2026-09-16 21:31:57,154 [stage2.py] => CEOS CA Task 1 Epoch 5 => Loss 0.068, Test_accy 75.790
+2026-09-16 21:32:01,825 [trainer.py] => Task 1 metrics: {'task': 1, 'task_id': 2, 'eval_stage': 'task_final', 'seen_classes': 80, 'num_correct': 529, 'num_samples': 698, 'A_t': 75.78796561604585, 'top5_num_correct': 651, 'top5': 93.26647564469914, 'old_num_correct': 244, 'old_num_samples': 360, 'old_accuracy': 67.77777777777777, 'new_num_correct': 285, 'new_num_samples': 338, 'new_accuracy': 84.31952662721893, 'old_to_new_error_rate': 0.2638888888888889, 'new_to_old_error_rate': 0.0650887573964497, 'inc_accuracy_so_far': 79.83842725246737, 'forgetting_so_far': 16.111111111111114, 'training_seconds': 528.2715411690006, 'peak_cuda_allocated_bytes': 6282586624, 'peak_cuda_reserved_bytes': 9030336512, 'peak_main_process_rss_bytes': 6307651584, 'class_statistics_bytes': 189235200, 'region_statistics_bytes': 0, 'separation_cache_bytes': 0, 'total_statistics_bytes': 189235200, 'statistics_and_cache_bytes': 189235200, 'status': 'complete'}
+2026-09-16 21:32:03,139 [CDS_adapter.py] => Learning on 80-120
+2026-09-16 21:40:11,253 [stage2.py] => CEOS CA Task 2 Epoch 1 => Loss 0.085, Test_accy 70.970
+2026-09-16 21:40:20,936 [stage2.py] => CEOS CA Task 2 Epoch 2 => Loss 0.054, Test_accy 70.360
+2026-09-16 21:40:30,483 [stage2.py] => CEOS CA Task 2 Epoch 3 => Loss 0.047, Test_accy 70.670
+2026-09-16 21:40:39,977 [stage2.py] => CEOS CA Task 2 Epoch 4 => Loss 0.045, Test_accy 70.560
+2026-09-16 21:40:49,759 [stage2.py] => CEOS CA Task 2 Epoch 5 => Loss 0.045, Test_accy 70.260
+2026-09-16 21:40:56,092 [trainer.py] => Task 2 metrics: {'task': 2, 'task_id': 3, 'eval_stage': 'task_final', 'seen_classes': 120, 'num_correct': 685, 'num_samples': 975, 'A_t': 70.25641025641026, 'top5_num_correct': 884, 'top5': 90.66666666666667, 'old_num_correct': 469, 'old_num_samples': 698, 'old_accuracy': 67.1919770773639, 'new_num_correct': 216, 'new_num_samples': 277, 'new_accuracy': 77.9783393501805, 'old_to_new_error_rate': 0.22206303724928367, 'new_to_old_error_rate': 0.09025270758122744, 'inc_accuracy_so_far': 76.644421587115, 'forgetting_so_far': 16.777613412228796, 'training_seconds': 526.6529663199908, 'peak_cuda_allocated_bytes': 6282955264, 'peak_cuda_reserved_bytes': 9451864064, 'peak_main_process_rss_bytes': 6307651584, 'class_statistics_bytes': 283852800, 'region_statistics_bytes': 0, 'separation_cache_bytes': 0, 'total_statistics_bytes': 283852800, 'statistics_and_cache_bytes': 283852800, 'status': 'complete'}
+2026-09-16 21:40:57,652 [CDS_adapter.py] => Learning on 120-160
+2026-09-16 21:49:50,372 [stage2.py] => CEOS CA Task 3 Epoch 1 => Loss 0.103, Test_accy 65.140
+2026-09-16 21:50:02,950 [stage2.py] => CEOS CA Task 3 Epoch 2 => Loss 0.064, Test_accy 65.140
+2026-09-16 21:50:15,858 [stage2.py] => CEOS CA Task 3 Epoch 3 => Loss 0.059, Test_accy 65.220
+2026-09-16 21:50:28,479 [stage2.py] => CEOS CA Task 3 Epoch 4 => Loss 0.055, Test_accy 65.460
+2026-09-16 21:50:41,394 [stage2.py] => CEOS CA Task 3 Epoch 5 => Loss 0.053, Test_accy 65.380
+2026-09-16 21:50:49,369 [trainer.py] => Task 3 metrics: {'task': 3, 'task_id': 4, 'eval_stage': 'task_final', 'seen_classes': 160, 'num_correct': 816, 'num_samples': 1248, 'A_t': 65.38461538461539, 'top5_num_correct': 1084, 'top5': 86.85897435897436, 'old_num_correct': 618, 'old_num_samples': 975, 'old_accuracy': 63.38461538461539, 'new_num_correct': 198, 'new_num_samples': 273, 'new_accuracy': 72.52747252747253, 'old_to_new_error_rate': 0.2317948717948718, 'new_to_old_error_rate': 0.12087912087912088, 'inc_accuracy_so_far': 73.82947003649011, 'forgetting_so_far': 18.254774117034597, 'training_seconds': 583.7897741130146, 'peak_cuda_allocated_bytes': 6283323904, 'peak_cuda_reserved_bytes': 10057940992, 'peak_main_process_rss_bytes': 6307651584, 'class_statistics_bytes': 378470400, 'region_statistics_bytes': 0, 'separation_cache_bytes': 0, 'total_statistics_bytes': 378470400, 'statistics_and_cache_bytes': 378470400, 'status': 'complete'}
+2026-09-16 21:50:51,016 [CDS_adapter.py] => Learning on 160-200
+2026-09-16 22:00:44,332 [stage2.py] => CEOS CA Task 4 Epoch 1 => Loss 0.099, Test_accy 61.420
+2026-09-16 22:01:01,163 [stage2.py] => CEOS CA Task 4 Epoch 2 => Loss 0.067, Test_accy 61.690
+2026-09-16 22:01:18,038 [stage2.py] => CEOS CA Task 4 Epoch 3 => Loss 0.062, Test_accy 61.750
+2026-09-16 22:01:34,961 [stage2.py] => CEOS CA Task 4 Epoch 4 => Loss 0.058, Test_accy 61.550
+2026-09-16 22:01:51,777 [stage2.py] => CEOS CA Task 4 Epoch 5 => Loss 0.057, Test_accy 61.290
+2026-09-16 22:02:01,384 [trainer.py] => Task 4 metrics: {'task': 4, 'task_id': 5, 'eval_stage': 'task_final', 'seen_classes': 200, 'num_correct': 931, 'num_samples': 1519, 'A_t': 61.29032258064516, 'top5_num_correct': 1292, 'top5': 85.05595786701778, 'old_num_correct': 727, 'old_num_samples': 1248, 'old_accuracy': 58.25320512820513, 'new_num_correct': 204, 'new_num_samples': 271, 'new_accuracy': 75.27675276752767, 'old_to_new_error_rate': 0.23637820512820512, 'new_to_old_error_rate': 0.11070110701107011, 'inc_accuracy_so_far': 71.32164054532112, 'forgetting_so_far': 21.238736212875338, 'training_seconds': 660.8247740439838, 'peak_cuda_allocated_bytes': 6283692544, 'peak_cuda_reserved_bytes': 10859053056, 'peak_main_process_rss_bytes': 6307651584, 'class_statistics_bytes': 473088000, 'region_statistics_bytes': 0, 'separation_cache_bytes': 0, 'total_statistics_bytes': 473088000, 'statistics_and_cache_bytes': 473088000, 'status': 'complete'}
+2026-09-16 22:02:03,476 [trainer.py] => Summary: {'recording_schema_version': 2, 'experiment_id': 'CEOS100', 'seed': 1993, 'multi_center': False, 'separation_covariance': 'none', 'completed_tasks': 5, 'expected_tasks': 5, 'A_by_task': [83.88888888888889, 75.78796561604585, 70.25641025641026, 65.38461538461539, 61.29032258064516], 'Inc-Acc': 71.32164054532112, 'Last-Acc': 61.29032258064516, 'Forgetting': 21.238736212875338, 'forgetting_definition': 'mean_i(max_{l=i..T-1} a[l,i] - a[T,i]) over tasks i before final task; a[l,i] uses the single head over all classes seen at stage l', 'accuracy_unit': 'percent_0_to_100_unrounded', 'recording_status': 'complete', 'recording_gaps': [], 'total_training_seconds': 2838.7511999749986, 'max_peak_cuda_allocated_bytes': 6283692544, 'max_peak_cuda_reserved_bytes': 10859053056, 'max_peak_main_process_rss_bytes': 6307651584, 'final_total_statistics_bytes': 473088000, 'max_separation_cache_bytes': 0, 'status': 'complete'}
