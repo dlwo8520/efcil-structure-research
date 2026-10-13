@@ -1,0 +1,24 @@
+[
+  {
+    "A_t": 83.89,
+    "class_statistics_bytes": 94617600,
+    "forgetting_so_far": null,
+    "inc_accuracy_so_far": 83.89,
+    "new_accuracy": 83.89,
+    "new_to_old_error_rate": 0.0,
+    "old_accuracy": 0,
+    "old_to_new_error_rate": null,
+    "peak_cuda_allocated_bytes": 6281587712,
+    "peak_cuda_reserved_bytes": 8784969728,
+    "peak_main_process_rss_bytes": 1561231360,
+    "region_statistics_bytes": 0,
+    "seen_classes": 40,
+    "separation_cache_bytes": 0,
+    "statistics_and_cache_bytes": 94617600,
+    "status": "complete",
+    "task": 0,
+    "top5": 96.39,
+    "total_statistics_bytes": 94617600,
+    "training_seconds": 499.8752853439655
+  }
+]
