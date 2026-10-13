@@ -1,0 +1,158 @@
+{
+  "protocol": "IA10",
+  "fixed_A_n": 327,
+  "tasks": [
+    {
+      "task": 1,
+      "cache": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/ten_task_hypothesis_revalidation/IA10/.cache/model_01_on_task_01.npz",
+      "source_checkpoint_sha256": "5192a6b7e02fff988200c94bec35a156a4ebcc7bdb42cf6ce3ceee27a28630ed",
+      "bank_n_per_class": 10,
+      "k": 5,
+      "support_valid": true,
+      "A_n": 19,
+      "A_cross_n": 0,
+      "A_within_n": 19,
+      "birth_prediction_mismatch": 0
+    },
+    {
+      "task": 2,
+      "cache": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/ten_task_hypothesis_revalidation/IA10/.cache/model_02_on_task_02.npz",
+      "source_checkpoint_sha256": "9e82b1d19ca6354d71d26e188b15e41cb22d99c170091ebe171c1412e19c035f",
+      "bank_n_per_class": 6,
+      "k": 5,
+      "support_valid": true,
+      "A_n": 21,
+      "A_cross_n": 6,
+      "A_within_n": 15,
+      "birth_prediction_mismatch": 0
+    },
+    {
+      "task": 3,
+      "cache": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/ten_task_hypothesis_revalidation/IA10/.cache/model_03_on_task_03.npz",
+      "source_checkpoint_sha256": "47d36d3f4d1667637fbb62a898f08a61fde2f34e75d387e14aaf7020ed21288f",
+      "bank_n_per_class": 4,
+      "k": 3,
+      "support_valid": true,
+      "A_n": 24,
+      "A_cross_n": 12,
+      "A_within_n": 12,
+      "birth_prediction_mismatch": 0
+    },
+    {
+      "task": 4,
+      "cache": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/ten_task_hypothesis_revalidation/IA10/.cache/model_04_on_task_04.npz",
+      "source_checkpoint_sha256": "b73c95eb7837702c920edfb1658390fc4ea24b76b60cd4c7bcb5c1e61a86a3f5",
+      "bank_n_per_class": 6,
+      "k": 5,
+      "support_valid": true,
+      "A_n": 37,
+      "A_cross_n": 21,
+      "A_within_n": 16,
+      "birth_prediction_mismatch": 0
+    },
+    {
+      "task": 5,
+      "cache": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/ten_task_hypothesis_revalidation/IA10/.cache/model_05_on_task_05.npz",
+      "source_checkpoint_sha256": "4c0f5af6c9e3d653f88492ddeb349be0103396fbc8b4f29b903c4275abb6f5fc",
+      "bank_n_per_class": 2,
+      "k": 1,
+      "support_valid": true,
+      "A_n": 42,
+      "A_cross_n": 24,
+      "A_within_n": 18,
+      "birth_prediction_mismatch": 0
+    },
+    {
+      "task": 6,
+      "cache": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/ten_task_hypothesis_revalidation/IA10/.cache/model_06_on_task_06.npz",
+      "source_checkpoint_sha256": "8bba6680ffe2feb6b4fcb1f821c31ef9f5858a547804338c7da9ca76f96d7575",
+      "bank_n_per_class": 2,
+      "k": 1,
+      "support_valid": true,
+      "A_n": 31,
+      "A_cross_n": 17,
+      "A_within_n": 14,
+      "birth_prediction_mismatch": 0
+    },
+    {
+      "task": 7,
+      "cache": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/ten_task_hypothesis_revalidation/IA10/.cache/model_07_on_task_07.npz",
+      "source_checkpoint_sha256": "1a24c9278de2079260ee37859be48b3ab5fba2e7743e2f4c2d6395f8ffbb139d",
+      "bank_n_per_class": 7,
+      "k": 5,
+      "support_valid": true,
+      "A_n": 45,
+      "A_cross_n": 20,
+      "A_within_n": 25,
+      "birth_prediction_mismatch": 0
+    },
+    {
+      "task": 8,
+      "cache": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/ten_task_hypothesis_revalidation/IA10/.cache/model_08_on_task_08.npz",
+      "source_checkpoint_sha256": "366e84ae7cac3146bc3310eac465765ae9fed469bc15f5e6ebbbedfd940ddbf2",
+      "bank_n_per_class": 4,
+      "k": 3,
+      "support_valid": true,
+      "A_n": 47,
+      "A_cross_n": 24,
+      "A_within_n": 23,
+      "birth_prediction_mismatch": 0
+    },
+    {
+      "task": 9,
+      "cache": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/ten_task_hypothesis_revalidation/IA10/.cache/model_09_on_task_09.npz",
+      "source_checkpoint_sha256": "c5be43fdda38e5f0b8012439baac984412b8fb3b6624ece4f9c6079f68489c83",
+      "bank_n_per_class": 4,
+      "k": 3,
+      "support_valid": true,
+      "A_n": 61,
+      "A_cross_n": 34,
+      "A_within_n": 27,
+      "birth_prediction_mismatch": 0
+    }
+  ],
+  "support_difference_macro_by_subsample_seed": {
+    "1993": -0.10980440290378672,
+    "1994": -0.10200662718021444,
+    "1995": -0.11104575504681893
+  },
+  "A_classes_without_birth_correct": [
+    1,
+    4,
+    16,
+    26,
+    28,
+    57,
+    58,
+    85,
+    87,
+    88,
+    92,
+    94,
+    111,
+    115,
+    125,
+    128,
+    135,
+    147,
+    155,
+    159,
+    161,
+    170,
+    173
+  ],
+  "diagnostic_only": true,
+  "generation_selection_uses_this_audit": false,
+  "by_error_location": {
+    "A-within": {
+      "n": 169,
+      "support_valid_n": 169,
+      "positive_support_margin_local_head_wrong_n": 34
+    },
+    "A-cross": {
+      "n": 158,
+      "support_valid_n": 158,
+      "positive_support_margin_local_head_wrong_n": 0
+    }
+  }
+}
