@@ -1,0 +1,2438 @@
+[base] ${RESEARCH_WORKSPACE}/structure_multicenter_separation
+diff --git a/.gitignore b/.gitignore
+index 3a09091..251d54a 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -1,4 +1,7 @@
+ checkpoint/
+ __pycache__/
+ logs/
+-.vscode/
+\ No newline at end of file
++.vscode/
++outputs/
++.pytest_cache/
++*.pyc
+diff --git a/README.md b/README.md
+index 174823d..1807aff 100644
+--- a/README.md
++++ b/README.md
+@@ -1,5 +1,11 @@
+ # Exemplar-Free Class Incremental Learning via Preserving Class-Discriminative Structure
+ 
++> This working tree extends the official CDS commit with the E0--E7
++> multi-center/separation study. See [PROJECT_ANALYSIS_KO.md](PROJECT_ANALYSIS_KO.md)
++> for provenance and method boundaries, and [RUN_EXPERIMENTS_KO.md](RUN_EXPERIMENTS_KO.md)
++> for GPU-selectable commands. Machine-readable record definitions are in
++> [RECORDING_SCHEMA_KO.md](RECORDING_SCHEMA_KO.md). The original baseline source is preserved in git.
++
+ <div align="center">
+ 
+ <div>
+@@ -59,12 +65,17 @@ Or install the key dependencies manually:
+ 
+ ## Training
+ 
+-Run the main script:
++Choose the physical GPU at launch and provide the ImageNet-A root:
+ 
+ ```bash
+-python main.py
++python main.py \
++  --config exps_jsons/imageneta_5task/E0.json \
++  --gpu 0 \
++  --data-root /path/to/imagenet-a \
++  --seed 1993
+ ```
+ 
+-## Citation
+-
++See [RUN_EXPERIMENTS_KO.md](RUN_EXPERIMENTS_KO.md) for E0--E7 pilot, resume,
++and aggregation commands.
+ 
++## Citation
+diff --git a/data/data.py b/data/data.py
+index 129780b..7e2bfe2 100644
+--- a/data/data.py
++++ b/data/data.py
+@@ -1,3 +1,7 @@
++import logging
++import os
++from pathlib import Path
++
+ import numpy as np
+ from torchvision import datasets, transforms
+ from utils.toolkit import split_images_labels
+@@ -49,7 +53,7 @@ class iCIFAR224(iData):
+ 
+     class_order = np.arange(100).tolist()
+ 
+-    def download_data(self):
++    def download_data(self, args=None):
+         train_dataset = datasets.cifar.CIFAR100("./data", train=True, download=True)
+         test_dataset = datasets.cifar.CIFAR100("./data", train=False, download=True)
+         self.train_data, self.train_targets = train_dataset.data, np.array(
+@@ -72,7 +76,7 @@ class iImageNetR(iData):
+ 
+     class_order = np.arange(200).tolist()
+ 
+-    def download_data(self):
++    def download_data(self, args=None):
+         train_dir = "/path/to/your/imagenet-r/train/"
+         test_dir = "/path/to/your/imagenet-r/test/"
+ 
+@@ -92,15 +96,37 @@ class iImageNetA(iData):
+ 
+     class_order = np.arange(200).tolist()
+ 
+-    def download_data(self):
+-        train_dir = "/path/to/your/imagenet-a/train/"
+-        test_dir = "/path/to/your/imagenet-a/test/"
+-
+-        train_dset = datasets.ImageFolder(train_dir)
+-        test_dset = datasets.ImageFolder(test_dir)
++    def download_data(self, args=None):
++        args = args or {}
++        configured_root = args.get("data_root") or os.environ.get("IMAGENETA_ROOT")
++        if not configured_root:
++            raise ValueError(
++                "ImageNet-A root is required: pass --data-root /path/to/imagenet-a "
++                "(containing train/ and test/)"
++            )
++        root = Path(configured_root).expanduser().resolve()
++        train_dir = Path(args.get("train_dir") or root / "train").resolve()
++        test_dir = Path(args.get("test_dir") or root / "test").resolve()
++        if not train_dir.is_dir() or not test_dir.is_dir():
++            raise FileNotFoundError(f"expected ImageNet-A train/test directories under {root}")
++
++        train_dset = datasets.ImageFolder(str(train_dir))
++        test_dset = datasets.ImageFolder(str(test_dir))
++        if train_dset.class_to_idx != test_dset.class_to_idx:
++            raise ValueError("ImageNet-A train/test class mappings differ")
+ 
+         self.train_data, self.train_targets = split_images_labels(train_dset.imgs)
+         self.test_data, self.test_targets = split_images_labels(test_dset.imgs)
++        self.class_names = list(train_dset.classes)
++        self.class_to_idx = dict(train_dset.class_to_idx)
++        self.split_roots = {"train": str(train_dir), "test": str(test_dir)}
++        logging.info(
++            "Loaded ImageNet-A from %s: classes=%d train=%d test=%d",
++            root,
++            len(self.class_names),
++            len(self.train_targets),
++            len(self.test_targets),
++        )
+ 
+ 
+ 
+@@ -113,7 +139,7 @@ class CUB(iData):
+ 
+     class_order = np.arange(200).tolist()
+ 
+-    def download_data(self):
++    def download_data(self, args=None):
+         train_dir = "/path/to/your/cub/train/"
+         test_dir = "/path/to/your/cub/test/"
+ 
+@@ -132,7 +158,7 @@ class iCARS196_224(iData):
+ 
+     class_order = np.arange(200).tolist()
+ 
+-    def download_data(self):
++    def download_data(self, args=None):
+         train_dir = "/path/to/your/cars196/train/"
+         test_dir = "/path/to/your/cars196/test/"
+ 
+@@ -152,7 +178,7 @@ class vtab(iData):
+ 
+     class_order = np.arange(50).tolist()
+ 
+-    def download_data(self):
++    def download_data(self, args=None):
+         train_dir = "/path/to/your/vtab/train/"
+         test_dir = "/path/to/your/vtab/test/"
+ 
+@@ -175,7 +201,7 @@ class objectnet(iData):
+ 
+     class_order = np.arange(200).tolist()
+ 
+-    def download_data(self):
++    def download_data(self, args=None):
+         train_dir = "/path/to/your/objectnet/train/"
+         test_dir = "/path/to/your/objectnet/test/"
+ 
+@@ -195,7 +221,7 @@ class omnibenchmark(iData):
+ 
+     class_order = np.arange(300).tolist()
+ 
+-    def download_data(self):
++    def download_data(self, args=None):
+         train_dir = "/path/to/your/omnibenchmark/train/"
+         test_dir = "/path/to/your/omnibenchmark/test/"
+ 
+@@ -231,4 +257,3 @@ def build_transform(is_train, args):
+ 
+     # return transforms.Compose(t)
+     return t
+-
+diff --git a/data/data_manager.py b/data/data_manager.py
+index 5f03d84..59baa71 100644
+--- a/data/data_manager.py
++++ b/data/data_manager.py
+@@ -1,4 +1,7 @@
++import hashlib
+ import logging
++from collections import Counter
++from pathlib import Path
+ import numpy as np
+ from PIL import Image
+ from torch.utils.data import Dataset
+@@ -7,9 +10,10 @@ from data.data import iCIFAR224, iImageNetR, iImageNetA, CUB, vtab, iCARS196_224
+ 
+ 
+ class DataManager(object):
+-    def __init__(self, dataset_name, shuffle, seed, init_cls, increment):
++    def __init__(self, dataset_name, shuffle, seed, init_cls, increment, args=None):
++        self.args = args or {}
+         self.dataset_name = dataset_name
+-        self._setup_data(dataset_name, shuffle, seed)
++        self._setup_data(dataset_name, shuffle, seed, self.args)
+         assert init_cls <= len(self._class_order), "No enough classes."
+         self._increments = [init_cls]
+         while sum(self._increments) + increment < len(self._class_order):
+@@ -17,6 +21,10 @@ class DataManager(object):
+         offset = len(self._class_order) - sum(self._increments)
+         if offset > 0:
+             self._increments.append(offset)
++        expected_tasks = self.args.get("expected_tasks")
++        if expected_tasks is not None and self.nb_tasks != int(expected_tasks):
++            raise ValueError(f"expected {expected_tasks} tasks, constructed {self.nb_tasks}: {self._increments}")
++        self.protocol_manifest = self._build_protocol_manifest()
+ 
+     @property
+     def nb_tasks(self):
+@@ -28,6 +36,18 @@ class DataManager(object):
+     def get_total_classnum(self):
+         return len(self._class_order)
+ 
++    def get_class_metadata(self, mapped_class_id):
++        mapped_class_id = int(mapped_class_id)
++        original_class_id = int(self._class_order[mapped_class_id])
++        class_name = None
++        if self.class_names and original_class_id < len(self.class_names):
++            class_name = self.class_names[original_class_id]
++        return {
++            "mapped_class_id": mapped_class_id,
++            "original_class_id": original_class_id,
++            "class_name": class_name,
++        }
++
+     def get_dataset(
+         self, indices, source, mode, appendent=None, ret_data=False, m_rate=None
+     ):
+@@ -135,15 +155,23 @@ class DataManager(object):
+             train_data, train_targets, trsf, self.use_path
+         ), DummyDataset(val_data, val_targets, trsf, self.use_path)
+ 
+-    def _setup_data(self, dataset_name, shuffle, seed):
++    def _setup_data(self, dataset_name, shuffle, seed, args):
+         idata = _get_idata(dataset_name)
+-        idata.download_data()
++        idata.download_data(args)
+         # train_data和train_target和test_data和test_target
+ 
+         # Data
+         self._train_data, self._train_targets = idata.train_data, idata.train_targets
+         self._test_data, self._test_targets = idata.test_data, idata.test_targets
+         self.use_path = idata.use_path
++        self.class_names = getattr(idata, "class_names", [str(i) for i in sorted(np.unique(self._train_targets))])
++        self.split_roots = getattr(idata, "split_roots", {})
++        expected_classes = args.get("expected_num_classes")
++        actual_classes = len(np.unique(self._train_targets))
++        if expected_classes is not None and actual_classes != int(expected_classes):
++            raise ValueError(f"expected {expected_classes} classes, found {actual_classes}")
++        if set(np.unique(self._train_targets)) != set(np.unique(self._test_targets)):
++            raise ValueError("train/test class label sets differ")
+ 
+         # Transforms
+         self._train_trsf = idata.train_trsf
+@@ -166,6 +194,91 @@ class DataManager(object):
+         )
+         self._test_targets = _map_new_class_index(self._test_targets, self._class_order)
+ 
++    @staticmethod
++    def _split_digest(root, verify_content=True):
++        root = Path(root)
++        digest = hashlib.sha256()
++        relative_paths = []
++        basenames = []
++        content_hashes = []
++        for path in sorted(item for item in root.rglob("*") if item.is_file()):
++            relative = path.relative_to(root).as_posix()
++            size = path.stat().st_size
++            digest.update(relative.encode("utf-8"))
++            digest.update(b"\0")
++            digest.update(str(size).encode("ascii"))
++            if verify_content:
++                file_digest = hashlib.sha256()
++                with path.open("rb") as handle:
++                    for chunk in iter(lambda: handle.read(1024 * 1024), b""):
++                        file_digest.update(chunk)
++                content_hash = file_digest.hexdigest()
++                digest.update(b"\0")
++                digest.update(content_hash.encode("ascii"))
++                content_hashes.append(content_hash)
++            digest.update(b"\n")
++            relative_paths.append(relative)
++            basenames.append(path.name)
++        return {
++            "root": str(root.resolve()),
++            "file_count": len(relative_paths),
++            "sha256": digest.hexdigest(),
++            "hash_mode": (
++                "sorted_relative_path_file_size_and_content_sha256"
++                if verify_content
++                else "sorted_relative_path_and_file_size"
++            ),
++            "relative_paths": set(relative_paths),
++            "basenames": set(basenames),
++            "content_hashes": set(content_hashes),
++        }
++
++    def _build_protocol_manifest(self):
++        tasks = []
++        start = 0
++        for task_id, size in enumerate(self._increments):
++            mapped_ids = list(range(start, start + size))
++            original_ids = self._class_order[start : start + size]
++            tasks.append(
++                {
++                    "task_id": task_id,
++                    "mapped_class_ids": mapped_ids,
++                    "original_class_ids": original_ids,
++                    "class_names": [self.class_names[index] for index in original_ids],
++                }
++            )
++            start += size
++        manifest = {
++            "dataset": self.dataset_name,
++            "num_classes": len(self._class_order),
++            "num_tasks": len(self._increments),
++            "increments": list(self._increments),
++            "class_order_original_ids": list(self._class_order),
++            "tasks": tasks,
++            "label_remapping": "new_label = index of original ImageFolder label in class_order_original_ids",
++            "train_samples_per_mapped_class": dict(sorted(Counter(map(int, self._train_targets)).items())),
++            "test_samples_per_mapped_class": dict(sorted(Counter(map(int, self._test_targets)).items())),
++        }
++        if self.split_roots:
++            verify_content = bool(self.args.get("verify_split_content", True))
++            train = self._split_digest(self.split_roots["train"], verify_content)
++            test = self._split_digest(self.split_roots["test"], verify_content)
++            manifest["splits"] = {
++                "train": {key: value for key, value in train.items() if not isinstance(value, set)},
++                "test": {key: value for key, value in test.items() if not isinstance(value, set)},
++                "overlap": {
++                    "relative_path_count": len(train["relative_paths"] & test["relative_paths"]),
++                    "basename_count": len(train["basenames"] & test["basenames"]),
++                    "content_sha256_count": (
++                        len(train["content_hashes"] & test["content_hashes"])
++                        if verify_content
++                        else None
++                    ),
++                    "note": "content_sha256_count is exact when verify_split_content=true.",
++                },
++            }
++        return manifest
++
+     def _select(self, x, y, low_range, high_range):
+         idxes = np.where(np.logical_and(y >= low_range, y < high_range))[0]
+         return x[idxes], y[idxes]
+diff --git a/main.py b/main.py
+index d62a505..bf8d9cd 100644
+--- a/main.py
++++ b/main.py
+@@ -1,67 +1,101 @@
+-import json
+-import os
+-import argparse
+-from trainer import CDS_train
+-import gc
+-import torch
+-
+-def run_single_experiment(config_path):
+-    """
+-    Run a single CDS training experiment with the given config file path.
+-
+-    Args:
+-        config_path (str): Path to the experiment configuration JSON file.
+-    """
+-    print(f"--- Starting experiment: {config_path} ---")
+-
+-    try:
+-        config_from_json = load_json(config_path)
+-        args = argparse.Namespace(config=config_path)
+-        merged_config = merge_configs(args, config_from_json)
+-        CDS_train(merged_config)
+-
+-        print(f"--- Experiment finished: {config_path} ---\n")
+-
+-    except FileNotFoundError:
+-        print(f"[Error] Config file not found: {config_path}, skipping.")
+-    except Exception as e:
+-        print(f"[Error] Unknown error running {config_path}: {e}, skipping.")
+-    finally:
+-        if torch.cuda.is_available():
+-            torch.cuda.empty_cache()
+-            torch.cuda.synchronize()
+-        gc.collect()
+-
+-
+-def load_json(settings_path):
+-    """Load JSON file from the specified path."""
+-    with open(settings_path) as data_file:
+-        param = json.load(data_file)
+-    return param
+-
++"""CLI entry point with CUDA visibility configured before importing torch."""
+ 
+-def merge_configs(args, config):
+-    """Merge argparse arguments with config loaded from json."""
+-    merged_config = vars(args)
+-    merged_config.update(config)
+-    return merged_config
++from __future__ import annotations
+ 
+-
+-if __name__ == '__main__':
++import argparse
++import json
++import os
++from pathlib import Path
++
++
++def parse_args():
++    parser = argparse.ArgumentParser(description="Structure E0-E7 experiments")
++    parser.add_argument("--config", nargs="+", required=True, help="one or more complete JSON configs")
++    device = parser.add_mutually_exclusive_group(required=True)
++    device.add_argument("--gpu", help="physical GPU IDs, for example 0 or 2,3")
++    device.add_argument("--cpu", action="store_true", help="CPU mode (diagnostics only)")
++    parser.add_argument("--data-root", help="dataset root containing train/ and test/")
++    parser.add_argument("--output-root", help="override output_root from the JSON config")
++    parser.add_argument("--seed", action="append", help="override seeds; repeat or use commas")
++    parser.add_argument("--resume", help="checkpoint_latest.pt (one config and one seed only)")
++    return parser.parse_args()
++
++
++def load_config(path):
++    with Path(path).open("r", encoding="utf-8") as handle:
++        return json.load(handle)
++
++
++def parse_seeds(values):
++    if not values:
++        return None
++    return [int(item) for value in values for item in value.split(",") if item.strip()]
++
++
++def validate_config(config):
++    required = {
++        "experiment_id", "dataset", "seed", "init_cls", "increment", "expected_tasks",
++        "multi_center", "num_prototypes", "old_new_separation", "separation_covariance",
++        "sep_lambda", "sep_percentile", "sep_tau_floor", "sep_reduction", "sep_timing",
++        "sep_boundary_policy", "sep_refresh_epochs", "replay_samples_per_class",
++    }
++    missing = sorted(required - set(config))
++    if missing:
++        raise ValueError(f"config is missing required fields: {missing}")
++    if config["sep_reduction"] != "max_relative_intrusion":
++        raise ValueError("only max_relative_intrusion is implemented")
++    if config["sep_timing"] != "epoch_apr_cache":
++        raise ValueError("only epoch_apr_cache is implemented")
++    if config["sep_boundary_policy"] != "birth_quantile_fixed":
++        raise ValueError("only birth_quantile_fixed is implemented")
++    if config["separation_covariance"] not in {"isotropic", "diagonal", "full"}:
++        raise ValueError("invalid separation_covariance")
++    if int(config["init_cls"]) != 40 or int(config["increment"]) != 40:
++        raise ValueError("this ImageNet-A five-task protocol requires init_cls=increment=40")
++
++
++def main():
++    cli = parse_args()
++    if cli.gpu:
++        physical_gpus = [item.strip() for item in cli.gpu.split(",") if item.strip()]
++        if not physical_gpus or any(not item.isdigit() for item in physical_gpus):
++            raise ValueError("--gpu must contain non-negative integer IDs")
++        os.environ["CUDA_VISIBLE_DEVICES"] = ",".join(physical_gpus)
++        logical_devices = list(range(len(physical_gpus)))
++    else:
++        physical_gpus = []
++        os.environ["CUDA_VISIBLE_DEVICES"] = ""
++        logical_devices = [-1]
+ 
+     import torch
++    from trainer import CDS_train
+ 
++    seeds = parse_seeds(cli.seed)
++    if cli.resume and (len(cli.config) != 1 or (seeds is not None and len(seeds) != 1)):
++        raise ValueError("--resume accepts exactly one config and one seed")
+     print(f"PyTorch version: {torch.__version__}")
+     print(f"CUDA available: {torch.cuda.is_available()}")
+-    print(f"CUDA version: {torch.version.cuda}")
+-    print(f"GPU count: {torch.cuda.device_count()}")
+-
+-    experiment_files = [
+-        './exps_jsons/adapter_car196.json',
+-        './exps_jsons/adapter_cifar224.json',
+-    ]
++    print(f"Visible physical GPUs: {physical_gpus if physical_gpus else 'CPU'}")
++    for config_path in cli.config:
++        config = load_config(config_path)
++        validate_config(config)
++        config["config"] = str(Path(config_path).resolve())
++        config["device"] = logical_devices
++        config["physical_gpus"] = physical_gpus
++        if cli.data_root:
++            config["data_root"] = str(Path(cli.data_root).expanduser().resolve())
++        if cli.output_root:
++            config["output_root"] = str(Path(cli.output_root).expanduser().resolve())
++        if seeds is not None:
++            config["seed"] = seeds
++        if cli.resume:
++            config["resume"] = str(Path(cli.resume).expanduser().resolve())
++        print(f"--- Starting {config['experiment_id']}: {config_path} ---")
++        CDS_train(config)
++        if torch.cuda.is_available():
++            torch.cuda.empty_cache()
++        print(f"--- Finished {config['experiment_id']} ---")
+ 
+-    for config_file in experiment_files:
+-        run_single_experiment(config_file)
+ 
+-    print("====== All experiments completed ======")
++if __name__ == "__main__":
++    main()
+diff --git a/models/CDS_adapter.py b/models/CDS_adapter.py
+index 60caad6..116d7d9 100644
+--- a/models/CDS_adapter.py
++++ b/models/CDS_adapter.py
+@@ -1,5 +1,8 @@
+ import copy
+ import logging
++import os
++import time
++from pathlib import Path
+ import numpy as np
+ import torch
+ from torch import nn
+@@ -16,8 +19,28 @@ from utils.loss import AngularPenaltySMLoss
+ import math
+ 
+ from utils.adjust_distribution import LobachevskyPrototypeCorrector
++from utils.distribution_regions import (
++    SeparationCache,
++    build_regions_for_class,
++    build_single_region,
++    clone_regions,
++    compare_mixture_to_class_statistics,
++    flatten_regions,
++    rectify_local_regions,
++    region_storage_bytes,
++    summarize_regions,
++)
+ from utils.distill_loss import LobachevskyRelativeGeomLoss, features_distill_loss, \
+     logits_distill_loss
++from utils.experiment_io import (
++    append_jsonl,
++    capture_rng_state,
++    restore_rng_state,
++    update_json,
++    upsert_csv_rows,
++    utc_now_iso,
++    write_json,
++)
+ 
+ num_workers = 8
+ 
+@@ -43,6 +66,21 @@ class Learner(BaseLearner):
+ 
+         self.adjust_distribution = LobachevskyPrototypeCorrector(self._device, self.args['gamma_weight'],
+                                                                  self.args['cov'])
++        self._local_stats = {}
++        self._single_regions = {}
++        self._task_source_means = None
++        self._task_source_covs = None
++        self._task_source_local_stats = {}
++        self._sep_reference_means = None
++        self._sep_reference_covs = None
++        self._separation_cache = None
++        self._resume_stage = None
++        self._resume_next_epoch = 0
++        self._resume_optimizer_state = None
++        self._resume_scheduler_state = None
++        self.task_sizes = []
++        self.run_dir = Path(self.args.get("run_dir", "outputs/unresolved"))
++        self.run_dir.mkdir(parents=True, exist_ok=True)
+ 
+     def after_task(self):
+         self._known_classes = self._total_classes
+@@ -73,9 +111,17 @@ class Learner(BaseLearner):
+         return embedding_list, label_list
+ 
+     def incremental_train(self, data_manager):
+-        self._cur_task += 1
+-        self._total_classes = self._known_classes + data_manager.get_task_size(self._cur_task)
+-        self._network.update_fc(data_manager.get_task_size(self._cur_task))
++        resuming_current_task = self._resume_stage == "train_epoch"
++        if not resuming_current_task:
++            self._cur_task += 1
++            task_size = data_manager.get_task_size(self._cur_task)
++            self._total_classes = self._known_classes + task_size
++            self._network.update_fc(task_size)
++            self.task_sizes.append(task_size)
++        else:
++            task_size = data_manager.get_task_size(self._cur_task)
++            if self._total_classes != self._known_classes + task_size:
++                raise RuntimeError("resume checkpoint task dimensions do not match the data protocol")
+         logging.info("Learning on {}-{}".format(self._known_classes, self._total_classes))
+ 
+         train_dataset = data_manager.get_dataset(np.arange(self._known_classes, self._total_classes), source="train",
+@@ -85,15 +131,19 @@ class Learner(BaseLearner):
+         print("The number of training dataset:", len(self.train_dataset))
+ 
+         self.data_manager = data_manager
+-        self.train_loader = DataLoader(train_dataset, batch_size=self.batch_size, shuffle=True, num_workers=8)
++        workers = int(self.args.get("num_workers", num_workers))
++        self.train_loader = DataLoader(train_dataset, batch_size=self.batch_size, shuffle=True, num_workers=workers)
+         test_dataset = data_manager.get_dataset(np.arange(0, self._total_classes), source="test", mode="test")
+-        self.test_loader = DataLoader(test_dataset, batch_size=self.batch_size, shuffle=False, num_workers=8)
+-        train_dataset_for_protonet = data_manager.get_dataset(np.arange(0, self._total_classes), source="train",
+-                                                              mode="test")
+-
+-        visual_dataset = data_manager.get_dataset(np.arange(0, 20), source="train",
+-                                                  mode="test")
+-        self.visual_loader = DataLoader(visual_dataset, batch_size=self.batch_size, shuffle=False, num_workers=8)
++        self.test_loader = DataLoader(test_dataset, batch_size=self.batch_size, shuffle=False, num_workers=workers)
++        stats_dataset = data_manager.get_dataset(
++            np.arange(self._known_classes, self._total_classes), source="train", mode="test"
++        )
++        self.stats_loader = DataLoader(
++            stats_dataset,
++            batch_size=int(self.args["stats_batch_size"]),
++            shuffle=False,
++            num_workers=workers,
++        )
+ 
+         if not isinstance(self._network, nn.DataParallel):
+             self._network.to(self._device)
+@@ -102,10 +152,15 @@ class Learner(BaseLearner):
+             print('Multiple GPUs')
+             self._network = nn.DataParallel(self._network, self._multiple_gpus)
+ 
+-        if self._cur_task > 0:
++        if self._cur_task > 0 and not resuming_current_task:
++            self._task_source_means = self._class_means.copy()
++            self._task_source_covs = self._class_covs.detach().cpu().clone()
++            self._task_source_local_stats = clone_regions(self._local_stats)
+             now_task_old_class_mean, now_task_old_class_covs = self._conpute_now_task_old_class_mean(data_manager)
+             self.now_task_mean = now_task_old_class_mean.copy()
+             self.now_task_covs = now_task_old_class_covs
++            self._sep_reference_means = now_task_old_class_mean.copy()
++            self._sep_reference_covs = now_task_old_class_covs.detach().cpu().clone()
+ 
+         self._train(self.train_loader, self.test_loader)
+ 
+@@ -115,6 +170,9 @@ class Learner(BaseLearner):
+         self._network.fc.backup()
+         self._compute_class_mean(data_manager, check_diff=False, oracle=False)
+ 
++        new_means_after_np_val = self._class_means[self._known_classes:self._total_classes].copy()
++        new_covs_after_np_val = self._class_covs[self._known_classes:self._total_classes].detach().cpu().clone()
++
+         if self._cur_task > 0:
+ 
+             old_means_np_val = self._class_means[:self._total_classes - data_manager.get_task_size(self._cur_task)]
+@@ -133,6 +191,38 @@ class Learner(BaseLearner):
+                 new_covs_after_np_val
+                 )
+ 
++            apr_rows = []
++            for class_id in range(self._known_classes):
++                class_metadata = data_manager.get_class_metadata(class_id)
++                mean_shift = torch.as_tensor(corrected_means_np_val[class_id]) - torch.as_tensor(
++                    old_means_np_val[class_id]
++                )
++                covariance_change = corrected_covs_np_val[class_id].cpu() - old_covs_np_val[class_id].cpu()
++                apr_rows.append(
++                    {
++                        "experiment_id": self.args["experiment_id"],
++                        "seed": self.args["seed"],
++                        "task_id": self._cur_task + 1,
++                        "stage": "task_final_apr",
++                        **class_metadata,
++                        "apr_active": bool(self.args["apr"]),
++                        "mean_shift_l2": (
++                            float(torch.linalg.vector_norm(mean_shift)) if self.args["apr"] else None
++                        ),
++                        "covariance_change_frobenius": (
++                            float(torch.linalg.matrix_norm(covariance_change))
++                            if self.args["apr"] else None
++                        ),
++                        "source_feature_space": f"task_{self._cur_task}:task_final",
++                        "target_feature_space": self._feature_space_id("task_final"),
++                    }
++                )
++            upsert_csv_rows(
++                self.run_dir / "apr_diagnostics.csv",
++                apr_rows,
++                ("experiment_id", "seed", "task_id", "mapped_class_id", "stage"),
++            )
++
+             if self.args['apr']:
+                 self._class_covs[
+                 :self._total_classes - data_manager.get_task_size(self._cur_task)] = corrected_covs_np_val
+@@ -141,10 +231,18 @@ class Learner(BaseLearner):
+                 :self._total_classes - data_manager.get_task_size(self._cur_task)] = corrected_means_np_val
+                 print("mean_and_cov_update")
+ 
+-        task_size = data_manager.get_task_size(self._cur_task)
++        self._update_region_statistics(
++            data_manager,
++            new_means_after_np_val,
++            new_covs_after_np_val,
++        )
+ 
+         if self._cur_task > 0 and self.args['ca_epochs'] > 0 and self.args['ca'] is True:
+             self._stage2_compact_classifier(task_size, self.args['ca_epochs'])
++        self._resume_stage = None
++        self._resume_next_epoch = 0
++        self._resume_optimizer_state = None
++        self._resume_scheduler_state = None
+ 
+     def _train(self, train_loader, test_loader):
+         model = self._network.module if isinstance(self._network, nn.DataParallel) else self._network
+@@ -169,7 +267,8 @@ class Learner(BaseLearner):
+ 
+             scheduler = optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=self.tuned_epochs,
+                                                              eta_min=self.min_lr)
+-            self._init_train(train_loader, test_loader, optimizer, scheduler)
++            self._restore_training_optimizers(optimizer, scheduler)
++            self._init_train(train_loader, test_loader, optimizer, scheduler, self._resume_next_epoch)
+ 
+         else:
+             self.tuned_epochs = self.args['inc_epochs']
+@@ -188,7 +287,8 @@ class Learner(BaseLearner):
+ 
+             scheduler = optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=self.tuned_epochs,
+                                                              eta_min=self.min_lr)
+-            self._init_train(train_loader, test_loader, optimizer, scheduler)
++            self._restore_training_optimizers(optimizer, scheduler)
++            self._init_train(train_loader, test_loader, optimizer, scheduler, self._resume_next_epoch)
+ 
+     def head_train(self, train_loader, test_loader):
+         model = self._network.module if isinstance(self._network, nn.DataParallel) else self._network
+@@ -250,23 +350,51 @@ class Learner(BaseLearner):
+ 
+         logging.info(info)
+ 
+-    def _init_train(self, train_loader, test_loader, optimizer, scheduler):
+-        prog_bar = tqdm(range(self.tuned_epochs))
++    def _init_train(self, train_loader, test_loader, optimizer, scheduler, start_epoch=0):
++        prog_bar = tqdm(range(start_epoch, self.tuned_epochs))
+         loss_cos = AngularPenaltySMLoss(loss_type='cosface', eps=1e-7, s=self.args["scale"], m=self.args["margin"])
+-        for _, epoch in enumerate(prog_bar):
++        for epoch in prog_bar:
++            epoch_started = time.perf_counter()
++            learning_rates = [float(group["lr"]) for group in optimizer.param_groups]
++            if self._separation_is_active() and epoch % int(self.args["sep_refresh_epochs"]) == 0:
++                self._refresh_separation_cache(epoch)
+             self._network.train()
+-            losses = 0.0
+-            correct, total = 0, 0
++            weighted_sums = {
++                "classification": 0.0,
++                "scc": 0.0,
++                "feature_distillation": 0.0,
++                "logit_distillation": 0.0,
++                "separation": 0.0,
++                "weighted_separation": 0.0,
++                "original_structure": 0.0,
++                "total": 0.0,
++                "feature_norm": 0.0,
++            }
++            nearest_d2 = []
++            nearest_rho = []
++            intrusions = []
++            sep_gradient_norm = None
++            correct, processed_samples, optimizer_steps = 0, 0, 0
++            scc_active = self._cur_task > 0 and bool(self.args["scc"])
++            feature_active = self._cur_task > 0 and not scc_active and bool(self.args["feature"])
++            logit_active = (
++                self._cur_task > 0 and not scc_active and not feature_active and bool(self.args["logit"])
++            )
++            separation_active = self._separation_is_active()
+ 
+             for i, (_, inputs, targets) in enumerate(train_loader):
+                 inputs, targets = inputs.to(self._device), targets.to(self._device)
++                current_batch_size = int(targets.shape[0])
++                loss_dtl_scc = None
++                loss_dtl_feature = None
++                loss_dtl_logit = None
+ 
+                 if self._cur_task == 0:
+                     outputs = self._network(inputs, label=targets)
+                     logits = outputs["logits"]
+ 
+                     loss_cls = loss_cos(logits[:, self._known_classes:], targets - self._known_classes)
+-                    loss = loss_cls
++                    original_loss = loss_cls
+                 else:
+                     outputs = self._network(inputs, label=targets)
+                     logits = outputs["logits"]
+@@ -278,36 +406,711 @@ class Learner(BaseLearner):
+ 
+                     if self.args['scc']:
+                         # loss = loss_cls + 5.0 * loss_dtl_scc
+-                        loss = loss_cls + self.args['scc_value'] * loss_dtl_scc
++                        original_loss = loss_cls + self.args['scc_value'] * loss_dtl_scc
+                     elif self.args['feature']:
+-                        loss = loss_cls + 0.1 * loss_dtl_feature
++                        original_loss = loss_cls + 0.1 * loss_dtl_feature
+                     elif self.args['logit']:
+-                        loss = loss_cls + 5.0 * loss_dtl_logit
++                        original_loss = loss_cls + 5.0 * loss_dtl_logit
+                     else:
+-                        loss = loss_cls
++                        original_loss = loss_cls
++
++                separation_loss = outputs["sfeatures"].sum() * 0.0
++                if self._separation_is_active():
++                    if self._separation_cache is None:
++                        raise RuntimeError("separation is active but its epoch cache is missing")
++                    separation_loss, separation_diagnostics = self._separation_cache.loss(outputs["sfeatures"])
++                    nearest_d2.append(separation_diagnostics.nearest_d2.cpu())
++                    nearest_rho.append(separation_diagnostics.nearest_rho.cpu())
++                    intrusions.append(separation_diagnostics.intrusion.float().cpu())
++                    if i == 0 and self.args.get("sep_grad_diagnostics", True):
++                        trainable = [parameter for parameter in self._network.parameters() if parameter.requires_grad]
++                        gradients = torch.autograd.grad(
++                            separation_loss,
++                            trainable,
++                            retain_graph=True,
++                            allow_unused=True,
++                        )
++                        squared_norm = sum(
++                            gradient.detach().float().square().sum()
++                            for gradient in gradients
++                            if gradient is not None
++                        )
++                        sep_gradient_norm = float(torch.sqrt(squared_norm).item()) if not isinstance(squared_norm, int) else 0.0
++                weighted_separation = float(self.args["sep_lambda"]) * separation_loss
++                loss = original_loss + weighted_separation
++                if not torch.isfinite(loss):
++                    raise FloatingPointError(
++                        f"non-finite training loss at task={self._cur_task + 1}, epoch={epoch + 1}, batch={i}"
++                    )
+ 
+                 optimizer.zero_grad()
+                 loss.backward()
+                 optimizer.step()
+-                losses += loss.item()
++                weighted_sums["classification"] += float(loss_cls.item()) * current_batch_size
++                if scc_active:
++                    weighted_sums["scc"] += float(loss_dtl_scc.item()) * current_batch_size
++                if feature_active:
++                    weighted_sums["feature_distillation"] += (
++                        float(loss_dtl_feature.item()) * current_batch_size
++                    )
++                if logit_active:
++                    weighted_sums["logit_distillation"] += (
++                        float(loss_dtl_logit.item()) * current_batch_size
++                    )
++                if separation_active:
++                    weighted_sums["separation"] += float(separation_loss.item()) * current_batch_size
++                    weighted_sums["weighted_separation"] += (
++                        float(weighted_separation.item()) * current_batch_size
++                    )
++                weighted_sums["original_structure"] += float(original_loss.item()) * current_batch_size
++                weighted_sums["total"] += float(loss.item()) * current_batch_size
++                weighted_sums["feature_norm"] += float(
++                    outputs["sfeatures"].detach().norm(dim=1).sum().item()
++                )
+                 _, preds = torch.max(logits, dim=1)
+                 correct += preds.eq(targets.expand_as(preds)).cpu().sum()
+-                total += len(targets)
++                processed_samples += current_batch_size
++                optimizer_steps += 1
+ 
+             scheduler.step()
++            epoch_seconds = time.perf_counter() - epoch_started
++            checkpoint_enabled = bool(self.args.get("checkpoint_every_epoch", True))
++            checkpoint_state_id = (
++                f"train_epoch:task_{self._cur_task + 1}:next_epoch_{epoch + 1}"
++                if checkpoint_enabled else None
++            )
++            diagnostics = {
++                "experiment_id": self.args["experiment_id"],
++                "seed": self.args["seed"],
++                "task_id": self._cur_task + 1,
++                "stage": "feature_training",
++                "epoch": epoch + 1,
++                "classification_active": True,
++                "classification_raw": weighted_sums["classification"] / processed_samples,
++                "classification_coefficient": 1.0,
++                "classification_weighted": weighted_sums["classification"] / processed_samples,
++                "scc_active": scc_active,
++                "scc_raw": weighted_sums["scc"] / processed_samples if scc_active else None,
++                "scc_coefficient": float(self.args["scc_value"]) if scc_active else None,
++                "scc_weighted": (
++                    weighted_sums["scc"] * float(self.args["scc_value"]) / processed_samples
++                    if scc_active else None
++                ),
++                "feature_distillation_active": feature_active,
++                "feature_distillation_raw": (
++                    weighted_sums["feature_distillation"] / processed_samples
++                    if feature_active else None
++                ),
++                "feature_distillation_coefficient": 0.1 if feature_active else None,
++                "feature_distillation_weighted": (
++                    weighted_sums["feature_distillation"] * 0.1 / processed_samples
++                    if feature_active else None
++                ),
++                "logit_distillation_active": logit_active,
++                "logit_distillation_raw": (
++                    weighted_sums["logit_distillation"] / processed_samples if logit_active else None
++                ),
++                "logit_distillation_coefficient": 5.0 if logit_active else None,
++                "logit_distillation_weighted": (
++                    weighted_sums["logit_distillation"] * 5.0 / processed_samples
++                    if logit_active else None
++                ),
++                "separation_active": separation_active,
++                "separation_raw": (
++                    weighted_sums["separation"] / processed_samples if separation_active else None
++                ),
++                "separation_coefficient": (
++                    float(self.args["sep_lambda"]) if separation_active else None
++                ),
++                "separation_weighted": (
++                    weighted_sums["weighted_separation"] / processed_samples
++                    if separation_active else None
++                ),
++                "original_structure_loss": weighted_sums["original_structure"] / processed_samples,
++                "total_loss": weighted_sums["total"] / processed_samples,
++                "student_feature_norm": weighted_sums["feature_norm"] / processed_samples,
++                "separation_parameter_gradient_norm_first_batch": sep_gradient_norm,
++                "learning_rate": learning_rates[0],
++                "learning_rates": learning_rates,
++                "processed_samples": processed_samples,
++                "optimizer_steps": optimizer_steps,
++                "epoch_seconds": epoch_seconds,
++                "nan_or_inf_detected": False,
++                "numerical_fallback_count": (
++                    sum(
++                        int(bool(details.get("fallback_applied", False)))
++                        for details in self._separation_cache.factorization_details
++                    )
++                    if separation_active else 0
++                ),
++                "checkpoint_path": (
++                    str(self.run_dir / "checkpoint_latest.pt") if checkpoint_enabled else None
++                ),
++                "checkpoint_state_id": checkpoint_state_id,
++            }
++            if nearest_rho:
++                rho = torch.cat(nearest_rho)
++                d2 = torch.cat(nearest_d2)
++                intrusion = torch.cat(intrusions)
++                diagnostics.update(
++                    {
++                        "nearest_old_d2_mean": float(d2.mean()),
++                        "nearest_old_d2_p05": float(torch.quantile(d2, 0.05)),
++                        "nearest_old_d2_p50": float(torch.quantile(d2, 0.50)),
++                        "nearest_old_d2_p95": float(torch.quantile(d2, 0.95)),
++                        "nearest_old_rho_mean": float(rho.mean()),
++                        "nearest_old_rho_p05": float(torch.quantile(rho, 0.05)),
++                        "nearest_old_rho_p50": float(torch.quantile(rho, 0.50)),
++                        "nearest_old_rho_p95": float(torch.quantile(rho, 0.95)),
++                        "intrusion_ratio": float(intrusion.mean()),
++                    }
++                )
++            append_jsonl(self.run_dir / "training_diagnostics.jsonl", diagnostics)
++            upsert_csv_rows(
++                self.run_dir / "epoch_metrics.csv",
++                [diagnostics],
++                ("experiment_id", "seed", "task_id", "stage", "epoch"),
++            )
+ 
+-            train_acc = np.around(tensor2numpy(correct) * 100 / total, decimals=2)
++            train_acc = np.around(tensor2numpy(correct) * 100 / processed_samples, decimals=2)
+             test_acc = self._compute_accuracy(self._network, test_loader)
+             info = "Task {}, Epoch {}/{} => Loss {:.3f}, Train_accy {:.2f}, Test_accy {:.2f}".format(
+                 self._cur_task,
+                 epoch + 1,
+                 self.tuned_epochs,
+-                losses / len(train_loader),
++                diagnostics["total_loss"],
+                 train_acc,
+                 test_acc,
+             )
+ 
+             prog_bar.set_description(info)
++            if checkpoint_enabled:
++                self.save_experiment_checkpoint(
++                    self.run_dir / "checkpoint_latest.pt",
++                    stage="train_epoch",
++                    next_epoch=epoch + 1,
++                    optimizer=optimizer,
++                    scheduler=scheduler,
++                )
++            metadata_updates = {
++                "updated_at_utc": utc_now_iso(),
++                "last_recorded_stage": "feature_training",
++                "last_recorded_task": self._cur_task + 1,
++                "last_recorded_epoch": epoch + 1,
++            }
++            if checkpoint_enabled:
++                metadata_updates.update(
++                    {
++                        "last_checkpoint_state_id": checkpoint_state_id,
++                        "last_checkpoint_path": str(self.run_dir / "checkpoint_latest.pt"),
++                    }
++                )
++            update_json(self.run_dir / "run_metadata.json", metadata_updates)
++
++        if start_epoch >= self.tuned_epochs:
++            logging.info("Training epochs already complete in resume checkpoint; continuing task finalization")
++
++    def _separation_is_active(self):
++        return (
++            self._cur_task > 0
++            and bool(self.args.get("old_new_separation", False))
++            and float(self.args.get("sep_lambda", 0.0)) > 0.0
++        )
++
++    def _feature_space_id(self, stage):
++        model = self._network.module if isinstance(self._network, nn.DataParallel) else self._network
++        student_adapter = 2 if model.convnet.flag % 2 == 1 else 1
++        return f"task_{self._cur_task}:{stage}:student_adapter_{student_adapter}:raw_768d"
++
++    def _collect_current_features(self, feature_key="sfeatures", return_sample_ids=False):
++        was_training = self._network.training
++        self._network.eval()
++        features, labels, sample_ids = [], [], []
++        with torch.no_grad():
++            for indices, inputs, targets in self.stats_loader:
++                outputs = self._network(inputs.to(self._device))
++                features.append(outputs[feature_key].detach().cpu().float())
++                labels.append(targets.detach().cpu().long())
++                if return_sample_ids:
++                    for index in indices.tolist():
++                        source = self.stats_loader.dataset.images[int(index)]
++                        if self.stats_loader.dataset.use_path:
++                            source = Path(source)
++                            train_root = Path(self.data_manager.split_roots.get("train", source.parent))
++                            try:
++                                source = source.relative_to(train_root)
++                            except ValueError:
++                                pass
++                            sample_ids.append(source.as_posix())
++                        else:
++                            sample_ids.append(str(index))
++        self._network.train(was_training)
++        collected = (torch.cat(features, dim=0), torch.cat(labels, dim=0))
++        return (*collected, sample_ids) if return_sample_ids else collected
++
++    def _statistics_from_features(self, features, labels):
++        class_count = self._total_classes - self._known_classes
++        means = np.zeros((class_count, features.shape[1]), dtype=np.float32)
++        covariances = torch.zeros((class_count, features.shape[1], features.shape[1]), dtype=torch.float32)
++        for offset, class_id in enumerate(range(self._known_classes, self._total_classes)):
++            class_features = features[labels == class_id]
++            if class_features.shape[0] == 0:
++                raise RuntimeError(f"no current-task features found for class {class_id}")
++            means[offset] = class_features.mean(dim=0).numpy()
++            centered = class_features - class_features.mean(dim=0, keepdim=True)
++            if class_features.shape[0] > 1:
++                covariance = centered.T @ centered / float(class_features.shape[0] - 1)
++            else:
++                covariance = torch.zeros((features.shape[1], features.shape[1]), dtype=torch.float32)
++            covariance = 0.5 * (covariance + covariance.T)
++            covariance.diagonal().add_(float(self.args["stats_cov_jitter"]))
++            covariances[offset] = covariance
++        return means, covariances
++
++    def _refresh_separation_cache(self, epoch):
++        if self._task_source_means is None or self._sep_reference_means is None:
++            raise RuntimeError("epoch APR source/reference statistics are missing")
++        rng_state = capture_rng_state()
++        was_training = self._network.training
++        started = time.perf_counter()
++        try:
++            target_features, target_labels = self._collect_current_features("sfeatures")
++            target_means, target_covariances = self._statistics_from_features(target_features, target_labels)
++            feature_space = self._feature_space_id(f"epoch_{epoch}_cache")
++            if self.args.get("apr", True):
++                corrected_means, corrected_covariances = self.adjust_distribution.correct_prototypes(
++                    self._task_source_means,
++                    self._task_source_covs,
++                    self._sep_reference_means,
++                    self._sep_reference_covs,
++                    target_means,
++                    target_covariances,
++                )
++                mean_shifts, covariance_additions = self.adjust_distribution.class_level_corrections(
++                    self._task_source_means,
++                    self._sep_reference_means,
++                    self._sep_reference_covs,
++                    target_means,
++                    target_covariances,
++                )
++            else:
++                corrected_means = self._task_source_means.copy()
++                corrected_covariances = self._task_source_covs.clone()
++                mean_shifts = torch.zeros_like(torch.from_numpy(self._task_source_means)).to(self._device)
++                covariance_additions = torch.zeros_like(self._task_source_covs).to(self._device)
++
++            if self.args.get("multi_center", False):
++                if self.args.get("apr", True):
++                    cache_regions_by_class = rectify_local_regions(
++                        self._task_source_local_stats,
++                        mean_shifts,
++                        covariance_additions,
++                        feature_space,
++                        self.adjust_distribution.epsilon_cov_reg,
++                    )
++                else:
++                    cache_regions_by_class = clone_regions(self._task_source_local_stats)
++                    for regions in cache_regions_by_class.values():
++                        for region in regions:
++                            region["feature_space"] = feature_space
++            else:
++                cache_regions_by_class = {}
++                for class_id in range(self._known_classes):
++                    boundary = self._single_regions[class_id][0]
++                    region = dict(boundary)
++                    region["mean"] = torch.as_tensor(corrected_means[class_id]).detach().cpu().float()
++                    region["covariance"] = torch.as_tensor(corrected_covariances[class_id]).detach().cpu().float()
++                    region["tau_by_covariance"] = dict(boundary["tau_by_covariance"])
++                    region["regularization"] = dict(boundary.get("regularization", {}))
++                    region["feature_space"] = feature_space
++                    cache_regions_by_class[class_id] = [region]
++
++            regions = flatten_regions(cache_regions_by_class)
++            self._separation_cache = SeparationCache(
++                regions,
++                self.args["separation_covariance"],
++                feature_space,
++                self.args,
++            )
++            elapsed = time.perf_counter() - started
++            cache_record = {
++                "task": self._cur_task,
++                "epoch": epoch,
++                "source_model": "previous-task final student copied to frozen teacher adapter",
++                "source_feature_space": sorted(
++                    {region["feature_space"] for region in flatten_regions(
++                        self._task_source_local_stats if self.args.get("multi_center", False) else self._single_regions
++                    )}
++                ),
++                "target_feature_space": feature_space,
++                "boundary_policy": self.args["sep_boundary_policy"],
++                "timing": self.args["sep_timing"],
++                "covariance_view": self.args["separation_covariance"],
++                "region_count": self._separation_cache.region_count,
++                "cache_storage_bytes": self._separation_cache.storage_bytes,
++                "refresh_seconds": elapsed,
++                "factorization_fallbacks": sum(
++                    bool(details.get("fallback_applied", False))
++                    for details in self._separation_cache.factorization_details
++                ),
++            }
++            append_jsonl(self.run_dir / "separation_cache.jsonl", cache_record)
++            logging.info("Separation cache: %s", cache_record)
++        finally:
++            restore_rng_state(rng_state)
++            self._network.train(was_training)
++
++    def _update_region_statistics(self, data_manager, new_means_after, new_covariances_after):
++        needs_regions = bool(self.args.get("multi_center", False) or self.args.get("old_new_separation", False))
++        if not needs_regions:
++            return
++        rng_state = capture_rng_state()
++        try:
++            features, labels, sample_ids = self._collect_current_features(
++                "sfeatures", return_sample_ids=True
++            )
++        finally:
++            restore_rng_state(rng_state)
++        final_feature_space = self._feature_space_id("task_final")
++        new_regions = {}
++        kmeans_records = []
++        cluster_summary_rows = []
++        cluster_detail_rows = []
++        cluster_assignment_rows = []
++        for offset, class_id in enumerate(range(self._known_classes, self._total_classes)):
++            class_mask = labels == class_id
++            class_features = features[class_mask]
++            if self.args.get("multi_center", False):
++                regions, kmeans = build_regions_for_class(
++                    class_features,
++                    class_id=class_id,
++                    birth_task=self._cur_task,
++                    feature_space=final_feature_space,
++                    num_prototypes=int(self.args["num_prototypes"]),
++                    seed=int(self.args["seed"]) + class_id * 1009,
++                    config=self.args,
++                )
++                new_regions[class_id] = regions
++                kmeans_records.append(
++                    {
++                        "class_id": class_id,
++                        **{key: value for key, value in kmeans.items() if key != "assignments"},
++                    }
++                )
++                class_metadata = data_manager.get_class_metadata(class_id)
++                clustering_run_id = (
++                    f"{self.args['experiment_id']}:seed_{self.args['seed']}:task_{self._cur_task + 1}:"
++                    f"task_final:class_{class_id}"
++                )
++                common = {
++                    "experiment_id": self.args["experiment_id"],
++                    "seed": self.args["seed"],
++                    "task_id": self._cur_task + 1,
++                    "clustering_run_id": clustering_run_id,
++                    "stage": "task_final_statistics",
++                    "epoch": None,
++                    **class_metadata,
++                    "class_sample_count": int(class_features.shape[0]),
++                    "requested_k": int(kmeans["requested_k"]),
++                    "actual_k": int(kmeans["actual_k"]),
++                    "fallback_applied": bool(kmeans["fallback_applied"]),
++                    "fallback_reasons": kmeans["fallback_reasons"],
++                    "small_cluster_policy": kmeans["small_cluster_policy"],
++                    "feature_space": final_feature_space,
++                    "feature_checkpoint_key": f"task_{self._cur_task + 1}:feature_training_complete",
++                    "statistics_checkpoint_path": str(self.run_dir / "checkpoint_latest.pt"),
++                }
++                cluster_summary_rows.append(
++                    {
++                        **common,
++                        "cluster_counts": [int(region["count"]) for region in regions],
++                        "cluster_ratios": [float(region["weight"]) for region in regions],
++                    }
++                )
++                for region in regions:
++                    cluster_detail_rows.append(
++                        {
++                            **common,
++                            "cluster_id": int(region["component_id"]),
++                            "cluster_sample_count": int(region["count"]),
++                            "cluster_ratio": float(region["weight"]),
++                            "covariance_rank": int(region["rank"]),
++                            "covariance_fallback": region["fallback"],
++                            "tau_isotropic": region["tau_by_covariance"]["isotropic"],
++                            "tau_diagonal": region["tau_by_covariance"]["diagonal"],
++                            "tau_full": region["tau_by_covariance"]["full"],
++                            "statistics_key": (
++                                f"local_stats[{class_id}][{region['component_id']}]"
++                            ),
++                        }
++                    )
++                class_sample_ids = [
++                    sample_id for sample_id, selected in zip(sample_ids, class_mask.tolist()) if selected
++                ]
++                for sample_id, cluster_id in zip(class_sample_ids, kmeans["assignments"]):
++                    cluster_assignment_rows.append(
++                        {
++                            "experiment_id": self.args["experiment_id"],
++                            "seed": self.args["seed"],
++                            "task_id": self._cur_task + 1,
++                            "clustering_run_id": clustering_run_id,
++                            **class_metadata,
++                            "sample_id": sample_id,
++                            "cluster_id": int(cluster_id),
++                        }
++                    )
++            else:
++                new_regions[class_id] = [
++                    build_single_region(
++                        class_features,
++                        class_id=class_id,
++                        birth_task=self._cur_task,
++                        feature_space=final_feature_space,
++                        mean=torch.as_tensor(new_means_after[offset]),
++                        covariance=new_covariances_after[offset],
++                        config=self.args,
++                    )
++                ]
++
++        if cluster_summary_rows:
++            upsert_csv_rows(
++                self.run_dir / "cluster_summary.csv",
++                cluster_summary_rows,
++                ("clustering_run_id",),
++            )
++            upsert_csv_rows(
++                self.run_dir / "cluster_details.csv",
++                cluster_detail_rows,
++                ("clustering_run_id", "cluster_id"),
++            )
++            upsert_csv_rows(
++                self.run_dir / "cluster_assignments.csv",
++                cluster_assignment_rows,
++                ("clustering_run_id", "sample_id"),
++            )
++
++        old_regions = {}
++        if self._cur_task > 0:
++            if self.args.get("multi_center", False):
++                if self.args.get("apr", True):
++                    mean_shifts, covariance_additions = self.adjust_distribution.class_level_corrections(
++                        self._task_source_means,
++                        self.now_task_mean,
++                        self.now_task_covs,
++                        new_means_after,
++                        new_covariances_after,
++                    )
++                    old_regions = rectify_local_regions(
++                        self._task_source_local_stats,
++                        mean_shifts,
++                        covariance_additions,
++                        final_feature_space,
++                        self.adjust_distribution.epsilon_cov_reg,
++                    )
++                else:
++                    old_regions = clone_regions(self._task_source_local_stats)
++                    for regions in old_regions.values():
++                        for region in regions:
++                            region["feature_space"] = final_feature_space
++            else:
++                for class_id in range(self._known_classes):
++                    boundary = self._single_regions[class_id][0]
++                    region = dict(boundary)
++                    region["mean"] = torch.as_tensor(self._class_means[class_id]).detach().cpu().float()
++                    region["covariance"] = self._class_covs[class_id].detach().cpu().float().clone()
++                    region["tau_by_covariance"] = dict(boundary["tau_by_covariance"])
++                    region["regularization"] = dict(boundary.get("regularization", {}))
++                    region["feature_space"] = final_feature_space
++                    old_regions[class_id] = [region]
++
++        merged = {**old_regions, **new_regions}
++        if self.args.get("multi_center", False):
++            self._local_stats = merged
++        else:
++            self._single_regions = merged
++        write_json(
++            self.run_dir / f"region_statistics_task_{self._cur_task}.json",
++            {
++                "task": self._cur_task,
++                "multi_center": bool(self.args.get("multi_center", False)),
++                "storage_bytes": region_storage_bytes(merged),
++                "regions": summarize_regions(merged),
++                "kmeans": kmeans_records,
++                "mixture_vs_class_moments": compare_mixture_to_class_statistics(
++                    merged, self._class_means, self._class_covs
++                ),
++            },
++        )
++        if (
++            self.args.get("old_new_separation", False)
++            and float(self.args.get("sep_lambda", 0.0)) > 0.0
++            and self._cur_task > 0
++        ):
++            evaluation_cache = SeparationCache(
++                flatten_regions(old_regions),
++                self.args["separation_covariance"],
++                final_feature_space,
++                self.args,
++            )
++            d2_values, rho_values, intrusion_values = [], [], []
++            with torch.no_grad():
++                for start in range(0, features.shape[0], int(self.args["stats_batch_size"])):
++                    batch = features[start : start + int(self.args["stats_batch_size"])].to(self._device)
++                    separation_loss, diagnostics = evaluation_cache.loss(batch)
++                    d2_values.append(diagnostics.nearest_d2.cpu())
++                    rho_values.append(diagnostics.nearest_rho.cpu())
++                    intrusion_values.append(diagnostics.intrusion.float().cpu())
++            d2_values = torch.cat(d2_values)
++            rho_values = torch.cat(rho_values)
++            intrusion_values = torch.cat(intrusion_values)
++            append_jsonl(
++                self.run_dir / "separation_task_end_diagnostics.jsonl",
++                {
++                    "stage": "task_end_eval",
++                    "task": self._cur_task,
++                    "feature_space": final_feature_space,
++                    "covariance_view": self.args["separation_covariance"],
++                    "region_count": evaluation_cache.region_count,
++                    "nearest_old_d2_mean": float(d2_values.mean()),
++                    "nearest_old_d2_p05": float(torch.quantile(d2_values, 0.05)),
++                    "nearest_old_d2_p50": float(torch.quantile(d2_values, 0.50)),
++                    "nearest_old_d2_p95": float(torch.quantile(d2_values, 0.95)),
++                    "nearest_old_rho_mean": float(rho_values.mean()),
++                    "nearest_old_rho_p05": float(torch.quantile(rho_values, 0.05)),
++                    "nearest_old_rho_p50": float(torch.quantile(rho_values, 0.50)),
++                    "nearest_old_rho_p95": float(torch.quantile(rho_values, 0.95)),
++                    "intrusion_ratio": float(intrusion_values.mean()),
++                },
++            )
++            self._separation_cache = evaluation_cache
++
++    def _restore_training_optimizers(self, optimizer, scheduler):
++        if self._resume_stage != "train_epoch":
++            return
++        if self._resume_optimizer_state is not None:
++            optimizer.load_state_dict(self._resume_optimizer_state)
++        if self._resume_scheduler_state is not None:
++            scheduler.load_state_dict(self._resume_scheduler_state)
++
++    def _checkpoint_network(self):
++        return self._network.module if isinstance(self._network, nn.DataParallel) else self._network
++
++    def save_experiment_checkpoint(self, path, stage, next_epoch=0, optimizer=None, scheduler=None):
++        state_id = (
++            f"train_epoch:task_{self._cur_task + 1}:next_epoch_{int(next_epoch)}"
++            if stage == "train_epoch"
++            else f"{stage}:task_{self._cur_task + 1}"
++        )
++        payload = {
++            "format_version": 1,
++            "state_id": state_id,
++            "stage": stage,
++            "next_epoch": int(next_epoch),
++            "cur_task": self._cur_task,
++            "known_classes": self._known_classes,
++            "total_classes": self._total_classes,
++            "task_sizes": list(self.task_sizes),
++            "network_state_dict": self._checkpoint_network().state_dict(),
++            "class_means": getattr(self, "_class_means", None),
++            "class_covs": getattr(self, "_class_covs", None),
++            "radius": getattr(self, "radius", None),
++            "local_stats": self._local_stats,
++            "single_regions": self._single_regions,
++            "task_source_means": self._task_source_means,
++            "task_source_covs": self._task_source_covs,
++            "task_source_local_stats": self._task_source_local_stats,
++            "sep_reference_means": self._sep_reference_means,
++            "sep_reference_covs": self._sep_reference_covs,
++            "now_task_mean": getattr(self, "now_task_mean", None),
++            "now_task_covs": getattr(self, "now_task_covs", None),
++            "optimizer_state_dict": optimizer.state_dict() if optimizer is not None else None,
++            "scheduler_state_dict": scheduler.state_dict() if scheduler is not None else None,
++            "rng_state": capture_rng_state(),
++            "config": self.args,
++        }
++        target = Path(path)
++        target.parent.mkdir(parents=True, exist_ok=True)
++        temporary = target.with_suffix(target.suffix + ".tmp")
++        torch.save(payload, temporary)
++        os.replace(temporary, target)
++        write_json(
++            self.run_dir / "checkpoint_manifest.json",
++            {
++                "checkpoint_path": str(target.resolve()),
++                "checkpoint_state_id": state_id,
++                "stage": stage,
++                "task_id": self._cur_task + 1,
++                "next_epoch": int(next_epoch),
++                "updated_at_utc": utc_now_iso(),
++                "note": "checkpoint_latest.pt is replaced atomically and represents only this latest state",
++            },
++        )
++        return state_id
++
++    def load_experiment_checkpoint(self, path):
++        checkpoint = torch.load(path, map_location="cpu", weights_only=False)
++        if checkpoint.get("format_version") != 1:
++            raise ValueError("unsupported checkpoint format")
++        checkpoint_config = checkpoint.get("config", {})
++        compatibility_keys = (
++            "experiment_id",
++            "dataset",
++            "seed",
++            "init_cls",
++            "increment",
++            "expected_tasks",
++            "multi_center",
++            "num_prototypes",
++            "old_new_separation",
++            "separation_covariance",
++            "sep_lambda",
++            "sep_percentile",
++            "sep_timing",
++            "sep_boundary_policy",
++        )
++        mismatches = {
++            key: {"checkpoint": checkpoint_config.get(key), "current": self.args.get(key)}
++            for key in compatibility_keys
++            if checkpoint_config.get(key) != self.args.get(key)
++        }
++        if mismatches:
++            raise ValueError(f"checkpoint/config mismatch: {mismatches}")
++        checkpoint_sizes = list(checkpoint["task_sizes"])
++        if self._checkpoint_network().fc is not None:
++            raise RuntimeError("load_experiment_checkpoint must be called on a fresh learner")
++        for size in checkpoint_sizes:
++            self._checkpoint_network().update_fc(size)
++        self._checkpoint_network().load_state_dict(checkpoint["network_state_dict"])
++        self.task_sizes = checkpoint_sizes
++        self._cur_task = int(checkpoint["cur_task"])
++        self._known_classes = int(checkpoint["known_classes"])
++        self._total_classes = int(checkpoint["total_classes"])
++        if checkpoint["class_means"] is not None:
++            self._class_means = checkpoint["class_means"]
++            self._class_covs = checkpoint["class_covs"]
++        self.radius = checkpoint.get("radius")
++        self._local_stats = checkpoint.get("local_stats", {})
++        self._single_regions = checkpoint.get("single_regions", {})
++        self._task_source_means = checkpoint.get("task_source_means")
++        self._task_source_covs = checkpoint.get("task_source_covs")
++        self._task_source_local_stats = checkpoint.get("task_source_local_stats", {})
++        self._sep_reference_means = checkpoint.get("sep_reference_means")
++        self._sep_reference_covs = checkpoint.get("sep_reference_covs")
++        self.now_task_mean = checkpoint.get("now_task_mean")
++        self.now_task_covs = checkpoint.get("now_task_covs")
++        self._resume_stage = checkpoint["stage"]
++        self._resume_next_epoch = int(checkpoint.get("next_epoch", 0))
++        self._resume_optimizer_state = checkpoint.get("optimizer_state_dict")
++        self._resume_scheduler_state = checkpoint.get("scheduler_state_dict")
++        restore_rng_state(checkpoint["rng_state"])
++        logging.info(
++            "Loaded checkpoint %s (stage=%s task=%d next_epoch=%d)",
++            path,
++            self._resume_stage,
++            self._cur_task,
++            self._resume_next_epoch,
++        )
++        return checkpoint
+ 
+     def compute_irr_ratio(self):
+         block_len = self._update_grads[self._cur_task]
+@@ -573,4 +1376,4 @@ def correct_covariance_strategy_2(
+ 
+     corrected_covs_tensor = torch.stack(corrected_covs_list, dim=0)
+ 
+-    return corrected_covs_tensor
+\ No newline at end of file
++    return corrected_covs_tensor
+diff --git a/models/base.py b/models/base.py
+index 512627e..4830b76 100644
+--- a/models/base.py
++++ b/models/base.py
+@@ -11,6 +11,8 @@ from torch.nn import functional as F
+ from torch.utils.data import DataLoader
+ from torch.distributions.multivariate_normal import MultivariateNormal
+ from utils.toolkit import tensor2numpy, accuracy
++from utils.distribution_regions import sample_gaussian_mixture
++from utils.experiment_io import update_json, upsert_csv_rows, utc_now_iso
+ from scipy.spatial.distance import cdist
+ import time
+ EPSILON = 1e-8
+@@ -76,20 +78,40 @@ class BaseLearner(object):
+         model.eval()
+ 
+         for epoch in range(run_epochs):
+-            losses = 0.
++            epoch_started = time.perf_counter()
++            learning_rates = [float(group["lr"]) for group in optimizer.param_groups]
++            loss_sample_sum = 0.0
++            processed_samples = 0
++            optimizer_steps = 0
++            numerical_fallback_count = 0
+             sampled_data = []
+             sampled_label = []
+-            num_sampled_pcls = 256
++            num_sampled_pcls = int(self.args["replay_samples_per_class"])
+ 
+             for c_id in range(crct_num):
+                 t_id = c_id // task_size
+                 decay = (t_id + 1) / (self._cur_task + 1) * 0.1
+-                cls_mean = torch.tensor(self._class_means[c_id], dtype=torch.float64).to(self._device) * (
+-                            0.9 + decay)  # torch.from_numpy(self._class_means[c_id]).to(self._device)
+-
+-                cls_cov = self._class_covs[c_id].to(self._device)
+-                m = MultivariateNormal(cls_mean.float(), cls_cov.float())
+-                sampled_data_single = m.sample(sample_shape=(num_sampled_pcls,))
++                mean_scale = 0.9 + decay
++                if self.args.get("multi_center", False) and int(self.args.get("num_prototypes", 1)) > 1:
++                    if c_id not in self._local_stats:
++                        raise RuntimeError(f"missing local replay statistics for class {c_id}")
++                    sampled_data_single, factorization_details = sample_gaussian_mixture(
++                        self._local_stats[c_id],
++                        num_sampled_pcls,
++                        self._device,
++                        mean_scale,
++                        self.args,
++                        return_details=True,
++                    )
++                    numerical_fallback_count += sum(
++                        int(bool(details.get("fallback_applied", False)))
++                        for details in factorization_details
++                    )
++                else:
++                    cls_mean = torch.tensor(self._class_means[c_id], dtype=torch.float64).to(self._device) * mean_scale
++                    cls_cov = self._class_covs[c_id].to(self._device)
++                    m = MultivariateNormal(cls_mean.float(), cls_cov.float())
++                    sampled_data_single = m.sample(sample_shape=(num_sampled_pcls,))
+                 sampled_data.append(sampled_data_single)
+                 sampled_label.extend([c_id] * num_sampled_pcls)
+ 
+@@ -127,16 +149,86 @@ class BaseLearner(object):
+                 else:
+                     loss = F.cross_entropy(logits[:, :crct_num], tgt)
+ 
++                if not torch.isfinite(loss):
++                    raise FloatingPointError(
++                        f"non-finite classifier-retraining loss at task={self._cur_task + 1}, "
++                        f"epoch={epoch + 1}, step={_iter}"
++                    )
++
+                 optimizer.zero_grad()
+                 loss.backward()
+                 optimizer.step()
+-                losses += loss.item()
++                current_batch_size = int(tgt.shape[0])
++                loss_sample_sum += float(loss.item()) * current_batch_size
++                processed_samples += current_batch_size
++                optimizer_steps += 1
+ 
+             scheduler.step()
++            epoch_seconds = time.perf_counter() - epoch_started
+             test_acc = self._compute_accuracy(self._network, self.test_loader)
++            mean_loss = loss_sample_sum / processed_samples
+             info = 'CA Task {} => Loss {:.3f}, Test_accy {:.3f}'.format(
+-                self._cur_task, losses / self._total_classes, test_acc)
++                self._cur_task, mean_loss, test_acc)
+             logging.info(info)
++            pending_checkpoint_state_id = f"task_end:task_{self._cur_task + 1}"
++            row = {
++                "experiment_id": self.args["experiment_id"],
++                "seed": self.args["seed"],
++                "task_id": self._cur_task + 1,
++                "stage": "classifier_retraining",
++                "epoch": epoch + 1,
++                "classification_active": True,
++                "classification_raw": mean_loss,
++                "classification_coefficient": 1.0,
++                "classification_weighted": mean_loss,
++                "scc_active": False,
++                "scc_raw": None,
++                "scc_coefficient": None,
++                "scc_weighted": None,
++                "feature_distillation_active": False,
++                "feature_distillation_raw": None,
++                "feature_distillation_coefficient": None,
++                "feature_distillation_weighted": None,
++                "logit_distillation_active": False,
++                "logit_distillation_raw": None,
++                "logit_distillation_coefficient": None,
++                "logit_distillation_weighted": None,
++                "separation_active": False,
++                "separation_raw": None,
++                "separation_coefficient": None,
++                "separation_weighted": None,
++                "original_structure_loss": mean_loss,
++                "total_loss": mean_loss,
++                "student_feature_norm": None,
++                "separation_parameter_gradient_norm_first_batch": None,
++                "learning_rate": learning_rates[0],
++                "learning_rates": learning_rates,
++                "processed_samples": processed_samples,
++                "optimizer_steps": optimizer_steps,
++                "epoch_seconds": epoch_seconds,
++                "intrusion_ratio": None,
++                "nearest_old_rho_mean": None,
++                "nan_or_inf_detected": False,
++                "numerical_fallback_count": numerical_fallback_count,
++                "checkpoint_path": None,
++                "checkpoint_state_id": None,
++                "pending_checkpoint_state_id": pending_checkpoint_state_id,
++            }
++            upsert_csv_rows(
++                self.run_dir / "epoch_metrics.csv",
++                [row],
++                ("experiment_id", "seed", "task_id", "stage", "epoch"),
++            )
++            update_json(
++                self.run_dir / "run_metadata.json",
++                {
++                    "updated_at_utc": utc_now_iso(),
++                    "last_recorded_stage": "classifier_retraining",
++                    "last_recorded_task": self._cur_task + 1,
++                    "last_recorded_epoch": epoch + 1,
++                    "pending_checkpoint_state_id": pending_checkpoint_state_id,
++                },
++            )
+ 
+ 
+     def save_checkpoint(self, filename):
+@@ -384,4 +476,3 @@ class BaseLearner(object):
+         torch.save(data_to_save, save_path)
+ 
+         print(f"File saved to {save_path}. Features shape: {features_tensor.shape}.")
+-
+diff --git a/trainer.py b/trainer.py
+index ffa2ea0..e8b3704 100644
+--- a/trainer.py
++++ b/trainer.py
+@@ -1,168 +1,570 @@
+-import sys
+-import logging
++from __future__ import annotations
++
+ import copy
++import hashlib
++import json
++import logging
++import random
++import resource
++import subprocess
++import sys
++import time
++import traceback
++from pathlib import Path
++
++import numpy as np
+ import torch
+-from utils import model_factory
++
+ from data.data_manager import DataManager
+-from utils.toolkit import count_parameters
+-import os
++from utils import model_factory
++from utils.distribution_regions import region_storage_bytes
++from utils.experiment_io import (
++    capture_rng_state,
++    read_csv,
++    restore_rng_state,
++    update_json,
++    upsert_csv_rows,
++    utc_now_iso,
++    write_csv,
++    write_json,
++)
+ 
+ 
+ def CDS_train(args):
+-    seed_list = copy.deepcopy(args["seed"])
+-    device = copy.deepcopy(args["device"])
++    seeds = copy.deepcopy(args["seed"])
++    devices = copy.deepcopy(args["device"])
++    for seed in seeds:
++        run_args = copy.deepcopy(args)
++        run_args["seed"] = int(seed)
++        run_args["device"] = devices
++        try:
++            _train(run_args)
++        except BaseException as error:
++            run_dir = (
++                Path(run_args["output_root"])
++                / run_args["dataset"]
++                / run_args["experiment_id"]
++                / f"seed_{run_args['seed']}"
++            ).resolve()
++            update_json(
++                run_dir / "run_metadata.json",
++                {
++                    "status": "interrupted" if isinstance(error, KeyboardInterrupt) else "failed",
++                    "ended_at_utc": utc_now_iso(),
++                    "updated_at_utc": utc_now_iso(),
++                    "failure_type": type(error).__name__,
++                    "failure_reason": str(error),
++                    "failure_traceback": traceback.format_exc(),
++                },
++            )
++            raise
+ 
+-    for seed in seed_list:
+-        args["seed"] = seed
+-        args["device"] = device
+-        _train(args)
+ 
++def _git_metadata():
++    root = Path(__file__).resolve().parent
++    try:
++        commit = subprocess.check_output(
++            ["git", "rev-parse", "HEAD"], cwd=root, text=True, stderr=subprocess.DEVNULL
++        ).strip()
++        dirty = subprocess.check_output(
++            ["git", "status", "--short"], cwd=root, text=True, stderr=subprocess.DEVNULL
++        ).splitlines()
++        diff = subprocess.check_output(["git", "diff", "--binary", "HEAD"], cwd=root)
++        untracked = subprocess.check_output(
++            ["git", "ls-files", "--others", "--exclude-standard"], cwd=root, text=True
++        ).splitlines()
++        digest = hashlib.sha256(diff)
++        for relative in sorted(untracked):
++            path = root / relative
++            digest.update(relative.encode("utf-8"))
++            digest.update(b"\0")
++            if path.is_file():
++                digest.update(path.read_bytes())
++        return {
++            "commit": commit,
++            "dirty_paths": dirty,
++            "untracked_paths": untracked,
++            "working_tree_sha256": digest.hexdigest(),
++        }
++    except (OSError, subprocess.CalledProcessError):
++        return {
++            "commit": None,
++            "dirty_paths": [],
++            "untracked_paths": [],
++            "working_tree_sha256": None,
++        }
+ 
+-def _train(args):
+ 
+-    init_cls = 0 if args ["init_cls"] == args["increment"] else args["init_cls"]
+-    logs_name = "logs/{}/{}/{}/{}".format(args["model_name"],args["dataset"], init_cls, args['increment'])
+-    
+-    if not os.path.exists(logs_name):
+-        os.makedirs(logs_name)
+-
+-    logfilename = "logs/{}/{}/{}/{}/{}_{}_{}".format(
+-        args["model_name"],
+-        args["dataset"],
+-        init_cls,
+-        args["increment"],
+-        args["prefix"],
+-        args["seed"],
+-        args["convnet_type"],
+-    )
++def _configure_logging(run_dir):
+     logging.basicConfig(
+         level=logging.INFO,
+         format="%(asctime)s [%(filename)s] => %(message)s",
+-        handlers=[
+-            logging.FileHandler(filename=logfilename + ".log"),
+-            logging.StreamHandler(sys.stdout),
+-        ],
++        handlers=[logging.FileHandler(run_dir / "training.log"), logging.StreamHandler(sys.stdout)],
++        force=True,
+     )
+ 
+-    _set_random()
++
++def _train(args):
++    run_dir = (
++        Path(args["output_root"]) / args["dataset"] / args["experiment_id"] / f"seed_{args['seed']}"
++    ).resolve()
++    run_dir.mkdir(parents=True, exist_ok=True)
++    args["run_dir"] = str(run_dir)
++    metadata_path = run_dir / "run_metadata.json"
++    existing_metadata = _read_json(metadata_path, {})
++    started_at_utc = existing_metadata.get("started_at_utc", utc_now_iso())
++    recording_gaps = list(existing_metadata.get("recording_gaps", []))
++    if (run_dir / "task_metrics.json").is_file() and not (run_dir / "task_summary.csv").is_file():
++        recording_gaps.append(
++            "legacy completed-task metrics predate task_summary/task_accuracy/class_accuracy correct-count CSVs"
++        )
++    if (run_dir / "training_diagnostics.jsonl").is_file() and not (run_dir / "epoch_metrics.csv").is_file():
++        recording_gaps.append(
++            "legacy epoch diagnostics predate sample-weighted component-loss epoch_metrics.csv"
++        )
++    recording_gaps = list(dict.fromkeys(recording_gaps))
++    args["recording_gaps"] = recording_gaps
++    _configure_logging(run_dir)
++    _set_random(int(args["seed"]))
+     _set_device(args)
+-    print_args(args)
+     _reset_peak_cuda_stats(args["device"])
+-
++    for key, value in args.items():
++        logging.info("%s: %s", key, value)
++    write_json(run_dir / "resolved_config.json", args)
++    source_metadata = _git_metadata()
++    write_json(run_dir / "source_state.json", source_metadata)
++    source_history = list(existing_metadata.get("source_history", []))
++    if (
++        not source_history
++        or source_history[-1].get("working_tree_sha256")
++        != source_metadata.get("working_tree_sha256")
++    ):
++        source_history.append(
++            {
++                **source_metadata,
++                "observed_at_utc": utc_now_iso(),
++                "resume_checkpoint": args.get("resume"),
++            }
++        )
+ 
+     data_manager = DataManager(
+-        args["dataset"],
+-        args["shuffle"],
+-        args["seed"],
+-        args["init_cls"],
+-        args["increment"],
++        args["dataset"], args["shuffle"], args["seed"], args["init_cls"], args["increment"], args=args
++    )
++    write_json(run_dir / "protocol_manifest.json", data_manager.protocol_manifest)
++    write_json(
++        run_dir / "class_order.json",
++        {
++            "class_order_original_ids": data_manager.protocol_manifest["class_order_original_ids"],
++            "tasks": data_manager.protocol_manifest["tasks"],
++        },
+     )
++    update_json(
++        metadata_path,
++        {
++            "recording_schema_version": 2,
++            "run_id": f"{args['experiment_id']}:seed_{args['seed']}",
++            "experiment_id": args["experiment_id"],
++            "seed": args["seed"],
++            "status": "running",
++            "started_at_utc": started_at_utc,
++            "updated_at_utc": utc_now_iso(),
++            "ended_at_utc": None,
++            "resume_checkpoint": args.get("resume"),
++            "config": args,
++            "source": source_metadata,
++            "source_history": source_history,
++            "protocol": data_manager.protocol_manifest,
++            "failure_type": None,
++            "failure_reason": None,
++            "failure_traceback": None,
++            "recording_gaps": recording_gaps,
++        },
++    )
++
+     model = model_factory.get_model(args["model_name"], args)
++    if args.get("resume"):
++        model.load_experiment_checkpoint(args["resume"])
++    metrics_path = run_dir / "task_metrics.json"
++    matrix_path = run_dir / "task_accuracy_matrix.json"
++    task_metrics = _read_json(metrics_path, [])
++    accuracy_matrix = _read_json(matrix_path, [])
++    if model._resume_stage == "task_end":
++        start_task = model._cur_task + 1
++    elif model._resume_stage == "train_epoch":
++        start_task = model._cur_task
++    else:
++        start_task = 0
+ 
+-    print()
+-    cnn_curve, nme_curve = {"top1": [], "top5": []}, {"top1": [], "top5": []}
+-    for task in range(data_manager.nb_tasks):
++    for task in range(start_task, data_manager.nb_tasks):
++        known_before = model._known_classes
++        _reset_peak_cuda_stats(args["device"])
++        started = time.perf_counter()
+         model.incremental_train(data_manager)
+-        cnn_accy = model.eval_task()
++        training_seconds = time.perf_counter() - started
++        evaluation_rng_state = capture_rng_state()
++        was_training = model._network.training
++        try:
++            y_pred, y_true = model._eval_cnn(model.test_loader)
++        finally:
++            restore_rng_state(evaluation_rng_state)
++            model._network.train(was_training)
++        predictions = y_pred[:, 0]
++        num_samples = int(y_true.shape[0])
++        num_correct = int(np.sum(predictions == y_true))
++        top1_accuracy = num_correct * 100.0 / num_samples
++        top5_correct = int(np.sum(np.any(y_pred == y_true[:, None], axis=1)))
++        top5_accuracy = top5_correct * 100.0 / num_samples
++        eval_stage = "task_final"
++
++        task_row = []
++        task_accuracy_rows = []
++        class_start = 0
++        for learned_task in range(task + 1):
++            class_stop = class_start + data_manager.get_task_size(learned_task)
++            task_mask = np.logical_and(y_true >= class_start, y_true < class_stop)
++            task_num_samples = int(np.sum(task_mask))
++            task_num_correct = int(np.sum(predictions[task_mask] == y_true[task_mask]))
++            task_accuracy = task_num_correct * 100.0 / task_num_samples
++            task_row.append(task_accuracy)
++            task_accuracy_rows.append(
++                {
++                    "experiment_id": args["experiment_id"],
++                    "seed": args["seed"],
++                    "trained_task": task + 1,
++                    "evaluated_task": learned_task + 1,
++                    "eval_stage": eval_stage,
++                    "num_correct": task_num_correct,
++                    "num_samples": task_num_samples,
++                    "accuracy": task_accuracy,
++                }
++            )
++            class_start = class_stop
++        accuracy_matrix = accuracy_matrix[:task]
++        accuracy_matrix.append(task_row)
++
++        upsert_csv_rows(
++            run_dir / "task_accuracy.csv",
++            task_accuracy_rows,
++            ("experiment_id", "seed", "trained_task", "evaluated_task", "eval_stage"),
++        )
++        derived_matrix = _accuracy_matrix_from_long(
++            read_csv(run_dir / "task_accuracy.csv"),
++            args["experiment_id"],
++            args["seed"],
++            task + 1,
++            eval_stage,
++        )
++        if derived_matrix is not None:
++            accuracy_matrix = derived_matrix
++        class_accuracy_rows = []
++        for class_id in range(model._total_classes):
++            class_mask = y_true == class_id
++            class_num_samples = int(np.sum(class_mask))
++            class_num_correct = int(np.sum(predictions[class_mask] == y_true[class_mask]))
++            class_metadata = data_manager.get_class_metadata(class_id)
++            class_accuracy_rows.append(
++                {
++                    "experiment_id": args["experiment_id"],
++                    "seed": args["seed"],
++                    "trained_task": task + 1,
++                    "eval_stage": eval_stage,
++                    **class_metadata,
++                    "num_correct": class_num_correct,
++                    "num_samples": class_num_samples,
++                    "accuracy": class_num_correct * 100.0 / class_num_samples,
++                }
++            )
++        upsert_csv_rows(
++            run_dir / "class_accuracy.csv",
++            class_accuracy_rows,
++            ("experiment_id", "seed", "trained_task", "eval_stage", "mapped_class_id"),
++        )
++
++        old_mask = y_true < known_before
++        new_mask = ~old_mask
++        old_num_samples = int(np.sum(old_mask))
++        new_num_samples = int(np.sum(new_mask))
++        old_num_correct = int(np.sum(predictions[old_mask] == y_true[old_mask])) if old_num_samples else None
++        new_num_correct = int(np.sum(predictions[new_mask] == y_true[new_mask]))
++        old_accuracy = old_num_correct * 100.0 / old_num_samples if old_num_samples else None
++        new_accuracy = new_num_correct * 100.0 / new_num_samples
++        old_to_new = float(np.mean(predictions[old_mask] >= known_before)) if old_mask.any() else None
++        new_to_old = (
++            float(np.mean(predictions[new_mask] < known_before)) if new_mask.any() and known_before else 0.0
++        )
++        peak_memory = _peak_cuda_memory(args["device"])
++        class_means = getattr(model, "_class_means", None)
++        class_covariances = getattr(model, "_class_covs", None)
++        class_statistics_bytes = 0
++        if class_means is not None:
++            class_statistics_bytes += int(class_means.nbytes)
++        if class_covariances is not None:
++            class_statistics_bytes += int(class_covariances.numel() * class_covariances.element_size())
++        region_statistics_bytes = region_storage_bytes(
++            getattr(model, "_local_stats", {}) or getattr(model, "_single_regions", {})
++        )
++        separation_cache = getattr(model, "_separation_cache", None)
++        separation_cache_bytes = separation_cache.storage_bytes if separation_cache is not None else 0
++        record = {
++            "task": task,
++            "task_id": task + 1,
++            "eval_stage": eval_stage,
++            "seen_classes": model._total_classes,
++            "num_correct": num_correct,
++            "num_samples": num_samples,
++            "A_t": top1_accuracy,
++            "top5_num_correct": top5_correct,
++            "top5": top5_accuracy,
++            "old_num_correct": old_num_correct,
++            "old_num_samples": old_num_samples,
++            "old_accuracy": old_accuracy,
++            "new_num_correct": new_num_correct,
++            "new_num_samples": new_num_samples,
++            "new_accuracy": new_accuracy,
++            "old_to_new_error_rate": old_to_new,
++            "new_to_old_error_rate": new_to_old,
++            "inc_accuracy_so_far": float(
++                np.mean([row["A_t"] for row in task_metrics[:task]] + [top1_accuracy])
++            ),
++            "forgetting_so_far": _forgetting(accuracy_matrix),
++            "training_seconds": training_seconds,
++            "peak_cuda_allocated_bytes": peak_memory["allocated"],
++            "peak_cuda_reserved_bytes": peak_memory["reserved"],
++            "peak_main_process_rss_bytes": _peak_main_process_rss_bytes(),
++            "class_statistics_bytes": class_statistics_bytes,
++            "region_statistics_bytes": region_statistics_bytes,
++            "separation_cache_bytes": separation_cache_bytes,
++            "total_statistics_bytes": class_statistics_bytes + region_statistics_bytes,
++            "statistics_and_cache_bytes": (
++                class_statistics_bytes + region_statistics_bytes + separation_cache_bytes
++            ),
++            "status": "complete",
++        }
++        task_metrics = task_metrics[:task]
++        task_metrics.append(record)
++        write_json(metrics_path, task_metrics)
++        write_csv(run_dir / "task_metrics.csv", task_metrics)
++        write_json(matrix_path, accuracy_matrix)
++        write_csv(
++            run_dir / "task_accuracy_matrix.csv",
++            [
++                {
++                    "trained_task": row_index + 1,
++                    **{
++                        f"eval_task_{column + 1}": (
++                            row[column] if column < len(row) else None
++                        )
++                        for column in range(data_manager.nb_tasks)
++                    },
++                }
++                for row_index, row in enumerate(accuracy_matrix)
++            ],
++        )
++        upsert_csv_rows(
++            run_dir / "task_summary.csv",
++            [
++                {
++                    "experiment_id": args["experiment_id"],
++                    "seed": args["seed"],
++                    "task_id": task + 1,
++                    "eval_stage": eval_stage,
++                    "seen_classes": model._total_classes,
++                    "num_correct": num_correct,
++                    "num_samples": num_samples,
++                    "accuracy": top1_accuracy,
++                    "top5_num_correct": top5_correct,
++                    "top5_accuracy": top5_accuracy,
++                    "old_num_correct": old_num_correct,
++                    "old_num_samples": old_num_samples,
++                    "old_accuracy": old_accuracy,
++                    "new_num_correct": new_num_correct,
++                    "new_num_samples": new_num_samples,
++                    "new_accuracy": new_accuracy,
++                    "old_to_new_error_rate": old_to_new,
++                    "new_to_old_error_rate": new_to_old,
++                    "training_seconds": training_seconds,
++                    "checkpoint_path": str(run_dir / "checkpoint_latest.pt"),
++                    "checkpoint_state_id": f"task_end:task_{task + 1}",
++                }
++            ],
++            ("experiment_id", "seed", "task_id", "eval_stage"),
++        )
++        logging.info("Task %d metrics: %s", task, record)
+         model.after_task()
+-     
+-        logging.info("CNN: {}".format(cnn_accy["grouped"]))
++        checkpoint_state_id = model.save_experiment_checkpoint(
++            run_dir / "checkpoint_latest.pt", stage="task_end"
++        )
++        summary = _build_summary(args, task_metrics, accuracy_matrix, data_manager.nb_tasks)
++        write_json(run_dir / "summary.json", summary)
++        update_json(
++            metadata_path,
++            {
++                "status": summary["status"],
++                "updated_at_utc": utc_now_iso(),
++                "ended_at_utc": utc_now_iso() if summary["status"] == "complete" else None,
++                "completed_tasks": len(task_metrics),
++                "last_completed_task": task + 1,
++                "last_checkpoint_path": str(run_dir / "checkpoint_latest.pt"),
++                "last_checkpoint_state_id": checkpoint_state_id,
++            },
++        )
++
++    if task_metrics:
++        summary = _build_summary(args, task_metrics, accuracy_matrix, data_manager.nb_tasks)
++        write_json(run_dir / "summary.json", summary)
++        update_json(
++            metadata_path,
++            {
++                "status": summary["status"],
++                "updated_at_utc": utc_now_iso(),
++                "ended_at_utc": utc_now_iso() if summary["status"] == "complete" else None,
++                "completed_tasks": len(task_metrics),
++            },
++        )
++        logging.info("Summary: %s", summary)
+ 
+-        cnn_curve["top1"].append(cnn_accy["top1"])
+-        cnn_curve["top5"].append(cnn_accy["top5"])
+ 
++def _read_json(path, default):
++    if not Path(path).is_file():
++        return default
++    with Path(path).open("r", encoding="utf-8") as handle:
++        return json.load(handle)
+ 
+-        logging.info("CNN top1 curve: {}".format(cnn_curve["top1"]))
+-        logging.info("CNN top5 curve: {}".format(cnn_curve["top5"]))
+ 
+-        print('Average Accuracy (CNN):', sum(cnn_curve["top1"])/len(cnn_curve["top1"]))
+-        logging.info("Average Accuracy (CNN): {}".format(sum(cnn_curve["top1"])/len(cnn_curve["top1"])))
+-    _log_peak_cuda_stats(args["device"])
++def _build_summary(args, task_metrics, accuracy_matrix, expected_tasks):
++    complete = len(task_metrics) == expected_tasks
++    return {
++        "recording_schema_version": 2,
++        "experiment_id": args["experiment_id"],
++        "seed": args["seed"],
++        "multi_center": bool(args["multi_center"]),
++        "separation_covariance": (
++            args["separation_covariance"] if args["old_new_separation"] else "none"
++        ),
++        "completed_tasks": len(task_metrics),
++        "expected_tasks": expected_tasks,
++        "A_by_task": [float(row["A_t"]) for row in task_metrics],
++        "Inc-Acc": float(np.mean([row["A_t"] for row in task_metrics])),
++        "Last-Acc": float(task_metrics[-1]["A_t"]),
++        "Forgetting": _forgetting(accuracy_matrix) if complete else None,
++        "forgetting_definition": (
++            "mean_i(max_{l=i..T-1} a[l,i] - a[T,i]) over tasks i before final task; "
++            "a[l,i] uses the single head over all classes seen at stage l"
++        ),
++        "accuracy_unit": "percent_0_to_100_unrounded",
++        "recording_status": "partial_legacy" if args.get("recording_gaps") else "complete",
++        "recording_gaps": args.get("recording_gaps", []),
++        "total_training_seconds": float(sum(row["training_seconds"] for row in task_metrics)),
++        "max_peak_cuda_allocated_bytes": _max_not_none(
++            row.get("peak_cuda_allocated_bytes") for row in task_metrics
++        ),
++        "max_peak_cuda_reserved_bytes": _max_not_none(
++            row.get("peak_cuda_reserved_bytes") for row in task_metrics
++        ),
++        "max_peak_main_process_rss_bytes": _max_not_none(
++            row.get("peak_main_process_rss_bytes") for row in task_metrics
++        ),
++        "final_total_statistics_bytes": task_metrics[-1].get("total_statistics_bytes"),
++        "max_separation_cache_bytes": _max_not_none(
++            row.get("separation_cache_bytes") for row in task_metrics
++        ),
++        "status": "complete" if complete else "partial",
++    }
+ 
+ 
+-def _set_device(args):
+-    device_type = args["device"]
+-    gpus = []
++def _accuracy_matrix_from_long(rows, experiment_id, seed, completed_tasks, eval_stage):
++    values = {
++        (int(row["trained_task"]), int(row["evaluated_task"])): float(row["accuracy"])
++        for row in rows
++        if row.get("experiment_id") == str(experiment_id)
++        and row.get("seed") == str(seed)
++        and row.get("eval_stage") == str(eval_stage)
++    }
++    matrix = []
++    for trained_task in range(1, completed_tasks + 1):
++        row = []
++        for evaluated_task in range(1, trained_task + 1):
++            key = (trained_task, evaluated_task)
++            if key not in values:
++                return None
++            row.append(values[key])
++        matrix.append(row)
++    return matrix
+ 
+-    for device in device_type:
+-        if device_type == -1:
+-            device = torch.device("cpu")
+-        else:
+-            device = torch.device("cuda:{}".format(device))
+ 
+-        gpus.append(device)
++def _forgetting(matrix):
++    if len(matrix) < 2:
++        return None
++    final_task = len(matrix) - 1
++    values = []
++    for evaluated_task in range(final_task):
++        earlier = [matrix[trained][evaluated_task] for trained in range(evaluated_task, final_task)]
++        values.append(max(earlier) - matrix[final_task][evaluated_task])
++    return float(np.mean(values)) if values else None
+ 
+-    args["device"] = gpus
+ 
++def _max_not_none(values):
++    present = [value for value in values if value is not None]
++    return max(present) if present else None
+ 
+-def _set_random():
+-    torch.manual_seed(1)
+-    torch.cuda.manual_seed(1)
+-    torch.cuda.manual_seed_all(1)
++
++def _peak_main_process_rss_bytes():
++    # Linux reports ru_maxrss in KiB. This intentionally excludes DataLoader
++    # worker-process peaks and is named accordingly in the machine-readable log.
++    return int(resource.getrusage(resource.RUSAGE_SELF).ru_maxrss * 1024)
++
++
++def _set_device(args):
++    devices = []
++    for device in args["device"]:
++        if int(device) == -1:
++            devices.append(torch.device("cpu"))
++        else:
++            if not torch.cuda.is_available():
++                raise RuntimeError("GPU execution requested but CUDA is unavailable")
++            devices.append(torch.device(f"cuda:{int(device)}"))
++    args["device"] = devices
++
++
++def _set_random(seed):
++    random.seed(seed)
++    np.random.seed(seed)
++    torch.manual_seed(seed)
++    if torch.cuda.is_available():
++        torch.cuda.manual_seed(seed)
++        torch.cuda.manual_seed_all(seed)
+     torch.backends.cudnn.deterministic = True
+     torch.backends.cudnn.benchmark = False
+ 
+ 
+-def print_args(args):
+-    for key, value in args.items():
+-        logging.info("{}: {}".format(key, value))
+-
+-def _format_bytes(num_bytes):
+-    if num_bytes is None:
+-        return "N/A"
+-    num_bytes = float(num_bytes)
+-    units = ["B", "KiB", "MiB", "GiB", "TiB"]
+-    for unit in units:
+-        if num_bytes < 1024 or unit == units[-1]:
+-            return f"{num_bytes:.2f} {unit}"
+-        num_bytes /= 1024
+-
+-
+-def _get_cuda_index(dev):
+-    if isinstance(dev, torch.device):
+-        if dev.type != "cuda":
+-            return None
+-        return dev.index if dev.index is not None else torch.cuda.current_device()
+-    if isinstance(dev, int):
+-        return dev if dev >= 0 else None
+-    if isinstance(dev, str) and dev.isdigit():
+-        return int(dev)
+-    return None
++def _cuda_index(device):
++    return device.index if isinstance(device, torch.device) and device.type == "cuda" else None
+ 
+ 
+ def _reset_peak_cuda_stats(devices):
+     if not torch.cuda.is_available():
+         return
+-    for dev in devices:
+-        dev_index = _get_cuda_index(dev)
+-        if dev_index is None:
+-            continue
+-        try:
+-            torch.cuda.reset_peak_memory_stats(dev_index)
+-        except Exception as exc:
+-            logging.warning("Failed to reset peak memory stats on cuda:%s (%s)", dev_index, exc)
++    cuda_indices = []
++    for device in devices:
++        index = _cuda_index(device)
++        if index is not None:
++            # PyTorch 2.4 raises ``Invalid device argument`` when peak stats
++            # are reset before that logical CUDA device has a context.
++            torch.cuda.set_device(index)
++            torch.cuda.reset_peak_memory_stats(index)
++            cuda_indices.append(index)
++    if cuda_indices:
++        torch.cuda.set_device(cuda_indices[0])
+ 
+ 
+-def _log_peak_cuda_stats(devices):
+-    if not torch.cuda.is_available():
+-        print("Peak GPU memory: N/A (CUDA not available)")
+-        logging.info("Peak GPU memory: N/A (CUDA not available)")
+-        return
+-    for dev in devices:
+-        dev_index = _get_cuda_index(dev)
+-        if dev_index is None:
+-            continue
+-        try:
+-            torch.cuda.synchronize(dev_index)
+-            allocated = torch.cuda.max_memory_allocated(dev_index)
+-            reserved = torch.cuda.max_memory_reserved(dev_index)
+-        except Exception as exc:
+-            logging.warning("Failed to query peak memory on cuda:%s (%s)", dev_index, exc)
+-            continue
+-        msg = (
+-            f"Peak GPU memory on cuda:{dev_index}: "
+-            f"allocated={_format_bytes(allocated)}, "
+-            f"reserved={_format_bytes(reserved)}"
+-        )
+-        print(msg)
+-        logging.info(msg)
++def _peak_cuda_memory(devices):
++    allocated = 0
++    reserved = 0
++    if torch.cuda.is_available():
++        for device in devices:
++            index = _cuda_index(device)
++            if index is not None:
++                torch.cuda.synchronize(index)
++                allocated = max(allocated, torch.cuda.max_memory_allocated(index))
++                reserved = max(reserved, torch.cuda.max_memory_reserved(index))
++    return {"allocated": allocated or None, "reserved": reserved or None}
+diff --git a/utils/adjust_distribution.py b/utils/adjust_distribution.py
+index 2eb0be7..639f781 100644
+--- a/utils/adjust_distribution.py
++++ b/utils/adjust_distribution.py
+@@ -135,3 +135,59 @@ class LobachevskyPrototypeCorrector:
+         final_corrected_Sigma_old_k = torch.stack(corrected_Sigma_old_k_list, dim=0)
+ 
+         return final_corrected_mu_old_k.cpu().numpy(), final_corrected_Sigma_old_k.cpu()
++
++    def class_level_corrections(self,
++                                old_task_means_np: np.ndarray,
++                                new_task_means_before_np: np.ndarray,
++                                new_task_covariances_before_np: np.ndarray,
++                                new_task_means_after_np: np.ndarray,
++                                new_task_covariances_after_np: np.ndarray
++                                ) -> tuple[torch.Tensor, torch.Tensor]:
++        """Expose APR's class-level mean shift and covariance addition.
++
++        The public CDS implementation adds the same rank-1 expansion terms to
++        an old class covariance regardless of that covariance's contents. This
++        method reproduces that calculation so the project-specific local
++        distributions can receive exactly the class-level transform. It does
++        not include the final epsilon-I term; callers add it once per source
++        covariance, matching ``correct_prototypes``.
++        """
++        old_means = self._to_tensor(old_task_means_np).to(self.device)
++        new_before = self._to_tensor(new_task_means_before_np).to(self.device)
++        new_cov_before = self._to_tensor(new_task_covariances_before_np).to(self.device)
++        new_after = self._to_tensor(new_task_means_after_np).to(self.device)
++        new_cov_after = self._to_tensor(new_task_covariances_after_np).to(self.device)
++        if old_means.shape[0] == 0:
++            dimension = new_before.shape[1]
++            return (
++                torch.empty((0, dimension), device=self.device),
++                torch.empty((0, dimension, dimension), device=self.device),
++            )
++        displacement = new_after - new_before
++        mean_shifts = []
++        covariance_additions = []
++        for old_mean in old_means:
++            similarities = torch.matmul(
++                F.normalize(old_mean.unsqueeze(0), p=2, dim=1),
++                F.normalize(new_before, p=2, dim=1).T,
++            ).squeeze(0)
++            weights = F.softmax(self.gamma_weight * similarities, dim=0)
++            mean_shifts.append(torch.sum(weights.unsqueeze(1) * displacement, dim=0))
++            addition = torch.zeros(
++                (old_mean.shape[0], old_mean.shape[0]), device=self.device, dtype=old_mean.dtype
++            )
++            for class_index in range(new_before.shape[0]):
++                delta = displacement[class_index]
++                # These values are evaluated in the official code even though
++                # the released implementation ultimately sets lambda to cov.
++                norm_sq = torch.sum(delta ** 2)
++                if norm_sq > self.epsilon_lambda_denom:
++                    _ = (delta[None] @ new_cov_before[class_index] @ delta[:, None]).squeeze() / norm_sq
++                    _ = (delta[None] @ new_cov_after[class_index] @ delta[:, None]).squeeze() / norm_sq
++                    coefficient = self.cov
++                else:
++                    coefficient = 0.0
++                weighted_delta = weights[class_index] * delta
++                addition = addition + coefficient * torch.outer(weighted_delta, weighted_delta)
++            covariance_additions.append(addition)
++        return torch.stack(mean_shifts), torch.stack(covariance_additions)
+
+[extension] ${RESEARCH_WORKSPACE}/structure_e3_followup
+UNAVAILABLE: Command '['git', 'diff', '--binary', 'HEAD']' returned non-zero exit status 129.
