@@ -1,0 +1,648 @@
+2026-08-12 18:12:48,567 [trainer.py] => Log file: logs/cdsp/cifar224/0/10/cdsp_inter_subspace_1993_pretrained_vit_b16_224_in21k_adapter.log
+2026-08-12 18:12:48,568 [trainer.py] => config: exps_jsons/cifar100_inter_subspace.json
+2026-08-12 18:12:48,568 [trainer.py] => prefix: cdsp_inter_subspace
+2026-08-12 18:12:48,568 [trainer.py] => method: inter_subspace
+2026-08-12 18:12:48,568 [trainer.py] => dataset: cifar224
+2026-08-12 18:12:48,568 [trainer.py] => shuffle: True
+2026-08-12 18:12:48,568 [trainer.py] => init_cls: 10
+2026-08-12 18:12:48,568 [trainer.py] => increment: 10
+2026-08-12 18:12:48,568 [trainer.py] => model_name: cdsp
+2026-08-12 18:12:48,568 [trainer.py] => convnet_type: pretrained_vit_b16_224_in21k_adapter
+2026-08-12 18:12:48,568 [trainer.py] => device: [device(type='cuda', index=0)]
+2026-08-12 18:12:48,568 [trainer.py] => seed: 1993
+2026-08-12 18:12:48,568 [trainer.py] => init_epochs: 20
+2026-08-12 18:12:48,568 [trainer.py] => inc_epochs: 10
+2026-08-12 18:12:48,568 [trainer.py] => init_lr: 0.01
+2026-08-12 18:12:48,568 [trainer.py] => batch_size: 48
+2026-08-12 18:12:48,568 [trainer.py] => weight_decay: 0.0005
+2026-08-12 18:12:48,568 [trainer.py] => min_lr: 0
+2026-08-12 18:12:48,568 [trainer.py] => ffn_num: 64
+2026-08-12 18:12:48,569 [trainer.py] => optimizer: sgd
+2026-08-12 18:12:48,569 [trainer.py] => scale: 20.0
+2026-08-12 18:12:48,569 [trainer.py] => margin: 0.0
+2026-08-12 18:12:48,569 [trainer.py] => adapter_placement: mlp
+2026-08-12 18:12:48,569 [trainer.py] => adapter_interval: 1
+2026-08-12 18:12:48,569 [trainer.py] => eval_classifier: prototype
+2026-08-12 18:12:48,569 [trainer.py] => subspace_mode: inter
+2026-08-12 18:12:48,569 [trainer.py] => protected_layers: all
+2026-08-12 18:12:48,569 [trainer.py] => apr: False
+2026-08-12 18:12:48,569 [trainer.py] => scc: False
+2026-08-12 18:12:48,569 [trainer.py] => ca: False
+2026-08-12 18:12:48,569 [trainer.py] => ca_epochs: 0
+2026-08-12 18:12:48,569 [trainer.py] => feature: False
+2026-08-12 18:12:48,569 [trainer.py] => logit: False
+2026-08-12 18:12:48,569 [trainer.py] => project_gradient: True
+2026-08-12 18:12:48,569 [trainer.py] => project_after_step: True
+2026-08-12 18:12:48,569 [trainer.py] => freeze_adapter_bias: True
+2026-08-12 18:12:48,569 [trainer.py] => inter_energy: 0.95
+2026-08-12 18:12:48,569 [trainer.py] => intra_energy: 0.9
+2026-08-12 18:12:48,569 [trainer.py] => task_energy: 0.95
+2026-08-12 18:12:48,569 [trainer.py] => result_root: results
+2026-08-12 18:12:48,569 [trainer.py] => save_checkpoints: True
+2026-08-12 18:12:48,569 [trainer.py] => num_workers: 8
+2026-08-12 18:12:50,412 [data_manager.py] => [68, 56, 78, 8, 23, 84, 90, 65, 74, 76, 40, 89, 3, 92, 55, 9, 26, 80, 43, 38, 58, 70, 77, 1, 85, 19, 17, 50, 28, 53, 13, 81, 45, 82, 6, 59, 83, 16, 15, 44, 91, 41, 72, 60, 79, 52, 20, 10, 31, 54, 37, 95, 14, 71, 96, 98, 97, 2, 64, 66, 42, 22, 35, 86, 24, 34, 87, 21, 99, 0, 88, 27, 18, 94, 11, 12, 47, 25, 30, 46, 62, 69, 36, 61, 7, 63, 75, 5, 32, 4, 51, 48, 73, 93, 39, 67, 29, 49, 57, 33]
+2026-08-12 18:12:51,016 [inc_net.py] => Adapter placement strategy: mlp
+2026-08-12 18:12:51,017 [inc_net.py] => Adapter interval: 1
+2026-08-12 18:12:52,235 [_builder.py] => Loading pretrained weights from Hugging Face hub (timm/vit_base_patch16_224.augreg_in21k)
+2026-08-12 18:12:52,328 [_hub.py] => [timm/vit_base_patch16_224.augreg_in21k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-08-12 18:12:52,378 [trainer.py] => Task 1/10 started
+2026-08-12 18:12:52,379 [CDSP_adapter.py] => CDSP task 1/10: learning classes [0, 10), mode=inter
+2026-08-12 18:12:52,453 [CDSP_adapter.py] => Task 0 active adapter branch: adapter1
+2026-08-12 18:12:52,453 [CDSP_adapter.py] => Subspace task=0 phase=task_start layer=0 classes=0 inter=0 intra=0 task=0 protected=0 residual=768 ratio=0.0000
+2026-08-12 18:12:52,453 [CDSP_adapter.py] => Subspace task=0 phase=task_start layer=1 classes=0 inter=0 intra=0 task=0 protected=0 residual=768 ratio=0.0000
+2026-08-12 18:12:52,453 [CDSP_adapter.py] => Subspace task=0 phase=task_start layer=2 classes=0 inter=0 intra=0 task=0 protected=0 residual=768 ratio=0.0000
+2026-08-12 18:12:52,453 [CDSP_adapter.py] => Subspace task=0 phase=task_start layer=3 classes=0 inter=0 intra=0 task=0 protected=0 residual=768 ratio=0.0000
+2026-08-12 18:12:52,453 [CDSP_adapter.py] => Subspace task=0 phase=task_start layer=4 classes=0 inter=0 intra=0 task=0 protected=0 residual=768 ratio=0.0000
+2026-08-12 18:12:52,453 [CDSP_adapter.py] => Subspace task=0 phase=task_start layer=5 classes=0 inter=0 intra=0 task=0 protected=0 residual=768 ratio=0.0000
+2026-08-12 18:12:52,453 [CDSP_adapter.py] => Subspace task=0 phase=task_start layer=6 classes=0 inter=0 intra=0 task=0 protected=0 residual=768 ratio=0.0000
+2026-08-12 18:12:52,453 [CDSP_adapter.py] => Subspace task=0 phase=task_start layer=7 classes=0 inter=0 intra=0 task=0 protected=0 residual=768 ratio=0.0000
+2026-08-12 18:12:52,453 [CDSP_adapter.py] => Subspace task=0 phase=task_start layer=8 classes=0 inter=0 intra=0 task=0 protected=0 residual=768 ratio=0.0000
+2026-08-12 18:12:52,453 [CDSP_adapter.py] => Subspace task=0 phase=task_start layer=9 classes=0 inter=0 intra=0 task=0 protected=0 residual=768 ratio=0.0000
+2026-08-12 18:12:52,453 [CDSP_adapter.py] => Subspace task=0 phase=task_start layer=10 classes=0 inter=0 intra=0 task=0 protected=0 residual=768 ratio=0.0000
+2026-08-12 18:12:52,453 [CDSP_adapter.py] => Subspace task=0 phase=task_start layer=11 classes=0 inter=0 intra=0 task=0 protected=0 residual=768 ratio=0.0000
+2026-08-12 18:13:33,715 [CDSP_adapter.py] => Task 0 epoch 1/20: loss=0.5736 train_acc=82.70% epoch_time=00:00:41 elapsed=00:00:41 eta=00:13:03 max_violation=0.000e+00
+2026-08-12 18:14:14,671 [CDSP_adapter.py] => Task 0 epoch 2/20: loss=0.3116 train_acc=89.96% epoch_time=00:00:40 elapsed=00:01:22 eta=00:12:19 max_violation=0.000e+00
+2026-08-12 18:14:55,788 [CDSP_adapter.py] => Task 0 epoch 3/20: loss=0.3022 train_acc=90.76% epoch_time=00:00:41 elapsed=00:02:03 eta=00:11:38 max_violation=0.000e+00
+2026-08-12 18:15:36,814 [CDSP_adapter.py] => Task 0 epoch 4/20: loss=0.2869 train_acc=91.44% epoch_time=00:00:41 elapsed=00:02:44 eta=00:10:57 max_violation=0.000e+00
+2026-08-12 18:16:18,035 [CDSP_adapter.py] => Task 0 epoch 5/20: loss=0.2607 train_acc=91.98% epoch_time=00:00:41 elapsed=00:03:25 eta=00:10:16 max_violation=0.000e+00
+2026-08-12 18:16:59,157 [CDSP_adapter.py] => Task 0 epoch 6/20: loss=0.2552 train_acc=91.92% epoch_time=00:00:41 elapsed=00:04:06 eta=00:09:35 max_violation=0.000e+00
+2026-08-12 18:17:40,272 [CDSP_adapter.py] => Task 0 epoch 7/20: loss=0.2389 train_acc=92.60% epoch_time=00:00:41 elapsed=00:04:47 eta=00:08:54 max_violation=0.000e+00
+2026-08-12 18:18:21,291 [CDSP_adapter.py] => Task 0 epoch 8/20: loss=0.2400 train_acc=92.42% epoch_time=00:00:41 elapsed=00:05:28 eta=00:08:13 max_violation=0.000e+00
+2026-08-12 18:19:02,284 [CDSP_adapter.py] => Task 0 epoch 9/20: loss=0.2389 train_acc=92.56% epoch_time=00:00:40 elapsed=00:06:09 eta=00:07:32 max_violation=0.000e+00
+2026-08-12 18:19:43,311 [CDSP_adapter.py] => Task 0 epoch 10/20: loss=0.2321 train_acc=92.78% epoch_time=00:00:41 elapsed=00:06:50 eta=00:06:50 max_violation=0.000e+00
+2026-08-12 18:20:24,488 [CDSP_adapter.py] => Task 0 epoch 11/20: loss=0.2217 train_acc=93.46% epoch_time=00:00:41 elapsed=00:07:32 eta=00:06:09 max_violation=0.000e+00
+2026-08-12 18:21:05,515 [CDSP_adapter.py] => Task 0 epoch 12/20: loss=0.2179 train_acc=93.38% epoch_time=00:00:41 elapsed=00:08:13 eta=00:05:28 max_violation=0.000e+00
+2026-08-12 18:21:46,764 [CDSP_adapter.py] => Task 0 epoch 13/20: loss=0.2114 train_acc=93.32% epoch_time=00:00:41 elapsed=00:08:54 eta=00:04:47 max_violation=0.000e+00
+2026-08-12 18:22:27,988 [CDSP_adapter.py] => Task 0 epoch 14/20: loss=0.1998 train_acc=94.10% epoch_time=00:00:41 elapsed=00:09:35 eta=00:04:06 max_violation=0.000e+00
+2026-08-12 18:23:09,111 [CDSP_adapter.py] => Task 0 epoch 15/20: loss=0.2067 train_acc=93.34% epoch_time=00:00:41 elapsed=00:10:16 eta=00:03:25 max_violation=0.000e+00
+2026-08-12 18:23:50,187 [CDSP_adapter.py] => Task 0 epoch 16/20: loss=0.1994 train_acc=93.94% epoch_time=00:00:41 elapsed=00:10:57 eta=00:02:44 max_violation=0.000e+00
+2026-08-12 18:24:31,369 [CDSP_adapter.py] => Task 0 epoch 17/20: loss=0.1971 train_acc=94.00% epoch_time=00:00:41 elapsed=00:11:38 eta=00:02:03 max_violation=0.000e+00
+2026-08-12 18:25:12,629 [CDSP_adapter.py] => Task 0 epoch 18/20: loss=0.2033 train_acc=93.76% epoch_time=00:00:41 elapsed=00:12:20 eta=00:01:22 max_violation=0.000e+00
+2026-08-12 18:25:53,820 [CDSP_adapter.py] => Task 0 epoch 19/20: loss=0.1978 train_acc=93.96% epoch_time=00:00:41 elapsed=00:13:01 eta=00:00:41 max_violation=0.000e+00
+2026-08-12 18:26:35,096 [CDSP_adapter.py] => Task 0 epoch 20/20: loss=0.1887 train_acc=94.24% epoch_time=00:00:41 elapsed=00:13:42 eta=00:00:00 max_violation=0.000e+00
+2026-08-12 18:27:03,069 [CDSP_adapter.py] => Task 0 current-class statistics collected in 00:00:27; no sample features retained
+2026-08-12 18:27:03,097 [protected_subspace.py] => Compressed subspace memory updated for layer 0 in 0.00s
+2026-08-12 18:27:03,097 [protected_subspace.py] => Compressed subspace memory updated for layer 1 in 0.00s
+2026-08-12 18:27:03,097 [protected_subspace.py] => Compressed subspace memory updated for layer 2 in 0.00s
+2026-08-12 18:27:03,097 [protected_subspace.py] => Compressed subspace memory updated for layer 3 in 0.00s
+2026-08-12 18:27:03,097 [protected_subspace.py] => Compressed subspace memory updated for layer 4 in 0.00s
+2026-08-12 18:27:03,097 [protected_subspace.py] => Compressed subspace memory updated for layer 5 in 0.00s
+2026-08-12 18:27:03,097 [protected_subspace.py] => Compressed subspace memory updated for layer 6 in 0.00s
+2026-08-12 18:27:03,098 [protected_subspace.py] => Compressed subspace memory updated for layer 7 in 0.00s
+2026-08-12 18:27:03,098 [protected_subspace.py] => Compressed subspace memory updated for layer 8 in 0.00s
+2026-08-12 18:27:03,098 [protected_subspace.py] => Compressed subspace memory updated for layer 9 in 0.00s
+2026-08-12 18:27:03,098 [protected_subspace.py] => Compressed subspace memory updated for layer 10 in 0.00s
+2026-08-12 18:27:03,098 [protected_subspace.py] => Compressed subspace memory updated for layer 11 in 0.00s
+2026-08-12 18:27:03,101 [protected_subspace.py] => Compressed subspace update finished in 0.00s
+2026-08-12 18:27:03,101 [CDSP_adapter.py] => Subspace task=0 phase=task_end_memory layer=0 classes=10 inter=3 intra=0 task=0 protected=3 residual=765 ratio=0.0039
+2026-08-12 18:27:03,101 [CDSP_adapter.py] => Subspace task=0 phase=task_end_memory layer=1 classes=10 inter=3 intra=0 task=0 protected=3 residual=765 ratio=0.0039
+2026-08-12 18:27:03,101 [CDSP_adapter.py] => Subspace task=0 phase=task_end_memory layer=2 classes=10 inter=3 intra=0 task=0 protected=3 residual=765 ratio=0.0039
+2026-08-12 18:27:03,101 [CDSP_adapter.py] => Subspace task=0 phase=task_end_memory layer=3 classes=10 inter=6 intra=0 task=0 protected=6 residual=762 ratio=0.0078
+2026-08-12 18:27:03,101 [CDSP_adapter.py] => Subspace task=0 phase=task_end_memory layer=4 classes=10 inter=6 intra=0 task=0 protected=6 residual=762 ratio=0.0078
+2026-08-12 18:27:03,101 [CDSP_adapter.py] => Subspace task=0 phase=task_end_memory layer=5 classes=10 inter=7 intra=0 task=0 protected=7 residual=761 ratio=0.0091
+2026-08-12 18:27:03,101 [CDSP_adapter.py] => Subspace task=0 phase=task_end_memory layer=6 classes=10 inter=7 intra=0 task=0 protected=7 residual=761 ratio=0.0091
+2026-08-12 18:27:03,101 [CDSP_adapter.py] => Subspace task=0 phase=task_end_memory layer=7 classes=10 inter=7 intra=0 task=0 protected=7 residual=761 ratio=0.0091
+2026-08-12 18:27:03,101 [CDSP_adapter.py] => Subspace task=0 phase=task_end_memory layer=8 classes=10 inter=7 intra=0 task=0 protected=7 residual=761 ratio=0.0091
+2026-08-12 18:27:03,101 [CDSP_adapter.py] => Subspace task=0 phase=task_end_memory layer=9 classes=10 inter=7 intra=0 task=0 protected=7 residual=761 ratio=0.0091
+2026-08-12 18:27:03,101 [CDSP_adapter.py] => Subspace task=0 phase=task_end_memory layer=10 classes=10 inter=8 intra=0 task=0 protected=8 residual=760 ratio=0.0104
+2026-08-12 18:27:03,101 [CDSP_adapter.py] => Subspace task=0 phase=task_end_memory layer=11 classes=10 inter=8 intra=0 task=0 protected=8 residual=760 ratio=0.0104
+2026-08-12 18:27:03,101 [CDSP_adapter.py] => Task 0 training+memory complete: elapsed=00:14:10 (training=00:13:42)
+2026-08-12 18:27:08,866 [CDSP_adapter.py] => Task 0 evaluation: primary(prototype)=97.90% old=0.00% new=97.90% prototype=97.90% head=98.60% forgetting=0.00 drift=0.000000 pairwise=0.000000 elapsed=00:14:16
+2026-08-12 18:27:09,148 [CDSP_adapter.py] => Saved resumable CDSP checkpoint: results/cdsp/cifar224/inter_subspace/seed_1993/checkpoints/checkpoint_task_00.pth
+2026-08-12 18:27:09,150 [trainer.py] => CNN: {'total': np.float64(97.9), '00-09': np.float64(97.9), 'old': 0, 'new': np.float64(97.9)}
+2026-08-12 18:27:09,150 [trainer.py] => CNN top1 curve: [np.float64(97.9)]
+2026-08-12 18:27:09,150 [trainer.py] => CNN top5 curve: [np.float64(99.9)]
+2026-08-12 18:27:09,150 [trainer.py] => Average Accuracy (CNN): 97.9
+2026-08-12 18:27:09,150 [trainer.py] => Task 1/10 finished: elapsed=00:14:16, estimated experiment remaining=02:08:30
+2026-08-12 18:27:09,150 [trainer.py] => Task 2/10 started
+2026-08-12 18:27:09,151 [CDSP_adapter.py] => CDSP task 2/10: learning classes [10, 20), mode=inter
+2026-08-12 18:27:09,222 [CDSP_adapter.py] => Task 1 active adapter branch: adapter2
+2026-08-12 18:27:09,222 [CDSP_adapter.py] => Subspace task=1 phase=task_start layer=0 classes=10 inter=3 intra=0 task=0 protected=3 residual=765 ratio=0.0039
+2026-08-12 18:27:09,222 [CDSP_adapter.py] => Subspace task=1 phase=task_start layer=1 classes=10 inter=3 intra=0 task=0 protected=3 residual=765 ratio=0.0039
+2026-08-12 18:27:09,222 [CDSP_adapter.py] => Subspace task=1 phase=task_start layer=2 classes=10 inter=3 intra=0 task=0 protected=3 residual=765 ratio=0.0039
+2026-08-12 18:27:09,222 [CDSP_adapter.py] => Subspace task=1 phase=task_start layer=3 classes=10 inter=6 intra=0 task=0 protected=6 residual=762 ratio=0.0078
+2026-08-12 18:27:09,222 [CDSP_adapter.py] => Subspace task=1 phase=task_start layer=4 classes=10 inter=6 intra=0 task=0 protected=6 residual=762 ratio=0.0078
+2026-08-12 18:27:09,222 [CDSP_adapter.py] => Subspace task=1 phase=task_start layer=5 classes=10 inter=7 intra=0 task=0 protected=7 residual=761 ratio=0.0091
+2026-08-12 18:27:09,222 [CDSP_adapter.py] => Subspace task=1 phase=task_start layer=6 classes=10 inter=7 intra=0 task=0 protected=7 residual=761 ratio=0.0091
+2026-08-12 18:27:09,222 [CDSP_adapter.py] => Subspace task=1 phase=task_start layer=7 classes=10 inter=7 intra=0 task=0 protected=7 residual=761 ratio=0.0091
+2026-08-12 18:27:09,222 [CDSP_adapter.py] => Subspace task=1 phase=task_start layer=8 classes=10 inter=7 intra=0 task=0 protected=7 residual=761 ratio=0.0091
+2026-08-12 18:27:09,223 [CDSP_adapter.py] => Subspace task=1 phase=task_start layer=9 classes=10 inter=7 intra=0 task=0 protected=7 residual=761 ratio=0.0091
+2026-08-12 18:27:09,223 [CDSP_adapter.py] => Subspace task=1 phase=task_start layer=10 classes=10 inter=8 intra=0 task=0 protected=8 residual=760 ratio=0.0104
+2026-08-12 18:27:09,223 [CDSP_adapter.py] => Subspace task=1 phase=task_start layer=11 classes=10 inter=8 intra=0 task=0 protected=8 residual=760 ratio=0.0104
+2026-08-12 18:27:50,529 [CDSP_adapter.py] => Task 1 epoch 1/10: loss=0.4102 train_acc=79.92% epoch_time=00:00:41 elapsed=00:00:41 eta=00:06:11 max_violation=7.639e-09
+2026-08-12 18:28:31,808 [CDSP_adapter.py] => Task 1 epoch 2/10: loss=0.3148 train_acc=84.86% epoch_time=00:00:41 elapsed=00:01:22 eta=00:05:30 max_violation=7.575e-09
+2026-08-12 18:29:13,128 [CDSP_adapter.py] => Task 1 epoch 3/10: loss=0.2919 train_acc=85.52% epoch_time=00:00:41 elapsed=00:02:03 eta=00:04:49 max_violation=7.591e-09
+2026-08-12 18:29:54,380 [CDSP_adapter.py] => Task 1 epoch 4/10: loss=0.2741 train_acc=86.66% epoch_time=00:00:41 elapsed=00:02:45 eta=00:04:07 max_violation=8.188e-09
+2026-08-12 18:30:35,453 [CDSP_adapter.py] => Task 1 epoch 5/10: loss=0.2708 train_acc=86.20% epoch_time=00:00:41 elapsed=00:03:26 eta=00:03:26 max_violation=7.705e-09
+2026-08-12 18:31:16,639 [CDSP_adapter.py] => Task 1 epoch 6/10: loss=0.2585 train_acc=86.88% epoch_time=00:00:41 elapsed=00:04:07 eta=00:02:44 max_violation=7.776e-09
+2026-08-12 18:31:57,795 [CDSP_adapter.py] => Task 1 epoch 7/10: loss=0.2644 train_acc=87.22% epoch_time=00:00:41 elapsed=00:04:48 eta=00:02:03 max_violation=7.922e-09
+2026-08-12 18:32:38,921 [CDSP_adapter.py] => Task 1 epoch 8/10: loss=0.2431 train_acc=87.58% epoch_time=00:00:41 elapsed=00:05:29 eta=00:01:22 max_violation=8.096e-09
+2026-08-12 18:33:20,122 [CDSP_adapter.py] => Task 1 epoch 9/10: loss=0.2416 train_acc=87.42% epoch_time=00:00:41 elapsed=00:06:10 eta=00:00:41 max_violation=7.670e-09
+2026-08-12 18:34:01,253 [CDSP_adapter.py] => Task 1 epoch 10/10: loss=0.2413 train_acc=87.22% epoch_time=00:00:41 elapsed=00:06:52 eta=00:00:00 max_violation=7.916e-09
+2026-08-12 18:34:29,073 [CDSP_adapter.py] => Task 1 current-class statistics collected in 00:00:27; no sample features retained
+2026-08-12 18:34:29,097 [protected_subspace.py] => Compressed subspace memory updated for layer 0 in 0.00s
+2026-08-12 18:34:29,097 [protected_subspace.py] => Compressed subspace memory updated for layer 1 in 0.00s
+2026-08-12 18:34:29,097 [protected_subspace.py] => Compressed subspace memory updated for layer 2 in 0.00s
+2026-08-12 18:34:29,097 [protected_subspace.py] => Compressed subspace memory updated for layer 3 in 0.00s
+2026-08-12 18:34:29,097 [protected_subspace.py] => Compressed subspace memory updated for layer 4 in 0.00s
+2026-08-12 18:34:29,097 [protected_subspace.py] => Compressed subspace memory updated for layer 5 in 0.00s
+2026-08-12 18:34:29,097 [protected_subspace.py] => Compressed subspace memory updated for layer 6 in 0.00s
+2026-08-12 18:34:29,097 [protected_subspace.py] => Compressed subspace memory updated for layer 7 in 0.00s
+2026-08-12 18:34:29,097 [protected_subspace.py] => Compressed subspace memory updated for layer 8 in 0.00s
+2026-08-12 18:34:29,097 [protected_subspace.py] => Compressed subspace memory updated for layer 9 in 0.00s
+2026-08-12 18:34:29,097 [protected_subspace.py] => Compressed subspace memory updated for layer 10 in 0.00s
+2026-08-12 18:34:29,097 [protected_subspace.py] => Compressed subspace memory updated for layer 11 in 0.00s
+2026-08-12 18:34:29,101 [protected_subspace.py] => Compressed subspace update finished in 0.00s
+2026-08-12 18:34:29,102 [CDSP_adapter.py] => Subspace task=1 phase=task_end_memory layer=0 classes=20 inter=3 intra=0 task=0 protected=3 residual=765 ratio=0.0039
+2026-08-12 18:34:29,102 [CDSP_adapter.py] => Subspace task=1 phase=task_end_memory layer=1 classes=20 inter=4 intra=0 task=0 protected=4 residual=764 ratio=0.0052
+2026-08-12 18:34:29,102 [CDSP_adapter.py] => Subspace task=1 phase=task_end_memory layer=2 classes=20 inter=5 intra=0 task=0 protected=5 residual=763 ratio=0.0065
+2026-08-12 18:34:29,102 [CDSP_adapter.py] => Subspace task=1 phase=task_end_memory layer=3 classes=20 inter=6 intra=0 task=0 protected=6 residual=762 ratio=0.0078
+2026-08-12 18:34:29,102 [CDSP_adapter.py] => Subspace task=1 phase=task_end_memory layer=4 classes=20 inter=6 intra=0 task=0 protected=6 residual=762 ratio=0.0078
+2026-08-12 18:34:29,102 [CDSP_adapter.py] => Subspace task=1 phase=task_end_memory layer=5 classes=20 inter=10 intra=0 task=0 protected=10 residual=758 ratio=0.0130
+2026-08-12 18:34:29,102 [CDSP_adapter.py] => Subspace task=1 phase=task_end_memory layer=6 classes=20 inter=11 intra=0 task=0 protected=11 residual=757 ratio=0.0143
+2026-08-12 18:34:29,102 [CDSP_adapter.py] => Subspace task=1 phase=task_end_memory layer=7 classes=20 inter=12 intra=0 task=0 protected=12 residual=756 ratio=0.0156
+2026-08-12 18:34:29,102 [CDSP_adapter.py] => Subspace task=1 phase=task_end_memory layer=8 classes=20 inter=13 intra=0 task=0 protected=13 residual=755 ratio=0.0169
+2026-08-12 18:34:29,102 [CDSP_adapter.py] => Subspace task=1 phase=task_end_memory layer=9 classes=20 inter=11 intra=0 task=0 protected=11 residual=757 ratio=0.0143
+2026-08-12 18:34:29,102 [CDSP_adapter.py] => Subspace task=1 phase=task_end_memory layer=10 classes=20 inter=14 intra=0 task=0 protected=14 residual=754 ratio=0.0182
+2026-08-12 18:34:29,102 [CDSP_adapter.py] => Subspace task=1 phase=task_end_memory layer=11 classes=20 inter=16 intra=0 task=0 protected=16 residual=752 ratio=0.0208
+2026-08-12 18:34:29,102 [CDSP_adapter.py] => Task 1 training+memory complete: elapsed=00:07:19 (training=00:06:52)
+2026-08-12 18:34:40,335 [CDSP_adapter.py] => Task 1 evaluation: primary(prototype)=96.85% old=97.40% new=96.30% prototype=96.85% head=96.90% forgetting=0.50 drift=0.033984 pairwise=0.040942 elapsed=00:07:31
+2026-08-12 18:34:40,645 [CDSP_adapter.py] => Saved resumable CDSP checkpoint: results/cdsp/cifar224/inter_subspace/seed_1993/checkpoints/checkpoint_task_01.pth
+2026-08-12 18:34:40,645 [trainer.py] => CNN: {'total': np.float64(96.85), '00-09': np.float64(97.4), '10-19': np.float64(96.3), 'old': np.float64(97.4), 'new': np.float64(96.3)}
+2026-08-12 18:34:40,645 [trainer.py] => CNN top1 curve: [np.float64(97.9), np.float64(96.85)]
+2026-08-12 18:34:40,645 [trainer.py] => CNN top5 curve: [np.float64(99.9), np.float64(99.6)]
+2026-08-12 18:34:40,645 [trainer.py] => Average Accuracy (CNN): 97.375
+2026-08-12 18:34:40,646 [trainer.py] => Task 2/10 finished: elapsed=00:07:31, estimated experiment remaining=01:27:13
+2026-08-12 18:34:40,646 [trainer.py] => Task 3/10 started
+2026-08-12 18:34:40,646 [CDSP_adapter.py] => CDSP task 3/10: learning classes [20, 30), mode=inter
+2026-08-12 18:34:40,684 [CDSP_adapter.py] => Task 2 active adapter branch: adapter1
+2026-08-12 18:34:40,684 [CDSP_adapter.py] => Subspace task=2 phase=task_start layer=0 classes=20 inter=3 intra=0 task=0 protected=3 residual=765 ratio=0.0039
+2026-08-12 18:34:40,684 [CDSP_adapter.py] => Subspace task=2 phase=task_start layer=1 classes=20 inter=4 intra=0 task=0 protected=4 residual=764 ratio=0.0052
+2026-08-12 18:34:40,684 [CDSP_adapter.py] => Subspace task=2 phase=task_start layer=2 classes=20 inter=5 intra=0 task=0 protected=5 residual=763 ratio=0.0065
+2026-08-12 18:34:40,684 [CDSP_adapter.py] => Subspace task=2 phase=task_start layer=3 classes=20 inter=6 intra=0 task=0 protected=6 residual=762 ratio=0.0078
+2026-08-12 18:34:40,684 [CDSP_adapter.py] => Subspace task=2 phase=task_start layer=4 classes=20 inter=6 intra=0 task=0 protected=6 residual=762 ratio=0.0078
+2026-08-12 18:34:40,684 [CDSP_adapter.py] => Subspace task=2 phase=task_start layer=5 classes=20 inter=10 intra=0 task=0 protected=10 residual=758 ratio=0.0130
+2026-08-12 18:34:40,684 [CDSP_adapter.py] => Subspace task=2 phase=task_start layer=6 classes=20 inter=11 intra=0 task=0 protected=11 residual=757 ratio=0.0143
+2026-08-12 18:34:40,684 [CDSP_adapter.py] => Subspace task=2 phase=task_start layer=7 classes=20 inter=12 intra=0 task=0 protected=12 residual=756 ratio=0.0156
+2026-08-12 18:34:40,684 [CDSP_adapter.py] => Subspace task=2 phase=task_start layer=8 classes=20 inter=13 intra=0 task=0 protected=13 residual=755 ratio=0.0169
+2026-08-12 18:34:40,684 [CDSP_adapter.py] => Subspace task=2 phase=task_start layer=9 classes=20 inter=11 intra=0 task=0 protected=11 residual=757 ratio=0.0143
+2026-08-12 18:34:40,684 [CDSP_adapter.py] => Subspace task=2 phase=task_start layer=10 classes=20 inter=14 intra=0 task=0 protected=14 residual=754 ratio=0.0182
+2026-08-12 18:34:40,685 [CDSP_adapter.py] => Subspace task=2 phase=task_start layer=11 classes=20 inter=16 intra=0 task=0 protected=16 residual=752 ratio=0.0208
+2026-08-12 18:35:21,824 [CDSP_adapter.py] => Task 2 epoch 1/10: loss=0.2882 train_acc=84.02% epoch_time=00:00:41 elapsed=00:00:41 eta=00:06:10 max_violation=1.048e-08
+2026-08-12 18:36:02,993 [CDSP_adapter.py] => Task 2 epoch 2/10: loss=0.1830 train_acc=89.34% epoch_time=00:00:41 elapsed=00:01:22 eta=00:05:29 max_violation=1.030e-08
+2026-08-12 18:36:44,180 [CDSP_adapter.py] => Task 2 epoch 3/10: loss=0.1617 train_acc=90.66% epoch_time=00:00:41 elapsed=00:02:03 eta=00:04:48 max_violation=1.053e-08
+2026-08-12 18:37:25,315 [CDSP_adapter.py] => Task 2 epoch 4/10: loss=0.1435 train_acc=91.14% epoch_time=00:00:41 elapsed=00:02:44 eta=00:04:06 max_violation=1.025e-08
+2026-08-12 18:38:06,437 [CDSP_adapter.py] => Task 2 epoch 5/10: loss=0.1332 train_acc=91.10% epoch_time=00:00:41 elapsed=00:03:25 eta=00:03:25 max_violation=1.033e-08
+2026-08-12 18:38:47,641 [CDSP_adapter.py] => Task 2 epoch 6/10: loss=0.1321 train_acc=91.00% epoch_time=00:00:41 elapsed=00:04:06 eta=00:02:44 max_violation=1.021e-08
+2026-08-12 18:39:28,884 [CDSP_adapter.py] => Task 2 epoch 7/10: loss=0.1482 train_acc=90.90% epoch_time=00:00:41 elapsed=00:04:48 eta=00:02:03 max_violation=1.059e-08
+2026-08-12 18:40:10,160 [CDSP_adapter.py] => Task 2 epoch 8/10: loss=0.1471 train_acc=91.42% epoch_time=00:00:41 elapsed=00:05:29 eta=00:01:22 max_violation=1.107e-08
+2026-08-12 18:40:51,406 [CDSP_adapter.py] => Task 2 epoch 9/10: loss=0.1487 train_acc=91.10% epoch_time=00:00:41 elapsed=00:06:10 eta=00:00:41 max_violation=1.027e-08
+2026-08-12 18:41:32,600 [CDSP_adapter.py] => Task 2 epoch 10/10: loss=0.1315 train_acc=91.52% epoch_time=00:00:41 elapsed=00:06:51 eta=00:00:00 max_violation=1.057e-08
+2026-08-12 18:42:00,496 [CDSP_adapter.py] => Task 2 current-class statistics collected in 00:00:27; no sample features retained
+2026-08-12 18:42:00,518 [protected_subspace.py] => Compressed subspace memory updated for layer 0 in 0.00s
+2026-08-12 18:42:00,518 [protected_subspace.py] => Compressed subspace memory updated for layer 1 in 0.00s
+2026-08-12 18:42:00,518 [protected_subspace.py] => Compressed subspace memory updated for layer 2 in 0.00s
+2026-08-12 18:42:00,518 [protected_subspace.py] => Compressed subspace memory updated for layer 3 in 0.00s
+2026-08-12 18:42:00,518 [protected_subspace.py] => Compressed subspace memory updated for layer 4 in 0.00s
+2026-08-12 18:42:00,518 [protected_subspace.py] => Compressed subspace memory updated for layer 5 in 0.00s
+2026-08-12 18:42:00,518 [protected_subspace.py] => Compressed subspace memory updated for layer 6 in 0.00s
+2026-08-12 18:42:00,518 [protected_subspace.py] => Compressed subspace memory updated for layer 7 in 0.00s
+2026-08-12 18:42:00,518 [protected_subspace.py] => Compressed subspace memory updated for layer 8 in 0.00s
+2026-08-12 18:42:00,518 [protected_subspace.py] => Compressed subspace memory updated for layer 9 in 0.00s
+2026-08-12 18:42:00,518 [protected_subspace.py] => Compressed subspace memory updated for layer 10 in 0.00s
+2026-08-12 18:42:00,518 [protected_subspace.py] => Compressed subspace memory updated for layer 11 in 0.00s
+2026-08-12 18:42:00,528 [protected_subspace.py] => Compressed subspace update finished in 0.01s
+2026-08-12 18:42:00,528 [CDSP_adapter.py] => Subspace task=2 phase=task_end_memory layer=0 classes=30 inter=3 intra=0 task=0 protected=3 residual=765 ratio=0.0039
+2026-08-12 18:42:00,528 [CDSP_adapter.py] => Subspace task=2 phase=task_end_memory layer=1 classes=30 inter=5 intra=0 task=0 protected=5 residual=763 ratio=0.0065
+2026-08-12 18:42:00,528 [CDSP_adapter.py] => Subspace task=2 phase=task_end_memory layer=2 classes=30 inter=6 intra=0 task=0 protected=6 residual=762 ratio=0.0078
+2026-08-12 18:42:00,528 [CDSP_adapter.py] => Subspace task=2 phase=task_end_memory layer=3 classes=30 inter=7 intra=0 task=0 protected=7 residual=761 ratio=0.0091
+2026-08-12 18:42:00,528 [CDSP_adapter.py] => Subspace task=2 phase=task_end_memory layer=4 classes=30 inter=7 intra=0 task=0 protected=7 residual=761 ratio=0.0091
+2026-08-12 18:42:00,528 [CDSP_adapter.py] => Subspace task=2 phase=task_end_memory layer=5 classes=30 inter=12 intra=0 task=0 protected=12 residual=756 ratio=0.0156
+2026-08-12 18:42:00,528 [CDSP_adapter.py] => Subspace task=2 phase=task_end_memory layer=6 classes=30 inter=14 intra=0 task=0 protected=14 residual=754 ratio=0.0182
+2026-08-12 18:42:00,528 [CDSP_adapter.py] => Subspace task=2 phase=task_end_memory layer=7 classes=30 inter=16 intra=0 task=0 protected=16 residual=752 ratio=0.0208
+2026-08-12 18:42:00,528 [CDSP_adapter.py] => Subspace task=2 phase=task_end_memory layer=8 classes=30 inter=18 intra=0 task=0 protected=18 residual=750 ratio=0.0234
+2026-08-12 18:42:00,528 [CDSP_adapter.py] => Subspace task=2 phase=task_end_memory layer=9 classes=30 inter=17 intra=0 task=0 protected=17 residual=751 ratio=0.0221
+2026-08-12 18:42:00,528 [CDSP_adapter.py] => Subspace task=2 phase=task_end_memory layer=10 classes=30 inter=20 intra=0 task=0 protected=20 residual=748 ratio=0.0260
+2026-08-12 18:42:00,529 [CDSP_adapter.py] => Subspace task=2 phase=task_end_memory layer=11 classes=30 inter=24 intra=0 task=0 protected=24 residual=744 ratio=0.0312
+2026-08-12 18:42:00,529 [CDSP_adapter.py] => Task 2 training+memory complete: elapsed=00:07:19 (training=00:06:51)
+2026-08-12 18:42:17,292 [CDSP_adapter.py] => Task 2 evaluation: primary(prototype)=95.93% old=95.15% new=97.50% prototype=95.93% head=96.07% forgetting=1.95 drift=0.033913 pairwise=0.042622 elapsed=00:07:36
+2026-08-12 18:42:17,567 [CDSP_adapter.py] => Saved resumable CDSP checkpoint: results/cdsp/cifar224/inter_subspace/seed_1993/checkpoints/checkpoint_task_02.pth
+2026-08-12 18:42:17,568 [trainer.py] => CNN: {'total': np.float64(95.93), '00-09': np.float64(95.4), '10-19': np.float64(94.9), '20-29': np.float64(97.5), 'old': np.float64(95.15), 'new': np.float64(97.5)}
+2026-08-12 18:42:17,568 [trainer.py] => CNN top1 curve: [np.float64(97.9), np.float64(96.85), np.float64(95.93)]
+2026-08-12 18:42:17,568 [trainer.py] => CNN top5 curve: [np.float64(99.9), np.float64(99.6), np.float64(99.47)]
+2026-08-12 18:42:17,568 [trainer.py] => Average Accuracy (CNN): 96.89333333333333
+2026-08-12 18:42:17,568 [trainer.py] => Task 3/10 finished: elapsed=00:07:36, estimated experiment remaining=01:08:38
+2026-08-12 18:42:17,568 [trainer.py] => Task 4/10 started
+2026-08-12 18:42:17,569 [CDSP_adapter.py] => CDSP task 4/10: learning classes [30, 40), mode=inter
+2026-08-12 18:42:17,608 [CDSP_adapter.py] => Task 3 active adapter branch: adapter2
+2026-08-12 18:42:17,609 [CDSP_adapter.py] => Subspace task=3 phase=task_start layer=0 classes=30 inter=3 intra=0 task=0 protected=3 residual=765 ratio=0.0039
+2026-08-12 18:42:17,609 [CDSP_adapter.py] => Subspace task=3 phase=task_start layer=1 classes=30 inter=5 intra=0 task=0 protected=5 residual=763 ratio=0.0065
+2026-08-12 18:42:17,609 [CDSP_adapter.py] => Subspace task=3 phase=task_start layer=2 classes=30 inter=6 intra=0 task=0 protected=6 residual=762 ratio=0.0078
+2026-08-12 18:42:17,609 [CDSP_adapter.py] => Subspace task=3 phase=task_start layer=3 classes=30 inter=7 intra=0 task=0 protected=7 residual=761 ratio=0.0091
+2026-08-12 18:42:17,609 [CDSP_adapter.py] => Subspace task=3 phase=task_start layer=4 classes=30 inter=7 intra=0 task=0 protected=7 residual=761 ratio=0.0091
+2026-08-12 18:42:17,609 [CDSP_adapter.py] => Subspace task=3 phase=task_start layer=5 classes=30 inter=12 intra=0 task=0 protected=12 residual=756 ratio=0.0156
+2026-08-12 18:42:17,609 [CDSP_adapter.py] => Subspace task=3 phase=task_start layer=6 classes=30 inter=14 intra=0 task=0 protected=14 residual=754 ratio=0.0182
+2026-08-12 18:42:17,609 [CDSP_adapter.py] => Subspace task=3 phase=task_start layer=7 classes=30 inter=16 intra=0 task=0 protected=16 residual=752 ratio=0.0208
+2026-08-12 18:42:17,609 [CDSP_adapter.py] => Subspace task=3 phase=task_start layer=8 classes=30 inter=18 intra=0 task=0 protected=18 residual=750 ratio=0.0234
+2026-08-12 18:42:17,609 [CDSP_adapter.py] => Subspace task=3 phase=task_start layer=9 classes=30 inter=17 intra=0 task=0 protected=17 residual=751 ratio=0.0221
+2026-08-12 18:42:17,609 [CDSP_adapter.py] => Subspace task=3 phase=task_start layer=10 classes=30 inter=20 intra=0 task=0 protected=20 residual=748 ratio=0.0260
+2026-08-12 18:42:17,609 [CDSP_adapter.py] => Subspace task=3 phase=task_start layer=11 classes=30 inter=24 intra=0 task=0 protected=24 residual=744 ratio=0.0312
+2026-08-12 18:42:58,799 [CDSP_adapter.py] => Task 3 epoch 1/10: loss=0.3629 train_acc=74.68% epoch_time=00:00:41 elapsed=00:00:41 eta=00:06:10 max_violation=1.275e-08
+2026-08-12 18:43:40,039 [CDSP_adapter.py] => Task 3 epoch 2/10: loss=0.2342 train_acc=81.46% epoch_time=00:00:41 elapsed=00:01:22 eta=00:05:29 max_violation=1.308e-08
+2026-08-12 18:44:21,299 [CDSP_adapter.py] => Task 3 epoch 3/10: loss=0.2221 train_acc=80.96% epoch_time=00:00:41 elapsed=00:02:03 eta=00:04:48 max_violation=1.302e-08
+2026-08-12 18:45:02,546 [CDSP_adapter.py] => Task 3 epoch 4/10: loss=0.2125 train_acc=81.04% epoch_time=00:00:41 elapsed=00:02:44 eta=00:04:07 max_violation=1.303e-08
+2026-08-12 18:45:43,875 [CDSP_adapter.py] => Task 3 epoch 5/10: loss=0.2171 train_acc=82.40% epoch_time=00:00:41 elapsed=00:03:26 eta=00:03:26 max_violation=1.310e-08
+2026-08-12 18:46:25,088 [CDSP_adapter.py] => Task 3 epoch 6/10: loss=0.2037 train_acc=81.62% epoch_time=00:00:41 elapsed=00:04:07 eta=00:02:44 max_violation=1.284e-08
+2026-08-12 18:47:06,179 [CDSP_adapter.py] => Task 3 epoch 7/10: loss=0.2077 train_acc=81.72% epoch_time=00:00:41 elapsed=00:04:48 eta=00:02:03 max_violation=1.253e-08
+2026-08-12 18:47:47,365 [CDSP_adapter.py] => Task 3 epoch 8/10: loss=0.1938 train_acc=82.58% epoch_time=00:00:41 elapsed=00:05:29 eta=00:01:22 max_violation=1.302e-08
+2026-08-12 18:48:28,570 [CDSP_adapter.py] => Task 3 epoch 9/10: loss=0.1905 train_acc=82.48% epoch_time=00:00:41 elapsed=00:06:10 eta=00:00:41 max_violation=1.297e-08
+2026-08-12 18:49:09,789 [CDSP_adapter.py] => Task 3 epoch 10/10: loss=0.2085 train_acc=81.94% epoch_time=00:00:41 elapsed=00:06:52 eta=00:00:00 max_violation=1.353e-08
+2026-08-12 18:49:37,991 [CDSP_adapter.py] => Task 3 current-class statistics collected in 00:00:28; no sample features retained
+2026-08-12 18:49:38,012 [protected_subspace.py] => Compressed subspace memory updated for layer 0 in 0.00s
+2026-08-12 18:49:38,013 [protected_subspace.py] => Compressed subspace memory updated for layer 1 in 0.00s
+2026-08-12 18:49:38,013 [protected_subspace.py] => Compressed subspace memory updated for layer 2 in 0.00s
+2026-08-12 18:49:38,013 [protected_subspace.py] => Compressed subspace memory updated for layer 3 in 0.00s
+2026-08-12 18:49:38,013 [protected_subspace.py] => Compressed subspace memory updated for layer 4 in 0.00s
+2026-08-12 18:49:38,013 [protected_subspace.py] => Compressed subspace memory updated for layer 5 in 0.00s
+2026-08-12 18:49:38,013 [protected_subspace.py] => Compressed subspace memory updated for layer 6 in 0.00s
+2026-08-12 18:49:38,013 [protected_subspace.py] => Compressed subspace memory updated for layer 7 in 0.00s
+2026-08-12 18:49:38,013 [protected_subspace.py] => Compressed subspace memory updated for layer 8 in 0.00s
+2026-08-12 18:49:38,013 [protected_subspace.py] => Compressed subspace memory updated for layer 9 in 0.00s
+2026-08-12 18:49:38,013 [protected_subspace.py] => Compressed subspace memory updated for layer 10 in 0.00s
+2026-08-12 18:49:38,013 [protected_subspace.py] => Compressed subspace memory updated for layer 11 in 0.00s
+2026-08-12 18:49:38,025 [protected_subspace.py] => Compressed subspace update finished in 0.01s
+2026-08-12 18:49:38,025 [CDSP_adapter.py] => Subspace task=3 phase=task_end_memory layer=0 classes=40 inter=3 intra=0 task=0 protected=3 residual=765 ratio=0.0039
+2026-08-12 18:49:38,025 [CDSP_adapter.py] => Subspace task=3 phase=task_end_memory layer=1 classes=40 inter=6 intra=0 task=0 protected=6 residual=762 ratio=0.0078
+2026-08-12 18:49:38,025 [CDSP_adapter.py] => Subspace task=3 phase=task_end_memory layer=2 classes=40 inter=7 intra=0 task=0 protected=7 residual=761 ratio=0.0091
+2026-08-12 18:49:38,025 [CDSP_adapter.py] => Subspace task=3 phase=task_end_memory layer=3 classes=40 inter=8 intra=0 task=0 protected=8 residual=760 ratio=0.0104
+2026-08-12 18:49:38,025 [CDSP_adapter.py] => Subspace task=3 phase=task_end_memory layer=4 classes=40 inter=7 intra=0 task=0 protected=7 residual=761 ratio=0.0091
+2026-08-12 18:49:38,025 [CDSP_adapter.py] => Subspace task=3 phase=task_end_memory layer=5 classes=40 inter=14 intra=0 task=0 protected=14 residual=754 ratio=0.0182
+2026-08-12 18:49:38,025 [CDSP_adapter.py] => Subspace task=3 phase=task_end_memory layer=6 classes=40 inter=16 intra=0 task=0 protected=16 residual=752 ratio=0.0208
+2026-08-12 18:49:38,025 [CDSP_adapter.py] => Subspace task=3 phase=task_end_memory layer=7 classes=40 inter=20 intra=0 task=0 protected=20 residual=748 ratio=0.0260
+2026-08-12 18:49:38,025 [CDSP_adapter.py] => Subspace task=3 phase=task_end_memory layer=8 classes=40 inter=23 intra=0 task=0 protected=23 residual=745 ratio=0.0299
+2026-08-12 18:49:38,025 [CDSP_adapter.py] => Subspace task=3 phase=task_end_memory layer=9 classes=40 inter=21 intra=0 task=0 protected=21 residual=747 ratio=0.0273
+2026-08-12 18:49:38,025 [CDSP_adapter.py] => Subspace task=3 phase=task_end_memory layer=10 classes=40 inter=24 intra=0 task=0 protected=24 residual=744 ratio=0.0312
+2026-08-12 18:49:38,025 [CDSP_adapter.py] => Subspace task=3 phase=task_end_memory layer=11 classes=40 inter=31 intra=0 task=0 protected=31 residual=737 ratio=0.0404
+2026-08-12 18:49:38,025 [CDSP_adapter.py] => Task 3 training+memory complete: elapsed=00:07:20 (training=00:06:52)
+2026-08-12 18:50:00,177 [CDSP_adapter.py] => Task 3 evaluation: primary(prototype)=94.52% old=94.27% new=95.30% prototype=94.53% head=94.12% forgetting=2.97 drift=0.048511 pairwise=0.040307 elapsed=00:07:42
+2026-08-12 18:50:00,459 [CDSP_adapter.py] => Saved resumable CDSP checkpoint: results/cdsp/cifar224/inter_subspace/seed_1993/checkpoints/checkpoint_task_03.pth
+2026-08-12 18:50:00,459 [trainer.py] => CNN: {'total': np.float64(94.52), '00-09': np.float64(93.3), '10-19': np.float64(92.2), '20-29': np.float64(97.3), '30-39': np.float64(95.3), 'old': np.float64(94.27), 'new': np.float64(95.3)}
+2026-08-12 18:50:00,459 [trainer.py] => CNN top1 curve: [np.float64(97.9), np.float64(96.85), np.float64(95.93), np.float64(94.52)]
+2026-08-12 18:50:00,459 [trainer.py] => CNN top5 curve: [np.float64(99.9), np.float64(99.6), np.float64(99.47), np.float64(99.45)]
+2026-08-12 18:50:00,459 [trainer.py] => Average Accuracy (CNN): 96.3
+2026-08-12 18:50:00,460 [trainer.py] => Task 4/10 finished: elapsed=00:07:42, estimated experiment remaining=00:55:42
+2026-08-12 18:50:00,460 [trainer.py] => Task 5/10 started
+2026-08-12 18:50:00,460 [CDSP_adapter.py] => CDSP task 5/10: learning classes [40, 50), mode=inter
+2026-08-12 18:50:00,506 [CDSP_adapter.py] => Task 4 active adapter branch: adapter1
+2026-08-12 18:50:00,506 [CDSP_adapter.py] => Subspace task=4 phase=task_start layer=0 classes=40 inter=3 intra=0 task=0 protected=3 residual=765 ratio=0.0039
+2026-08-12 18:50:00,506 [CDSP_adapter.py] => Subspace task=4 phase=task_start layer=1 classes=40 inter=6 intra=0 task=0 protected=6 residual=762 ratio=0.0078
+2026-08-12 18:50:00,506 [CDSP_adapter.py] => Subspace task=4 phase=task_start layer=2 classes=40 inter=7 intra=0 task=0 protected=7 residual=761 ratio=0.0091
+2026-08-12 18:50:00,506 [CDSP_adapter.py] => Subspace task=4 phase=task_start layer=3 classes=40 inter=8 intra=0 task=0 protected=8 residual=760 ratio=0.0104
+2026-08-12 18:50:00,506 [CDSP_adapter.py] => Subspace task=4 phase=task_start layer=4 classes=40 inter=7 intra=0 task=0 protected=7 residual=761 ratio=0.0091
+2026-08-12 18:50:00,506 [CDSP_adapter.py] => Subspace task=4 phase=task_start layer=5 classes=40 inter=14 intra=0 task=0 protected=14 residual=754 ratio=0.0182
+2026-08-12 18:50:00,506 [CDSP_adapter.py] => Subspace task=4 phase=task_start layer=6 classes=40 inter=16 intra=0 task=0 protected=16 residual=752 ratio=0.0208
+2026-08-12 18:50:00,506 [CDSP_adapter.py] => Subspace task=4 phase=task_start layer=7 classes=40 inter=20 intra=0 task=0 protected=20 residual=748 ratio=0.0260
+2026-08-12 18:50:00,506 [CDSP_adapter.py] => Subspace task=4 phase=task_start layer=8 classes=40 inter=23 intra=0 task=0 protected=23 residual=745 ratio=0.0299
+2026-08-12 18:50:00,506 [CDSP_adapter.py] => Subspace task=4 phase=task_start layer=9 classes=40 inter=21 intra=0 task=0 protected=21 residual=747 ratio=0.0273
+2026-08-12 18:50:00,506 [CDSP_adapter.py] => Subspace task=4 phase=task_start layer=10 classes=40 inter=24 intra=0 task=0 protected=24 residual=744 ratio=0.0312
+2026-08-12 18:50:00,506 [CDSP_adapter.py] => Subspace task=4 phase=task_start layer=11 classes=40 inter=31 intra=0 task=0 protected=31 residual=737 ratio=0.0404
+2026-08-12 18:50:41,780 [CDSP_adapter.py] => Task 4 epoch 1/10: loss=0.3076 train_acc=77.58% epoch_time=00:00:41 elapsed=00:00:41 eta=00:06:11 max_violation=1.558e-08
+2026-08-12 18:51:23,182 [CDSP_adapter.py] => Task 4 epoch 2/10: loss=0.1819 train_acc=85.30% epoch_time=00:00:41 elapsed=00:01:22 eta=00:05:30 max_violation=1.540e-08
+2026-08-12 18:52:04,533 [CDSP_adapter.py] => Task 4 epoch 3/10: loss=0.1777 train_acc=83.92% epoch_time=00:00:41 elapsed=00:02:04 eta=00:04:49 max_violation=1.514e-08
+2026-08-12 18:52:45,936 [CDSP_adapter.py] => Task 4 epoch 4/10: loss=0.1670 train_acc=84.62% epoch_time=00:00:41 elapsed=00:02:45 eta=00:04:08 max_violation=1.512e-08
+2026-08-12 18:53:27,230 [CDSP_adapter.py] => Task 4 epoch 5/10: loss=0.1561 train_acc=84.80% epoch_time=00:00:41 elapsed=00:03:26 eta=00:03:26 max_violation=1.469e-08
+2026-08-12 18:54:08,575 [CDSP_adapter.py] => Task 4 epoch 6/10: loss=0.1558 train_acc=85.46% epoch_time=00:00:41 elapsed=00:04:08 eta=00:02:45 max_violation=1.469e-08
+2026-08-12 18:54:50,104 [CDSP_adapter.py] => Task 4 epoch 7/10: loss=0.1425 train_acc=85.36% epoch_time=00:00:41 elapsed=00:04:49 eta=00:02:04 max_violation=1.504e-08
+2026-08-12 18:55:31,538 [CDSP_adapter.py] => Task 4 epoch 8/10: loss=0.1567 train_acc=85.50% epoch_time=00:00:41 elapsed=00:05:31 eta=00:01:22 max_violation=1.544e-08
+2026-08-12 18:56:12,972 [CDSP_adapter.py] => Task 4 epoch 9/10: loss=0.1443 train_acc=86.28% epoch_time=00:00:41 elapsed=00:06:12 eta=00:00:41 max_violation=1.519e-08
+2026-08-12 18:56:54,198 [CDSP_adapter.py] => Task 4 epoch 10/10: loss=0.1342 train_acc=86.58% epoch_time=00:00:41 elapsed=00:06:53 eta=00:00:00 max_violation=1.519e-08
+2026-08-12 18:57:22,247 [CDSP_adapter.py] => Task 4 current-class statistics collected in 00:00:28; no sample features retained
+2026-08-12 18:57:22,272 [protected_subspace.py] => Compressed subspace memory updated for layer 0 in 0.00s
+2026-08-12 18:57:22,272 [protected_subspace.py] => Compressed subspace memory updated for layer 1 in 0.00s
+2026-08-12 18:57:22,272 [protected_subspace.py] => Compressed subspace memory updated for layer 2 in 0.00s
+2026-08-12 18:57:22,273 [protected_subspace.py] => Compressed subspace memory updated for layer 3 in 0.00s
+2026-08-12 18:57:22,273 [protected_subspace.py] => Compressed subspace memory updated for layer 4 in 0.00s
+2026-08-12 18:57:22,273 [protected_subspace.py] => Compressed subspace memory updated for layer 5 in 0.00s
+2026-08-12 18:57:22,273 [protected_subspace.py] => Compressed subspace memory updated for layer 6 in 0.00s
+2026-08-12 18:57:22,273 [protected_subspace.py] => Compressed subspace memory updated for layer 7 in 0.00s
+2026-08-12 18:57:22,273 [protected_subspace.py] => Compressed subspace memory updated for layer 8 in 0.00s
+2026-08-12 18:57:22,273 [protected_subspace.py] => Compressed subspace memory updated for layer 9 in 0.00s
+2026-08-12 18:57:22,273 [protected_subspace.py] => Compressed subspace memory updated for layer 10 in 0.00s
+2026-08-12 18:57:22,273 [protected_subspace.py] => Compressed subspace memory updated for layer 11 in 0.00s
+2026-08-12 18:57:22,290 [protected_subspace.py] => Compressed subspace update finished in 0.02s
+2026-08-12 18:57:22,291 [CDSP_adapter.py] => Subspace task=4 phase=task_end_memory layer=0 classes=50 inter=3 intra=0 task=0 protected=3 residual=765 ratio=0.0039
+2026-08-12 18:57:22,291 [CDSP_adapter.py] => Subspace task=4 phase=task_end_memory layer=1 classes=50 inter=6 intra=0 task=0 protected=6 residual=762 ratio=0.0078
+2026-08-12 18:57:22,291 [CDSP_adapter.py] => Subspace task=4 phase=task_end_memory layer=2 classes=50 inter=8 intra=0 task=0 protected=8 residual=760 ratio=0.0104
+2026-08-12 18:57:22,291 [CDSP_adapter.py] => Subspace task=4 phase=task_end_memory layer=3 classes=50 inter=9 intra=0 task=0 protected=9 residual=759 ratio=0.0117
+2026-08-12 18:57:22,291 [CDSP_adapter.py] => Subspace task=4 phase=task_end_memory layer=4 classes=50 inter=9 intra=0 task=0 protected=9 residual=759 ratio=0.0117
+2026-08-12 18:57:22,291 [CDSP_adapter.py] => Subspace task=4 phase=task_end_memory layer=5 classes=50 inter=15 intra=0 task=0 protected=15 residual=753 ratio=0.0195
+2026-08-12 18:57:22,291 [CDSP_adapter.py] => Subspace task=4 phase=task_end_memory layer=6 classes=50 inter=18 intra=0 task=0 protected=18 residual=750 ratio=0.0234
+2026-08-12 18:57:22,291 [CDSP_adapter.py] => Subspace task=4 phase=task_end_memory layer=7 classes=50 inter=23 intra=0 task=0 protected=23 residual=745 ratio=0.0299
+2026-08-12 18:57:22,291 [CDSP_adapter.py] => Subspace task=4 phase=task_end_memory layer=8 classes=50 inter=27 intra=0 task=0 protected=27 residual=741 ratio=0.0352
+2026-08-12 18:57:22,291 [CDSP_adapter.py] => Subspace task=4 phase=task_end_memory layer=9 classes=50 inter=23 intra=0 task=0 protected=23 residual=745 ratio=0.0299
+2026-08-12 18:57:22,291 [CDSP_adapter.py] => Subspace task=4 phase=task_end_memory layer=10 classes=50 inter=29 intra=0 task=0 protected=29 residual=739 ratio=0.0378
+2026-08-12 18:57:22,291 [CDSP_adapter.py] => Subspace task=4 phase=task_end_memory layer=11 classes=50 inter=37 intra=0 task=0 protected=37 residual=731 ratio=0.0482
+2026-08-12 18:57:22,291 [CDSP_adapter.py] => Task 4 training+memory complete: elapsed=00:07:21 (training=00:06:53)
+2026-08-12 18:57:50,025 [CDSP_adapter.py] => Task 4 evaluation: primary(prototype)=93.20% old=92.85% new=94.60% prototype=93.20% head=92.90% forgetting=3.90 drift=0.049338 pairwise=0.032118 elapsed=00:07:49
+2026-08-12 18:57:50,352 [CDSP_adapter.py] => Saved resumable CDSP checkpoint: results/cdsp/cifar224/inter_subspace/seed_1993/checkpoints/checkpoint_task_04.pth
+2026-08-12 18:57:50,352 [trainer.py] => CNN: {'total': np.float64(93.2), '00-09': np.float64(91.9), '10-19': np.float64(90.7), '20-29': np.float64(96.0), '30-39': np.float64(92.8), '40-49': np.float64(94.6), 'old': np.float64(92.85), 'new': np.float64(94.6)}
+2026-08-12 18:57:50,352 [trainer.py] => CNN top1 curve: [np.float64(97.9), np.float64(96.85), np.float64(95.93), np.float64(94.52), np.float64(93.2)]
+2026-08-12 18:57:50,352 [trainer.py] => CNN top5 curve: [np.float64(99.9), np.float64(99.6), np.float64(99.47), np.float64(99.45), np.float64(99.4)]
+2026-08-12 18:57:50,352 [trainer.py] => Average Accuracy (CNN): 95.67999999999999
+2026-08-12 18:57:50,352 [trainer.py] => Task 5/10 finished: elapsed=00:07:49, estimated experiment remaining=00:44:57
+2026-08-12 18:57:50,352 [trainer.py] => Task 6/10 started
+2026-08-12 18:57:50,353 [CDSP_adapter.py] => CDSP task 6/10: learning classes [50, 60), mode=inter
+2026-08-12 18:57:50,412 [CDSP_adapter.py] => Task 5 active adapter branch: adapter2
+2026-08-12 18:57:50,412 [CDSP_adapter.py] => Subspace task=5 phase=task_start layer=0 classes=50 inter=3 intra=0 task=0 protected=3 residual=765 ratio=0.0039
+2026-08-12 18:57:50,412 [CDSP_adapter.py] => Subspace task=5 phase=task_start layer=1 classes=50 inter=6 intra=0 task=0 protected=6 residual=762 ratio=0.0078
+2026-08-12 18:57:50,412 [CDSP_adapter.py] => Subspace task=5 phase=task_start layer=2 classes=50 inter=8 intra=0 task=0 protected=8 residual=760 ratio=0.0104
+2026-08-12 18:57:50,412 [CDSP_adapter.py] => Subspace task=5 phase=task_start layer=3 classes=50 inter=9 intra=0 task=0 protected=9 residual=759 ratio=0.0117
+2026-08-12 18:57:50,412 [CDSP_adapter.py] => Subspace task=5 phase=task_start layer=4 classes=50 inter=9 intra=0 task=0 protected=9 residual=759 ratio=0.0117
+2026-08-12 18:57:50,412 [CDSP_adapter.py] => Subspace task=5 phase=task_start layer=5 classes=50 inter=15 intra=0 task=0 protected=15 residual=753 ratio=0.0195
+2026-08-12 18:57:50,412 [CDSP_adapter.py] => Subspace task=5 phase=task_start layer=6 classes=50 inter=18 intra=0 task=0 protected=18 residual=750 ratio=0.0234
+2026-08-12 18:57:50,412 [CDSP_adapter.py] => Subspace task=5 phase=task_start layer=7 classes=50 inter=23 intra=0 task=0 protected=23 residual=745 ratio=0.0299
+2026-08-12 18:57:50,412 [CDSP_adapter.py] => Subspace task=5 phase=task_start layer=8 classes=50 inter=27 intra=0 task=0 protected=27 residual=741 ratio=0.0352
+2026-08-12 18:57:50,412 [CDSP_adapter.py] => Subspace task=5 phase=task_start layer=9 classes=50 inter=23 intra=0 task=0 protected=23 residual=745 ratio=0.0299
+2026-08-12 18:57:50,412 [CDSP_adapter.py] => Subspace task=5 phase=task_start layer=10 classes=50 inter=29 intra=0 task=0 protected=29 residual=739 ratio=0.0378
+2026-08-12 18:57:50,412 [CDSP_adapter.py] => Subspace task=5 phase=task_start layer=11 classes=50 inter=37 intra=0 task=0 protected=37 residual=731 ratio=0.0482
+2026-08-12 18:58:31,866 [CDSP_adapter.py] => Task 5 epoch 1/10: loss=0.3356 train_acc=77.32% epoch_time=00:00:41 elapsed=00:00:41 eta=00:06:13 max_violation=3.311e-08
+2026-08-12 18:59:13,333 [CDSP_adapter.py] => Task 5 epoch 2/10: loss=0.2360 train_acc=82.48% epoch_time=00:00:41 elapsed=00:01:22 eta=00:05:31 max_violation=3.317e-08
+2026-08-12 18:59:54,619 [CDSP_adapter.py] => Task 5 epoch 3/10: loss=0.2216 train_acc=82.50% epoch_time=00:00:41 elapsed=00:02:04 eta=00:04:49 max_violation=3.288e-08
+2026-08-12 19:00:35,941 [CDSP_adapter.py] => Task 5 epoch 4/10: loss=0.2065 train_acc=83.90% epoch_time=00:00:41 elapsed=00:02:45 eta=00:04:08 max_violation=3.215e-08
+2026-08-12 19:01:17,089 [CDSP_adapter.py] => Task 5 epoch 5/10: loss=0.2056 train_acc=82.66% epoch_time=00:00:41 elapsed=00:03:26 eta=00:03:26 max_violation=3.245e-08
+2026-08-12 19:01:58,263 [CDSP_adapter.py] => Task 5 epoch 6/10: loss=0.1910 train_acc=84.40% epoch_time=00:00:41 elapsed=00:04:07 eta=00:02:45 max_violation=3.257e-08
+2026-08-12 19:02:39,491 [CDSP_adapter.py] => Task 5 epoch 7/10: loss=0.1905 train_acc=84.30% epoch_time=00:00:41 elapsed=00:04:49 eta=00:02:03 max_violation=3.309e-08
+2026-08-12 19:03:20,742 [CDSP_adapter.py] => Task 5 epoch 8/10: loss=0.1818 train_acc=85.04% epoch_time=00:00:41 elapsed=00:05:30 eta=00:01:22 max_violation=3.213e-08
+2026-08-12 19:04:01,987 [CDSP_adapter.py] => Task 5 epoch 9/10: loss=0.1704 train_acc=85.10% epoch_time=00:00:41 elapsed=00:06:11 eta=00:00:41 max_violation=3.279e-08
+2026-08-12 19:04:43,222 [CDSP_adapter.py] => Task 5 epoch 10/10: loss=0.1836 train_acc=84.62% epoch_time=00:00:41 elapsed=00:06:52 eta=00:00:00 max_violation=3.230e-08
+2026-08-12 19:05:11,285 [CDSP_adapter.py] => Task 5 current-class statistics collected in 00:00:28; no sample features retained
+2026-08-12 19:05:11,308 [protected_subspace.py] => Compressed subspace memory updated for layer 0 in 0.00s
+2026-08-12 19:05:11,308 [protected_subspace.py] => Compressed subspace memory updated for layer 1 in 0.00s
+2026-08-12 19:05:11,308 [protected_subspace.py] => Compressed subspace memory updated for layer 2 in 0.00s
+2026-08-12 19:05:11,308 [protected_subspace.py] => Compressed subspace memory updated for layer 3 in 0.00s
+2026-08-12 19:05:11,309 [protected_subspace.py] => Compressed subspace memory updated for layer 4 in 0.00s
+2026-08-12 19:05:11,309 [protected_subspace.py] => Compressed subspace memory updated for layer 5 in 0.00s
+2026-08-12 19:05:11,309 [protected_subspace.py] => Compressed subspace memory updated for layer 6 in 0.00s
+2026-08-12 19:05:11,309 [protected_subspace.py] => Compressed subspace memory updated for layer 7 in 0.00s
+2026-08-12 19:05:11,309 [protected_subspace.py] => Compressed subspace memory updated for layer 8 in 0.00s
+2026-08-12 19:05:11,309 [protected_subspace.py] => Compressed subspace memory updated for layer 9 in 0.00s
+2026-08-12 19:05:11,309 [protected_subspace.py] => Compressed subspace memory updated for layer 10 in 0.00s
+2026-08-12 19:05:11,309 [protected_subspace.py] => Compressed subspace memory updated for layer 11 in 0.00s
+2026-08-12 19:05:11,324 [protected_subspace.py] => Compressed subspace update finished in 0.02s
+2026-08-12 19:05:11,324 [CDSP_adapter.py] => Subspace task=5 phase=task_end_memory layer=0 classes=60 inter=3 intra=0 task=0 protected=3 residual=765 ratio=0.0039
+2026-08-12 19:05:11,324 [CDSP_adapter.py] => Subspace task=5 phase=task_end_memory layer=1 classes=60 inter=6 intra=0 task=0 protected=6 residual=762 ratio=0.0078
+2026-08-12 19:05:11,324 [CDSP_adapter.py] => Subspace task=5 phase=task_end_memory layer=2 classes=60 inter=8 intra=0 task=0 protected=8 residual=760 ratio=0.0104
+2026-08-12 19:05:11,324 [CDSP_adapter.py] => Subspace task=5 phase=task_end_memory layer=3 classes=60 inter=10 intra=0 task=0 protected=10 residual=758 ratio=0.0130
+2026-08-12 19:05:11,324 [CDSP_adapter.py] => Subspace task=5 phase=task_end_memory layer=4 classes=60 inter=10 intra=0 task=0 protected=10 residual=758 ratio=0.0130
+2026-08-12 19:05:11,324 [CDSP_adapter.py] => Subspace task=5 phase=task_end_memory layer=5 classes=60 inter=17 intra=0 task=0 protected=17 residual=751 ratio=0.0221
+2026-08-12 19:05:11,324 [CDSP_adapter.py] => Subspace task=5 phase=task_end_memory layer=6 classes=60 inter=20 intra=0 task=0 protected=20 residual=748 ratio=0.0260
+2026-08-12 19:05:11,324 [CDSP_adapter.py] => Subspace task=5 phase=task_end_memory layer=7 classes=60 inter=25 intra=0 task=0 protected=25 residual=743 ratio=0.0326
+2026-08-12 19:05:11,324 [CDSP_adapter.py] => Subspace task=5 phase=task_end_memory layer=8 classes=60 inter=30 intra=0 task=0 protected=30 residual=738 ratio=0.0391
+2026-08-12 19:05:11,325 [CDSP_adapter.py] => Subspace task=5 phase=task_end_memory layer=9 classes=60 inter=27 intra=0 task=0 protected=27 residual=741 ratio=0.0352
+2026-08-12 19:05:11,325 [CDSP_adapter.py] => Subspace task=5 phase=task_end_memory layer=10 classes=60 inter=34 intra=0 task=0 protected=34 residual=734 ratio=0.0443
+2026-08-12 19:05:11,325 [CDSP_adapter.py] => Subspace task=5 phase=task_end_memory layer=11 classes=60 inter=44 intra=0 task=0 protected=44 residual=724 ratio=0.0573
+2026-08-12 19:05:11,325 [CDSP_adapter.py] => Task 5 training+memory complete: elapsed=00:07:20 (training=00:06:52)
+2026-08-12 19:05:44,435 [CDSP_adapter.py] => Task 5 evaluation: primary(prototype)=92.27% old=91.96% new=93.80% prototype=92.27% head=92.07% forgetting=4.36 drift=0.051444 pairwise=0.035787 elapsed=00:07:54
+2026-08-12 19:05:44,715 [CDSP_adapter.py] => Saved resumable CDSP checkpoint: results/cdsp/cifar224/inter_subspace/seed_1993/checkpoints/checkpoint_task_05.pth
+2026-08-12 19:05:44,715 [trainer.py] => CNN: {'total': np.float64(92.27), '00-09': np.float64(88.7), '10-19': np.float64(91.1), '20-29': np.float64(95.6), '30-39': np.float64(92.0), '40-49': np.float64(92.4), '50-59': np.float64(93.8), 'old': np.float64(91.96), 'new': np.float64(93.8)}
+2026-08-12 19:05:44,715 [trainer.py] => CNN top1 curve: [np.float64(97.9), np.float64(96.85), np.float64(95.93), np.float64(94.52), np.float64(93.2), np.float64(92.27)]
+2026-08-12 19:05:44,715 [trainer.py] => CNN top5 curve: [np.float64(99.9), np.float64(99.6), np.float64(99.47), np.float64(99.45), np.float64(99.4), np.float64(99.3)]
+2026-08-12 19:05:44,715 [trainer.py] => Average Accuracy (CNN): 95.11166666666666
+2026-08-12 19:05:44,715 [trainer.py] => Task 6/10 finished: elapsed=00:07:54, estimated experiment remaining=00:35:14
+2026-08-12 19:05:44,715 [trainer.py] => Task 7/10 started
+2026-08-12 19:05:44,716 [CDSP_adapter.py] => CDSP task 7/10: learning classes [60, 70), mode=inter
+2026-08-12 19:05:44,803 [CDSP_adapter.py] => Task 6 active adapter branch: adapter1
+2026-08-12 19:05:44,804 [CDSP_adapter.py] => Subspace task=6 phase=task_start layer=0 classes=60 inter=3 intra=0 task=0 protected=3 residual=765 ratio=0.0039
+2026-08-12 19:05:44,804 [CDSP_adapter.py] => Subspace task=6 phase=task_start layer=1 classes=60 inter=6 intra=0 task=0 protected=6 residual=762 ratio=0.0078
+2026-08-12 19:05:44,804 [CDSP_adapter.py] => Subspace task=6 phase=task_start layer=2 classes=60 inter=8 intra=0 task=0 protected=8 residual=760 ratio=0.0104
+2026-08-12 19:05:44,804 [CDSP_adapter.py] => Subspace task=6 phase=task_start layer=3 classes=60 inter=10 intra=0 task=0 protected=10 residual=758 ratio=0.0130
+2026-08-12 19:05:44,804 [CDSP_adapter.py] => Subspace task=6 phase=task_start layer=4 classes=60 inter=10 intra=0 task=0 protected=10 residual=758 ratio=0.0130
+2026-08-12 19:05:44,804 [CDSP_adapter.py] => Subspace task=6 phase=task_start layer=5 classes=60 inter=17 intra=0 task=0 protected=17 residual=751 ratio=0.0221
+2026-08-12 19:05:44,804 [CDSP_adapter.py] => Subspace task=6 phase=task_start layer=6 classes=60 inter=20 intra=0 task=0 protected=20 residual=748 ratio=0.0260
+2026-08-12 19:05:44,804 [CDSP_adapter.py] => Subspace task=6 phase=task_start layer=7 classes=60 inter=25 intra=0 task=0 protected=25 residual=743 ratio=0.0326
+2026-08-12 19:05:44,804 [CDSP_adapter.py] => Subspace task=6 phase=task_start layer=8 classes=60 inter=30 intra=0 task=0 protected=30 residual=738 ratio=0.0391
+2026-08-12 19:05:44,804 [CDSP_adapter.py] => Subspace task=6 phase=task_start layer=9 classes=60 inter=27 intra=0 task=0 protected=27 residual=741 ratio=0.0352
+2026-08-12 19:05:44,804 [CDSP_adapter.py] => Subspace task=6 phase=task_start layer=10 classes=60 inter=34 intra=0 task=0 protected=34 residual=734 ratio=0.0443
+2026-08-12 19:05:44,804 [CDSP_adapter.py] => Subspace task=6 phase=task_start layer=11 classes=60 inter=44 intra=0 task=0 protected=44 residual=724 ratio=0.0573
+2026-08-12 19:06:26,107 [CDSP_adapter.py] => Task 6 epoch 1/10: loss=0.2917 train_acc=78.18% epoch_time=00:00:41 elapsed=00:00:41 eta=00:06:11 max_violation=3.273e-08
+2026-08-12 19:07:07,659 [CDSP_adapter.py] => Task 6 epoch 2/10: loss=0.1719 train_acc=84.22% epoch_time=00:00:41 elapsed=00:01:22 eta=00:05:31 max_violation=3.230e-08
+2026-08-12 19:07:49,124 [CDSP_adapter.py] => Task 6 epoch 3/10: loss=0.1643 train_acc=85.80% epoch_time=00:00:41 elapsed=00:02:04 eta=00:04:50 max_violation=3.221e-08
+2026-08-12 19:08:30,603 [CDSP_adapter.py] => Task 6 epoch 4/10: loss=0.1642 train_acc=85.10% epoch_time=00:00:41 elapsed=00:02:45 eta=00:04:08 max_violation=3.245e-08
+2026-08-12 19:09:11,859 [CDSP_adapter.py] => Task 6 epoch 5/10: loss=0.1587 train_acc=84.62% epoch_time=00:00:41 elapsed=00:03:27 eta=00:03:27 max_violation=3.091e-08
+2026-08-12 19:09:53,116 [CDSP_adapter.py] => Task 6 epoch 6/10: loss=0.1330 train_acc=86.34% epoch_time=00:00:41 elapsed=00:04:08 eta=00:02:45 max_violation=3.270e-08
+2026-08-12 19:10:34,554 [CDSP_adapter.py] => Task 6 epoch 7/10: loss=0.1380 train_acc=86.02% epoch_time=00:00:41 elapsed=00:04:49 eta=00:02:04 max_violation=3.245e-08
+2026-08-12 19:11:15,966 [CDSP_adapter.py] => Task 6 epoch 8/10: loss=0.1319 train_acc=86.64% epoch_time=00:00:41 elapsed=00:05:31 eta=00:01:22 max_violation=3.240e-08
+2026-08-12 19:11:57,213 [CDSP_adapter.py] => Task 6 epoch 9/10: loss=0.1437 train_acc=86.26% epoch_time=00:00:41 elapsed=00:06:12 eta=00:00:41 max_violation=3.191e-08
+2026-08-12 19:12:38,386 [CDSP_adapter.py] => Task 6 epoch 10/10: loss=0.1274 train_acc=86.48% epoch_time=00:00:41 elapsed=00:06:53 eta=00:00:00 max_violation=3.133e-08
+2026-08-12 19:13:06,394 [CDSP_adapter.py] => Task 6 current-class statistics collected in 00:00:27; no sample features retained
+2026-08-12 19:13:06,419 [protected_subspace.py] => Compressed subspace memory updated for layer 0 in 0.00s
+2026-08-12 19:13:06,420 [protected_subspace.py] => Compressed subspace memory updated for layer 1 in 0.00s
+2026-08-12 19:13:06,420 [protected_subspace.py] => Compressed subspace memory updated for layer 2 in 0.00s
+2026-08-12 19:13:06,420 [protected_subspace.py] => Compressed subspace memory updated for layer 3 in 0.00s
+2026-08-12 19:13:06,420 [protected_subspace.py] => Compressed subspace memory updated for layer 4 in 0.00s
+2026-08-12 19:13:06,420 [protected_subspace.py] => Compressed subspace memory updated for layer 5 in 0.00s
+2026-08-12 19:13:06,420 [protected_subspace.py] => Compressed subspace memory updated for layer 6 in 0.00s
+2026-08-12 19:13:06,420 [protected_subspace.py] => Compressed subspace memory updated for layer 7 in 0.00s
+2026-08-12 19:13:06,420 [protected_subspace.py] => Compressed subspace memory updated for layer 8 in 0.00s
+2026-08-12 19:13:06,420 [protected_subspace.py] => Compressed subspace memory updated for layer 9 in 0.00s
+2026-08-12 19:13:06,420 [protected_subspace.py] => Compressed subspace memory updated for layer 10 in 0.00s
+2026-08-12 19:13:06,420 [protected_subspace.py] => Compressed subspace memory updated for layer 11 in 0.00s
+2026-08-12 19:13:06,439 [protected_subspace.py] => Compressed subspace update finished in 0.02s
+2026-08-12 19:13:06,440 [CDSP_adapter.py] => Subspace task=6 phase=task_end_memory layer=0 classes=70 inter=3 intra=0 task=0 protected=3 residual=765 ratio=0.0039
+2026-08-12 19:13:06,440 [CDSP_adapter.py] => Subspace task=6 phase=task_end_memory layer=1 classes=70 inter=6 intra=0 task=0 protected=6 residual=762 ratio=0.0078
+2026-08-12 19:13:06,440 [CDSP_adapter.py] => Subspace task=6 phase=task_end_memory layer=2 classes=70 inter=9 intra=0 task=0 protected=9 residual=759 ratio=0.0117
+2026-08-12 19:13:06,440 [CDSP_adapter.py] => Subspace task=6 phase=task_end_memory layer=3 classes=70 inter=11 intra=0 task=0 protected=11 residual=757 ratio=0.0143
+2026-08-12 19:13:06,440 [CDSP_adapter.py] => Subspace task=6 phase=task_end_memory layer=4 classes=70 inter=11 intra=0 task=0 protected=11 residual=757 ratio=0.0143
+2026-08-12 19:13:06,440 [CDSP_adapter.py] => Subspace task=6 phase=task_end_memory layer=5 classes=70 inter=19 intra=0 task=0 protected=19 residual=749 ratio=0.0247
+2026-08-12 19:13:06,440 [CDSP_adapter.py] => Subspace task=6 phase=task_end_memory layer=6 classes=70 inter=22 intra=0 task=0 protected=22 residual=746 ratio=0.0286
+2026-08-12 19:13:06,440 [CDSP_adapter.py] => Subspace task=6 phase=task_end_memory layer=7 classes=70 inter=28 intra=0 task=0 protected=28 residual=740 ratio=0.0365
+2026-08-12 19:13:06,440 [CDSP_adapter.py] => Subspace task=6 phase=task_end_memory layer=8 classes=70 inter=35 intra=0 task=0 protected=35 residual=733 ratio=0.0456
+2026-08-12 19:13:06,440 [CDSP_adapter.py] => Subspace task=6 phase=task_end_memory layer=9 classes=70 inter=30 intra=0 task=0 protected=30 residual=738 ratio=0.0391
+2026-08-12 19:13:06,440 [CDSP_adapter.py] => Subspace task=6 phase=task_end_memory layer=10 classes=70 inter=38 intra=0 task=0 protected=38 residual=730 ratio=0.0495
+2026-08-12 19:13:06,440 [CDSP_adapter.py] => Subspace task=6 phase=task_end_memory layer=11 classes=70 inter=51 intra=0 task=0 protected=51 residual=717 ratio=0.0664
+2026-08-12 19:13:06,440 [CDSP_adapter.py] => Task 6 training+memory complete: elapsed=00:07:21 (training=00:06:53)
+2026-08-12 19:13:44,937 [CDSP_adapter.py] => Task 6 evaluation: primary(prototype)=91.74% old=91.22% new=94.90% prototype=91.74% head=91.71% forgetting=4.68 drift=0.053432 pairwise=0.041236 elapsed=00:08:00
+2026-08-12 19:13:45,273 [CDSP_adapter.py] => Saved resumable CDSP checkpoint: results/cdsp/cifar224/inter_subspace/seed_1993/checkpoints/checkpoint_task_06.pth
+2026-08-12 19:13:45,273 [trainer.py] => CNN: {'total': np.float64(91.74), '00-09': np.float64(87.3), '10-19': np.float64(89.0), '20-29': np.float64(94.8), '30-39': np.float64(92.2), '40-49': np.float64(92.3), '50-59': np.float64(91.7), '60-69': np.float64(94.9), 'old': np.float64(91.22), 'new': np.float64(94.9)}
+2026-08-12 19:13:45,274 [trainer.py] => CNN top1 curve: [np.float64(97.9), np.float64(96.85), np.float64(95.93), np.float64(94.52), np.float64(93.2), np.float64(92.27), np.float64(91.74)]
+2026-08-12 19:13:45,274 [trainer.py] => CNN top5 curve: [np.float64(99.9), np.float64(99.6), np.float64(99.47), np.float64(99.45), np.float64(99.4), np.float64(99.3), np.float64(99.23)]
+2026-08-12 19:13:45,274 [trainer.py] => Average Accuracy (CNN): 94.63
+2026-08-12 19:13:45,274 [trainer.py] => Task 7/10 finished: elapsed=00:08:00, estimated experiment remaining=00:26:05
+2026-08-12 19:13:45,274 [trainer.py] => Task 8/10 started
+2026-08-12 19:13:45,274 [CDSP_adapter.py] => CDSP task 8/10: learning classes [70, 80), mode=inter
+2026-08-12 19:13:45,335 [CDSP_adapter.py] => Task 7 active adapter branch: adapter2
+2026-08-12 19:13:45,336 [CDSP_adapter.py] => Subspace task=7 phase=task_start layer=0 classes=70 inter=3 intra=0 task=0 protected=3 residual=765 ratio=0.0039
+2026-08-12 19:13:45,336 [CDSP_adapter.py] => Subspace task=7 phase=task_start layer=1 classes=70 inter=6 intra=0 task=0 protected=6 residual=762 ratio=0.0078
+2026-08-12 19:13:45,336 [CDSP_adapter.py] => Subspace task=7 phase=task_start layer=2 classes=70 inter=9 intra=0 task=0 protected=9 residual=759 ratio=0.0117
+2026-08-12 19:13:45,336 [CDSP_adapter.py] => Subspace task=7 phase=task_start layer=3 classes=70 inter=11 intra=0 task=0 protected=11 residual=757 ratio=0.0143
+2026-08-12 19:13:45,336 [CDSP_adapter.py] => Subspace task=7 phase=task_start layer=4 classes=70 inter=11 intra=0 task=0 protected=11 residual=757 ratio=0.0143
+2026-08-12 19:13:45,336 [CDSP_adapter.py] => Subspace task=7 phase=task_start layer=5 classes=70 inter=19 intra=0 task=0 protected=19 residual=749 ratio=0.0247
+2026-08-12 19:13:45,336 [CDSP_adapter.py] => Subspace task=7 phase=task_start layer=6 classes=70 inter=22 intra=0 task=0 protected=22 residual=746 ratio=0.0286
+2026-08-12 19:13:45,336 [CDSP_adapter.py] => Subspace task=7 phase=task_start layer=7 classes=70 inter=28 intra=0 task=0 protected=28 residual=740 ratio=0.0365
+2026-08-12 19:13:45,336 [CDSP_adapter.py] => Subspace task=7 phase=task_start layer=8 classes=70 inter=35 intra=0 task=0 protected=35 residual=733 ratio=0.0456
+2026-08-12 19:13:45,336 [CDSP_adapter.py] => Subspace task=7 phase=task_start layer=9 classes=70 inter=30 intra=0 task=0 protected=30 residual=738 ratio=0.0391
+2026-08-12 19:13:45,336 [CDSP_adapter.py] => Subspace task=7 phase=task_start layer=10 classes=70 inter=38 intra=0 task=0 protected=38 residual=730 ratio=0.0495
+2026-08-12 19:13:45,336 [CDSP_adapter.py] => Subspace task=7 phase=task_start layer=11 classes=70 inter=51 intra=0 task=0 protected=51 residual=717 ratio=0.0664
+2026-08-12 19:14:26,541 [CDSP_adapter.py] => Task 7 epoch 1/10: loss=0.3335 train_acc=69.64% epoch_time=00:00:41 elapsed=00:00:41 eta=00:06:10 max_violation=3.623e-08
+2026-08-12 19:15:07,890 [CDSP_adapter.py] => Task 7 epoch 2/10: loss=0.2192 train_acc=75.92% epoch_time=00:00:41 elapsed=00:01:22 eta=00:05:30 max_violation=3.664e-08
+2026-08-12 19:15:49,096 [CDSP_adapter.py] => Task 7 epoch 3/10: loss=0.2047 train_acc=76.04% epoch_time=00:00:41 elapsed=00:02:03 eta=00:04:48 max_violation=3.577e-08
+2026-08-12 19:16:30,370 [CDSP_adapter.py] => Task 7 epoch 4/10: loss=0.2045 train_acc=76.88% epoch_time=00:00:41 elapsed=00:02:45 eta=00:04:07 max_violation=3.467e-08
+2026-08-12 19:17:11,574 [CDSP_adapter.py] => Task 7 epoch 5/10: loss=0.2001 train_acc=77.08% epoch_time=00:00:41 elapsed=00:03:26 eta=00:03:26 max_violation=3.441e-08
+2026-08-12 19:17:53,015 [CDSP_adapter.py] => Task 7 epoch 6/10: loss=0.1941 train_acc=76.12% epoch_time=00:00:41 elapsed=00:04:07 eta=00:02:45 max_violation=3.481e-08
+2026-08-12 19:18:34,465 [CDSP_adapter.py] => Task 7 epoch 7/10: loss=0.1838 train_acc=76.42% epoch_time=00:00:41 elapsed=00:04:49 eta=00:02:03 max_violation=3.469e-08
+2026-08-12 19:19:15,719 [CDSP_adapter.py] => Task 7 epoch 8/10: loss=0.1842 train_acc=75.88% epoch_time=00:00:41 elapsed=00:05:30 eta=00:01:22 max_violation=3.498e-08
+2026-08-12 19:19:56,977 [CDSP_adapter.py] => Task 7 epoch 9/10: loss=0.1614 train_acc=76.28% epoch_time=00:00:41 elapsed=00:06:11 eta=00:00:41 max_violation=3.550e-08
+2026-08-12 19:20:38,244 [CDSP_adapter.py] => Task 7 epoch 10/10: loss=0.1660 train_acc=76.58% epoch_time=00:00:41 elapsed=00:06:52 eta=00:00:00 max_violation=3.514e-08
+2026-08-12 19:21:06,129 [CDSP_adapter.py] => Task 7 current-class statistics collected in 00:00:27; no sample features retained
+2026-08-12 19:21:06,150 [protected_subspace.py] => Compressed subspace memory updated for layer 0 in 0.00s
+2026-08-12 19:21:06,150 [protected_subspace.py] => Compressed subspace memory updated for layer 1 in 0.00s
+2026-08-12 19:21:06,150 [protected_subspace.py] => Compressed subspace memory updated for layer 2 in 0.00s
+2026-08-12 19:21:06,150 [protected_subspace.py] => Compressed subspace memory updated for layer 3 in 0.00s
+2026-08-12 19:21:06,150 [protected_subspace.py] => Compressed subspace memory updated for layer 4 in 0.00s
+2026-08-12 19:21:06,150 [protected_subspace.py] => Compressed subspace memory updated for layer 5 in 0.00s
+2026-08-12 19:21:06,150 [protected_subspace.py] => Compressed subspace memory updated for layer 6 in 0.00s
+2026-08-12 19:21:06,151 [protected_subspace.py] => Compressed subspace memory updated for layer 7 in 0.00s
+2026-08-12 19:21:06,151 [protected_subspace.py] => Compressed subspace memory updated for layer 8 in 0.00s
+2026-08-12 19:21:06,151 [protected_subspace.py] => Compressed subspace memory updated for layer 9 in 0.00s
+2026-08-12 19:21:06,151 [protected_subspace.py] => Compressed subspace memory updated for layer 10 in 0.00s
+2026-08-12 19:21:06,151 [protected_subspace.py] => Compressed subspace memory updated for layer 11 in 0.00s
+2026-08-12 19:21:06,172 [protected_subspace.py] => Compressed subspace update finished in 0.02s
+2026-08-12 19:21:06,172 [CDSP_adapter.py] => Subspace task=7 phase=task_end_memory layer=0 classes=80 inter=3 intra=0 task=0 protected=3 residual=765 ratio=0.0039
+2026-08-12 19:21:06,172 [CDSP_adapter.py] => Subspace task=7 phase=task_end_memory layer=1 classes=80 inter=6 intra=0 task=0 protected=6 residual=762 ratio=0.0078
+2026-08-12 19:21:06,172 [CDSP_adapter.py] => Subspace task=7 phase=task_end_memory layer=2 classes=80 inter=9 intra=0 task=0 protected=9 residual=759 ratio=0.0117
+2026-08-12 19:21:06,172 [CDSP_adapter.py] => Subspace task=7 phase=task_end_memory layer=3 classes=80 inter=12 intra=0 task=0 protected=12 residual=756 ratio=0.0156
+2026-08-12 19:21:06,172 [CDSP_adapter.py] => Subspace task=7 phase=task_end_memory layer=4 classes=80 inter=11 intra=0 task=0 protected=11 residual=757 ratio=0.0143
+2026-08-12 19:21:06,173 [CDSP_adapter.py] => Subspace task=7 phase=task_end_memory layer=5 classes=80 inter=20 intra=0 task=0 protected=20 residual=748 ratio=0.0260
+2026-08-12 19:21:06,173 [CDSP_adapter.py] => Subspace task=7 phase=task_end_memory layer=6 classes=80 inter=23 intra=0 task=0 protected=23 residual=745 ratio=0.0299
+2026-08-12 19:21:06,173 [CDSP_adapter.py] => Subspace task=7 phase=task_end_memory layer=7 classes=80 inter=30 intra=0 task=0 protected=30 residual=738 ratio=0.0391
+2026-08-12 19:21:06,173 [CDSP_adapter.py] => Subspace task=7 phase=task_end_memory layer=8 classes=80 inter=38 intra=0 task=0 protected=38 residual=730 ratio=0.0495
+2026-08-12 19:21:06,173 [CDSP_adapter.py] => Subspace task=7 phase=task_end_memory layer=9 classes=80 inter=32 intra=0 task=0 protected=32 residual=736 ratio=0.0417
+2026-08-12 19:21:06,173 [CDSP_adapter.py] => Subspace task=7 phase=task_end_memory layer=10 classes=80 inter=42 intra=0 task=0 protected=42 residual=726 ratio=0.0547
+2026-08-12 19:21:06,173 [CDSP_adapter.py] => Subspace task=7 phase=task_end_memory layer=11 classes=80 inter=56 intra=0 task=0 protected=56 residual=712 ratio=0.0729
+2026-08-12 19:21:06,173 [CDSP_adapter.py] => Task 7 training+memory complete: elapsed=00:07:20 (training=00:06:52)
+2026-08-12 19:21:50,111 [CDSP_adapter.py] => Task 7 evaluation: primary(prototype)=90.49% old=90.79% new=88.40% prototype=90.49% head=90.18% forgetting=4.97 drift=0.055661 pairwise=0.035764 elapsed=00:08:04
+2026-08-12 19:21:50,497 [CDSP_adapter.py] => Saved resumable CDSP checkpoint: results/cdsp/cifar224/inter_subspace/seed_1993/checkpoints/checkpoint_task_07.pth
+2026-08-12 19:21:50,498 [trainer.py] => CNN: {'total': np.float64(90.49), '00-09': np.float64(87.6), '10-19': np.float64(89.1), '20-29': np.float64(94.8), '30-39': np.float64(91.3), '40-49': np.float64(90.3), '50-59': np.float64(89.2), '60-69': np.float64(93.2), '70-79': np.float64(88.4), 'old': np.float64(90.79), 'new': np.float64(88.4)}
+2026-08-12 19:21:50,498 [trainer.py] => CNN top1 curve: [np.float64(97.9), np.float64(96.85), np.float64(95.93), np.float64(94.52), np.float64(93.2), np.float64(92.27), np.float64(91.74), np.float64(90.49)]
+2026-08-12 19:21:50,498 [trainer.py] => CNN top5 curve: [np.float64(99.9), np.float64(99.6), np.float64(99.47), np.float64(99.45), np.float64(99.4), np.float64(99.3), np.float64(99.23), np.float64(99.11)]
+2026-08-12 19:21:50,498 [trainer.py] => Average Accuracy (CNN): 94.1125
+2026-08-12 19:21:50,498 [trainer.py] => Task 8/10 finished: elapsed=00:08:05, estimated experiment remaining=00:17:14
+2026-08-12 19:21:50,498 [trainer.py] => Task 9/10 started
+2026-08-12 19:21:50,499 [CDSP_adapter.py] => CDSP task 9/10: learning classes [80, 90), mode=inter
+2026-08-12 19:21:50,565 [CDSP_adapter.py] => Task 8 active adapter branch: adapter1
+2026-08-12 19:21:50,565 [CDSP_adapter.py] => Subspace task=8 phase=task_start layer=0 classes=80 inter=3 intra=0 task=0 protected=3 residual=765 ratio=0.0039
+2026-08-12 19:21:50,565 [CDSP_adapter.py] => Subspace task=8 phase=task_start layer=1 classes=80 inter=6 intra=0 task=0 protected=6 residual=762 ratio=0.0078
+2026-08-12 19:21:50,565 [CDSP_adapter.py] => Subspace task=8 phase=task_start layer=2 classes=80 inter=9 intra=0 task=0 protected=9 residual=759 ratio=0.0117
+2026-08-12 19:21:50,565 [CDSP_adapter.py] => Subspace task=8 phase=task_start layer=3 classes=80 inter=12 intra=0 task=0 protected=12 residual=756 ratio=0.0156
+2026-08-12 19:21:50,565 [CDSP_adapter.py] => Subspace task=8 phase=task_start layer=4 classes=80 inter=11 intra=0 task=0 protected=11 residual=757 ratio=0.0143
+2026-08-12 19:21:50,565 [CDSP_adapter.py] => Subspace task=8 phase=task_start layer=5 classes=80 inter=20 intra=0 task=0 protected=20 residual=748 ratio=0.0260
+2026-08-12 19:21:50,565 [CDSP_adapter.py] => Subspace task=8 phase=task_start layer=6 classes=80 inter=23 intra=0 task=0 protected=23 residual=745 ratio=0.0299
+2026-08-12 19:21:50,565 [CDSP_adapter.py] => Subspace task=8 phase=task_start layer=7 classes=80 inter=30 intra=0 task=0 protected=30 residual=738 ratio=0.0391
+2026-08-12 19:21:50,565 [CDSP_adapter.py] => Subspace task=8 phase=task_start layer=8 classes=80 inter=38 intra=0 task=0 protected=38 residual=730 ratio=0.0495
+2026-08-12 19:21:50,566 [CDSP_adapter.py] => Subspace task=8 phase=task_start layer=9 classes=80 inter=32 intra=0 task=0 protected=32 residual=736 ratio=0.0417
+2026-08-12 19:21:50,566 [CDSP_adapter.py] => Subspace task=8 phase=task_start layer=10 classes=80 inter=42 intra=0 task=0 protected=42 residual=726 ratio=0.0547
+2026-08-12 19:21:50,566 [CDSP_adapter.py] => Subspace task=8 phase=task_start layer=11 classes=80 inter=56 intra=0 task=0 protected=56 residual=712 ratio=0.0729
+2026-08-12 19:22:31,842 [CDSP_adapter.py] => Task 8 epoch 1/10: loss=0.3287 train_acc=70.54% epoch_time=00:00:41 elapsed=00:00:41 eta=00:06:11 max_violation=3.765e-08
+2026-08-12 19:23:13,243 [CDSP_adapter.py] => Task 8 epoch 2/10: loss=0.2105 train_acc=78.80% epoch_time=00:00:41 elapsed=00:01:22 eta=00:05:30 max_violation=3.744e-08
+2026-08-12 19:23:54,718 [CDSP_adapter.py] => Task 8 epoch 3/10: loss=0.2062 train_acc=78.04% epoch_time=00:00:41 elapsed=00:02:04 eta=00:04:49 max_violation=3.842e-08
+2026-08-12 19:24:36,001 [CDSP_adapter.py] => Task 8 epoch 4/10: loss=0.1839 train_acc=79.98% epoch_time=00:00:41 elapsed=00:02:45 eta=00:04:08 max_violation=3.920e-08
+2026-08-12 19:25:17,274 [CDSP_adapter.py] => Task 8 epoch 5/10: loss=0.1868 train_acc=79.98% epoch_time=00:00:41 elapsed=00:03:26 eta=00:03:26 max_violation=3.717e-08
+2026-08-12 19:25:58,545 [CDSP_adapter.py] => Task 8 epoch 6/10: loss=0.1723 train_acc=80.02% epoch_time=00:00:41 elapsed=00:04:07 eta=00:02:45 max_violation=3.816e-08
+2026-08-12 19:26:39,856 [CDSP_adapter.py] => Task 8 epoch 7/10: loss=0.1725 train_acc=80.58% epoch_time=00:00:41 elapsed=00:04:49 eta=00:02:03 max_violation=3.929e-08
+2026-08-12 19:27:21,162 [CDSP_adapter.py] => Task 8 epoch 8/10: loss=0.1704 train_acc=80.22% epoch_time=00:00:41 elapsed=00:05:30 eta=00:01:22 max_violation=3.779e-08
+2026-08-12 19:28:02,440 [CDSP_adapter.py] => Task 8 epoch 9/10: loss=0.1867 train_acc=80.32% epoch_time=00:00:41 elapsed=00:06:11 eta=00:00:41 max_violation=3.751e-08
+2026-08-12 19:28:43,718 [CDSP_adapter.py] => Task 8 epoch 10/10: loss=0.1749 train_acc=80.54% epoch_time=00:00:41 elapsed=00:06:53 eta=00:00:00 max_violation=3.746e-08
+2026-08-12 19:29:11,618 [CDSP_adapter.py] => Task 8 current-class statistics collected in 00:00:27; no sample features retained
+2026-08-12 19:29:11,641 [protected_subspace.py] => Compressed subspace memory updated for layer 0 in 0.00s
+2026-08-12 19:29:11,641 [protected_subspace.py] => Compressed subspace memory updated for layer 1 in 0.00s
+2026-08-12 19:29:11,641 [protected_subspace.py] => Compressed subspace memory updated for layer 2 in 0.00s
+2026-08-12 19:29:11,641 [protected_subspace.py] => Compressed subspace memory updated for layer 3 in 0.00s
+2026-08-12 19:29:11,641 [protected_subspace.py] => Compressed subspace memory updated for layer 4 in 0.00s
+2026-08-12 19:29:11,642 [protected_subspace.py] => Compressed subspace memory updated for layer 5 in 0.00s
+2026-08-12 19:29:11,642 [protected_subspace.py] => Compressed subspace memory updated for layer 6 in 0.00s
+2026-08-12 19:29:11,642 [protected_subspace.py] => Compressed subspace memory updated for layer 7 in 0.00s
+2026-08-12 19:29:11,642 [protected_subspace.py] => Compressed subspace memory updated for layer 8 in 0.00s
+2026-08-12 19:29:11,642 [protected_subspace.py] => Compressed subspace memory updated for layer 9 in 0.00s
+2026-08-12 19:29:11,642 [protected_subspace.py] => Compressed subspace memory updated for layer 10 in 0.00s
+2026-08-12 19:29:11,642 [protected_subspace.py] => Compressed subspace memory updated for layer 11 in 0.00s
+2026-08-12 19:29:11,667 [protected_subspace.py] => Compressed subspace update finished in 0.03s
+2026-08-12 19:29:11,668 [CDSP_adapter.py] => Subspace task=8 phase=task_end_memory layer=0 classes=90 inter=3 intra=0 task=0 protected=3 residual=765 ratio=0.0039
+2026-08-12 19:29:11,668 [CDSP_adapter.py] => Subspace task=8 phase=task_end_memory layer=1 classes=90 inter=7 intra=0 task=0 protected=7 residual=761 ratio=0.0091
+2026-08-12 19:29:11,668 [CDSP_adapter.py] => Subspace task=8 phase=task_end_memory layer=2 classes=90 inter=10 intra=0 task=0 protected=10 residual=758 ratio=0.0130
+2026-08-12 19:29:11,668 [CDSP_adapter.py] => Subspace task=8 phase=task_end_memory layer=3 classes=90 inter=12 intra=0 task=0 protected=12 residual=756 ratio=0.0156
+2026-08-12 19:29:11,668 [CDSP_adapter.py] => Subspace task=8 phase=task_end_memory layer=4 classes=90 inter=11 intra=0 task=0 protected=11 residual=757 ratio=0.0143
+2026-08-12 19:29:11,668 [CDSP_adapter.py] => Subspace task=8 phase=task_end_memory layer=5 classes=90 inter=21 intra=0 task=0 protected=21 residual=747 ratio=0.0273
+2026-08-12 19:29:11,668 [CDSP_adapter.py] => Subspace task=8 phase=task_end_memory layer=6 classes=90 inter=25 intra=0 task=0 protected=25 residual=743 ratio=0.0326
+2026-08-12 19:29:11,668 [CDSP_adapter.py] => Subspace task=8 phase=task_end_memory layer=7 classes=90 inter=32 intra=0 task=0 protected=32 residual=736 ratio=0.0417
+2026-08-12 19:29:11,668 [CDSP_adapter.py] => Subspace task=8 phase=task_end_memory layer=8 classes=90 inter=41 intra=0 task=0 protected=41 residual=727 ratio=0.0534
+2026-08-12 19:29:11,668 [CDSP_adapter.py] => Subspace task=8 phase=task_end_memory layer=9 classes=90 inter=37 intra=0 task=0 protected=37 residual=731 ratio=0.0482
+2026-08-12 19:29:11,668 [CDSP_adapter.py] => Subspace task=8 phase=task_end_memory layer=10 classes=90 inter=49 intra=0 task=0 protected=49 residual=719 ratio=0.0638
+2026-08-12 19:29:11,668 [CDSP_adapter.py] => Subspace task=8 phase=task_end_memory layer=11 classes=90 inter=62 intra=0 task=0 protected=62 residual=706 ratio=0.0807
+2026-08-12 19:29:11,668 [CDSP_adapter.py] => Task 8 training+memory complete: elapsed=00:07:21 (training=00:06:53)
+2026-08-12 19:30:01,181 [CDSP_adapter.py] => Task 8 evaluation: primary(prototype)=89.47% old=88.89% new=94.10% prototype=89.47% head=89.39% forgetting=5.95 drift=0.060822 pairwise=0.045800 elapsed=00:08:10
+2026-08-12 19:30:01,480 [CDSP_adapter.py] => Saved resumable CDSP checkpoint: results/cdsp/cifar224/inter_subspace/seed_1993/checkpoints/checkpoint_task_08.pth
+2026-08-12 19:30:01,480 [trainer.py] => CNN: {'total': np.float64(89.47), '00-09': np.float64(85.2), '10-19': np.float64(87.5), '20-29': np.float64(93.9), '30-39': np.float64(91.2), '40-49': np.float64(87.8), '50-59': np.float64(88.4), '60-69': np.float64(91.8), '70-79': np.float64(85.3), '80-89': np.float64(94.1), 'old': np.float64(88.89), 'new': np.float64(94.1)}
+2026-08-12 19:30:01,480 [trainer.py] => CNN top1 curve: [np.float64(97.9), np.float64(96.85), np.float64(95.93), np.float64(94.52), np.float64(93.2), np.float64(92.27), np.float64(91.74), np.float64(90.49), np.float64(89.47)]
+2026-08-12 19:30:01,480 [trainer.py] => CNN top5 curve: [np.float64(99.9), np.float64(99.6), np.float64(99.47), np.float64(99.45), np.float64(99.4), np.float64(99.3), np.float64(99.23), np.float64(99.11), np.float64(98.82)]
+2026-08-12 19:30:01,480 [trainer.py] => Average Accuracy (CNN): 93.59666666666666
+2026-08-12 19:30:01,480 [trainer.py] => Task 9/10 finished: elapsed=00:08:10, estimated experiment remaining=00:08:34
+2026-08-12 19:30:01,480 [trainer.py] => Task 10/10 started
+2026-08-12 19:30:01,481 [CDSP_adapter.py] => CDSP task 10/10: learning classes [90, 100), mode=inter
+2026-08-12 19:30:01,543 [CDSP_adapter.py] => Task 9 active adapter branch: adapter2
+2026-08-12 19:30:01,544 [CDSP_adapter.py] => Subspace task=9 phase=task_start layer=0 classes=90 inter=3 intra=0 task=0 protected=3 residual=765 ratio=0.0039
+2026-08-12 19:30:01,544 [CDSP_adapter.py] => Subspace task=9 phase=task_start layer=1 classes=90 inter=7 intra=0 task=0 protected=7 residual=761 ratio=0.0091
+2026-08-12 19:30:01,544 [CDSP_adapter.py] => Subspace task=9 phase=task_start layer=2 classes=90 inter=10 intra=0 task=0 protected=10 residual=758 ratio=0.0130
+2026-08-12 19:30:01,544 [CDSP_adapter.py] => Subspace task=9 phase=task_start layer=3 classes=90 inter=12 intra=0 task=0 protected=12 residual=756 ratio=0.0156
+2026-08-12 19:30:01,544 [CDSP_adapter.py] => Subspace task=9 phase=task_start layer=4 classes=90 inter=11 intra=0 task=0 protected=11 residual=757 ratio=0.0143
+2026-08-12 19:30:01,544 [CDSP_adapter.py] => Subspace task=9 phase=task_start layer=5 classes=90 inter=21 intra=0 task=0 protected=21 residual=747 ratio=0.0273
+2026-08-12 19:30:01,544 [CDSP_adapter.py] => Subspace task=9 phase=task_start layer=6 classes=90 inter=25 intra=0 task=0 protected=25 residual=743 ratio=0.0326
+2026-08-12 19:30:01,544 [CDSP_adapter.py] => Subspace task=9 phase=task_start layer=7 classes=90 inter=32 intra=0 task=0 protected=32 residual=736 ratio=0.0417
+2026-08-12 19:30:01,544 [CDSP_adapter.py] => Subspace task=9 phase=task_start layer=8 classes=90 inter=41 intra=0 task=0 protected=41 residual=727 ratio=0.0534
+2026-08-12 19:30:01,544 [CDSP_adapter.py] => Subspace task=9 phase=task_start layer=9 classes=90 inter=37 intra=0 task=0 protected=37 residual=731 ratio=0.0482
+2026-08-12 19:30:01,544 [CDSP_adapter.py] => Subspace task=9 phase=task_start layer=10 classes=90 inter=49 intra=0 task=0 protected=49 residual=719 ratio=0.0638
+2026-08-12 19:30:01,544 [CDSP_adapter.py] => Subspace task=9 phase=task_start layer=11 classes=90 inter=62 intra=0 task=0 protected=62 residual=706 ratio=0.0807
+2026-08-12 19:30:42,980 [CDSP_adapter.py] => Task 9 epoch 1/10: loss=0.3740 train_acc=72.64% epoch_time=00:00:41 elapsed=00:00:41 eta=00:06:12 max_violation=3.731e-08
+2026-08-12 19:31:24,545 [CDSP_adapter.py] => Task 9 epoch 2/10: loss=0.2407 train_acc=80.20% epoch_time=00:00:41 elapsed=00:01:22 eta=00:05:31 max_violation=3.855e-08
+2026-08-12 19:32:06,117 [CDSP_adapter.py] => Task 9 epoch 3/10: loss=0.2271 train_acc=79.20% epoch_time=00:00:41 elapsed=00:02:04 eta=00:04:50 max_violation=3.699e-08
+2026-08-12 19:32:47,594 [CDSP_adapter.py] => Task 9 epoch 4/10: loss=0.2144 train_acc=79.44% epoch_time=00:00:41 elapsed=00:02:46 eta=00:04:09 max_violation=3.819e-08
+2026-08-12 19:33:28,980 [CDSP_adapter.py] => Task 9 epoch 5/10: loss=0.2032 train_acc=80.20% epoch_time=00:00:41 elapsed=00:03:27 eta=00:03:27 max_violation=3.815e-08
+2026-08-12 19:34:10,630 [CDSP_adapter.py] => Task 9 epoch 6/10: loss=0.1867 train_acc=81.18% epoch_time=00:00:41 elapsed=00:04:09 eta=00:02:46 max_violation=3.756e-08
+2026-08-12 19:34:52,066 [CDSP_adapter.py] => Task 9 epoch 7/10: loss=0.2059 train_acc=80.10% epoch_time=00:00:41 elapsed=00:04:50 eta=00:02:04 max_violation=3.808e-08
+2026-08-12 19:35:33,432 [CDSP_adapter.py] => Task 9 epoch 8/10: loss=0.1953 train_acc=80.02% epoch_time=00:00:41 elapsed=00:05:31 eta=00:01:22 max_violation=3.864e-08
+2026-08-12 19:36:14,839 [CDSP_adapter.py] => Task 9 epoch 9/10: loss=0.1975 train_acc=79.42% epoch_time=00:00:41 elapsed=00:06:13 eta=00:00:41 max_violation=3.642e-08
+2026-08-12 19:36:56,156 [CDSP_adapter.py] => Task 9 epoch 10/10: loss=0.1891 train_acc=80.48% epoch_time=00:00:41 elapsed=00:06:54 eta=00:00:00 max_violation=3.671e-08
+2026-08-12 19:37:24,052 [CDSP_adapter.py] => Task 9 current-class statistics collected in 00:00:27; no sample features retained
+2026-08-12 19:37:24,073 [protected_subspace.py] => Compressed subspace memory updated for layer 0 in 0.00s
+2026-08-12 19:37:24,073 [protected_subspace.py] => Compressed subspace memory updated for layer 1 in 0.00s
+2026-08-12 19:37:24,073 [protected_subspace.py] => Compressed subspace memory updated for layer 2 in 0.00s
+2026-08-12 19:37:24,073 [protected_subspace.py] => Compressed subspace memory updated for layer 3 in 0.00s
+2026-08-12 19:37:24,073 [protected_subspace.py] => Compressed subspace memory updated for layer 4 in 0.00s
+2026-08-12 19:37:24,073 [protected_subspace.py] => Compressed subspace memory updated for layer 5 in 0.00s
+2026-08-12 19:37:24,073 [protected_subspace.py] => Compressed subspace memory updated for layer 6 in 0.00s
+2026-08-12 19:37:24,073 [protected_subspace.py] => Compressed subspace memory updated for layer 7 in 0.00s
+2026-08-12 19:37:24,073 [protected_subspace.py] => Compressed subspace memory updated for layer 8 in 0.00s
+2026-08-12 19:37:24,073 [protected_subspace.py] => Compressed subspace memory updated for layer 9 in 0.00s
+2026-08-12 19:37:24,073 [protected_subspace.py] => Compressed subspace memory updated for layer 10 in 0.00s
+2026-08-12 19:37:24,073 [protected_subspace.py] => Compressed subspace memory updated for layer 11 in 0.00s
+2026-08-12 19:37:24,099 [protected_subspace.py] => Compressed subspace update finished in 0.03s
+2026-08-12 19:37:24,099 [CDSP_adapter.py] => Subspace task=9 phase=task_end_memory layer=0 classes=100 inter=3 intra=0 task=0 protected=3 residual=765 ratio=0.0039
+2026-08-12 19:37:24,099 [CDSP_adapter.py] => Subspace task=9 phase=task_end_memory layer=1 classes=100 inter=7 intra=0 task=0 protected=7 residual=761 ratio=0.0091
+2026-08-12 19:37:24,099 [CDSP_adapter.py] => Subspace task=9 phase=task_end_memory layer=2 classes=100 inter=11 intra=0 task=0 protected=11 residual=757 ratio=0.0143
+2026-08-12 19:37:24,099 [CDSP_adapter.py] => Subspace task=9 phase=task_end_memory layer=3 classes=100 inter=13 intra=0 task=0 protected=13 residual=755 ratio=0.0169
+2026-08-12 19:37:24,099 [CDSP_adapter.py] => Subspace task=9 phase=task_end_memory layer=4 classes=100 inter=12 intra=0 task=0 protected=12 residual=756 ratio=0.0156
+2026-08-12 19:37:24,099 [CDSP_adapter.py] => Subspace task=9 phase=task_end_memory layer=5 classes=100 inter=22 intra=0 task=0 protected=22 residual=746 ratio=0.0286
+2026-08-12 19:37:24,099 [CDSP_adapter.py] => Subspace task=9 phase=task_end_memory layer=6 classes=100 inter=26 intra=0 task=0 protected=26 residual=742 ratio=0.0339
+2026-08-12 19:37:24,099 [CDSP_adapter.py] => Subspace task=9 phase=task_end_memory layer=7 classes=100 inter=34 intra=0 task=0 protected=34 residual=734 ratio=0.0443
+2026-08-12 19:37:24,099 [CDSP_adapter.py] => Subspace task=9 phase=task_end_memory layer=8 classes=100 inter=46 intra=0 task=0 protected=46 residual=722 ratio=0.0599
+2026-08-12 19:37:24,099 [CDSP_adapter.py] => Subspace task=9 phase=task_end_memory layer=9 classes=100 inter=41 intra=0 task=0 protected=41 residual=727 ratio=0.0534
+2026-08-12 19:37:24,100 [CDSP_adapter.py] => Subspace task=9 phase=task_end_memory layer=10 classes=100 inter=56 intra=0 task=0 protected=56 residual=712 ratio=0.0729
+2026-08-12 19:37:24,100 [CDSP_adapter.py] => Subspace task=9 phase=task_end_memory layer=11 classes=100 inter=68 intra=0 task=0 protected=68 residual=700 ratio=0.0885
+2026-08-12 19:37:24,100 [CDSP_adapter.py] => Task 9 training+memory complete: elapsed=00:07:22 (training=00:06:54)
+2026-08-12 19:38:19,075 [CDSP_adapter.py] => Task 9 evaluation: primary(prototype)=89.35% old=88.87% new=93.70% prototype=89.35% head=89.42% forgetting=5.89 drift=0.063638 pairwise=0.041754 elapsed=00:08:17
+2026-08-12 19:38:19,562 [CDSP_adapter.py] => Saved resumable CDSP checkpoint: results/cdsp/cifar224/inter_subspace/seed_1993/checkpoints/checkpoint_task_09.pth
+2026-08-12 19:38:19,562 [trainer.py] => CNN: {'total': np.float64(89.35), '00-09': np.float64(84.0), '10-19': np.float64(87.5), '20-29': np.float64(92.8), '30-39': np.float64(89.8), '40-49': np.float64(87.8), '50-59': np.float64(88.3), '60-69': np.float64(91.8), '70-79': np.float64(84.7), '80-89': np.float64(93.1), '90-99': np.float64(93.7), 'old': np.float64(88.87), 'new': np.float64(93.7)}
+2026-08-12 19:38:19,562 [trainer.py] => CNN top1 curve: [np.float64(97.9), np.float64(96.85), np.float64(95.93), np.float64(94.52), np.float64(93.2), np.float64(92.27), np.float64(91.74), np.float64(90.49), np.float64(89.47), np.float64(89.35)]
+2026-08-12 19:38:19,562 [trainer.py] => CNN top5 curve: [np.float64(99.9), np.float64(99.6), np.float64(99.47), np.float64(99.45), np.float64(99.4), np.float64(99.3), np.float64(99.23), np.float64(99.11), np.float64(98.82), np.float64(98.83)]
+2026-08-12 19:38:19,562 [trainer.py] => Average Accuracy (CNN): 93.172
+2026-08-12 19:38:19,563 [trainer.py] => Task 10/10 finished: elapsed=00:08:18, estimated experiment remaining=00:00:00
+2026-08-12 19:38:19,563 [trainer.py] => Peak GPU memory on cuda:0: allocated=4.66 GiB, reserved=4.95 GiB
