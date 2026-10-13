@@ -1,0 +1,3 @@
+task_id,seen_classes,seen_accuracy,old_accuracy,new_accuracy,average_forgetting,average_incremental_accuracy,train_seconds,peak_cuda_allocated_gb,peak_cuda_reserved_gb,cuda_allocated_after_task_gb,cuda_reserved_after_task_gb
+0,10,0.96,nan,0.96,0.0,0.96,1.2288579940795898,3.505784511566162,3.71484375,0.39258670806884766,3.71484375
+1,20,0.7965,0.623,0.9700000000000001,0.33699999999999997,0.87825,0.7192788124084473,3.5595831871032715,3.787109375,0.3938627243041992,3.787109375
