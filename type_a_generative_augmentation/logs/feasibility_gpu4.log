@@ -1,0 +1,22 @@
+nohup: ignoring input
+Baseline/checkpoint/birth-cache preflight PASS
+Birth current-train banks requiring frozen feature extraction: 17
+Pinned generator: ${RESEARCH_WORKSPACE}/.cache/huggingface/hub/models--runwayml--stable-diffusion-v1-5/snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14
+Generator model_index exists: True
+Generation deps: {'diffusers': False, 'transformers': False, 'accelerate': False}
+Traceback (most recent call last):
+  File "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/run.py", line 101, in <module>
+    main()
+  File "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/run.py", line 79, in main
+    run_audit(protocol, device)
+  File "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/audit.py", line 66, in run_audit
+    train_x, train_y = actual_train_bank(protocol, task, lower, upper, device)
+  File "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/audit.py", line 31, in actual_train_bank
+    manager = data_manager(protocol)
+  File "${RESEARCH_WORKSPACE}/type_a_generative_augmentation/common.py", line 83, in data_manager
+    manager, _ = build_data_manager(protocol, config["data_root"], SEED)
+  File "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/oracle_audit/runtime.py", line 49, in build_data_manager
+    from selective.protocol import SweepDataManager
+  File "${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/selective/protocol.py", line 13, in <module>
+    from data.data import iCARS196_224, iImageNetA, split_images_labels
+ModuleNotFoundError: No module named 'data.data'; 'data' is not a package
