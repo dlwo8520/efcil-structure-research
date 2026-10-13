@@ -1,0 +1,28 @@
+{
+  "method": "Structure (CVPR 2026, Ours)",
+  "paper": "Exemplar-Free Class Incremental Learning via Preserving Class-Discriminative Structure",
+  "venue": "CVPR 2026",
+  "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_Exemplar-Free_Class_Incremental_Learning_via_Preserving_Class-Discriminative_Structure_CVPR_2026_paper.html",
+  "note": "Paper reference values only; these are not results produced by this repository.",
+  "results": {
+    "imageneta": {
+      "5": {"last_acc_mean": 66.65, "last_acc_std": 0.20, "inc_acc_mean": 74.09, "inc_acc_std": 4.09},
+      "10": {"last_acc_mean": 64.58, "last_acc_std": 0.35, "inc_acc_mean": 71.84, "inc_acc_std": 1.67},
+      "20": {"last_acc_mean": 62.30, "last_acc_std": 0.79, "inc_acc_mean": 69.90, "inc_acc_std": 2.08}
+    },
+    "cars196": {
+      "5": {"last_acc_mean": 83.52, "last_acc_std": 0.32, "inc_acc_mean": 87.25, "inc_acc_std": 0.70},
+      "10": {"last_acc_mean": 80.23, "last_acc_std": 0.68, "inc_acc_mean": 85.53, "inc_acc_std": 0.35},
+      "20": {"last_acc_mean": 66.14, "last_acc_std": 0.56, "inc_acc_mean": 74.11, "inc_acc_std": 0.64}
+    },
+    "objectnet": {
+      "10": {"last_acc_mean": 63.39, "last_acc_std": 0.71, "inc_acc_mean": 74.27, "inc_acc_std": 1.29}
+    },
+    "omnibenchmark": {
+      "10": {"last_acc_mean": 79.19, "last_acc_std": 0.16, "inc_acc_mean": 84.37, "inc_acc_std": 0.77}
+    },
+    "imagenetr": {
+      "10": {"last_acc_mean": 79.17, "last_acc_std": 0.08, "inc_acc_mean": 83.84, "inc_acc_std": 0.56}
+    }
+  }
+}
