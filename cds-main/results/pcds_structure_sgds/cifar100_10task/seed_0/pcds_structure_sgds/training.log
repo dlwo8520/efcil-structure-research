@@ -1,0 +1,509 @@
+method=pcds_structure_sgds flags={'apr': True, 'scc': True, 'ca': True} output=${RESEARCH_WORKSPACE}/cds-main/results/pcds_structure_sgds/cifar100_10task/seed_0/pcds_structure_sgds
+protocol={'dataset': 'CIFAR-100', 'tasks': 10, 'classes_per_task': 10, 'class_order_matches_keep_lora': True, 'single_head_all_seen_classes': True, 'raw_replay': False, 'old_train_data_access': False, 'synthetic_features_train_classifier_only': True, 'sgds_activation_guidance': True, 'gpu': {'CUDA_VISIBLE_DEVICES': '1', 'torch_cuda_device_count': 1, 'torch_cuda_current_device': 0, 'torch_cuda_device_name': 'NVIDIA RTX A6000', 'torch_cuda_device_uuid': 'afb08c1c-8a66-104a-01d1-046df70f0552'}}
+metadata={'method': 'pcds_structure_sgds', 'adaptation_type': 'nonlinear MLP-output bottleneck adapter', 'adapter_trainable_parameters': 1208064, 'task0_classifier_trainable_parameters': 7680, 'task0_total_trainable_parameters': 1215744, 'total_model_parameters': 87006720, 'classifier_scale': 20.0, 'source_paper': 'Exemplar-Free Class Incremental Learning via Preserving Class-Discriminative Structure', 'released_code_reference': '${RESEARCH_WORKSPACE}/cds-main', 'scc_teacher': 'transient frozen immediately-preceding backbone deepcopy', 'classifier_adaptation_sampling': 'direct Eq. (11) Gaussian; no age-dependent mean scaling', 'result_label': 'PCDS CIFAR-100 adaptation', 'use_sgds': True, 'sgds_trainable_parameters': 0, 'combined_method': 'PCDS + SGDS activation-space guidance', 'sgds_target_layer': 11, 'sgds_paper_k': 0.6, 'sgds_k_interpretation': 'TopK floor(kN): 60% retain, 40% zero', 'sgds_training_only_mask': True, 'sgds_eq6_includes_self': True, 'sgds_excluded': ['task-specific adapter bank', 'inference retrieval/fusion/entropy selection', 'SGDS prototype classifier and MOS alignment']}
+starting task=0 classes=0..9
+SGDS strategy task=0 reuse=0 allocation=10 reuse_ratio=0.000 Eq6_self=true
+task=0 step=0 ce=0.1847 scc=-0.00000 total=0.1847 acc=0.958
+task=0 step=25 ce=0.0177 scc=-0.00000 total=0.0177 acc=1.000
+task=0 step=50 ce=0.0770 scc=-0.00000 total=0.0770 acc=0.979
+task=0 step=75 ce=0.0550 scc=-0.00000 total=0.0550 acc=0.979
+task=0 step=100 ce=0.0341 scc=-0.00000 total=0.0341 acc=0.979
+task=0 step=125 ce=0.0273 scc=-0.00000 total=0.0273 acc=0.979
+task=0 step=150 ce=0.0031 scc=-0.00000 total=0.0031 acc=1.000
+task=0 step=175 ce=0.0056 scc=-0.00000 total=0.0056 acc=1.000
+task=0 step=200 ce=0.0379 scc=-0.00000 total=0.0379 acc=0.958
+task=0 step=225 ce=0.0085 scc=-0.00000 total=0.0085 acc=1.000
+task=0 step=250 ce=0.0286 scc=-0.00000 total=0.0286 acc=0.979
+task=0 step=275 ce=0.0021 scc=-0.00000 total=0.0021 acc=1.000
+task=0 step=300 ce=0.0055 scc=-0.00000 total=0.0055 acc=1.000
+task=0 step=325 ce=0.0041 scc=-0.00000 total=0.0041 acc=1.000
+task=0 step=350 ce=0.0018 scc=-0.00000 total=0.0018 acc=1.000
+task=0 step=375 ce=0.0023 scc=-0.00000 total=0.0023 acc=1.000
+task=0 step=400 ce=0.0023 scc=-0.00000 total=0.0023 acc=1.000
+task=0 step=425 ce=0.0031 scc=-0.00000 total=0.0031 acc=1.000
+task=0 step=450 ce=0.0038 scc=-0.00000 total=0.0038 acc=1.000
+task=0 step=475 ce=0.0022 scc=-0.00000 total=0.0022 acc=1.000
+task=0 step=500 ce=0.0026 scc=-0.00000 total=0.0026 acc=1.000
+task=0 step=525 ce=0.0242 scc=-0.00000 total=0.0242 acc=0.979
+task=0 step=550 ce=0.0026 scc=-0.00000 total=0.0026 acc=1.000
+task=0 step=575 ce=0.0008 scc=-0.00000 total=0.0008 acc=1.000
+task=0 step=600 ce=0.0093 scc=-0.00000 total=0.0093 acc=1.000
+task=0 step=625 ce=0.0014 scc=-0.00000 total=0.0014 acc=1.000
+task=0 step=650 ce=0.0013 scc=-0.00000 total=0.0013 acc=1.000
+task=0 step=675 ce=0.0032 scc=-0.00000 total=0.0032 acc=1.000
+task=0 step=700 ce=0.0011 scc=-0.00000 total=0.0011 acc=1.000
+task=0 step=725 ce=0.0038 scc=-0.00000 total=0.0038 acc=1.000
+task=0 step=750 ce=0.0010 scc=-0.00000 total=0.0010 acc=1.000
+task=0 step=775 ce=0.0016 scc=-0.00000 total=0.0016 acc=1.000
+task=0 step=800 ce=0.0018 scc=-0.00000 total=0.0018 acc=1.000
+task=0 step=825 ce=0.0021 scc=-0.00000 total=0.0021 acc=1.000
+task=0 step=850 ce=0.0017 scc=-0.00000 total=0.0017 acc=1.000
+task=0 step=875 ce=0.0015 scc=-0.00000 total=0.0015 acc=1.000
+task=0 step=900 ce=0.0008 scc=-0.00000 total=0.0008 acc=1.000
+task=0 step=925 ce=0.0041 scc=-0.00000 total=0.0041 acc=1.000
+task=0 step=950 ce=0.0017 scc=-0.00000 total=0.0017 acc=1.000
+task=0 step=975 ce=0.0013 scc=-0.00000 total=0.0013 acc=1.000
+task=0 step=1000 ce=0.0006 scc=-0.00000 total=0.0006 acc=1.000
+task=0 step=1025 ce=0.0009 scc=-0.00000 total=0.0009 acc=1.000
+SGDS activation task=0 target_layer=11 actual_nonzero=0.5947 actual_zero=0.4053 mean_active=456.7 r99_mean=313.9
+finished task=0 seen=0.9940 old=nan new=0.9940 forget=0.0000 CA_delta=+0.0000 peak=3.00GB
+starting task=1 classes=10..19
+SGDS strategy task=1 reuse=1 allocation=9 reuse_ratio=0.100 Eq6_self=true
+task=1 step=0 ce=0.1791 scc=0.00011 total=0.1793 acc=0.938
+task=1 step=25 ce=0.1140 scc=0.00568 total=0.1254 acc=0.958
+task=1 step=50 ce=0.0573 scc=0.00791 total=0.0731 acc=0.979
+task=1 step=75 ce=0.0635 scc=0.00510 total=0.0737 acc=0.979
+task=1 step=100 ce=0.0193 scc=0.00591 total=0.0311 acc=1.000
+task=1 step=125 ce=0.0199 scc=0.00464 total=0.0292 acc=1.000
+task=1 step=150 ce=0.0122 scc=0.00708 total=0.0263 acc=1.000
+task=1 step=175 ce=0.0275 scc=0.00558 total=0.0387 acc=1.000
+task=1 step=200 ce=0.0560 scc=0.00623 total=0.0685 acc=0.979
+task=1 step=225 ce=0.0163 scc=0.00354 total=0.0234 acc=1.000
+task=1 step=250 ce=0.0117 scc=0.00324 total=0.0182 acc=1.000
+task=1 step=275 ce=0.0066 scc=0.00549 total=0.0176 acc=1.000
+task=1 step=300 ce=0.0483 scc=0.00393 total=0.0561 acc=0.979
+task=1 step=325 ce=0.0028 scc=0.00489 total=0.0126 acc=1.000
+task=1 step=350 ce=0.0095 scc=0.00263 total=0.0148 acc=1.000
+task=1 step=375 ce=0.0514 scc=0.00372 total=0.0589 acc=0.979
+task=1 step=400 ce=0.0044 scc=0.00409 total=0.0126 acc=1.000
+task=1 step=425 ce=0.0260 scc=0.00873 total=0.0435 acc=0.979
+task=1 step=450 ce=0.0198 scc=0.00349 total=0.0267 acc=1.000
+task=1 step=475 ce=0.0106 scc=0.00428 total=0.0192 acc=1.000
+task=1 step=500 ce=0.0054 scc=0.00596 total=0.0174 acc=1.000
+task=1 step=525 ce=0.0025 scc=0.00448 total=0.0114 acc=1.000
+task=1 step=550 ce=0.0216 scc=0.00257 total=0.0267 acc=1.000
+task=1 step=575 ce=0.0060 scc=0.00262 total=0.0112 acc=1.000
+task=1 step=600 ce=0.0059 scc=0.00311 total=0.0121 acc=1.000
+task=1 step=625 ce=0.0066 scc=0.00365 total=0.0139 acc=1.000
+task=1 step=650 ce=0.0231 scc=0.00331 total=0.0297 acc=1.000
+task=1 step=675 ce=0.0215 scc=0.00248 total=0.0265 acc=1.000
+task=1 step=700 ce=0.0040 scc=0.00344 total=0.0109 acc=1.000
+task=1 step=725 ce=0.0021 scc=0.00219 total=0.0065 acc=1.000
+task=1 step=750 ce=0.0079 scc=0.00432 total=0.0165 acc=1.000
+task=1 step=775 ce=0.0107 scc=0.00590 total=0.0225 acc=1.000
+task=1 step=800 ce=0.0172 scc=0.00423 total=0.0257 acc=1.000
+task=1 step=825 ce=0.0134 scc=0.00304 total=0.0195 acc=1.000
+task=1 step=850 ce=0.0080 scc=0.00357 total=0.0151 acc=1.000
+task=1 step=875 ce=0.0147 scc=0.00438 total=0.0235 acc=1.000
+task=1 step=900 ce=0.0309 scc=0.00332 total=0.0376 acc=1.000
+task=1 step=925 ce=0.0070 scc=0.00339 total=0.0137 acc=1.000
+task=1 step=950 ce=0.0021 scc=0.00319 total=0.0085 acc=1.000
+task=1 step=975 ce=0.0265 scc=0.00289 total=0.0323 acc=1.000
+task=1 step=1000 ce=0.0494 scc=0.00465 total=0.0587 acc=0.979
+task=1 step=1025 ce=0.0081 scc=0.00352 total=0.0151 acc=1.000
+SGDS activation task=1 target_layer=11 actual_nonzero=0.5841 actual_zero=0.4159 mean_active=448.6 r99_mean=322.5
+CA task=1 epoch=1/5 loss=0.1933 synthetic_acc=0.949
+CA task=1 epoch=2/5 loss=0.0349 synthetic_acc=0.996
+CA task=1 epoch=3/5 loss=0.0284 synthetic_acc=0.998
+CA task=1 epoch=4/5 loss=0.0216 synthetic_acc=1.000
+CA task=1 epoch=5/5 loss=0.0209 synthetic_acc=1.000
+finished task=1 seen=0.9815 old=0.9870 new=0.9760 forget=0.0070 CA_delta=+0.0775 peak=3.36GB
+starting task=2 classes=20..29
+SGDS strategy task=2 reuse=10 allocation=0 reuse_ratio=1.000 Eq6_self=true
+task=2 step=0 ce=0.0024 scc=0.00036 total=0.0031 acc=1.000
+task=2 step=25 ce=0.0072 scc=0.00221 total=0.0116 acc=1.000
+task=2 step=50 ce=0.0012 scc=0.00242 total=0.0060 acc=1.000
+task=2 step=75 ce=0.0359 scc=0.00373 total=0.0433 acc=0.979
+task=2 step=100 ce=0.0044 scc=0.00329 total=0.0110 acc=1.000
+task=2 step=125 ce=0.0171 scc=0.00248 total=0.0220 acc=1.000
+task=2 step=150 ce=0.0193 scc=0.00297 total=0.0253 acc=1.000
+task=2 step=175 ce=0.0353 scc=0.00286 total=0.0410 acc=1.000
+task=2 step=200 ce=0.0336 scc=0.00268 total=0.0390 acc=0.979
+task=2 step=225 ce=0.0068 scc=0.00407 total=0.0150 acc=1.000
+task=2 step=250 ce=0.0023 scc=0.00243 total=0.0071 acc=1.000
+task=2 step=275 ce=0.0022 scc=0.00138 total=0.0050 acc=1.000
+task=2 step=300 ce=0.0012 scc=0.00152 total=0.0043 acc=1.000
+task=2 step=325 ce=0.0030 scc=0.00193 total=0.0068 acc=1.000
+task=2 step=350 ce=0.0074 scc=0.00148 total=0.0103 acc=1.000
+task=2 step=375 ce=0.0019 scc=0.00172 total=0.0053 acc=1.000
+task=2 step=400 ce=0.0033 scc=0.00131 total=0.0059 acc=1.000
+task=2 step=425 ce=0.0036 scc=0.00165 total=0.0069 acc=1.000
+task=2 step=450 ce=0.0023 scc=0.00130 total=0.0049 acc=1.000
+task=2 step=475 ce=0.0016 scc=0.00116 total=0.0039 acc=1.000
+task=2 step=500 ce=0.0020 scc=0.00128 total=0.0045 acc=1.000
+task=2 step=525 ce=0.0058 scc=0.00178 total=0.0094 acc=1.000
+task=2 step=550 ce=0.0031 scc=0.00116 total=0.0054 acc=1.000
+task=2 step=575 ce=0.0012 scc=0.00128 total=0.0038 acc=1.000
+task=2 step=600 ce=0.0009 scc=0.00124 total=0.0034 acc=1.000
+task=2 step=625 ce=0.0057 scc=0.00129 total=0.0083 acc=1.000
+task=2 step=650 ce=0.0041 scc=0.00127 total=0.0066 acc=1.000
+task=2 step=675 ce=0.0023 scc=0.00098 total=0.0043 acc=1.000
+task=2 step=700 ce=0.0016 scc=0.00154 total=0.0046 acc=1.000
+task=2 step=725 ce=0.0041 scc=0.00083 total=0.0057 acc=1.000
+task=2 step=750 ce=0.0020 scc=0.00197 total=0.0059 acc=1.000
+task=2 step=775 ce=0.0060 scc=0.00156 total=0.0092 acc=1.000
+task=2 step=800 ce=0.0022 scc=0.00127 total=0.0047 acc=1.000
+task=2 step=825 ce=0.0047 scc=0.00104 total=0.0068 acc=1.000
+task=2 step=850 ce=0.0020 scc=0.00102 total=0.0040 acc=1.000
+task=2 step=875 ce=0.0029 scc=0.00140 total=0.0057 acc=1.000
+task=2 step=900 ce=0.0017 scc=0.00106 total=0.0038 acc=1.000
+task=2 step=925 ce=0.0026 scc=0.00108 total=0.0048 acc=1.000
+task=2 step=950 ce=0.0006 scc=0.00084 total=0.0023 acc=1.000
+task=2 step=975 ce=0.0058 scc=0.00211 total=0.0101 acc=1.000
+task=2 step=1000 ce=0.0018 scc=0.00080 total=0.0034 acc=1.000
+task=2 step=1025 ce=0.0019 scc=0.00110 total=0.0041 acc=1.000
+SGDS activation task=2 target_layer=11 actual_nonzero=0.5242 actual_zero=0.4758 mean_active=402.5 r99_mean=311.9
+CA task=2 epoch=1/5 loss=0.3139 synthetic_acc=0.921
+CA task=2 epoch=2/5 loss=0.0574 synthetic_acc=0.993
+CA task=2 epoch=3/5 loss=0.0476 synthetic_acc=0.995
+CA task=2 epoch=4/5 loss=0.0439 synthetic_acc=0.996
+CA task=2 epoch=5/5 loss=0.0443 synthetic_acc=0.994
+finished task=2 seen=0.9690 old=0.9625 new=0.9820 forget=0.0225 CA_delta=+0.1640 peak=3.36GB
+starting task=3 classes=30..39
+SGDS strategy task=3 reuse=10 allocation=0 reuse_ratio=1.000 Eq6_self=true
+task=3 step=0 ce=0.2318 scc=0.00084 total=0.2335 acc=0.938
+task=3 step=25 ce=0.1198 scc=0.00935 total=0.1385 acc=0.938
+task=3 step=50 ce=0.0491 scc=0.00678 total=0.0627 acc=0.979
+task=3 step=75 ce=0.0673 scc=0.00704 total=0.0814 acc=0.979
+task=3 step=100 ce=0.1369 scc=0.01088 total=0.1587 acc=0.938
+task=3 step=125 ce=0.0165 scc=0.00868 total=0.0338 acc=1.000
+task=3 step=150 ce=0.0311 scc=0.00758 total=0.0463 acc=0.979
+task=3 step=175 ce=0.0593 scc=0.00719 total=0.0736 acc=0.979
+task=3 step=200 ce=0.0340 scc=0.00510 total=0.0442 acc=1.000
+task=3 step=225 ce=0.0404 scc=0.00610 total=0.0526 acc=0.979
+task=3 step=250 ce=0.0471 scc=0.00562 total=0.0584 acc=0.979
+task=3 step=275 ce=0.0277 scc=0.00532 total=0.0383 acc=1.000
+task=3 step=300 ce=0.0466 scc=0.00590 total=0.0584 acc=1.000
+task=3 step=325 ce=0.0485 scc=0.00726 total=0.0630 acc=0.979
+task=3 step=350 ce=0.0151 scc=0.00548 total=0.0261 acc=1.000
+task=3 step=375 ce=0.0327 scc=0.00610 total=0.0449 acc=1.000
+task=3 step=400 ce=0.0157 scc=0.00624 total=0.0281 acc=1.000
+task=3 step=425 ce=0.0319 scc=0.00501 total=0.0419 acc=0.979
+task=3 step=450 ce=0.0357 scc=0.00661 total=0.0489 acc=1.000
+task=3 step=475 ce=0.0311 scc=0.00424 total=0.0396 acc=1.000
+task=3 step=500 ce=0.0212 scc=0.00711 total=0.0354 acc=1.000
+task=3 step=525 ce=0.0187 scc=0.00394 total=0.0266 acc=1.000
+task=3 step=550 ce=0.0115 scc=0.00544 total=0.0223 acc=1.000
+task=3 step=575 ce=0.0087 scc=0.00418 total=0.0170 acc=1.000
+task=3 step=600 ce=0.0138 scc=0.00423 total=0.0222 acc=1.000
+task=3 step=625 ce=0.0081 scc=0.00436 total=0.0168 acc=1.000
+task=3 step=650 ce=0.0251 scc=0.00403 total=0.0332 acc=1.000
+task=3 step=675 ce=0.0174 scc=0.00598 total=0.0294 acc=1.000
+task=3 step=700 ce=0.1333 scc=0.00361 total=0.1405 acc=0.979
+task=3 step=725 ce=0.0391 scc=0.00702 total=0.0532 acc=0.979
+task=3 step=750 ce=0.0229 scc=0.00369 total=0.0303 acc=1.000
+task=3 step=775 ce=0.0037 scc=0.00351 total=0.0107 acc=1.000
+task=3 step=800 ce=0.0175 scc=0.00361 total=0.0247 acc=1.000
+task=3 step=825 ce=0.0311 scc=0.00628 total=0.0437 acc=1.000
+task=3 step=850 ce=0.0450 scc=0.00478 total=0.0546 acc=1.000
+task=3 step=875 ce=0.0075 scc=0.00296 total=0.0134 acc=1.000
+task=3 step=900 ce=0.0145 scc=0.00385 total=0.0222 acc=1.000
+task=3 step=925 ce=0.0075 scc=0.00409 total=0.0157 acc=1.000
+task=3 step=950 ce=0.0207 scc=0.00355 total=0.0278 acc=1.000
+task=3 step=975 ce=0.0115 scc=0.00446 total=0.0204 acc=1.000
+task=3 step=1000 ce=0.0099 scc=0.00294 total=0.0158 acc=1.000
+task=3 step=1025 ce=0.0257 scc=0.00407 total=0.0338 acc=1.000
+SGDS activation task=3 target_layer=11 actual_nonzero=0.5443 actual_zero=0.4557 mean_active=418.0 r99_mean=310.0
+CA task=3 epoch=1/5 loss=0.2949 synthetic_acc=0.929
+CA task=3 epoch=2/5 loss=0.0903 synthetic_acc=0.991
+CA task=3 epoch=3/5 loss=0.0833 synthetic_acc=0.993
+CA task=3 epoch=4/5 loss=0.0801 synthetic_acc=0.992
+CA task=3 epoch=5/5 loss=0.0772 synthetic_acc=0.994
+finished task=3 seen=0.9590 old=0.9580 new=0.9620 forget=0.0260 CA_delta=+0.1580 peak=3.36GB
+starting task=4 classes=40..49
+SGDS strategy task=4 reuse=10 allocation=0 reuse_ratio=1.000 Eq6_self=true
+task=4 step=0 ce=0.0274 scc=0.00155 total=0.0305 acc=1.000
+task=4 step=25 ce=0.0166 scc=0.00455 total=0.0257 acc=1.000
+task=4 step=50 ce=0.0096 scc=0.00688 total=0.0234 acc=1.000
+task=4 step=75 ce=0.0600 scc=0.00693 total=0.0739 acc=0.958
+task=4 step=100 ce=0.0621 scc=0.00716 total=0.0764 acc=0.979
+task=4 step=125 ce=0.0103 scc=0.00622 total=0.0227 acc=1.000
+task=4 step=150 ce=0.0443 scc=0.00390 total=0.0521 acc=1.000
+task=4 step=175 ce=0.0458 scc=0.00319 total=0.0522 acc=0.979
+task=4 step=200 ce=0.0199 scc=0.00371 total=0.0273 acc=1.000
+task=4 step=225 ce=0.0117 scc=0.00569 total=0.0230 acc=1.000
+task=4 step=250 ce=0.0427 scc=0.00440 total=0.0515 acc=0.979
+task=4 step=275 ce=0.0059 scc=0.00353 total=0.0129 acc=1.000
+task=4 step=300 ce=0.0120 scc=0.00371 total=0.0194 acc=1.000
+task=4 step=325 ce=0.0592 scc=0.00602 total=0.0712 acc=0.979
+task=4 step=350 ce=0.0124 scc=0.00323 total=0.0189 acc=1.000
+task=4 step=375 ce=0.0059 scc=0.00253 total=0.0110 acc=1.000
+task=4 step=400 ce=0.0107 scc=0.00428 total=0.0193 acc=1.000
+task=4 step=425 ce=0.0444 scc=0.00548 total=0.0554 acc=0.979
+task=4 step=450 ce=0.0050 scc=0.00264 total=0.0103 acc=1.000
+task=4 step=475 ce=0.0106 scc=0.00325 total=0.0171 acc=1.000
+task=4 step=500 ce=0.0065 scc=0.00330 total=0.0131 acc=1.000
+task=4 step=525 ce=0.0055 scc=0.00237 total=0.0102 acc=1.000
+task=4 step=550 ce=0.0066 scc=0.00306 total=0.0127 acc=1.000
+task=4 step=575 ce=0.0119 scc=0.00338 total=0.0187 acc=1.000
+task=4 step=600 ce=0.0058 scc=0.00288 total=0.0115 acc=1.000
+task=4 step=625 ce=0.0036 scc=0.00284 total=0.0092 acc=1.000
+task=4 step=650 ce=0.0046 scc=0.00182 total=0.0082 acc=1.000
+task=4 step=675 ce=0.0117 scc=0.00235 total=0.0164 acc=1.000
+task=4 step=700 ce=0.0055 scc=0.00197 total=0.0094 acc=1.000
+task=4 step=725 ce=0.0075 scc=0.00231 total=0.0121 acc=1.000
+task=4 step=750 ce=0.0063 scc=0.00242 total=0.0111 acc=1.000
+task=4 step=775 ce=0.0047 scc=0.00193 total=0.0086 acc=1.000
+task=4 step=800 ce=0.0100 scc=0.00283 total=0.0157 acc=1.000
+task=4 step=825 ce=0.0065 scc=0.00196 total=0.0104 acc=1.000
+task=4 step=850 ce=0.0104 scc=0.00252 total=0.0154 acc=1.000
+task=4 step=875 ce=0.0189 scc=0.00283 total=0.0246 acc=1.000
+task=4 step=900 ce=0.0195 scc=0.00201 total=0.0235 acc=1.000
+task=4 step=925 ce=0.0036 scc=0.00189 total=0.0074 acc=1.000
+task=4 step=950 ce=0.0133 scc=0.00205 total=0.0174 acc=1.000
+task=4 step=975 ce=0.0057 scc=0.00200 total=0.0097 acc=1.000
+task=4 step=1000 ce=0.0045 scc=0.00179 total=0.0081 acc=1.000
+task=4 step=1025 ce=0.0152 scc=0.00295 total=0.0211 acc=1.000
+SGDS activation task=4 target_layer=11 actual_nonzero=0.5563 actual_zero=0.4437 mean_active=427.2 r99_mean=294.5
+CA task=4 epoch=1/5 loss=0.3716 synthetic_acc=0.913
+CA task=4 epoch=2/5 loss=0.1350 synthetic_acc=0.984
+CA task=4 epoch=3/5 loss=0.1245 synthetic_acc=0.987
+CA task=4 epoch=4/5 loss=0.1198 synthetic_acc=0.988
+CA task=4 epoch=5/5 loss=0.1199 synthetic_acc=0.990
+finished task=4 seen=0.9426 old=0.9397 new=0.9540 forget=0.0388 CA_delta=+0.2150 peak=3.36GB
+starting task=5 classes=50..59
+SGDS strategy task=5 reuse=10 allocation=0 reuse_ratio=1.000 Eq6_self=true
+task=5 step=0 ce=0.0850 scc=0.00457 total=0.0941 acc=0.979
+task=5 step=25 ce=0.0241 scc=0.00612 total=0.0364 acc=1.000
+task=5 step=50 ce=0.1185 scc=0.00994 total=0.1384 acc=0.917
+task=5 step=75 ce=0.0891 scc=0.01060 total=0.1103 acc=0.979
+task=5 step=100 ce=0.0585 scc=0.00782 total=0.0741 acc=0.979
+task=5 step=125 ce=0.0714 scc=0.01278 total=0.0969 acc=0.979
+task=5 step=150 ce=0.0189 scc=0.00747 total=0.0338 acc=1.000
+task=5 step=175 ce=0.0490 scc=0.00808 total=0.0652 acc=0.979
+task=5 step=200 ce=0.0384 scc=0.01087 total=0.0601 acc=0.979
+task=5 step=225 ce=0.0176 scc=0.00518 total=0.0280 acc=1.000
+task=5 step=250 ce=0.0098 scc=0.00933 total=0.0285 acc=1.000
+task=5 step=275 ce=0.0550 scc=0.01032 total=0.0756 acc=0.979
+task=5 step=300 ce=0.0357 scc=0.00742 total=0.0506 acc=1.000
+task=5 step=325 ce=0.0200 scc=0.00796 total=0.0359 acc=1.000
+task=5 step=350 ce=0.0419 scc=0.00939 total=0.0606 acc=0.979
+task=5 step=375 ce=0.0280 scc=0.00654 total=0.0411 acc=1.000
+task=5 step=400 ce=0.0227 scc=0.00577 total=0.0343 acc=1.000
+task=5 step=425 ce=0.0162 scc=0.00538 total=0.0269 acc=1.000
+task=5 step=450 ce=0.0274 scc=0.00451 total=0.0364 acc=1.000
+task=5 step=475 ce=0.0527 scc=0.00678 total=0.0663 acc=0.979
+task=5 step=500 ce=0.0148 scc=0.00499 total=0.0248 acc=1.000
+task=5 step=525 ce=0.0193 scc=0.00375 total=0.0268 acc=1.000
+task=5 step=550 ce=0.0092 scc=0.00402 total=0.0172 acc=1.000
+task=5 step=575 ce=0.0458 scc=0.00652 total=0.0588 acc=0.979
+task=5 step=600 ce=0.0534 scc=0.00505 total=0.0635 acc=0.979
+task=5 step=625 ce=0.0337 scc=0.00488 total=0.0435 acc=0.979
+task=5 step=650 ce=0.0102 scc=0.00514 total=0.0205 acc=1.000
+task=5 step=675 ce=0.0130 scc=0.00803 total=0.0290 acc=1.000
+task=5 step=700 ce=0.0042 scc=0.00431 total=0.0129 acc=1.000
+task=5 step=725 ce=0.0079 scc=0.00438 total=0.0167 acc=1.000
+task=5 step=750 ce=0.0089 scc=0.00389 total=0.0167 acc=1.000
+task=5 step=775 ce=0.0183 scc=0.00347 total=0.0252 acc=1.000
+task=5 step=800 ce=0.0312 scc=0.00461 total=0.0404 acc=1.000
+task=5 step=825 ce=0.0302 scc=0.00563 total=0.0415 acc=1.000
+task=5 step=850 ce=0.0221 scc=0.00382 total=0.0298 acc=1.000
+task=5 step=875 ce=0.0074 scc=0.00446 total=0.0164 acc=1.000
+task=5 step=900 ce=0.0142 scc=0.00402 total=0.0223 acc=1.000
+task=5 step=925 ce=0.0050 scc=0.00283 total=0.0107 acc=1.000
+task=5 step=950 ce=0.0055 scc=0.00469 total=0.0148 acc=1.000
+task=5 step=975 ce=0.0070 scc=0.00316 total=0.0133 acc=1.000
+task=5 step=1000 ce=0.0107 scc=0.00348 total=0.0177 acc=1.000
+task=5 step=1025 ce=0.0304 scc=0.00450 total=0.0394 acc=0.979
+SGDS activation task=5 target_layer=11 actual_nonzero=0.5638 actual_zero=0.4362 mean_active=433.0 r99_mean=288.2
+CA task=5 epoch=1/5 loss=0.3427 synthetic_acc=0.930
+CA task=5 epoch=2/5 loss=0.1674 synthetic_acc=0.985
+CA task=5 epoch=3/5 loss=0.1659 synthetic_acc=0.985
+CA task=5 epoch=4/5 loss=0.1613 synthetic_acc=0.983
+CA task=5 epoch=5/5 loss=0.1586 synthetic_acc=0.985
+finished task=5 seen=0.9357 old=0.9350 new=0.9390 forget=0.0386 CA_delta=+0.1950 peak=3.36GB
+starting task=6 classes=60..69
+SGDS strategy task=6 reuse=10 allocation=0 reuse_ratio=1.000 Eq6_self=true
+task=6 step=0 ce=0.0505 scc=0.00673 total=0.0639 acc=0.979
+task=6 step=25 ce=0.0650 scc=0.00432 total=0.0736 acc=0.979
+task=6 step=50 ce=0.0277 scc=0.00670 total=0.0412 acc=1.000
+task=6 step=75 ce=0.0983 scc=0.00695 total=0.1122 acc=0.958
+task=6 step=100 ce=0.0257 scc=0.00628 total=0.0382 acc=1.000
+task=6 step=125 ce=0.0105 scc=0.00481 total=0.0201 acc=1.000
+task=6 step=150 ce=0.0194 scc=0.00375 total=0.0269 acc=1.000
+task=6 step=175 ce=0.0677 scc=0.00371 total=0.0752 acc=0.979
+task=6 step=200 ce=0.0058 scc=0.00552 total=0.0168 acc=1.000
+task=6 step=225 ce=0.0108 scc=0.00392 total=0.0187 acc=1.000
+task=6 step=250 ce=0.0198 scc=0.00287 total=0.0255 acc=1.000
+task=6 step=275 ce=0.0138 scc=0.00313 total=0.0201 acc=1.000
+task=6 step=300 ce=0.0077 scc=0.00504 total=0.0178 acc=1.000
+task=6 step=325 ce=0.0055 scc=0.00379 total=0.0130 acc=1.000
+task=6 step=350 ce=0.0131 scc=0.00313 total=0.0194 acc=1.000
+task=6 step=375 ce=0.0081 scc=0.00343 total=0.0149 acc=1.000
+task=6 step=400 ce=0.0192 scc=0.00453 total=0.0282 acc=1.000
+task=6 step=425 ce=0.0264 scc=0.00340 total=0.0332 acc=1.000
+task=6 step=450 ce=0.0413 scc=0.00517 total=0.0516 acc=1.000
+task=6 step=475 ce=0.0145 scc=0.00339 total=0.0213 acc=1.000
+task=6 step=500 ce=0.0421 scc=0.00303 total=0.0482 acc=0.979
+task=6 step=525 ce=0.0104 scc=0.00305 total=0.0165 acc=1.000
+task=6 step=550 ce=0.0100 scc=0.00283 total=0.0156 acc=1.000
+task=6 step=575 ce=0.0077 scc=0.00302 total=0.0138 acc=1.000
+task=6 step=600 ce=0.0138 scc=0.00300 total=0.0198 acc=1.000
+task=6 step=625 ce=0.0204 scc=0.00387 total=0.0281 acc=1.000
+task=6 step=650 ce=0.0115 scc=0.00290 total=0.0173 acc=1.000
+task=6 step=675 ce=0.0242 scc=0.00310 total=0.0304 acc=1.000
+task=6 step=700 ce=0.0599 scc=0.00310 total=0.0661 acc=0.979
+task=6 step=725 ce=0.0094 scc=0.00240 total=0.0142 acc=1.000
+task=6 step=750 ce=0.0067 scc=0.00399 total=0.0147 acc=1.000
+task=6 step=775 ce=0.0223 scc=0.00292 total=0.0281 acc=1.000
+task=6 step=800 ce=0.0028 scc=0.00272 total=0.0082 acc=1.000
+task=6 step=825 ce=0.0047 scc=0.00230 total=0.0093 acc=1.000
+task=6 step=850 ce=0.0105 scc=0.00208 total=0.0146 acc=1.000
+task=6 step=875 ce=0.0150 scc=0.00352 total=0.0220 acc=1.000
+task=6 step=900 ce=0.0058 scc=0.00300 total=0.0118 acc=1.000
+task=6 step=925 ce=0.0068 scc=0.00225 total=0.0113 acc=1.000
+task=6 step=950 ce=0.0107 scc=0.00312 total=0.0170 acc=1.000
+task=6 step=975 ce=0.0124 scc=0.00252 total=0.0174 acc=1.000
+task=6 step=1000 ce=0.0051 scc=0.00213 total=0.0094 acc=1.000
+task=6 step=1025 ce=0.0101 scc=0.00255 total=0.0152 acc=1.000
+SGDS activation task=6 target_layer=11 actual_nonzero=0.5683 actual_zero=0.4317 mean_active=436.4 r99_mean=287.8
+CA task=6 epoch=1/5 loss=0.3419 synthetic_acc=0.936
+CA task=6 epoch=2/5 loss=0.1984 synthetic_acc=0.982
+CA task=6 epoch=3/5 loss=0.1890 synthetic_acc=0.985
+CA task=6 epoch=4/5 loss=0.1866 synthetic_acc=0.983
+CA task=6 epoch=5/5 loss=0.1927 synthetic_acc=0.982
+finished task=6 seen=0.9294 old=0.9250 new=0.9560 forget=0.0428 CA_delta=+0.1680 peak=3.36GB
+starting task=7 classes=70..79
+SGDS strategy task=7 reuse=10 allocation=0 reuse_ratio=1.000 Eq6_self=true
+task=7 step=0 ce=0.1777 scc=0.00839 total=0.1945 acc=0.979
+task=7 step=25 ce=0.0591 scc=0.00842 total=0.0760 acc=0.979
+task=7 step=50 ce=0.0990 scc=0.00936 total=0.1177 acc=0.958
+task=7 step=75 ce=0.0712 scc=0.00819 total=0.0876 acc=0.979
+task=7 step=100 ce=0.0910 scc=0.01091 total=0.1128 acc=0.938
+task=7 step=125 ce=0.0519 scc=0.00588 total=0.0637 acc=1.000
+task=7 step=150 ce=0.0250 scc=0.00831 total=0.0416 acc=1.000
+task=7 step=175 ce=0.0868 scc=0.00923 total=0.1053 acc=0.958
+task=7 step=200 ce=0.0665 scc=0.00601 total=0.0785 acc=0.958
+task=7 step=225 ce=0.0260 scc=0.00756 total=0.0411 acc=1.000
+task=7 step=250 ce=0.0449 scc=0.00543 total=0.0558 acc=0.979
+task=7 step=275 ce=0.0124 scc=0.00649 total=0.0253 acc=1.000
+task=7 step=300 ce=0.0872 scc=0.00608 total=0.0994 acc=0.958
+task=7 step=325 ce=0.0434 scc=0.00684 total=0.0571 acc=1.000
+task=7 step=350 ce=0.0192 scc=0.00536 total=0.0300 acc=1.000
+task=7 step=375 ce=0.0763 scc=0.00481 total=0.0859 acc=0.979
+task=7 step=400 ce=0.0843 scc=0.00439 total=0.0931 acc=0.979
+task=7 step=425 ce=0.0150 scc=0.00717 total=0.0293 acc=1.000
+task=7 step=450 ce=0.0274 scc=0.00680 total=0.0410 acc=1.000
+task=7 step=475 ce=0.0636 scc=0.00763 total=0.0788 acc=1.000
+task=7 step=500 ce=0.0334 scc=0.00860 total=0.0506 acc=0.979
+task=7 step=525 ce=0.0555 scc=0.00626 total=0.0681 acc=0.979
+task=7 step=550 ce=0.0230 scc=0.00608 total=0.0351 acc=1.000
+task=7 step=575 ce=0.0163 scc=0.00514 total=0.0266 acc=1.000
+task=7 step=600 ce=0.0263 scc=0.00332 total=0.0330 acc=1.000
+task=7 step=625 ce=0.0311 scc=0.00441 total=0.0399 acc=1.000
+task=7 step=650 ce=0.0195 scc=0.00534 total=0.0302 acc=1.000
+task=7 step=675 ce=0.0447 scc=0.00477 total=0.0543 acc=0.979
+task=7 step=700 ce=0.0363 scc=0.00446 total=0.0452 acc=1.000
+task=7 step=725 ce=0.0295 scc=0.00600 total=0.0415 acc=1.000
+task=7 step=750 ce=0.0194 scc=0.00511 total=0.0296 acc=1.000
+task=7 step=775 ce=0.0489 scc=0.00947 total=0.0678 acc=1.000
+task=7 step=800 ce=0.0174 scc=0.00556 total=0.0286 acc=1.000
+task=7 step=825 ce=0.0150 scc=0.00416 total=0.0233 acc=1.000
+task=7 step=850 ce=0.0321 scc=0.00443 total=0.0410 acc=1.000
+task=7 step=875 ce=0.0174 scc=0.00364 total=0.0246 acc=1.000
+task=7 step=900 ce=0.0200 scc=0.00402 total=0.0280 acc=1.000
+task=7 step=925 ce=0.0335 scc=0.00619 total=0.0459 acc=1.000
+task=7 step=950 ce=0.0616 scc=0.00617 total=0.0739 acc=0.979
+task=7 step=975 ce=0.0265 scc=0.00401 total=0.0345 acc=1.000
+task=7 step=1000 ce=0.0183 scc=0.00472 total=0.0278 acc=1.000
+task=7 step=1025 ce=0.0287 scc=0.01099 total=0.0507 acc=1.000
+SGDS activation task=7 target_layer=11 actual_nonzero=0.5736 actual_zero=0.4264 mean_active=440.5 r99_mean=285.5
+CA task=7 epoch=1/5 loss=0.4566 synthetic_acc=0.913
+CA task=7 epoch=2/5 loss=0.2867 synthetic_acc=0.972
+CA task=7 epoch=3/5 loss=0.2777 synthetic_acc=0.971
+CA task=7 epoch=4/5 loss=0.2735 synthetic_acc=0.973
+CA task=7 epoch=5/5 loss=0.2663 synthetic_acc=0.974
+finished task=7 seen=0.9075 old=0.9089 new=0.8980 forget=0.0573 CA_delta=+0.3057 peak=3.36GB
+starting task=8 classes=80..89
+SGDS strategy task=8 reuse=10 allocation=0 reuse_ratio=1.000 Eq6_self=true
+task=8 step=0 ce=0.2202 scc=0.02104 total=0.2623 acc=0.979
+task=8 step=25 ce=0.1238 scc=0.00792 total=0.1396 acc=0.979
+task=8 step=50 ce=0.0763 scc=0.00903 total=0.0943 acc=0.958
+task=8 step=75 ce=0.1465 scc=0.01217 total=0.1708 acc=0.938
+task=8 step=100 ce=0.1076 scc=0.01014 total=0.1278 acc=0.979
+task=8 step=125 ce=0.0424 scc=0.01210 total=0.0666 acc=1.000
+task=8 step=150 ce=0.0261 scc=0.01030 total=0.0467 acc=1.000
+task=8 step=175 ce=0.0578 scc=0.00840 total=0.0746 acc=1.000
+task=8 step=200 ce=0.0386 scc=0.00901 total=0.0566 acc=1.000
+task=8 step=225 ce=0.0629 scc=0.01012 total=0.0831 acc=0.979
+task=8 step=250 ce=0.0296 scc=0.00861 total=0.0468 acc=1.000
+task=8 step=275 ce=0.0185 scc=0.00681 total=0.0321 acc=1.000
+task=8 step=300 ce=0.0143 scc=0.00712 total=0.0285 acc=1.000
+task=8 step=325 ce=0.0204 scc=0.00766 total=0.0357 acc=1.000
+task=8 step=350 ce=0.0281 scc=0.00734 total=0.0428 acc=1.000
+task=8 step=375 ce=0.0092 scc=0.00727 total=0.0238 acc=1.000
+task=8 step=400 ce=0.0199 scc=0.00520 total=0.0303 acc=1.000
+task=8 step=425 ce=0.0303 scc=0.00752 total=0.0453 acc=1.000
+task=8 step=450 ce=0.0171 scc=0.00627 total=0.0296 acc=1.000
+task=8 step=475 ce=0.0310 scc=0.00533 total=0.0416 acc=1.000
+task=8 step=500 ce=0.0418 scc=0.00606 total=0.0539 acc=1.000
+task=8 step=525 ce=0.0323 scc=0.00534 total=0.0430 acc=0.979
+task=8 step=550 ce=0.0252 scc=0.00608 total=0.0374 acc=1.000
+task=8 step=575 ce=0.0067 scc=0.00459 total=0.0159 acc=1.000
+task=8 step=600 ce=0.0402 scc=0.00483 total=0.0498 acc=0.979
+task=8 step=625 ce=0.0232 scc=0.00586 total=0.0349 acc=1.000
+task=8 step=650 ce=0.0067 scc=0.00486 total=0.0165 acc=1.000
+task=8 step=675 ce=0.0086 scc=0.00578 total=0.0202 acc=1.000
+task=8 step=700 ce=0.0215 scc=0.00523 total=0.0320 acc=1.000
+task=8 step=725 ce=0.0127 scc=0.00602 total=0.0248 acc=1.000
+task=8 step=750 ce=0.0194 scc=0.00795 total=0.0353 acc=1.000
+task=8 step=775 ce=0.0223 scc=0.00475 total=0.0318 acc=1.000
+task=8 step=800 ce=0.0190 scc=0.00495 total=0.0289 acc=1.000
+task=8 step=825 ce=0.0338 scc=0.00491 total=0.0436 acc=0.979
+task=8 step=850 ce=0.0134 scc=0.00602 total=0.0255 acc=1.000
+task=8 step=875 ce=0.0145 scc=0.00475 total=0.0240 acc=1.000
+task=8 step=900 ce=0.0165 scc=0.00536 total=0.0273 acc=1.000
+task=8 step=925 ce=0.0566 scc=0.00378 total=0.0642 acc=0.979
+task=8 step=950 ce=0.0111 scc=0.00575 total=0.0226 acc=1.000
+task=8 step=975 ce=0.0166 scc=0.00585 total=0.0283 acc=1.000
+task=8 step=1000 ce=0.0098 scc=0.00455 total=0.0190 acc=1.000
+task=8 step=1025 ce=0.0199 scc=0.00634 total=0.0326 acc=1.000
+SGDS activation task=8 target_layer=11 actual_nonzero=0.5758 actual_zero=0.4242 mean_active=442.2 r99_mean=275.6
+CA task=8 epoch=1/5 loss=0.5007 synthetic_acc=0.921
+CA task=8 epoch=2/5 loss=0.3567 synthetic_acc=0.971
+CA task=8 epoch=3/5 loss=0.3486 synthetic_acc=0.973
+CA task=8 epoch=4/5 loss=0.3471 synthetic_acc=0.972
+CA task=8 epoch=5/5 loss=0.3470 synthetic_acc=0.973
+finished task=8 seen=0.9000 old=0.8945 new=0.9440 forget=0.0631 CA_delta=+0.3713 peak=3.37GB
+starting task=9 classes=90..99
+SGDS strategy task=9 reuse=10 allocation=0 reuse_ratio=1.000 Eq6_self=true
+task=9 step=0 ce=0.1395 scc=0.03252 total=0.2045 acc=1.000
+task=9 step=25 ce=0.0647 scc=0.01254 total=0.0897 acc=1.000
+task=9 step=50 ce=0.0400 scc=0.00914 total=0.0583 acc=1.000
+task=9 step=75 ce=0.0856 scc=0.01366 total=0.1129 acc=0.958
+task=9 step=100 ce=0.0854 scc=0.01143 total=0.1082 acc=0.958
+task=9 step=125 ce=0.0774 scc=0.01196 total=0.1013 acc=0.979
+task=9 step=150 ce=0.0395 scc=0.00993 total=0.0594 acc=1.000
+task=9 step=175 ce=0.0523 scc=0.01187 total=0.0761 acc=0.979
+task=9 step=200 ce=0.1071 scc=0.00704 total=0.1212 acc=0.958
+task=9 step=225 ce=0.0320 scc=0.00646 total=0.0449 acc=1.000
+task=9 step=250 ce=0.0830 scc=0.00841 total=0.0998 acc=0.979
+task=9 step=275 ce=0.0789 scc=0.01392 total=0.1067 acc=0.979
+task=9 step=300 ce=0.0136 scc=0.01267 total=0.0389 acc=1.000
+task=9 step=325 ce=0.0260 scc=0.00808 total=0.0421 acc=1.000
+task=9 step=350 ce=0.0215 scc=0.00752 total=0.0365 acc=1.000
+task=9 step=375 ce=0.0297 scc=0.00930 total=0.0483 acc=1.000
+task=9 step=400 ce=0.0334 scc=0.00898 total=0.0514 acc=1.000
+task=9 step=425 ce=0.0107 scc=0.00613 total=0.0230 acc=1.000
+task=9 step=450 ce=0.0412 scc=0.00710 total=0.0554 acc=1.000
+task=9 step=475 ce=0.0212 scc=0.00701 total=0.0352 acc=1.000
+task=9 step=500 ce=0.0531 scc=0.00782 total=0.0688 acc=0.979
+task=9 step=525 ce=0.0260 scc=0.00600 total=0.0379 acc=1.000
+task=9 step=550 ce=0.0128 scc=0.00577 total=0.0243 acc=1.000
+task=9 step=575 ce=0.0666 scc=0.00626 total=0.0791 acc=0.979
+task=9 step=600 ce=0.0102 scc=0.00450 total=0.0192 acc=1.000
+task=9 step=625 ce=0.0235 scc=0.00599 total=0.0355 acc=1.000
+task=9 step=650 ce=0.0472 scc=0.00790 total=0.0630 acc=0.979
+task=9 step=675 ce=0.0208 scc=0.00582 total=0.0324 acc=1.000
+task=9 step=700 ce=0.0688 scc=0.00556 total=0.0799 acc=0.979
+task=9 step=725 ce=0.0275 scc=0.00651 total=0.0405 acc=1.000
+task=9 step=750 ce=0.0235 scc=0.00535 total=0.0343 acc=1.000
+task=9 step=775 ce=0.0296 scc=0.00433 total=0.0382 acc=1.000
+task=9 step=800 ce=0.0428 scc=0.00543 total=0.0536 acc=0.979
+task=9 step=825 ce=0.0583 scc=0.00606 total=0.0704 acc=0.979
+task=9 step=850 ce=0.0600 scc=0.00571 total=0.0714 acc=0.958
+task=9 step=875 ce=0.0083 scc=0.00529 total=0.0189 acc=1.000
+task=9 step=900 ce=0.0187 scc=0.00476 total=0.0282 acc=1.000
+task=9 step=925 ce=0.0147 scc=0.00635 total=0.0274 acc=1.000
+task=9 step=950 ce=0.0434 scc=0.00407 total=0.0515 acc=1.000
+task=9 step=975 ce=0.0210 scc=0.00483 total=0.0307 acc=1.000
+task=9 step=1000 ce=0.0202 scc=0.00473 total=0.0297 acc=1.000
+task=9 step=1025 ce=0.0569 scc=0.00544 total=0.0677 acc=0.979
+SGDS activation task=9 target_layer=11 actual_nonzero=0.5789 actual_zero=0.4211 mean_active=444.6 r99_mean=267.1
+CA task=9 epoch=1/5 loss=0.5648 synthetic_acc=0.930
+CA task=9 epoch=2/5 loss=0.4279 synthetic_acc=0.971
+CA task=9 epoch=3/5 loss=0.4240 synthetic_acc=0.972
+CA task=9 epoch=4/5 loss=0.4168 synthetic_acc=0.973
+CA task=9 epoch=5/5 loss=0.4133 synthetic_acc=0.975
+finished task=9 seen=0.8933 old=0.8894 new=0.9280 forget=0.0669 CA_delta=+0.3678 peak=3.36GB
+run complete final_accuracy=0.8933
