@@ -1,0 +1,118 @@
+{
+  "experiment": "Cross-Task CA Reweighting Pilot",
+  "seed": 1993,
+  "physical_gpu": 4,
+  "created_utc": "2026-10-07T04:43:01.040060+00:00",
+  "protocol_order": [
+    "IA10",
+    "CAR10"
+  ],
+  "protocols": {
+    "IA10": {
+      "status": "complete",
+      "started_utc": "2026-10-07T04:43:02.204929+00:00",
+      "source_paths": {
+        "checkpoint": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/task_10.pt",
+        "sidecar": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/pre_ca_classifier/task_10.pt",
+        "training_config": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/resolved_config.json",
+        "protocol_manifest": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/protocol_manifest.json",
+        "class_order": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/class_order.json",
+        "task_summary": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_summary.csv",
+        "snapshot_manifest": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/IA10/Structure_AUDIT/seed_1993/task_checkpoints/manifest.json",
+        "feature_cache": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/ten_task_hypothesis_revalidation/IA10/.cache/model_10_on_task_10.npz",
+        "trajectory": "${RESEARCH_WORKSPACE}/error_trajectory_diagnostic/IA10/sample_trajectory.csv",
+        "trajectory_manifest": "${RESEARCH_WORKSPACE}/error_trajectory_diagnostic/run_manifest.json"
+      },
+      "source_sha256": {
+        "checkpoint": "fa0b5a20e3e07229e356cfcf576037c418abc5e8393d5d99a3dd47b6b347235c",
+        "sidecar": "6d660b9582be810d32e4fe241ce9cb620cd782179f42420041784f7053a881f9",
+        "training_config": "000e052c4388185714a556c33e71c3bec6f125d572ca61f24e85b1f4764a8890",
+        "protocol_manifest": "299bf492452001f91d237de6a7883eb03681de63758406a5fe11c9bbaf0a5f4e",
+        "class_order": "6befb5846bc3f428875da06bb716ad366fca6e71c3c05f57d3477cdf953c2c3d",
+        "task_summary": "0e9bc01be0e8583e0baa3942653d4848a4154bb3948c7bcc9b90b6d80dc2c6d3",
+        "snapshot_manifest": "3f5080c50ca54eb82e47c31884c5f33fdee33284c96a675f886913a686978d7f",
+        "feature_cache": "583298bdbbd7375727f66e95b17098e679337a2c638b22638125b9c39d4d72ff",
+        "trajectory": "5840aa869d70941b697eed4ac7bf869d056e7b02b8ee959e2d6b9d2df3ad144a",
+        "trajectory_manifest": "ccd3bed29fbba909ac4482d4cfee54b3040b5a47481b7dff3cc12ee8729d29dc"
+      },
+      "source_experiment_id": "Structure_AUDIT",
+      "source_training_git_commit": null,
+      "source_snapshot_hash_at_training": "ea63875fe9a103c250b6d2e926372a15c919a82b5304390e31f0bda06b1c7c3c",
+      "task_partition": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      "seed": 1993,
+      "bank_mode": "original_all_class_Gaussian_per_epoch",
+      "coefficients": {
+        "control": 1,
+        "intervention": 2
+      },
+      "test_used_for_selection": false,
+      "completed_utc": "2026-10-07T04:43:16.506031+00:00",
+      "summary_path": "${RESEARCH_WORKSPACE}/cross_task_ca_reweighting/IA10/summary.json"
+    },
+    "CAR10": {
+      "status": "complete",
+      "started_utc": "2026-10-07T04:43:17.654134+00:00",
+      "source_paths": {
+        "checkpoint": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/task_10.pt",
+        "sidecar": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/pre_ca_classifier/task_10.pt",
+        "training_config": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/resolved_config.json",
+        "protocol_manifest": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/protocol_manifest.json",
+        "class_order": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/class_order.json",
+        "task_summary": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_summary.csv",
+        "snapshot_manifest": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/task_checkpoints/manifest.json",
+        "feature_cache": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/ten_task_hypothesis_revalidation/CAR10/.cache/model_10_on_task_10.npz",
+        "trajectory": "${RESEARCH_WORKSPACE}/error_trajectory_diagnostic/CAR10/sample_trajectory.csv",
+        "trajectory_manifest": "${RESEARCH_WORKSPACE}/error_trajectory_diagnostic/run_manifest.json"
+      },
+      "source_sha256": {
+        "checkpoint": "623382eb9fb5a7f06c4512f57754e9bbf99e9814fd7136b2bf6463adbd37a142",
+        "sidecar": "cd00b0acfd9f9fc558c2a1f199fd776340d285ecea25a9ab647b2c060b0cfbd5",
+        "training_config": "27be7cbe033bdf5688ebe621b5c78ffb6ef75032c1fd66e16aada1887a52d4dd",
+        "protocol_manifest": "c66e9e9b07aa84825cd193692395f3e5e58e3c150be35bbc58ba6a59d7c912c0",
+        "class_order": "18c16ea49c25afe12204ee766c8a2f511df3e049040acb8b87db0931e9d164c0",
+        "task_summary": "58eb990edacb3181cc6d8791ba3df96d73cd5f93f28269f53403080c393f41ea",
+        "snapshot_manifest": "909f46faa0302dbf65c8b248ac46bdc683698e82739f04b9d1a9f2e1be923647",
+        "feature_cache": "58557fe308a67817eb66eeb01d39214d1dc50be83c07b06a397e5bba40636669",
+        "trajectory": "d25f1a558007ab07c7838fdef9b789b84983bffe77b18064c61703a2bd03a184",
+        "trajectory_manifest": "ccd3bed29fbba909ac4482d4cfee54b3040b5a47481b7dff3cc12ee8729d29dc"
+      },
+      "source_experiment_id": "Structure_AUDIT",
+      "source_training_git_commit": null,
+      "source_snapshot_hash_at_training": "ea63875fe9a103c250b6d2e926372a15c919a82b5304390e31f0bda06b1c7c3c",
+      "task_partition": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        19,
+        19,
+        19,
+        19
+      ],
+      "seed": 1993,
+      "bank_mode": "original_all_class_Gaussian_per_epoch",
+      "coefficients": {
+        "control": 1,
+        "intervention": 2
+      },
+      "test_used_for_selection": false,
+      "completed_utc": "2026-10-07T04:43:29.867230+00:00",
+      "summary_path": "${RESEARCH_WORKSPACE}/cross_task_ca_reweighting/CAR10/summary.json"
+    }
+  },
+  "single_fixed_coefficient": 2,
+  "full_method_ready": false
+}

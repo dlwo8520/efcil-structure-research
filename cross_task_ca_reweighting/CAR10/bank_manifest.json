@@ -1,0 +1,47 @@
+{
+  "bank_mode": "original_all_class_Gaussian_per_epoch",
+  "rng_source": "${RESEARCH_WORKSPACE}/structure_prototype_oracle_audit/training_outputs/CAR10/Structure_AUDIT/seed_1993/pre_ca_classifier/task_10.pt",
+  "note": "One bank was sampled per epoch and fed to both heads lockstep; bank hashes, not old feature exemplars, are persisted.",
+  "epochs": [
+    {
+      "epoch": 1,
+      "sample_n": 50176,
+      "features_sha256": "9ec44383dbdbf2c5eddbda1b98abab879ca571b90eb6bc10c13f9ce68b8054d6",
+      "labels_sha256": "b1dfb981740ce7f605410911ad2baa1d2ee990be7419bc09f624e67da5c2b52a",
+      "shared_by_branches": true,
+      "original_eval_loader_base_seed_draw": 977947981423331784
+    },
+    {
+      "epoch": 2,
+      "sample_n": 50176,
+      "features_sha256": "28e9e6eb9c450585918a0ee46eb792691d66e8f4225de43c7a83272fd6767382",
+      "labels_sha256": "cc0a8310360d7f326e0301a9749bbe3b10211ac173f0b1670505dcfeaee98d80",
+      "shared_by_branches": true,
+      "original_eval_loader_base_seed_draw": 1253071799551538722
+    },
+    {
+      "epoch": 3,
+      "sample_n": 50176,
+      "features_sha256": "cb92223383bf0bae062897986d10161fb75e29851dae878b5b175bbab6417cf8",
+      "labels_sha256": "fbbe75a36626cdde795def17cdb6b18510525abbce567ab2784e05cf89cb64ee",
+      "shared_by_branches": true,
+      "original_eval_loader_base_seed_draw": 7189676810948831443
+    },
+    {
+      "epoch": 4,
+      "sample_n": 50176,
+      "features_sha256": "9e454b925f1b5d93c19017d86969d3dfab4120558347636ecc3a2b2f862c361e",
+      "labels_sha256": "b67d0668f1437a31cf420f8124d149f5a03bb4dd81af5be6b87cc6acbeabb42b",
+      "shared_by_branches": true,
+      "original_eval_loader_base_seed_draw": 9134292361169686952
+    },
+    {
+      "epoch": 5,
+      "sample_n": 50176,
+      "features_sha256": "d7d4c93eb469a93c456aa716c6405e5f2f20f4e4ec3c7e24b19994d6d40077a5",
+      "labels_sha256": "780d1a5325128324c315ce4a4c0085636665a6e319c07b371c076e953c6111db",
+      "shared_by_branches": true,
+      "original_eval_loader_base_seed_draw": 5316979110310353050
+    }
+  ]
+}
