@@ -1,0 +1,4490 @@
+{
+  "kmeans": [],
+  "mixture_vs_class_moments": [
+    {
+      "class_id": 0,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 1,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 2,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 3,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 4,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 5,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 6,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 7,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 8,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 9,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 10,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 11,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 12,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 13,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 14,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 15,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 16,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 17,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 18,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 19,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 20,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 21,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 22,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 23,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 24,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 25,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 26,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 27,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 28,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 29,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 30,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 31,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 32,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 33,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 34,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 35,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 36,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 37,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 38,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 39,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 40,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 41,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 42,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 43,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 44,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 45,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 46,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 47,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 48,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 49,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 50,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 51,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 52,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 53,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 54,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 55,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 56,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 57,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 58,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 59,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 60,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 61,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 62,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 63,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 64,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 65,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 66,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 67,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 68,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 69,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 70,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 71,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 72,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 73,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 74,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 75,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 76,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 77,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 78,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 79,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 80,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 81,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 82,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 83,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 84,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 85,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 86,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 87,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 88,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 89,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 90,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 91,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 92,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 93,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 94,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 95,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 96,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 97,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 98,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 99,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 100,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 101,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 102,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 103,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 104,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 105,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 106,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 107,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 108,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 109,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 110,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 111,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 112,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 113,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 114,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 115,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 116,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 117,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 118,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 119,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 120,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 121,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 122,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 123,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 124,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 125,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 126,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 127,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 128,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 129,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 130,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 131,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 132,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 133,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 134,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 135,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 136,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 137,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 138,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 139,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 140,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 141,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 142,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 143,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 144,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 145,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 146,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 147,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 148,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 149,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 150,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 151,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 152,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 153,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 154,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 155,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 156,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 157,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 158,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    },
+    {
+      "class_id": 159,
+      "covariance_frobenius_difference": 0.0,
+      "covariance_relative_frobenius_difference": 0.0,
+      "mean_l2_difference": 0.0
+    }
+  ],
+  "multi_center": false,
+  "regions": [
+    {
+      "birth_task": 0,
+      "class_id": 0,
+      "component_id": 0,
+      "count": 11,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 10,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 897.553955078125,
+        "full": 9.091011047363281,
+        "isotropic": 944.4814453125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 1,
+      "component_id": 0,
+      "count": 12,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 11,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 809.7845458984375,
+        "full": 10.083605766296387,
+        "isotropic": 854.0969848632812
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 2,
+      "component_id": 0,
+      "count": 83,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 82,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1159.2177734375,
+        "full": 81.00843811035156,
+        "isotropic": 1243.99658203125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 3,
+      "component_id": 0,
+      "count": 54,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 53,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1228.859375,
+        "full": 52.017181396484375,
+        "isotropic": 1315.7315673828125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 4,
+      "component_id": 0,
+      "count": 10,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 9,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 774.560546875,
+        "full": 8.100752830505371,
+        "isotropic": 794.2628173828125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 5,
+      "component_id": 0,
+      "count": 16,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 15,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 911.9786376953125,
+        "full": 14.062716484069824,
+        "isotropic": 984.85400390625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 6,
+      "component_id": 0,
+      "count": 24,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 23,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 949.1409301757812,
+        "full": 22.041667938232422,
+        "isotropic": 1022.4979248046875
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 7,
+      "component_id": 0,
+      "count": 10,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 9,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 916.9279174804688,
+        "full": 8.10103988647461,
+        "isotropic": 961.3128662109375
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 8,
+      "component_id": 0,
+      "count": 52,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 51,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1227.90869140625,
+        "full": 50.01804733276367,
+        "isotropic": 1303.342041015625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 9,
+      "component_id": 0,
+      "count": 29,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 28,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1093.4188232421875,
+        "full": 27.03412437438965,
+        "isotropic": 1125.4422607421875
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 10,
+      "component_id": 0,
+      "count": 10,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 9,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 770.1607055664062,
+        "full": 8.100037574768066,
+        "isotropic": 825.962646484375
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 11,
+      "component_id": 0,
+      "count": 16,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 15,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1119.754150390625,
+        "full": 14.062705039978027,
+        "isotropic": 1167.781494140625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 12,
+      "component_id": 0,
+      "count": 76,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 75,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1426.9608154296875,
+        "full": 74.01004028320312,
+        "isotropic": 1458.949462890625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 13,
+      "component_id": 0,
+      "count": 18,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 17,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 922.1489868164062,
+        "full": 16.055517196655273,
+        "isotropic": 976.9916381835938
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 14,
+      "component_id": 0,
+      "count": 80,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 79,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1173.4212646484375,
+        "full": 78.00811767578125,
+        "isotropic": 1195.290771484375
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 15,
+      "component_id": 0,
+      "count": 83,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 82,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1265.6861572265625,
+        "full": 81.00714111328125,
+        "isotropic": 1345.3341064453125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 16,
+      "component_id": 0,
+      "count": 13,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 12,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 934.3081665039062,
+        "full": 11.077171325683594,
+        "isotropic": 966.1784057617188
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 17,
+      "component_id": 0,
+      "count": 74,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 73,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1305.1651611328125,
+        "full": 72.01042938232422,
+        "isotropic": 1343.8690185546875
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 18,
+      "component_id": 0,
+      "count": 16,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 15,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1017.8812255859375,
+        "full": 14.062793731689453,
+        "isotropic": 1067.8707275390625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 19,
+      "component_id": 0,
+      "count": 18,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 17,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 959.05859375,
+        "full": 16.055490493774414,
+        "isotropic": 1061.8038330078125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 20,
+      "component_id": 0,
+      "count": 50,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 49,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1072.177001953125,
+        "full": 48.019290924072266,
+        "isotropic": 1109.3955078125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 21,
+      "component_id": 0,
+      "count": 56,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 55,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1293.734130859375,
+        "full": 54.01638412475586,
+        "isotropic": 1294.5233154296875
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 22,
+      "component_id": 0,
+      "count": 36,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 35,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1023.4157104492188,
+        "full": 34.02732849121094,
+        "isotropic": 1066.767822265625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 23,
+      "component_id": 0,
+      "count": 43,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 42,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1105.2861328125,
+        "full": 41.02236557006836,
+        "isotropic": 1187.525390625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 24,
+      "component_id": 0,
+      "count": 16,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 15,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1027.3651123046875,
+        "full": 14.062667846679688,
+        "isotropic": 1106.39453125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 25,
+      "component_id": 0,
+      "count": 57,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 55,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1179.848876953125,
+        "full": 55.01665115356445,
+        "isotropic": 1270.8345947265625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 26,
+      "component_id": 0,
+      "count": 21,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 20,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 922.22119140625,
+        "full": 19.04825210571289,
+        "isotropic": 960.359130859375
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 27,
+      "component_id": 0,
+      "count": 61,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 60,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1178.9302978515625,
+        "full": 59.01459884643555,
+        "isotropic": 1212.6329345703125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 28,
+      "component_id": 0,
+      "count": 11,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 10,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 938.8069458007812,
+        "full": 9.090957641601562,
+        "isotropic": 1040.9775390625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 29,
+      "component_id": 0,
+      "count": 12,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 11,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 974.1951293945312,
+        "full": 10.083442687988281,
+        "isotropic": 1027.872802734375
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 30,
+      "component_id": 0,
+      "count": 6,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 5,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 705.5885620117188,
+        "full": 4.1668806076049805,
+        "isotropic": 739.7705688476562
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 31,
+      "component_id": 0,
+      "count": 62,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 61,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1388.6514892578125,
+        "full": 60.014244079589844,
+        "isotropic": 1464.102783203125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 32,
+      "component_id": 0,
+      "count": 50,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 49,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1367.2589111328125,
+        "full": 48.01886749267578,
+        "isotropic": 1398.6204833984375
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 33,
+      "component_id": 0,
+      "count": 86,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 85,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1203.6663818359375,
+        "full": 84.00735473632812,
+        "isotropic": 1279.107177734375
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 34,
+      "component_id": 0,
+      "count": 15,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 14,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 900.634765625,
+        "full": 13.066896438598633,
+        "isotropic": 996.2744750976562
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 35,
+      "component_id": 0,
+      "count": 26,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 25,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1031.729736328125,
+        "full": 24.038341522216797,
+        "isotropic": 1099.3292236328125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 36,
+      "component_id": 0,
+      "count": 47,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 46,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1139.6878662109375,
+        "full": 45.02079391479492,
+        "isotropic": 1185.685791015625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 37,
+      "component_id": 0,
+      "count": 17,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 16,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 919.87841796875,
+        "full": 15.058793067932129,
+        "isotropic": 978.7716674804688
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 38,
+      "component_id": 0,
+      "count": 13,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 12,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 969.478271484375,
+        "full": 11.077022552490234,
+        "isotropic": 1075.6229248046875
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 0,
+      "class_id": 39,
+      "component_id": 0,
+      "count": 81,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 80,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1326.5147705078125,
+        "full": 79.00840759277344,
+        "isotropic": 1369.7266845703125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 40,
+      "component_id": 0,
+      "count": 36,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 35,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 939.3764038085938,
+        "full": 34.027435302734375,
+        "isotropic": 990.1572265625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 41,
+      "component_id": 0,
+      "count": 38,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 37,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1285.498779296875,
+        "full": 36.02639389038086,
+        "isotropic": 1551.1192626953125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 42,
+      "component_id": 0,
+      "count": 22,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 21,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1137.9053955078125,
+        "full": 20.045454025268555,
+        "isotropic": 1248.9459228515625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 43,
+      "component_id": 0,
+      "count": 7,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 6,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 833.685546875,
+        "full": 5.143186092376709,
+        "isotropic": 950.34814453125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 44,
+      "component_id": 0,
+      "count": 8,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 7,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 974.2766723632812,
+        "full": 6.125229358673096,
+        "isotropic": 1085.9146728515625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 45,
+      "component_id": 0,
+      "count": 52,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 51,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1255.6485595703125,
+        "full": 50.01798629760742,
+        "isotropic": 1302.892822265625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 46,
+      "component_id": 0,
+      "count": 15,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 14,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 919.8516235351562,
+        "full": 13.067193984985352,
+        "isotropic": 952.0396118164062
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 47,
+      "component_id": 0,
+      "count": 80,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 79,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1200.9552001953125,
+        "full": 78.01006317138672,
+        "isotropic": 1279.74658203125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 48,
+      "component_id": 0,
+      "count": 4,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 3,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 591.172119140625,
+        "full": 2.2500600814819336,
+        "isotropic": 630.3734741210938
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 49,
+      "component_id": 0,
+      "count": 9,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 8,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 846.4906005859375,
+        "full": 7.111393451690674,
+        "isotropic": 948.51904296875
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 50,
+      "component_id": 0,
+      "count": 21,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 20,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 960.5740966796875,
+        "full": 19.047752380371094,
+        "isotropic": 952.6744384765625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 51,
+      "component_id": 0,
+      "count": 59,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 58,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1266.6326904296875,
+        "full": 57.0147819519043,
+        "isotropic": 1324.7674560546875
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 52,
+      "component_id": 0,
+      "count": 5,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 4,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 712.7650756835938,
+        "full": 3.20027756690979,
+        "isotropic": 783.6653442382812
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 53,
+      "component_id": 0,
+      "count": 5,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 4,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 687.7493896484375,
+        "full": 3.2002241611480713,
+        "isotropic": 735.7476806640625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 54,
+      "component_id": 0,
+      "count": 25,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 24,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 989.731689453125,
+        "full": 23.039926528930664,
+        "isotropic": 1022.2854614257812
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 55,
+      "component_id": 0,
+      "count": 61,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 60,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1033.943115234375,
+        "full": 59.014801025390625,
+        "isotropic": 1186.3121337890625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 56,
+      "component_id": 0,
+      "count": 13,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 12,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 991.6593017578125,
+        "full": 11.077103614807129,
+        "isotropic": 1042.088134765625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 57,
+      "component_id": 0,
+      "count": 17,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 16,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 869.5997924804688,
+        "full": 15.058778762817383,
+        "isotropic": 923.2805786132812
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 58,
+      "component_id": 0,
+      "count": 5,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 4,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 713.661376953125,
+        "full": 3.200087308883667,
+        "isotropic": 764.3024291992188
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 59,
+      "component_id": 0,
+      "count": 29,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 28,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1301.7708740234375,
+        "full": 27.034320831298828,
+        "isotropic": 1335.2628173828125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 60,
+      "component_id": 0,
+      "count": 55,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 54,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1100.9241943359375,
+        "full": 53.01729202270508,
+        "isotropic": 1126.1103515625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 61,
+      "component_id": 0,
+      "count": 20,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 19,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 907.4963989257812,
+        "full": 18.050251007080078,
+        "isotropic": 916.0814208984375
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 62,
+      "component_id": 0,
+      "count": 9,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 8,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 796.4298095703125,
+        "full": 7.111850261688232,
+        "isotropic": 854.2396850585938
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 63,
+      "component_id": 0,
+      "count": 77,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 76,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1283.220458984375,
+        "full": 75.01026916503906,
+        "isotropic": 1301.51318359375
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 64,
+      "component_id": 0,
+      "count": 20,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 19,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 932.46044921875,
+        "full": 18.050018310546875,
+        "isotropic": 935.4529418945312
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 65,
+      "component_id": 0,
+      "count": 77,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 76,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1110.66748046875,
+        "full": 75.01058197021484,
+        "isotropic": 1141.9720458984375
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 66,
+      "component_id": 0,
+      "count": 82,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 81,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1232.962646484375,
+        "full": 80.0086669921875,
+        "isotropic": 1201.903076171875
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 67,
+      "component_id": 0,
+      "count": 77,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 76,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1427.7037353515625,
+        "full": 75.01005554199219,
+        "isotropic": 1407.047119140625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 68,
+      "component_id": 0,
+      "count": 7,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 6,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 771.6665649414062,
+        "full": 5.14348030090332,
+        "isotropic": 806.0757446289062
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 69,
+      "component_id": 0,
+      "count": 12,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 11,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 916.0975341796875,
+        "full": 10.083504676818848,
+        "isotropic": 975.2178344726562
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 70,
+      "component_id": 0,
+      "count": 35,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 34,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 996.6788940429688,
+        "full": 33.028690338134766,
+        "isotropic": 1054.7344970703125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 71,
+      "component_id": 0,
+      "count": 50,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 49,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1211.5794677734375,
+        "full": 48.01927185058594,
+        "isotropic": 1279.4166259765625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 72,
+      "component_id": 0,
+      "count": 22,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 21,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1193.90185546875,
+        "full": 20.04531478881836,
+        "isotropic": 1229.22265625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 73,
+      "component_id": 0,
+      "count": 79,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 78,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1099.624755859375,
+        "full": 77.00960540771484,
+        "isotropic": 1150.309814453125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 74,
+      "component_id": 0,
+      "count": 6,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 5,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 774.2453002929688,
+        "full": 4.167294979095459,
+        "isotropic": 828.2568359375
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 75,
+      "component_id": 0,
+      "count": 62,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 61,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1172.6416015625,
+        "full": 60.01435089111328,
+        "isotropic": 1352.1934814453125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 76,
+      "component_id": 0,
+      "count": 13,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 12,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 958.1310424804688,
+        "full": 11.077078819274902,
+        "isotropic": 960.3231811523438
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 77,
+      "component_id": 0,
+      "count": 21,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 20,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 969.535888671875,
+        "full": 19.047639846801758,
+        "isotropic": 1065.3626708984375
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 78,
+      "component_id": 0,
+      "count": 12,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 11,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 908.9057006835938,
+        "full": 10.083443641662598,
+        "isotropic": 1003.8423461914062
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 1,
+      "class_id": 79,
+      "component_id": 0,
+      "count": 48,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 47,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1186.1510009765625,
+        "full": 46.01991271972656,
+        "isotropic": 1258.9483642578125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 80,
+      "component_id": 0,
+      "count": 32,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 31,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 968.696533203125,
+        "full": 30.031129837036133,
+        "isotropic": 928.4231567382812
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 81,
+      "component_id": 0,
+      "count": 71,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 70,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1345.206787109375,
+        "full": 69.0121841430664,
+        "isotropic": 1521.135986328125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 82,
+      "component_id": 0,
+      "count": 5,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 4,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 694.5249633789062,
+        "full": 3.2001092433929443,
+        "isotropic": 751.1527099609375
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 83,
+      "component_id": 0,
+      "count": 21,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 20,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1049.2298583984375,
+        "full": 19.047693252563477,
+        "isotropic": 1147.9854736328125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 84,
+      "component_id": 0,
+      "count": 74,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 73,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1325.953125,
+        "full": 72.01136016845703,
+        "isotropic": 1446.7720947265625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 85,
+      "component_id": 0,
+      "count": 9,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 8,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 763.3134765625,
+        "full": 7.111148834228516,
+        "isotropic": 859.953857421875
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 86,
+      "component_id": 0,
+      "count": 54,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 53,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1167.9287109375,
+        "full": 52.017425537109375,
+        "isotropic": 1273.354248046875
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 87,
+      "component_id": 0,
+      "count": 11,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 10,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 804.9097900390625,
+        "full": 9.091024398803711,
+        "isotropic": 862.574951171875
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 88,
+      "component_id": 0,
+      "count": 4,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 3,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 625.6027221679688,
+        "full": 2.250108242034912,
+        "isotropic": 645.5357666015625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 89,
+      "component_id": 0,
+      "count": 8,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 7,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 916.81689453125,
+        "full": 6.125048637390137,
+        "isotropic": 1013.402099609375
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 90,
+      "component_id": 0,
+      "count": 10,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 9,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 787.2620239257812,
+        "full": 8.100545883178711,
+        "isotropic": 810.18701171875
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 91,
+      "component_id": 0,
+      "count": 2,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 1,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 377.33026123046875,
+        "full": 0.5000957250595093,
+        "isotropic": 383.8936462402344
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 92,
+      "component_id": 0,
+      "count": 14,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 13,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 907.28662109375,
+        "full": 12.07146167755127,
+        "isotropic": 951.1196899414062
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 93,
+      "component_id": 0,
+      "count": 76,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 75,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1061.912841796875,
+        "full": 74.01090240478516,
+        "isotropic": 1176.9215087890625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 94,
+      "component_id": 0,
+      "count": 3,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 2,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 588.5972290039062,
+        "full": 1.3334259986877441,
+        "isotropic": 637.0661010742188
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 95,
+      "component_id": 0,
+      "count": 10,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 9,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 854.4584350585938,
+        "full": 8.10554313659668,
+        "isotropic": 943.4976806640625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 96,
+      "component_id": 0,
+      "count": 9,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 8,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 826.6531372070312,
+        "full": 7.1118340492248535,
+        "isotropic": 850.0955810546875
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 97,
+      "component_id": 0,
+      "count": 46,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 45,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1193.025634765625,
+        "full": 44.0211296081543,
+        "isotropic": 1247.86279296875
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 98,
+      "component_id": 0,
+      "count": 19,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 18,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 903.0625,
+        "full": 17.052610397338867,
+        "isotropic": 912.8028564453125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 99,
+      "component_id": 0,
+      "count": 46,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 45,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1078.423583984375,
+        "full": 44.021217346191406,
+        "isotropic": 1146.222412109375
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 100,
+      "component_id": 0,
+      "count": 17,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 16,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 979.8095703125,
+        "full": 15.058782577514648,
+        "isotropic": 1069.706298828125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 101,
+      "component_id": 0,
+      "count": 37,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 36,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1218.1624755859375,
+        "full": 35.02652359008789,
+        "isotropic": 1288.1522216796875
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 102,
+      "component_id": 0,
+      "count": 19,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 18,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1028.6868896484375,
+        "full": 17.052824020385742,
+        "isotropic": 1048.6484375
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 103,
+      "component_id": 0,
+      "count": 17,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 16,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 945.7552490234375,
+        "full": 15.058789253234863,
+        "isotropic": 943.1842041015625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 104,
+      "component_id": 0,
+      "count": 12,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 11,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 870.510009765625,
+        "full": 10.083486557006836,
+        "isotropic": 985.5032348632812
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 105,
+      "component_id": 0,
+      "count": 20,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 19,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 959.2260131835938,
+        "full": 18.050046920776367,
+        "isotropic": 978.7886352539062
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 106,
+      "component_id": 0,
+      "count": 6,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 5,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 739.6448364257812,
+        "full": 4.166737079620361,
+        "isotropic": 791.1278076171875
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 107,
+      "component_id": 0,
+      "count": 8,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 7,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 959.7916870117188,
+        "full": 6.126280784606934,
+        "isotropic": 1051.307861328125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 108,
+      "component_id": 0,
+      "count": 35,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 34,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1088.3887939453125,
+        "full": 33.02835464477539,
+        "isotropic": 1134.9462890625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 109,
+      "component_id": 0,
+      "count": 74,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 73,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1164.5390625,
+        "full": 72.01111602783203,
+        "isotropic": 1251.6981201171875
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 110,
+      "component_id": 0,
+      "count": 7,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 6,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 783.7589721679688,
+        "full": 5.1429762840271,
+        "isotropic": 867.8599243164062
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 111,
+      "component_id": 0,
+      "count": 7,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 6,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 769.6565551757812,
+        "full": 5.143044471740723,
+        "isotropic": 851.656005859375
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 112,
+      "component_id": 0,
+      "count": 10,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 9,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 833.9291381835938,
+        "full": 8.100069999694824,
+        "isotropic": 923.7494506835938
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 113,
+      "component_id": 0,
+      "count": 21,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 20,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1000.6337890625,
+        "full": 19.047832489013672,
+        "isotropic": 1019.4378051757812
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 114,
+      "component_id": 0,
+      "count": 17,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 16,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1156.0924072265625,
+        "full": 15.058799743652344,
+        "isotropic": 1389.0281982421875
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 115,
+      "component_id": 0,
+      "count": 2,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 1,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 374.90869140625,
+        "full": 0.5002080798149109,
+        "isotropic": 383.8887023925781
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 116,
+      "component_id": 0,
+      "count": 79,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 78,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1191.4075927734375,
+        "full": 77.01063537597656,
+        "isotropic": 1234.5616455078125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 117,
+      "component_id": 0,
+      "count": 4,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 3,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 644.1841430664062,
+        "full": 2.2519357204437256,
+        "isotropic": 723.1266479492188
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 118,
+      "component_id": 0,
+      "count": 50,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 49,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1088.6182861328125,
+        "full": 48.01914978027344,
+        "isotropic": 1075.699951171875
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 2,
+      "class_id": 119,
+      "component_id": 0,
+      "count": 81,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 80,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1184.794677734375,
+        "full": 79.01005554199219,
+        "isotropic": 1224.67041015625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 120,
+      "component_id": 0,
+      "count": 48,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 47,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1160.273681640625,
+        "full": 46.02022171020508,
+        "isotropic": 1252.7235107421875
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 121,
+      "component_id": 0,
+      "count": 10,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 9,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 834.4859008789062,
+        "full": 8.100382804870605,
+        "isotropic": 984.3119506835938
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 122,
+      "component_id": 0,
+      "count": 29,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 28,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 919.3698120117188,
+        "full": 27.03496742248535,
+        "isotropic": 913.0013427734375
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 123,
+      "component_id": 0,
+      "count": 32,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 31,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1037.255615234375,
+        "full": 30.031116485595703,
+        "isotropic": 1206.8826904296875
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 124,
+      "component_id": 0,
+      "count": 23,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 22,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 970.6643676757812,
+        "full": 21.043581008911133,
+        "isotropic": 1018.3917236328125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 125,
+      "component_id": 0,
+      "count": 17,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 16,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 889.1832885742188,
+        "full": 15.058801651000977,
+        "isotropic": 994.0863037109375
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 126,
+      "component_id": 0,
+      "count": 14,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 13,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 807.4361572265625,
+        "full": 12.071678161621094,
+        "isotropic": 857.8665161132812
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 127,
+      "component_id": 0,
+      "count": 21,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 20,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 937.0994873046875,
+        "full": 19.04762077331543,
+        "isotropic": 1033.90625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 128,
+      "component_id": 0,
+      "count": 12,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 11,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 809.6549682617188,
+        "full": 10.083443641662598,
+        "isotropic": 837.2136840820312
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 129,
+      "component_id": 0,
+      "count": 24,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 23,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1026.7109375,
+        "full": 22.042055130004883,
+        "isotropic": 1115.401611328125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 130,
+      "component_id": 0,
+      "count": 24,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 23,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1013.2532958984375,
+        "full": 22.041770935058594,
+        "isotropic": 1055.752197265625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 131,
+      "component_id": 0,
+      "count": 8,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 7,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 886.5567626953125,
+        "full": 6.125355243682861,
+        "isotropic": 896.311279296875
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 132,
+      "component_id": 0,
+      "count": 20,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 19,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 901.31298828125,
+        "full": 18.050182342529297,
+        "isotropic": 877.350341796875
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 133,
+      "component_id": 0,
+      "count": 65,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 64,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1173.6912841796875,
+        "full": 63.01404571533203,
+        "isotropic": 1227.2803955078125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 134,
+      "component_id": 0,
+      "count": 53,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 52,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1222.6121826171875,
+        "full": 51.017845153808594,
+        "isotropic": 1283.703125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 135,
+      "component_id": 0,
+      "count": 7,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 6,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 732.7196044921875,
+        "full": 5.143017768859863,
+        "isotropic": 758.7936401367188
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 136,
+      "component_id": 0,
+      "count": 60,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 59,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1279.8660888671875,
+        "full": 58.01557540893555,
+        "isotropic": 1335.876220703125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 137,
+      "component_id": 0,
+      "count": 34,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 33,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 986.3258056640625,
+        "full": 32.02924728393555,
+        "isotropic": 1002.6757202148438
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 138,
+      "component_id": 0,
+      "count": 26,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 25,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1182.97705078125,
+        "full": 24.038455963134766,
+        "isotropic": 1224.1693115234375
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 139,
+      "component_id": 0,
+      "count": 12,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 11,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 808.1967163085938,
+        "full": 10.083621978759766,
+        "isotropic": 847.0612182617188
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 140,
+      "component_id": 0,
+      "count": 66,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 65,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1095.8056640625,
+        "full": 64.01336669921875,
+        "isotropic": 1196.5928955078125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 141,
+      "component_id": 0,
+      "count": 38,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 37,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1377.8365478515625,
+        "full": 36.02602005004883,
+        "isotropic": 1491.540771484375
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 142,
+      "component_id": 0,
+      "count": 12,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 11,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1000.3359375,
+        "full": 10.083418846130371,
+        "isotropic": 1084.0299072265625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 143,
+      "component_id": 0,
+      "count": 27,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 26,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1103.84521484375,
+        "full": 25.03689956665039,
+        "isotropic": 1116.198486328125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 144,
+      "component_id": 0,
+      "count": 16,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 15,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 981.5022583007812,
+        "full": 14.062772750854492,
+        "isotropic": 1035.365478515625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 145,
+      "component_id": 0,
+      "count": 19,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 18,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 911.484619140625,
+        "full": 17.05265998840332,
+        "isotropic": 935.2626953125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 146,
+      "component_id": 0,
+      "count": 27,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 26,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 842.907470703125,
+        "full": 25.036903381347656,
+        "isotropic": 859.3059692382812
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 147,
+      "component_id": 0,
+      "count": 18,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 17,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 910.4248046875,
+        "full": 16.055511474609375,
+        "isotropic": 926.2683715820312
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 148,
+      "component_id": 0,
+      "count": 26,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 25,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 938.9641723632812,
+        "full": 24.03853988647461,
+        "isotropic": 973.545166015625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 149,
+      "component_id": 0,
+      "count": 79,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 78,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1332.7490234375,
+        "full": 77.010009765625,
+        "isotropic": 1412.175537109375
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 150,
+      "component_id": 0,
+      "count": 22,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 21,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1229.0806884765625,
+        "full": 20.045419692993164,
+        "isotropic": 1390.581787109375
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 151,
+      "component_id": 0,
+      "count": 56,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 55,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1098.842041015625,
+        "full": 54.01713562011719,
+        "isotropic": 1244.36279296875
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 152,
+      "component_id": 0,
+      "count": 12,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 11,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 797.0404052734375,
+        "full": 10.083479881286621,
+        "isotropic": 791.7501220703125
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 153,
+      "component_id": 0,
+      "count": 15,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 14,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 897.2246704101562,
+        "full": 13.066778182983398,
+        "isotropic": 983.6314697265625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 154,
+      "component_id": 0,
+      "count": 13,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 12,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1046.2620849609375,
+        "full": 11.076976776123047,
+        "isotropic": 1129.955322265625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 155,
+      "component_id": 0,
+      "count": 13,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 12,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 927.318115234375,
+        "full": 11.077064514160156,
+        "isotropic": 1037.0465087890625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 156,
+      "component_id": 0,
+      "count": 14,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 13,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 821.4216918945312,
+        "full": 12.072721481323242,
+        "isotropic": 890.281494140625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 157,
+      "component_id": 0,
+      "count": 17,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 16,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1000.81884765625,
+        "full": 15.058870315551758,
+        "isotropic": 998.666259765625
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 158,
+      "component_id": 0,
+      "count": 37,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 36,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 1357.04541015625,
+        "full": 35.026641845703125,
+        "isotropic": 1361.9744873046875
+      },
+      "weight": 1.0
+    },
+    {
+      "birth_task": 3,
+      "class_id": 159,
+      "component_id": 0,
+      "count": 4,
+      "covariance_shape": [
+        768,
+        768
+      ],
+      "fallback": "none",
+      "feature_space": "task_3:task_final:student_adapter_2:raw_768d",
+      "rank": 3,
+      "regularization": {
+        "estimation_jitter": 0.001
+      },
+      "tau_by_covariance": {
+        "diagonal": 605.0707397460938,
+        "full": 2.2500407695770264,
+        "isotropic": 595.5262451171875
+      },
+      "weight": 1.0
+    }
+  ],
+  "storage_bytes": 377982720,
+  "task": 3
+}

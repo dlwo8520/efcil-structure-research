@@ -1,0 +1,46 @@
+{
+  "adaptive_taus": {
+    "age": [
+      12.0,
+      12.0,
+      10.0
+    ],
+    "drift": [
+      7.529411792755127,
+      6.400000095367432,
+      5.333333492279053
+    ],
+    "variance": [
+      8.0,
+      8.0,
+      8.0
+    ]
+  },
+  "base_diagonal_parity": true,
+  "ceos": {
+    "ceos100_count": 16,
+    "ceos50_count": 8,
+    "old_dominance_rate": 1.0
+  },
+  "ceos_stage2_integration": true,
+  "device": "cpu",
+  "gradient_metrics": {
+    "grad_ahn_norm": 0.031258851289749146,
+    "grad_cosine_pic_ahn": 0.6563581228256226,
+    "grad_cosine_separation_ahn": 0.048937343060970306,
+    "grad_cosine_separation_pic": -0.2198382169008255,
+    "grad_pic_norm": 0.4505571722984314,
+    "grad_separation_norm": 0.21931612491607666
+  },
+  "learner_epoch_integration": true,
+  "losses": {
+    "ahn": 0.513408362865448,
+    "diagonal": 0.6674394607543945,
+    "normalized_diagonal": 0.8612836003303528,
+    "pic": 2.698138952255249
+  },
+  "optimizer_step": true,
+  "snapshot": true,
+  "status": "PASS",
+  "torch": "2.4.1+cu121"
+}
