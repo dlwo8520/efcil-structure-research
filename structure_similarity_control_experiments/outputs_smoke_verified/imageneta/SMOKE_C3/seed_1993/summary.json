@@ -1,0 +1,30 @@
+{
+  "A_by_task": [
+    69.72222222222223,
+    65.4727793696275,
+    60.92307692307692,
+    57.21153846153846,
+    54.31204739960501
+  ],
+  "Forgetting": 6.622834511441843,
+  "Inc-Acc": 61.528332875214026,
+  "Last-Acc": 54.31204739960501,
+  "accuracy_unit": "percent_0_to_100_unrounded",
+  "completed_tasks": 5,
+  "expected_tasks": 5,
+  "experiment_id": "SMOKE_C3",
+  "final_total_statistics_bytes": 945566400,
+  "forgetting_definition": "mean_i(max_{l=i..T-1} a[l,i] - a[T,i]) over tasks i before final task; a[l,i] uses the single head over all classes seen at stage l",
+  "max_peak_cuda_allocated_bytes": 6525484032,
+  "max_peak_cuda_reserved_bytes": 8782872576,
+  "max_peak_main_process_rss_bytes": 4402999296,
+  "max_separation_cache_bytes": 984960,
+  "multi_center": false,
+  "recording_gaps": [],
+  "recording_schema_version": 2,
+  "recording_status": "complete",
+  "seed": 1993,
+  "separation_covariance": "diagonal",
+  "status": "complete",
+  "total_training_seconds": 825.1460486279684
+}
