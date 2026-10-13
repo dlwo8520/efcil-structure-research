@@ -1,0 +1,1 @@
+${RESEARCH_WORKSPACE}/structure_rp_protoclad_task5/run.py --config ${RESEARCH_WORKSPACE}/structure_rp_protoclad_task5/configs/RP_C_P020_L030_IA5.json --gpu 2 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_rp_protoclad_task5/outputs --seed 1993
