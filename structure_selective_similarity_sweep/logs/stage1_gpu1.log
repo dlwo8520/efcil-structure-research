@@ -1,0 +1,133 @@
+nohup: ignoring input
+QUEUE stage=stage1 jobs=108 gpu=1
+[1/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id C0 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[1/108] DONE IA5/C0/seed_1993
+[2/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id A_P005 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[2/108] DONE IA5/A_P005/seed_1993
+[3/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id A_P010 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[3/108] DONE IA5/A_P010/seed_1993
+[4/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id A_P015 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[4/108] DONE IA5/A_P015/seed_1993
+[5/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id A_P020 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[5/108] DONE IA5/A_P020/seed_1993
+[6/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id A_P025 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[6/108] DONE IA5/A_P025/seed_1993
+[7/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id B_P005_A025 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[7/108] DONE IA5/B_P005_A025/seed_1993
+[8/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id B_P005_A050 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[8/108] DONE IA5/B_P005_A050/seed_1993
+[9/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id B_P005_A100 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[9/108] DONE IA5/B_P005_A100/seed_1993
+[10/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id B_P010_A025 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[10/108] DONE IA5/B_P010_A025/seed_1993
+[11/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id B_P010_A050 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[11/108] DONE IA5/B_P010_A050/seed_1993
+[12/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id B_P010_A100 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[12/108] DONE IA5/B_P010_A100/seed_1993
+[13/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id B_P020_A025 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[13/108] DONE IA5/B_P020_A025/seed_1993
+[14/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id B_P020_A050 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[14/108] DONE IA5/B_P020_A050/seed_1993
+[15/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id B_P020_A100 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[15/108] DONE IA5/B_P020_A100/seed_1993
+[16/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id C_P005_L010 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[16/108] DONE IA5/C_P005_L010/seed_1993
+[17/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id C_P005_L030 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[17/108] DONE IA5/C_P005_L030/seed_1993
+[18/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id C_P005_L100 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[18/108] DONE IA5/C_P005_L100/seed_1993
+[19/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id C_P005_L300 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[19/108] DONE IA5/C_P005_L300/seed_1993
+[20/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id C_P010_L010 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[20/108] DONE IA5/C_P010_L010/seed_1993
+[21/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id C_P010_L030 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[21/108] DONE IA5/C_P010_L030/seed_1993
+[22/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id C_P010_L100 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[22/108] DONE IA5/C_P010_L100/seed_1993
+[23/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id C_P010_L300 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[23/108] DONE IA5/C_P010_L300/seed_1993
+[24/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id C_P020_L010 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[24/108] DONE IA5/C_P020_L010/seed_1993
+[25/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id C_P020_L030 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[25/108] DONE IA5/C_P020_L030/seed_1993
+[26/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id C_P020_L100 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[26/108] DONE IA5/C_P020_L100/seed_1993
+[27/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA5 --run-id C_P020_L300 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[27/108] DONE IA5/C_P020_L300/seed_1993
+[28/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA10 --run-id C0 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[28/108] FAIL exit=1; continuing: ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/logs/stage1/IA10__C0__seed_1993.log
+[29/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA10 --run-id A_P005 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[29/108] DONE IA10/A_P005/seed_1993
+[30/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA10 --run-id A_P010 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[30/108] DONE IA10/A_P010/seed_1993
+[31/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA10 --run-id A_P015 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[31/108] FAIL exit=1; continuing: ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/logs/stage1/IA10__A_P015__seed_1993.log
+[32/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA10 --run-id A_P020 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[32/108] DONE IA10/A_P020/seed_1993
+[33/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA10 --run-id A_P025 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[33/108] DONE IA10/A_P025/seed_1993
+[34/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA10 --run-id B_P005_A025 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[34/108] DONE IA10/B_P005_A025/seed_1993
+[35/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA10 --run-id B_P005_A050 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[35/108] FAIL exit=1; continuing: ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/logs/stage1/IA10__B_P005_A050__seed_1993.log
+[36/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA10 --run-id B_P005_A100 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[36/108] DONE IA10/B_P005_A100/seed_1993
+[37/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA10 --run-id B_P010_A025 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[37/108] DONE IA10/B_P010_A025/seed_1993
+[38/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA10 --run-id B_P010_A050 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[38/108] DONE IA10/B_P010_A050/seed_1993
+[39/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA10 --run-id B_P010_A100 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[39/108] FAIL exit=1; continuing: ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/logs/stage1/IA10__B_P010_A100__seed_1993.log
+[40/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA10 --run-id B_P020_A025 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[40/108] DONE IA10/B_P020_A025/seed_1993
+[41/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA10 --run-id B_P020_A050 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[41/108] DONE IA10/B_P020_A050/seed_1993
+[42/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA10 --run-id B_P020_A100 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[42/108] DONE IA10/B_P020_A100/seed_1993
+[43/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA10 --run-id C_P005_L010 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[43/108] DONE IA10/C_P005_L010/seed_1993
+[44/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA10 --run-id C_P005_L030 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[44/108] DONE IA10/C_P005_L030/seed_1993
+[45/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA10 --run-id C_P005_L100 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[45/108] DONE IA10/C_P005_L100/seed_1993
+[46/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA10 --run-id C_P005_L300 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[46/108] DONE IA10/C_P005_L300/seed_1993
+[47/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA10 --run-id C_P010_L010 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[47/108] DONE IA10/C_P010_L010/seed_1993
+[48/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA10 --run-id C_P010_L030 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[48/108] DONE IA10/C_P010_L030/seed_1993
+[49/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA10 --run-id C_P010_L100 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[49/108] DONE IA10/C_P010_L100/seed_1993
+[50/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA10 --run-id C_P010_L300 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[50/108] DONE IA10/C_P010_L300/seed_1993
+[51/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA10 --run-id C_P020_L010 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[51/108] DONE IA10/C_P020_L010/seed_1993
+[52/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA10 --run-id C_P020_L030 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[52/108] DONE IA10/C_P020_L030/seed_1993
+[53/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA10 --run-id C_P020_L100 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[53/108] DONE IA10/C_P020_L100/seed_1993
+[54/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol IA10 --run-id C_P020_L300 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[54/108] DONE IA10/C_P020_L300/seed_1993
+[55/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol CAR5 --run-id C0 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/cds-main/data/cars196 --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[55/108] DONE CAR5/C0/seed_1993
+[56/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol CAR5 --run-id A_P005 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/cds-main/data/cars196 --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[56/108] DONE CAR5/A_P005/seed_1993
+[57/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol CAR5 --run-id A_P010 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/cds-main/data/cars196 --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[57/108] DONE CAR5/A_P010/seed_1993
+[58/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol CAR5 --run-id A_P015 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/cds-main/data/cars196 --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[58/108] DONE CAR5/A_P015/seed_1993
+[59/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol CAR5 --run-id A_P020 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/cds-main/data/cars196 --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[59/108] DONE CAR5/A_P020/seed_1993
+[60/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol CAR5 --run-id A_P025 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/cds-main/data/cars196 --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[60/108] DONE CAR5/A_P025/seed_1993
+[61/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol CAR5 --run-id B_P005_A025 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/cds-main/data/cars196 --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[61/108] DONE CAR5/B_P005_A025/seed_1993
+[62/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol CAR5 --run-id B_P005_A050 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/cds-main/data/cars196 --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[62/108] DONE CAR5/B_P005_A050/seed_1993
+[63/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol CAR5 --run-id B_P005_A100 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/cds-main/data/cars196 --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[63/108] DONE CAR5/B_P005_A100/seed_1993
+[64/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol CAR5 --run-id B_P010_A025 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/cds-main/data/cars196 --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[64/108] DONE CAR5/B_P010_A025/seed_1993
+[65/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol CAR5 --run-id B_P010_A050 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/cds-main/data/cars196 --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993
+[65/108] DONE CAR5/B_P010_A050/seed_1993
+[66/108] RUN ${RESEARCH_WORKSPACE}/miniconda3/envs/cds/bin/python ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/run.py --protocol CAR5 --run-id B_P010_A100 --gpu 1 --data-root ${RESEARCH_WORKSPACE}/cds-main/data/cars196 --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993

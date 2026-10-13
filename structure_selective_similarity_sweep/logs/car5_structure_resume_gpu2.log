@@ -1,0 +1,183 @@
+nohup: ignoring input
+PyTorch version: 2.4.1+cu121
+CUDA available: True
+Visible physical GPUs: ['2']
+--- Starting CAR5/Structure ---
+2026-09-21 16:13:00,724 [trainer.py] => experiment_id: Structure
+2026-09-21 16:13:00,725 [trainer.py] => prefix: selective_similarity_sweep
+2026-09-21 16:13:00,725 [trainer.py] => dataset: CAR5
+2026-09-21 16:13:00,725 [trainer.py] => data_root: ${RESEARCH_WORKSPACE}/cds-main/data/cars196
+2026-09-21 16:13:00,725 [trainer.py] => output_root: ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs
+2026-09-21 16:13:00,725 [trainer.py] => expected_num_classes: 196
+2026-09-21 16:13:00,725 [trainer.py] => expected_tasks: 5
+2026-09-21 16:13:00,725 [trainer.py] => verify_split_content: False
+2026-09-21 16:13:00,725 [trainer.py] => shuffle: True
+2026-09-21 16:13:00,725 [trainer.py] => init_cls: 40
+2026-09-21 16:13:00,726 [trainer.py] => increment: 39
+2026-09-21 16:13:00,726 [trainer.py] => model_name: adapter
+2026-09-21 16:13:00,726 [trainer.py] => followup_extension: True
+2026-09-21 16:13:00,726 [trainer.py] => similarity_aware_extension: True
+2026-09-21 16:13:00,726 [trainer.py] => convnet_type: pretrained_vit_b16_224_in21k_adapter
+2026-09-21 16:13:00,726 [trainer.py] => seed: 1993
+2026-09-21 16:13:00,726 [trainer.py] => init_epochs: 30
+2026-09-21 16:13:00,726 [trainer.py] => inc_epochs: 15
+2026-09-21 16:13:00,726 [trainer.py] => ca: True
+2026-09-21 16:13:00,726 [trainer.py] => ca_epochs: 5
+2026-09-21 16:13:00,726 [trainer.py] => replay_samples_per_class: 256
+2026-09-21 16:13:00,726 [trainer.py] => init_lr: 0.01
+2026-09-21 16:13:00,726 [trainer.py] => batch_size: 48
+2026-09-21 16:13:00,727 [trainer.py] => stats_batch_size: 64
+2026-09-21 16:13:00,727 [trainer.py] => num_workers: 8
+2026-09-21 16:13:00,727 [trainer.py] => weight_decay: 0.0005
+2026-09-21 16:13:00,727 [trainer.py] => min_lr: 0.0
+2026-09-21 16:13:00,727 [trainer.py] => optimizer: sgd
+2026-09-21 16:13:00,727 [trainer.py] => ffn_num: 64
+2026-09-21 16:13:00,727 [trainer.py] => vpt_type: shallow
+2026-09-21 16:13:00,727 [trainer.py] => prompt_token_num: 5
+2026-09-21 16:13:00,727 [trainer.py] => adapter_placement: mlp
+2026-09-21 16:13:00,727 [trainer.py] => adapter_interval: 1
+2026-09-21 16:13:00,727 [trainer.py] => flag: 0
+2026-09-21 16:13:00,727 [trainer.py] => scale: 20.0
+2026-09-21 16:13:00,728 [trainer.py] => margin: 0.2
+2026-09-21 16:13:00,728 [trainer.py] => scc: True
+2026-09-21 16:13:00,728 [trainer.py] => scc_value: 5.0
+2026-09-21 16:13:00,728 [trainer.py] => feature: False
+2026-09-21 16:13:00,728 [trainer.py] => logit: False
+2026-09-21 16:13:00,728 [trainer.py] => apr: True
+2026-09-21 16:13:00,728 [trainer.py] => gamma_weight: 10.0
+2026-09-21 16:13:00,728 [trainer.py] => cov: 5.0
+2026-09-21 16:13:00,728 [trainer.py] => multi_center: False
+2026-09-21 16:13:00,728 [trainer.py] => num_prototypes: 1
+2026-09-21 16:13:00,728 [trainer.py] => kmeans_initialization: kmeans++
+2026-09-21 16:13:00,728 [trainer.py] => kmeans_n_init: 10
+2026-09-21 16:13:00,728 [trainer.py] => kmeans_max_iter: 100
+2026-09-21 16:13:00,729 [trainer.py] => cluster_min_samples: 2
+2026-09-21 16:13:00,729 [trainer.py] => stats_cov_jitter: 0.001
+2026-09-21 16:13:00,729 [trainer.py] => old_new_separation: False
+2026-09-21 16:13:00,729 [trainer.py] => separation_covariance: diagonal
+2026-09-21 16:13:00,729 [trainer.py] => sep_lambda: 0.0
+2026-09-21 16:13:00,729 [trainer.py] => sep_percentile: 95.0
+2026-09-21 16:13:00,729 [trainer.py] => sep_tau_floor: 1e-08
+2026-09-21 16:13:00,729 [trainer.py] => sep_reduction: max_relative_intrusion
+2026-09-21 16:13:00,729 [trainer.py] => sep_timing: epoch_apr_cache
+2026-09-21 16:13:00,729 [trainer.py] => sep_boundary_policy: birth_quantile_fixed
+2026-09-21 16:13:00,729 [trainer.py] => sep_refresh_epochs: 1
+2026-09-21 16:13:00,729 [trainer.py] => sep_cov_eigen_floor: 1e-06
+2026-09-21 16:13:00,730 [trainer.py] => sep_cholesky_initial_jitter: 1e-06
+2026-09-21 16:13:00,730 [trainer.py] => sep_cholesky_jitter_multiplier: 10.0
+2026-09-21 16:13:00,730 [trainer.py] => sep_cholesky_max_tries: 6
+2026-09-21 16:13:00,730 [trainer.py] => sep_region_chunk_size: 8
+2026-09-21 16:13:00,730 [trainer.py] => sep_factor_device: cpu
+2026-09-21 16:13:00,730 [trainer.py] => sep_grad_diagnostics: True
+2026-09-21 16:13:00,730 [trainer.py] => checkpoint_every_epoch: True
+2026-09-21 16:13:00,730 [trainer.py] => pic_enabled: False
+2026-09-21 16:13:00,730 [trainer.py] => pic_lambda: 1.0
+2026-09-21 16:13:00,730 [trainer.py] => pic_temperature: 0.07
+2026-09-21 16:13:00,730 [trainer.py] => ahn_enabled: False
+2026-09-21 16:13:00,730 [trainer.py] => ahn_lambda: 1.0
+2026-09-21 16:13:00,730 [trainer.py] => ahn_margin: 0.5
+2026-09-21 16:13:00,731 [trainer.py] => ahn_top_k: 2
+2026-09-21 16:13:00,731 [trainer.py] => normalized_diagonal: False
+2026-09-21 16:13:00,731 [trainer.py] => adaptive_margin_mode: none
+2026-09-21 16:13:00,731 [trainer.py] => adaptive_margin_strength: 0.25
+2026-09-21 16:13:00,731 [trainer.py] => adaptive_margin_min_scale: 0.5
+2026-09-21 16:13:00,731 [trainer.py] => adaptive_margin_max_scale: 2.0
+2026-09-21 16:13:00,731 [trainer.py] => ceos_replay_fraction: 0.0
+2026-09-21 16:13:00,731 [trainer.py] => ceos_lambda_min: 0.7
+2026-09-21 16:13:00,731 [trainer.py] => ceos_enemy_top_k: 1
+2026-09-21 16:13:00,731 [trainer.py] => ceos_log_samples: False
+2026-09-21 16:13:00,731 [trainer.py] => prototype_refresh_epochs: 1
+2026-09-21 16:13:00,731 [trainer.py] => diagnostic_grad_interval: 20
+2026-09-21 16:13:00,731 [trainer.py] => top_k_similar_old: 5
+2026-09-21 16:13:00,731 [trainer.py] => similarity_relation_mode: none
+2026-09-21 16:13:00,731 [trainer.py] => similarity_alpha: 0.5
+2026-09-21 16:13:00,731 [trainer.py] => relative_margin: 0.05
+2026-09-21 16:13:00,732 [trainer.py] => similarity_beta_source: task_quantile
+2026-09-21 16:13:00,732 [trainer.py] => similarity_beta_quantile: 0.75
+2026-09-21 16:13:00,732 [trainer.py] => similarity_beta_fixed: None
+2026-09-21 16:13:00,732 [trainer.py] => similarity_scc_enabled: False
+2026-09-21 16:13:00,732 [trainer.py] => similarity_scc_alpha: 0.5
+2026-09-21 16:13:00,732 [trainer.py] => similarity_scc_min_weight: 0.5
+2026-09-21 16:13:00,732 [trainer.py] => soft_gate_temperature: 0.1
+2026-09-21 16:13:00,732 [trainer.py] => diagnostic_sample_rows: True
+2026-09-21 16:13:00,732 [trainer.py] => class_order_seed: 1993
+2026-09-21 16:13:00,732 [trainer.py] => diagnostic_pair_interval: 20
+2026-09-21 16:13:00,732 [trainer.py] => diagnostic_pair_epochs: last
+2026-09-21 16:13:00,732 [trainer.py] => diagnostic_table_format: csv_fallback_without_pyarrow
+2026-09-21 16:13:00,732 [trainer.py] => selective_method: none
+2026-09-21 16:13:00,732 [trainer.py] => top_p: None
+2026-09-21 16:13:00,732 [trainer.py] => alpha: None
+2026-09-21 16:13:00,732 [trainer.py] => lambda_clad: None
+2026-09-21 16:13:00,732 [trainer.py] => protocol_id: CAR5
+2026-09-21 16:13:00,732 [trainer.py] => source_dataset: car196
+2026-09-21 16:13:00,732 [trainer.py] => task_partition: [40, 39, 39, 39, 39]
+2026-09-21 16:13:00,732 [trainer.py] => method: Structure
+2026-09-21 16:13:00,732 [trainer.py] => method_name: vanilla Structure
+2026-09-21 16:13:00,732 [trainer.py] => config: ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/configs/protocols/CAR5.json
+2026-09-21 16:13:00,732 [trainer.py] => base_root: ${RESEARCH_WORKSPACE}/structure_multicenter_separation
+2026-09-21 16:13:00,732 [trainer.py] => extension_root: ${RESEARCH_WORKSPACE}/structure_e3_followup
+2026-09-21 16:13:00,732 [trainer.py] => e3_root: ${RESEARCH_WORKSPACE}/structure_e3_followup
+2026-09-21 16:13:00,732 [trainer.py] => similarity_extension_root: ${RESEARCH_WORKSPACE}/structure_similarity_aware_followup
+2026-09-21 16:13:00,733 [trainer.py] => selective_sweep_root: ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep
+2026-09-21 16:13:00,733 [trainer.py] => selective_sweep_extension: True
+2026-09-21 16:13:00,733 [trainer.py] => device: [device(type='cuda', index=0)]
+2026-09-21 16:13:00,733 [trainer.py] => physical_gpus: ['2']
+2026-09-21 16:13:00,733 [trainer.py] => launch_command: run.py --protocol CAR5 --run-id Structure --gpu 2 --data-root ${RESEARCH_WORKSPACE}/cds-main/data/cars196 --output-root ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs --seed 1993 --resume ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs/CAR5/Structure/seed_1993/checkpoint_latest.pt
+2026-09-21 16:13:00,733 [trainer.py] => source_snapshot_hash: ccf04198f4b4a3f10d08d0be00ccef9cfdd6e099c7c3d2cb65b8044b1db29a52
+2026-09-21 16:13:00,733 [trainer.py] => git_commit: None
+2026-09-21 16:13:00,733 [trainer.py] => git_diff_hash: None
+2026-09-21 16:13:00,733 [trainer.py] => resume: ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs/CAR5/Structure/seed_1993/checkpoint_latest.pt
+2026-09-21 16:13:00,733 [trainer.py] => run_dir: ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs/CAR5/Structure/seed_1993
+2026-09-21 16:13:00,733 [trainer.py] => recording_gaps: []
+This is for the BaseNet initialization.
+2026-09-21 16:13:28,985 [inc_net.py] => Adapter placement strategy: mlp
+2026-09-21 16:13:28,986 [inc_net.py] => Adapter interval: 1
+I'm using ViT with adapters.
+After BaseNet initialization.
+2026-09-21 16:13:34,407 [CDS_adapter.py] => Loaded checkpoint ${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs/CAR5/Structure/seed_1993/checkpoint_latest.pt (stage=task_end task=0 next_epoch=0)
+2026-09-21 16:13:34,431 [CDS_adapter.py] => Learning on 40-79
+The number of training dataset: 1608
+  0%|          | 0/15 [00:00<?, ?it/s]2026-09-21 16:14:27,080 [learner.py] => Frozen old-model similarity task=2 shape=(39, 40) beta=0.275720 source=task_quantile
+Task 1, Epoch 1/15 => Loss 5.577, Train_accy 25.25, Test_accy 74.76:   0%|          | 0/15 [00:55<?, ?it/s]Task 1, Epoch 1/15 => Loss 5.577, Train_accy 25.25, Test_accy 74.76:   7%|▋         | 1/15 [00:56<13:10, 56.47s/it]Task 1, Epoch 2/15 => Loss 3.415, Train_accy 71.27, Test_accy 79.45:   7%|▋         | 1/15 [01:41<13:10, 56.47s/it]Task 1, Epoch 2/15 => Loss 3.415, Train_accy 71.27, Test_accy 79.45:  13%|█▎        | 2/15 [01:42<10:52, 50.20s/it]Task 1, Epoch 3/15 => Loss 2.999, Train_accy 77.80, Test_accy 80.52:  13%|█▎        | 2/15 [02:27<10:52, 50.20s/it]Task 1, Epoch 3/15 => Loss 2.999, Train_accy 77.80, Test_accy 80.52:  20%|██        | 3/15 [02:28<09:39, 48.33s/it]Task 1, Epoch 4/15 => Loss 2.808, Train_accy 80.29, Test_accy 80.77:  20%|██        | 3/15 [03:13<09:39, 48.33s/it]Task 1, Epoch 4/15 => Loss 2.808, Train_accy 80.29, Test_accy 80.77:  27%|██▋       | 4/15 [03:15<08:44, 47.70s/it]Task 1, Epoch 5/15 => Loss 2.776, Train_accy 81.09, Test_accy 82.66:  27%|██▋       | 4/15 [03:59<08:44, 47.70s/it]Task 1, Epoch 5/15 => Loss 2.776, Train_accy 81.09, Test_accy 82.66:  33%|███▎      | 5/15 [04:00<07:50, 47.04s/it]Task 1, Epoch 6/15 => Loss 2.616, Train_accy 83.64, Test_accy 82.63:  33%|███▎      | 5/15 [04:46<07:50, 47.04s/it]Task 1, Epoch 6/15 => Loss 2.616, Train_accy 83.64, Test_accy 82.63:  40%|████      | 6/15 [04:47<07:02, 46.93s/it]Task 1, Epoch 7/15 => Loss 2.600, Train_accy 82.46, Test_accy 82.27:  40%|████      | 6/15 [05:32<07:02, 46.93s/it]Task 1, Epoch 7/15 => Loss 2.600, Train_accy 82.46, Test_accy 82.27:  47%|████▋     | 7/15 [05:33<06:12, 46.61s/it]Task 1, Epoch 8/15 => Loss 2.533, Train_accy 83.02, Test_accy 82.73:  47%|████▋     | 7/15 [06:18<06:12, 46.61s/it]Task 1, Epoch 8/15 => Loss 2.533, Train_accy 83.02, Test_accy 82.73:  53%|█████▎    | 8/15 [06:19<05:23, 46.25s/it]Task 1, Epoch 9/15 => Loss 2.495, Train_accy 84.95, Test_accy 82.88:  53%|█████▎    | 8/15 [07:02<05:23, 46.25s/it]Task 1, Epoch 9/15 => Loss 2.495, Train_accy 84.95, Test_accy 82.88:  60%|██████    | 9/15 [07:04<04:35, 45.88s/it]Task 1, Epoch 10/15 => Loss 2.456, Train_accy 84.83, Test_accy 83.15:  60%|██████    | 9/15 [07:48<04:35, 45.88s/it]Task 1, Epoch 10/15 => Loss 2.456, Train_accy 84.83, Test_accy 83.15:  67%|██████▋   | 10/15 [07:49<03:49, 45.82s/it]Task 1, Epoch 11/15 => Loss 2.512, Train_accy 83.89, Test_accy 83.40:  67%|██████▋   | 10/15 [08:34<03:49, 45.82s/it]Task 1, Epoch 11/15 => Loss 2.512, Train_accy 83.89, Test_accy 83.40:  73%|███████▎  | 11/15 [08:35<03:02, 45.74s/it]Task 1, Epoch 12/15 => Loss 2.453, Train_accy 84.76, Test_accy 83.43:  73%|███████▎  | 11/15 [09:20<03:02, 45.74s/it]Task 1, Epoch 12/15 => Loss 2.453, Train_accy 84.76, Test_accy 83.43:  80%|████████  | 12/15 [09:21<02:17, 45.74s/it]Task 1, Epoch 13/15 => Loss 2.436, Train_accy 84.76, Test_accy 83.55:  80%|████████  | 12/15 [10:07<02:17, 45.74s/it]Task 1, Epoch 13/15 => Loss 2.436, Train_accy 84.76, Test_accy 83.55:  87%|████████▋ | 13/15 [10:08<01:32, 46.13s/it]Task 1, Epoch 14/15 => Loss 2.449, Train_accy 84.20, Test_accy 83.52:  87%|████████▋ | 13/15 [10:56<01:32, 46.13s/it]Task 1, Epoch 14/15 => Loss 2.449, Train_accy 84.20, Test_accy 83.52:  93%|█████████▎| 14/15 [10:57<00:47, 47.20s/it]Task 1, Epoch 15/15 => Loss 2.450, Train_accy 84.45, Test_accy 83.52:  93%|█████████▎| 14/15 [11:46<00:47, 47.20s/it]Task 1, Epoch 15/15 => Loss 2.450, Train_accy 84.45, Test_accy 83.52: 100%|██████████| 15/15 [11:47<00:00, 47.95s/it]Task 1, Epoch 15/15 => Loss 2.450, Train_accy 84.45, Test_accy 83.52: 100%|██████████| 15/15 [11:47<00:00, 47.17s/it]
+mean_and_cov_update
+2026-09-21 16:27:08,022 [base.py] => CA Task 1 => Loss 0.330, Test_accy 85.790
+2026-09-21 16:27:27,070 [base.py] => CA Task 1 => Loss 0.306, Test_accy 86.370
+2026-09-21 16:27:46,173 [base.py] => CA Task 1 => Loss 0.292, Test_accy 86.490
+2026-09-21 16:28:05,160 [base.py] => CA Task 1 => Loss 0.285, Test_accy 86.620
+2026-09-21 16:28:24,420 [base.py] => CA Task 1 => Loss 0.284, Test_accy 86.620
+2026-09-21 16:28:43,440 [trainer.py] => Task 1 metrics: {'task': 1, 'task_id': 2, 'eval_stage': 'task_final', 'seen_classes': 79, 'num_correct': 2828, 'num_samples': 3265, 'A_t': 86.6156202143951, 'top5_num_correct': 3201, 'top5': 98.03981623277183, 'old_num_correct': 1448, 'old_num_samples': 1676, 'old_accuracy': 86.39618138424821, 'new_num_correct': 1380, 'new_num_samples': 1589, 'new_accuracy': 86.8470736312146, 'old_to_new_error_rate': 0.06026252983293556, 'new_to_old_error_rate': 0.07551919446192575, 'inc_accuracy_so_far': 87.7887170284386, 'forgetting_so_far': 2.5656324582338925, 'training_seconds': 890.0161514620995, 'peak_cuda_allocated_bytes': 5132048896, 'peak_cuda_reserved_bytes': 10341056512, 'peak_main_process_rss_bytes': 4402315264, 'class_statistics_bytes': 186869760, 'region_statistics_bytes': 0, 'separation_cache_bytes': 0, 'total_statistics_bytes': 186869760, 'statistics_and_cache_bytes': 186869760, 'status': 'complete'}
+2026-09-21 16:28:44,900 [CDS_adapter.py] => Learning on 79-118
+The number of training dataset: 1632
+  0%|          | 0/15 [00:00<?, ?it/s]2026-09-21 16:29:33,930 [learner.py] => Frozen old-model similarity task=3 shape=(39, 79) beta=0.291209 source=task_quantile
+Task 2, Epoch 1/15 => Loss 5.569, Train_accy 19.18, Test_accy 72.38:   0%|          | 0/15 [01:03<?, ?it/s]Task 2, Epoch 1/15 => Loss 5.569, Train_accy 19.18, Test_accy 72.38:   7%|▋         | 1/15 [01:05<15:15, 65.42s/it]Task 2, Epoch 2/15 => Loss 3.491, Train_accy 63.30, Test_accy 76.93:   7%|▋         | 1/15 [01:59<15:15, 65.42s/it]Task 2, Epoch 2/15 => Loss 3.491, Train_accy 63.30, Test_accy 76.93:  13%|█▎        | 2/15 [02:00<12:51, 59.38s/it]Task 2, Epoch 3/15 => Loss 3.162, Train_accy 68.01, Test_accy 77.69:  13%|█▎        | 2/15 [02:54<12:51, 59.38s/it]Task 2, Epoch 3/15 => Loss 3.162, Train_accy 68.01, Test_accy 77.69:  20%|██        | 3/15 [02:56<11:33, 57.83s/it]Task 2, Epoch 4/15 => Loss 2.864, Train_accy 71.51, Test_accy 78.76:  20%|██        | 3/15 [03:50<11:33, 57.83s/it]Task 2, Epoch 4/15 => Loss 2.864, Train_accy 71.51, Test_accy 78.76:  27%|██▋       | 4/15 [03:52<10:26, 56.96s/it]Task 2, Epoch 5/15 => Loss 2.745, Train_accy 73.77, Test_accy 78.95:  27%|██▋       | 4/15 [04:46<10:26, 56.96s/it]Task 2, Epoch 5/15 => Loss 2.745, Train_accy 73.77, Test_accy 78.95:  33%|███▎      | 5/15 [04:47<09:24, 56.44s/it]Task 2, Epoch 6/15 => Loss 2.710, Train_accy 73.65, Test_accy 79.29:  33%|███▎      | 5/15 [05:41<09:24, 56.44s/it]Task 2, Epoch 6/15 => Loss 2.710, Train_accy 73.65, Test_accy 79.29:  40%|████      | 6/15 [05:42<08:24, 56.05s/it]Task 2, Epoch 7/15 => Loss 2.696, Train_accy 74.51, Test_accy 79.50:  40%|████      | 6/15 [06:36<08:24, 56.05s/it]Task 2, Epoch 7/15 => Loss 2.696, Train_accy 74.51, Test_accy 79.50:  47%|████▋     | 7/15 [06:37<07:25, 55.68s/it]Task 2, Epoch 8/15 => Loss 2.566, Train_accy 75.80, Test_accy 80.22:  47%|████▋     | 7/15 [07:31<07:25, 55.68s/it]Task 2, Epoch 8/15 => Loss 2.566, Train_accy 75.80, Test_accy 80.22:  53%|█████▎    | 8/15 [07:33<06:28, 55.50s/it]Task 2, Epoch 9/15 => Loss 2.614, Train_accy 74.33, Test_accy 80.09:  53%|█████▎    | 8/15 [08:27<06:28, 55.50s/it]Task 2, Epoch 9/15 => Loss 2.614, Train_accy 74.33, Test_accy 80.09:  60%|██████    | 9/15 [08:28<05:32, 55.49s/it]Task 2, Epoch 10/15 => Loss 2.564, Train_accy 75.74, Test_accy 80.07:  60%|██████    | 9/15 [09:22<05:32, 55.49s/it]Task 2, Epoch 10/15 => Loss 2.564, Train_accy 75.74, Test_accy 80.07:  67%|██████▋   | 10/15 [09:24<04:37, 55.51s/it]Task 2, Epoch 11/15 => Loss 2.615, Train_accy 74.20, Test_accy 80.03:  67%|██████▋   | 10/15 [10:17<04:37, 55.51s/it]Task 2, Epoch 11/15 => Loss 2.615, Train_accy 74.20, Test_accy 80.03:  73%|███████▎  | 11/15 [10:18<03:40, 55.22s/it]Task 2, Epoch 12/15 => Loss 2.547, Train_accy 75.98, Test_accy 80.05:  73%|███████▎  | 11/15 [11:12<03:40, 55.22s/it]Task 2, Epoch 12/15 => Loss 2.547, Train_accy 75.98, Test_accy 80.05:  80%|████████  | 12/15 [11:13<02:45, 55.17s/it]Task 2, Epoch 13/15 => Loss 2.571, Train_accy 75.86, Test_accy 80.09:  80%|████████  | 12/15 [12:07<02:45, 55.17s/it]Task 2, Epoch 13/15 => Loss 2.571, Train_accy 75.86, Test_accy 80.09:  87%|████████▋ | 13/15 [12:09<01:50, 55.24s/it]Task 2, Epoch 14/15 => Loss 2.466, Train_accy 77.88, Test_accy 80.03:  87%|████████▋ | 13/15 [13:03<01:50, 55.24s/it]Task 2, Epoch 14/15 => Loss 2.466, Train_accy 77.88, Test_accy 80.03:  93%|█████████▎| 14/15 [13:05<00:55, 55.53s/it]Task 2, Epoch 15/15 => Loss 2.482, Train_accy 77.27, Test_accy 80.03:  93%|█████████▎| 14/15 [13:58<00:55, 55.53s/it]Task 2, Epoch 15/15 => Loss 2.482, Train_accy 77.27, Test_accy 80.03: 100%|██████████| 15/15 [13:59<00:00, 55.21s/it]Task 2, Epoch 15/15 => Loss 2.482, Train_accy 77.27, Test_accy 80.03: 100%|██████████| 15/15 [13:59<00:00, 55.98s/it]
+mean_and_cov_update
+2026-09-21 16:44:28,864 [base.py] => CA Task 2 => Loss 0.432, Test_accy 83.930
+2026-09-21 16:44:56,763 [base.py] => CA Task 2 => Loss 0.401, Test_accy 84.630
+2026-09-21 16:45:25,177 [base.py] => CA Task 2 => Loss 0.383, Test_accy 85.200
+2026-09-21 16:45:53,367 [base.py] => CA Task 2 => Loss 0.375, Test_accy 85.120
+2026-09-21 16:46:21,254 [base.py] => CA Task 2 => Loss 0.375, Test_accy 85.180
+2026-09-21 16:46:48,858 [trainer.py] => Task 2 metrics: {'task': 2, 'task_id': 3, 'eval_stage': 'task_final', 'seen_classes': 118, 'num_correct': 4151, 'num_samples': 4873, 'A_t': 85.18366509337164, 'top5_num_correct': 4752, 'top5': 97.51693002257336, 'old_num_correct': 2785, 'old_num_samples': 3265, 'old_accuracy': 85.29862174578867, 'new_num_correct': 1366, 'new_num_samples': 1608, 'new_accuracy': 84.95024875621891, 'old_to_new_error_rate': 0.046860643185298624, 'new_to_old_error_rate': 0.09639303482587065, 'inc_accuracy_so_far': 86.92036638341627, 'forgetting_so_far': 2.5999337629977006, 'training_seconds': 1056.384655136033, 'peak_cuda_allocated_bytes': 5132855296, 'peak_cuda_reserved_bytes': 11712593920, 'peak_main_process_rss_bytes': 4402315264, 'class_statistics_bytes': 279121920, 'region_statistics_bytes': 0, 'separation_cache_bytes': 0, 'total_statistics_bytes': 279121920, 'statistics_and_cache_bytes': 279121920, 'status': 'complete'}
+2026-09-21 16:46:50,417 [CDS_adapter.py] => Learning on 118-157
+The number of training dataset: 1613
+  0%|          | 0/15 [00:00<?, ?it/s]2026-09-21 16:47:37,795 [learner.py] => Frozen old-model similarity task=4 shape=(39, 118) beta=0.317932 source=task_quantile
+Task 3, Epoch 1/15 => Loss 5.380, Train_accy 20.95, Test_accy 76.16:   0%|          | 0/15 [01:12<?, ?it/s]Task 3, Epoch 1/15 => Loss 5.380, Train_accy 20.95, Test_accy 76.16:   7%|▋         | 1/15 [01:14<17:17, 74.07s/it]Task 3, Epoch 2/15 => Loss 3.283, Train_accy 66.21, Test_accy 77.72:   7%|▋         | 1/15 [02:16<17:17, 74.07s/it]Task 3, Epoch 2/15 => Loss 3.283, Train_accy 66.21, Test_accy 77.72:  13%|█▎        | 2/15 [02:18<14:49, 68.40s/it]Task 3, Epoch 3/15 => Loss 2.898, Train_accy 73.09, Test_accy 77.92:  13%|█▎        | 2/15 [03:21<14:49, 68.40s/it]Task 3, Epoch 3/15 => Loss 2.898, Train_accy 73.09, Test_accy 77.92:  20%|██        | 3/15 [03:22<13:16, 66.36s/it]Task 3, Epoch 4/15 => Loss 2.718, Train_accy 75.57, Test_accy 78.79:  20%|██        | 3/15 [04:24<13:16, 66.36s/it]Task 3, Epoch 4/15 => Loss 2.718, Train_accy 75.57, Test_accy 78.79:  27%|██▋       | 4/15 [04:26<11:58, 65.36s/it]Task 3, Epoch 5/15 => Loss 2.657, Train_accy 75.39, Test_accy 78.98:  27%|██▋       | 4/15 [05:31<11:58, 65.36s/it]Task 3, Epoch 5/15 => Loss 2.657, Train_accy 75.39, Test_accy 78.98:  33%|███▎      | 5/15 [05:32<10:58, 65.82s/it]Task 3, Epoch 6/15 => Loss 2.635, Train_accy 75.88, Test_accy 79.15:  33%|███▎      | 5/15 [06:38<10:58, 65.82s/it]Task 3, Epoch 6/15 => Loss 2.635, Train_accy 75.88, Test_accy 79.15:  40%|████      | 6/15 [06:40<09:56, 66.28s/it]Task 3, Epoch 7/15 => Loss 2.572, Train_accy 77.06, Test_accy 79.36:  40%|████      | 6/15 [07:44<09:56, 66.28s/it]Task 3, Epoch 7/15 => Loss 2.572, Train_accy 77.06, Test_accy 79.36:  47%|████▋     | 7/15 [07:46<08:50, 66.29s/it]Task 3, Epoch 8/15 => Loss 2.484, Train_accy 76.32, Test_accy 79.66:  47%|████▋     | 7/15 [08:52<08:50, 66.29s/it]Task 3, Epoch 8/15 => Loss 2.484, Train_accy 76.32, Test_accy 79.66:  53%|█████▎    | 8/15 [08:54<07:47, 66.78s/it]Task 3, Epoch 9/15 => Loss 2.446, Train_accy 78.24, Test_accy 79.53:  53%|█████▎    | 8/15 [09:59<07:47, 66.78s/it]Task 3, Epoch 9/15 => Loss 2.446, Train_accy 78.24, Test_accy 79.53:  60%|██████    | 9/15 [10:01<06:41, 66.92s/it]Task 3, Epoch 10/15 => Loss 2.459, Train_accy 79.17, Test_accy 79.97:  60%|██████    | 9/15 [11:07<06:41, 66.92s/it]Task 3, Epoch 10/15 => Loss 2.459, Train_accy 79.17, Test_accy 79.97:  67%|██████▋   | 10/15 [11:08<05:35, 67.09s/it]Task 3, Epoch 11/15 => Loss 2.406, Train_accy 78.74, Test_accy 79.76:  67%|██████▋   | 10/15 [12:12<05:35, 67.09s/it]Task 3, Epoch 11/15 => Loss 2.406, Train_accy 78.74, Test_accy 79.76:  73%|███████▎  | 11/15 [12:14<04:26, 66.60s/it]Task 3, Epoch 12/15 => Loss 2.391, Train_accy 78.92, Test_accy 79.86:  73%|███████▎  | 11/15 [13:20<04:26, 66.60s/it]Task 3, Epoch 12/15 => Loss 2.391, Train_accy 78.92, Test_accy 79.86:  80%|████████  | 12/15 [13:21<03:20, 66.87s/it]Task 3, Epoch 13/15 => Loss 2.404, Train_accy 78.74, Test_accy 79.94:  80%|████████  | 12/15 [14:26<03:20, 66.87s/it]Task 3, Epoch 13/15 => Loss 2.404, Train_accy 78.74, Test_accy 79.94:  87%|████████▋ | 13/15 [14:27<02:13, 66.56s/it]Task 3, Epoch 14/15 => Loss 2.449, Train_accy 78.24, Test_accy 80.04:  87%|████████▋ | 13/15 [15:33<02:13, 66.56s/it]Task 3, Epoch 14/15 => Loss 2.449, Train_accy 78.24, Test_accy 80.04:  93%|█████████▎| 14/15 [15:35<01:06, 66.79s/it]Task 3, Epoch 15/15 => Loss 2.393, Train_accy 78.98, Test_accy 80.00:  93%|█████████▎| 14/15 [16:40<01:06, 66.79s/it]Task 3, Epoch 15/15 => Loss 2.393, Train_accy 78.98, Test_accy 80.00: 100%|██████████| 15/15 [16:42<00:00, 66.87s/it]Task 3, Epoch 15/15 => Loss 2.393, Train_accy 78.98, Test_accy 80.00: 100%|██████████| 15/15 [16:42<00:00, 66.81s/it]
+mean_and_cov_update
+2026-09-21 17:05:35,556 [base.py] => CA Task 3 => Loss 0.500, Test_accy 81.640
+2026-09-21 17:06:13,083 [base.py] => CA Task 3 => Loss 0.475, Test_accy 82.040
+2026-09-21 17:06:50,456 [base.py] => CA Task 3 => Loss 0.465, Test_accy 82.560
+2026-09-21 17:07:28,015 [base.py] => CA Task 3 => Loss 0.459, Test_accy 82.780
+2026-09-21 17:08:05,642 [base.py] => CA Task 3 => Loss 0.448, Test_accy 82.690
+2026-09-21 17:08:42,469 [trainer.py] => Task 3 metrics: {'task': 3, 'task_id': 4, 'eval_stage': 'task_final', 'seen_classes': 157, 'num_correct': 5345, 'num_samples': 6464, 'A_t': 82.68873762376238, 'top5_num_correct': 6235, 'top5': 96.45730198019803, 'old_num_correct': 4058, 'old_num_samples': 4873, 'old_accuracy': 83.27518982146522, 'new_num_correct': 1287, 'new_num_samples': 1591, 'new_accuracy': 80.89252042740415, 'old_to_new_error_rate': 0.05130309870716191, 'new_to_old_error_rate': 0.1464487743557511, 'inc_accuracy_so_far': 85.8624591935028, 'forgetting_so_far': 3.6345007201785413, 'training_seconds': 1275.2887186610606, 'peak_cuda_allocated_bytes': 5134022144, 'peak_cuda_reserved_bytes': 12312379392, 'peak_main_process_rss_bytes': 4402315264, 'class_statistics_bytes': 371374080, 'region_statistics_bytes': 0, 'separation_cache_bytes': 0, 'total_statistics_bytes': 371374080, 'statistics_and_cache_bytes': 371374080, 'status': 'complete'}
+2026-09-21 17:08:44,391 [CDS_adapter.py] => Learning on 157-196
+The number of training dataset: 1599
+  0%|          | 0/15 [00:00<?, ?it/s]2026-09-21 17:09:40,961 [learner.py] => Frozen old-model similarity task=5 shape=(39, 157) beta=0.345326 source=task_quantile
+Task 4, Epoch 1/15 => Loss 5.456, Train_accy 18.76, Test_accy 74.74:   0%|          | 0/15 [01:24<?, ?it/s]Task 4, Epoch 1/15 => Loss 5.456, Train_accy 18.76, Test_accy 74.74:   7%|▋         | 1/15 [01:26<20:14, 86.74s/it]Task 4, Epoch 2/15 => Loss 3.350, Train_accy 64.79, Test_accy 76.22:   7%|▋         | 1/15 [02:38<20:14, 86.74s/it]Task 4, Epoch 2/15 => Loss 3.350, Train_accy 64.79, Test_accy 76.22:  13%|█▎        | 2/15 [02:40<17:11, 79.38s/it]Task 4, Epoch 3/15 => Loss 2.922, Train_accy 71.42, Test_accy 76.99:  13%|█▎        | 2/15 [03:55<17:11, 79.38s/it]Task 4, Epoch 3/15 => Loss 2.922, Train_accy 71.42, Test_accy 76.99:  20%|██        | 3/15 [03:57<15:35, 77.94s/it]Task 4, Epoch 4/15 => Loss 2.785, Train_accy 73.67, Test_accy 77.02:  20%|██        | 3/15 [05:11<15:35, 77.94s/it]Task 4, Epoch 4/15 => Loss 2.785, Train_accy 73.67, Test_accy 77.02:  27%|██▋       | 4/15 [05:13<14:10, 77.28s/it]Task 4, Epoch 5/15 => Loss 2.738, Train_accy 73.42, Test_accy 77.43:  27%|██▋       | 4/15 [06:26<14:10, 77.28s/it]Task 4, Epoch 5/15 => Loss 2.738, Train_accy 73.42, Test_accy 77.43:  33%|███▎      | 5/15 [06:28<12:43, 76.38s/it]Task 4, Epoch 6/15 => Loss 2.642, Train_accy 77.05, Test_accy 77.70:  33%|███▎      | 5/15 [07:41<12:43, 76.38s/it]Task 4, Epoch 6/15 => Loss 2.642, Train_accy 77.05, Test_accy 77.70:  40%|████      | 6/15 [07:43<11:23, 75.92s/it]Task 4, Epoch 7/15 => Loss 2.533, Train_accy 77.17, Test_accy 77.86:  40%|████      | 6/15 [08:56<11:23, 75.92s/it]Task 4, Epoch 7/15 => Loss 2.533, Train_accy 77.17, Test_accy 77.86:  47%|████▋     | 7/15 [08:58<10:05, 75.65s/it]Task 4, Epoch 8/15 => Loss 2.497, Train_accy 77.55, Test_accy 77.74:  47%|████▋     | 7/15 [10:11<10:05, 75.65s/it]Task 4, Epoch 8/15 => Loss 2.497, Train_accy 77.55, Test_accy 77.74:  53%|█████▎    | 8/15 [10:13<08:47, 75.38s/it]Task 4, Epoch 9/15 => Loss 2.518, Train_accy 78.05, Test_accy 77.83:  53%|█████▎    | 8/15 [11:25<08:47, 75.38s/it]Task 4, Epoch 9/15 => Loss 2.518, Train_accy 78.05, Test_accy 77.83:  60%|██████    | 9/15 [11:27<07:30, 75.13s/it]Task 4, Epoch 10/15 => Loss 2.550, Train_accy 75.17, Test_accy 78.24:  60%|██████    | 9/15 [12:40<07:30, 75.13s/it]Task 4, Epoch 10/15 => Loss 2.550, Train_accy 75.17, Test_accy 78.24:  67%|██████▋   | 10/15 [12:42<06:15, 75.11s/it]Task 4, Epoch 11/15 => Loss 2.537, Train_accy 77.17, Test_accy 78.29:  67%|██████▋   | 10/15 [13:55<06:15, 75.11s/it]Task 4, Epoch 11/15 => Loss 2.537, Train_accy 77.17, Test_accy 78.29:  73%|███████▎  | 11/15 [13:57<04:59, 74.96s/it]Task 4, Epoch 12/15 => Loss 2.459, Train_accy 78.17, Test_accy 78.20:  73%|███████▎  | 11/15 [15:09<04:59, 74.96s/it]Task 4, Epoch 12/15 => Loss 2.459, Train_accy 78.17, Test_accy 78.20:  80%|████████  | 12/15 [15:11<03:44, 74.77s/it]Task 4, Epoch 13/15 => Loss 2.533, Train_accy 76.67, Test_accy 78.34:  80%|████████  | 12/15 [16:24<03:44, 74.77s/it]Task 4, Epoch 13/15 => Loss 2.533, Train_accy 76.67, Test_accy 78.34:  87%|████████▋ | 13/15 [16:26<02:29, 74.69s/it]Task 4, Epoch 14/15 => Loss 2.375, Train_accy 79.80, Test_accy 78.40:  87%|████████▋ | 13/15 [17:40<02:29, 74.69s/it]Task 4, Epoch 14/15 => Loss 2.375, Train_accy 79.80, Test_accy 78.40:  93%|█████████▎| 14/15 [17:42<01:15, 75.30s/it]Task 4, Epoch 15/15 => Loss 2.383, Train_accy 78.86, Test_accy 78.40:  93%|█████████▎| 14/15 [18:57<01:15, 75.30s/it]Task 4, Epoch 15/15 => Loss 2.383, Train_accy 78.86, Test_accy 78.40: 100%|██████████| 15/15 [18:59<00:00, 75.54s/it]Task 4, Epoch 15/15 => Loss 2.383, Train_accy 78.86, Test_accy 78.40: 100%|██████████| 15/15 [18:59<00:00, 75.94s/it]
+mean_and_cov_update
+2026-09-21 17:30:03,269 [base.py] => CA Task 4 => Loss 0.561, Test_accy 80.710
+2026-09-21 17:30:49,512 [base.py] => CA Task 4 => Loss 0.541, Test_accy 81.210
+2026-09-21 17:31:35,992 [base.py] => CA Task 4 => Loss 0.528, Test_accy 81.170
+2026-09-21 17:32:22,548 [base.py] => CA Task 4 => Loss 0.522, Test_accy 81.130
+2026-09-21 17:33:09,003 [base.py] => CA Task 4 => Loss 0.519, Test_accy 81.200
+2026-09-21 17:33:54,696 [trainer.py] => Task 4 metrics: {'task': 4, 'task_id': 5, 'eval_stage': 'task_final', 'seen_classes': 196, 'num_correct': 6529, 'num_samples': 8041, 'A_t': 81.1963686108693, 'top5_num_correct': 7704, 'top5': 95.8089789827136, 'old_num_correct': 5235, 'old_num_samples': 6464, 'old_accuracy': 80.98700495049505, 'new_num_correct': 1294, 'new_num_samples': 1577, 'new_accuracy': 82.05453392517438, 'old_to_new_error_rate': 0.038366336633663366, 'new_to_old_error_rate': 0.14648065948002537, 'inc_accuracy_so_far': 84.9292410769761, 'forgetting_so_far': 4.431442909464234, 'training_seconds': 1464.6775059680222, 'peak_cuda_allocated_bytes': 5135187968, 'peak_cuda_reserved_bytes': 13094617088, 'peak_main_process_rss_bytes': 4402315264, 'class_statistics_bytes': 463626240, 'region_statistics_bytes': 0, 'separation_cache_bytes': 0, 'total_statistics_bytes': 463626240, 'statistics_and_cache_bytes': 463626240, 'status': 'complete'}
+2026-09-21 17:33:56,942 [trainer.py] => Summary: {'recording_schema_version': 2, 'experiment_id': 'Structure', 'seed': 1993, 'multi_center': False, 'separation_covariance': 'none', 'completed_tasks': 5, 'expected_tasks': 5, 'A_by_task': [88.9618138424821, 86.6156202143951, 85.18366509337164, 82.68873762376238, 81.1963686108693], 'Inc-Acc': 84.9292410769761, 'Last-Acc': 81.1963686108693, 'Forgetting': 4.431442909464234, 'forgetting_definition': 'mean_i(max_{l=i..T-1} a[l,i] - a[T,i]) over tasks i before final task; a[l,i] uses the single head over all classes seen at stage l', 'accuracy_unit': 'percent_0_to_100_unrounded', 'recording_status': 'complete', 'recording_gaps': [], 'total_training_seconds': 5489.940461637219, 'max_peak_cuda_allocated_bytes': 6281271296, 'max_peak_cuda_reserved_bytes': 13094617088, 'max_peak_main_process_rss_bytes': 4402315264, 'final_total_statistics_bytes': 463626240, 'max_separation_cache_bytes': 0, 'status': 'complete'}
+--- Finished CAR5/Structure ---
