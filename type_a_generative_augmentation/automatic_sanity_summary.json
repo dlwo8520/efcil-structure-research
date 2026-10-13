@@ -1,0 +1,451 @@
+{
+  "status": "READY_EXPLORATORY",
+  "mode": {
+    "mode": "exploratory_automatic_sanity",
+    "human_review_required": false,
+    "label_fidelity_verified": false,
+    "policy_version": 1,
+    "selection": "All generated images passing fixed automatic rules; ignore all individual human review choices",
+    "contact_sheets": "artifact_only",
+    "future_formal_experiment": "Human QC or stricter label-preservation validation required if downstream results are promising",
+    "fine_grained_limitation": "Automatic checks do not guarantee CAR model/year identity, and cannot establish complete object retention"
+  },
+  "label_fidelity_verified": false,
+  "limitation": "Exploratory pilot without human QC. Generated labels are inherited from parents, not verified. Automatic similarity/structure checks cannot guarantee CAR model/year identity or complete object retention. No individual human choices or classifier confidence are used. Fixed-rule filtering may still introduce distribution bias. Downstream G-S evaluates this fixed generator + automatic-sanity recipe, not all generative augmentation.",
+  "fingerprints": {
+    "generation_manifest_sha256": "4a660d064f1627544b1d71730c44076fc29ea7e4db031e4a6095aa3ecfd2e476",
+    "generation_config_sha256": "e38339b883c51ee8a2f0e46a5c5307df8f46cda92593053fe48815d304c7bacf",
+    "mode_sha256": "16596fb51f501de83d8c9e8c5b9c6b5eca170a2320261b4ec920c9a4d4dfb98a",
+    "policy_sha256": "e990793c9376bfb31086bf75286fa294b9be5424c174c52e56adb03990da7e3c",
+    "vision_weights_sha256": "9d6a233ff6fd5ccb9f76fd99618d73369c52dd3d8222376384d0e601911089e8",
+    "vision_config_sha256": "5dd77a06cbd9b155060bd58deb81ffd1aafc1c6d7970acac674c1128bd4edfe2",
+    "processor_config_sha256": "2a1da83b5e1032aaeef397552ddb408dca0d8cd1dc58f61bf6abf38d6f33a0a2"
+  },
+  "protocols": {
+    "IA10": {
+      "total": 568,
+      "accepted": 560,
+      "excluded": 8,
+      "reason_counts_nonexclusive": {
+        "generation_failed_or_safety_blocked": 8,
+        "collapsed_image": 8
+      },
+      "similarity": {
+        "all_decodable": {
+          "global_cosine": {
+            "n": 568,
+            "mean": 0.8168265624365336,
+            "min": 0.381451815366745,
+            "q05": 0.6557760566473008,
+            "median": 0.8373797833919525,
+            "q95": 0.9191312819719314,
+            "max": 0.9550805687904358
+          },
+          "center_cosine": {
+            "n": 568,
+            "mean": 0.8188365504775249,
+            "min": 0.33782950043678284,
+            "q05": 0.6239223629236221,
+            "median": 0.840932160615921,
+            "q95": 0.9337656676769257,
+            "max": 0.9679074287414551
+          },
+          "block_ssim": {
+            "n": 568,
+            "mean": 0.6896746917913759,
+            "min": 0.00020745421706002795,
+            "q05": 0.45695208180668634,
+            "median": 0.7128621848864714,
+            "q95": 0.8755878518441371,
+            "max": 0.9382851010964708
+          },
+          "mean_absolute_error": {
+            "n": 568,
+            "mean": 0.052046377600406785,
+            "min": 0.005979808047413826,
+            "q05": 0.02111455360427499,
+            "median": 0.04268705099821091,
+            "q95": 0.08860445730388164,
+            "max": 0.5437305569648743
+          },
+          "pixel_rmse": {
+            "n": 568,
+            "mean": 0.08115396264966734,
+            "min": 0.017286760732531548,
+            "q05": 0.035441486909985546,
+            "median": 0.07058679684996605,
+            "q95": 0.1406478144228458,
+            "max": 0.5629942417144775
+          },
+          "dhash_distance": {
+            "n": 568,
+            "mean": 5.876760563380282,
+            "min": 0.0,
+            "q05": 1.0,
+            "median": 5.0,
+            "q95": 14.0,
+            "max": 37.0
+          },
+          "center_edge_ratio": {
+            "n": 568,
+            "mean": 1.0000159988688455,
+            "min": 0.0,
+            "q05": 0.9125129227390203,
+            "median": 1.0096554248015837,
+            "q95": 1.1163030714610545,
+            "max": 1.2811295845243913
+          }
+        },
+        "accepted": {
+          "global_cosine": {
+            "n": 560,
+            "mean": 0.8215910377246993,
+            "min": 0.5072961449623108,
+            "q05": 0.6742785006761551,
+            "median": 0.8383752405643463,
+            "q95": 0.9193848460912705,
+            "max": 0.9550805687904358
+          },
+          "center_cosine": {
+            "n": 560,
+            "mean": 0.8237722310636725,
+            "min": 0.4593505859375,
+            "q05": 0.6449857205152512,
+            "median": 0.8432954251766205,
+            "q95": 0.9339987277984618,
+            "max": 0.9679074287414551
+          },
+          "block_ssim": {
+            "n": 560,
+            "mean": 0.6995012855345646,
+            "min": 0.23430356780508857,
+            "q05": 0.47151625504069333,
+            "median": 0.7152606499780243,
+            "q95": 0.8756579188136194,
+            "max": 0.9382851010964708
+          },
+          "mean_absolute_error": {
+            "n": 560,
+            "mean": 0.046215936456740436,
+            "min": 0.005979808047413826,
+            "q05": 0.021033724863082172,
+            "median": 0.04226003587245941,
+            "q95": 0.08588399142026897,
+            "max": 0.11577204614877701
+          },
+          "pixel_rmse": {
+            "n": 560,
+            "mean": 0.0753537077922374,
+            "min": 0.017286760732531548,
+            "q05": 0.03507970850914717,
+            "median": 0.07011644914746284,
+            "q95": 0.13289072066545485,
+            "max": 0.17750054597854614
+          },
+          "dhash_distance": {
+            "n": 560,
+            "mean": 5.541071428571429,
+            "min": 0.0,
+            "q05": 1.0,
+            "median": 5.0,
+            "q95": 13.0,
+            "max": 18.0
+          },
+          "center_edge_ratio": {
+            "n": 560,
+            "mean": 1.014301941709829,
+            "min": 0.8674103859051469,
+            "q05": 0.9169563639552293,
+            "median": 1.0106292046809526,
+            "q95": 1.1168124721467283,
+            "max": 1.2811295845243913
+          }
+        },
+        "excluded_decodable": {
+          "global_cosine": {
+            "n": 8,
+            "mean": 0.48331329226493835,
+            "min": 0.381451815366745,
+            "q05": 0.3824222251772881,
+            "median": 0.4668623358011246,
+            "q95": 0.614447396993637,
+            "max": 0.6339688301086426
+          },
+          "center_cosine": {
+            "n": 8,
+            "mean": 0.47333890944719315,
+            "min": 0.33782950043678284,
+            "q05": 0.355042938888073,
+            "median": 0.47644321620464325,
+            "q95": 0.5911285519599915,
+            "max": 0.5955649018287659
+          },
+          "block_ssim": {
+            "n": 8,
+            "mean": 0.0018131297681680425,
+            "min": 0.00020745421706002795,
+            "q05": 0.0002305840444416108,
+            "median": 0.0010082901589364983,
+            "q95": 0.005233195818098443,
+            "max": 0.005850247691526807
+          },
+          "mean_absolute_error": {
+            "n": 8,
+            "mean": 0.4601772576570511,
+            "min": 0.41828569769859314,
+            "q05": 0.41873021721839904,
+            "median": 0.45096634328365326,
+            "q95": 0.5239600673317909,
+            "max": 0.5437305569648743
+          },
+          "pixel_rmse": {
+            "n": 8,
+            "mean": 0.48717180266976357,
+            "min": 0.43408581614494324,
+            "q05": 0.4418019473552704,
+            "median": 0.48057694733142853,
+            "q95": 0.5446164220571518,
+            "max": 0.5629942417144775
+          },
+          "dhash_distance": {
+            "n": 8,
+            "mean": 29.375,
+            "min": 16.0,
+            "q05": 19.85,
+            "median": 30.0,
+            "q95": 35.949999999999996,
+            "max": 37.0
+          },
+          "center_edge_ratio": {
+            "n": 8,
+            "mean": 0.0,
+            "min": 0.0,
+            "q05": 0.0,
+            "median": 0.0,
+            "q95": 0.0,
+            "max": 0.0
+          }
+        }
+      }
+    },
+    "CAR10": {
+      "total": 624,
+      "accepted": 622,
+      "excluded": 2,
+      "reason_counts_nonexclusive": {
+        "generation_failed_or_safety_blocked": 2,
+        "collapsed_image": 2
+      },
+      "similarity": {
+        "all_decodable": {
+          "global_cosine": {
+            "n": 624,
+            "mean": 0.8887682949694303,
+            "min": 0.502485990524292,
+            "q05": 0.79639353454113,
+            "median": 0.8996315598487854,
+            "q95": 0.9482950925827026,
+            "max": 0.9723463654518127
+          },
+          "center_cosine": {
+            "n": 624,
+            "mean": 0.9058711779041168,
+            "min": 0.5649362206459045,
+            "q05": 0.819286048412323,
+            "median": 0.9152966737747192,
+            "q95": 0.9608233988285064,
+            "max": 0.9783284664154053
+          },
+          "block_ssim": {
+            "n": 624,
+            "mean": 0.7807909604311329,
+            "min": 0.02635421843923323,
+            "q05": 0.6519158468653808,
+            "median": 0.7871644902078732,
+            "q95": 0.9121187017230039,
+            "max": 0.9462330126378413
+          },
+          "mean_absolute_error": {
+            "n": 624,
+            "mean": 0.039509313276562937,
+            "min": 0.018884165212512016,
+            "q05": 0.024048435874283312,
+            "median": 0.03764436952769756,
+            "q95": 0.0544625448063016,
+            "max": 0.4786466658115387
+          },
+          "pixel_rmse": {
+            "n": 624,
+            "mean": 0.06833660640180685,
+            "min": 0.03546442463994026,
+            "q05": 0.04532474353909492,
+            "median": 0.06545864790678024,
+            "q95": 0.09494603723287583,
+            "max": 0.5689636468887329
+          },
+          "dhash_distance": {
+            "n": 624,
+            "mean": 6.418269230769231,
+            "min": 0.0,
+            "q05": 2.0,
+            "median": 6.0,
+            "q95": 12.0,
+            "max": 32.0
+          },
+          "center_edge_ratio": {
+            "n": 624,
+            "mean": 1.0124311790272222,
+            "min": 0.0,
+            "q05": 0.9482097671940054,
+            "median": 1.0156710682224985,
+            "q95": 1.0827305771955005,
+            "max": 1.1498957769003608
+          }
+        },
+        "accepted": {
+          "global_cosine": {
+            "n": 622,
+            "mean": 0.8898086443399693,
+            "min": 0.6674368977546692,
+            "q05": 0.7970372557640075,
+            "median": 0.8997242152690887,
+            "q95": 0.9483474016189575,
+            "max": 0.9723463654518127
+          },
+          "center_cosine": {
+            "n": 622,
+            "mean": 0.906783849288413,
+            "min": 0.6797811388969421,
+            "q05": 0.8200366944074631,
+            "median": 0.9154123961925507,
+            "q95": 0.9608325898647309,
+            "max": 0.9783284664154053
+          },
+          "block_ssim": {
+            "n": 622,
+            "mean": 0.7831278636830844,
+            "min": 0.5448581746353743,
+            "q05": 0.6522975034949009,
+            "median": 0.7873504556987652,
+            "q95": 0.9121846956847409,
+            "max": 0.9462330126378413
+          },
+          "mean_absolute_error": {
+            "n": 622,
+            "mean": 0.03816674089125115,
+            "min": 0.018884165212512016,
+            "q05": 0.024035572819411755,
+            "median": 0.037508830428123474,
+            "q95": 0.054121771827340064,
+            "max": 0.07501482218503952
+          },
+          "pixel_rmse": {
+            "n": 622,
+            "mean": 0.06684658769218677,
+            "min": 0.03546442463994026,
+            "q05": 0.04531249925494194,
+            "median": 0.06525012105703354,
+            "q95": 0.09455576315522192,
+            "max": 0.1205645278096199
+          },
+          "dhash_distance": {
+            "n": 622,
+            "mean": 6.347266881028939,
+            "min": 0.0,
+            "q05": 2.0,
+            "median": 6.0,
+            "q95": 12.0,
+            "max": 17.0
+          },
+          "center_edge_ratio": {
+            "n": 622,
+            "mean": 1.0156865847475671,
+            "min": 0.8879416377900088,
+            "q05": 0.9496728801204938,
+            "median": 1.0157723373408825,
+            "q95": 1.0827337664103065,
+            "max": 1.1498957769003608
+          }
+        },
+        "excluded_decodable": {
+          "global_cosine": {
+            "n": 2,
+            "mean": 0.5652196407318115,
+            "min": 0.502485990524292,
+            "q05": 0.5087593555450439,
+            "median": 0.5652196407318115,
+            "q95": 0.6216799259185791,
+            "max": 0.627953290939331
+          },
+          "center_cosine": {
+            "n": 2,
+            "mean": 0.6220303773880005,
+            "min": 0.5649362206459045,
+            "q05": 0.5706456363201141,
+            "median": 0.6220303773880005,
+            "q95": 0.6734151184558869,
+            "max": 0.6791245341300964
+          },
+          "block_ssim": {
+            "n": 2,
+            "mean": 0.054014049074185846,
+            "min": 0.02635421843923323,
+            "q05": 0.02912020150272849,
+            "median": 0.054014049074185846,
+            "q95": 0.0789078966456432,
+            "max": 0.08167387970913846
+          },
+          "mean_absolute_error": {
+            "n": 2,
+            "mean": 0.45704932510852814,
+            "min": 0.4354519844055176,
+            "q05": 0.43761171847581865,
+            "median": 0.45704932510852814,
+            "q95": 0.47648693174123763,
+            "max": 0.4786466658115387
+          },
+          "pixel_rmse": {
+            "n": 2,
+            "mean": 0.5317324250936508,
+            "min": 0.4945012032985687,
+            "q05": 0.49822432547807693,
+            "median": 0.5317324250936508,
+            "q95": 0.5652405247092247,
+            "max": 0.5689636468887329
+          },
+          "dhash_distance": {
+            "n": 2,
+            "mean": 28.5,
+            "min": 25.0,
+            "q05": 25.35,
+            "median": 28.5,
+            "q95": 31.65,
+            "max": 32.0
+          },
+          "center_edge_ratio": {
+            "n": 2,
+            "mean": 0.0,
+            "min": 0.0,
+            "q05": 0.0,
+            "median": 0.0,
+            "q95": 0.0,
+            "max": 0.0
+          }
+        }
+      }
+    }
+  },
+  "empty_current_classes": [],
+  "output_sha256": {
+    "automatic_sanity.csv": "f1b4521d50b5cbe5dee5c0acae36ff76c86aa1b2171df0c9553e7508b2dfc865",
+    "automatic_parent_counts.csv": "0495a827a1bcdbf84a2c5ef3638b416f914ecf312a83bc62613f657e2b2fd0ec",
+    "accepted_parent_manifest.csv": "4e370b087f5ad8128501d472cdb45c1c64c2d661382841e45e0ddafc1f6229fc"
+  },
+  "resource_usage": {
+    "seconds": 120.94909553602338,
+    "device": "cuda:0",
+    "peak_gpu_allocated_bytes": 1505283584,
+    "additional_downloads": false,
+    "additional_weights": "existing pinned generator CLIP component reused"
+  }
+}
