@@ -1,0 +1,18 @@
+{
+  "base_config": "ptm_guided_base.json",
+  "prefix": "ptm_guided_cars196_5task_ptm_place_move",
+  "dataset": "cars196",
+  "expected_num_classes": 196,
+  "task_count": 5,
+  "init_cls": 40,
+  "increment": 40,
+  "method": "ptm_place_move",
+  "ptm_place_enabled": true,
+  "old_move_enabled": true,
+  "init_epochs": 70,
+  "inc_epochs": 40,
+  "init_lr": 0.005,
+  "batch_size": 32,
+  "margin": 0.3,
+  "adapter_placement": "attention"
+}
