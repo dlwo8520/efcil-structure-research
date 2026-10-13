@@ -1,0 +1,17 @@
+2026-08-11 17:26:52 | INFO | method=small_update_lora output=${RESEARCH_WORKSPACE}/projects/efcil_direction_diagnostic/outputs/sanity_cifar100_2task/seed_0/small_update_lora
+2026-08-11 17:26:52 | INFO | GPU: {'CUDA_VISIBLE_DEVICES': '1', 'torch_cuda_device_count': 1, 'torch_cuda_current_device': 0, 'torch_cuda_device_name': 'NVIDIA RTX A6000', 'torch_cuda_device_uuid': 'afb08c1c-8a66-104a-01d1-046df70f0552'}
+2026-08-11 17:26:56 | INFO | parameters total=86093568 initially_trainable=0 feature_dim=768
+2026-08-11 17:26:56 | INFO | loaded 8 norm targets from ${RESEARCH_WORKSPACE}/projects/efcil_direction_diagnostic/outputs/sanity_cifar100_2task/seed_0/orthogonal_lora/step_updates.csv
+2026-08-11 17:26:56 | INFO | starting task=0 classes=0..9
+2026-08-11 17:27:03 | INFO | task=0 step=1/4 loss=0.1179 acc=0.938 update=5.430e-01 scale=1.000
+2026-08-11 17:27:03 | INFO | task=0 step=2/4 loss=0.1575 acc=0.938 update=3.299e-01 scale=1.000
+2026-08-11 17:27:03 | INFO | task=0 step=3/4 loss=0.0589 acc=1.000 update=1.544e-01 scale=1.000
+2026-08-11 17:27:03 | INFO | task=0 step=4/4 loss=0.1228 acc=0.969 update=3.915e-02 scale=1.000
+2026-08-11 17:27:05 | INFO | finished task=0 seen_acc=0.9620 old_acc=nan new_acc=0.9620 forgetting=0.0000 peak=3.51GB
+2026-08-11 17:27:05 | INFO | starting task=1 classes=10..19
+2026-08-11 17:27:11 | INFO | task=1 step=1/4 loss=0.2487 acc=0.906 update=5.430e-01 scale=1.000
+2026-08-11 17:27:11 | INFO | task=1 step=2/4 loss=0.1920 acc=0.938 update=0.000e+00 scale=0.000
+2026-08-11 17:27:11 | INFO | task=1 step=3/4 loss=0.0543 acc=0.969 update=1.488e-01 scale=1.000
+2026-08-11 17:27:11 | INFO | task=1 step=4/4 loss=0.0578 acc=0.969 update=3.692e-02 scale=1.000
+2026-08-11 17:27:14 | INFO | finished task=1 seen_acc=0.8210 old_acc=0.6660 new_acc=0.9760 forgetting=0.2960 peak=3.56GB
+2026-08-11 17:27:14 | INFO | run complete final_accuracy=0.8210
