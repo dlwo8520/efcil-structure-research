@@ -1,0 +1,736 @@
+{
+  "protocol": "CAR10",
+  "known_classes": 177,
+  "draws": 3,
+  "matched_class_counts": true,
+  "boundary_gap_confirmed": true,
+  "gate": "both Gaussian sources: macro q05/q10 > actual and >50% classes positive",
+  "sources": {
+    "BB_oracle_gaussian": {
+      "class_macro_q05_gap": 0.2839877396429102,
+      "class_macro_q10_gap": 0.23071138522045764,
+      "class_macro_negative_fraction_gap": -0.01651536828859529,
+      "positive_q05_class_fraction": 0.7627118644067796,
+      "positive_q10_class_fraction": 0.751412429378531,
+      "draws": 3
+    },
+    "BC_stored_gaussian": {
+      "class_macro_q05_gap": 0.39951451109852043,
+      "class_macro_q10_gap": 0.3033617687315141,
+      "class_macro_negative_fraction_gap": -0.02805451657689053,
+      "positive_q05_class_fraction": 0.7909604519774012,
+      "positive_q10_class_fraction": 0.7796610169491526,
+      "draws": 3
+    }
+  },
+  "stored_covariance_repairs": [
+    {
+      "class_id": 0,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 1,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 2,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 3,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 4,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 5,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 6,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 7,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 8,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 9,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 10,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 11,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 12,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 13,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 14,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 15,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 16,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 17,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 18,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 19,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 20,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 21,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 22,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 23,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 24,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 25,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 26,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 27,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 28,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 29,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 30,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 31,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 32,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 33,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 34,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 35,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 36,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 37,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 38,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 39,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 40,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 41,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 42,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 43,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 44,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 45,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 46,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 47,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 48,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 49,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 50,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 51,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 52,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 53,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 54,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 55,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 56,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 57,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 58,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 59,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 60,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 61,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 62,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 63,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 64,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 65,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 66,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 67,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 68,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 69,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 70,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 71,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 72,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 73,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 74,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 75,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 76,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 77,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 78,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 79,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 80,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 81,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 82,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 83,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 84,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 85,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 86,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 87,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 88,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 89,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 90,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 91,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 92,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 93,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 94,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 95,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 96,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 97,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 98,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 99,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 100,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 101,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 102,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 103,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 104,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 105,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 106,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 107,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 108,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 109,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 110,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 111,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 112,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 113,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 114,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 115,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 116,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 117,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 118,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 119,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 120,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 121,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 122,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 123,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 124,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 125,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 126,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 127,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 128,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 129,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 130,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 131,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 132,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 133,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 134,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 135,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 136,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 137,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 138,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 139,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 140,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 141,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 142,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 143,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 144,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 145,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 146,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 147,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 148,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 149,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 150,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 151,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 152,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 153,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 154,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 155,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 156,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 157,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 158,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 159,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 160,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 161,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 162,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 163,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 164,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 165,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 166,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 167,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 168,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 169,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 170,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 171,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 172,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 173,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 174,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 175,
+      "additional_numerical_jitter": 0.0
+    },
+    {
+      "class_id": 176,
+      "additional_numerical_jitter": 0.0
+    }
+  ]
+}
