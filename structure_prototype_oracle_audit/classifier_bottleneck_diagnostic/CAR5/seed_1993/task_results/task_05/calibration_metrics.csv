@@ -1,0 +1,7 @@
+protocol,task,condition,score_function,temperature_selection,nll,brier_score,ece_15bin
+CAR5,5,STRUCTURE_CA,softmax(scale=20 * cosine),none,0.9597259163856506,0.3614625330992317,0.26069666241779654
+CAR5,5,FULL_ORACLE_GAUSSIAN_CA,softmax(scale=20 * cosine),none,0.9479628801345825,0.35668952566504275,0.26398135930718575
+CAR5,5,G_FIXED,softmax(scale=20 * cosine),none,1.047971487045288,0.4004674568798984,0.21446872266567013
+CAR5,5,R_FIXED,softmax(scale=20 * cosine),none,1.0343366861343384,0.39554139462815213,0.22504930144914598
+CAR5,5,APR_NCM,diagnostic softmax(scale=20 * cosine NCM),fixed Structure scale; NCM calibration is auxiliary,1.486784815788269,0.5414019378282676,0.19093292532077538
+CAR5,5,ORACLE_NCM,diagnostic softmax(scale=20 * cosine NCM),fixed Structure scale; NCM calibration is auxiliary,1.435750961303711,0.5244570542630058,0.1948570996882414

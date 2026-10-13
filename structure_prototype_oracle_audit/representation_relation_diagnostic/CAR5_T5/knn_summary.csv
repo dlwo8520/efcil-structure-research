@@ -1,0 +1,20 @@
+row_type,split,method,k,micro_accuracy,macro_accuracy,selected_by_test,selected_by_validation,num_samples,old_accuracy,new_accuracy,selected_l2,selected_k,sample_count_group,accuracy,q25,q50,q75
+k_selection,validation,KNN_K1,1,65.78266494178526,66.03699446811692,False,False,,,,,,,,,,
+k_selection,validation,KNN_K3,3,67.46442432082794,67.66050559417907,False,False,,,,,,,,,,
+k_selection,validation,KNN_K5,5,68.24062095730919,68.54323964017841,False,False,,,,,,,,,,
+k_selection,validation,KNN_K9,9,68.95213454075032,69.1627731678752,False,True,,,,,,,,,,
+summary,test,Structure cosine,,81.1963686108693,81.25300468195731,,,8041,80.98700495049505,82.05453392517438,,,,,,,
+summary,test,Validated Linear,,82.55192140281059,82.47119002864088,,,8041,82.50309405940595,82.75206087507927,5e-06,,,,,,
+summary,test,k-NN (k=9),,66.35990548439248,66.53974444639117,,,8041,65.71782178217822,68.99175649968295,,9,,,,,
+sample_count_group,test,Structure cosine,,,,,,2213,,,,,very_low,81.97017623136014,32.0,34.0,36.0
+sample_count_group,test,Validated Linear,,,,,,2213,,,,,very_low,81.29236330772707,32.0,34.0,36.0
+sample_count_group,test,k-NN (k=9),,,,,,2213,,,,,very_low,70.35698147311342,32.0,34.0,36.0
+sample_count_group,test,Structure cosine,,,,,,1729,,,,,low,80.33545401966454,32.0,34.0,36.0
+sample_count_group,test,Validated Linear,,,,,,1729,,,,,low,80.79814921920186,32.0,34.0,36.0
+sample_count_group,test,k-NN (k=9),,,,,,1729,,,,,low,63.56275303643725,32.0,34.0,36.0
+sample_count_group,test,Structure cosine,,,,,,3340,,,,,medium,81.91616766467065,32.0,34.0,36.0
+sample_count_group,test,Validated Linear,,,,,,3340,,,,,medium,84.19161676646706,32.0,34.0,36.0
+sample_count_group,test,k-NN (k=9),,,,,,3340,,,,,medium,66.01796407185628,32.0,34.0,36.0
+sample_count_group,test,Structure cosine,,,,,,759,,,,,high,77.733860342556,32.0,34.0,36.0
+sample_count_group,test,Validated Linear,,,,,,759,,,,,high,83.00395256916995,32.0,34.0,36.0
+sample_count_group,test,k-NN (k=9),,,,,,759,,,,,high,62.582345191040844,32.0,34.0,36.0

@@ -1,0 +1,5 @@
+dataset,protocol,task,class_id,birth_task,class_age,is_old,num_test_samples,class_accuracy,best_previous_or_current_accuracy,forgetting,class_accuracy_drop,old_to_new_confusion
+car196,CAR5,5,0,1,4,True,2,100.0,100.0,0.0,0.0,0.0
+car196,CAR5,5,1,1,4,True,2,100.0,100.0,0.0,0.0,0.0
+car196,CAR5,5,157,5,0,False,2,100.0,100.0,0.0,0.0,
+car196,CAR5,5,158,5,0,False,2,100.0,100.0,0.0,0.0,

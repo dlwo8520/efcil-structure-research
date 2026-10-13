@@ -1,0 +1,3 @@
+comparison,dataset_consistent_prediction_gain,prototype_ready,method_ready,reason,protocol_evidence
+AB,False,NO,NO,"Paired prediction gain is not strong and consistent across datasets, classes, old/new queries and high-loss samples.","IA10: net=+0.07pp, macro=-0.97pp, old/new=+0.14/-0.81pp, high-loss contribution=-0.26pp; CAR10: net=+0.90pp, macro=+0.87pp, old/new=+0.90/+0.90pp, high-loss contribution=+0.10pp"
+BC,False,NO,NO,"Paired prediction gain is not strong and consistent across datasets, classes, old/new queries and high-loss samples.","IA10: net=+0.33pp, macro=-0.03pp, old/new=+0.36/+0.00pp, high-loss contribution=+0.39pp; CAR10: net=+1.17pp, macro=+1.18pp, old/new=+1.31/-0.13pp, high-loss contribution=+0.76pp"
