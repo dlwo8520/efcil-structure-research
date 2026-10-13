@@ -1,0 +1,42 @@
+{
+  "completed_at": "2026-10-12T17:11:02.241204+09:00",
+  "status": "PASS",
+  "experiment_hash": "2c305b8a4eb2909b66a9c11bffd6954ad87263c0bad0b2063b538385219eb320",
+  "official_commit": "8bc17e0537991f6bb5c0399339bddb3d1418d220",
+  "vanilla_reference_sha256": "5840aa869d70941b697eed4ac7bf869d056e7b02b8ee959e2d6b9d2df3ad144a",
+  "class_order_hash": "3b55531a29f4506f5177f744e9f5f42d6cd052fb99fd93b05f022cd701465912",
+  "data_split_hash": "43caa2002b04aa100aa64c16c4c37a8bbf6498250c684999ca4c20209a427a23",
+  "n_real_train": 5981,
+  "n_test": 1519,
+  "vanilla_reference_sample_identity_label_and_ten_task_coverage": "PASS",
+  "vanilla_reference_stage": "task_end_post_after_task",
+  "vanilla_seen_trajectory_pct": [
+    86.28571428571429,
+    83.33333333333333,
+    77.52100840336135,
+    78.22349570200574,
+    74.19738406658739,
+    72.61538461538461,
+    69.40231935771632,
+    66.98717948717949,
+    65.23297491039426,
+    64.71362738643845
+  ],
+  "vanilla_final_seen_pct": 64.71362738643845,
+  "vanilla_average_incremental_pct": 73.85124215481153,
+  "training_executed": false,
+  "generator_executed": false,
+  "estimated_lora_updates_per_task": [
+    35600,
+    38400,
+    25600,
+    39200,
+    26400,
+    26400,
+    27200,
+    26800,
+    28800,
+    26400
+  ],
+  "estimated_candidates": 20000
+}

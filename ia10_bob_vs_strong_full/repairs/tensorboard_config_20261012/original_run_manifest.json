@@ -1,0 +1,13 @@
+{
+  "status": "interrupted_or_failed",
+  "updated_at": "2026-10-12T16:55:21.706338+09:00",
+  "experiment_hash": "ad31ebaa6ffee78ce499d0a3b3c1a563d3e03a3a815c156aa69a0f3657bb3080",
+  "physical_gpu": "5",
+  "branches": [
+    "S_full",
+    "BOB_full"
+  ],
+  "vanilla_retrained": false,
+  "full_cumulative": true,
+  "error": "CalledProcessError(1, ['${RESEARCH_WORKSPACE}/ia10_bob_vs_strong_full/.bob_env/bin/python', '-m', 'fulltraj.bob_worker', 'feasibility'])"
+}
