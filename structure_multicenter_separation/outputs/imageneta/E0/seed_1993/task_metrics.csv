@@ -1,0 +1,2 @@
+task,seen_classes,A_t,top5,old_accuracy,new_accuracy,old_to_new_error_rate,new_to_old_error_rate,inc_accuracy_so_far,forgetting_so_far,training_seconds,peak_cuda_allocated_bytes,peak_cuda_reserved_bytes,peak_main_process_rss_bytes,class_statistics_bytes,region_statistics_bytes,separation_cache_bytes,total_statistics_bytes,statistics_and_cache_bytes,status
+0,40,83.89,96.39,0,83.89,,0.0,83.89,,499.8752853439655,6281587712,8784969728,1561231360,94617600,0,0,94617600,94617600,complete

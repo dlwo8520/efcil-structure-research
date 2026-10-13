@@ -1,0 +1,5 @@
+﻿method,seed,n,K1_classes,K2_classes,K3_classes,reduced_K_classes,min_cluster_samples,max_share,mean_max_share,empty_final_clusters,singleton_final_clusters,reasons,descriptive_share_delta_correlation
+E1,1993,1,4,24,172,28,2,1.0,0.5633274611798388,0,0,"{""empty_or_undersized_cluster_reduced_k_and_reran"": 16, ""insufficient_samples_for_min_cluster_size"": 13, ""fewer_unique_features_than_requested_k"": 2}",-0.28203387793105844
+E5,1993,1,3,13,184,16,2,1.0,0.5189053891727948,0,0,"{""empty_or_undersized_cluster_reduced_k_and_reran"": 3, ""insufficient_samples_for_min_cluster_size"": 13, ""fewer_unique_features_than_requested_k"": 2}",-0.0984896964764917
+E6,1993,1,4,17,179,21,2,1.0,0.5540020875752001,0,0,"{""empty_or_undersized_cluster_reduced_k_and_reran"": 9, ""insufficient_samples_for_min_cluster_size"": 13, ""fewer_unique_features_than_requested_k"": 2}",-0.19405558601547132
+E7,1993,1,4,24,172,28,2,1.0,0.5633274611798388,0,0,"{""empty_or_undersized_cluster_reduced_k_and_reran"": 16, ""insufficient_samples_for_min_cluster_size"": 13, ""fewer_unique_features_than_requested_k"": 2}",-0.28203387793105844
