@@ -1,0 +1,18 @@
+{
+  "method": "pcds_structure_sgds",
+  "tasks_completed": 10,
+  "average_incremental_accuracy": 67.83229884285606,
+  "final_accuracy": 26.887203084193505,
+  "final_old_accuracy": 21.189540712640564,
+  "final_new_accuracy": 90.6060606060606,
+  "average_forgetting": 69.0691985855301,
+  "old_new_gap": -69.41651989342003,
+  "peak_cuda_allocated_gb": 6.289292812347412,
+  "peak_cuda_reserved_gb": 13.189453125,
+  "elapsed_seconds": 12287.001936674118,
+  "initial_trainable_parameters_before_classifier": 4758528,
+  "final_trainable_parameters": 4909056,
+  "final_total_parameters": 90707712,
+  "optimizer_skipped_steps": 0,
+  "nonfinite_steps": 0
+}
