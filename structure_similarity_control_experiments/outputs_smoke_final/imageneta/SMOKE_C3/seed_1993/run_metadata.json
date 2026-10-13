@@ -1,0 +1,8 @@
+{
+  "ended_at_utc": "2026-09-17T05:38:41.695521+00:00",
+  "failure_reason": "",
+  "failure_traceback": "Traceback (most recent call last):\n  File \"${RESEARCH_WORKSPACE}/structure_multicenter_separation/trainer.py\", line 41, in CDS_train\n    _train(run_args)\n  File \"${RESEARCH_WORKSPACE}/structure_multicenter_separation/trainer.py\", line 134, in _train\n    source_metadata = _git_metadata()\n  File \"${RESEARCH_WORKSPACE}/structure_multicenter_separation/trainer.py\", line 82, in _git_metadata\n    digest.update(path.read_bytes())\n  File \"${RESEARCH_WORKSPACE}/miniconda3/envs/cds/lib/python3.9/pathlib.py\", line 1260, in read_bytes\n    return f.read()\nKeyboardInterrupt\n",
+  "failure_type": "KeyboardInterrupt",
+  "status": "interrupted",
+  "updated_at_utc": "2026-09-17T05:38:41.695570+00:00"
+}
