@@ -1,0 +1,13 @@
+{
+  "activation": "relu",
+  "bias": false,
+  "checksum_sha256": "849337f236a4df355a5d74c27d015c45a80c27cd4f7fc0e32957a02c7619aa2d",
+  "distribution": "gaussian_N(0,1/input_dim)",
+  "requires_grad": false,
+  "seed": 1993,
+  "shape": [
+    768,
+    2048
+  ],
+  "trainable": false
+}
