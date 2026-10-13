@@ -1,0 +1,61 @@
+{
+  "format_version": 2,
+  "status": "complete",
+  "protocol": "CAR5",
+  "dataset": "car196",
+  "expected_tasks": 5,
+  "audited_tasks": [
+    5
+  ],
+  "complete_temporal_coverage": false,
+  "data_root": "${RESEARCH_WORKSPACE}/cds-main/data/cars196",
+  "oracle_splits": [
+    "train",
+    "test"
+  ],
+  "primary_oracle": "oracle_train_statistics",
+  "covariance_mode": "diagonal",
+  "oracle_head_eval_tasks": "final",
+  "oracle_head_epochs_override": 1,
+  "oracle_head_samples_per_class_override": 2,
+  "max_classes": 4,
+  "max_samples_per_class": 2,
+  "scientific_interpretation_allowed": false,
+  "checkpoint_fingerprints_before_after_equal": true,
+  "leakage_guards": {
+    "model_eval": true,
+    "torch_no_grad": true,
+    "parameters_require_grad_false": true,
+    "optimizer_created_for_backbone_or_adapter": false,
+    "backward_called_on_backbone_or_adapter": false,
+    "diagnostic_optimizer_is_head_only": true,
+    "diagnostic_input_checksum_check": true,
+    "audit_values_returned_to_training": false,
+    "checkpoint_read_only_fingerprint_check": true
+  },
+  "checkpoint_fingerprints": [
+    {
+      "path": "${RESEARCH_WORKSPACE}/structure_selective_similarity_sweep/outputs/CAR5/Structure/seed_1993/checkpoint_latest.pt",
+      "size": 1393005249,
+      "mtime_ns": 1789979636215630978,
+      "edge_sha256": "cda421219224b63c6806dc20c75490087c15b1650ac4b8849d7225bc0e2663b7"
+    }
+  ],
+  "row_counts": {
+    "prototype_oracle_audit.csv": 8,
+    "apr_oracle_drift_audit.csv": 2,
+    "covariance_oracle_audit.csv": 8,
+    "mahalanobis_oracle_audit.csv": 8,
+    "prototype_classifier_audit.csv": 2,
+    "class_forgetting_correlation.csv": 36,
+    "class_accuracy_history.csv": 4,
+    "mahalanobis_nearest_old_ranking.csv": 1,
+    "apr_ablation_audit.csv": 2,
+    "oracle_classifier_replacement.csv": 5,
+    "new_class_competition_diagnostics.csv": 5,
+    "boundary_direction_error.csv": 2,
+    "margin_diagnostics.csv": 20,
+    "gaussian_assumption_diagnostics.csv": 4
+  },
+  "elapsed_seconds": 7.7852747440338135
+}
