@@ -34,3 +34,7 @@ This is an evidence-based retrospective index. Changes are linked to original so
 - Earlier diagnostic, subspace and PTM-guided studies preserved with their own configurations and resource boundaries.
 
 Detailed source links: [research timeline](docs/HISTORY.md). Undated follow-up reports remain in the catalogue and do not receive fabricated changelog dates.
+
+## 2026-10-13 — Category navigation and directory documentation
+
+Added a categorized map and individual guides for every top-level research or management directory, including preserved handoff snapshots. Folder-specific documentation commits identify method families and evidence status in the GitHub file list. Added root-file navigation and dependency/artifact policy comments; preserved source exports and result records retain their hashes.
