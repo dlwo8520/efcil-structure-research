@@ -1,0 +1,5 @@
+dataset,protocol,task,oracle_split,class_id,sample_count,mean_skewness,mean_absolute_skewness,mean_excess_kurtosis,mean_absolute_excess_kurtosis,valid_dimensions,oracle_diag_d2_mean,oracle_diag_d2_variance,gaussian_expected_d2_mean,d2_mean_over_dimension
+imageneta,IA5,5,train,0,2,,,,,768,373.1181457866644,0.0,768,0.4858309189930526
+imageneta,IA5,5,train,1,2,,,,,768,369.5082277186576,0.0,768,0.4811305048420021
+imageneta,IA5,5,train,160,2,,,,,768,371.7572664990545,0.0,768,0.4840589407539772
+imageneta,IA5,5,train,161,2,,,,,768,372.4845733671805,0.0,768,0.4850059549051829

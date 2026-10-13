@@ -1,0 +1,5 @@
+dataset,protocol,task,oracle_split,class_id,sample_count,mean_skewness,mean_absolute_skewness,mean_excess_kurtosis,mean_absolute_excess_kurtosis,valid_dimensions,oracle_diag_d2_mean,oracle_diag_d2_variance,gaussian_expected_d2_mean,d2_mean_over_dimension
+car196,CAR5,5,train,0,2,,,,,768,374.0829137092534,0.0,768,0.48708712722559033
+car196,CAR5,5,train,1,2,,,,,768,376.6823122295163,0.0,768,0.490471760715516
+car196,CAR5,5,train,157,2,,,,,768,378.6374064681644,0.0,768,0.4930174563387557
+car196,CAR5,5,train,158,2,,,,,768,376.0653970155089,0.0,768,0.4896684856972772
