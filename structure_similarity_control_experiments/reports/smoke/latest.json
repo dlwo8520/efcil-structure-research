@@ -1,0 +1,16 @@
+{
+  "c0_e3_parity": true,
+  "device": "cpu",
+  "equal_pair_counts": true,
+  "evaluation_logging": true,
+  "finite_gradient": true,
+  "learner_epoch_integration": true,
+  "losses": {
+    "C0": 0.9394411444664001,
+    "C3": 0.9338915944099426
+  },
+  "random_deterministic": true,
+  "random_preserves_global_rng": true,
+  "status": "PASS",
+  "torch": "2.4.1+cu121"
+}

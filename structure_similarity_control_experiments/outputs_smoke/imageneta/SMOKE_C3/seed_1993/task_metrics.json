@@ -1,0 +1,33 @@
+[
+  {
+    "A_t": 69.72222222222223,
+    "class_statistics_bytes": 94617600,
+    "eval_stage": "task_final",
+    "forgetting_so_far": null,
+    "inc_accuracy_so_far": 69.72222222222223,
+    "new_accuracy": 69.72222222222223,
+    "new_num_correct": 251,
+    "new_num_samples": 360,
+    "new_to_old_error_rate": 0.0,
+    "num_correct": 251,
+    "num_samples": 360,
+    "old_accuracy": null,
+    "old_num_correct": null,
+    "old_num_samples": 0,
+    "old_to_new_error_rate": null,
+    "peak_cuda_allocated_bytes": 6521785344,
+    "peak_cuda_reserved_bytes": 6889144320,
+    "peak_main_process_rss_bytes": 4402241536,
+    "region_statistics_bytes": 94495680,
+    "seen_classes": 40,
+    "separation_cache_bytes": 0,
+    "statistics_and_cache_bytes": 189113280,
+    "status": "complete",
+    "task": 0,
+    "task_id": 1,
+    "top5": 89.44444444444444,
+    "top5_num_correct": 322,
+    "total_statistics_bytes": 189113280,
+    "training_seconds": 112.72978954698192
+  }
+]
