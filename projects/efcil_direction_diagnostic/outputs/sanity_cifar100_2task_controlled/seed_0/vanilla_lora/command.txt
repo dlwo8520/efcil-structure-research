@@ -1,0 +1,1 @@
+${RESEARCH_WORKSPACE}/projects/efcil_direction_diagnostic/train.py --config ${RESEARCH_WORKSPACE}/projects/efcil_direction_diagnostic/configs/sanity.yaml --method vanilla_lora --resume

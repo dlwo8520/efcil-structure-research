@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=1 train_pcds.py --config configs/pcds_efcil_cifar100_10task.yaml --method pcds_full
