@@ -1,0 +1,18 @@
+{
+  "base_config": "ptm_guided_base.json",
+  "prefix": "ptm_guided_omnibenchmark_10task_ptm_place_move",
+  "dataset": "omnibenchmark",
+  "expected_num_classes": 300,
+  "task_count": 10,
+  "init_cls": 30,
+  "increment": 30,
+  "method": "ptm_place_move",
+  "ptm_place_enabled": true,
+  "old_move_enabled": true,
+  "init_epochs": 30,
+  "inc_epochs": 20,
+  "init_lr": 0.01,
+  "batch_size": 48,
+  "margin": 0.0,
+  "adapter_placement": "mlp"
+}
