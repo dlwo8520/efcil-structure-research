@@ -8,4 +8,4 @@
 
 큰 원자료는 `python tools/restore_tables.py`로 복원하고, `python tools/rebuild_indexes.py`, `python tools/validate_export.py`를 실행한 뒤 변경 파일을 검토해 commit/push합니다. 자세한 흐름은 `docs/WORKFLOW.md`, 환경/실행 명령은 `docs/REPRODUCIBILITY.md`입니다.
 
-GitHub 생성/push는 사용자 선택에 따라 실행하지 않았습니다. `docs/UPLOAD.md`에 private 업로드 명령을 남겼습니다. 기존 source Git 이력은 보존하며 개인 경로가 들어 있는 초기 진단 Git bundle은 로컬 보관만 합니다. 실제 GPU 전체 재현 성공을 주장하지 않습니다.
+2026-10-13 KST에 [GitHub private 저장소](https://github.com/dlwo8520/efcil-structure-research)로 업로드하고 main 및 연구 이력 태그 일치를 확인했습니다. 후속 변경은 검토·commit 후 `git push origin main`으로 반영합니다. `docs/UPLOAD.md`에 업로드 기록과 확인 명령이 있습니다. 기존 source Git 이력은 보존하며 개인 경로가 들어 있는 초기 진단 Git bundle은 로컬 보관만 합니다. 실제 GPU 전체 재현 성공을 주장하지 않습니다.
