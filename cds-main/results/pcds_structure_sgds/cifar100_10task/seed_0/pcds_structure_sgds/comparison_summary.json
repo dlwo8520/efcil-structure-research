@@ -1,0 +1,23 @@
+{
+  "pcds": {
+    "method": "pcds_full",
+    "final_accuracy": 0.8926,
+    "average_incremental_accuracy": 0.9399769047619048,
+    "final_old_accuracy": 0.8887777777777779,
+    "final_new_accuracy": 0.9269999999999998,
+    "average_forgetting": 0.06844444444444445,
+    "peak_cuda_allocated_gb": 3.3489866256713867,
+    "optimizer_skipped_steps": 0
+  },
+  "pcds_structure_sgds": {
+    "method": "pcds_structure_sgds",
+    "average_incremental_accuracy": 0.9411995238095237,
+    "final_accuracy": 0.8933,
+    "final_old_accuracy": 0.8894444444444444,
+    "final_new_accuracy": 0.9279999999999999,
+    "average_forgetting": 0.06688888888888898,
+    "peak_cuda_allocated_gb": 3.3654136657714844,
+    "optimizer_skipped_steps": 0,
+    "nonfinite_steps": 0
+  }
+}
