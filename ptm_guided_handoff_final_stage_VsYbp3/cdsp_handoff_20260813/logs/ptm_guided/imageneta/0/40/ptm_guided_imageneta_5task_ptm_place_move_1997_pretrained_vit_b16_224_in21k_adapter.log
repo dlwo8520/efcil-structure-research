@@ -1,0 +1,78 @@
+2026-08-14 13:55:44,671 [trainer.py] => Log file: logs/ptm_guided/imageneta/0/40/ptm_guided_imageneta_5task_ptm_place_move_1997_pretrained_vit_b16_224_in21k_adapter.log
+2026-08-14 13:55:44,671 [trainer.py] => config: exps_jsons/ptm_guided_imageneta_5task_ptm_place_move.json
+2026-08-14 13:55:44,671 [trainer.py] => model_name: ptm_guided
+2026-08-14 13:55:44,671 [trainer.py] => convnet_type: pretrained_vit_b16_224_in21k_adapter
+2026-08-14 13:55:44,671 [trainer.py] => device: [device(type='cuda', index=0)]
+2026-08-14 13:55:44,671 [trainer.py] => seed: 1997
+2026-08-14 13:55:44,671 [trainer.py] => weight_decay: 0.0005
+2026-08-14 13:55:44,671 [trainer.py] => min_lr: 0.0
+2026-08-14 13:55:44,671 [trainer.py] => ffn_num: 64
+2026-08-14 13:55:44,671 [trainer.py] => optimizer: sgd
+2026-08-14 13:55:44,671 [trainer.py] => scale: 20.0
+2026-08-14 13:55:44,671 [trainer.py] => adapter_interval: 1
+2026-08-14 13:55:44,671 [trainer.py] => ptm_place_weight: 1.0
+2026-08-14 13:55:44,671 [trainer.py] => ptm_place_schedule: cosine
+2026-08-14 13:55:44,671 [trainer.py] => ptm_place_final_weight: 0.0
+2026-08-14 13:55:44,671 [trainer.py] => old_move_weight: 1.0
+2026-08-14 13:55:44,671 [trainer.py] => old_move_loss: smooth_l1
+2026-08-14 13:55:44,671 [trainer.py] => apr: False
+2026-08-14 13:55:44,671 [trainer.py] => scc: False
+2026-08-14 13:55:44,671 [trainer.py] => ca: False
+2026-08-14 13:55:44,671 [trainer.py] => ca_epochs: 0
+2026-08-14 13:55:44,671 [trainer.py] => feature: False
+2026-08-14 13:55:44,671 [trainer.py] => logit: False
+2026-08-14 13:55:44,671 [trainer.py] => project_gradient: False
+2026-08-14 13:55:44,671 [trainer.py] => project_after_step: False
+2026-08-14 13:55:44,671 [trainer.py] => result_root: results
+2026-08-14 13:55:44,671 [trainer.py] => save_checkpoints: True
+2026-08-14 13:55:44,671 [trainer.py] => num_workers: 8
+2026-08-14 13:55:44,672 [trainer.py] => shuffle: True
+2026-08-14 13:55:44,672 [trainer.py] => prefix: ptm_guided_imageneta_5task_ptm_place_move
+2026-08-14 13:55:44,672 [trainer.py] => dataset: imageneta
+2026-08-14 13:55:44,672 [trainer.py] => expected_num_classes: 200
+2026-08-14 13:55:44,672 [trainer.py] => task_count: 5
+2026-08-14 13:55:44,672 [trainer.py] => init_cls: 40
+2026-08-14 13:55:44,672 [trainer.py] => increment: 40
+2026-08-14 13:55:44,672 [trainer.py] => method: ptm_place_move
+2026-08-14 13:55:44,672 [trainer.py] => ptm_place_enabled: True
+2026-08-14 13:55:44,672 [trainer.py] => old_move_enabled: True
+2026-08-14 13:55:44,672 [trainer.py] => init_epochs: 30
+2026-08-14 13:55:44,672 [trainer.py] => inc_epochs: 15
+2026-08-14 13:55:44,672 [trainer.py] => init_lr: 0.01
+2026-08-14 13:55:44,672 [trainer.py] => batch_size: 48
+2026-08-14 13:55:44,672 [trainer.py] => margin: 0.2
+2026-08-14 13:55:44,672 [trainer.py] => adapter_placement: mlp
+2026-08-14 13:55:44,689 [data.py] => Loaded ImageNet-A from ${RESEARCH_WORKSPACE}/datasets/ptm_guided/imagenet-a: classes=200 train=5981 test=1519
+2026-08-14 13:55:44,690 [data_manager.py] => [76, 153, 53, 4, 197, 152, 176, 43, 64, 112, 69, 131, 56, 42, 38, 107, 150, 135, 97, 102, 189, 104, 99, 83, 139, 45, 75, 88, 185, 44, 158, 54, 32, 116, 121, 193, 63, 11, 111, 52, 114, 159, 31, 167, 182, 145, 132, 90, 41, 12, 109, 58, 93, 186, 151, 157, 149, 23, 84, 95, 108, 143, 147, 94, 7, 126, 35, 86, 36, 115, 71, 25, 3, 191, 24, 46, 180, 96, 101, 117, 60, 187, 138, 100, 67, 199, 195, 65, 62, 194, 156, 148, 30, 134, 68, 179, 61, 142, 34, 2, 78, 40, 168, 16, 8, 18, 181, 10, 15, 123, 172, 37, 127, 175, 50, 174, 6, 165, 154, 72, 47, 51, 87, 1, 122, 110, 27, 140, 190, 162, 26, 105, 137, 120, 92, 89, 133, 70, 106, 77, 170, 79, 184, 59, 119, 160, 198, 130, 98, 196, 124, 129, 188, 161, 171, 91, 17, 74, 20, 163, 178, 33, 141, 164, 155, 81, 9, 39, 82, 125, 192, 73, 22, 128, 5, 55, 19, 173, 21, 177, 66, 183, 85, 0, 49, 13, 28, 118, 113, 80, 136, 169, 166, 103, 146, 14, 144, 48, 57, 29]
+2026-08-14 13:55:44,707 [data_manager.py] => Task protocol: [40, 40, 40, 40, 40] (5 tasks)
+2026-08-14 13:55:44,707 [inc_net.py] => Adapter placement strategy: mlp
+2026-08-14 13:55:44,707 [inc_net.py] => Adapter interval: 1
+2026-08-14 13:55:46,673 [PTM_guided_adapter.py] => PTM-guided learner: method=ptm_place_move adapters=12 placement=mlp place=True move=True
+2026-08-14 13:55:46,673 [trainer.py] => Task 1/5 started
+2026-08-14 13:55:46,674 [PTM_guided_adapter.py] => PTM-guided task 1/5: classes [0,40), task_size=40
+2026-08-14 13:55:46,730 [PTM_guided_adapter.py] => Task 0 active nonlinear adapter branch: 1
+2026-08-14 13:55:52,213 [PTM_guided_adapter.py] => Collected 40 normalized PTM class prototypes in 00:00:05 (no raw samples retained)
+2026-08-14 13:55:52,214 [PTM_guided_adapter.py] => Movement snapshot contains 0 unit/class anchors
+2026-08-14 13:56:04,776 [PTM_guided_adapter.py] => Task 0 epoch 1/30: cls_loss=5.159343 place_loss=0.416932 move_loss=0.000000 lambda_place=1.000000 lambda_move=1.000000 total_loss=5.576276 train_acc=46.66% epoch_time=00:00:12 elapsed=00:00:12 eta=00:06:04
+2026-08-14 13:56:17,634 [PTM_guided_adapter.py] => Task 0 epoch 2/30: cls_loss=3.259725 place_loss=0.426748 move_loss=0.000000 lambda_place=0.997069 lambda_move=1.000000 total_loss=3.685221 train_acc=77.98% epoch_time=00:00:12 elapsed=00:00:25 eta=00:05:55
+2026-08-14 13:56:30,575 [PTM_guided_adapter.py] => Task 0 epoch 3/30: cls_loss=2.863122 place_loss=0.426088 move_loss=0.000000 lambda_place=0.988310 lambda_move=1.000000 total_loss=3.284229 train_acc=83.21% epoch_time=00:00:12 elapsed=00:00:38 eta=00:05:45
+2026-08-14 13:56:43,635 [PTM_guided_adapter.py] => Task 0 epoch 4/30: cls_loss=2.695004 place_loss=0.430716 move_loss=0.000000 lambda_place=0.973827 lambda_move=1.000000 total_loss=3.114447 train_acc=84.03% epoch_time=00:00:13 elapsed=00:00:51 eta=00:05:34
+2026-08-14 13:56:56,733 [PTM_guided_adapter.py] => Task 0 epoch 5/30: cls_loss=2.552374 place_loss=0.448185 move_loss=0.000000 lambda_place=0.953788 lambda_move=1.000000 total_loss=2.979847 train_acc=84.84% epoch_time=00:00:13 elapsed=00:01:04 eta=00:05:22
+2026-08-14 13:57:06,108 [PTM_guided_adapter.py] => Task 0 epoch 6/30: cls_loss=2.458765 place_loss=0.458330 move_loss=0.000000 lambda_place=0.928429 lambda_move=1.000000 total_loss=2.884292 train_acc=86.37% epoch_time=00:00:09 elapsed=00:01:13 eta=00:04:55
+2026-08-14 13:57:19,245 [PTM_guided_adapter.py] => Task 0 epoch 7/30: cls_loss=2.359678 place_loss=0.457405 move_loss=0.000000 lambda_place=0.898047 lambda_move=1.000000 total_loss=2.770449 train_acc=85.83% epoch_time=00:00:13 elapsed=00:01:27 eta=00:04:45
+2026-08-14 13:57:32,333 [PTM_guided_adapter.py] => Task 0 epoch 8/30: cls_loss=2.302080 place_loss=0.471320 move_loss=0.000000 lambda_place=0.862998 lambda_move=1.000000 total_loss=2.708828 train_acc=86.37% epoch_time=00:00:13 elapsed=00:01:40 eta=00:04:35
+2026-08-14 13:57:45,389 [PTM_guided_adapter.py] => Task 0 epoch 9/30: cls_loss=2.176777 place_loss=0.455641 move_loss=0.000000 lambda_place=0.823693 lambda_move=1.000000 total_loss=2.552086 train_acc=87.09% epoch_time=00:00:13 elapsed=00:01:53 eta=00:04:24
+2026-08-14 13:57:58,782 [PTM_guided_adapter.py] => Task 0 epoch 10/30: cls_loss=2.218124 place_loss=0.467816 move_loss=0.000000 lambda_place=0.780594 lambda_move=1.000000 total_loss=2.583298 train_acc=87.64% epoch_time=00:00:13 elapsed=00:02:06 eta=00:04:13
+2026-08-14 13:58:11,736 [PTM_guided_adapter.py] => Task 0 epoch 11/30: cls_loss=2.095946 place_loss=0.476266 move_loss=0.000000 lambda_place=0.734204 lambda_move=1.000000 total_loss=2.445622 train_acc=88.90% epoch_time=00:00:12 elapsed=00:02:19 eta=00:04:00
+2026-08-14 13:58:25,137 [PTM_guided_adapter.py] => Task 0 epoch 12/30: cls_loss=1.983312 place_loss=0.472679 move_loss=0.000000 lambda_place=0.685069 lambda_move=1.000000 total_loss=2.307130 train_acc=88.54% epoch_time=00:00:13 elapsed=00:02:32 eta=00:03:49
+2026-08-14 13:58:37,596 [PTM_guided_adapter.py] => Task 0 epoch 13/30: cls_loss=1.995381 place_loss=0.482629 move_loss=0.000000 lambda_place=0.633764 lambda_move=1.000000 total_loss=2.301254 train_acc=88.45% epoch_time=00:00:12 elapsed=00:02:45 eta=00:03:36
+2026-08-14 13:58:49,719 [PTM_guided_adapter.py] => Task 0 epoch 14/30: cls_loss=1.965523 place_loss=0.473875 move_loss=0.000000 lambda_place=0.580891 lambda_move=1.000000 total_loss=2.240792 train_acc=88.54% epoch_time=00:00:12 elapsed=00:02:57 eta=00:03:22
+2026-08-14 13:59:02,611 [PTM_guided_adapter.py] => Task 0 epoch 15/30: cls_loss=2.033880 place_loss=0.480008 move_loss=0.000000 lambda_place=0.527069 lambda_move=1.000000 total_loss=2.286878 train_acc=85.38% epoch_time=00:00:12 elapsed=00:03:10 eta=00:03:10
+2026-08-14 13:59:15,374 [PTM_guided_adapter.py] => Task 0 epoch 16/30: cls_loss=1.867954 place_loss=0.500809 move_loss=0.000000 lambda_place=0.472931 lambda_move=1.000000 total_loss=2.104802 train_acc=87.73% epoch_time=00:00:12 elapsed=00:03:23 eta=00:02:57
+2026-08-14 13:59:28,149 [PTM_guided_adapter.py] => Task 0 epoch 17/30: cls_loss=1.924986 place_loss=0.492636 move_loss=0.000000 lambda_place=0.419109 lambda_move=1.000000 total_loss=2.131454 train_acc=88.45% epoch_time=00:00:12 elapsed=00:03:35 eta=00:02:45
+2026-08-14 13:59:41,394 [PTM_guided_adapter.py] => Task 0 epoch 18/30: cls_loss=1.949509 place_loss=0.502794 move_loss=0.000000 lambda_place=0.366236 lambda_move=1.000000 total_loss=2.133650 train_acc=88.18% epoch_time=00:00:13 elapsed=00:03:49 eta=00:02:32
+2026-08-14 13:59:54,100 [PTM_guided_adapter.py] => Task 0 epoch 19/30: cls_loss=1.856619 place_loss=0.503893 move_loss=0.000000 lambda_place=0.314931 lambda_move=1.000000 total_loss=2.015310 train_acc=89.17% epoch_time=00:00:12 elapsed=00:04:01 eta=00:02:20
+2026-08-14 14:00:05,851 [PTM_guided_adapter.py] => Task 0 epoch 20/30: cls_loss=1.801311 place_loss=0.517029 move_loss=0.000000 lambda_place=0.265796 lambda_move=1.000000 total_loss=1.938735 train_acc=90.07% epoch_time=00:00:11 elapsed=00:04:13 eta=00:02:06
+2026-08-14 14:00:16,012 [PTM_guided_adapter.py] => Task 0 epoch 21/30: cls_loss=1.864984 place_loss=0.516226 move_loss=0.000000 lambda_place=0.219406 lambda_move=1.000000 total_loss=1.978247 train_acc=88.63% epoch_time=00:00:10 elapsed=00:04:23 eta=00:01:53
+2026-08-14 14:00:28,793 [PTM_guided_adapter.py] => Task 0 epoch 22/30: cls_loss=1.903850 place_loss=0.528974 move_loss=0.000000 lambda_place=0.176307 lambda_move=1.000000 total_loss=1.997111 train_acc=87.55% epoch_time=00:00:12 elapsed=00:04:36 eta=00:01:40
+2026-08-14 14:00:41,862 [PTM_guided_adapter.py] => Task 0 epoch 23/30: cls_loss=1.894505 place_loss=0.531321 move_loss=0.000000 lambda_place=0.137002 lambda_move=1.000000 total_loss=1.967297 train_acc=88.81% epoch_time=00:00:13 elapsed=00:04:49 eta=00:01:28
