@@ -1,0 +1,25 @@
+[base] ${RESEARCH_WORKSPACE}/structure_multicenter_separation
+commit=a0db2168663982a4cad24981231721a3518ddf29
+ M .gitignore
+ M README.md
+ M data/data.py
+ M data/data_manager.py
+ M main.py
+ M models/CDS_adapter.py
+ M models/base.py
+ M trainer.py
+ M utils/adjust_distribution.py
+?? PROJECT_ANALYSIS_KO.md
+?? RECORDING_SCHEMA_KO.md
+?? RUN_EXPERIMENTS_KO.md
+?? exps_jsons/imageneta_5task/
+?? outputs_recording_v2/
+?? reports/
+?? scripts/
+?? tests/
+?? utils/distribution_regions.py
+?? utils/experiment_io.py
+
+[extension] ${RESEARCH_WORKSPACE}/structure_e3_followup
+commit=UNAVAILABLE: Command '['git', 'rev-parse', 'HEAD']' returned non-zero exit status 128.
+UNAVAILABLE: Command '['git', 'status', '--short']' returned non-zero exit status 128.
