@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+logs/*.log
+logs/*.pid
+logs/queue.lock
+training_outputs/
+outputs/
+outputs_smoke/
+outputs_smoke_verify*/
