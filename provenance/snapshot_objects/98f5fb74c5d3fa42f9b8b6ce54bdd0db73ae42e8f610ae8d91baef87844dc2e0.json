@@ -1,0 +1,97 @@
+{
+  "files": [
+    {
+      "bytes": 2015,
+      "path": "README.md",
+      "sha256": "cc1e7d70989ab9295b0fe69ea305f24683cab4149cdd66e274633f45085123d9"
+    },
+    {
+      "bytes": 54,
+      "path": "analysis/__init__.py",
+      "sha256": "05a7be99edb44b7166cd9f070417d7b3415caa40c80b8920326746df4fc34466"
+    },
+    {
+      "bytes": 10153,
+      "path": "analysis/build_report.py",
+      "sha256": "f0c5bb58520394f5b0d356b411943a7e08b8fa908778a63230411623da192e47"
+    },
+    {
+      "bytes": 336,
+      "path": "configs/CAR5.json",
+      "sha256": "8c5138fdb87ed8703b9b2c39a8a56d434c4c38902d4bf998021dc9ff92c8477f"
+    },
+    {
+      "bytes": 335,
+      "path": "configs/IA5.json",
+      "sha256": "0ba9a0f68ef44866dfe2c53bcee6af569490418a43073f5d86477e935872517b"
+    },
+    {
+      "bytes": 8463,
+      "path": "run.py",
+      "sha256": "e0d117de20fc6a64900ff3e439335731a52b71e48e204dc25a8c1027b7851a2f"
+    },
+    {
+      "bytes": 3608,
+      "path": "run_all.py",
+      "sha256": "3bf5fc5b782d730fadf47eded47462d466f8bd4d831ab75aa380465aee5f1a76"
+    },
+    {
+      "bytes": 347,
+      "path": "run_stored_apr_rp.sh",
+      "sha256": "66cad38ab585e7a996cafc147070c12f4edc16384291ee741ea3f01a85258a48"
+    },
+    {
+      "bytes": 1939,
+      "path": "scripts/run_tests.py",
+      "sha256": "13da5e8166038332a64d121d0e1e8cf211a5fbc00eba8e18d2267565636d4db3"
+    },
+    {
+      "bytes": 754,
+      "path": "scripts/wait_for_gpu_then_run.sh",
+      "sha256": "bb8f5afc247064df0c52fd54b235eb483db28911490552e5e646c69a08459311"
+    },
+    {
+      "bytes": 72,
+      "path": "stored_apr_rp/__init__.py",
+      "sha256": "87c523866f3c865bfcffbfede7444c5062e49b4039e37447f923cdc95fcbd493"
+    },
+    {
+      "bytes": 15510,
+      "path": "stored_apr_rp/learner.py",
+      "sha256": "94525d325e58dea12e7b4a19af0a5da31e11328ac5f0d6fad9ff5bd4bd37390f"
+    },
+    {
+      "bytes": 3189,
+      "path": "stored_apr_rp/losses.py",
+      "sha256": "4d4f4dda86b5af0a3c67143c29c5adda1c69f1997a3eab779f0c6319db3f8158"
+    },
+    {
+      "bytes": 2791,
+      "path": "stored_apr_rp/prototypes.py",
+      "sha256": "75573c6526575f98f89cb93ef81824e6ccf99d06db406856e6adf8854eaae424"
+    },
+    {
+      "bytes": 1980,
+      "path": "stored_apr_rp/snapshot.py",
+      "sha256": "1d04f54bf2ff5383786fb29ba38010ba82b4c723396b851778cd209f01498fac"
+    },
+    {
+      "bytes": 3374,
+      "path": "stored_apr_rp_implementation_plan.md",
+      "sha256": "3259a7b4fedec0ffa04721828eb95ebea5cb0c76428df15fab51a44c0835cd44"
+    },
+    {
+      "bytes": 53,
+      "path": "tests/__init__.py",
+      "sha256": "f11c5a064b6bbba6adf6e9f7f951ad19082f638e45a0d3967307151099d24cb2"
+    },
+    {
+      "bytes": 7147,
+      "path": "tests/test_stored.py",
+      "sha256": "bd27039c780ada2c198e5d5bfbc0c0382c230ed1a46a9fa9e58d93e89755fba6"
+    }
+  ],
+  "root": "${RESEARCH_WORKSPACE}/structure_stored_apr_rp",
+  "sha256": "30a56efcee4e5d808dc899d07a2cbdbe8f749da74ee2046ed716099122aff3f2",
+  "source_file_count": 18
+}

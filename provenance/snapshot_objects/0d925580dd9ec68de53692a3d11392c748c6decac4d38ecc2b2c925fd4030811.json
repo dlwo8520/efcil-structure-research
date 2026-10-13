@@ -1,0 +1,11 @@
+{
+  "extends": "../common.json",
+  "protocol_id": "IA10",
+  "dataset": "IA10",
+  "source_dataset": "imageneta",
+  "expected_num_classes": 200,
+  "expected_tasks": 10,
+  "init_cls": 20,
+  "increment": 20,
+  "task_partition": [20, 20, 20, 20, 20, 20, 20, 20, 20, 20]
+}
