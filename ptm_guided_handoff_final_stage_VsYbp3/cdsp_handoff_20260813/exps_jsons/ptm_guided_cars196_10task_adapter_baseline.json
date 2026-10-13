@@ -1,0 +1,18 @@
+{
+  "base_config": "ptm_guided_base.json",
+  "prefix": "ptm_guided_cars196_10task_adapter_baseline",
+  "dataset": "cars196",
+  "expected_num_classes": 196,
+  "task_count": 10,
+  "init_cls": 20,
+  "increment": 20,
+  "method": "adapter_baseline",
+  "ptm_place_enabled": false,
+  "old_move_enabled": false,
+  "init_epochs": 70,
+  "inc_epochs": 40,
+  "init_lr": 0.005,
+  "batch_size": 32,
+  "margin": 0.3,
+  "adapter_placement": "attention"
+}
