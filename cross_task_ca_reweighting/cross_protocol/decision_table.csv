@@ -1,0 +1,3 @@
+protocol,S0_control_parity,S1_repair_gt_harm,S2_seen_accuracy_up,S3_clear_B1_gain,S4_macro_accuracy_up,S5_cross_reduction_not_offset,S6_no_large_old_new_loss,all_satisfied,delta_seen_accuracy_pp,delta_macro_accuracy_pp,delta_old_accuracy_pp,delta_new_accuracy_pp,cross_task_error_reduction_n,same_task_error_increase_n,b1_net_gain_n,b1_repair_gt_overall_harm
+IA10,NO,NO,NO,NO,NO,NO,YES,NO,-0.19749835418038184,-0.20128968253968482,-0.28673835125448965,0.8064516129032251,-1,2,-2,NO
+CAR10,NO,YES,YES,NO,YES,YES,YES,NO,0.0746175848775028,0.06591965318856197,-0.027540622418065208,1.0269576379974388,20,14,10,NO
